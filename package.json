@@ -5,20 +5,40 @@
   "version": "0.1.0",
   "author": "Clarice Bouwer <clarice@bouwer.dev>",
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^1.2.25",
+    "@fortawesome/free-brands-svg-icons": "^5.11.2",
+    "@fortawesome/free-regular-svg-icons": "^5.11.2",
+    "@fortawesome/free-solid-svg-icons": "^5.11.2",
+    "@fortawesome/react-fontawesome": "^0.1.4",
+    "babel-plugin-styled-components": "^1.10.6",
     "gatsby": "^2.15.20",
     "gatsby-image": "^2.2.20",
     "gatsby-plugin-manifest": "^2.2.18",
     "gatsby-plugin-offline": "^3.0.8",
     "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-plugin-styled-components": "^3.1.6",
     "gatsby-source-filesystem": "^2.1.26",
     "gatsby-transformer-sharp": "^2.2.16",
     "prop-types": "^15.7.2",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
-    "react-helmet": "^5.2.1"
+    "react-helmet": "^5.2.1",
+    "styled-components": "^4.3.2"
   },
   "devDependencies": {
+    "@babel/core": "^7.6.0",
+    "@babel/plugin-transform-modules-commonjs": "^7.6.0",
+    "@storybook/addon-actions": "^5.2.1",
+    "@storybook/addon-links": "^5.2.1",
+    "@storybook/addons": "^5.2.1",
+    "@storybook/react": "^5.2.1",
+    "babel-loader": "^8.0.6",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^24.9.0",
     "prettier": "^1.18.2"
   },
   "keywords": [
@@ -31,7 +51,42 @@
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
-    "test": "echo \"Write tests! -> https://gatsby.dev/unit-testing \""
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage",
+    "storybook": "NODE_ENV=production start-storybook -s public -p 6006",
+    "build-storybook": "NODE_ENV=production build-storybook -s public"
+  },
+  "jest": {
+    "transform": {
+      "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"
+    },
+    "moduleNameMapper": {
+      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
+      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
+    },
+    "setupFilesAfterEnv": [
+      "<rootDir>/setupTests.js"
+    ],
+    "testPathIgnorePatterns": [
+      "node_modules",
+      "/.cache/"
+    ],
+    "transformIgnorePatterns": [
+      "node_modules/(?!(gatsby)/)"
+    ],
+    "collectCoverageFrom": [
+      "src/**/*.js"
+    ],
+    "globals": {
+      "__PATH_PREFIX__": ""
+    },
+    "setupFiles": [
+      "<rootDir>/loadershim.js"
+    ],
+    "snapshotSerializers": [
+      "enzyme-to-json/serializer"
+    ]
   },
   "repository": {
     "type": "git",
