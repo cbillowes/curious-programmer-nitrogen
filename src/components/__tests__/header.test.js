@@ -17,7 +17,7 @@ describe('Heading', () => {
       <Header />
     )
 
-    expect(wrapper.contains(`<header>`))
+    expect(wrapper.html().indexOf(`header`)).toBeGreaterThan(-1)
   })
 
   it('should render the logo', () => {
@@ -25,7 +25,7 @@ describe('Heading', () => {
       <Header />
     )
 
-    expect(wrapper.contains(<Logo />))
+    expect(wrapper.contains(<Logo />)).toEqual(true)
   })
 
   it('should render the search button', () => {
@@ -33,7 +33,7 @@ describe('Heading', () => {
       <Header />
     )
 
-    expect(wrapper.contains(<Search />))
+    expect(wrapper.contains(<Search />)).toEqual(true)
   })
 
   it('should render the menu button', () => {
@@ -41,7 +41,7 @@ describe('Heading', () => {
       <Header />
     )
 
-    expect(wrapper.contains(<Menu />))
+    expect(wrapper.contains(<Menu />)).toEqual(true)
   })
 
 })
