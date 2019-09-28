@@ -16,8 +16,7 @@ describe('Heading', () => {
         <H1 title="This is a h1" />
     )
 
-    const rendered = wrapper.html()
-    expect(wrapper.contains(<h1>This is a h1</h1>))
+    expect(wrapper.contains(<h1>This is a h1</h1>)).toEqual(true)
   })
 
   it('should render level two', () => {
@@ -25,8 +24,7 @@ describe('Heading', () => {
         <H2 title="This is a h2" />
     )
 
-    const rendered = wrapper.html()
-    expect(wrapper.contains(<h2>This is a h2</h2>))
+    expect(wrapper.contains(<h2>This is a h2</h2>)).toEqual(true)
   })
 
   it('should render level three', () => {
@@ -34,8 +32,7 @@ describe('Heading', () => {
         <H3 title="This is a h3" />
     )
 
-    const rendered = wrapper.html()
-    expect(wrapper.contains(<h3>This is a h3</h3>))
+    expect(wrapper.contains(<h3>This is a h3</h3>)).toEqual(true)
   })
 
   it('should render level four', () => {
@@ -43,8 +40,7 @@ describe('Heading', () => {
         <H4 title="This is a h4" />
     )
 
-    const rendered = wrapper.html()
-    expect(wrapper.contains(<h4>This is a h4</h4>))
+    expect(wrapper.contains(<h4>This is a h4</h4>)).toEqual(true)
   })
 
 })
