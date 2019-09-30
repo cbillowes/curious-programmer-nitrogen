@@ -14,7 +14,8 @@ describe('Logo', () => {
       <Logo />
     )
 
-    expect(wrapper.contains(`<strong>&#123;</strong> :curious <strong>"programmer"</strong> <strong>&#125;</strong>`))
+    const rendered = wrapper.html()
+    expect(rendered.startsWith(`<div `)).toBe(true)
   })
 
   it('should link to the home page', () => {
