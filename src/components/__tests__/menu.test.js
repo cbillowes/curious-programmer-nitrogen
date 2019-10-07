@@ -13,6 +13,9 @@ describe('Menu', () => {
     const wrapper = shallow(
       <Menu />
     )
+
+    const rendered = wrapper.html()
+    expect(rendered.startsWith(`<span`)).toBe(true)
   })
 
 })
