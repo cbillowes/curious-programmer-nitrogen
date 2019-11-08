@@ -1,55 +1,40 @@
-import React from 'react'
-import Enzyme, { shallow } from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-import Constants from './const'
-import Navigation from '../menuItems'
+import React from "react"
+import Enzyme, { shallow } from "enzyme"
+import Adapter from "enzyme-adapter-react-16"
+import Constants from "./const"
+import Navigation from "../navigation"
+import Data from "../../../gatsby-data"
+
+const Nav = Data.navigation[0]
 
 Enzyme.configure({ adapter: new Adapter() })
 
-describe('Navigation', () => {
-
-   it ('should render', () => {
-    const wrapper = shallow(
-      <Navigation />
-    )
-
+describe("Navigation", () => {
+  it('should open the navigation bar', () => {
+    const wrapper = shallow(<Navigation open={true} />)
     const rendered = wrapper.html()
-    expect(rendered.startsWith(`<nav`)).toBe(true)
-  }) 
-
-  it('should render default menu item', () => {
-    const wrapper = shallow(
-      <Navigation path="/" />
-    )
-
-    const rendered = wrapper.html()
-    expect(rendered.indexOf(`<span class="${Constants.ACTIVE_MENU_ITEM_CLASS}"><a href="/blog">Blog</a></span>`)).toBeGreaterThan(-1)
-  })
-  
-  it ('should render active item', () => {
-    const wrapper = shallow(
-      <Navigation path="/privacy-policy" />
-    )
-
-    const rendered = wrapper.html()
-    expect(rendered.indexOf(`<span class="${Constants.ACTIVE_MENU_ITEM_CLASS}"><a href="/privacy-policy">Privacy Policy</a></span>`)).toBeGreaterThan(-1)
+    const expected = `<nav class="open `
+    expect(rendered.indexOf(expected)).toBeGreaterThan(-1)
   })
 
-  it ('should open menu items', () => {
-    const wrapper = shallow(
-      <Navigation open="true" />
-    )
-
+  it('should close the navigation bar', () => {
+    const wrapper = shallow(<Navigation open={false} />)
     const rendered = wrapper.html()
-    expect(rendered.startsWith(`<nav class="${Constants.OPEN_MENU_CLASS}">`)).toBe(true)
+    const expected = `<nav class="closed `
+    expect(rendered.indexOf(expected)).toBeGreaterThan(-1)
   })
 
-  it ('should close menu items', () => {
-    const wrapper = shallow(
-      <Navigation open="false" />
-    )
+  it("should render root pathname with first item in Navigation data", () => {
+    const rendered = shallow(<Navigation open={true} path="/" />)
+    const state = rendered.state()
+    const expected = { open: true, path: Nav.to }
+    expect(state).toStrictEqual(expected)
+  })
 
+  it("should render an active item", () => {
+    const wrapper = shallow(<Navigation path="/" />)
     const rendered = wrapper.html()
-    expect(rendered.startsWith(`<nav class="${Constants.CLOSED_MENU_CLASS}">`)).toBe(true)
+    const expected = `<span class="${Constants.SELECTED_MENU_ITEM_CLASS}"><a href="/blog">Blog</a></span>`
+    expect(rendered.indexOf(expected)).toBeGreaterThan(-1)
   })
 })

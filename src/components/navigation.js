@@ -1,38 +1,62 @@
-import React, { Component } from 'react'
-import styled from 'styled-components'
+import React, { Component } from "react"
+import styled from "styled-components"
 import Menu from "./menu"
 import MenuItems from "./menuItems"
+import Data from "../../gatsby-data"
 
-const Container = styled.span``
+const Nav = Data.navigation
+const Theme = Data.theme
 
-const MenuItemsWrapper = styled.div`
+const Container = styled.nav`
+  padding: 1em 0;
+  background-color: ${Theme.colors.darkest};
   position: absolute;
   margin-top: 1.5rem;
   left: 0;
   right: 0;
+
+  &.open {
+    transform: translateX(0);
+    transition: transform .5s ease-in-out;
+  }
+
+  &.closed {
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+  }
 `
 
 class Navigation extends Component {
   constructor(props) {
     super(props)
 
-    const location = props.location || window.location.pathname
-    const path = (location === "/" || !location) ? "/blog" : location
+    const { path, open } = this.props
+    const pathname = this.getPathname(path)
     this.state = {
-      open: false,
-      path: path,
+      path: pathname,
+      open: open
     }
   }
 
+  getPathname(path) {
+    const rootPath = `/`
+    const defaultPath = Nav[0].to
+    const pathname = path || window.location.pathname
+    return pathname === rootPath || !pathname ? defaultPath: pathname 
+  }
+
+  getVisibilityClassName() {
+    return this.state.open ? `open` : `closed`
+  }
+
   render() {
-    console.log("navigation")
     return (
-      <Container>
-        <Menu onClick={this.props.toggle} />
-        <MenuItemsWrapper>
-          <MenuItems path={this.state.path} open={this.state.open} />
-        </MenuItemsWrapper>
-      </Container>
+      <>
+        <Menu />
+        <Container className={this.getVisibilityClassName()}>
+          <MenuItems path={this.state.path} />
+        </Container>
+      </>
     )
   }
 }
