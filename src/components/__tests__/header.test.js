@@ -1,8 +1,6 @@
 import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-
-import Constants from "./const"
 import Header from '../header'
 import Logo from '../logo'
 import Search from '../search'
@@ -17,31 +15,46 @@ describe('Heading', () => {
       <Header />
     )
 
-    expect(wrapper.html().indexOf(`header`)).toBeGreaterThan(-1)
+    const rendered = wrapper.html()
+    expect(rendered.indexOf(`header`)).toBeGreaterThan(-1)
   })
 
   it('should render the logo', () => {
-    const wrapper = shallow(
+    const header = shallow(
       <Header />
     )
-
-    expect(wrapper.contains(<Logo />)).toEqual(true)
+    const logo = shallow(
+      <Logo />
+    )
+    const renderedHeader = header.html()
+    const renderedLogo = logo.html()
+    expect(renderedHeader.indexOf(renderedLogo)).toBeGreaterThan(-1)
   })
 
   it('should render the search button', () => {
-    const wrapper = shallow(
+    const header = shallow(
       <Header />
     )
+    const search = shallow(
+      <Search />
+    )
+    const renderedHeader = header.html()
+    const renderedSearch = search.html()
 
-    expect(wrapper.contains(<Search />)).toEqual(true)
+    expect(renderedHeader.indexOf(renderedSearch)).toBeGreaterThan(-1)
   })
 
   it('should render the menu button', () => {
-    const wrapper = shallow(
+    const header = shallow(
       <Header />
     )
+    const menu = shallow(
+      <Menu />
+    )
+    const renderedHeader = header.html()
+    const renderedMenu = menu.html()
 
-    expect(wrapper.contains(<Menu />)).toEqual(true)
+    expect(renderedHeader.indexOf(renderedMenu)).toBeGreaterThan(-1)
   })
 
 })

@@ -1,63 +1,40 @@
-import React from 'react'
-import { Link } from "gatsby"
+import React, { Component } from 'react'
 import styled from 'styled-components'
-import data from "../../gatsby-data.js"
+import Menu from "./menu"
+import MenuItems from "./menuItems"
 
-const Theme = data.theme
-const MenuItems = data.navigation
+const Container = styled.span``
 
-const Container = styled.nav`
-  padding: 1em 0;
-  background-color: ${Theme.colors.darkest};
+const MenuItemsWrapper = styled.div`
+  position: absolute;
+  margin-top: 1.5rem;
+  left: 0;
+  right: 0;
 `
 
-const Item = styled.span`
-  font-family: ${Theme.fonts.navigation};
+class Navigation extends Component {
+  constructor(props) {
+    super(props)
 
-  a {
-    color: ${Theme.colors.lightest};
-    display: block;
-    text-align: right;
-    padding: .5em 2em;
-    text-decoration: none;
+    const location = props.location || window.location.pathname
+    const path = (location === "/" || !location) ? "/blog" : location
+    this.state = {
+      open: false,
+      path: path,
+    }
   }
 
-  a:hover {
-    background-color: ${Theme.colors.accentFirst};
-    color: ${Theme.colors.darkest};
+  render() {
+    console.log("navigation")
+    return (
+      <Container>
+        <Menu onClick={this.props.toggle} />
+        <MenuItemsWrapper>
+          <MenuItems path={this.state.path} open={this.state.open} />
+        </MenuItemsWrapper>
+      </Container>
+    )
   }
-`
-
-const ActiveItem = styled(Item)`
-  a {
-    background-color: ${Theme.colors.accentSecond};
-    color: ${Theme.colors.lightest};
-  }
-`
-
-const LinkedItem = ({ item, className }) => {
-  if (item.external)
-    return <Item><a href={item.to}>{item.name}</a></Item>
-
-  if (className === "active")
-    return <ActiveItem><Link to={item.to}>{item.name}</Link></ActiveItem>
-    return <Item><Link to={item.to}>{item.name}</Link></Item>
-}
-
-const Items = ({ path }) => {
-  return MenuItems.map((item) => {
-    const key = item.name.replace(/ /g, "")
-    const className = (path === item.to) ? "active": "";
-    return <LinkedItem key={key} item={item} className={className} />
-  })
-}
-
-const Navigation = ({ path }) => {
-  return (
-    <Container>
-      <Items path={path} />
-    </Container>
-  )
 }
 
 export default Navigation

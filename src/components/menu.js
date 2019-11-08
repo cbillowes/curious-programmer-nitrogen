@@ -37,9 +37,9 @@ const Icon = styled(FontAwesomeIcon)`
 `
 
 
-const Menu = ({ className }) => {
+const Menu = () => {
   return (
-    <Container className={className}>
+    <Container>
       <Icon icon={faEllipsisV} />
     </Container>
   )

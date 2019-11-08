@@ -1,7 +1,6 @@
 import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-
 import Constants from './const'
 import Search from '../search'
 
@@ -22,7 +21,7 @@ describe('Search', () => {
       <Search />
     )
 
-    expect(wrapper.contains(`fa-searchalsdjf2`))
+    expect(wrapper.contains(`${Constants.SEARCH_ICON_CLASS}`))
   })
 
 })
