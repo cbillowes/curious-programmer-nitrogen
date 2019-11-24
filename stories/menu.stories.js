@@ -4,5 +4,5 @@ import Menu from '../src/components/menu'
 import '../src/components/layout.css'
 
 storiesOf('Menu', module)
-  .add('default', () => <Menu />)
-  .add('active', () => <Menu className="active" />)
+  .add('default', () => <Menu isOpen={false} />)
+  .add('active', () => <Menu isOpen={true} />)

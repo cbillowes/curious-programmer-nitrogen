@@ -25,27 +25,35 @@ const Wrapper = styled.div`
   align-items: center;
 `
 
-function Header () {
-
-  function toggleSearch(e) {
-    e.preventDefault()
-    console.log('Search')
-  }
-  
-  function toggleNavigation(e) {
-    e.preventDefault()
-    this.open = true
+class Header extends Component {
+  constructor(props) {
+    super(props)
+    this.state = {
+      isMenuOpen: false
+    }
   }
 
-  return (
-    <Container>
-      <Wrapper>
-        <Logo />
-        <Search onClick={toggleSearch} />
-        <Navigation onClick={toggleNavigation} />
-      </Wrapper>
-    </Container>
-  )
+  toggleSearch(e) {
+    e.preventDefault()
+    console.log("Search")
+  }
+
+  toggleNavigation = (e) => {
+    e.preventDefault()
+    this.setState({isMenuOpen: !this.state.isMenuOpen})
+  }
+
+  render() {
+    return (
+      <Container>
+        <Wrapper>
+          <Logo />
+          <Search toggleOnClick={this.toggleSearch.bind(this)} />
+          <Navigation toggleOnClick={this.toggleNavigation.bind(this)} isOpen={this.state.isMenuOpen} />
+        </Wrapper>
+      </Container>
+    )
+  }
 }
 
 export default Header

@@ -36,9 +36,9 @@ const Icon = styled(FontAwesomeIcon)`
   display: inline-block;
 `
 
-const Search = ({onClick}) => {
+const Search = ({toggleOnClick}) => {
   return (
-    <Container onClick={onClick}>
+    <Container onClick={toggleOnClick}>
       <Icon icon={faSearch} />
     </Container>
   )

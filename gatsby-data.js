@@ -12,7 +12,7 @@ module.exports = {
     buttons: {
       hover: "#202528",
       active: {
-        color: "#202528",
+        static: "#c6c91c",
         hover: "#202528",
       },
     },

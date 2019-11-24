@@ -22,7 +22,7 @@ const Container = styled.span`
   }
 
   &.active {
-    background-color: ${buttons.active.color};
+    background-color: ${buttons.active.static};
   }
 
   &.active:hover {
@@ -36,11 +36,10 @@ const Icon = styled(FontAwesomeIcon)`
   display: inline-block;
 `
 
-
-const Menu = () => {
+const Menu = ({ toggleOnClick, isOpen }) => {
   return (
-    <Container>
-      <Icon icon={faEllipsisV} />
+    <Container onClick={toggleOnClick} className={(isOpen) ? `active`: ``}>
+      <Icon icon={faEllipsisV}/>
     </Container>
   )
 }

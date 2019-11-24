@@ -27,17 +27,6 @@ const Container = styled.nav`
 `
 
 class Navigation extends Component {
-  constructor(props) {
-    super(props)
-
-    const { path, open } = this.props
-    const pathname = this.getPathname(path)
-    this.state = {
-      path: pathname,
-      open: open
-    }
-  }
-
   getPathname(path) {
     const rootPath = `/`
     const defaultPath = Nav[0].to
@@ -45,16 +34,16 @@ class Navigation extends Component {
     return pathname === rootPath || !pathname ? defaultPath: pathname 
   }
 
-  getVisibilityClassName() {
-    return this.state.open ? `open` : `closed`
+  getVisibilityClassName(open) {
+    return open ? `open` : `closed`
   }
 
-  render() {
+  render() { 
     return (
       <>
-        <Menu />
-        <Container className={this.getVisibilityClassName()}>
-          <MenuItems path={this.state.path} />
+        <Menu toggleOnClick={this.props.toggleOnClick} isOpen={this.props.isOpen} />
+        <Container className={this.getVisibilityClassName(this.props.isOpen)}>
+          <MenuItems path={this.getPathname(this.props.path)} />
         </Container>
       </>
     )
