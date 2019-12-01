@@ -14,3 +14,8 @@ export function containsElement(parentElement, childElement) {
   const renderedChild = childWrapper.html()
   return renderedParent.indexOf(renderedChild) > -1
 }
+
+export function componentTranslatesTo(component, element) {
+    const wrapper = shallow(component)
+    return wrapper.contains(element)
+}
