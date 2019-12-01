@@ -11,27 +11,27 @@ Enzyme.configure({ adapter: new Adapter() })
 
 describe("Navigation", () => {
   it('should open the navigation bar', () => {
-    const wrapper = shallow(<Navigation open={true} />)
+    const wrapper = shallow(<Navigation isOpen={true} />)
     const rendered = wrapper.html()
     const expected = `<nav class="open `
     expect(rendered.indexOf(expected)).toBeGreaterThan(-1)
   })
 
   it('should close the navigation bar', () => {
-    const wrapper = shallow(<Navigation open={false} />)
+    const wrapper = shallow(<Navigation isOpen={false} />)
     const rendered = wrapper.html()
     const expected = `<nav class="closed `
     expect(rendered.indexOf(expected)).toBeGreaterThan(-1)
   })
 
-  it("should render root pathname with first item in Navigation data", () => {
-    const rendered = shallow(<Navigation open={true} path="/" />)
-    const state = rendered.state()
-    const expected = { open: true, path: Nav.to }
-    expect(state).toStrictEqual(expected)
+  it("should set active item", () => {
+    const wrapper = shallow(<Navigation path="/about" />)
+    const rendered = wrapper.html()
+    const expected = `<span class="${Constants.SELECTED_MENU_ITEM_CLASS}"><a href="/about">About</a></span>`
+    expect(rendered.indexOf(expected)).toBeGreaterThan(-1)
   })
 
-  it("should render an active item", () => {
+  it("should activate /blog for /", () => {
     const wrapper = shallow(<Navigation path="/" />)
     const rendered = wrapper.html()
     const expected = `<span class="${Constants.SELECTED_MENU_ITEM_CLASS}"><a href="/blog">Blog</a></span>`
