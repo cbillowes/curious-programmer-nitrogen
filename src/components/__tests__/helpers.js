@@ -1,7 +1,13 @@
 import { shallow } from "enzyme"
 
-export function containsValue(element, value) {
-  const wrapper = shallow(element)
+export function elementStartsWith(component, value) {
+  const wrapper = shallow(component)
+  const rendered = wrapper.html()
+  return rendered.startsWith(value)
+}
+
+export function containsValue(component, value) {
+  const wrapper = shallow(component)
   const rendered = wrapper.html()
   const contains = rendered.indexOf(value)
   return contains > -1
