@@ -22,6 +22,12 @@ export function containsElement(parentElement, childElement) {
 }
 
 export function componentTranslatesTo(component, element) {
-    const wrapper = shallow(component)
-    return wrapper.contains(element)
+  const wrapper = shallow(component)
+  return wrapper.contains(element)
+}
+
+export function getState(component, expectedState) {
+  const wrapper = shallow(component)
+  const state = wrapper.state()
+  return state
 }
