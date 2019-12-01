@@ -12,7 +12,7 @@ describe('Search', () => {
   it('should render the search icon', () => {
     const contains = containsValue(
       <Search />, 
-      `${Constants.SEARCH_ICON_CLASS}`
+      `${Constants.SEARCH_ICON_CLASS}`,
     )
     expect(contains).toBe(true)
   })
@@ -20,7 +20,7 @@ describe('Search', () => {
   it('should activate the search when open', () => {
     const contains = containsValue(
       <Search isOpen={true} />,
-      `active`
+      `active`,
     )
     expect(contains).toBe(true)
   })
@@ -28,7 +28,7 @@ describe('Search', () => {
   it('should not activate the search when closed', () => {
     const contains = containsValue(
       <Search />,
-      `active`
+      `active`,
     )
     expect(contains).toBe(false)
   })

@@ -12,7 +12,7 @@ describe('Menu', () => {
   it('should render the menu icon', () => {
     const contains = containsValue(
       <Menu />, 
-      `${Constants.MENU_ICON_CLASS}`
+      `${Constants.MENU_ICON_CLASS}`,
     )
     expect(contains).toBe(true)
   })
@@ -20,7 +20,7 @@ describe('Menu', () => {
   it('should activate the menu when open', () => {
     const contains = containsValue(
       <Menu isOpen={true} />,
-      `active`
+      `active`,
     )
     expect(contains).toBe(true)
   })
@@ -28,7 +28,7 @@ describe('Menu', () => {
   it('should not activate the menu when closed', () => {
     const contains = containsValue(
       <Menu />,
-      `active`
+      `active`,
     )
     expect(contains).toBe(false)
   })
