@@ -5,4 +5,4 @@ import '../src/components/layout.css'
 
 storiesOf('Search', module)
   .add('default', () => <Search />)
-  .add('active', () => <Search className="active" />)
+  .add('active', () => <Search isOpen={true} />)
