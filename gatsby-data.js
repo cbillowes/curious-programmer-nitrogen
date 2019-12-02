@@ -1,8 +1,8 @@
 module.exports = {
   theme: {
     colors: {
-      darkest: "#141719",
-      dark: "#181c1f",
+      darkest: "#181c1f",
+      dark: "#282e33",
       accentFirst: "#c6c91c",
       accentSecond: "#097acf",
       accentThird: "#9a9c16",
@@ -21,6 +21,7 @@ module.exports = {
       button: "Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
       text: "Crimson Text,Times New Roman,serif",
       navigation: "Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
+      results: "Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
     },
     transitions: {
       transition: ".3s",

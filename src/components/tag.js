@@ -41,11 +41,13 @@ const TagElement = styled.span`
   margin: .25em;
   text-decoration: none;
   display: inline-block;
+  cursor: default;
 `
 
 const DisabledElement = styled(TagElement)`
   color: ${colors.dark};
   background-color: ${colors.light};
+  cursor: default;
 `
 
 const Bare = ({ title }) => {
@@ -70,18 +72,23 @@ const Disabled = ({ title }) => {
   )
 }
 
-function Tag ({ tag, slug, disabled }) {
+function Tag ({ tag, slug, disabled, readonly }) {
   if (!tag) throw("tag is required")
+  if (!slug) slug = `/tag/${tag.toLowerCase().replace(/ /g, "-")}`
 
+  console.log(slug)
   const title = tag.toLowerCase()
 
-  if (slug)
-    return (<Linked title={title} slug={slug} />)
+  if (readonly)
+    return <Bare title={title} />
 
   if (disabled)
-    return (<Disabled title={title} />)
+    return <Disabled title={title} />
 
-  return (<Bare title={title} />)
+  if (slug)
+    return <Linked title={title} slug={slug} />
+
+  return <></>
 }
 
 export default Tag
