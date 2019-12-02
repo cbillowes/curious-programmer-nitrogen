@@ -4,9 +4,6 @@ import Adapter from 'enzyme-adapter-react-16'
 import { containsValue } from './helpers'
 import Constants from './const'
 import Navigation from '../navigation'
-import Data from '../../../gatsby-data'
-
-const Nav = Data.navigation[0]
 
 Enzyme.configure({ adapter: new Adapter() })
 
