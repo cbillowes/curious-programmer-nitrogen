@@ -76,7 +76,6 @@ function Tag ({ tag, slug, disabled, readonly }) {
   if (!tag) throw("tag is required")
   if (!slug) slug = `/tag/${tag.toLowerCase().replace(/ /g, "-")}`
 
-  console.log(slug)
   const title = tag.toLowerCase()
 
   if (readonly)

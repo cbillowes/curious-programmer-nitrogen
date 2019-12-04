@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import Logo from "./logo"
-import Search from "./search"
+import SearchBar from "./searchBar"
 import Navigation from "./navigation"
 import data from "../../gatsby-data.js"
 
@@ -29,18 +29,25 @@ class Header extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      isMenuOpen: false
+      isMenuOpen: this.props.isMenuOpen ? this.props.isMenuOpen : false,
+      isSearchOpen: this.props.isSearchOpen ? this.props.isSearchOpen : false,
     }
   }
 
   toggleSearch(e) {
     e.preventDefault()
-    console.log("Search")
+    this.setState({
+      isSearchOpen: !this.state.isSearchOpen,
+      isMenuOpen: false,
+    })
   }
 
   toggleNavigation = (e) => {
     e.preventDefault()
-    this.setState({isMenuOpen: !this.state.isMenuOpen})
+    this.setState({
+      isMenuOpen: !this.state.isMenuOpen,
+      isSearchOpen: false,
+    })
   }
 
   render() {
@@ -48,7 +55,7 @@ class Header extends Component {
       <Container>
         <Wrapper>
           <Logo />
-          <Search toggleOnClick={this.toggleSearch.bind(this)} />
+          <SearchBar toggleOnClick={this.toggleSearch.bind(this)} isOpen={this.state.isSearchOpen} />
           <Navigation toggleOnClick={this.toggleNavigation.bind(this)} isOpen={this.state.isMenuOpen} />
         </Wrapper>
       </Container>

@@ -14,6 +14,7 @@ const Container = styled.nav`
   margin-top: 1.5rem;
   left: 0;
   right: 0;
+  height: 100vh;
 
   &.open {
     transform: translateX(0);
