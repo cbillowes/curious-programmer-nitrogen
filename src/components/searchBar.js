@@ -1,10 +1,8 @@
 import React, { Component } from "react"
-import Link from "gatsby-link"
 import styled from "styled-components"
 import Search from "./search"
 import Tag from "./tag"
 import Data from "../../gatsby-data"
-import { string } from "prop-types"
 
 const Theme = Data.theme
 
@@ -16,6 +14,7 @@ const Container = styled.section`
   right: 0;
   bottom: 0;
   height: 100vh;
+  overflow: scroll;
 
   &.open {
     transform: translateX(0%);
@@ -49,10 +48,11 @@ const Text = styled.input`
 const Results = styled.ul`
   list-style: none;
   margin: 0;
-  padding: 1.5rem;
+  padding: 1.5rem 0 1.5rem 1.5rem;
 
   li {
-    padding: .5rem;
+    padding: .5rem 0 .5rem .5rem;
+    margin: 0;
     font-family: ${Theme.fonts.results};
     color: ${Theme.colors.light};
   }
@@ -130,17 +130,18 @@ class SearchBar extends Component {
     const timeout = 10000
     const query = this.state.query
     const text = `${encodeURIComponent(query)}`
-    const domain = `https://curiousprogrammer.tk`
-    const endpoint = `${domain}/?q=text:${text}&fl=url,title&rows=20&wt=json`
+    const domain = `https://rocket.curiousprogrammer.dev/search/oxygen/query`
+    const endpoint = `${domain}/?q=post:${text}&fl=url,title&wt=json`
     
     this.promise(timeout, 
       fetch(endpoint)
-        .then((result) => result.json)
-        .then((result) => {
+        .then(result => result.json())
+        .then(result => {
           const results = (result.response) ? result.response.docs : []
           this.setState({
             results: results,
             status: `searched`,
+            query: ``,
             searching: ``,
             message: ``,
           })
@@ -158,7 +159,7 @@ class SearchBar extends Component {
     if (canSearch && (isEnter || autoSearch)) {
       this.setState({ 
         status: `searching`,
-        message: `Gathering data...`
+        message: `Gathering data...`,
       })
       this.performSearch()
     }
@@ -200,7 +201,9 @@ class SearchBar extends Component {
 
     if (!results) return <></>
     return results.map(function(result) {
-      return <li><Link to={result.to}>{result.text}</Link></li>
+      const title = result.title[0]
+      const url = result.url[0]
+      return <li><a href={url}>{title.replace(/\| Curious Programmer/gi, "")}</a></li>
     })
   }
 
@@ -237,6 +240,7 @@ class SearchBar extends Component {
         <Search toggleOnClick={this.props.toggleOnClick} isOpen={this.props.isOpen} />
         <Container className={this.visibilityClassName(this.props.isOpen)}>
           <Text 
+            ref="searchBar"
             placeholder="What are you looking for?" 
             onKeyUp={(e) => this.search(e)} 
             onKeyDown={(e) => this.cull(e)} 
