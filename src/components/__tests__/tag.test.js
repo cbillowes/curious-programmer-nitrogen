@@ -7,6 +7,13 @@ import Tag from '../tag'
 
 Enzyme.configure({ adapter: new Adapter() })
 
+function sut(props) {
+  return <Tag 
+            tag={props.tag} 
+            slug={props.slug}
+            disabled={props.disabled} />
+}
+
 describe('Tag', () => {
 
   it('needs a tag to render', () => {
@@ -15,10 +22,10 @@ describe('Tag', () => {
 
   it('should render clickable when a slug is provided', () => {
     const validation = validateValues(
-      <Tag 
-        tag="hello world" 
-        slug="/tags/hello-world"
-      />,
+      sut({
+        tag: "hello world",
+        slug: "/tags/hello-world",
+      }),
       [
         {contains: false, value: `data-disabled="true"`},
         {contains: true, value: `href="/tags/hello-world"`},
@@ -30,10 +37,10 @@ describe('Tag', () => {
 
   it('should display the tag in lowercase', () => {
     const validation = validateValues(
-      <Tag 
-        tag="HELLO GALAXY"
-        slug="/tags/hello-galaxy"
-      />,
+      sut({
+        tag: "HELLO GALAXY",
+        slug: "/tags/hello-galaxy",
+      }),
       [
         {contains: false, value: `data-disabled="true"`},
         {contains: true, value: `href="/tags/hello-galaxy"`},
@@ -45,9 +52,9 @@ describe('Tag', () => {
 
   it('should render as bare when no slug is provided', () => {
     const validation = validateValues(
-      <Tag 
-        tag="hello universe"
-      />,
+      sut({
+        tag: "hello universe",
+      }),
       [
         {contains: false, value: `data-disabled="true"`},
         {contains: false, value: `href`},
@@ -59,10 +66,10 @@ describe('Tag', () => {
 
   it('should render as disabled when told to do so', () => {
     const validation = validateValues(
-      <Tag 
-        tag="hello multiverse"
-        disabled="true"
-      />,
+      sut({
+        tag: "hello multiverse",
+        disabled: "true",
+      }),
       [
         {contains: false, value: `href`},
         {contains: true, value: `hello multiverse`},

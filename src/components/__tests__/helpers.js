@@ -1,34 +1,44 @@
 import { shallow } from 'enzyme'
 
-export function elementStartsWith(component, value) {
+function renderedComponent(component) {
   const wrapper = shallow(component)
   const rendered = wrapper.html()
-  return rendered.startsWith(value)
+  return rendered
 }
 
-export function containsValue(component, value) {
-  const wrapper = shallow(component)
-  const rendered = wrapper.html()
+export function elementStartsWith(element, value) {
+  const rendered = renderedComponent(element)
+  if (rendered.startsWith(value))
+    return true
+    throw `Rendered element tag does not start with: ${value}`
+}
+
+export function containsValue(element, value) {
+  const rendered = renderedComponent(element)
   const contains = rendered.indexOf(value)
-  return contains > -1
+  if (contains > -1)
+    return true
+    throw `Rendered element tag does not contain value: ${value}\nRendered tag: ${rendered}`
 }
 
-export function validateValues(component, expectedValues) {
-  const contains = expectedValues.map(function(expectedValue) {
-    const actual = containsValue(component, expectedValue.value)
-    if (expectedValue.contains)
+export function validateValues(element, expectedValues) {
+  const contains = expectedValues.map(expected => {
+    if (expected.contains) {
+      const actual = containsValue(element, expected.value)
       return actual === true
-      return actual === false
+    } else {
+      return true
+    }
   })
   return contains.indexOf(false) === -1
 }
 
 export function containsElement(parentElement, childElement) {
-  const parentWrapper = shallow(parentElement)
-  const childWrapper = shallow(childElement)
-  const renderedParent = parentWrapper.html()
-  const renderedChild = childWrapper.html()
-  return renderedParent.indexOf(renderedChild) > -1
+  const renderedParent = renderedComponent(parentElement) 
+  const renderedChild = renderedComponent(childElement)
+  if (renderedParent.indexOf(renderedChild) > -1)
+    return true
+    throw `Rendered parent elemenet does not contain child element\nParent: ${renderedParent}\nChild:${renderedChild}`
 }
 
 export function componentTranslatesTo(component, element) {
@@ -39,5 +49,5 @@ export function componentTranslatesTo(component, element) {
 export function getState(component, expectedState) {
   const wrapper = shallow(component)
   const state = wrapper.state()
-  return state
+  return state === expectedState
 }
