@@ -7,26 +7,30 @@ import Navigation from '../navigation'
 
 Enzyme.configure({ adapter: new Adapter() })
 
+function sut(isOpen, path) {
+  return <Navigation isOpen={isOpen} path={path} />
+}
+
 describe('Navigation', () => {
   it('should open the navigation bar', () => {
     const contains = containsValue(
-      <Navigation isOpen={true} />,
-      `<nav class="open `,
+      sut(true, "/"),
+      `<nav class="${Constants.NAVIGATION_CLASS} open`,
     )
     expect(contains).toBe(true)
   })
 
   it('should close the navigation bar', () => {
     const contains = containsValue(
-      <Navigation isOpen={false} />,
-      `<nav class="closed `,
+      sut(false, "/"),
+      `<nav class="${Constants.NAVIGATION_CLASS} closed`,
     )
     expect(contains).toBe(true)
   })
 
   it('should set active item', () => {
     const contains = containsValue(
-      <Navigation path="/about" />,
+      sut(true, "/about"),
       `<span class="${Constants.SELECTED_MENU_ITEM_CLASS}"><a href="/about">About</a></span>`, 
     )
     expect(contains).toBe(true)
@@ -34,7 +38,7 @@ describe('Navigation', () => {
 
   it('should activate /blog for /', () => {
     const contains = containsValue(
-      <Navigation path="/" />,
+      sut(true, "/"),
       `<span class="${Constants.SELECTED_MENU_ITEM_CLASS}"><a href="/blog">Blog</a></span>`, 
     )
     expect(contains).toBe(true)
