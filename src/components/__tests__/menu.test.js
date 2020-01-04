@@ -26,10 +26,16 @@ describe('Menu', () => {
   })
 
   it('should not activate the menu when closed', () => {
-    const contains = containsValue(
-      <Menu />,
-      `active`,
-    )
+    let contains
+    try {
+      containsValue(
+        <Menu />,
+        `active`,
+      )
+      contains = true
+    } catch(e) {
+      contains = false
+    }
     expect(contains).toBe(false)
   })
 
