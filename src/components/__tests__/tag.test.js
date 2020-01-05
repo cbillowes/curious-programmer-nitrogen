@@ -11,7 +11,8 @@ function sut(props) {
   return <Tag 
             tag={props.tag} 
             slug={props.slug}
-            disabled={props.disabled} />
+            disabled={props.disabled} 
+          />
 }
 
 describe('Tag', () => {

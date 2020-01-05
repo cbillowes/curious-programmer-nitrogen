@@ -1,5 +1,12 @@
 import { shallow } from 'enzyme'
 
+class ValidationException {
+  constructor(type, message) {
+    this.type = type
+    this.message = message
+  }
+}
+
 function renderedComponent(component) {
   const wrapper = shallow(component)
   const rendered = wrapper.html()
@@ -10,7 +17,9 @@ export function elementStartsWith(element, value) {
   const rendered = renderedComponent(element)
   if (rendered.startsWith(value))
     return true
-    throw `Rendered element tag does not start with: ${value}`
+    throw new ValidationException(
+      `ElementStartsWith`, 
+      `Rendered element tag does not start with: ${value}`)
 }
 
 export function containsValue(element, value) {
@@ -18,7 +27,24 @@ export function containsValue(element, value) {
   const contains = rendered.indexOf(value)
   if (contains > -1)
     return true
-    throw `Rendered element tag does not contain value: ${value}\nRendered tag: ${rendered}`
+    throw new ValidationException(
+      `ElementDoesNotContainValue`,
+      `Rendered element tag does not contain value: ${value}\n\nRendered tag: ${rendered}`
+    )
+}
+
+export function doesNotContainValue(element, value) {
+   try {
+     containsValue(element, value)
+     throw new ValidationException(
+       `ElementContainsValue`,
+       `Rendered element tag contains value: ${value}\n\nRendered tag: ${renderedComponent(element)}`
+     )
+   } catch(e) {
+     if (e.type === `ElementContainsValue`)
+       throw e
+     return true
+   }
 }
 
 export function validateValues(element, expectedValues) {
@@ -38,7 +64,7 @@ export function containsElement(parentElement, childElement) {
   const renderedChild = renderedComponent(childElement)
   if (renderedParent.indexOf(renderedChild) > -1)
     return true
-    throw `Rendered parent elemenet does not contain child element\nParent: ${renderedParent}\nChild:${renderedChild}`
+    throw `Rendered parent elemenet does not contain child element\n\nParent: ${renderedParent}\nChild:${renderedChild}`
 }
 
 export function componentTranslatesTo(component, element) {
@@ -46,8 +72,8 @@ export function componentTranslatesTo(component, element) {
   return wrapper.contains(element)
 }
 
-export function getState(component, expectedState) {
+export function getState(component) {
   const wrapper = shallow(component)
   const state = wrapper.state()
-  return state === expectedState
+  return state
 }

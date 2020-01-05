@@ -1,7 +1,7 @@
-import { Link } from "gatsby"
-import React from "react"
-import styled from "styled-components"
-import data from "../../gatsby-data.js"
+import { Link } from 'gatsby'
+import React from 'react'
+import styled from 'styled-components'
+import data from '../../gatsby-data.js'
 
 const fonts = data.theme.fonts
 const colors = data.theme.colors

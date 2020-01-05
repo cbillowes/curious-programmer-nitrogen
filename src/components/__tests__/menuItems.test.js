@@ -9,10 +9,18 @@ const Nav = Data.navigation
 
 Enzyme.configure({ adapter: new Adapter() })
 
+function sut(props) {
+  return <MenuItems
+           path={props.path}
+         />
+}
+
 describe('Menu items', () => {
   it('should render an item', () => {
     const state = getState(
-      <MenuItems path='/blog' />,
+      sut({
+        path: `/blog`,
+      })
     )
     expect(state).toStrictEqual({ path: `/blog` })
   })
@@ -20,7 +28,7 @@ describe('Menu items', () => {
   it('should contain the navigation items', () => {
     Nav.map(function(item) {
       const contains = containsValue(
-        <MenuItems />,
+        sut({}),
         `<a href="${item.to}">${item.name}</a>`,
       )
       expect(contains).toBe(true)
