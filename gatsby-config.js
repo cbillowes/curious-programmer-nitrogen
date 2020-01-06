@@ -1,12 +1,21 @@
 module.exports = {
   siteMetadata: {
     title: `Curious Programmer`,
+    siteUrl: `https://curiousprogrammer.dev`,
     description: `A curious place for a curious mind.`,
     author: `@cbillowes`,
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-
+    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://curiousprogrammer.dev',
+        sitemap: 'https://curiousprogrammer.dev/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
     {
       resolve: `gatsby-source-filesystem`,
       options: {
