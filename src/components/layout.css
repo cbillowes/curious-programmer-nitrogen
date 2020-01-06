@@ -1,9 +1,17 @@
 @import url("//fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Open+Sans:400,800");
 
+html {
+  margin: 0;
+  padding: 0;
+}
+
 body {
   margin: 0;
   padding: 0;
+  background-color: #1f2227;
+  color: #bfcbd2;
   font-family: 'Crimson Text', 'Times New Roman', Times, serif;
+  font-size: 16pt;
 }
 
 h1,

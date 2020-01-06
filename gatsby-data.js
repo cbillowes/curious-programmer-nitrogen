@@ -2,7 +2,7 @@ module.exports = {
   theme: {
     colors: {
       darkest: "#181c1f",
-      dark: "#282e33",
+      dark: "#1f2227",
       accentFirst: "#c6c91c",
       accentSecond: "#097acf",
       accentThird: "#9a9c16",
