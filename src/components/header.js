@@ -14,6 +14,7 @@ const Container = styled.header`
   position: fixed;
   right: 0;
   left: 0;
+  top: 0;
 `
 
 const Wrapper = styled.div`
