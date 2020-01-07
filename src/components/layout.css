@@ -24,3 +24,7 @@ h4 {
   line-height: 1.75em;
   color: #bfcbd2;
 }
+
+.page-container {
+  padding-top: 125px;
+}
