@@ -72,19 +72,19 @@ const Disabled = ({ children }) => {
   )
 }
 
-function Tag ({ tag, slug, disabled, readonly }) {
-  if (!tag) throw("tag is required")
-  if (!slug) slug = `/tag/${tag.toLowerCase().replace(/ /g, "-")}`
+function Tag ({ title, slug, disabled, readonly }) {
+  if (!title) throw(`title for the tag is required`)
+  if (!slug) slug = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
 
-  const title = tag.toLowerCase()
+  const lowerTitle = title.toLowerCase()
 
   if (readonly)
-    return <Bare>{title}</Bare>
+    return <Bare>{lowerTitle}</Bare>
 
   if (disabled)
-    return <Disabled>{title}</Disabled>
+    return <Disabled>{lowerTitle}</Disabled>
 
-  return <Linked to={slug}>{title}</Linked>
+  return <Linked to={slug}>{lowerTitle}</Linked>
 }
 
 export { Bare, Linked, Disabled, Tag }

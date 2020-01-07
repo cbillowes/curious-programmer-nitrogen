@@ -9,7 +9,7 @@ Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
   return <Tag 
-            tag={props.tag} 
+            title={props.tag} 
             slug={props.slug}
             disabled={props.disabled} 
             readonly={props.readonly}

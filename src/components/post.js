@@ -16,7 +16,7 @@ function Post({ title, metadata, tags, post }) {
       />
       <div>
         {(tags || []).map(tag => {
-          return <Tag key={tag.name} tag={tag.name} slug={tag.slug} />
+          return <Tag key={tag.name} title={tag.name} slug={tag.slug} />
         })}
       </div>
       <div>

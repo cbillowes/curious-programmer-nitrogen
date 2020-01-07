@@ -5,7 +5,7 @@ const Credit = ({ to, title, children }) => {
   return (
     <p>
       <Bare title={title}></Bare>
-      <Tag tag={title} slug={to}></Tag>
+      <Tag title={title} slug={to}></Tag>
       {children}
     </p>
   )

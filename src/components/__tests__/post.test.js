@@ -67,8 +67,8 @@ describe('Post', () => {
         ]
       }),
       <div>
-        <Tag tag="hello" slug="/hello" />
-        <Tag tag="world" slug="/world" />
+        <Tag title="hello" slug="/hello" />
+        <Tag title="world" slug="/world" />
       </div>
     )
     expect(contains).toBe(true)
