@@ -50,13 +50,13 @@ const DisabledElement = styled(TagElement)`
   cursor: default;
 `
 
-const Bare = ({ title }) => {
+export const Bare = ({ title }) => {
   return (
     <TagElement>{title}</TagElement>
   )
 }
 
-const Linked = ({ title, slug }) => {
+export const Linked = ({ title, slug }) => {
   return (
     <AnchorElement to={slug}>
       <Bare title={title} />
@@ -64,7 +64,7 @@ const Linked = ({ title, slug }) => {
   )
 }
 
-const Disabled = ({ title }) => {
+export const Disabled = ({ title }) => {
   return (
     <DisabledElement data-disabled="true">
       {title}
@@ -72,7 +72,7 @@ const Disabled = ({ title }) => {
   )
 }
 
-function Tag ({ tag, slug, disabled, readonly }) {
+export function Tag ({ tag, slug, disabled, readonly }) {
   if (!tag) throw("tag is required")
   if (!slug) slug = `/tag/${tag.toLowerCase().replace(/ /g, "-")}`
 
@@ -89,5 +89,3 @@ function Tag ({ tag, slug, disabled, readonly }) {
 
   return <></>
 }
-
-export default Tag
