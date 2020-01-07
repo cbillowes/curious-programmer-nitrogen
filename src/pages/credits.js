@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import H1 from "../components/h1"
+import { H1, H2 } from "../components/heading"
 import Credit from "../components/credit"
 import ExternalLink from "../components/externalLink"
 
@@ -11,42 +11,52 @@ const CreditsPage = () => (
       Get an idea of the tech and resources I use
       to make this site look and act the way it does.
     </SEO>
+    <H1>Credits</H1>
+    
+    <div>
+      <H2>Hosting</H2>
+      <Credit 
+        to="https://www.cloudafrica.net/"
+        title="CloudAfrica"
+      >
+        hosts my cloud server which runs the Solr service to power the search 
+        on this website.
+      </Credit>
+      <Credit
+        to="https://netlify.com"
+        title="Netify"
+      >
+        hosts my website for an all-in-one workflow that combines global deployment, 
+        continuous integration and automatic HTTPS.
+      </Credit>
+    </div>
+
+    <div>
+      <H2>Code</H2>
+      <Credit
+        to="https://www.gatsbyjs.com/"
+        title="Gatsby"
+      >
+        is the super cool tech I use to generate my website. 
+        <ul>
+          <li>
+            I implemented the <ExternalLink to="https://github.com/Vagr9K/gatsby-advanced-starter">Vagr9K/gatsby-advanced-starter</ExternalLink>
+            skeleton.
+          </li>
+          <li>
+            <ExternalLink to="https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/">gatsby-remark-prismjs</ExternalLink> 
+            adds syntax highlighting to my code blocks in markdown files.
+          </li>
+        </ul>
+        
+        I use the
+        <ExternalLink to="https://github.com/Vagr9K/gatsby-advanced-starter">Vagr9K/gatsby-advanced-starter</ExternalLink> 
+        skeleton. 
+      </Credit>
+    </div>
+
+
     <div className="credits-container container">
-      <H1 title="Credits">Credits</H1>
-      <section>
-        <h2>Hosting</h2>
-        <Credit
-          to="https://www.cloudafrica.net/"
-          title="CloudAfrica"
-        >
-          My high performance cloud server which I use to power my Solr
-          search.
-        </Credit>
-        <Credit
-          to="https://netlify.com"
-          title="Netlify"
-        >
-          An all-in-one workflow that combines global deployment, continuous
-          integration, and automatic HTTPS.
-        </Credit>
-      </section>
-      <section>
-        <h2>Continuous Integration</h2>
-        <Credit
-          to="https://travis-ci.org"
-          title="Travis CI"
-        >
-          Travis CI is a hosted, distributed continuous integration service
-          used to build and test software projects hosted at GitHub.
-        </Credit>
-        <Credit
-          to="https://codeclimate.com"
-          title="Code Climate"
-        >
-          Get automated code review for test coverage, complexity,
-          duplication, security, style, and more.
-        </Credit>
-      </section>
       <section>
         <h2>Code</h2>
         <Credit to="https://www.gatsbyjs.org/" title="gatsbyjs.org">

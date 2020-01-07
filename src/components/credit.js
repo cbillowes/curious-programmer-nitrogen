@@ -1,13 +1,16 @@
 import React from "react"
-import { Tag, Bare } from "../components/tag"
+import { Linked } from "../components/tag"
 
 const Credit = ({ to, title, children }) => {
   return (
-    <p>
-      <Bare title={title}></Bare>
-      <Tag title={title} slug={to}></Tag>
+    <div>
+      <Linked 
+        to={to}
+      >
+        {title}
+      </Linked>
       {children}
-    </p>
+    </div>
   )
 }
 

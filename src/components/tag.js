@@ -1,4 +1,3 @@
-import { Link } from 'gatsby'
 import React from 'react'
 import styled from 'styled-components'
 import data from '../../gatsby-data.js'
@@ -17,7 +16,7 @@ const transition = `
   text-decoration: none;
 `
 
-const AnchorElement = styled(Link)`
+const AnchorElement = styled.a`
   cursor: pointer;
   text-decoration: none;
   ${transition};
@@ -58,7 +57,7 @@ const Bare = ({ children }) => {
 
 const Linked = ({ to, children }) => {
   return (
-    <AnchorElement to={to}>
+    <AnchorElement href={to}>
       <Bare>{children}</Bare>
     </AnchorElement>
   )
