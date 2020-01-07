@@ -8,9 +8,11 @@ import Menu from '../menu'
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <Menu
-           isOpen={props.isOpen}
-         />
+  return (
+    <Menu
+      isOpen={props.isOpen}
+    />
+  )
 }
 
 describe('Menu', () => {

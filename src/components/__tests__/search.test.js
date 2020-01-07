@@ -8,9 +8,11 @@ import Search from '../search'
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <Search
-           isOpen={props.isOpen}
-         />
+  return (
+    <Search
+      isOpen={props.isOpen}
+    />
+  )
 }
 
 describe('Search', () => {

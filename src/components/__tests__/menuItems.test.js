@@ -10,9 +10,11 @@ const Nav = Data.navigation
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <MenuItems
-           path={props.path}
-         />
+  return (
+    <MenuItems
+      path={props.path}
+    />
+  )
 }
 
 describe('Menu items', () => {

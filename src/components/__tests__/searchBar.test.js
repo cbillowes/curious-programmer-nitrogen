@@ -8,9 +8,11 @@ import SearchBar from '../searchBar'
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <SearchBar 
-           isOpen={props.isOpen} 
-         />
+  return (
+    <SearchBar 
+      isOpen={props.isOpen} 
+    />
+  )
 }
 
 describe('Search bar', () => {

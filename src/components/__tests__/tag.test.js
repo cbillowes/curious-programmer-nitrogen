@@ -8,12 +8,14 @@ import { Tag } from '../tag'
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <Tag 
-            title={props.tag} 
-            slug={props.slug}
-            disabled={props.disabled} 
-            readonly={props.readonly}
-          />
+  return (
+    <Tag 
+      title={props.tag} 
+      slug={props.slug}
+      disabled={props.disabled} 
+      readonly={props.readonly}
+    />
+  )
 }
 
 describe('Tag', () => {

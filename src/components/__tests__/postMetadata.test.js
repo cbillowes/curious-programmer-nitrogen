@@ -7,12 +7,14 @@ import PostMetadata from '../postMetadata'
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <PostMetadata 
-           moment={props.moment}
-           date={props.date}
-           author={props.author}
-           ttr={props.ttr}
-         />
+  return (
+    <PostMetadata 
+      moment={props.moment}
+      date={props.date}
+      author={props.author}
+      ttr={props.ttr}
+    />
+  )
 }
 
 describe('Post', () => {

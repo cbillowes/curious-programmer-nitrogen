@@ -8,10 +8,12 @@ import Navigation from '../navigation'
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <Navigation 
-            isOpen={props.isOpen} 
-            path={props.path} 
-         />
+  return (
+    <Navigation 
+      isOpen={props.isOpen} 
+      path={props.path} 
+    />
+  )
 }
 
 describe('Navigation', () => {
