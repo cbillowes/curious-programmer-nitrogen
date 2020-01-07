@@ -5,17 +5,19 @@ import { containsElement } from './helpers'
 import Post from '../post'
 import H1 from '../h1'
 import PostMetadata from '../postMetadata'
-import Tag from '../tag'
+import { Tag } from '../tag'
 
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  return <Post 
-           title={props.title}
-           metadata={props.metadata}
-           tags={props.tags}
-           post={props.post}
-         />
+  return (
+    <Post 
+      title={props.title}
+      metadata={props.metadata}
+      tags={props.tags}
+      post={props.post}
+    />
+  )
 }
 
 describe('Post', () => {

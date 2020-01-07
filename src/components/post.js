@@ -1,7 +1,7 @@
 import React from 'react'
 import H1 from './h1'
 import PostMetadata from './postMetadata'
-import Tag from './tag'
+import { Tag } from './tag'
 
 function Post({ title, metadata, tags, post }) {
   const {moment, date, author, ttr} = metadata || {}

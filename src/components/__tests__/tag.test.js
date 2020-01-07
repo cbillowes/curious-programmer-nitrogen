@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { validateValues } from './helpers'
 import Constants from './const'
-import Tag from '../tag'
+import { Tag } from '../tag'
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -12,6 +12,7 @@ function sut(props) {
             tag={props.tag} 
             slug={props.slug}
             disabled={props.disabled} 
+            readonly={props.readonly}
           />
 }
 
@@ -76,6 +77,21 @@ describe('Tag', () => {
         {contains: true, value: `hello multiverse`},
         {contains: true, value: `data-disabled="true"`},
       ],
+    )
+    expect(validation).toBe(true)
+  })
+
+  it('should render as readonly when told to do so', () => {
+    const validation = validateValues(
+      sut({
+        tag: "hello galaxy",
+        readonly: "true",
+      }),
+      [
+        {contains: false, value: `href`},
+        {contains: true, value: `hello galaxy`},
+        {contains: false, value: `data-disabled="true"`},
+      ]
     )
     expect(validation).toBe(true)
   })

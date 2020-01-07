@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Tag from '../src/components/tag'
+import { Tag } from '../src/components/tag'
 import '../src/components/layout.css'
 
 storiesOf('Tags', module)

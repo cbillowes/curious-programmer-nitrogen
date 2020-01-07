@@ -50,42 +50,41 @@ const DisabledElement = styled(TagElement)`
   cursor: default;
 `
 
-export const Bare = ({ title }) => {
+const Bare = ({ children }) => {
   return (
-    <TagElement>{title}</TagElement>
+    <TagElement>{children}</TagElement>
   )
 }
 
-export const Linked = ({ title, slug }) => {
+const Linked = ({ to, children }) => {
   return (
-    <AnchorElement to={slug}>
-      <Bare title={title} />
+    <AnchorElement to={to}>
+      <Bare>{children}</Bare>
     </AnchorElement>
   )
 }
 
-export const Disabled = ({ title }) => {
+const Disabled = ({ children }) => {
   return (
     <DisabledElement data-disabled="true">
-      {title}
+      {children}
     </DisabledElement>
   )
 }
 
-export function Tag ({ tag, slug, disabled, readonly }) {
+function Tag ({ tag, slug, disabled, readonly }) {
   if (!tag) throw("tag is required")
   if (!slug) slug = `/tag/${tag.toLowerCase().replace(/ /g, "-")}`
 
   const title = tag.toLowerCase()
 
   if (readonly)
-    return <Bare title={title} />
+    return <Bare>{title}</Bare>
 
   if (disabled)
-    return <Disabled title={title} />
+    return <Disabled>{title}</Disabled>
 
-  if (slug)
-    return <Linked title={title} slug={slug} />
-
-  return <></>
+  return <Linked to={slug}>{title}</Linked>
 }
+
+export { Bare, Linked, Disabled, Tag }

@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import styled from "styled-components"
 import Search from "./search"
-import Tag from "./tag"
+import { Tag } from "./tag"
 import Data from "../../gatsby-data"
 
 const Theme = Data.theme
