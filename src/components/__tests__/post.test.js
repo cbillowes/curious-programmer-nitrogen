@@ -3,7 +3,7 @@ import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsElement } from './helpers'
 import Post from '../post'
-import H1 from '../h1'
+import { H1 } from '../heading'
 import PostMetadata from '../postMetadata'
 import { Tag } from '../tag'
 
