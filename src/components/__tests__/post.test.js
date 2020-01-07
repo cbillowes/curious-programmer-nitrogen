@@ -16,7 +16,9 @@ function sut(props) {
       metadata={props.metadata}
       tags={props.tags}
       post={props.post}
-    />
+    >
+      {props.children}
+    </Post>
   )
 }
 
@@ -77,7 +79,7 @@ describe('Post', () => {
   it('should render the body', () => {
     const contains = containsElement(
       sut({
-        post: `Lorem ipsum.`,
+        children: `Lorem ipsum.`,
       }),
       <div>
         Lorem ipsum.

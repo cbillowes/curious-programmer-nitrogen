@@ -3,7 +3,7 @@ import H1 from './h1'
 import PostMetadata from './postMetadata'
 import { Tag } from './tag'
 
-function Post({ title, metadata, tags, post }) {
+function Post({ title, metadata, tags, children }) {
   const {moment, date, author, ttr} = metadata || {}
   return (
     <article>
@@ -20,7 +20,7 @@ function Post({ title, metadata, tags, post }) {
         })}
       </div>
       <div>
-        {post}
+        {children}
       </div>
     </article>
   )

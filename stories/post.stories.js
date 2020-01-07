@@ -27,5 +27,6 @@ storiesOf('Post', module)
       title="Hello World"
       metadata={metadata}
       tags={tags}
-      post="Lorem ipsum." 
-    />)
+    >
+      Lorem Ipsum.
+    </Post>)
