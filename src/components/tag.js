@@ -1,5 +1,7 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from 'gatsby'
+import { ExternalLink } from '../components/link'
 import data from '../../gatsby-data.js'
 
 const fonts = data.theme.fonts
@@ -16,12 +18,26 @@ const transition = `
   text-decoration: none;
 `
 
-const AnchorElement = styled.a`
+const AnchorElement = styled(Link)`
   cursor: pointer;
   text-decoration: none;
   ${transition};
 
   :hover span {
+    cursor: pointer;
+    background-color: ${colors.accentSecond};
+    ${transition};
+    color: ${colors.light};
+  }
+`
+
+const ExternalAnchorElement = styled(ExternalLink)`
+  cursor: pointer;
+  text-decoration: none;
+  ${transition};
+
+  :hover span {
+    cursor: pointer;
     background-color: ${colors.accentSecond};
     ${transition};
     color: ${colors.light};
@@ -57,9 +73,17 @@ const Bare = ({ children }) => {
 
 const Linked = ({ to, children }) => {
   return (
-    <AnchorElement href={to}>
+    <AnchorElement to={to}>
       <Bare>{children}</Bare>
     </AnchorElement>
+  )
+}
+
+const External = ({ to, children }) => {
+  return (
+    <ExternalAnchorElement href={to}>
+      <Bare>{children}</Bare>
+    </ExternalAnchorElement>
   )
 }
 
@@ -86,4 +110,4 @@ function Tag ({ title, slug, disabled, readonly }) {
   return <Linked to={slug}>{lowerTitle}</Linked>
 }
 
-export { Bare, Linked, Disabled, Tag }
+export { Bare, Linked, External, Disabled, Tag }

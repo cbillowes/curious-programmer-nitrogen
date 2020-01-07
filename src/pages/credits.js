@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { H1, H2 } from "../components/heading"
 import Credit from "../components/credit"
-import ExternalLink from "../components/externalLink"
+import { StyledExternalLink } from "../components/link"
 
 const CreditsPage = () => (
   <Layout>
@@ -40,17 +40,17 @@ const CreditsPage = () => (
         is the super cool tech I use to generate my website. 
         <ul>
           <li>
-            I implemented the <ExternalLink to="https://github.com/Vagr9K/gatsby-advanced-starter">Vagr9K/gatsby-advanced-starter</ExternalLink>
+            I implemented the <StyledExternalLink to="https://github.com/Vagr9K/gatsby-advanced-starter">Vagr9K/gatsby-advanced-starter</StyledExternalLink>
             skeleton.
           </li>
           <li>
-            <ExternalLink to="https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/">gatsby-remark-prismjs</ExternalLink> 
+            <StyledExternalLink to="https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/">gatsby-remark-prismjs</StyledExternalLink> 
             adds syntax highlighting to my code blocks in markdown files.
           </li>
         </ul>
         
         I use the
-        <ExternalLink to="https://github.com/Vagr9K/gatsby-advanced-starter">Vagr9K/gatsby-advanced-starter</ExternalLink> 
+        <StyledExternalLink to="https://github.com/Vagr9K/gatsby-advanced-starter">Vagr9K/gatsby-advanced-starter</StyledExternalLink> 
         skeleton. 
       </Credit>
     </div>
@@ -136,12 +136,12 @@ const CreditsPage = () => (
         </Credit>
 
         <ul>
-          <li><ExternalLink to="https://www.flaticon.com/free-icon/gmail_732200">Gmail</ExternalLink></li>
-          <li><ExternalLink to="https://www.flaticon.com/free-icon/rss_733569">RSS</ExternalLink></li>
-          <li><ExternalLink to="https://www.flaticon.com/free-icon/twitter_733579">Twitter</ExternalLink></li>
-          <li><ExternalLink to="https://www.flaticon.com/free-icon/overflowing_732248">StackOverflow</ExternalLink></li>
-          <li><ExternalLink to="https://www.flaticon.com/free-icon/github_733609">GitHub</ExternalLink></li>
-          <li><ExternalLink to="https://www.flaticon.com/free-icon/linkedin_733561">LinkedIn</ExternalLink></li>
+          <li><StyledExternalLink to="https://www.flaticon.com/free-icon/gmail_732200">Gmail</StyledExternalLink></li>
+          <li><StyledExternalLink to="https://www.flaticon.com/free-icon/rss_733569">RSS</StyledExternalLink></li>
+          <li><StyledExternalLink to="https://www.flaticon.com/free-icon/twitter_733579">Twitter</StyledExternalLink></li>
+          <li><StyledExternalLink to="https://www.flaticon.com/free-icon/overflowing_732248">StackOverflow</StyledExternalLink></li>
+          <li><StyledExternalLink to="https://www.flaticon.com/free-icon/github_733609">GitHub</StyledExternalLink></li>
+          <li><StyledExternalLink to="https://www.flaticon.com/free-icon/linkedin_733561">LinkedIn</StyledExternalLink></li>
         </ul>
       </section>
       <section>

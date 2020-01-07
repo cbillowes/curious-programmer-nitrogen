@@ -1,14 +1,14 @@
 import React from "react"
-import { Linked } from "../components/tag"
+import { External } from "../components/tag"
 
 const Credit = ({ to, title, children }) => {
   return (
     <div>
-      <Linked 
+      <External 
         to={to}
       >
         {title}
-      </Linked>
+      </External>
       {children}
     </div>
   )

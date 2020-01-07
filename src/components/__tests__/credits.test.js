@@ -3,7 +3,7 @@ import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsElement } from './helpers'
 import Credit from '../credit'
-import { Linked } from "../tag"
+import { External } from "../tag"
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -26,11 +26,11 @@ describe('Credit', () => {
         to: `https://www.google.com/`,
         title: `Google`,
       }),
-      <Linked 
+      <External 
         to="https://www.google.com/"
       >
         Google
-      </Linked>,
+      </External>,
     )
     expect(contains).toBe(true)
   })

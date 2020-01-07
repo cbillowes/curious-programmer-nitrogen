@@ -31,7 +31,7 @@ class Navigation extends Component {
   getPathname(path) {
     const rootPath = `/`
     const defaultPath = Nav[0].to
-    const pathname = path || typeof window === 'undefined' ? '/' : window.location.pathname
+    const pathname = path || (typeof window === "undefined" || !window ? "/" : window.location.pathname)
     return pathname === rootPath || !pathname ? defaultPath: pathname 
   }
 
