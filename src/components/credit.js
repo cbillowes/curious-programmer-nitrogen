@@ -1,14 +1,24 @@
 import React from "react"
-import { External } from "../components/tag"
+import { External, Bare } from "../components/tag"
 
 const Credit = ({ to, title, children }) => {
+  if (to) {
+    return (
+      <div>
+        <External 
+          to={to}
+        >
+          {title}
+        </External>
+        {children}
+      </div>
+    ) 
+  }
   return (
     <div>
-      <External 
-        to={to}
-      >
+      <Bare>
         {title}
-      </External>
+      </Bare>
       {children}
     </div>
   )

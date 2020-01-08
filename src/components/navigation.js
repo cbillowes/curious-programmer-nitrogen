@@ -42,9 +42,16 @@ class Navigation extends Component {
   render() { 
     return (
       <>
-        <Menu toggleOnClick={this.props.toggleOnClick} isOpen={this.props.isOpen} />
-        <Container className={this.getVisibilityClassName(this.props.isOpen)}>
-          <MenuItems path={this.getPathname(this.props.path)} />
+        <Menu 
+          toggleOnClick={this.props.toggleOnClick} 
+          isOpen={this.props.isOpen} 
+        />
+        <Container 
+          className={this.getVisibilityClassName(this.props.isOpen)}
+        >
+          <MenuItems 
+            path={this.getPathname(this.props.path)} 
+          />
         </Container>
       </>
     )

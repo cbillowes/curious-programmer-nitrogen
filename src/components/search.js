@@ -38,8 +38,13 @@ const Icon = styled(FontAwesomeIcon)`
 
 const Search = ({toggleOnClick, isOpen}) => {
   return (
-    <Container onClick={toggleOnClick} className={isOpen ? `active` : ``}>
-      <Icon icon={faSearch} />
+    <Container 
+      onClick={toggleOnClick} 
+      className={isOpen ? `active` : ``}
+    >
+      <Icon 
+        icon={faSearch} 
+      />
     </Container>
   )
 }

@@ -38,8 +38,13 @@ const Icon = styled(FontAwesomeIcon)`
 
 const Menu = ({ toggleOnClick, isOpen }) => {
   return (
-    <Container onClick={toggleOnClick} className={(isOpen) ? `active`: ``}>
-      <Icon icon={faEllipsisV}/>
+    <Container 
+      onClick={toggleOnClick} 
+      className={(isOpen) ? `active`: ``}
+    >
+      <Icon 
+        icon={faEllipsisV}
+      />
     </Container>
   )
 }

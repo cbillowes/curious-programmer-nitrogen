@@ -24,7 +24,15 @@ const Content = () => (
 )
 
 function Logo ({ theme }) {
-  return <Container><Anchor to="/"><Content /></Anchor></Container>
+  return (
+    <Container>
+      <Anchor 
+        to="/"
+      >
+        <Content />
+      </Anchor>
+    </Container>
+  )
 }
 
 export default Logo

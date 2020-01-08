@@ -230,21 +230,34 @@ class SearchBar extends Component {
   tags(tags) {
     if (!tags) return <></>
     return tags.map(function(tag) {
-      return <li><Tag slug={tag.slug} tag={tag.tag} /></li>
+      return (
+        <li>
+          <Tag 
+            slug={tag.slug} 
+            tag={tag.tag} 
+          />
+        </li>
+      )
     })
   }
 
   render() { 
     return (
       <>
-        <Search toggleOnClick={this.props.toggleOnClick} isOpen={this.props.isOpen} />
-        <Container className={this.visibilityClassName(this.props.isOpen)}>
+        <Search 
+          toggleOnClick={this.props.toggleOnClick} 
+          isOpen={this.props.isOpen}
+        />
+        <Container 
+          className={this.visibilityClassName(this.props.isOpen)}
+        >
           <Text 
             ref="searchBar"
             placeholder="What are you looking for?" 
             onKeyUp={(e) => this.search(e)} 
             onKeyDown={(e) => this.cull(e)} 
-            onKeyPress={(e) => this.query(e)} />
+            onKeyPress={(e) => this.query(e)} 
+          />
           <Tags className={this.props.tags ? 'visible' : 'hidden'}>
             {this.tags(this.props.tags)}
           </Tags>

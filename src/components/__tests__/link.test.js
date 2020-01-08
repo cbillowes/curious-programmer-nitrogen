@@ -2,17 +2,17 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsElement } from './helpers'
-import ExternalLink from '../link'
+import BlandExternalLink from '../link'
 
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
   return (
-    <ExternalLink 
+    <BlandExternalLink 
       to={props.to}
     >
       {props.children}
-    </ExternalLink>
+    </BlandExternalLink>
   )
 }
 

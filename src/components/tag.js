@@ -1,7 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { Link } from 'gatsby'
-import { ExternalLink } from '../components/link'
+import { InternalLink, TagExternalLink } from '../components/link'
 import data from '../../gatsby-data.js'
 
 const fonts = data.theme.fonts
@@ -18,20 +17,7 @@ const transition = `
   text-decoration: none;
 `
 
-const AnchorElement = styled(Link)`
-  cursor: pointer;
-  text-decoration: none;
-  ${transition};
-
-  :hover span {
-    cursor: pointer;
-    background-color: ${colors.accentSecond};
-    ${transition};
-    color: ${colors.light};
-  }
-`
-
-const ExternalAnchorElement = styled(ExternalLink)`
+const AnchorElement = styled(InternalLink)`
   cursor: pointer;
   text-decoration: none;
   ${transition};
@@ -67,29 +53,41 @@ const DisabledElement = styled(TagElement)`
 
 const Bare = ({ children }) => {
   return (
-    <TagElement>{children}</TagElement>
+    <TagElement>
+     {children}
+    </TagElement>
   )
 }
 
-const Linked = ({ to, children }) => {
+const Linked = ({ to, title, children }) => {
   return (
-    <AnchorElement to={to}>
-      <Bare>{children}</Bare>
+    <AnchorElement 
+      to={to}
+      title={title}
+    >
+      <Bare>
+        {children}
+      </Bare>
     </AnchorElement>
   )
 }
 
-const External = ({ to, children }) => {
+const External = ({ to, title, children }) => {
   return (
-    <ExternalAnchorElement href={to}>
-      <Bare>{children}</Bare>
-    </ExternalAnchorElement>
+    <TagExternalLink 
+      to={to}
+      title={title}
+    >
+      {children}
+    </TagExternalLink>
   )
 }
 
 const Disabled = ({ children }) => {
   return (
-    <DisabledElement data-disabled="true">
+    <DisabledElement 
+      data-disabled="true"
+    >
       {children}
     </DisabledElement>
   )
@@ -102,12 +100,27 @@ function Tag ({ title, slug, disabled, readonly }) {
   const lowerTitle = title.toLowerCase()
 
   if (readonly)
-    return <Bare>{lowerTitle}</Bare>
+    return (
+      <Bare>
+        {lowerTitle}
+      </Bare>
+    )
 
   if (disabled)
-    return <Disabled>{lowerTitle}</Disabled>
+    return (
+      <Disabled>
+        {lowerTitle}
+      </Disabled>
+    )
 
-  return <Linked to={slug}>{lowerTitle}</Linked>
+  return (
+    <Linked 
+      to={slug}
+      title={title}
+    >
+      {lowerTitle}
+    </Linked>
+  )
 }
 
 export { Bare, Linked, External, Disabled, Tag }

@@ -12,6 +12,11 @@ body {
   color: #bfcbd2;
   font-family: 'Crimson Text', 'Times New Roman', Times, serif;
   font-size: 16pt;
+  line-height: 2.5rem;
+}
+
+ul {
+  line-height: 2.5rem;
 }
 
 h1,

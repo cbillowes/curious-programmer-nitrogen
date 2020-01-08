@@ -56,8 +56,14 @@ class Header extends Component {
       <Container>
         <Wrapper>
           <Logo />
-          <SearchBar toggleOnClick={this.toggleSearch.bind(this)} isOpen={this.state.isSearchOpen} />
-          <Navigation toggleOnClick={this.toggleNavigation.bind(this)} isOpen={this.state.isMenuOpen} />
+          <SearchBar 
+            toggleOnClick={this.toggleSearch.bind(this)} 
+            isOpen={this.state.isSearchOpen} 
+          />
+          <Navigation 
+            toggleOnClick={this.toggleNavigation.bind(this)} 
+            isOpen={this.state.isMenuOpen} 
+          />
         </Wrapper>
       </Container>
     )

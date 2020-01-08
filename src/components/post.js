@@ -7,7 +7,9 @@ function Post({ title, metadata, tags, children }) {
   const {moment, date, author, ttr} = metadata || {}
   return (
     <article>
-      <H1 title={title} />
+      <H1>
+        {title}
+      </H1>
       <PostMetadata
         moment={moment}
         date={date}
@@ -16,7 +18,12 @@ function Post({ title, metadata, tags, children }) {
       />
       <div>
         {(tags || []).map(tag => {
-          return <Tag key={tag.name} title={tag.name} slug={tag.slug} />
+          return (
+            <Tag 
+              key={tag.name} title={tag.name} 
+              slug={tag.slug}
+            />
+          )
         })}
       </div>
       <div>

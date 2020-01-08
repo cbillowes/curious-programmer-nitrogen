@@ -35,7 +35,11 @@ const LinkedItem = ({ item, className }) => {
   if (item.external) {
     return (
       <Item>
-        <a href={item.to}>{item.name}</a>
+        <a 
+          href={item.to}
+        >
+          {item.name}
+        </a>
       </Item>
     )
   }
@@ -43,14 +47,22 @@ const LinkedItem = ({ item, className }) => {
   if (className === "active") {
     return (
       <ActiveItem>
-        <Link to={item.to}>{item.name}</Link>
+        <Link 
+          to={item.to}
+        >
+          {item.name}
+        </Link>
       </ActiveItem>
     )
   }
 
   return (
     <Item>
-      <Link to={item.to}>{item.name}</Link>
+      <Link 
+        to={item.to}
+      >
+        {item.name}
+      </Link>
     </Item>
   )
 }
@@ -79,7 +91,11 @@ class MenuItems extends Component {
 
   render() {
     const { path } = this.props
-    return <Items path={path} />
+    return (
+      <Items 
+        path={path} 
+      />
+    )
   }
 }
 
