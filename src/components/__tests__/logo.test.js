@@ -2,7 +2,6 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { elementStartsWith, containsValue } from './helpers'
-import Constants from './const'
 import Logo from '../logo'
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -26,9 +25,10 @@ describe('Logo', () => {
   })
 
   it('should render the logo content', () => {
+    const logo = `<strong>{</strong> :curious <strong>&quot;programmer&quot;</strong> <strong>}</strong>`
     const contains = containsValue(
       <Logo />,
-      `${Constants.LOGO}`,
+      logo,
     )
     expect(contains).toBe(true)
   })

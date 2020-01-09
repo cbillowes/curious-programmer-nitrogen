@@ -1,5 +1,4 @@
 export default {
-    LOGO: '<strong>{</strong> :curious <strong>&quot;programmer&quot;</strong> <strong>}</strong>',
     NAVIGATION_CLASS: 'sc-ifAKCX gWyOBi',
     SEARCH_CLASS: 'sc-htoDjs lhmIVs',
     SELECTED_MENU_ITEM_CLASS: 'sc-htpNat sc-bxivhb izgWka',
