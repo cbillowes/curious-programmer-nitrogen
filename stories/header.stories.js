@@ -4,6 +4,6 @@ import Header from '../src/components/header'
 import '../src/components/layout.css'
 
 storiesOf('Header', module)
-  .add('default', () => <Header />)
-  .add('with menu open', () => <Header isMenuOpen={ true } />)
-  .add('with search open', () => <Header isSearchOpen={ true } />)
+  .add('as is', () => <Header />)
+  .add('open menu', () => <Header isMenuOpen={ true } />)
+  .add('open search', () => <Header isSearchOpen={ true } />)
