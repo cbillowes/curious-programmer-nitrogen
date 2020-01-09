@@ -17,7 +17,7 @@ const CreditsPage = () => (
         to="https://www.cloudafrica.net/"
         title="CloudAfrica"
       >
-        is where I host my cloud server. It runs a Solr instance which powers the search for my blog.
+        is where I host my cloud server which powers the search for my blog.
       </Credit>
       <Credit
         to="https://netlify.com"
@@ -26,6 +26,23 @@ const CreditsPage = () => (
         is where I host my website. It is an all-in-one workflow that combines global deployment, 
         continuous integration and automatic HTTPS.
       </Credit>
+    </div>
+
+    <div>
+      <H2>Search</H2>
+      <Credit
+        to="https://lucene.apache.org/solr/"
+        title="Apache Solr"
+       >
+         is the service I run to power my search. It is a popular, blazing-fast, open source 
+         enterprise search platform built on Apache Lucene.
+       </Credit>
+       <Credit
+         to="https://scrapy.org/"
+         title="Scrapy"
+       >
+         is an open source and collaborative framework for extracting the data from websites.
+       </Credit>
     </div>
 
     <div>
@@ -39,35 +56,38 @@ const CreditsPage = () => (
         <ul>
           <li>
             <Anchor 
-              to="https://github.com/Vagr9K/gatsby-advanced-starter"
+              to="https://github.com/gatsbyjs/gatsby-starter-default"
             >
-              Vagr9K/gatsby-advanced-starter
+              gatsby-starter-default
             </Anchor>
-            is the skeleton starter pack that I used
+            the default Gatsby start to kick off projects with this default boilerplate.
           </li>
           <li>
-            <Anchor 
-              to="https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/"
+            <Anchor
+              to="https://www.gatsbyjs.org/packages/gatsby-plugin-advanced-sitemap/"
             >
-              gatsby-remark-prismjs
+              gatsby-plugin-advanced-sitemap
             </Anchor>
-            adds syntax highlighting to my markdown code blocks 
+            adds more power and configuration, generating a single or multiple sitemaps 
+            with full XSL templates to make them neatly organised and human + machine 
+            readable, as well linking image resources to encourage media indexing.
           </li>
           <li>
-            <Anchor 
-              to="https://www.gatsbyjs.org/packages/gatsby-remark-embed-gist/"
+            <Anchor
+              to="https://www.gatsbyjs.org/packages/gatsby-plugin-robots-txt/"
             >
-              gatsby-remark-embed-gist
-            </Anchor> 
-            embeds Gist snippets in my markdown files
+              gatsby-plugin-robots-txt
+            </Anchor>
+            creates robots.txt files for your Gatsby sites.
           </li>
           <li>
-            <Anchor 
-              to="https://www.gatsbyjs.org/packages/gatsby-remark-embed-youtube/"
+            <Anchor
+              to="https://fortawesome.com/"
             >
-              gatsby-remark-embed-youtube
+              fortawesome
             </Anchor>
-            embeds YouTube videos in my markdown files
+            builds and manages icons and typefaces in a single place, then serves 
+            them with a single line of code.
           </li>
         </ul>
       </Credit>
