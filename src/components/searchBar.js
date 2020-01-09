@@ -249,6 +249,7 @@ class SearchBar extends Component {
           isOpen={this.props.isOpen}
         />
         <Container 
+          data-container="search-bar"
           className={this.visibilityClassName(this.props.isOpen)}
         >
           <Text 

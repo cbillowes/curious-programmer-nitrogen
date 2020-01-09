@@ -2,7 +2,6 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsValue, doesNotContainValue } from './helpers'
-import Constants from './const'
 import Search from '../search'
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -18,9 +17,10 @@ function sut(props) {
 describe('Search', () => {
 
   it('should render the search icon', () => {
+    const iconClass = `fa fa-search`
     const contains = containsValue(
       sut({}), 
-      `${Constants.SEARCH_ICON_CLASS}`,
+      iconClass,
     )
     expect(contains).toBe(true)
   })

@@ -1,8 +1,7 @@
 import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { containsValue } from './helpers'
-import Constants from './const'
+import { validateValues, containsValue } from './helpers'
 import SearchBar from '../searchBar'
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -17,22 +16,28 @@ function sut(props) {
 
 describe('Search bar', () => {
   it('should open the search bar', () => {
-    const contains = containsValue(
+    const validation = validateValues(
       sut({
         isOpen: true,
       }),
-      `<section class="${Constants.SEARCH_CLASS} open`,
+      [
+        {contains: true, value: `data-container="search-bar"`},
+        {contains: true, value: `open`},
+      ]
     )
-    expect(contains).toBe(true)
+    expect(validation).toBe(true)
   })
 
   it('should close the search bar', () => {
-    const contains = containsValue(
+    const validation = validateValues(
       sut({
         isOpen: false,
       }),
-      `<section class="${Constants.SEARCH_CLASS} closed`,
+      [
+        {contains: true, value: `data-container="search-bar"`},
+        {contains: true, value: `closed`},
+      ]
     )
-    expect(contains).toBe(true)
+    expect(validation).toBe(true)
   })
 })

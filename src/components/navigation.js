@@ -47,6 +47,7 @@ class Navigation extends Component {
           isOpen={this.props.isOpen} 
         />
         <Container 
+          data-container="navigation"
           className={this.getVisibilityClassName(this.props.isOpen)}
         >
           <MenuItems 

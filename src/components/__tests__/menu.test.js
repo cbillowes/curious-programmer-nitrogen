@@ -2,7 +2,6 @@ import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsValue, doesNotContainValue } from './helpers'
-import Constants from './const'
 import Menu from '../menu'
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -18,9 +17,10 @@ function sut(props) {
 describe('Menu', () => {
 
   it('should render the menu icon', () => {
+    const iconClass = `fa-ellipsis-v`
     const contains = containsValue(
       sut({}), 
-      `${Constants.MENU_ICON_CLASS}`,
+      iconClass,
     )
     expect(contains).toBe(true)
   })

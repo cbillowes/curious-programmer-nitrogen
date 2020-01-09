@@ -1,8 +1,7 @@
 import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { containsValue } from './helpers'
-import Constants from './const'
+import { validateValues, containsElement } from './helpers'
 import Navigation from '../navigation'
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -18,43 +17,49 @@ function sut(props) {
 
 describe('Navigation', () => {
   it('should open the navigation bar', () => {
-    const contains = containsValue(
+    const validation = validateValues(
       sut({
         isOpen: true,
       }),
-      `<nav class="${Constants.NAVIGATION_CLASS} open`,
+      [
+        {contains: true, value: `data-container="navigation"`},
+        {contains: true, value: `open`},
+      ]
     )
-    expect(contains).toBe(true)
+    expect(validation).toBe(true)
   })
 
   it('should close the navigation bar', () => {
-    const contains = containsValue(
+    const validation = validateValues(
       sut({
         isOpen: false,
       }),
-      `<nav class="${Constants.NAVIGATION_CLASS} closed`,
+      [
+        {contains: true, value: `data-container="navigation"`},
+        {contains: true, value: `closed`},
+      ]
     )
-    expect(contains).toBe(true)
+    expect(validation).toBe(true)
   })
 
   it('should set active item', () => {
-    const contains = containsValue(
+    const contains = containsElement(
       sut({
         isOpen: true,
         path: "/about",
       }),
-      `<span class="${Constants.SELECTED_MENU_ITEM_CLASS}"><a href="/about">About</a></span>`, 
+      <a data-selected={true} href="/about">About</a>, 
     )
     expect(contains).toBe(true)
   })
 
   it('should activate /blog for /', () => {
-    const contains = containsValue(
+    const contains = containsElement(
       sut({
         isOpen: true,
         path: "/",
       }),
-      `<span class="${Constants.SELECTED_MENU_ITEM_CLASS}"><a href="/blog">Blog</a></span>`, 
+      <a data-selected={true} href="/blog">Blog</a>, 
     )
     expect(contains).toBe(true)
   })

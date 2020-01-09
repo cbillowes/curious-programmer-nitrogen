@@ -2,7 +2,6 @@ import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { validateValues } from './helpers'
-import Constants from './const'
 import { Tag } from '../tag'
 
 Enzyme.configure({ adapter: new Adapter() })
@@ -33,7 +32,7 @@ describe('Tag', () => {
       [
         {contains: false, value: `data-disabled="true"`},
         {contains: true, value: `href="/tags/hello-world"`},
-        {contains: true, value: `<span class="${Constants.TAG_CLASS}">hello world</span>`}
+        {contains: true, value: `hello world`}
       ],
     )
     expect(validation).toBe(true)
@@ -48,7 +47,7 @@ describe('Tag', () => {
       [
         {contains: false, value: `data-disabled="true"`},
         {contains: true, value: `href="/tags/hello-galaxy"`},
-        {contains: true, value: `<span class="${Constants.TAG_CLASS}">hello galaxy</span>`}
+        {contains: true, value: `hello galaxy`}
       ],
     )
     expect(validation).toBe(true)

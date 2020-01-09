@@ -1,7 +1,7 @@
 import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { containsValue, getState } from './helpers'
+import { containsElement, getState } from './helpers'
 import MenuItems from '../menuItems'
 import Data from '../../../gatsby-data'
 
@@ -29,9 +29,9 @@ describe('Menu items', () => {
 
   it('should contain the navigation items', () => {
     Nav.map(function(item) {
-      const contains = containsValue(
+      const contains = containsElement(
         sut({}),
-        `<a href="${item.to}">${item.name}</a>`,
+        <a href={item.to}>{item.name}</a>,
       )
       expect(contains).toBe(true)
     })

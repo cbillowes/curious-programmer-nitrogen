@@ -49,6 +49,7 @@ const LinkedItem = ({ item, className }) => {
       <ActiveItem>
         <Link 
           to={item.to}
+          data-selected={true}
         >
           {item.name}
         </Link>
