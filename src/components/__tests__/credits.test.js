@@ -3,7 +3,7 @@ import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsElement } from './helpers'
 import Credit from '../credit'
-import { Bare, External } from "../tag"
+import Tag from "../tag"
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -27,9 +27,9 @@ describe('Credit', () => {
         children: `Hello world`,
       }),
       <div>
-        <Bare>
-          I don't link to anywhere
-        </Bare>
+        <Tag
+          title="I don't link to anywhere"
+        />
         Hello world
       </div>,
     )
@@ -44,11 +44,10 @@ describe('Credit', () => {
         children: `Take me to the Googles`
       }),
       <div>
-        <External 
+        <Tag 
+          title="Google"
           to="https://www.google.com/"
-        >
-          Google
-        </External>
+        />
         Take me to the Googles
       </div>,
     )

@@ -2,7 +2,8 @@ import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsElement, validateValues } from './helpers'
-import { Tag, Bare, Linked, External, Disabled } from '../tag'
+import Tag from '../tag'
+import Anchor from '../anchor'
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -10,7 +11,7 @@ function sut(props) {
   return (
     <Tag 
       title={props.tag} 
-      slug={props.slug}
+      to={props.to}
       disabled={props.disabled} 
       readonly={props.readonly}
     />
@@ -24,48 +25,44 @@ describe('Tag', () => {
   })
 
   it('should generate the slug if one is not given', () => {
-    const contains = containsElement(
+    const validation = validateValues(
       sut({
         tag: `hello world`,
       }),
-      <Linked
-        title="hello world"
-        to="/tag/hello-world"
-      >
-        hello world
-      </Linked>
+      [
+        {contains: true, value: `>hello world<`},
+        {contains: true, value: `"/tag/hello-world"`},
+        {contains: true, value: `data-component="tag-internal-link-element"`},
+      ]
     )
-    expect(contains).toBe(true)
+    expect(validation).toBe(true)
   })
 
   it('should direct to external link', () => {
-    const contains = containsElement(
+    const validation = validateValues(
       sut({
         tag: `google`,
-        slug: `https://www.google.com`,
+        to: `https://www.google.com`
       }),
-      <External
-        title="google"
-        to="https://www.google.com"
-      >
-        google
-      </External>
+      [
+        {contains: true, value: `>google<`},
+        {contains: true, value: `"https://www.google.com"`},
+        {contains: true, value: `data-component="tag-external-link-element"`},
+      ]
     )
-    expect(contains).toBe(true) 
+    expect(validation).toBe(true)
   })
 
   it('should direct to internal link', () => {
     const contains = containsElement(
       sut({
-        slug: `/tags/hello-world`,
+        to: `/tags/hello-world`,
         tag: `hello world`,
       }),
-      <Linked
+      <Tag
         to="/tags/hello-world"
         title="hello world"
-      >
-        hello world
-      </Linked>
+      />
     )
     expect(contains).toBe(true)
   })
@@ -75,12 +72,10 @@ describe('Tag', () => {
       sut({
         tag: `HELLO WORLD`,
       }),
-      <Linked
+      <Tag
         to="/tag/hello-world"
         title="HELLO WORLD"
-      >
-        hello world
-      </Linked>
+      />
     )
     expect(contains).toBe(true)
   })
@@ -89,14 +84,12 @@ describe('Tag', () => {
     const contains = containsElement(
       sut({
         tag: `GoGgLe`,
-        slug: `https://www.google.com`,
+        to: `https://www.google.com`,
       }),
-      <External
+      <Tag
         title="GoGgLe"
         to="https://www.google.com"
-      >
-        GoGgLe
-      </External>
+      />
     )
     expect(contains).toBe(true) 
   })
@@ -107,9 +100,10 @@ describe('Tag', () => {
         tag: `Technical`,
         readonly: true,
       }),
-      <Bare>
-        technical
-      </Bare>
+      <Tag
+        title="Technical"
+        readonly="true"
+      />
     )
     expect(contains).toBe(true) 
   })
@@ -120,9 +114,10 @@ describe('Tag', () => {
         tag: `Relationships`,
         disabled: true,
       }),
-      <Disabled>
-        relationships
-      </Disabled>
+      <Tag
+        title="relationships"
+        disabled="true"
+      />
     )
     expect(contains).toBe(true) 
   })

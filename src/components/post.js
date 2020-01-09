@@ -1,7 +1,7 @@
 import React from 'react'
 import { H1 } from './heading'
 import PostMetadata from './postMetadata'
-import { Tag } from './tag'
+import Tag from './tag'
 
 function Post({ title, metadata, tags, children }) {
   const {moment, date, author, ttr} = metadata || {}
@@ -20,8 +20,9 @@ function Post({ title, metadata, tags, children }) {
         {(tags || []).map(tag => {
           return (
             <Tag 
-              key={tag.name} title={tag.name} 
-              slug={tag.slug}
+              key={tag.name} 
+              title={tag.name} 
+              to={tag.slug}
             />
           )
         })}

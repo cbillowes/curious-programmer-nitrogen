@@ -5,7 +5,7 @@ import { containsElement } from './helpers'
 import Post from '../post'
 import { H1 } from '../heading'
 import PostMetadata from '../postMetadata'
-import { Tag } from '../tag'
+import Tag from '../tag'
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -69,8 +69,8 @@ describe('Post', () => {
         ]
       }),
       <div>
-        <Tag title="hello" slug="/hello" />
-        <Tag title="world" slug="/world" />
+        <Tag title="hello" to="/hello" />
+        <Tag title="world" to="/world" />
       </div>
     )
     expect(contains).toBe(true)

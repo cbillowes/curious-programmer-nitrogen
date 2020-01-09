@@ -52,6 +52,27 @@ const TagAnchorElement = styled.a`
   }
 `
 
+const TagLinkElement = styled(Link)`
+  font-weight: 400;
+  font-family: ${fonts.button};
+  text-shadow: none;
+  line-height: 1.75em;
+  color: ${colors.darkest};
+  background-color: ${colors.accentFirst};
+  padding: 0 .5em;
+  border-radius: 4px;
+  margin: .25em;
+  text-decoration: none;
+  display: inline-block;
+  ${transition}
+
+  :hover {
+    background-color: ${colors.accentSecond};
+    color: ${colors.lightest};
+    border-bottom: ${colors.accentSecond};
+  }
+`
+
 const AnchorElement = styled.a`
   color: ${colors.accentFirst};
   text-decoration: none;
@@ -117,7 +138,7 @@ const PrettyExternalLink = ({ to, title, children }) => {
   )
 }
 
-const TagLink = ({ to, title, children }) => {
+const TagExternalLink = ({ to, title, children }) => {
   return (
     <>
       { " " }
@@ -126,10 +147,26 @@ const TagLink = ({ to, title, children }) => {
         rel={rel}
         title={title}
         target="_blank"
-        data-component="tag-link-element"
+        data-component="tag-external-link-element"
       >
         {children}
       </TagAnchorElement>
+    </>
+  )
+}
+
+const TagInternalLink = ({ to, title, children }) => {
+  return (
+    <>
+      { " " }
+      <TagLinkElement
+        to={to}
+        title={title}
+        data-component="tag-internal-link-element"
+      >
+        {children}
+      </TagLinkElement>
+      { " " }
     </>
   )
 }
@@ -139,14 +176,24 @@ function Anchor ({ to, title, bland, tag, children }) {
   
   const external = (to.startsWith(`http`))
 
-  if (tag)
+  if (tag && external)
     return (
-      <TagLink
+      <TagExternalLink
         to={to}
         title={title}
       >
         {children}
-      </TagLink>
+      </TagExternalLink>
+    )
+
+  if (tag)
+    return (
+      <TagInternalLink
+        to={to}
+        title={title}
+      >
+        {children}
+      </TagInternalLink>
     )
 
   if (external && bland)

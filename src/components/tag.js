@@ -5,30 +5,6 @@ import data from '../../gatsby-data.js'
 
 const fonts = data.theme.fonts
 const colors = data.theme.colors
-const transitions = data.theme.transitions
-
-const transition = `
-  -webkit-transition: all ${transitions.transition};
-  transition: all  ${transitions.transition};
-  transition-property: ${transitions.property};
-  transition-duration: ${transitions.duration};
-  transition-timing-function: ${transitions.timing};
-  transition-delay: ${transitions.delay};
-  text-decoration: none;
-`
-
-const AnchorElement = styled(Anchor)`
-  cursor: pointer;
-  text-decoration: none;
-  ${transition};
-
-  :hover span {
-    cursor: pointer;
-    background-color: ${colors.accentSecond};
-    ${transition};
-    color: ${colors.light};
-  }
-`
 
 const TagElement = styled.span`
   font-weight: 400;
@@ -54,36 +30,10 @@ const DisabledElement = styled(TagElement)`
 const Bare = ({ children }) => {
   return (
     <TagElement
-      data-container="bare-tag"
+      data-container="bare-tag-element"
     >
      {children}
     </TagElement>
-  )
-}
-
-const Linked = ({ to, title, children }) => {
-  return (
-    <AnchorElement 
-      to={to}
-      title={title}
-      data-container="linked-tag"
-    >
-      <Bare>
-        {children}
-      </Bare>
-    </AnchorElement>
-  )
-}
-
-const External = ({ to, title, children }) => {
-  return (
-    <Anchor 
-      to={to}
-      title={title}
-      data-container="external-tag"
-    >
-      {children}
-    </Anchor>
   )
 }
 
@@ -91,18 +41,17 @@ const Disabled = ({ children }) => {
   return (
     <DisabledElement 
       data-disabled="true"
-      data-container="disabled-tag"
+      data-container="disabled-tag-element"
     >
       {children}
     </DisabledElement>
   )
 }
 
-function Tag ({ title, slug, disabled, readonly }) {
+function Tag ({ title, to, disabled, readonly }) {
   if (!title) throw(`title for the tag is required`)
-  if (!slug) slug = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
+  if (!to) to = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
 
-  const external = (slug.startsWith(`http`))
   const lowerTitle = title.toLowerCase()
 
   if (readonly)
@@ -119,24 +68,15 @@ function Tag ({ title, slug, disabled, readonly }) {
       </Disabled>
     )
 
-  if (external)
-    return (
-      <External
-        to={slug}
-        title={title}
-      >
-        {title}
-      </External>
-    )
-
   return (
-    <Linked 
-      to={slug}
+    <Anchor 
+      to={to}
       title={title}
+      tag="true"
     >
       {lowerTitle}
-    </Linked>
+    </Anchor>
   )
 }
 
-export { Bare, Linked, External, Disabled, Tag }
+export default Tag

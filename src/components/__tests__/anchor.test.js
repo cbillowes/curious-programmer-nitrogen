@@ -57,7 +57,7 @@ describe('Anchor', () => {
     expect(validation).toBe(true)
   })
 
-  it('should render tag link', () => {
+  it('should render an external tag link', () => {
     const validation = validateValues(
       sut({
         to: `http://www.google.com/`,
@@ -69,7 +69,25 @@ describe('Anchor', () => {
         {contains: true, value: `"nofollow noopener noreferrer"`},
         {contains: true, value: `target="_blank"`},
         {contains: true, value: `>Google<`},
-        {contains: true, value: `data-component="tag-link-element"`},
+        {contains: true, value: `data-component="tag-external-link-element"`},
+      ]
+    )
+    expect(validation).toBe(true)
+  })
+
+  it('should render an internal tag link', () => {
+    const validation = validateValues(
+      sut({
+        to: `/blog`,
+        tag: true,
+        children: `Blog`,
+      }),
+      [
+        {contains: true, value: `"/blog"`},
+        {contains: false, value: `"nofollow noopener noreferrer"`},
+        {contains: false, value: `target="_blank"`},
+        {contains: true, value: `>Blog<`},
+        {contains: true, value: `data-component="tag-internal-link-element"`},
       ]
     )
     expect(validation).toBe(true)
