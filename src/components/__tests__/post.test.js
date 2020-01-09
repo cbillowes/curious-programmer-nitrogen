@@ -29,7 +29,7 @@ describe('Post', () => {
       sut({
         title: `Hello world`,
       }),
-      <H1 title="Hello world" />
+      <H1>Hello world</H1>
     )
     expect(contains).toBe(true)
   })
