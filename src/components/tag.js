@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { InternalLink, TagExternalLink } from './link'
+import Anchor from './anchor'
 import data from '../../gatsby-data.js'
 
 const fonts = data.theme.fonts
@@ -17,7 +17,7 @@ const transition = `
   text-decoration: none;
 `
 
-const AnchorElement = styled(InternalLink)`
+const AnchorElement = styled(Anchor)`
   cursor: pointer;
   text-decoration: none;
   ${transition};
@@ -77,13 +77,13 @@ const Linked = ({ to, title, children }) => {
 
 const External = ({ to, title, children }) => {
   return (
-    <TagExternalLink 
+    <Anchor 
       to={to}
       title={title}
       data-container="external-tag"
     >
       {children}
-    </TagExternalLink>
+    </Anchor>
   )
 }
 

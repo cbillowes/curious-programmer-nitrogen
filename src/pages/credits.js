@@ -3,7 +3,7 @@ import Layout from "../components/layout"
 import SEO from "../components/seo"
 import { H1, H2, H3 } from "../components/heading"
 import Credit from "../components/credit"
-import { PrettyExternalLink } from "../components/link"
+import Anchor from "../components/anchor"
 
 const CreditsPage = () => (
   <Layout>
@@ -38,35 +38,35 @@ const CreditsPage = () => (
         Gatsby is a React-based, GraphQL powered, static site generator. 
         <ul>
           <li>
-            <PrettyExternalLink 
+            <Anchor 
               to="https://github.com/Vagr9K/gatsby-advanced-starter"
             >
               Vagr9K/gatsby-advanced-starter
-            </PrettyExternalLink>
+            </Anchor>
             is the skeleton starter pack that I used
           </li>
           <li>
-            <PrettyExternalLink 
+            <Anchor 
               to="https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/"
             >
               gatsby-remark-prismjs
-            </PrettyExternalLink>
+            </Anchor>
             adds syntax highlighting to my markdown code blocks 
           </li>
           <li>
-            <PrettyExternalLink 
+            <Anchor 
               to="https://www.gatsbyjs.org/packages/gatsby-remark-embed-gist/"
             >
               gatsby-remark-embed-gist
-            </PrettyExternalLink> 
+            </Anchor> 
             embeds Gist snippets in my markdown files
           </li>
           <li>
-            <PrettyExternalLink 
+            <Anchor 
               to="https://www.gatsbyjs.org/packages/gatsby-remark-embed-youtube/"
             >
               gatsby-remark-embed-youtube
-            </PrettyExternalLink>
+            </Anchor>
             embeds YouTube videos in my markdown files
           </li>
         </ul>

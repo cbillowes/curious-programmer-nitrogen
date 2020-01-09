@@ -67,27 +67,34 @@ const AnchorElement = styled.a`
 
 const InternalLink = ({ to, title, children }) => {
   return (
-    <LinkElement
-      to={to}
-      title={title}
-    >
-      {children}
-    </LinkElement>
+    <>
+    { " " }
+      <LinkElement
+        to={to}
+        title={title}
+        data-component="link-element"
+      >
+        {children}
+      </LinkElement>
+    { " " }
+    </>
   )
 }
 
-const TagExternalLink = ({ to, title, children }) => {
+const BlandExternalLink = ({ to, title, children }) => {
   return (
     <>
       { " " }
-      <TagAnchorElement
+      <a
         href={to}
         rel={rel}
         title={title}
         target="_blank"
+        data-component="bland-external-link-element"
       >
         {children}
-      </TagAnchorElement>
+      </a>
+      { " " }
     </>
   )
 }
@@ -101,6 +108,7 @@ const PrettyExternalLink = ({ to, title, children }) => {
         rel={rel}
         title={title}
         target="_blank"
+        data-component="pretty-external-link-element"
       >
         {children}
       </AnchorElement>
@@ -109,21 +117,66 @@ const PrettyExternalLink = ({ to, title, children }) => {
   )
 }
 
-const BlandExternalLink = ({ to, title, children }) => {
+const TagLink = ({ to, title, children }) => {
   return (
     <>
       { " " }
-      <a 
+      <TagAnchorElement
         href={to}
         rel={rel}
         title={title}
         target="_blank"
+        data-component="tag-link-element"
       >
         {children}
-      </a>
-      { " " }
+      </TagAnchorElement>
     </>
   )
 }
 
-export { InternalLink, TagExternalLink, BlandExternalLink, PrettyExternalLink }
+function Anchor ({ to, title, bland, tag, children }) {
+  if (!to) throw(`url for the anchor is required`)
+  
+  const external = (to.startsWith(`http`))
+
+  if (tag)
+    return (
+      <TagLink
+        to={to}
+        title={title}
+      >
+        {children}
+      </TagLink>
+    )
+
+  if (external && bland)
+    return (
+      <BlandExternalLink
+        to={to}
+        title={title}
+      >
+        {children}
+      </BlandExternalLink>
+    )
+
+  if (external)
+    return (
+      <PrettyExternalLink
+        to={to}
+        title={title}
+      >
+        {children}
+      </PrettyExternalLink>
+    )
+
+  return (
+    <InternalLink
+      to={to}
+      title={title}
+    >
+      {children}
+    </InternalLink>
+  )
+}
+
+export default Anchor

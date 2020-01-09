@@ -64,7 +64,7 @@ export function containsElement(parentElement, childElement) {
   const renderedChild = renderedComponent(childElement)
   if (renderedParent.indexOf(renderedChild) > -1)
     return true
-    throw `Rendered parent elemenet does not contain child element\n\nParent: ${renderedParent}\nChild:  ${renderedChild}`
+    throw `Rendered actual element does not contain the expected element\n\Actual:  ${renderedParent}\nExpected: ${renderedChild}`
 }
 
 export function componentTranslatesTo(component, element) {

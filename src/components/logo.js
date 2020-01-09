@@ -28,6 +28,7 @@ function Logo ({ theme }) {
     <Container>
       <Anchor 
         to="/"
+        title="Curious Programmer"
       >
         <Content />
       </Anchor>
