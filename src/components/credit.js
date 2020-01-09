@@ -1,12 +1,13 @@
 import React from "react"
 import Tag from "../components/tag"
 
-const Credit = ({ to, title, children }) => {
+const Credit = ({ to, title, readonly, children }) => {
   if (to) {
     return (
       <div>
         <Tag
           title={title} 
+          readonly={readonly}
           to={to}
         />
         {children}
@@ -17,6 +18,7 @@ const Credit = ({ to, title, children }) => {
     <div>
       <Tag
         title={title}
+        readonly={readonly}
       />
       {children}
     </div>

@@ -12,6 +12,7 @@ function sut(props) {
     <Credit 
       to={props.to} 
       title={props.title}
+      readonly={props.readonly}
     >
       {props.children}
     </Credit>
@@ -41,7 +42,7 @@ describe('Credit', () => {
       sut({
         to: `https://www.google.com/`,
         title: `Google`,
-        children: `Take me to the Googles`
+        children: `Take me to the Googles`,
       }),
       <div>
         <Tag 
@@ -52,6 +53,24 @@ describe('Credit', () => {
       </div>,
     )
     expect(contains).toBe(true)
+  })
+
+  it('should render a readonly tag', () => {
+    const contains = containsElement(
+      sut({
+        title: `Stop!`,
+        readonly: true,
+        children: `Don't take me anywhere`,
+      }),
+      <div>
+        <Tag 
+          title="Stop!"
+          readonly="true"
+        />
+        Don't take me anywhere
+      </div>,
+    )
+    expect(contains).toBe(true) 
   })
 
 })
