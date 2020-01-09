@@ -1,8 +1,8 @@
 import React from 'react'
 import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { validateValues } from './helpers'
-import { Tag } from '../tag'
+import { containsElement, validateValues } from './helpers'
+import { Tag, Bare, Linked, External, Disabled } from '../tag'
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -23,78 +23,108 @@ describe('Tag', () => {
     expect(() => shallow(<Tag />)).toThrow()
   })
 
-  it('should render clickable when a slug is provided', () => {
-    const validation = validateValues(
+  it('should generate the slug if one is not given', () => {
+    const contains = containsElement(
       sut({
-        tag: "hello world",
-        slug: "/tags/hello-world",
+        tag: `hello world`,
       }),
-      [
-        {contains: false, value: `data-disabled="true"`},
-        {contains: true, value: `href="/tags/hello-world"`},
-        {contains: true, value: `hello world`}
-      ],
+      <Linked
+        title="hello world"
+        to="/tag/hello-world"
+      >
+        hello world
+      </Linked>
     )
-    expect(validation).toBe(true)
+    expect(contains).toBe(true)
   })
 
-  it('should display the tag in lowercase', () => {
-    const validation = validateValues(
+  it('should direct to external link', () => {
+    const contains = containsElement(
       sut({
-        tag: "HELLO GALAXY",
-        slug: "/tags/hello-galaxy",
+        tag: `google`,
+        slug: `https://www.google.com`,
       }),
-      [
-        {contains: false, value: `data-disabled="true"`},
-        {contains: true, value: `href="/tags/hello-galaxy"`},
-        {contains: true, value: `hello galaxy`}
-      ],
+      <External
+        title="google"
+        to="https://www.google.com"
+      >
+        google
+      </External>
     )
-    expect(validation).toBe(true)
+    expect(contains).toBe(true) 
   })
 
-  it('should render as bare when no slug is provided', () => {
-    const validation = validateValues(
+  it('should direct to internal link', () => {
+    const contains = containsElement(
       sut({
-        tag: "hello universe",
+        slug: `/tags/hello-world`,
+        tag: `hello world`,
       }),
-      [
-        {contains: false, value: `data-disabled="true"`},
-        {contains: false, value: `href`},
-        {contains: true, value: `hello universe`},
-      ],
+      <Linked
+        to="/tags/hello-world"
+        title="hello world"
+      >
+        hello world
+      </Linked>
     )
-    expect(validation).toBe(true)
+    expect(contains).toBe(true)
   })
 
-  it('should render as disabled when told to do so', () => {
-    const validation = validateValues(
+  it('should display internal tag title in lower case', () => {
+    const contains = containsElement(
       sut({
-        tag: "hello multiverse",
-        disabled: "true",
+        tag: `HELLO WORLD`,
       }),
-      [
-        {contains: false, value: `href`},
-        {contains: true, value: `hello multiverse`},
-        {contains: true, value: `data-disabled="true"`},
-      ],
+      <Linked
+        to="/tag/hello-world"
+        title="HELLO WORLD"
+      >
+        hello world
+      </Linked>
     )
-    expect(validation).toBe(true)
+    expect(contains).toBe(true)
   })
 
-  it('should render as readonly when told to do so', () => {
-    const validation = validateValues(
+  it('should display external tag title as provided', () => {
+    const contains = containsElement(
       sut({
-        tag: "hello galaxy",
-        readonly: "true",
+        tag: `GoGgLe`,
+        slug: `https://www.google.com`,
       }),
-      [
-        {contains: false, value: `href`},
-        {contains: true, value: `hello galaxy`},
-        {contains: false, value: `data-disabled="true"`},
-      ]
+      <External
+        title="GoGgLe"
+        to="https://www.google.com"
+      >
+        GoGgLe
+      </External>
     )
-    expect(validation).toBe(true)
+    expect(contains).toBe(true) 
+  })
+
+  it('should render readonly tag', () => {
+    const contains = containsElement(
+      sut({
+        tag: `Technical`,
+        readonly: true,
+      }),
+      <Bare>
+        technical
+      </Bare>
+    )
+    expect(contains).toBe(true) 
+  })
+
+  it('should render disabled tag', () => {
+    const contains = containsElement(
+      sut({
+        tag: `Relationships`,
+        disabled: true,
+      }),
+      <Disabled>
+        relationships
+      </Disabled>
+    )
+    expect(contains).toBe(true) 
   })
 
 })

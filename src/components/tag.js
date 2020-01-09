@@ -1,6 +1,6 @@
 import React from 'react'
 import styled from 'styled-components'
-import { InternalLink, TagExternalLink } from '../components/link'
+import { InternalLink, TagExternalLink } from './link'
 import data from '../../gatsby-data.js'
 
 const fonts = data.theme.fonts
@@ -53,7 +53,9 @@ const DisabledElement = styled(TagElement)`
 
 const Bare = ({ children }) => {
   return (
-    <TagElement>
+    <TagElement
+      data-container="bare-tag"
+    >
      {children}
     </TagElement>
   )
@@ -64,6 +66,7 @@ const Linked = ({ to, title, children }) => {
     <AnchorElement 
       to={to}
       title={title}
+      data-container="linked-tag"
     >
       <Bare>
         {children}
@@ -77,6 +80,7 @@ const External = ({ to, title, children }) => {
     <TagExternalLink 
       to={to}
       title={title}
+      data-container="external-tag"
     >
       {children}
     </TagExternalLink>
@@ -87,6 +91,7 @@ const Disabled = ({ children }) => {
   return (
     <DisabledElement 
       data-disabled="true"
+      data-container="disabled-tag"
     >
       {children}
     </DisabledElement>
@@ -97,6 +102,7 @@ function Tag ({ title, slug, disabled, readonly }) {
   if (!title) throw(`title for the tag is required`)
   if (!slug) slug = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
 
+  const external = (slug.startsWith(`http`))
   const lowerTitle = title.toLowerCase()
 
   if (readonly)
@@ -111,6 +117,16 @@ function Tag ({ title, slug, disabled, readonly }) {
       <Disabled>
         {lowerTitle}
       </Disabled>
+    )
+
+  if (external)
+    return (
+      <External
+        to={slug}
+        title={title}
+      >
+        {title}
+      </External>
     )
 
   return (
