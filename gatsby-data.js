@@ -65,5 +65,10 @@ module.exports = {
       to: "https://github.com/cbillowes",
       external: true,
     },
+    {
+      name: "LinkedIn",
+      to: "https://www.linkedin.com/in/cbouwer/",
+      external: true,
+    },
   ],
 };
