@@ -24,7 +24,7 @@ const SocialIcon = styled.img`
 
 const SocialContainer = styled.div`
   min-width: 12rem;
-  margin-left: .75rem;
+  margin-left: 1rem;
 `
 
 const Intro = () => {
@@ -41,11 +41,11 @@ const Intro = () => {
   )
 }
 
-const LicenseContainer = () => {
+const Licenses = () => {
   return (
-    <Flex data-component="footer-license-element">
+    <span data-component="footer-license-element">
       <License />
-    </Flex>
+    </span>
   )
 }
 
@@ -76,7 +76,7 @@ const Footer = () => {
     <FooterContainer>
       <Intro />
       <Flex>
-        <LicenseContainer />
+        <Licenses />
         <Social />
       </Flex>
     </FooterContainer>

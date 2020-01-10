@@ -12,6 +12,7 @@ const Container = styled.header`
   margin-bottom: 1.45rem;
   border-bottom: solid 10px ${colors.accentFirst};
   position: fixed;
+  z-index: 9999;
   right: 0;
   left: 0;
   top: 0;

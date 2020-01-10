@@ -174,7 +174,7 @@ const TagInternalLink = ({ to, title, children }) => {
 function Anchor ({ to, title, bland, tag, children }) {
   if (!to) throw(`url for the anchor is required`)
   
-  const external = (to.startsWith(`http`))
+  const external = to.startsWith(`http`) || to.startsWith(`mailto:`)
 
   if (tag && external)
     return (

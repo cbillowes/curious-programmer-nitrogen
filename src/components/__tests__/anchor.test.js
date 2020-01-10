@@ -40,7 +40,7 @@ describe('Anchor', () => {
     expect(contains).toBe(true)
   })
 
-  it('should render styled external link', () => {
+  it('should render styled external link (website)', () => {
     const validation = validateValues(
       sut({
         to: `http://www.google.com/`,
@@ -51,6 +51,21 @@ describe('Anchor', () => {
         {contains: true, value: `"nofollow noopener noreferrer"`},
         {contains: true, value: `target="_blank"`},
         {contains: true, value: `>Google<`},
+        {contains: true, value: `data-component="pretty-external-link-element"`},
+      ]
+    )
+    expect(validation).toBe(true)
+  })
+
+  it('should render styled external link (email)', () => {
+    const validation = validateValues(
+      sut({
+        to: `mailto:clarice@bouwer.dev`,
+        children: `clarice@bouwer.dev`,
+      }),
+      [
+        {contains: true, value: `"mailto:clarice@bouwer.dev"`},
+        {contains: true, value: `>clarice@bouwer.dev<`},
         {contains: true, value: `data-component="pretty-external-link-element"`},
       ]
     )
