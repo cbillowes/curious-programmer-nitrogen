@@ -26,7 +26,6 @@ const List = styled.ul`
 `
 
 const Profile = styled.section`
-  padding-top: 5rem;
   text-align: center;
   max-width: 80%;
   margin: 0 auto;
