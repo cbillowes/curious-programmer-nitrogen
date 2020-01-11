@@ -49,7 +49,7 @@ const Disabled = ({ children }) => {
 }
 
 function Tag ({ title, to, disabled, readonly }) {
-  if (!title) throw(`title for the tag is required`)
+  if (!title) throw new Error(`title for the tag is required`)
   if (!to) to = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
 
   const lowerTitle = title.toLowerCase()

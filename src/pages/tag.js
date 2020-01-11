@@ -5,7 +5,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 const _ = require('lodash')
 
-class TagsPage extends Component {
+class TagPage extends Component {
 
   getTags = (edges) => {
     let data = edges
@@ -41,10 +41,10 @@ class TagsPage extends Component {
   }
 }
 
-export default TagsPage
+export default TagPage
 
 export const pageQuery = graphql`
-  query TagsPage {
+  query TagPage {
     allMarkdownRemark(limit: 9999) {
       totalCount
       edges {

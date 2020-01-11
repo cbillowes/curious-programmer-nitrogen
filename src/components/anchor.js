@@ -6,7 +6,6 @@ import data from '../../gatsby-data.js'
 const colors = data.theme.colors
 const fonts = data.theme.fonts
 const transitions = data.theme.transitions
-const rel = "nofollow noopener noreferrer"
 
 const transition = `
   -webkit-transition: all ${transitions.transition};
@@ -108,7 +107,7 @@ const BlandExternalLink = ({ to, title, children }) => {
       { " " }
       <a
         href={to}
-        rel={rel}
+        rel="nofollow noopener noreferrer"
         title={title}
         target="_blank"
         data-component="bland-external-link-element"
@@ -126,7 +125,7 @@ const PrettyExternalLink = ({ to, title, children }) => {
       { " " }
       <AnchorElement
         href={to}
-        rel={rel}
+        rel="nofollow noopener noreferrer"
         title={title}
         target="_blank"
         data-component="pretty-external-link-element"
@@ -144,7 +143,7 @@ const TagExternalLink = ({ to, title, children }) => {
       { " " }
       <TagAnchorElement
         href={to}
-        rel={rel}
+        rel="nofollow noopener noreferrer"
         title={title}
         target="_blank"
         data-component="tag-external-link-element"
@@ -172,7 +171,7 @@ const TagInternalLink = ({ to, title, children }) => {
 }
 
 function Anchor ({ to, title, bland, tag, children }) {
-  if (!to) throw(`url for the anchor is required`)
+  if (!to) throw new Error(`url for the anchor is required`)
   
   const external = to.startsWith(`http`) || to.startsWith(`mailto:`)
 

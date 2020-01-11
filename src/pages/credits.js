@@ -1,7 +1,7 @@
 import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
-import { H1, H2, H3 } from "../components/heading"
+import { H1, H2 } from "../components/heading"
 import Credit from "../components/credit"
 import Anchor from "../components/anchor"
 
