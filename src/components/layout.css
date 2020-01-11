@@ -1,35 +1,7 @@
 @import url("//fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Open+Sans:400,800");
 
-html {
+html, body {
   margin: 0;
   padding: 0;
-}
-
-body {
-  margin: 0;
-  padding: 0;
-  background-color: #1f2227;
-  color: #bfcbd2;
-  font-family: 'Crimson Text', 'Times New Roman', Times, serif;
-  font-size: 16pt;
-  line-height: 2.5rem;
-}
-
-ul {
-  line-height: 2.5rem;
-}
-
-h1,
-h2,
-h3,
-h4 {
-  font-weight: 800;
-  font-family: 'Open Sans',Helvetica Neue,Helvetica,Arial,sans-serif;
-  text-shadow: none;
-  line-height: 1.75em;
-  color: #bfcbd2;
-}
-
-.page-container {
-  padding-top: 125px;
+  background-color: #181c1f;
 }

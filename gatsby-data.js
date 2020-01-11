@@ -17,11 +17,11 @@ module.exports = {
       },
     },
     fonts: {
-      heading: "Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
-      button: "Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
-      text: "Crimson Text,Times New Roman,serif",
-      navigation: "Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
-      results: "Open Sans,Helvetica Neue,Helvetica,Arial,sans-serif",
+      heading: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
+      button: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
+      text: "'Crimson Text','Times New Roman',serif",
+      navigation: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
+      results: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
     },
     transitions: {
       transition: ".3s",
