@@ -3,7 +3,9 @@ import { useStaticQuery, graphql } from "gatsby"
 import Img from "gatsby-image"
 
 function render(file) {
-  return <Img fluid={file.node.childImageSharp.fluid} />
+  if (file)
+    return <Img fluid={file.node.childImageSharp.fluid} />
+  return <></>
 }
 
 function getImage(files, src) {
