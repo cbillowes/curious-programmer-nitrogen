@@ -4,4 +4,7 @@ html, body {
   margin: 0;
   padding: 0;
   background-color: #181c1f;
+  color: #bfcbd2;
+  line-height: 2.25rem;
+  font-size: 130%;
 }

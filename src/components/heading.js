@@ -1,26 +1,33 @@
-import React from "react"
+import React from 'react'
+import styled from 'styled-components'
+import Constants from '../../gatsby-data'
+
+const Heading = styled.div`
+  font-family: ${Constants.theme.fonts.heading};
+  font-size: 130%;
+`
 
 const H1 = ({ children }) => {
   return (
-    <h1>{children}</h1>
+    <Heading><h1>{children}</h1></Heading>
   )
 }
 
 const H2 = ({ children }) => {
   return (
-    <h2>{children}</h2>
+    <Heading><h2>{children}</h2></Heading>
   )
 }
 
 const H3 = ({ children }) => {
   return (
-    <h3>{children}</h3>
+    <Heading><h3>{children}</h3></Heading>
   )
 }
 
 const H4 = ({ children }) => {
   return (
-    <h4>{children}</h4>
+    <Heading><h4>{children}</h4></Heading>
   )
 }
 

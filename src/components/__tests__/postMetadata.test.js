@@ -9,7 +9,6 @@ Enzyme.configure({ adapter: new Adapter() })
 function sut(props) {
   return (
     <PostMetadata 
-      moment={props.moment}
       date={props.date}
       author={props.author}
       ttr={props.ttr}
@@ -19,22 +18,26 @@ function sut(props) {
 
 describe('Post', () => {
 
-  it('should render the moment', () => {
-    const contains = containsElement(
-      sut({
-        moment: `a year ago`,
-      }),
-      <span>a year ago</span>
-    )
-    expect(contains).toBe(true)
-  })
-
   it('should render the date', () => {
     const contains = containsElement(
       sut({
         date: `1 April 2019`,
       }),
-      <span>1 April 2019</span>
+      <time dateTime="1554062400000">
+        Monday, 1 April 2019
+      </time>
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render the default author', () => {
+    const contains = containsElement(
+      sut({
+        author: ``,
+      }),
+      <span data-container="metadata-author">
+        by Clarice Bouwer
+      </span>
     )
     expect(contains).toBe(true)
   })
@@ -42,9 +45,11 @@ describe('Post', () => {
   it('should render the author', () => {
     const contains = containsElement(
       sut({
-        author: `Clarice Bouwer`,
+        author: `Douglas Adams`,
       }),
-      <span>Clarice Bouwer</span>
+      <span data-container="metadata-author">
+        by Douglas Adams
+      </span>
     )
     expect(contains).toBe(true)
   })
@@ -54,7 +59,9 @@ describe('Post', () => {
       sut({
         ttr: `15`,
       }),
-      <span><em>(Est. 15 minute read)</em></span>
+      <span data-container="metadata-ttr">
+        (Est. 15 minute read)
+      </span>
     )
     expect(contains).toBe(true)
   })

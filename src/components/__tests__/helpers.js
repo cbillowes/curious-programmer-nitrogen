@@ -64,12 +64,10 @@ export function containsElement(parentElement, childElement) {
   const renderedChild = renderedComponent(childElement)
   if (renderedParent.indexOf(renderedChild) > -1)
     return true
-    throw `Rendered actual element does not contain the expected element\n\Actual:  ${renderedParent}\nExpected: ${renderedChild}`
-}
-
-export function componentTranslatesTo(component, element) {
-  const wrapper = shallow(component)
-  return wrapper.contains(element)
+    throw new ValidationException(
+      `containsElement`,
+      `Rendered actual element does not contain the expected element\n\nActual:   ${renderedParent}\n\nExpected: ${renderedChild}`
+    )
 }
 
 export function getState(component) {

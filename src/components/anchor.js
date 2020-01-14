@@ -52,17 +52,16 @@ const TagAnchorElement = styled.a`
 `
 
 const TagLinkElement = styled(Link)`
-  font-weight: 400;
   font-family: ${fonts.button};
   text-shadow: none;
-  line-height: 1.75em;
+  line-height: 1.75rem;
   color: ${colors.darkest};
   background-color: ${colors.accentFirst};
-  padding: 0 .5em;
-  border-radius: 4px;
-  margin: .25em;
+  padding: .37rem .75rem;
+  border-radius: .25rem;
+  margin: .25rem;
   text-decoration: none;
-  display: inline-block;
+  font-size: 80%;
   ${transition}
 
   :hover {
@@ -84,6 +83,23 @@ const AnchorElement = styled.a`
     border-bottom: ${colors.accentSecond};
   }
 `
+
+const BlandInternalLink = ({ to, title, style, children }) => {
+  return (
+    <>
+      { " " }
+      <Link
+        to={to}
+        title={title}
+        style={style}
+        data-component="bland-link-element"
+      >
+        {children}
+      </Link>
+      { " " }
+    </>
+  )
+}
 
 const InternalLink = ({ to, title, children }) => {
   return (
@@ -170,7 +186,7 @@ const TagInternalLink = ({ to, title, children }) => {
   )
 }
 
-function Anchor ({ to, title, bland, tag, children }) {
+function Anchor ({ to, title, bland, tag, style, children }) {
   if (!to) throw new Error(`url for the anchor is required`)
   
   const external = to.startsWith(`http`) || to.startsWith(`mailto:`)
@@ -214,6 +230,17 @@ function Anchor ({ to, title, bland, tag, children }) {
         {children}
       </PrettyExternalLink>
     )
+
+  if (bland)
+      return (
+        <BlandInternalLink
+          to={to}
+          title={title}
+          style={style}
+        >
+          {children}
+        </BlandInternalLink>
+      )
 
   return (
     <InternalLink

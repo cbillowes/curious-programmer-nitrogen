@@ -7,7 +7,6 @@ const fonts = data.theme.fonts
 const colors = data.theme.colors
 
 const TagElement = styled.span`
-  font-weight: 400;
   font-family: ${fonts.button};
   text-shadow: none;
   line-height: 1.75em;
@@ -17,7 +16,6 @@ const TagElement = styled.span`
   border-radius: 4px;
   margin: .25em;
   text-decoration: none;
-  display: inline-block;
   cursor: default;
 `
 

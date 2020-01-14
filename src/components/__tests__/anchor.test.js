@@ -108,7 +108,7 @@ describe('Anchor', () => {
     expect(validation).toBe(true)
   })
 
-  it('should render an internal link', () => {
+  it('should render a styled internal link', () => {
     const validation = validateValues(
       sut({
         to: `/blog`,
@@ -120,6 +120,24 @@ describe('Anchor', () => {
         {contains: false, value: `target="_blank"`},
         {contains: true, value: ">Blog<"},
         {contains: true, value: `data-component="link-element"`},
+      ]
+    )
+    expect(validation).toBe(true)
+  })
+
+  it('should render an unstyled internal link', () => {
+    const validation = validateValues(
+      sut({
+        to: `/blog`,
+        bland: true,
+        children: `Blog`,
+      }),
+      [
+        {contains: true, value: `"/blog"`},
+        {contains: false, value: `"nofollow noopener noreferrer"`},
+        {contains: false, value: `target="_blank"`},
+        {contains: true, value: ">Blog<"},
+        {contains: true, value: `data-component="bland-link-element"`},
       ]
     )
     expect(validation).toBe(true)
