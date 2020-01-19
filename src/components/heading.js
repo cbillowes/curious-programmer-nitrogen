@@ -5,6 +5,7 @@ import Constants from '../../gatsby-data'
 const Heading = styled.div`
   font-family: ${Constants.theme.fonts.heading};
   font-size: 130%;
+  line-height: 2.75rem;
 `
 
 const H1 = ({ children }) => {
