@@ -2,6 +2,7 @@ import React from 'react'
 import styled from 'styled-components'
 import { H1 } from './heading'
 import PostMetadata from './postMetadata'
+import Tags from './tags'
 import Tag from './tag'
 import Anchor from './anchor'
 import Constants from '../../gatsby-data'
@@ -50,22 +51,12 @@ function metadataComponent(date, author, ttr) {
 }
 
 function tagsComponent(tags) {
-  if (!tags) return <></> 
-
-  const renderable = tags.split(`,`)
   return (
     <>
       <TagsContainer className="tags">
-        <div data-component="post-tags">
-          {renderable.map(tag => {
-            return (
-              <Tag
-                key={tag}
-                title={tag}
-              />
-            )
-          })}
-        </div>
+        <Tags
+          tags={tags}
+        />
       </TagsContainer>
     </>
   )

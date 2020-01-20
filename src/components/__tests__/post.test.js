@@ -6,6 +6,7 @@ import Post from '../post'
 import { H1 } from '../heading'
 import Anchor from '../anchor'
 import PostMetadata from '../postMetadata'
+import Tags from '../tags'
 import Tag from '../tag'
 import Constants from '../../../gatsby-data'
 
@@ -80,11 +81,9 @@ describe('Post', () => {
         slug: `/`,
         tags: `hello,world,greetings` 
       }),
-      <div data-component="post-tags">
-        <Tag title="hello" />
-        <Tag title="world" />
-        <Tag title="greetings" />
-      </div>
+      <Tags
+        tags={`hello,world,greetings`}
+      />
     )
     expect(contains).toBe(true)
   })

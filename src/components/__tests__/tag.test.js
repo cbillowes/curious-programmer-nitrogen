@@ -3,7 +3,6 @@ import Enzyme, { shallow } from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsElement, validateValues } from './helpers'
 import Tag from '../tag'
-import Anchor from '../anchor'
 
 Enzyme.configure({ adapter: new Adapter() })
 
