@@ -4,6 +4,7 @@ import Adapter from 'enzyme-adapter-react-16'
 import { containsElement } from './helpers'
 import PostNavigation from '../postNavigation'
 import PostMetadata from '../postMetadata'
+import Tags from '../tags'
 import Anchor from '../anchor'
 import { H1 } from '../heading'
 import Constants from '../../../gatsby-data'
@@ -29,6 +30,7 @@ function post() {
     date: `1 April 2019`,
     ttr: `15`,
     author: `Douglas Adams`,
+    tags: `hitchiker,towel,telephone`
   }
 }
 
@@ -105,7 +107,7 @@ describe('Post', () => {
     const item = post()
     const contains = containsElement(
       sut({
-        previous: item
+        previous: item,
       }),
       <div className="postNavigationMetadata">
         <Anchor
@@ -124,6 +126,19 @@ describe('Post', () => {
           />
         </Anchor>
       </div>
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render the post tags', () => {
+    const item = post()
+    const contains = containsElement(
+      sut({
+        previous: item,
+      }),
+      <Tags
+        tags={item.tags}
+      />
     )
     expect(contains).toBe(true)
   })

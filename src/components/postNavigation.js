@@ -1,8 +1,9 @@
 import React from 'react'
 import styled from 'styled-components'
-import { H1 } from '../components/heading'
-import Anchor from '../components/anchor'
-import PostMetadata from '../components/postMetadata'
+import { H1 } from './heading'
+import Anchor from './anchor'
+import PostMetadata from './postMetadata'
+import Tags from './tags'
 import Constants from '../../gatsby-data'
 
 const defaultTruncationLimit = 250
@@ -96,7 +97,9 @@ function navigateToPost(post) {
           </Anchor>
         </div>
       </section>
-      <div>{post.tags}</div>
+      <Tags
+        tags={post.tags}
+      />
     </>
   )
 }
