@@ -1,5 +1,5 @@
 import React from 'react'
-import Post from '../components/post'
+import Post from './post'
 import Lang from '../../gatsby-lang'
 
 const Posts = ({ edges }) => {

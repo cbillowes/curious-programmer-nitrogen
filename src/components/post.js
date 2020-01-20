@@ -3,7 +3,6 @@ import styled from 'styled-components'
 import { H1 } from './heading'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
-import Tag from './tag'
 import Anchor from './anchor'
 import Constants from '../../gatsby-data'
 
