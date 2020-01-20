@@ -3,6 +3,12 @@ import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
 import { containsElement } from './helpers'
 import PostNavigation from '../postNavigation'
+import PostMetadata from '../postMetadata'
+import Anchor from '../anchor'
+import { H1 } from '../heading'
+import Constants from '../../../gatsby-data'
+
+const colors = Constants.theme.colors
 
 Enzyme.configure({ adapter: new Adapter() })
 
@@ -18,7 +24,8 @@ function sut(props) {
 function post() {
   return {
     title: `A whole new world`,
-    expect: `rog avast overhaul swab hail-shot gibbet dance the hempen jig spirits hempen halter prow.`,
+    slug: `/`,
+    excerpt: `Frog avast overhaul swab hail-shot gibbet dance the hempen jig spirits hempen halter prow.`,
     date: `1 April 2019`,
     ttr: `15`,
     author: `Douglas Adams`,
@@ -49,6 +56,74 @@ describe('Post', () => {
       <PostNavigation
         next={next}
       />
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render the title', () => {
+    const item = post()
+    const contains = containsElement(
+      sut({
+        previous: item,
+      }),
+      <H1>
+        <Anchor
+          to={item.slug}
+          title={item.title}
+        >
+          {item.title}
+        </Anchor>
+      </H1>
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render the excerpt', () => {
+    const item = post()
+    const contains = containsElement(
+      sut({
+        previous: item,
+      }),
+      <Anchor
+        to={item.slug}
+        title={item.title}
+        bland={true}
+        style={{
+          textDecoration: `none`,
+          color: colors.light,
+        }}
+      >
+        <span>
+          {item.excerpt}
+        </span>
+      </Anchor>
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render the post metadata', () => {
+    const item = post()
+    const contains = containsElement(
+      sut({
+        previous: item
+      }),
+      <div className="postNavigationMetadata">
+        <Anchor
+          to={item.slug}
+          title={item.title}
+          bland={true}
+          style={{
+            textDecoration: `none`,
+            color: colors.fence,
+          }}
+        >
+          <PostMetadata
+            date={item.date}
+            author={item.author}
+            ttr={item.ttr}
+          />
+        </Anchor>
+      </div>
     )
     expect(contains).toBe(true)
   })

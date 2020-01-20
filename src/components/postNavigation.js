@@ -65,19 +65,19 @@ function navigateToPost(post) {
             {post.title}
           </Anchor>
         </H1>
-          <Anchor
-            to={post.slug}
-            title={post.title}
-            bland={true}
-            style={{
-              textDecoration: `none`,
-              color: colors.light,
-            }}
-          >
-            <span>
-              {excerpt}
-            </span>
-          </Anchor>
+        <Anchor
+          to={post.slug}
+          title={post.title}
+          bland={true}
+          style={{
+            textDecoration: `none`,
+            color: colors.light,
+          }}
+        >
+          <span>
+            {excerpt}
+          </span>
+        </Anchor>
         <div className="postNavigationMetadata">
           <Anchor
             to={post.slug}
