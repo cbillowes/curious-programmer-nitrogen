@@ -43,17 +43,41 @@ const NextItemContainer = styled.section`
   padding-right: 10%;
 `
 
+function truncate(sentence, limit) {
+  if (!sentence) return ``
+
+  const words = sentence.trim().split(` `)
+  return (
+    (
+      words.length > limit ? 
+      words.splice(0, limit) : 
+      words
+    ).join(` `)
+  )
+}
+
+function ellipsies(sentence, limit) {
+  if (!sentence) return ``
+
+  const words = sentence.trim().split(` `)
+  return (
+    words.length > limit ?
+    `...` : 
+    ``
+  )
+}
+
+function getSentence(sentence, limit) {
+  const truncated = truncate(sentence, limit)
+  const more = ellipsies(sentence, limit)
+  return `${truncated}${more}`
+}
+
 function navigateToPost(post) {
   if (!post) return <></>
 
   const limit = post.limitExcerpt || defaultTruncationLimit
-  let excerpt = post.excerpt || ""
-
-  if (excerpt.length > limit) {
-    const truncated = excerpt.substring(0, limit)
-    const aestheticallyTruncated = truncated.substring(0, truncated.lastIndexOf(` `))
-    excerpt = `${aestheticallyTruncated}...`
-  }
+  const excerpt = getSentence(post.excerpt || ``, limit)
 
   return (
     <>

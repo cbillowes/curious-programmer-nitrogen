@@ -34,8 +34,8 @@ const hitchikersGuideToTheGalaxy = {
   `,
 }
 
-storiesOf('Post Navigation', module)
-  .add('default', () => 
+storiesOf('Post', module)
+  .add('navigation', () => 
     <PostNavigation
       previous={{
         title: starwars.title,
@@ -57,7 +57,7 @@ storiesOf('Post Navigation', module)
       }}
     />
   )
-  .add('truncate', () => 
+  .add('navigation (truncated)', () => 
     <PostNavigation
       previous={{
         title: starwars.title,
@@ -67,7 +67,7 @@ storiesOf('Post Navigation', module)
         date: `21 January 2018`,
         ttr: `1`,
         tags: `star wars,vader,yoda`,
-        limitExcerpt: 500,
+        limitExcerpt: 20,
       }}
       next={{
         title: hitchikersGuideToTheGalaxy.title,
@@ -77,7 +77,7 @@ storiesOf('Post Navigation', module)
         date: `18 November 2017`,
         ttr: `3`,
         tags: `hitchikers,beer,towel`,
-        limitExcerpt: 500,
+        limitExcerpt: 20,
       }}
     />
   )
