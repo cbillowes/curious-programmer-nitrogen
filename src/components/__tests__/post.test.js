@@ -7,7 +7,6 @@ import { H1 } from '../heading'
 import Anchor from '../anchor'
 import PostMetadata from '../postMetadata'
 import Tags from '../tags'
-import Tag from '../tag'
 import Constants from '../../../gatsby-data'
 
 const colors = Constants.theme.colors;

@@ -6,6 +6,7 @@ import PostNavigation from '../postNavigation'
 import PostMetadata from '../postMetadata'
 import Tags from '../tags'
 import Anchor from '../anchor'
+import Text from '../text'
 import { H1 } from '../heading'
 import Constants from '../../../gatsby-data'
 
@@ -34,7 +35,7 @@ function post() {
   }
 }
 
-describe('Post', () => {
+describe('Post navigation', () => {
 
   it('should render the previous post', () => {
     const previous = post()
@@ -95,9 +96,9 @@ describe('Post', () => {
           color: colors.light,
         }}
       >
-        <span>
+        <Text>
           {item.excerpt}
-        </span>
+        </Text>
       </Anchor>
     )
     expect(contains).toBe(true)

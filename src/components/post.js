@@ -4,6 +4,7 @@ import { H1 } from './heading'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
 import Anchor from './anchor'
+import Text from './text'
 import Constants from '../../gatsby-data'
 
 const colors = Constants.theme.colors
@@ -83,76 +84,36 @@ function postHeadingComponent(title, slug) {
   )
 }
 
-function Post({ summary, title, slug, tags, date, author, ttr, children }) {
+function Post({ summary, limit, title, slug, tags, date, author, ttr, children }) {
   return (
     <>
       <Container>
         {postHeadingComponent(title, slug)}
         {summary ? 
-          <></> : 
-          <TopMetadataContainer>
-            {metadataComponent(date, author, ttr)}
-            {tagsComponent(tags)}
-          </TopMetadataContainer>
-        }
-        <div>
-          {children}
-        </div>
-        {summary ? 
-          <BottomMetadataContainer>
-            {metadataComponent(date, author, ttr)}
-            {tagsComponent(tags)}
-          </BottomMetadataContainer> :
-          <></>
+          <>
+            <Text
+              limit={limit}
+            >
+              {children}
+            </Text>
+            <BottomMetadataContainer>
+              {metadataComponent(date, author, ttr)}
+              {tagsComponent(tags)}
+            </BottomMetadataContainer>
+          </> : 
+          <>
+            <TopMetadataContainer>
+              {metadataComponent(date, author, ttr)}
+              {tagsComponent(tags)}
+            </TopMetadataContainer>
+            <div>
+              {children}
+            </div>
+          </>
         }
       </Container>
     </>
   )
-  // const renderableTags = (tags || "").split(",")
-  // const metadata =
-  // <>
-  //   <PostMetadata
-  //     date={date}
-  //     author={author}
-  //     ttr={ttr}
-  //   /> 
-  //   <TagsContainer>
-  //     {renderableTags.map(tag => {
-  //       return (
-  //         <Tag 
-  //           key={tag} 
-  //           title={tag} 
-  //         />
-  //       )
-  //     })}
-  //   </TagsContainer>
-  // </>
-
-  // return (
-  //   <Container>
-  //     <H1>
-  //       <Anchor
-  //         to={slug}
-  //         title={title}
-  //         bland={true}
-  //         style={{
-  //           color: colors.light,
-  //           textDecoration: `none`,
-  //           borderBottom: `solid 1px ${colors.light}`,
-  //         }}
-  //       >
-  //         {title}
-  //       </Anchor>
-  //     </H1>
-  //     <MetadataContainer>
-  //       {summary ? <></> : metadata}
-  //     </MetadataContainer>
-  //     <div>
-  //       {children}
-  //     </div>
-  //     {summary ? metadata : <></>}
-  //   </Container>
-  // )
 }
 
 export default Post

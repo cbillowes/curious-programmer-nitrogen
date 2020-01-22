@@ -2,6 +2,8 @@ import React from 'react'
 import Post from './post'
 import Lang from '../../gatsby-lang'
 
+const truncate = 50
+
 const Posts = ({ edges }) => {
   if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
 
@@ -13,6 +15,7 @@ const Posts = ({ edges }) => {
     return (
       <Post 
         summary="true"
+        limit={truncate}
         title={frontmatter.title}
         slug={field.slug}
         tags={tags}

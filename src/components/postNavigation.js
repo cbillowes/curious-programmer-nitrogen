@@ -4,6 +4,7 @@ import { H1 } from './heading'
 import Anchor from './anchor'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
+import Text from './text'
 import Constants from '../../gatsby-data'
 
 const defaultTruncationLimit = 250
@@ -43,42 +44,10 @@ const NextItemContainer = styled.section`
   padding-right: 10%;
 `
 
-function truncate(sentence, limit) {
-  if (!sentence) return ``
-
-  const words = sentence.trim().split(` `)
-  return (
-    (
-      words.length > limit ? 
-      words.splice(0, limit) : 
-      words
-    ).join(` `)
-  )
-}
-
-function ellipsies(sentence, limit) {
-  if (!sentence) return ``
-
-  const words = sentence.trim().split(` `)
-  return (
-    words.length > limit ?
-    `...` : 
-    ``
-  )
-}
-
-function getSentence(sentence, limit) {
-  const truncated = truncate(sentence, limit)
-  const more = ellipsies(sentence, limit)
-  return `${truncated}${more}`
-}
-
 function navigateToPost(post) {
   if (!post) return <></>
 
   const limit = post.limitExcerpt || defaultTruncationLimit
-  const excerpt = getSentence(post.excerpt || ``, limit)
-
   return (
     <>
       <section>
@@ -99,9 +68,11 @@ function navigateToPost(post) {
             color: colors.light,
           }}
         >
-          <span>
-            {excerpt}
-          </span>
+          <Text
+            limit={limit}
+          >
+            {post.excerpt || ``}
+          </Text>
         </Anchor>
         <div className="postNavigationMetadata">
           <Anchor
