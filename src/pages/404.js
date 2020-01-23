@@ -19,7 +19,7 @@ const NotFoundPage = (props) => (
 export default NotFoundPage
 
 export const pageQuery = graphql`
-  query IndexQuery {
+  query PageNotFound {
     allMarkdownRemark(
       limit: 5
     ) {

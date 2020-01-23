@@ -2,10 +2,6 @@ import React from 'react'
 
 const defaultLimit = 250
 
-function isType(object, type) {
-  return typeof object === type
-}
-
 function squashToPlainText(content) {
   if (typeof content === `string`) 
     return content

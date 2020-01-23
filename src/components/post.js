@@ -18,15 +18,19 @@ const Container = styled.article`
   }
 `
 
+const BlurbContainer = styled.div`
+  font-size: 130%;
+`
+
 const TopMetadataContainer = styled.div`
   text-align: center;
   margin-bottom: 1.5rem;
-  font-size: 80%;
+  font-size: 100%;
 `
 
 const BottomMetadataContainer = styled.div`
   text-align: right;
-  font-size: 80%;
+  font-size: 100%;
   color: ${colors.fence};
 
   .tags {
@@ -87,15 +91,17 @@ function postHeadingComponent(title, slug) {
 function Post({ summary, limit, title, slug, tags, date, author, ttr, children }) {
   return (
     <>
-      <Container>
+      <Container key={slug}>
         {postHeadingComponent(title, slug)}
         {summary ? 
           <>
-            <Text
-              limit={limit}
-            >
-              {children}
-            </Text>
+            <BlurbContainer>
+              <Text
+                limit={limit}
+              >
+                {children}
+              </Text>
+            </BlurbContainer>
             <BottomMetadataContainer>
               {metadataComponent(date, author, ttr)}
               {tagsComponent(tags)}
@@ -106,7 +112,7 @@ function Post({ summary, limit, title, slug, tags, date, author, ttr, children }
               {metadataComponent(date, author, ttr)}
               {tagsComponent(tags)}
             </TopMetadataContainer>
-            <div>
+            <div className="html">
               {children}
             </div>
           </>

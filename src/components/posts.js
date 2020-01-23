@@ -11,7 +11,7 @@ const Posts = ({ edges }) => {
     const node = edge.node
     const field = node.fields
     const frontmatter = node.frontmatter
-    const tags = frontmatter.tags.join(`,`)
+    const tags = node.frontmatter.tags.join(`,`)
     return (
       <Post 
         summary="true"
