@@ -4,7 +4,7 @@ import Tag from './tag'
 function Tags ({ tags }) {
   if (!tags) return <span></span>
 
-  const renderable = tags.split(`,`)
+  const renderable = Array.isArray(tags) ? tags : tags.split(`,`)
   return (
     <>
       <div data-component="tags">

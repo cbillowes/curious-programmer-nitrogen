@@ -8,7 +8,7 @@ import Text from './text'
 import Constants from '../../gatsby-data'
 
 const colors = Constants.theme.colors
-const Container = styled.article`
+const Container = styled.section`
   max-width: 960px;
   margin: 0 auto;
   padding: 1rem 0;
@@ -40,6 +40,14 @@ const BottomMetadataContainer = styled.div`
 
 const TagsContainer = styled.div`
   margin-top: .75rem;
+`
+
+const PostContainer = styled.article`
+  font-size: 130%;
+
+  a {
+    color: ${colors.accentFirst};
+  }
 `
 
 function metadataComponent(date, author, ttr) {
@@ -89,6 +97,15 @@ function postHeadingComponent(title, slug) {
 }
 
 function Post({ summary, limit, title, slug, tags, date, author, ttr, children }) {
+  const article = 
+    typeof children === `string` ?
+    <PostContainer
+      className="html"
+      dangerouslySetInnerHTML={{__html: children}}
+    /> :
+    <article>
+      {children}
+    </article>
   return (
     <>
       <Container key={slug}>
@@ -112,9 +129,7 @@ function Post({ summary, limit, title, slug, tags, date, author, ttr, children }
               {metadataComponent(date, author, ttr)}
               {tagsComponent(tags)}
             </TopMetadataContainer>
-            <div className="html">
-              {children}
-            </div>
+            {article}
           </>
         }
       </Container>

@@ -17,7 +17,7 @@ function sut(props) {
 
 describe('Tags', () => {
 
-  it('should render the list of tags', () => {
+  it('should render the list of tags from a string', () => {
     const contains = containsElement(
       sut({
         tags: `hello,world`,
@@ -43,6 +43,25 @@ describe('Tags', () => {
       <span></span>
     )
     expect(contains).toBe(true)
+  })
+
+  it('should render the list of tags from an array', () => {
+    const contains = containsElement(
+      sut({
+        tags: [`hello`, `world`],
+      }),
+      <div data-component="tags">
+        <Tag
+          key={`hello`}
+          title={`hello`}
+        />
+        <Tag
+          key={`world`}
+          title={`world`}
+        />
+      </div>
+    )
+    expect(contains).toBe(true) 
   })
 
 })

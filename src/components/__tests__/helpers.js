@@ -29,7 +29,7 @@ export function containsValue(element, value) {
     return true
     throw new ValidationException(
       `ElementDoesNotContainValue`,
-      `Rendered element tag does not contain value: ${value}\n\nRendered tag: ${rendered}`
+      `Rendered element tag does not contain value:\n${value}\n\nRendered tag:\n${rendered}`
     )
 }
 

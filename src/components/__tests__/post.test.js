@@ -1,7 +1,7 @@
 import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { containsElement } from './helpers'
+import { containsElement, containsValue } from './helpers'
 import Post from '../post'
 import { H1 } from '../heading'
 import Anchor from '../anchor'
@@ -87,15 +87,34 @@ describe('Post', () => {
     expect(contains).toBe(true)
   })
 
-  it('should render the body', () => {
+  it('should render the body from html tags', () => {
     const contains = containsElement(
       sut({
         slug: `/`,
-        children: `Lorem ipsum.`,
+        children:
+          <div>
+            <p>I like the <strong>whooshing</strong> sound they make as they fly by.</p>
+            <p>This must be Thursday, said Arthur to himself, sinking low over his beer.</p>
+            <p><em>Time is an illusion. Lunchtime doubly so.</em></p>
+          </div>,
       }),
       <div>
-        Lorem ipsum.
+        <p>I like the <strong>whooshing</strong> sound they make as they fly by.</p>
+        <p>This must be Thursday, said Arthur to himself, sinking low over his beer.</p>
+        <p><em>Time is an illusion. Lunchtime doubly so.</em></p>
       </div>
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render the body from text', () => {
+    const contains = containsValue(
+      sut({
+        slug: `/`,
+        children:
+          `<div><p>Time is an illusion. <strong>Lunchtime doubly so.</strong></p></div>`,
+      }),
+      `<div><p>Time is an illusion. <strong>Lunchtime doubly so.</strong></p></div>`
     )
     expect(contains).toBe(true)
   })
