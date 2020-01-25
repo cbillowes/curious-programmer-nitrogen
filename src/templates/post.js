@@ -1,26 +1,48 @@
 import React from 'react'
 import Post from '../components/post'
 import SEO from '../components/seo'
+import PostNavigation from '../components/postNavigation'
+import Footer from '../components/footer'
 import Layout from '../components/layout'
 
+function postNavigation(node) {
+  return {
+    title: node.frontmatter.title,
+    slug: node.fields.slug,
+    excerpt: node.excerpt,
+    author: node.frontmatter.author,
+    date: node.frontmatter.date,
+    ttr: node.timeToRead,
+    tags: node.frontmatter.tags,
+  }
+}
+
 export default (props) => {
-  const { slug, next, prev } = props.pageContext
-  const node = props.data.post
-  const frontmatter = node.frontmatter
-  console.log({s: slug, n: next, p: prev, pn: node})
+  const { slug } = props.pageContext
+  const { post, prev, next } = props.data
+  const frontmatter = post.frontmatter
   return (
-    <Layout>
-      <SEO title={frontmatter.title} />
-      <Post
-        slug={slug}
-        title={frontmatter.title}
-        date={frontmatter.date}
-        tags={frontmatter.tags}
-        ttr={node.timeToRead}
+    <>
+      <Layout
+        footer="hidden"
       >
-        {node.html}
-      </Post>
-    </Layout>
+        <SEO title={frontmatter.title} />
+        <Post
+          slug={slug}
+          title={frontmatter.title}
+          date={frontmatter.date}
+          tags={frontmatter.tags}
+          ttr={post.timeToRead}
+        >
+          {post.html}
+        </Post>
+      </Layout>
+      <PostNavigation
+        previous={postNavigation(prev)}
+        next={postNavigation(next)}
+      />
+      <Footer />
+    </>
   )
 }
 

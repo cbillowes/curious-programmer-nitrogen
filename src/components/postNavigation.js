@@ -20,6 +20,10 @@ const Container = styled.div`
     flex-basis: 50%;
     margin: 3% 0;
 
+    h1 {
+      font-size: 80%;
+    }
+
     .postNavigationMetadata {
       color: ${colors.fence};
     }

@@ -14,7 +14,6 @@ const Site = styled.div`
   background-color: ${colors.dark};
   color: ${colors.light};
   font-family: ${fonts.text};
-  font-size: 16pt;
   line-height: 2.5rem;
 
   h1, h2, h3, h4 {
@@ -35,7 +34,7 @@ const Site = styled.div`
   }
 `
 
-const Layout = ({ children }) => {
+const Layout = ({ footer, children }) => {
   const data = useStaticQuery(graphql`
     query SiteTitleQuery {
       site {
@@ -52,7 +51,11 @@ const Layout = ({ children }) => {
       <main className="page-container">
         {children}
       </main>
-      <Footer/>
+      {
+        footer === `hidden` ?
+        <></> :
+        <Footer />
+      }
     </Site>
   )
 }
