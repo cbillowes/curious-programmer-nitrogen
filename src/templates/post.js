@@ -1,6 +1,7 @@
 import React from 'react'
 import Post from '../components/post'
 import SEO from '../components/seo'
+import PostNavigationTiny from '../components/postNavigationTiny'
 import PostNavigation from '../components/postNavigation'
 import Footer from '../components/footer'
 import Layout from '../components/layout'
@@ -27,6 +28,11 @@ export default (props) => {
         footer="hidden"
       >
         <SEO title={frontmatter.title} />
+        <PostNavigationTiny
+          previous={postNavigation(prev)}
+          next={postNavigation(next)}
+        />
+        <PostNavigation tiny="true" />
         <Post
           slug={slug}
           title={frontmatter.title}

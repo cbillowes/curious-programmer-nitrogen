@@ -70,6 +70,17 @@ export function containsElement(parentElement, childElement) {
     )
 }
 
+export function doesNotContainElement(parentElement, childElement) {
+  const renderedParent = renderedComponent(parentElement)
+  const renderedChild = renderedComponent(childElement)
+  if (renderedParent.indexOf(renderedChild) === -1)
+    return true
+    throw new ValidationException(
+      `doesNotContainElement`,
+      `Rendred actual element contains an unexpected element\n\nActual:    ${renderedParent}\n\nExpected: ${renderedChild}`
+    )
+}
+
 export function getState(component) {
   const wrapper = shallow(component)
   const state = wrapper.state()

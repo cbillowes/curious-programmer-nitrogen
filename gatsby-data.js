@@ -1,4 +1,7 @@
 module.exports = {
+  site: {
+    title: `Curious Programmer`
+  },
   theme: {
     colors: {
       darkest: "#181c1f",

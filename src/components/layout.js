@@ -1,12 +1,12 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
 import styled from 'styled-components'
 import Header from './header'
 import Footer from './footer'
 import Constants from '../../gatsby-data'
 import './layout.css'
 
+const site = Constants.site
 const colors = Constants.theme.colors
 const fonts = Constants.theme.fonts
 
@@ -35,19 +35,9 @@ const Site = styled.div`
 `
 
 const Layout = ({ footer, children }) => {
-  const data = useStaticQuery(graphql`
-    query SiteTitleQuery {
-      site {
-        siteMetadata {
-          title
-        }
-      }
-    }
-  `)
-
   return (
     <Site>
-      <Header siteTitle={data.site.siteMetadata.title} />
+      <Header siteTitle={site.title} />
       <main className="page-container">
         {children}
       </main>
