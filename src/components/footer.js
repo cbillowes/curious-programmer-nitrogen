@@ -9,7 +9,6 @@ const colors = data.theme.colors
 const FooterContainer = styled.footer`
   background-color: ${colors.darkest};
   padding: 3rem 5rem;
-  margin-top: 3rem;
 `
 
 const Flex = styled.div`

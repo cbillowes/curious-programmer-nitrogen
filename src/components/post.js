@@ -19,7 +19,7 @@ const Container = styled.section`
 `
 
 const BlurbContainer = styled.div`
-  font-size: 130%;
+  font-size: 160%;
 `
 
 const TopMetadataContainer = styled.div`
@@ -43,7 +43,7 @@ const TagsContainer = styled.div`
 `
 
 const PostContainer = styled.article`
-  font-size: 130%;
+  font-size: 120%;
 
   a {
     color: ${colors.accentFirst};

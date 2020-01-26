@@ -18,7 +18,7 @@ const Container = styled.div`
   section {
     flex-grow: 1;
     flex-basis: 50%;
-    margin: 3% 0;
+    margin-top: 3%;
 
     h1 {
       font-size: 80%;
