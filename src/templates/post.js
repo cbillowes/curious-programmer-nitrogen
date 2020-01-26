@@ -32,7 +32,6 @@ export default (props) => {
           previous={postNavigation(prev)}
           next={postNavigation(next)}
         />
-        <PostNavigation tiny="true" />
         <Post
           slug={slug}
           title={frontmatter.title}

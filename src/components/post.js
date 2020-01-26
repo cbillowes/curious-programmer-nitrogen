@@ -11,7 +11,6 @@ const colors = Constants.theme.colors
 const Container = styled.section`
   max-width: 960px;
   margin: 0 auto;
-  padding: 1rem 0;
 
   h1 {
     text-align: center;
