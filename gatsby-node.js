@@ -13,7 +13,7 @@ exports.onCreateNode = ({ node, actions }) => {
   }
 }
 
-exports.createPages = async ({ graphql, actions }) => {
+exports.createPages = async ({ graphql, actions, reporter }) => {
   const { createPage } = actions
   const result = await graphql(`
     query {
@@ -29,12 +29,19 @@ exports.createPages = async ({ graphql, actions }) => {
     }
   `)
 
+  if (result.errors) {
+    reporter.panicOnBuild(`Error while collecting blog pages from the GraphQL query`)
+    return
+  }
+
+  const template = path.resolve(`./src/templates/post.js`)
   result.data.allMarkdownRemark.edges.forEach(({ node }) => {
+    const path = node.fields.slug
     createPage({
-      path: node.fields.slug,
-      component: path.resolve(`./src/templates/post.js`),
+      path,
+      component: template,
       context: {
-        slug: node.fields.slug,
+        slug: path,
       },
     })
   })
