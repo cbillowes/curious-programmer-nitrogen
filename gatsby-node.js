@@ -46,3 +46,11 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
     })
   })
 }
+
+exports.onCreatePage = ({ page, actions }) => {
+  const { createPage } = actions
+  if (page.path === `/`) {
+    page.path = `/blog`
+    createPage(page)
+  }
+}
