@@ -5,7 +5,7 @@ import Posts from '../components/posts'
 
 const IndexPage = (props) => (
   <Layout>
-    <SEO title="Home" />
+    <SEO title="Blog" />
     <Posts edges={props.data.allMarkdownRemark.edges} />
   </Layout>
 )
