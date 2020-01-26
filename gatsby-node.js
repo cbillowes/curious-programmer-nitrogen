@@ -1,10 +1,10 @@
 const path = require(`path`)
-const { createFilePath } = require(`gatsby-source-filesystem`)
+const _ = require('lodash')
 
-exports.onCreateNode = ({ node, getNode, actions }) => {
+exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
-    const slug = createFilePath({ node, getNode, basePath: `pages` })
+    const slug = `/blog/${_.kebabCase(node.frontmatter.title)}`
     createNodeField({
       node,
       name: `slug`,
