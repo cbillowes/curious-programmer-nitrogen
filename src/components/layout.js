@@ -29,8 +29,8 @@ const Site = styled.div`
   .page-container {
     max-width: 1024px;
     margin: 0 auto;
-    padding-top: 10rem;
     padding-bottom: 3rem;
+    padding-top: 6%;
   }
 `
 

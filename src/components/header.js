@@ -21,7 +21,7 @@ const Container = styled.header`
 const Wrapper = styled.div`
   margin: 0 auto;
   max-width: 960;
-  padding: 1rem 1.1rem;
+  padding: 0 2%;
   display: flexbox;
   justify-content: space-between;
   align-items: center;

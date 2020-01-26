@@ -9,7 +9,8 @@ const buttons = data.theme.buttons
 
 const Container = styled.span`
   cursor: pointer;
-  margin-left: .5em;
+  margin-left: 1%em;
+  margin-top: 10%;
   width: 60px;
   height: 60px;
   border-radius: 5px;

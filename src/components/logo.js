@@ -9,7 +9,7 @@ const colors = data.theme.colors
 const Container = styled.div`
   margin: 0;
   font-family: ${fonts.heading};
-  font-size: 1.5rem;
+  font-size: 130%;
 `
 
 const Anchor = styled(Link)`
