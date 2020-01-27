@@ -2,9 +2,11 @@ import React from 'react'
 import styled from 'styled-components'
 import { H1 } from './heading'
 import Anchor from './anchor'
+import Text from './text'
 import Constants from '../../gatsby-data'
 
 const colors = Constants.theme.colors
+const limit = 5
 
 const Container = styled.div`
   display: flex;
@@ -56,7 +58,11 @@ function navigateToPost(post) {
             to={post.slug}
             title={post.title}
           >
-            {post.title}
+            <Text
+              limit={limit}
+            >
+              {post.title}
+            </Text>
           </Anchor>
         </H1>
       </section>

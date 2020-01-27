@@ -35,8 +35,8 @@ const hitchikersGuideToTheGalaxy = {
   `,
 }
 
-storiesOf('Post', module)
-  .add('layout: navigation (tiny)', () => 
+storiesOf('Navigation (Tiny)', module)
+  .add('layout', () => 
     <Layout>
       <PostNavigationTiny
         previous={{
@@ -60,7 +60,7 @@ storiesOf('Post', module)
       />
     </Layout>
   )
-  .add('plain: navigation (tiny)', () => 
+  .add('plain', () => 
     <>
       <PostNavigationTiny
         previous={{

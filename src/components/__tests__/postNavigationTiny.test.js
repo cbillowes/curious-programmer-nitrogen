@@ -35,7 +35,7 @@ function post() {
   }
 }
 
-describe('Post navigation', () => {
+describe('Tiny post navigation', () => {
 
   it('should render the previous post', () => {
     const previous = post()
@@ -74,7 +74,11 @@ describe('Post navigation', () => {
           to={item.slug}
           title={item.title}
         >
-          {item.title}
+          <Text
+            limit={5}
+          >
+           {item.title}
+          </Text>
         </Anchor>
       </H1>
     )
