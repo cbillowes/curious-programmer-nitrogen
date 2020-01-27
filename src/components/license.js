@@ -46,6 +46,10 @@ function License ({ theme }) {
           for the code and it's probably a good idea to read the 
           <Anchor to="/privacy-policy">Privacy Policy</Anchor>.
         </Paragraph>
+        <Paragraph>
+          The website is open-source and is available on <Anchor to="https://github.com/cbillowes/curious-programmer-nitrogen">GitHub</Anchor>.
+          Please give it a star if you think it is cool.
+        </Paragraph>
       </div>
     </>
   )

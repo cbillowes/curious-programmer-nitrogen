@@ -26,6 +26,7 @@ module.exports = {
       text: "'Crimson Text','Times New Roman',serif",
       navigation: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
       results: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
+      footer: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
     },
     transitions: {
       transition: ".3s",

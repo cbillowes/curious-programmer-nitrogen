@@ -5,25 +5,54 @@ import License from './license'
 import data from '../../gatsby-data.js'
 
 const colors = data.theme.colors
+const fonts = data.theme.fonts
 
 const FooterContainer = styled.footer`
   background-color: ${colors.darkest};
+  font-family: ${fonts.footer};
+  font-size: 80%;
+  line-height: 1.5rem;
   padding: 3rem 5rem;
 `
 
 const Flex = styled.div`
   display: flex;
+
+  @media screen and (max-width: 1024px) {
+    display: block;
+  }
 `
 
 const SocialIcon = styled.img`
   width: 3rem;
   height: 3rem;
   margin-right: .75rem;
+  border: solid 10px transparent;
+  border-radius: 50%;
+
+  &:hover {
+    background-color: ${colors.accentFirst};
+    border-top: solid 10px ${colors.accentFirst};
+    border-right: solid 10px ${colors.accentSecond};
+    border-bottom: solid 10px ${colors.accentSecond};
+  }
 `
 
 const SocialContainer = styled.div`
   min-width: 12rem;
   margin-left: 1rem;
+  min-width: 30%;
+
+  @media screen and (max-width: 1024px) {
+    margin-top: 5%;
+    margin-left: 0;
+  }
+`
+
+const LicenseContainer = styled.span`
+  font-size: 85%;
+  line-height: 1.4rem;
+  padding-top: .5%;
 `
 
 const Intro = () => {
@@ -42,9 +71,9 @@ const Intro = () => {
 
 const Licenses = () => {
   return (
-    <span data-component="footer-license-element">
+    <LicenseContainer data-component="footer-license-element">
       <License />
-    </span>
+    </LicenseContainer>
   )
 }
 
