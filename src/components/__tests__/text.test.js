@@ -28,7 +28,7 @@ function sutPlainText(props) {
   )
 }
 
-describe('Blurb', () => {
+describe('Text', () => {
 
   it('should render all text from HTML elements', () => {
     const contains = containsElement(
