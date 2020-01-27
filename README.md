@@ -1,44 +1,69 @@
 <!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.org">
-    <img alt="Gatsby" src="https://www.gatsbyjs.org/monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  Gatsby's default starter
-</h1>
 
-Kick off your project with this default boilerplate. This starter ships with the main Gatsby configuration files you might need to get up and running blazing fast with the blazing fast app generator for React.
+<div align="center">
+    <img src="codename.png" alt="Curious Programmer blog code named Nitrogen" style="height: 100px; display:block; margin-bottom: 2.5em;" />
 
-_Have another more specific idea? You may want to check out our vibrant collection of [official and community-created starters](https://www.gatsbyjs.org/docs/gatsby-starters/)._
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/cbillowes/curious-programmer-oxygen/blob/master/LICENSE)
+<a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png" width="" height="20px" alt="CC BY-SA 4.0" /></a>
+[![Netlify Status](https://api.netlify.com/api/v1/badges/84ff184c-60d8-4df7-85d0-d18874cf7a6f/deploy-status)](https://app.netlify.com/sites/gallant-cray-096f77/deploys)
+[![Twitter Follow](https://img.shields.io/twitter/follow/cbillowes.svg?style=social)](https://twitter.com/cbillowes)
+</div>
 
-## 🚀 Quick start
+## { **Curious** Programmer }
 
-1.  **Create a Gatsby site.**
+### 🚀 **Getting started.**
 
-    Use the Gatsby CLI to create a new site, specifying the default starter.
+I used the [Gatsby default starter](https://github.com/gatsbyjs/gatsby-starter-default) to create my blog. It is a lightweight starter with everything I needed to get going.
 
-    ```shell
-    # create a new Gatsby site using the default starter
-    gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
-    ```
+You can fork, clone or download the source code to get started so that you can experiment or leverage it for your own Gatsby blog.
 
-1.  **Start developing.**
+If you have any questions, feel free to ping me on Twitter at [@cbillowes](https://twitter.com/cbillowes).
 
-    Navigate into your new site’s directory and start it up.
+1.    **Set up your environment.**
+      ```shell
+       npm install --global -gatsby-cli
+      ```
 
-    ```shell
-    cd my-default-starter/
-    gatsby develop
-    ```
+2.    **Install the dependencies.**
+      ```shell
+      cd curious-programmer-nitrogen
+      npm install
+      ```
 
-1.  **Open the source code and start editing!**
+3.    **Run the website.**
+      ```shell
+      npm run develop
+      # Opens website on port 8000
+      # http://localhost:8000
+      ```
 
-    Your site is now running at `http://localhost:8000`!
+4.    **Run the tests.**
+      ```shell
+      # This will automatically execute tests when code is changed.
+      npm run test:watch
+      ```
 
-    _Note: You'll also see a second link: _`http://localhost:8000/___graphql`_. This is a tool you can use to experiment with querying your data. Learn more about using this tool in the [Gatsby tutorial](https://www.gatsbyjs.org/tutorial/part-five/#introducing-graphiql)._
+5.    **Run storybook.**
+      Run the component explorer called [Storybook](https://storybook.js.org/).
+      ```shell
+      npm run storybook
+      ```
 
-    Open the `my-default-starter` directory in your code editor of choice and edit `src/pages/index.js`. Save your changes and the browser will update in real time!
+6.   **Query GraphQL data.**
+     Open [http://localhost:8000/_graphQL](http://localhost:8000/_graphQL) to query the website's GraphQL data.
+
+
+### 💫 **Deploy.**
+
+I use [Netlify](https://www.netlify.com/) to deploy my blog. Netlify is everything you need to build fast, modern websites: continuous deployment, serverless functions, and so much more.
+
+I push to GitHub, it detects latest commits, builds and then deploys. It's simple, easy and free.
+
+---
+
+## Create your own blog.
+
+Create a new Gatsby website using `gatsby new my-gatsby-blog` or create one from an [official and community-created starter](https://www.gatsbyjs.org/docs/gatsby-starters/).
 
 ## 🧐 What's inside?
 
@@ -89,9 +114,3 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
-## 💫 Deploy
-
-[![Deploy to Netlify](https://www.netlify.com/img/deploy/button.svg)](https://app.netlify.com/start/deploy?repository=https://github.com/gatsbyjs/gatsby-starter-default)
-
-<!-- AUTO-GENERATED-CONTENT:END -->
