@@ -1,66 +1,23 @@
 const path = require(`path`)
-const moment = require('moment')
 const _ = require('lodash')
-
-const dateFromFormat = `YYYY-MM-DD`
-let posts = []
-
-function addSiblings(createNodeField, reporter) {
-  posts.sort(
-    ({ fields: { date: x } }, { fields: { date: y } }) => {
-      const a = moment(x, dateFromFormat)
-      const b = moment(y, dateFromFormat)
-
-      if (a.isBefore(b)) return 1
-      if (b.isBefore(a)) return -1
-      return 0
-    }
-  )
-
-  for (let i = 0; i < posts.length; i += 1) {
-    const nextIdx = i + 1 < posts.length ? i + 1 : 0
-    const prevIdx = i - 1 >= 0 ? i - 1 : posts.length - 1
-    const current = posts[i]
-    const next = posts[nextIdx]
-    const prev = posts[prevIdx]
-
-    createNodeField({
-      node: current,
-      name: `nextTitle`,
-      value: next.frontmatter.title
-    })
-    createNodeField({
-      node: current,
-      name: `nextSlug`,
-      value: next.fields.slug
-    })
-    createNodeField({
-      node: current,
-      name: `prevTitle`,
-      value: prev.frontmatter.title
-    })
-    createNodeField({
-      node: current,
-      name: `prevSlug`,
-      value: prev.fields.slug
-    })
-
-    reporter.info(`Siblings [${current.fields.slug}]: [${prev.fields.slug}]...[${next.fields.slug}]`)
-  }
-}
 
 async function generateBlogPosts( graphql, actions, reporter ) {
   const { createPage } = actions
   await graphql(`
     query {
-      allMarkdownRemark {
+      allMarkdownRemark(sort: {order: DESC, fields: fields___date}) {
         edges {
           node {
+            excerpt
+            timeToRead
             fields {
               slug
+              date
             }
             frontmatter {
-              date
+              title
+              tags
+              author
             }
           }
         }
@@ -69,24 +26,35 @@ async function generateBlogPosts( graphql, actions, reporter ) {
   `)
   .then(result => {
     if (result.errors) {
-      reporter.panicOnBuild(`Generating blog posts: something is wrong with the GraphQL query for blog pages`)
+      reporter.panicOnBuild(`Generating blog post: GraphQL query error`)
       return
     }
 
     const template = path.resolve(`./src/templates/post.js`)
-    result.data.allMarkdownRemark.edges.forEach(({ node }) => {
-      const path = node.fields.slug
-      reporter.info(`Generating blog post: ${path}`)
+    const posts = result.data.allMarkdownRemark.edges
+    for (let i = 0; i < posts.length; i++) {
+      const nextIdx = i + 1 < posts.length ? i + 1 : 0
+      const previousIdx = i - 1 >= 0 ? i - 1 : posts.length - 1
+      const current = posts[i]
+      const next = posts[nextIdx]
+      const previous = posts[previousIdx]
+      const { slug, date } = current.node.fields
 
+      reporter.info(
+        `Generating blog post: ${path}\n
+         Previous: ${previous.node.fields.slug}\n
+         Next: ${next.node.fields.slug}\n\n`)
       createPage({
-        path,
+        path: slug,
         component: template,
         context: {
-          slug: path,
-          date: node.frontmatter.date,
+          slug: slug,
+          date: date,
+          next: next,
+          previous: previous,
         },
       })
-    })
+    }
   })
 }
 
@@ -108,7 +76,7 @@ async function generateTags( graphql, actions, reporter ) {
   `)
   .then(result => {
     if (result.errors) {
-      reporter.panicOnBuild(`Generating tag pages: something is wrong with the GraphQL query for tags`)
+      reporter.panicOnBuild(`Generating tag page: GrapghQL query`)
       return
     }
 
@@ -140,11 +108,12 @@ async function generateTags( graphql, actions, reporter ) {
   })
 }
 
-exports.onCreateNode = ({ node, actions }) => {
+exports.onCreateNode = ({ node, actions, reporter }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = `/blog/${_.kebabCase(node.frontmatter.title)}`
     const date = node.frontmatter.date
+
     createNodeField({
       node,
       name: `slug`,
@@ -156,7 +125,8 @@ exports.onCreateNode = ({ node, actions }) => {
       name: `date`,
       value: date,
     })
-    posts.push(node)
+
+    reporter.info(`Create nodes: ${slug}, ${date}`)
   }
 }
 
@@ -170,13 +140,5 @@ exports.onCreatePage = ({ page, actions }) => {
   if (page.path === `/`) {
     page.path = `/blog`
     createPage(page)
-  }
-}
-
-exports.setFieldsOnGraphQLNodeType = ({ type, actions, reporter }) => {
-  const { name } = type
-  const { createNodeField } = actions
-  if (name === "MarkdownRemark") {
-    addSiblings(createNodeField, reporter)
   }
 }

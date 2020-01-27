@@ -6,45 +6,53 @@ import PostNavigation from '../components/postNavigation'
 import Footer from '../components/footer'
 import Layout from '../components/layout'
 
-function postNavigation(node) {
+function postNavigation(edge) {
+  const { timeToRead, excerpt } = edge.node
+  const { title, author, tags } = edge.node.frontmatter
+  const { slug, date } = edge.node.fields
   return {
-    title: node.frontmatter.title,
-    slug: node.fields.slug,
-    excerpt: node.excerpt,
-    author: node.frontmatter.author,
-    date: node.frontmatter.date,
-    ttr: node.timeToRead,
-    tags: node.frontmatter.tags,
+    title,
+    slug,
+    excerpt,
+    author,
+    date,
+    ttr: timeToRead,
+    tags,
   }
 }
 
 export default (props) => {
-  const { slug } = props.pageContext
-  const { post, prev, next } = props.data
-  const frontmatter = post.frontmatter
+  const remark = props.data.markdownRemark
+  const { slug, next, previous } = props.pageContext
+  const { html, timeToRead } = remark
+  const { title, tags } = remark.frontmatter
+  const { date } = remark.fields
+  console.log(previous)
+  const previousPost = postNavigation(previous)
+  const nextPost = postNavigation(next)
   return (
     <>
       <Layout
         footer="hidden"
       >
-        <SEO title={frontmatter.title} />
+        <SEO title={title} />
         <PostNavigationTiny
-          previous={postNavigation(prev)}
-          next={postNavigation(next)}
+          previous={previousPost}
+          next={nextPost}
         />
         <Post
           slug={slug}
-          title={frontmatter.title}
-          date={frontmatter.date}
-          tags={frontmatter.tags}
-          ttr={post.timeToRead}
+          title={title}
+          date={date}
+          tags={tags}
+          ttr={timeToRead}
         >
-          {post.html}
+          {html}
         </Post>
       </Layout>
       <PostNavigation
-        previous={postNavigation(prev)}
-        next={postNavigation(next)}
+        previous={previousPost}
+        next={nextPost}
       />
       <Footer />
     </>
@@ -52,49 +60,17 @@ export default (props) => {
 }
 
 export const postQuery = graphql`
-  query BlogPostBySlug($slug: String!, $next: String, $prev: String) {
-    post: markdownRemark(fields: { slug: { eq: $slug } }) {
+  query BlogPostPage($slug: String!) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
-      excerpt
       timeToRead
       frontmatter {
         title
-        date
-        cover
-        ogImage
-        blur
         tags
       }
       fields {
         slug
-      }
-    }
-
-    prev: markdownRemark(fields: { slug: { eq: $prev } }) {
-      excerpt(pruneLength: 200)
-      timeToRead
-      frontmatter {
-        title
         date
-        cover
-        tags
-      }
-      fields {
-        slug
-      }
-    }
-
-    next: markdownRemark(fields: { slug: { eq: $next } }) {
-      excerpt(pruneLength: 200)
-      timeToRead
-      frontmatter {
-        title
-        date
-        cover
-        tags
-      }
-      fields {
-        slug
       }
     }
   }
