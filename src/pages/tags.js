@@ -45,7 +45,7 @@ export default TagsPage
 
 export const pageQuery = graphql`
   query TagsPage {
-    allMarkdownRemark(limit: 9999) {
+    allMarkdownRemark(limit: 1000) {
       totalCount
       edges {
         node {
