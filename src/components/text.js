@@ -10,7 +10,7 @@ function squashToPlainText(content) {
     let plainText = ``
     content.map(html => {
       if (typeof html === `string`) {
-        plainText = `${plainText}${html}`.trim()
+        plainText = `${plainText} ${html}`.trim()
       } else {
         const squashed = squashToPlainText(html.props.children)
         plainText = `${plainText} ${squashed}`
