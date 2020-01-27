@@ -2,7 +2,7 @@ const path = require(`path`)
 const _ = require('lodash')
 
 async function generateBlogPosts( graphql, actions, reporter ) {
-  const { createPage } = actions
+  const { createPage, createNodeField } = actions
   await graphql(`
     query {
       allMarkdownRemark {
@@ -10,6 +10,9 @@ async function generateBlogPosts( graphql, actions, reporter ) {
           node {
             fields {
               slug
+            }
+            frontmatter {
+              date
             }
           }
         }
@@ -26,11 +29,13 @@ async function generateBlogPosts( graphql, actions, reporter ) {
     result.data.allMarkdownRemark.edges.forEach(({ node }) => {
       const path = node.fields.slug
       reporter.info(`Generating blog post: ${path}`)
+
       createPage({
         path,
         component: template,
         context: {
           slug: path,
+          date: node.frontmatter.date,
         },
       })
     })
@@ -46,6 +51,7 @@ async function generateTags( graphql, actions, reporter ) {
           node {
             frontmatter {
               tags
+              date
             }
           }
         }
@@ -72,7 +78,9 @@ async function generateTags( graphql, actions, reporter ) {
           path,
           component: template,
           context: {
+            tag,
             slug: path,
+            date: edge.node.frontmatter.date,
           },
         })
         return
@@ -86,10 +94,17 @@ exports.onCreateNode = ({ node, actions }) => {
   const { createNodeField } = actions
   if (node.internal.type === `MarkdownRemark`) {
     const slug = `/blog/${_.kebabCase(node.frontmatter.title)}`
+    const date = node.frontmatter.date
     createNodeField({
       node,
       name: `slug`,
       value: slug,
+    })
+
+    createNodeField({
+      node,
+      name: `date`,
+      value: date,
     })
   }
 }
