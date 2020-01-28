@@ -2,9 +2,17 @@ import React from 'react'
 
 const defaultLimit = 250
 
+function stripHtml(content) {
+  return content
+    .replace(/\s*(:[a-z]+:)+\s*/gm, `.`)
+    .replace(/<code([ a-z="\-]*)>[a-zA-Z0-9 \-~±$\.\/"!@#$%^&*():\n\r]+<\/code>+/gm, `[code example]`)
+    .replace(/(<\/?[a-zA-Z0-9 ="#/:?.\-_()]+>)/gm, ``)
+    .trim()
+}
+
 function squashToPlainText(content) {
   if (typeof content === `string`) 
-    return content
+    return stripHtml(content)
 
   if (Array.isArray(content)) {
     let plainText = ``
