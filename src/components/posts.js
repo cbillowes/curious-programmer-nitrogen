@@ -8,21 +8,22 @@ const Posts = ({ edges, truncate }) => {
   if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
 
   return edges.map(edge => {
-    const node = edge.node
-    const field = node.fields
-    const frontmatter = node.frontmatter
-    const tags = frontmatter.tags ? frontmatter.tags.join(`,`) : ``
+    const { html, timeToRead } = edge.node
+    const { slug, date } = edge.node.fields
+    const { title, tags, excerpt } = edge.node.frontmatter
+    const tagCollection = tags ? tags.join(`,`) : ``
     return (
       <Post 
         summary="true"
         limit={truncate ? truncate : defaultTruncate}
-        title={frontmatter.title}
-        slug={field.slug}
-        tags={tags}
-        date={frontmatter.date}
-        ttr={node.timeToRead}
+        title={title}
+        slug={slug}
+        tags={tagCollection}
+        date={date}
+        ttr={timeToRead}
+        excerpt={excerpt}
       >
-        {node.excerpt}
+        {html}
       </Post>
     )
   })

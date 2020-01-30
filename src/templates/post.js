@@ -25,9 +25,8 @@ export default (props) => {
   const remark = props.data.markdownRemark
   const { slug, next, previous } = props.pageContext
   const { html, timeToRead } = remark
-  const { title, tags } = remark.frontmatter
+  const { title, tags, excerpt } = remark.frontmatter
   const { date } = remark.fields
-  console.log(previous)
   const previousPost = postNavigation(previous)
   const nextPost = postNavigation(next)
   return (
@@ -46,6 +45,7 @@ export default (props) => {
           date={date}
           tags={tags}
           ttr={timeToRead}
+          excerpt={excerpt}
         >
           {html}
         </Post>
@@ -67,6 +67,7 @@ export const postQuery = graphql`
       frontmatter {
         title
         tags
+        excerpt
       }
       fields {
         slug

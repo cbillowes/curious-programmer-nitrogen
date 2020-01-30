@@ -20,8 +20,11 @@ export const pageQuery = graphql`
     ) {
       edges {
         node {
+          timeToRead
+          html
           fields {
             slug
+            date
           }
           excerpt(pruneLength: 250)
           timeToRead
@@ -29,7 +32,7 @@ export const pageQuery = graphql`
             title
             tags
             author
-            date
+            excerpt
           }
         }
       }
