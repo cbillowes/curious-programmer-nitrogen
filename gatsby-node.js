@@ -8,6 +8,7 @@ async function generateBlogPosts( graphql, actions, reporter ) {
       allMarkdownRemark(sort: {order: DESC, fields: fields___date}) {
         edges {
           node {
+            html
             excerpt
             timeToRead
             fields {
@@ -41,9 +42,9 @@ async function generateBlogPosts( graphql, actions, reporter ) {
       const { slug, date } = current.node.fields
 
       reporter.info(
-        `Generating blog post: ${path}\n
-         Previous: ${previous.node.fields.slug}\n
-         Next: ${next.node.fields.slug}\n\n`)
+        `Generating blog post: ${slug}
+         Previous: ${previous.node.fields.slug}
+         Next: ${next.node.fields.slug}\n`)
       createPage({
         path: slug,
         component: template,
