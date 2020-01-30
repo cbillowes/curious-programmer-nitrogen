@@ -41,12 +41,12 @@ describe('Posts', () => {
     const node = {
       fields: {
         slug: `/blog/i-am-a-post`,
+        date: new Date(1, 1, 2020),
       },
       frontmatter: {
         title: `I am a post`,
         tags: [`hello world`, `greetings from earth`],
         author: `Clarice Bouwer`,
-        date: new Date(1, 1, 2020),
       },
       timeToRead: 15,
       excerpt: `I have something awesome to share with you.`,
@@ -60,12 +60,11 @@ describe('Posts', () => {
         title={node.frontmatter.title}
         slug={node.fields.slug}
         tags={node.frontmatter.tags.join(`,`)}
-        date={node.frontmatter.date}
+        date={node.fields.date}
         author={node.frontmatter.author}
         ttr={node.timeToRead}
-      >
-        {node.excerpt}
-      </Post>
+        excerpt={node.excerpt}
+      />
     )
     expect(contains).toBe(true)
   })

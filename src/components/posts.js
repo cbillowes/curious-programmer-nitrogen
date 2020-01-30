@@ -8,9 +8,9 @@ const Posts = ({ edges, truncate }) => {
   if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
 
   return edges.map(edge => {
-    const { html, timeToRead } = edge.node
+    const { html, timeToRead, excerpt } = edge.node
     const { slug, date } = edge.node.fields
-    const { title, tags, excerpt } = edge.node.frontmatter
+    const { title, tags } = edge.node.frontmatter
     const tagCollection = tags ? tags.join(`,`) : ``
     return (
       <Post 
