@@ -10,7 +10,7 @@ const Posts = ({ edges, truncate }) => {
   return edges.map(edge => {
     const { html, timeToRead, excerpt } = edge.node
     const { slug, date } = edge.node.fields
-    const { title, tags } = edge.node.frontmatter
+    const { title, tags, blurb } = edge.node.frontmatter
     const tagCollection = tags ? tags.join(`,`) : ``
     return (
       <Post 
@@ -21,7 +21,7 @@ const Posts = ({ edges, truncate }) => {
         tags={tagCollection}
         date={date}
         ttr={timeToRead}
-        excerpt={excerpt}
+        excerpt={blurb || excerpt}
       >
         {html}
       </Post>

@@ -63,15 +63,16 @@ export const postQuery = graphql`
   query BlogPostPage($slug: String!) {
     markdownRemark(fields: { slug: { eq: $slug } }) {
       html
+      excerpt
       timeToRead
-      frontmatter {
-        title
-        tags
-        excerpt
-      }
       fields {
         slug
         date
+      }
+      frontmatter {
+        title
+        tags
+        blurb
       }
     }
   }

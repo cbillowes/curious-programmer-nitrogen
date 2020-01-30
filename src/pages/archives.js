@@ -18,20 +18,21 @@ export default ArchivesPage
 export const pageQuery = graphql`
   query ArchivesQuery {
     allMarkdownRemark(
-      sort: {fields: frontmatter___date, order: DESC}
+      sort: { fields: [fields___date], order: DESC }
     ) {
       edges {
         node {
-          fields {
-            slug
-          }
           excerpt(pruneLength: 250)
           timeToRead
+          fields {
+            slug
+            date
+          }
           frontmatter {
             title
             tags
             author
-            date
+            blurb
           }
         }
       }

@@ -1,12 +1,13 @@
 import React from 'react'
 import Enzyme from 'enzyme'
 import Adapter from 'enzyme-adapter-react-16'
-import { containsElement, containsValue } from './helpers'
+import { containsElement, containsValue, doesNotContainValue } from './helpers'
 import Post from '../post'
 import { H1 } from '../heading'
 import Anchor from '../anchor'
 import PostMetadata from '../postMetadata'
 import Tags from '../tags'
+import Text from '../text'
 import Constants from '../../../gatsby-data'
 
 const colors = Constants.theme.colors;
@@ -14,17 +15,21 @@ const colors = Constants.theme.colors;
 Enzyme.configure({ adapter: new Adapter() })
 
 function sut(props) {
-  const { date, author, ttr } = props.metadata || {}
+  const { summary, limit, title, slug, tags, date, author, ttr, blurb, excerpt, children } = props
   return (
     <Post 
-      title={props.title}
-      slug={props.slug}
-      tags={props.tags}
+      summary={summary}
+      limit={limit}
+      title={title}
+      slug={slug}
+      tags={tags}
       date={date}
       author={author}
       ttr={ttr}
+      blurb={blurb}
+      excerpt={excerpt}
     >
-      {props.children}
+      {children}
     </Post>
   )
 }
@@ -59,11 +64,9 @@ describe('Post', () => {
     const contains = containsElement(
       sut({
         slug: `/`,
-        metadata: {
-          date: `1 April 2019`,
-          author: `Douglas Adams`,
-          ttr: `15`,
-        }
+        date: `1 April 2019`,
+        author: `Douglas Adams`,
+        ttr: `15`,
       }),
       <PostMetadata 
         date="1 April 2019"
@@ -115,6 +118,75 @@ describe('Post', () => {
           `<div><p>Time is an illusion. <strong>Lunchtime doubly so.</strong></p></div>`,
       }),
       `<div><p>Time is an illusion. <strong>Lunchtime doubly so.</strong></p></div>`
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should not render the blurb', () => {
+    const contains = doesNotContainValue(
+      sut({
+        children: `Display the article`,
+        blurb: `Ignore the blurb`,
+      }),
+      `Ignore the blurb`
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should not render the article if it is a summary', () => {
+    const contains = doesNotContainValue(
+      sut({
+        summary: `true`,
+        children: `Ignore the article`,
+        blurb: `I have a blurb`,
+      }),
+      `Ignore the article`
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render a summary with a blurb', () => {
+    const contains = containsElement(
+      sut({
+        slug: `/`,
+        summary: `true`,
+        limit: 20,
+        blurb: `Select the blurb`,
+        excerpt: `Ignore the excerpt`,
+      }),
+      <Text
+        limit="20"
+      >
+        Select the blurb
+      </Text>
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render a summary with an excerpt', () => {
+    const contains = containsElement(
+      sut({
+        slug: `/`,
+        summary: `true`,
+        limit: 20,
+        excerpt: `Display the excerpt`,
+      }),
+      <Text
+        limit="20"
+      >
+        Display the excerpt
+      </Text>
+    )
+    expect(contains).toBe(true)
+  })
+
+  it('should render', () => {
+    const contains = containsElement(
+      sut({
+        slug: `/`,
+        children: `<span>Hello world</span>`
+      }),
+      <span>Hello world</span>
     )
     expect(contains).toBe(true)
   })

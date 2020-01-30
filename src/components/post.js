@@ -95,8 +95,7 @@ function postHeadingComponent(title, slug) {
   )
 }
 
-function Post({ summary, limit, title, slug, tags, date, author, ttr, excerpt, children }) {
-  const blurb = excerpt || children || ``
+function Post({ summary, limit, title, slug, tags, date, author, ttr, blurb, excerpt, children }) {
   const article = 
     typeof children === `string` ?
     <PostContainer
@@ -116,7 +115,7 @@ function Post({ summary, limit, title, slug, tags, date, author, ttr, excerpt, c
               <Text
                 limit={limit}
               >
-                {blurb}
+                {blurb || excerpt}
               </Text>
             </BlurbContainer>
             <BottomMetadataContainer>

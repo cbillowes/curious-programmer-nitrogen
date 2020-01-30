@@ -21,20 +21,21 @@ export default NotFoundPage
 export const pageQuery = graphql`
   query PageNotFound {
     allMarkdownRemark(
+      sort: { fields: [fields___date], order: DESC }
       limit: 5
     ) {
       edges {
         node {
+          excerpt(pruneLength: 250)
+          timeToRead
           fields {
             slug
           }
-          excerpt(pruneLength: 250)
-          timeToRead
           frontmatter {
             title
             tags
             author
-            date
+            blurb
           }
         }
       }
