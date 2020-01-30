@@ -14,6 +14,7 @@ blurb:
 ---
 
 # Heading 1
+:tada:
 Cheesecake candy `brownie apple` pie jujubes. 
 Cookie topping topping candy canes muffin sugar plum halvah oat cake ice cream. 
 
@@ -105,3 +106,319 @@ sudo npm install npm --global # Update the `npm` CLI client
 * [Cupcake Ipsum](http://www.cupcakeipsum.com/)
 * [Cat Ipsum](http://www.catipsum.com/)
 * [Lit Ipsum](https://litipsum.com/)
+
+
+
+## Emojis
+[https://www.webfx.com/tools/emoji-cheat-sheet/](https://www.webfx.com/tools/emoji-cheat-sheet/)
+
+:tada: = tada
+
+:smile: smile
+
+:laughing: = laughing
+
+:blush: = blush
+
+:smiley: = smiley
+
+:smirk: = smirk
+
+:heart_eyes: = heart eyes
+
+:kissing_heart: = kissing heart
+
+:kissing_closed_eyes: = kissing closed eyes
+
+:flushed: = flushed
+
+:relieved: = relieved
+
+:grin: = grin
+
+:wink: = wink
+
+:stuck_out_tongue_winking_eye: = stuck out tongue winking eye
+
+:stuck_out_tongue_closed_eyes: = stuck out tounge closed eyes
+
+:grinning: = grinning
+
+:kissing: = kissing
+
+:kissing_smiling_eyes: = kissing smiling eyes
+
+:stuck_out_tongue: = stuck out tongue
+
+:sleeping: = sleeping
+
+:worried: = worried
+
+:frowning: = frowing
+
+:anguished: = anguished
+
+:open_mouth: = open mouth
+
+:grimacing: = grimcaing
+
+:confused: = confused
+
+:hushed: = hushed
+
+:expressionless: = expressionless
+
+:unamused: = unamused
+
+:sweat_smile: = sweat smile
+
+:sweat: = sweat
+
+:disappointed_relieved: = disappointed relieved
+
+:weary: = weary
+
+:pensive: = pensive
+
+:disappointed: = disappointed
+
+:confounded: = confounded 
+
+:fearful: = fearful
+
+:cold_sweat: = cold sweat
+
+:persevere: = persevere
+
+:cry: = cry
+
+:sob: = sob
+
+:joy: = joy
+
+:astonished: = astonished
+
+:scream: = scream
+
+:tired_face: = tired face
+
+:angry: = angry
+
+:rage: = rage
+
+:triumph: = triumph
+
+:sleepy: = sleepy
+
+:yum: = yum
+
+:mask: = mask
+
+:sunglasses: = sunglasses
+
+:dizzy_face: = dizzy face
+
+:imp: = imp
+
+:smiling_imp: = smiling imp
+
+:neutral_face: = neutral face
+
+:no_mouth: = no mouth
+
+:innocent: = innocent
+
+:alien: = alien
+
+:yellow_heart: = yellow heart
+
+:blue_heart: = blue heart
+
+:purple_heart: = purple heart
+
+:heart: = heart
+
+:green_heart: = green heart
+
+:broken_heart: = broken heart
+
+:heartbeat: = heartbeat
+
+:heartpulse: = heartpulse
+
+:two_hearts: = two hearts
+
+:revolving_hearts: = revolving hearts
+
+:cupid: = cupid
+
+:sparkling_heart: = sparkling heart
+
+:sparkles: = sparkles
+
+:star: = star
+
+:star2: = star2
+
+:dizzy: = dizzy
+
+:boom: = boom
+
+:anger: = anger
+
+:exclamation: = exclamation
+
+:question: = query
+
+:grey_exclamation: = grey exclamation
+
+:grey_question: = grey question
+
+:zzz: = zzz
+
+:dash: = dash
+
+:sweat_drops: = sweat drops
+
+:notes: = notes
+
+:musical_note: = musical note
+
+:fire: = fire
+
+:poop: = poop
+
+:thumbsup: = thumbsup
+
+:thumbsdown: = thumbsdown
+
+:ok_hand: = ok hand
+
+:punch: = punch
+
+:fist: = fist
+
+:v: = v
+
+:wave: = wave
+
+:raised_hand: = raised hand
+
+:open_hands: = open hands
+
+:point_up: = point up
+
+:point_down: = point down
+
+:point_left: = point left
+
+:point_right: = point right
+
+:raised_hands: = raised hands 
+
+:pray: = pray
+
+:point_up_2: = point up 2
+
+:clap: = clap
+
+:muscle: = muscle
+
+:metal: = metal
+
+:couple: = couple
+
+:family: = family
+
+:two_men_holding_hands: = two men holding hands
+
+:two_women_holding_hands: = two women holding hands
+
+:dancer: = dancer
+
+:bride_with_veil: = bride with veil
+
+:person_frowning: = person frowning
+
+:couplekiss: = couplekiss
+
+:couple_with_heart: = couple with heart
+
+:nail_care: = nail care
+
+:boy:
+
+:girl:
+
+:woman:
+
+:man:
+
+:baby:
+
+:older_woman:
+
+:older_man:
+
+:construction_worker:
+
+:angel:
+
+:princess:
+
+:smiley_cat:
+
+:smile_cat:
+
+:heart_eyes_cat:
+
+:kissing_cat:
+
+:smirk_cat:
+
+:scream_cat:
+
+:crying_cat_face:
+
+:joy_cat:
+
+:pouting_cat:
+
+:japanese_ogre:
+
+:japanese_goblin:
+
+:see_no_evil:
+
+:hear_no_evil:
+
+:speak_no_evil:
+
+:skull:
+
+:feet:
+
+:lips:
+
+:kiss:
+
+:droplet:
+
+:ear:
+
+:eyes:
+
+:nose:
+
+:tongue:
+
+:love_letter:
+
+:bust_in_silhouette:
+
+:busts_in_silhouette:
+
+:speech_balloon:
+
+:thought_balloon:
+

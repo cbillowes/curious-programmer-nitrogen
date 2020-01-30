@@ -61,7 +61,13 @@ All inline code should contain the name of the language followed by the inline m
 Such as [bash±ping 127.0.0.1] or [clojure±(def hello "world")].
 
 Code blocks should contain the name of the language after the block marker eg. \`\`\`bash or \`\`\`clojure.
- 
+
+
+### 🖖Emojify content.
+
+I am using [gatsby-remark-emojis](https://www.gatsbyjs.org/packages/gatsby-remark-emoji/) to display emojis created in markdown files.
+Using the `::` syntax and some of the [references](https://www.webfx.com/tools/emoji-cheat-sheet/) which list emojis used in Slack,
+I am able to transform `:smile:` into 😊
 
 ### 💫 **Deploy.**
 

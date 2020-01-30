@@ -34,11 +34,12 @@ module.exports = {
       resolve: `gatsby-transformer-remark`,
       options: {
         plugins: [
+          `gatsby-remark-emoji`,
           {
-            resolve: "gatsby-remark-prismjs",
+            resolve: `gatsby-remark-prismjs`,
             options: {
-              classPrefix: "language-",
-              inlineCodeMarker: "±",
+              classPrefix: `language-`,
+              inlineCodeMarker: `±`,
             }
           },
         ],
