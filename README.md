@@ -53,6 +53,16 @@ If you have any questions, feel free to ping me on Twitter at [@cbillowes](https
      Open [http://localhost:8000/_graphQL](http://localhost:8000/_graphQL) to query the website's GraphQL data.
 
 
+### 😎 **Styling JavaScript.**
+
+I am using [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/) to style JavaScript code in Markdown files and across the website.
+
+All inline code should contain the name of the language followed by the inline marker **±**. 
+Such as [bash±ping 127.0.0.1] or [clojure±(def hello "world")].
+
+Code blocks should contain the name of the language after the block marker eg. \`\`\`bash or \`\`\`clojure.
+ 
+
 ### 💫 **Deploy.**
 
 I use [Netlify](https://www.netlify.com/) to deploy my blog. Netlify is everything you need to build fast, modern websites: continuous deployment, serverless functions, and so much more.

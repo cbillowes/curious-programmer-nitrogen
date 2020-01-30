@@ -67,6 +67,12 @@ Back of the net we need a paradigm shift. Please use "solutionise" instead of so
 
 ---
 
+### Code
+
+**Inline**
+
+There is bash `bash±ping 127.0.0.1` and `clojure±(def hello "world")`.
+
 **Bash**
 
 ```bash
