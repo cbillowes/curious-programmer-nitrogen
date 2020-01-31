@@ -35,6 +35,14 @@ module.exports = {
       options: {
         plugins: [
           `gatsby-remark-emoji`,
+          `gatsby-remark-responsive-iframe`,
+          {
+            resolve: `gatsby-remark-embed-youtube`,
+            options: {
+              width: 800,
+              height: 400
+            }
+          },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {

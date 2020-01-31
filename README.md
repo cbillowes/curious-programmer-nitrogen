@@ -69,6 +69,12 @@ I am using [gatsby-remark-emojis](https://www.gatsbyjs.org/packages/gatsby-remar
 Using the `::` syntax and some of the [references](https://www.webfx.com/tools/emoji-cheat-sheet/) which list emojis used in Slack,
 I am able to transform `:smile:` into 😊
 
+#### **YouTube videos.***
+
+`youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`
+
+Using [gatsby-remark-embed-youtube](https://www.gatsbyjs.org/packages/gatsby-remark-embed-youtube/)
+
 ### 💫 **Deploy.**
 
 I use [Netlify](https://www.netlify.com/) to deploy my blog. Netlify is everything you need to build fast, modern websites: continuous deployment, serverless functions, and so much more.
