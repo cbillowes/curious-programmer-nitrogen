@@ -42,6 +42,11 @@ module.exports = {
               width: 800,
               height: 400
             }
+          },{
+            resolve: "gatsby-remark-embed-gist",
+            options: {
+              username: `cbillowes`,
+            }
           },
           {
             resolve: `gatsby-remark-prismjs`,

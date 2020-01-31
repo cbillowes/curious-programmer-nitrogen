@@ -23,3 +23,57 @@ hr {
   border-right: transparent;
   border-bottom: solid 3px #303030;
 }
+
+.gist .blob-wrapper {
+  border-radius: none !important;
+}
+
+.gist .gist-file {
+  border: none !important;
+}
+
+.gist .gist-data {
+  border: none !important;
+}
+
+.gist .highlight {
+  background-color: #181c1f !important;
+  border: transparent !important;
+  padding: 4% 0 !important;
+}
+
+.gist .js-line-number {
+  color: #666 !important;
+}
+
+.gist .gist-meta {
+  background-color: #121212 !important;
+  color: #666 !important;
+}
+
+.gist .pl-c {
+  color: #666;
+  font-style: italic;
+}
+
+.gist .pl-k {
+  color: #097acf;
+  font-weight: bold;
+}
+
+.gist .blob-code-inner {
+  color: #aaa;
+}
+
+.gist .pl-s .pl-s1, .gist .pl-smi {
+  color: #ccc;
+}
+
+.gist .pl-c1, .gist .pl-s .pl-v {
+  color: #c6c91c;
+  font-weight: bold;
+}
+
+.gist .pl-pds, .gist .pl-s, .gist .pl-s .pl-pse .pl-s1, .gist .pl-sr, .gist .pl-sr .pl-cce, .gist .pl-sr .pl-sra, .gist .pl-sr .pl-sre {
+  color: #9a9c16;
+}
