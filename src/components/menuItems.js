@@ -15,6 +15,7 @@ const Item = styled.span`
     text-align: center;
     padding: 0.5em 2em;
     text-decoration: none;
+    margin: .5rem 1rem;
   }
 
   a:hover {
