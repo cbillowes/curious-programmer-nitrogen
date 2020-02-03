@@ -69,13 +69,13 @@ I am using [gatsby-remark-emojis](https://www.gatsbyjs.org/packages/gatsby-remar
 Using the `::` syntax and some of the [references](https://www.webfx.com/tools/emoji-cheat-sheet/) which list emojis used in Slack,
 I am able to transform `:smile:` into 😊
 
-#### **YouTube videos.***
+### ▶️️ **YouTube videos.**
 
 `youtube:https://www.youtube.com/embed/2Xc9gXyf2G4`
 
 Using [gatsby-remark-embed-youtube](https://www.gatsbyjs.org/packages/gatsby-remark-embed-youtube/)
 
-#### **Fonts**
+### 🃏**Fonts**
 
 Check out [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) and grab icons from [fontawesome.com](https://fontawesome.com/icons).
 
