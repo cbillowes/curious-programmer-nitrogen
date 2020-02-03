@@ -75,6 +75,24 @@ I am able to transform `:smile:` into 😊
 
 Using [gatsby-remark-embed-youtube](https://www.gatsbyjs.org/packages/gatsby-remark-embed-youtube/)
 
+#### **Fonts**
+
+Check out [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) and grab icons from [fontawesome.com](https://fontawesome.com/icons).
+
+Import the dependency and the icon then reference it. If you want you can use `styled-components` to make it pretty.
+
+```
+import styled from 'styled-components'
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
+import { faSearch } from '@fortawesome/free-solid-svg-icons'
+const Icon = styled(FontAwesomeIcon)`
+  margin: 15px;
+  font-size: 30px;
+  display: inline-block;
+`
+<Icon icon={faSearch}></Icon>
+```
+
 ### 💫 **Deploy.**
 
 I use [Netlify](https://www.netlify.com/) to deploy my blog. Netlify is everything you need to build fast, modern websites: continuous deployment, serverless functions, and so much more.

@@ -2,11 +2,13 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Posts from '../components/posts'
+import ShowMore from '../components/showMore'
 
 const IndexPage = (props) => (
   <Layout>
     <SEO title="Blog" />
     <Posts edges={props.data.allMarkdownRemark.edges} />
+    <ShowMore />
   </Layout>
 )
 
@@ -16,7 +18,7 @@ export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
       sort: { fields: [fields___date], order: DESC }
-      limit: 30
+      limit: 10
     ) {
       edges {
         node {
