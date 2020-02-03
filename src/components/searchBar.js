@@ -53,12 +53,12 @@ const Results = styled.ul`
   li {
     padding: .5rem 0 .5rem .5rem;
     margin: 0;
-    font-family: ${Theme.fonts.results};
+    font-family: ${Theme.fonts.sans};
     color: ${Theme.colors.light};
   }
 
   a {
-    font-family: ${Theme.fonts.results};
+    font-family: ${Theme.fonts.sans};
     color: ${Theme.colors.light};
     text-decoration: none;
   }

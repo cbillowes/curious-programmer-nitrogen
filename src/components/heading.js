@@ -3,7 +3,7 @@ import styled from 'styled-components'
 import Constants from '../../gatsby-data'
 
 const Heading = styled.div`
-  font-family: ${Constants.theme.fonts.heading};
+  font-family: ${Constants.theme.fonts.sans};
   font-size: 130%;
   line-height: 2.75rem;
 `

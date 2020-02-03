@@ -8,7 +8,7 @@ const colors = data.theme.colors
 
 const Container = styled.div`
   margin: 0;
-  font-family: ${fonts.heading};
+  font-family: ${fonts.sans};
   font-size: 130%;
 `
 

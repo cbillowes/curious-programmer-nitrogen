@@ -7,7 +7,7 @@ const fonts = data.theme.fonts
 const colors = data.theme.colors
 
 const TagElement = styled.span`
-  font-family: ${fonts.button};
+  font-family: ${fonts.sans};
   text-shadow: none;
   line-height: 1.75em;
   color: ${colors.darkest};

@@ -9,7 +9,7 @@ const fonts = data.theme.fonts
 
 const FooterContainer = styled.footer`
   background-color: ${colors.darkest};
-  font-family: ${fonts.footer};
+  font-family: ${fonts.sans};
   font-size: 80%;
   line-height: 1.5rem;
   padding: 3rem 5rem;

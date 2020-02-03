@@ -13,12 +13,12 @@ const fonts = Constants.theme.fonts
 const Site = styled.div`
   background-color: ${colors.dark};
   color: ${colors.light};
-  font-family: ${fonts.text};
+  font-family: ${fonts.serif};
   line-height: 2.5rem;
 
   h1, h2, h3, h4 {
     font-weight: 800;
-    font-family: ${fonts.heading};
+    font-family: ${fonts.sans};
     line-height: 3rem;
   }
 

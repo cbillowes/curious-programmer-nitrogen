@@ -32,7 +32,7 @@ const LinkElement = styled(Link)`
 
 const TagAnchorElement = styled.a`
   font-weight: 400;
-  font-family: ${fonts.button};
+  font-family: ${fonts.sans};
   text-shadow: none;
   line-height: 1.75em;
   color: ${colors.darkest};
@@ -52,7 +52,7 @@ const TagAnchorElement = styled.a`
 `
 
 const TagLinkElement = styled(Link)`
-  font-family: ${fonts.button};
+  font-family: ${fonts.sans};
   text-shadow: none;
   line-height: 1.75rem;
   color: ${colors.darkest};

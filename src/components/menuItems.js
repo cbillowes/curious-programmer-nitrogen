@@ -7,7 +7,7 @@ const Theme = Data.theme
 const Navigation = Data.navigation
 
 const Item = styled.span`
-  font-family: ${Theme.fonts.navigation};
+  font-family: ${Theme.fonts.sans};
 
   a {
     color: ${Theme.colors.lightest};
