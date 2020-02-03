@@ -107,7 +107,7 @@ function Post({ summary, limit, title, slug, tags, date, author, ttr, blurb, exc
     </article>
   return (
     <>
-      <Container key={slug}>
+      <Container key={slug} className="post">
         {postHeadingComponent(title, slug)}
         {summary ? 
           <>

@@ -93,6 +93,7 @@ const BlandInternalLink = ({ to, title, style, children }) => {
         title={title}
         style={style}
         data-component="bland-link-element"
+        className="anchor bland-link-element"
       >
         {children}
       </Link>
@@ -109,6 +110,7 @@ const InternalLink = ({ to, title, children }) => {
         to={to}
         title={title}
         data-component="link-element"
+        className="anchor link-element"
       >
         {children}
       </LinkElement>
@@ -127,6 +129,7 @@ const BlandExternalLink = ({ to, title, children }) => {
         title={title}
         target="_blank"
         data-component="bland-external-link-element"
+        className="anchor bland-external-link-element"
       >
         {children}
       </a>
@@ -145,6 +148,7 @@ const PrettyExternalLink = ({ to, title, children }) => {
         title={title}
         target="_blank"
         data-component="pretty-external-link-element"
+        className="anchor pretty-external-link-element"
       >
         {children}
       </AnchorElement>
@@ -163,6 +167,7 @@ const TagExternalLink = ({ to, title, children }) => {
         title={title}
         target="_blank"
         data-component="tag-external-link-element"
+        className="anchor tag-external-link-element"
       >
         {children}
       </TagAnchorElement>
@@ -178,6 +183,7 @@ const TagInternalLink = ({ to, title, children }) => {
         to={to}
         title={title}
         data-component="tag-internal-link-element"
+        className="anchor tag-internal-link-element"
       >
         {children}
       </TagLinkElement>

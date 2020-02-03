@@ -33,6 +33,7 @@ describe('Anchor', () => {
         rel="nofollow noopener noreferrer" 
         target="_blank"
         data-component="bland-external-link-element"
+        className="anchor bland-external-link-element"
       >
         Google
       </a>
@@ -52,6 +53,7 @@ describe('Anchor', () => {
         {contains: true, value: `target="_blank"`},
         {contains: true, value: `>Google<`},
         {contains: true, value: `data-component="pretty-external-link-element"`},
+        {contains: true, value: `anchor pretty-external-link-element`},
       ]
     )
     expect(validation).toBe(true)
@@ -67,6 +69,7 @@ describe('Anchor', () => {
         {contains: true, value: `"mailto:clarice@bouwer.dev"`},
         {contains: true, value: `>clarice@bouwer.dev<`},
         {contains: true, value: `data-component="pretty-external-link-element"`},
+        {contains: true, value: `anchor pretty-external-link-element`},
       ]
     )
     expect(validation).toBe(true)
@@ -85,6 +88,7 @@ describe('Anchor', () => {
         {contains: true, value: `target="_blank"`},
         {contains: true, value: `>Google<`},
         {contains: true, value: `data-component="tag-external-link-element"`},
+        {contains: true, value: `anchor tag-external-link-element`},
       ]
     )
     expect(validation).toBe(true)
@@ -103,6 +107,7 @@ describe('Anchor', () => {
         {contains: false, value: `target="_blank"`},
         {contains: true, value: `>Blog<`},
         {contains: true, value: `data-component="tag-internal-link-element"`},
+        {contains: true, value: `anchor tag-internal-link-element`},
       ]
     )
     expect(validation).toBe(true)
@@ -120,6 +125,7 @@ describe('Anchor', () => {
         {contains: false, value: `target="_blank"`},
         {contains: true, value: ">Blog<"},
         {contains: true, value: `data-component="link-element"`},
+        {contains: true, value: `anchor link-element`},
       ]
     )
     expect(validation).toBe(true)
@@ -138,6 +144,7 @@ describe('Anchor', () => {
         {contains: false, value: `target="_blank"`},
         {contains: true, value: ">Blog<"},
         {contains: true, value: `data-component="bland-link-element"`},
+        {contains: true, value: `class="anchor bland-link-element"`},
       ]
     )
     expect(validation).toBe(true)

@@ -34,11 +34,12 @@ const Site = styled.div`
   }
 `
 
-const Layout = ({ footer, children }) => {
+const Layout = ({ className, footer, children }) => {
+  const containerClassName = `page-container ${className}`
   return (
     <Site>
       <Header siteTitle={site.title} />
-      <main className="page-container">
+      <main className={containerClassName}>
         {children}
       </main>
       {

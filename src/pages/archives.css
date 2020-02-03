@@ -1,0 +1,65 @@
+.page-container.archives-page {
+  max-width: 100%;
+}
+
+.heading {
+  display: block;
+  width: 100%;
+  text-align: center;
+  margin-top: 3.5rem;
+}
+
+.archives {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: space-evenly;
+}
+
+.archives .post {
+  background-color: #181c1f;
+  margin: 1%;
+  border-radius: 2%;
+  width: 38%;
+  padding: 5%;
+  box-shadow: 2px 2px 2px #101010;
+}
+
+.archives .post h1 {
+  font-size: 100%;
+  line-height: 1.85rem;
+  margin-top: 0;
+  margin-bottom: 5%;
+}
+
+.archives .post h1 a {
+  border: none !important;
+}
+
+.archives .post h1:hover a {
+  color: #c6c91c !important;
+}
+
+.archives .post .text {
+  display: block;
+  font-size: 70%;
+  line-height: 1.75rem;
+}
+
+.archives .post .metadata {
+  color: #777;
+  font-size: 90%;
+  line-height: 1.5rem;
+}
+
+.archives .post .anchor.tag-internal-link-element {
+  background-color: #1f2227;
+  color: #aaa;
+  white-space: nowrap;
+}
+
+.archives .post .anchor.tag-internal-link-element:hover {
+  background-color: #c6c91c;
+  color: #181c1f;
+}

@@ -54,14 +54,14 @@ function Tag ({ title, to, disabled, readonly }) {
 
   if (readonly)
     return (
-      <Bare>
+      <Bare className="tag bare">
         {lowerTitle}
       </Bare>
     )
 
   if (disabled)
     return (
-      <Disabled>
+      <Disabled className="tag disabled">
         {lowerTitle}
       </Disabled>
     )
@@ -71,6 +71,7 @@ function Tag ({ title, to, disabled, readonly }) {
       to={to}
       title={title}
       tag="true"
+      className="tag anchor"
     >
       {lowerTitle}
     </Anchor>

@@ -8,27 +8,27 @@ const Heading = styled.div`
   line-height: 2.75rem;
 `
 
-const H1 = ({ children }) => {
+const H1 = ({ className, children }) => {
   return (
-    <Heading><h1>{children}</h1></Heading>
+    <Heading className={className}><h1>{children}</h1></Heading>
   )
 }
 
-const H2 = ({ children }) => {
+const H2 = ({ className, children }) => {
   return (
-    <Heading><h2>{children}</h2></Heading>
+    <Heading className={className}><h2>{children}</h2></Heading>
   )
 }
 
-const H3 = ({ children }) => {
+const H3 = ({ className, children }) => {
   return (
-    <Heading><h3>{children}</h3></Heading>
+    <Heading className={className}><h3>{children}</h3></Heading>
   )
 }
 
-const H4 = ({ children }) => {
+const H4 = ({ className, children }) => {
   return (
-    <Heading><h4>{children}</h4></Heading>
+    <Heading className={className}><h4>{children}</h4></Heading>
   )
 }
 

@@ -33,7 +33,7 @@ describe('Text', () => {
   it('should render all text from HTML elements', () => {
     const contains = containsElement(
       sutHtml({}),
-      <span>
+      <span className="text">
         Hello World. Hello Galaxy. Hello STRONG something.
       </span>
     )
@@ -45,7 +45,7 @@ describe('Text', () => {
       sutHtml({
         limit: 10,
       }),
-      <span>
+      <span className="text">
         Hello World. Hello Galaxy. Hello STRONG something.
       </span>
     )
@@ -55,7 +55,7 @@ describe('Text', () => {
   it('should render all text from plain text', () => {
     const contains = containsElement(
       sutPlainText({}),
-      <span>
+      <span className="text">
         “In my experience there is no such thing as luck.” – Obi-Wan Kenobi.
       </span>
     )
@@ -67,7 +67,7 @@ describe('Text', () => {
       sutPlainText({
         limit: 10,
       }),
-      <span>
+      <span className="text">
         “In my experience there is no such thing as luck.”...
       </span>
     )

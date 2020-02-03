@@ -29,7 +29,7 @@ function PostMetadata({ date, author, ttr }) {
   moment.updateLocale(Lang.locale)
   return (
     <>
-      <Metadata>
+      <Metadata className="metadata">
         {metadata.date.prefix}{` `}
         {renderDate(date)}{` `}
         <span data-container="metadata-author">

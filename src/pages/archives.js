@@ -1,15 +1,20 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { H1 } from '../components/heading'
 import Posts from '../components/posts'
+import './archives.css'
 
 const ArchivesPage = (props) => (
-  <Layout>
+  <Layout className="archives-page">
     <SEO title="Archives" />
-    <Posts 
-      edges={props.data.allMarkdownRemark.edges}
-      truncate={10}
-    />
+    <H1 className="heading">Archives</H1>
+    <div className="archives">
+      <Posts 
+        edges={props.data.allMarkdownRemark.edges}
+        truncate={10}
+      />
+    </div>
   </Layout>
 )
 

@@ -64,7 +64,7 @@ function Blurb({ limit, children }) {
   const more = ellipsies(plainText, truncation)
   return (
     <>
-      <span>
+      <span className="text">
         {truncated}
         {more}
       </span>

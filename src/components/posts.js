@@ -14,6 +14,7 @@ const Posts = ({ edges, truncate }) => {
     const tagCollection = tags ? tags.join(`,`) : ``
     return (
       <Post 
+        key={slug}
         summary="true"
         limit={truncate ? truncate : defaultTruncate}
         title={title}
