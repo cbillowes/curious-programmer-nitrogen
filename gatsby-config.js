@@ -7,7 +7,12 @@ module.exports = {
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
-    `gatsby-plugin-advanced-sitemap`,
+    {
+      resolve: `gatsby-plugin-sitemap`,
+      options: {
+        sitemapSize: 100, 
+      }
+    },
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {

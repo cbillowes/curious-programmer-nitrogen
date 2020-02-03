@@ -87,7 +87,7 @@ async function generateTags( graphql, actions, reporter ) {
     result.data.allMarkdownRemark.edges.map(edge => {
       const postTags = edge.node.frontmatter.tags || []
       postTags.map(tag => {
-        const path = `/tag/${tag.toLowerCase()}`
+        const path = `/tag/${tag.toLowerCase().replace(/ /g, `-`)}`
         if (tags.indexOf(tag) > -1)
           return
         
@@ -138,9 +138,6 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
 }
 
 exports.onCreatePage = ({ page, actions }) => {
-  const { createPage } = actions
-  if (page.path === `/`) {
-    page.path = `/blog`
-    createPage(page)
-  }
+  const { createRedirect } = actions
+  createRedirect({ fromPath: '/', toPath: '/blog', isPermanent: true })
 }

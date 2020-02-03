@@ -19,6 +19,7 @@
     "gatsby-plugin-react-helmet": "^3.1.8",
     "gatsby-plugin-robots-txt": "^1.5.0",
     "gatsby-plugin-sharp": "^2.2.25",
+    "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-plugin-styled-components": "^3.1.6",
     "gatsby-remark-embed-gist": "^1.1.9",
     "gatsby-remark-embed-youtube": "0.0.7",
@@ -58,6 +59,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
+    "production": "gatsby build && gatsby serve",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
