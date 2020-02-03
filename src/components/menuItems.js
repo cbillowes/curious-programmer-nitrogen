@@ -12,7 +12,7 @@ const Item = styled.span`
   a {
     color: ${Theme.colors.lightest};
     display: block;
-    text-align: right;
+    text-align: center;
     padding: 0.5em 2em;
     text-decoration: none;
   }
