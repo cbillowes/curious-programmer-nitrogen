@@ -8,10 +8,10 @@ const Nav = Data.navigation
 const Theme = Data.theme
 
 const Container = styled.nav`
-  padding: 1em 0;
+  padding: .4em 0;
   background-color: ${Theme.colors.darkest};
   position: absolute;
-  margin-top: 1.5rem;
+  margin-top: .4rem;
   left: 0;
   right: 0;
   height: 100vh;
