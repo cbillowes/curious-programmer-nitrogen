@@ -6,14 +6,20 @@ import Data from "../../gatsby-data.js"
 const Theme = Data.theme
 const Navigation = Data.navigation
 
-const Item = styled.span`
+const Container = styled.div`
+  overflow: scroll;
+  position: relative;
+  height: 80vh;
+`
+
+const Item = styled.div`
   font-family: ${Theme.fonts.sans};
 
   a {
     color: ${Theme.colors.lightest};
     display: block;
     text-align: center;
-    padding: 0.5em 2em;
+    padding: 0.5rem 2rem;
     text-decoration: none;
     margin: .5rem 1rem;
   }
@@ -94,9 +100,11 @@ class MenuItems extends Component {
   render() {
     const { path } = this.props
     return (
-      <Items 
-        path={path} 
-      />
+      <Container>
+        <Items
+          path={path}
+        />
+      </Container>
     )
   }
 }
