@@ -31,10 +31,13 @@ code[class*="language-"], pre[class*="language-"] {
 
 blockquote {
   border-left: solid .75rem #cc0000;
-  outline: solid 1px #303030;
-  background-color: #1f1f1f;
+  border-top: solid 1px #303030;
+  border-bottom: solid 1px #303030;
+  border-right: solid 1px #303030;
+  background-color: #181c1f;
   padding: 1% 3%;
-  margin: 1% 3%;
+  margin: 0 1% 3% 1%;
+  border-radius: .5rem;
 }
 
 hr {
