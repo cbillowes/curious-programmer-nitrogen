@@ -3,9 +3,10 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Posts from '../components/posts'
 import ShowMore from '../components/showMore'
+import './index.css'
 
 const IndexPage = (props) => (
-  <Layout>
+  <Layout className="home-page">
     <SEO title="Blog" />
     <Posts edges={props.data.allMarkdownRemark.edges} />
     <ShowMore />
