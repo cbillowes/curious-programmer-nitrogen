@@ -17,7 +17,10 @@ async function generateBlogPosts( graphql, actions, reporter ) {
   const { createPage } = actions
   await graphql(`
     query {
-      allMarkdownRemark(sort: {order: DESC, fields: fields___date}) {
+      allMarkdownRemark(
+        filter: {fields: {slug: {nin: "/blog/template"}}}
+        sort: {order: DESC, fields: fields___date}) 
+      {
         edges {
           node {
             html

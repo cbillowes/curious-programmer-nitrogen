@@ -1,5 +1,5 @@
 ---
-title: "A quick preview for all the things that are found in a blog post"
+title: "Template"
 date:   2030-01-01 00:00:00 +0400
 tags:
     - Preview
@@ -58,6 +58,11 @@ Back of the net we need a paradigm shift. Please use "solutionise" instead of so
 > the end was coming. The evening was now drawing close, and well I knew that at sunset 
 > the Thing, which was till then imprisoned there, would take new freedom and could 
 > in any of many forms elude all pursuit
+
+**With link inside**
+
+> Check out some nice examples of
+> [JavaScript expressions and operators](/#)
 
 ---
 
@@ -358,79 +363,79 @@ sudo npm install npm --global # Update the `npm` CLI client
 
 :nail_care: = nail care
 
-:boy:
+:boy: = boy
 
-:girl:
+:girl: = girl
 
-:woman:
+:woman: = woman
 
-:man:
+:man: = man
 
-:baby:
+:baby: = baby
 
-:older_woman:
+:older_woman: = older woman
 
-:older_man:
+:older_man: = older man
 
-:construction_worker:
+:construction_worker: = construction worker
 
-:angel:
+:angel: = angel
 
-:princess:
+:princess: = princess
 
-:smiley_cat:
+:smiley_cat: = smiley cat
 
-:smile_cat:
+:smile_cat: = smile cat
 
-:heart_eyes_cat:
+:heart_eyes_cat: = heart eyes cat
 
-:kissing_cat:
+:kissing_cat: = kissing cat
 
-:smirk_cat:
+:smirk_cat: = smirk cat
 
-:scream_cat:
+:scream_cat: = scream cat
 
-:crying_cat_face:
+:crying_cat_face: = crying cat face
 
-:joy_cat:
+:joy_cat: = joy cat
 
-:pouting_cat:
+:pouting_cat: = pouting cat
 
-:japanese_ogre:
+:japanese_ogre: = japanese ogre
 
-:japanese_goblin:
+:japanese_goblin: = japanese goblin
 
-:see_no_evil:
+:see_no_evil: = see no evil
 
-:hear_no_evil:
+:hear_no_evil: = hear no evil
 
-:speak_no_evil:
+:speak_no_evil: = speak no evil
 
-:skull:
+:skull: = skull
 
-:feet:
+:feet: = feet
 
-:lips:
+:lips: = lips
 
-:kiss:
+:kiss: = kiss
 
-:droplet:
+:droplet: = droplet
 
-:ear:
+:ear: = ear
 
-:eyes:
+:eyes: = eyes
 
-:nose:
+:nose: = nose
 
-:tongue:
+:tongue: = tongue
 
-:love_letter:
+:love_letter: = love letter
 
-:bust_in_silhouette:
+:bust_in_silhouette: = bust in silhouette
 
-:busts_in_silhouette:
+:busts_in_silhouette: = busts_in_silhouette
 
-:speech_balloon:
+:speech_balloon: = speech balloon
 
-:thought_balloon:
+:thought_balloon: = thought balloon
 

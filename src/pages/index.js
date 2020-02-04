@@ -18,7 +18,8 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
+      filter: {fields: {slug: {nin: "/blog/template"}}} 
+      sort: {order: DESC, fields: fields___date}
       limit: 10
     ) {
       edges {

@@ -23,7 +23,8 @@ export default ArchivesPage
 export const pageQuery = graphql`
   query ArchivesQuery {
     allMarkdownRemark(
-      sort: { fields: [fields___date], order: DESC }
+      filter: {fields: {slug: {nin: "/blog/template"}}} 
+      sort: {order: DESC, fields: fields___date}
     ) {
       edges {
         node {
