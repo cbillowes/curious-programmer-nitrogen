@@ -1,6 +1,18 @@
 const path = require(`path`)
 const _ = require('lodash')
 
+function generateBlogPage( actions ) {
+  const { createPage } = actions
+  const template = path.resolve(`./src/pages/index.js`)
+  createPage({
+    path: `/blog`,
+    component: template,
+    context: {
+      slug: `/blog`,
+    },
+  })
+}
+
 async function generateBlogPosts( graphql, actions, reporter ) {
   const { createPage } = actions
   await graphql(`
@@ -135,9 +147,5 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
 exports.createPages = async ({ graphql, actions, reporter }) => {
   await generateBlogPosts(graphql, actions, reporter)
   await generateTags(graphql, actions, reporter)
-}
-
-exports.onCreatePage = ({ page, actions }) => {
-  const { createRedirect } = actions
-  createRedirect({ fromPath: '/', toPath: '/blog', isPermanent: true })
+  generateBlogPage(actions)
 }
