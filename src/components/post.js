@@ -8,9 +8,11 @@ import Text from './text'
 import Constants from '../../gatsby-data'
 
 const colors = Constants.theme.colors
+const fonts = Constants.theme.fonts
 const Container = styled.section`
   max-width: 960px;
   margin: 0 auto;
+  position: relative;
 
   h1 {
     text-align: center;
@@ -47,6 +49,51 @@ const PostContainer = styled.article`
   a {
     color: ${colors.accentFirst};
   }
+`
+
+const Wrap = styled.div`
+  width: 100%;
+  height: 188px;
+  position: absolute;
+  top: -8px;
+  left: 8px;
+  overflow: hidden;
+
+  &:before, &:after {
+    content: "";
+    position: absolute;
+  }
+  &:before {
+    width: 40px;
+    height: 8px;
+    right: 100px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  &:after {
+    width: 8px;
+    height: 40px;
+    right: 0px;
+    top: 100px;
+    border-radius: 0px 8px 8px 0px;
+  }
+`
+
+const Ribbon = styled.div`
+  width: 200px;
+  height: 40px;
+  line-height: 40px;
+  position: absolute;
+  top: 30px;
+  right: -50px;
+  z-index: 2;
+  overflow: hidden;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border: 1px dashed;
+  text-align: center;
+  font-family: ${fonts.sans};
+  font-size: 1rem;
+  font-weight: bold;
 `
 
 function metadataComponent(date, author, ttr) {
@@ -95,7 +142,7 @@ function postHeadingComponent(title, slug) {
   )
 }
 
-function Post({ summary, limit, title, slug, tags, date, author, ttr, blurb, excerpt, children }) {
+function Post({ summary, limit, title, slug, tags, date, author, ttr, blurb, excerpt, number, children }) {
   const article = 
     typeof children === `string` ?
     <PostContainer
@@ -108,6 +155,13 @@ function Post({ summary, limit, title, slug, tags, date, author, ttr, blurb, exc
   return (
     <>
       <Container key={slug} className="post">
+        {number ?
+          <Wrap className="wrap">
+            <Ribbon className="ribbon">
+              #{number}
+            </Ribbon>
+           </Wrap>:
+          <></>}
         {postHeadingComponent(title, slug)}
         {summary ? 
           <>

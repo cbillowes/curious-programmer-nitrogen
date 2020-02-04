@@ -8,11 +8,11 @@ import './archives.css'
 const ArchivesPage = (props) => (
   <Layout className="archives-page">
     <SEO title="Archives" />
-    <H1 className="heading">Archives</H1>
+    <H1 className="heading">Archives of all the things</H1>
     <div className="archives">
       <Posts 
         edges={props.data.allMarkdownRemark.edges}
-        truncate={10}
+        truncate={20}
       />
     </div>
   </Layout>
