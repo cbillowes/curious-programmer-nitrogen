@@ -40,6 +40,15 @@ blockquote {
   border-radius: .5rem;
 }
 
+blockquote a {
+  color: #cc0000 !important;
+  font-weight: bold;
+}
+
+blockquote a:hover {
+  color: #097acf !important;
+}
+
 hr {
   border-top: solid 5px #1f1f1f;
   border-left: transparent;
