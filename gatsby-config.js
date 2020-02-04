@@ -6,6 +6,7 @@ module.exports = {
     author: `@cbillowes`,
   },
   plugins: [
+    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
     {
       resolve: `gatsby-plugin-sitemap`,

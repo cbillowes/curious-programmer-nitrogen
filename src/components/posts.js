@@ -4,7 +4,7 @@ import Lang from '../../gatsby-lang'
 
 const defaultTruncate = 50
 
-const Posts = ({ edges, truncate }) => {
+const Posts = ({ edges, truncate, showNumbers }) => {
   if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
 
   let index = edges.length +1
@@ -25,7 +25,7 @@ const Posts = ({ edges, truncate }) => {
         date={date}
         ttr={timeToRead}
         excerpt={blurb || excerpt}
-        number={index}
+        number={showNumbers? index : false}
       >
         {html}
       </Post>

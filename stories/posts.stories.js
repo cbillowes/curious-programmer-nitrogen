@@ -53,3 +53,9 @@ storiesOf('Post', module)
       edges={edges}
     />
   )
+  .add('ribbons', () =>
+    <Posts
+      edges={edges}
+      showNumbers={true}
+    />
+  )

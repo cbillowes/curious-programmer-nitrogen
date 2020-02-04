@@ -1,4 +1,11 @@
+const path = require('path')
+
 module.exports = ({ config, mode }) => {
+  config.module.rules.push({
+    test: /\.scss$/,
+    use: ['style-loader', 'css-loader', 'sass-loader'],
+    include: path.resolve(__dirname, '../src/components/styles'),
+  })
   // Transpile Gatsby module because Gastby includes un-transpiled ES6 code.
   config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
   // use installed babel-loader which is v8.0-beta (which is meant to work with @babel/core@7)

@@ -1,0 +1,110 @@
+@import "./variables.scss";
+
+.ribbon {
+  .backdrop {
+    width: 100%;
+    height: 188px;
+    position: absolute;
+    top: -8px;
+    left: 8px;
+    overflow: hidden;
+  }
+  .backdrop:before, .backdrop:after {
+    content: ""; 
+    position: absolute;
+  }
+  .backdrop:before {
+    width: 40px;
+    height: 8px;
+    right: 100px;
+    border-radius: 8px 8px 0px 0px;
+  }
+  .backdrop:after {
+    width: 8px;
+    height: 40px;
+    right: 0px;
+    top: 100px;
+    border-radius: 0px 8px 8px 0px;
+  }
+  .text {
+    width: 200px;
+    height: 40px;
+    line-height: 40px;
+    position: absolute;
+    top: 30px;
+    right: -50px;
+    z-index: 2;
+    overflow: hidden;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+    border: 1px dashed;
+    text-align: center;
+    font-family: $sans;
+    font-weight: bold;
+  } 
+}
+
+.wrapped:nth-child(n+1) {
+  .ribbon {
+    .text {
+      background-color: #cf09ae;
+      color: #80036b;
+      text-shadow: 1px 1px 1px #b168a5;
+      box-shadow: 0 0 0 3px #80036b, 0px 21px 5px -18px rgba(0,0,0,0.6); 
+    }
+    
+    .backdrop:before,
+    .backdrop:after {
+      background-color: #630453;
+    }
+  }
+}
+
+.wrapped:nth-child(2n+1) {
+  .ribbon {
+    .text {
+      background-color: #097acf;
+      color: #0e4874;
+      text-shadow: 1px 1px 1px #6ba2cc;
+      box-shadow: 0 0 0 3px #0e4874, 0px 21px 5px -18px rgba(0,0,0,0.6); 
+    }
+    
+    .backdrop:before,
+    .backdrop:after {
+      background-color: #033d69;
+    }
+  }
+}
+
+.wrapped:nth-child(3n+1) {
+  .ribbon {
+    .text {
+      background-color: #abad10;
+      color: #667a0b;
+      text-shadow: 1px 1px 1px #b1bb83;
+      box-shadow: 0 0 0 3px #667a0b, 0px 21px 5px -18px rgba(0,0,0,0.6); 
+    }
+    
+    .backdrop:before,
+    .backdrop:after {
+      background-color: #667a0b;
+    }
+  }
+}
+
+.wrapped:nth-child(4n+1) {
+  .ribbon {
+    .text {
+      border-color: #777;
+      background-color: #ffae00;
+      color: #a17202;
+      text-shadow: 1px 1px 1px #fdd06e;
+      box-shadow: 0 0 0 3px #a17202, 0px 21px 5px -18px rgba(0,0,0,0.6); 
+    }
+    
+    .backdrop:before,
+    .backdrop:after {
+      background-color: #694c0c;
+    }
+  }
+}

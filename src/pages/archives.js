@@ -13,6 +13,7 @@ const ArchivesPage = (props) => (
       <Posts 
         edges={props.data.allMarkdownRemark.edges}
         truncate={20}
+        showNumbers={true}
       />
     </div>
   </Layout>

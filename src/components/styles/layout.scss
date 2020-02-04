@@ -1,0 +1,17 @@
+@import "./variables.scss";
+
+html, body {
+  margin: 0;
+  padding: 0;
+  font-size: 18pt;
+  line-height: 2.25rem;
+  color: $lightest;
+  background-color: $darkest;
+  text-shadow: 1px 1px 1px $neutral;
+  font-family: $serif;
+
+  @media screen and (max-width: 1024px) {
+    font-size: 14pt;
+    line-height: 1.25rem;
+  }
+}
