@@ -10,6 +10,25 @@ html, body {
   text-shadow: 1px 1px 1px #303030;
 }
 
+@media screen and (max-width: 1024px) {
+  html,body {
+    font-size: 12pt;
+    line-height:1.25rem;
+  }
+}
+
+code, code[class*="language-"], pre[class*="language-"] {
+  font-size: 12pt;
+  line-height:1.25rem;
+  background-color: #181c1f !important;
+  border-radius: 10px;
+  padding: .5rem 1rem !important;
+}
+
+code[class*="language-"], pre[class*="language-"] { 
+  white-space: pre-wrap;
+}
+
 blockquote {
   border-left: solid .75rem #cc0000;
   outline: solid 1px #303030;
@@ -25,6 +44,14 @@ hr {
   border-bottom: solid 3px #303030;
 }
 
+iframe {
+  width: 100%;
+}
+
+.gist .blob-code-inner {
+  white-space: pre-wrap;
+}
+
 .gist .blob-wrapper {
   border-radius: none !important;
 }
@@ -35,6 +62,7 @@ hr {
 
 .gist .gist-data {
   border: none !important;
+  background-color: transparent;
 }
 
 .gist .highlight {
