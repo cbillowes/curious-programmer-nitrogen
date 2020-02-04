@@ -25,7 +25,7 @@ const Container = styled.div`
     }
 
     .postNavigationMetadata {
-      color: ${colors.fence};
+      color: ${colors.faded};
     }
   }
 `
@@ -85,7 +85,7 @@ function navigateToPost(post) {
             bland={true}
             style={{
               textDecoration: `none`,
-              color: colors.fence,
+              color: colors.faded,
             }}
           >
             <PostMetadata

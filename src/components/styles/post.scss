@@ -1,5 +1,60 @@
 @import "./variables.scss";
 
+.post-container {
+  max-width: 960px;
+  margin: 0 auto;
+  position: relative;
+  padding: 0 1.5rem;
+
+  h1 {
+    text-align: center;
+    a {
+      color: $lightest;
+      text-decoration: none;
+      border-bottom: solid 1px $faded;
+      padding: .25rem 1rem;
+
+      &:hover {
+        border-radius: .25rem;
+        background-color: $primary;
+        text-shadow: 1px 1px 1px lighten($darkest, 90%);
+        box-shadow: 4px 4px 1px darken($primary, 20%);
+        color: $darkest;
+      }
+    }
+  }
+}
+
+.blurb-container {
+  font-size: 130%;
+}
+
+.metadata-container {
+  &.top {
+    text-align: center;
+    margin-bottom: 1.5rem;
+    font-size: 100%;
+  }
+
+  &.bottom {
+    text-align: right;
+    font-size: 100%;
+    color: $neutral;
+
+    .tags {
+      text-align: center;
+    }
+  }
+}
+
+.metadata {
+  color: $faded;
+}
+
+.tags-container {
+  margin-top: .75rem;
+}
+
 code[class*="language-"], 
 pre[class*="language-"] {
   font-size: 12pt;

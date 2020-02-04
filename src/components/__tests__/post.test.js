@@ -47,11 +47,6 @@ describe('Post', () => {
           to="/blog/hello-world"
           title="Hello world"
           bland={true}
-          style={{
-            color: `${colors.light}`,
-            textDecoration: `none`,
-            borderBottom: `solid 1px ${colors.light}`,
-          }}
         >
           Hello world
         </Anchor>

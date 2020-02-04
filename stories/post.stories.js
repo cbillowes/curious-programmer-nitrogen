@@ -3,6 +3,8 @@ import { storiesOf } from '@storybook/react'
 import Post from '../src/components/post'
 import '../src/components/layout.css'
 
+const htmlString = `<p>Hello Galaxy, <br/>tell me <strong>HOW</strong> you're doing.</p>`
+
 storiesOf('Post', module)
   .add('single', () => 
     <Post 
@@ -22,5 +24,17 @@ storiesOf('Post', module)
       <p>
         Wench overhaul topgallant man-of-war strike colors hogshead keel crimp plunder reef.
       </p>
+    </Post>
+  )
+  .add('string html', () =>
+    <Post
+      title="Hello Galaxy"
+      slug="/blog/hello-galaxy"
+      tags="hello,galaxy,greetings"
+      date="1 April 2018"
+      author="Clarice Bouwer"
+      ttr="15"
+    >
+      {htmlString}
     </Post>
   )

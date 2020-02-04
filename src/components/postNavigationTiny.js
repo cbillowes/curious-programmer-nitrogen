@@ -22,7 +22,7 @@ const Container = styled.div`
 
       a {
         border: none;
-        color: ${colors.fence};
+        color: ${colors.faded};
         &:hover {
           color: ${colors.accentFirst};
           background-color: transparent;

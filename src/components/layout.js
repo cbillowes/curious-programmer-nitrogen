@@ -35,13 +35,13 @@ const Site = styled.div`
 `
 
 const Layout = ({ className, footer, children }) => {
-  const containerClassName = `page-container ${className}`
+  const pageClassName = `page-container ${className}`
   return (
     <Site>
       <Header siteTitle={site.title} />
-      <main className={containerClassName}>
+      <div className={pageClassName}>
         {children}
-      </main>
+      </div>
       {
         footer === `hidden` ?
         <></> :

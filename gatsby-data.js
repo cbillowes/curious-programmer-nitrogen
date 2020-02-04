@@ -9,7 +9,7 @@ module.exports = {
       accentFirst: "#c6c91c",
       accentSecond: "#097acf",
       accentThird: "#9a9c16",
-      fence: "#666",
+      faded: "#666",
       light: "#bfcbd2",
       lightest: "#ffffff",
     },

@@ -5,6 +5,7 @@ import PostNavigationTiny from '../components/postNavigationTiny'
 import PostNavigation from '../components/postNavigation'
 import Footer from '../components/footer'
 import Layout from '../components/layout'
+import '../components/styles/post.scss'
 
 function postNavigation(edge) {
   const { timeToRead, excerpt } = edge.node
@@ -32,6 +33,7 @@ export default (props) => {
   return (
     <>
       <Layout
+        className="post"
         footer="hidden"
       >
         <SEO title={title} />

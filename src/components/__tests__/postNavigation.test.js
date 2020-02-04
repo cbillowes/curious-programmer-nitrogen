@@ -117,7 +117,7 @@ describe('Post navigation', () => {
           bland={true}
           style={{
             textDecoration: `none`,
-            color: colors.fence,
+            color: colors.faded,
           }}
         >
           <PostMetadata
