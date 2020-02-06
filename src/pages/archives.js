@@ -8,7 +8,8 @@ import './posts.scss'
 const ArchivesPage = (props) => (
   <Layout className="archives-page">
     <SEO title="Archives" />
-    <H1 className="heading">Archives of all the things</H1>
+    <div classNmae="spacer"></div>
+    <H1 className="heading spacer">Archives of all the things</H1>
     <div className="posts-container">
       <Posts
         edges={props.data.allMarkdownRemark.edges}

@@ -10,7 +10,9 @@
 
   h1 {
     text-align: center;
-    font-size: 110%;
+    font-size: 120%;
+    z-index:999;
+
     a {
       color: $lightest;
       text-decoration: none;
@@ -26,36 +28,28 @@
       }
     }
   }
-}
 
-.blurb-container {
-  font-size: 130%;
-}
-
-.metadata-container {
-  &.top {
-    text-align: center;
-    margin-bottom: 1.5rem;
-    font-size: 100%;
-  }
-
-  &.bottom {
-    text-align: right;
-    font-size: 100%;
-    color: $neutral;
-
-    .tags {
+  .metadata-container {
+    &.top {
       text-align: center;
+      margin-bottom: 1.5rem;
+      font-size: 100%;
+    }
+
+    &.bottom {
+      text-align: right;
+      font-size: 100%;
+      color: $faded;
+
+      .tags {
+        text-align: center;
+      }
     }
   }
-}
 
-.metadata {
-  color: $faded;
-}
-
-.tags-container {
-  margin-top: .75rem;
+  .tags-container {
+    margin-top: .75rem;
+  }
 }
 
 code[class*="language-"], 

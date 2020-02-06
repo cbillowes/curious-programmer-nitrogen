@@ -2,12 +2,13 @@
 
 .ribbon {
   .backdrop {
-    width: 100%;
     height: 188px;
+    width: 150px;
     position: absolute;
     top: -8px;
-    left: 8px;
+    right: -8px;
     overflow: hidden;
+    display: inline-block;
   }
   .backdrop:before, .backdrop:after {
     content: ""; 

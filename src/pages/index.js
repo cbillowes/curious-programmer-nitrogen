@@ -8,6 +8,7 @@ import './index.css'
 const IndexPage = (props) => (
   <Layout className="home-page">
     <SEO title="Blog" />
+    <div className="spacer"></div>
     <div className="posts-container">
       <Posts 
         edges={props.data.allMarkdownRemark.edges} 
