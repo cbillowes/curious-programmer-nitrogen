@@ -4,10 +4,10 @@ import Lang from '../../gatsby-lang'
 
 const defaultTruncate = 50
 
-const Posts = ({ edges, truncate, showNumbers }) => {
+const Posts = ({ edges, truncate, showNumbers, startAt }) => {
   if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
 
-  let index = edges.length +1
+  let index = (startAt || edges.length) +1
   return edges.map(edge => {
     const { html, timeToRead, excerpt } = edge.node
     const { slug, date } = edge.node.fields

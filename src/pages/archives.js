@@ -3,14 +3,14 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { H1 } from '../components/heading'
 import Posts from '../components/posts'
-import './archives.css'
+import './posts.scss'
 
 const ArchivesPage = (props) => (
   <Layout className="archives-page">
     <SEO title="Archives" />
     <H1 className="heading">Archives of all the things</H1>
-    <div className="archives">
-      <Posts 
+    <div className="posts-container">
+      <Posts
         edges={props.data.allMarkdownRemark.edges}
         truncate={20}
         showNumbers={true}

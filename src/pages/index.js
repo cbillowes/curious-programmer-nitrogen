@@ -8,8 +8,14 @@ import './index.css'
 const IndexPage = (props) => (
   <Layout className="home-page">
     <SEO title="Blog" />
-    <Posts edges={props.data.allMarkdownRemark.edges} />
-    <ShowMore />
+    <div className="posts-container">
+      <Posts 
+        edges={props.data.allMarkdownRemark.edges} 
+        showNumbers={true} 
+        startAt={props.data.allMarkdownRemark.totalCount}
+      />
+      <ShowMore />
+    </div>
   </Layout>
 )
 
@@ -22,6 +28,7 @@ export const pageQuery = graphql`
       sort: {order: DESC, fields: fields___date}
       limit: 10
     ) {
+      totalCount
       edges {
         node {
           excerpt(pruneLength: 250)

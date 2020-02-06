@@ -92,6 +92,19 @@ const CreditsPage = () => (
         </ul>
       </Credit>
 
+      <H2>Snippets</H2>
+      <Credit
+        to="https://codepen.io/JohnOSTend/pen/ZXrwoM"
+        title="Ribbons"
+      >
+        implemented using the "Various Styles CSS Ribbons" through a pen by 
+        <Anchor 
+          to="https://codepen.io/JohnOSTend"
+        >
+          John
+        </Anchor>.
+      </Credit>
+
       <H2>Emojis</H2>
       <Credit
         to="https://gist.github.com/oliveratgithub/0bf11a9aff0d6da7b46f1490f86a71eb"

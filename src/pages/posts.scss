@@ -1,0 +1,31 @@
+.page-container.home-page,
+.page-container.archives-page {
+  max-width: 100%;
+  margin-top: 3.5rem;
+  padding: 0 1.5rem;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: space-evenly;
+
+  .posts-container {
+    margin-top: 3.5rem;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    justify-content: space-evenly;
+
+    .post-container {
+      position: relative;
+    }
+  }
+
+  .heading {
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+
+}
