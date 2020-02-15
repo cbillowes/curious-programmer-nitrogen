@@ -1,56 +1,95 @@
 import React from 'react'
-import styled from 'styled-components'
 import Anchor from './anchor'
 
-const Paragraph = styled.p`
-  margin-bottom: 0;
-  margin-top: 0;
-`
-
-const CopyrightImage = styled.img`
-  margin-top: 1.75rem;
-  margin-right: .75rem;
-  float: left;
-`
-
-const Icon = () => {
+const CreativeCommonsLogo = () => {
   return (
-    <span data-component="license-copyright-element">
+    <span 
+      data-component="license-creative-commons-logo"
+    >
       <Anchor 
         to="http://creativecommons.org/licenses/by-sa/4.0/" 
-        bland="true"
+        defaultStyle="true"
       >
-        <CopyrightImage 
+        <img 
+          className="creative-commons-logo"
           alt="Creative Commons License"
           src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
           title="Creative Commons Attribution-ShareAlike 4.0 International License"
-        />
+        />  
       </Anchor>
     </span>
   )
 }
 
-function License ({ theme }) {
+function Author() {
+  return (
+    <Anchor 
+      to="/about"
+      data-component="license-author"
+    >
+      Clarice Bouwer
+    </Anchor>
+  )
+}
+
+function CreativeCommonsLicense() {
+  return (
+    <Anchor 
+      to="https://creativecommons.org/licenses/by-sa/4.0/"
+      data-component="license-creative-commons-license"
+    >
+      Creative Commons Attribution-ShareAlike 4.0 International License
+    </Anchor> 
+  )
+}
+
+function CodeLicense() {
+  return (
+    <Anchor 
+      to="/license"
+      data-component="license-code-license"
+    >
+      license
+    </Anchor>  
+  )
+}
+
+function PrivacyPolicy() {
+  return (
+    <Anchor 
+      to="/privacy-policy"
+      data-component="license-privacy-policy"
+    >
+      privacy policy
+    </Anchor>
+  )
+}
+
+function GitHub() {
+  return (
+    <Anchor 
+      to="https://github.com/cbillowes/curious-programmer-nitrogen"
+      data-component="license-github"
+    >
+      GitHub
+    </Anchor>
+  )
+}
+
+function License () {
   return (
     <>
-      <Icon />
-      <div data-component="license-text-element">
-        <Paragraph>
-          The content is written by 
-          <Anchor to="/about">Clarice Bouwer</Anchor> and is licensed under the 
-          <Anchor to="https://creativecommons.org/licenses/by-sa/4.0/">
-            Creative Commons Attribution-ShareAlike 4.0 International License
-          </Anchor>.
+      <CreativeCommonsLogo />
+      <span data-component="license-text-element">
+        <p>
+          The content is written by <Author /> and is licensed under the <CreativeCommonsLicense />.
           References to external resources are subject to their own terms and conditions.
-          Also, there is a <Anchor to="/license">license</Anchor> 
-          for the code and it's probably a good idea to read the 
-          <Anchor to="/privacy-policy">Privacy Policy</Anchor>.
-        </Paragraph>
-        <Paragraph>
-          The website is open-source and is available on <Anchor to="https://github.com/cbillowes/curious-programmer-nitrogen">GitHub</Anchor>.
+          There is a <CodeLicense /> for the code. 
+          It's probably a good idea to read the <PrivacyPolicy />.
+          The website is open-source and is available on <GitHub />.
           Please give it a star if you think it is cool.
-        </Paragraph>
-      </div>
+        </p>
+      </span>
     </>
   )
 }

@@ -1,11 +1,11 @@
 import React from 'react'
-import Post from '../components/post'
-import SEO from '../components/seo'
-import PostNavigationTiny from '../components/postNavigationTiny'
-import PostNavigation from '../components/postNavigation'
-import Footer from '../components/footer'
 import Layout from '../components/layout'
-import '../components/styles/post.scss'
+import SEO from '../components/seo'
+import Footer from '../components/footer'
+import PostNavigationTiny from '../components/postNavigationTiny'
+import PostNavigationTeaser from '../components/postNavigationTeaser'
+import Post from '../components/post'
+import { LargeSpacer } from '../components/spacer'
 
 function postNavigation(edge) {
   const { timeToRead, excerpt } = edge.node
@@ -24,7 +24,7 @@ function postNavigation(edge) {
 
 export default (props) => {
   const remark = props.data.markdownRemark
-  const { slug, next, previous } = props.pageContext
+  const { slug, next, previous, number } = props.pageContext
   const { html, timeToRead } = remark
   const { title, tags, excerpt } = remark.frontmatter
   const { date } = remark.fields
@@ -41,6 +41,7 @@ export default (props) => {
           previous={previousPost}
           next={nextPost}
         />
+        <LargeSpacer />
         <Post
           slug={slug}
           title={title}
@@ -48,11 +49,12 @@ export default (props) => {
           tags={tags}
           ttr={timeToRead}
           excerpt={excerpt}
+          number={number}
         >
           {html}
         </Post>
       </Layout>
-      <PostNavigation
+      <PostNavigationTeaser
         previous={previousPost}
         next={nextPost}
       />

@@ -1,86 +1,56 @@
 import React from 'react'
-import styled from 'styled-components'
 import { H1 } from './heading'
 import Anchor from './anchor'
 import Text from './text'
-import Constants from '../../gatsby-data'
+import './styles/postNavigation.scss'
 
-const colors = Constants.theme.colors
 const limit = 5
 
-const Container = styled.div`
-  display: flex;
-  flex-direction: row;
-  align-items: stretch;
-
-  section {
-    flex-grow: 1;
-    flex-basis: 50%;
-
-    h1 {
-      font-size: 60%;
-
-      a {
-        border: none;
-        color: ${colors.faded};
-        &:hover {
-          color: ${colors.accentFirst};
-          background-color: transparent;
-        }
-      }
-    }
-  }
-`
-
-const PreviousItemContainer = styled.section`
-  a:before {
-    content: "\u27FB ";
-    font-size: 130%;
-  }
-`
-
-const NextItemContainer = styled.section`
-  text-align: right;
-  a:after {
-    content: " \u27FC";
-    font-size: 130%;
-  }
-`
-
-function navigateToPost(post) {
+const Navigation = ({ post }) => {
   if (!post) return <></>
 
+  const { slug, title } = post
   return (
-    <>
-      <section>
-        <H1>
-          <Anchor
-            to={post.slug}
-            title={post.title}
-          >
-            <Text
-              limit={limit}
-            >
-              {post.title}
-            </Text>
-          </Anchor>
-        </H1>
-      </section>
-    </>
+    <H1>
+      <Anchor
+        to={slug}
+        title={title}
+        className="nav-link"
+      >
+        <Text 
+          limit={limit}
+        >
+          {title}
+        </Text>
+      </Anchor>
+    </H1>
   )
 }
 
 function PostNavigationTiny({ previous, next }) {
   return (
     <>
-      <Container>
-        <PreviousItemContainer>
-          {navigateToPost(previous)}
-        </PreviousItemContainer>
-        <NextItemContainer>
-          {navigateToPost(next)}
-        </NextItemContainer>
-      </Container>
+      <nav 
+        className="post navigation tiny"
+        data-component="post-navigation-tiny"
+      >
+        <aside 
+          className="previous"
+          data-component="post-navigation-previous"
+        >
+          <Navigation 
+            post={previous} 
+          />
+        </aside>
+        <aside 
+          className="next"
+          data-component="post-navigation-next"
+        >
+          <Navigation
+            post={next}
+          />
+        </aside>
+      </nav>
     </>
   )
 }

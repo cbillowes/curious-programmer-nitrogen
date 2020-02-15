@@ -1,21 +1,6 @@
-import { Link } from "gatsby"
-import React from "react"
-import styled from "styled-components"
-import data from "../../gatsby-data.js"
-
-const fonts = data.theme.fonts
-const colors = data.theme.colors
-
-const Container = styled.div`
-  margin: 0;
-  font-family: ${fonts.sans};
-  font-size: 130%;
-`
-
-const Anchor = styled(Link)`
-  text-decoration: none;
-  color: ${colors.lightest};
-`
+import React from 'react'
+import Anchor from './anchor'
+import './styles/logo.scss'
 
 const Content = () => (
   <>
@@ -25,14 +10,14 @@ const Content = () => (
 
 function Logo ({ theme }) {
   return (
-    <Container>
+    <div className="logo">
       <Anchor 
         to="/"
         title="Curious Programmer"
       >
         <Content />
       </Anchor>
-    </Container>
+    </div>
   )
 }
 

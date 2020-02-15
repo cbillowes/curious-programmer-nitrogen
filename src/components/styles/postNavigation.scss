@@ -1,0 +1,156 @@
+@import "./variables.scss";
+
+.post.navigation {
+  display: flex;
+  flex-direction: row;
+  align-items: strecth;
+  
+  .previous, .next {
+    flex-grow: 1;
+    flex-basis: 50%;
+  }
+
+  &.tiny {
+    font-size: 40%;
+
+    @include large-screen() {
+      margin-top: 1.5rem;
+      margin: 1.5rem 2rem 0 2rem;
+    }
+
+    @include medium-screen() {
+      margin: 0;
+    }
+
+    @include small-screen() {
+      margin-top: 2rem;
+    }
+  
+    .previous, .next {
+      h1 {
+        a {
+          border: none;
+          color: $faded;
+
+          &:hover {
+            background-color: transparent;
+            color: $primary;
+            text-shadow: 1px 1px 1px $primary-dark;
+          }
+        }
+      }
+
+      .nav-link {
+        border: none;
+        color: $faded;
+
+        &:hover {
+          background-color: transparent;
+          color: $primary;
+          text-shadow: 1px 1px 1px $primary-dark;
+        }
+      }
+    }
+
+    .previous .nav-link:before {
+      content: "\27FB ";
+      font-size: 130%;
+    }
+
+    .next a.nav-link:after {
+      content: " \27FC";
+      font-size: 130%;
+    }
+
+    .previous h1 {
+      text-align: left;
+    }
+
+    .next h1 {
+      text-align: right;
+    }
+  }
+
+  &.teaser {
+    font-size: 80%;
+    line-height: 2.5rem;
+
+    h1 {
+      font-size: 110%;
+    }
+
+    .body {
+      color: $lightest;
+    }
+
+    .metadata {
+      font-size: 90%;
+      font-style: italic;
+      color: $faded;
+    }
+
+    .tags .tag {
+      margin-left: 0;
+      margin-right: 1rem;
+    }
+
+    .nav-link {
+      display: block;
+      border: none;
+      color: $lightest;
+
+      &:hover {
+        background-color: transparent;
+        text-shadow: 1px 1px 1px $dark;
+      }
+    }
+
+    .previous {
+      padding-right: 3%;
+      padding-left: 10%;
+      border-top: solid 10px $tertiary;
+
+      h1, .tags, .body, .metadata {
+        text-align: right;
+      }
+
+      .tags .tag {
+        @include tertiary-tag();
+      }
+
+      .nav-link:hover { 
+        h1, .body {
+          color: $tertiary;
+        }
+
+        .metadata {
+          color: $tertiary-light;
+        }
+      }
+    }
+
+    .next {
+      padding-left: 3%;
+      padding-right: 10%;
+      border-top: solid 10px $secondary;
+
+      h1, .tags {
+        text-align: left;
+      }
+
+      .tags .tag {
+        @include secondary-tag();
+      }
+
+      .nav-link:hover { 
+        h1, .body {
+          color: $secondary;
+        }
+
+        .metadata {
+          color: $secondary-light;
+        }
+      }
+    }
+  }
+}

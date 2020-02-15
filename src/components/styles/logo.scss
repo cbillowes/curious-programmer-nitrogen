@@ -1,0 +1,19 @@
+@import "./variables.scss";
+
+.logo {
+  margin: 0;
+  font-family: $sans;
+  font-size: 130%;
+
+  a, a:visited {
+    text-decoration: none;
+    border: none;
+    color: #fff;
+
+    &:hover {
+      background-color: transparent;
+      text-shadow: 1px 1px 1px $dark;
+      color: #fff;
+    }
+  }
+}

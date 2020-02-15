@@ -7,7 +7,7 @@ import License from '../components/license'
 import { H1, H2 } from '../components/heading'
 
 const LicensePage = () => (
-  <Layout>
+  <Layout className="license">
     <SEO title="License">
       The source code is licensed under MIT and the original content is licensed under CC BY-SA 4.0.
     </SEO>

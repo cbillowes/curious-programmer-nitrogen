@@ -1,14 +1,9 @@
 import React from 'react'
 import Moment from 'react-moment'
-import styled from 'styled-components'
 import Lang from '../../gatsby-lang'
 
 const moment = require('moment')
 const metadata = Lang.posts.metadata
-
-const Metadata = styled.div`
-  font-style: italic;
-`
 
 function renderDate(date) {
   const isoFormat = `YYYY-MM-DD`
@@ -29,7 +24,7 @@ function PostMetadata({ date, author, ttr }) {
   moment.updateLocale(Lang.locale)
   return (
     <>
-      <Metadata className="metadata">
+      <div className="metadata">
         {metadata.date.prefix}{` `}
         {renderDate(date)}{` `}
         <span data-container="metadata-author">
@@ -38,7 +33,7 @@ function PostMetadata({ date, author, ttr }) {
         <span data-container="metadata-ttr">
           {metadata.ttr(ttr)}
         </span>
-      </Metadata>
+      </div>
     </>
   )
 }

@@ -1,37 +1,47 @@
 import React from 'react'
-import Post from './post'
+import PostPreview from './postPreview'
 import Lang from '../../gatsby-lang'
+import './styles/posts.scss'
 
 const defaultTruncate = 50
 
-const Posts = ({ edges, truncate, showNumbers, startAt }) => {
-  if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
-
-  let index = (startAt || edges.length) +1
+const Listing = ({ edges, truncate, startAt }) => {
+  let index = (startAt || edges.length) + 1
   return edges.map(edge => {
-    const { html, timeToRead, excerpt } = edge.node
+    const { timeToRead, excerpt } = edge.node
     const { slug, date } = edge.node.fields
     const { title, tags, blurb } = edge.node.frontmatter
     const tagCollection = tags ? tags.join(`,`) : ``
     index--
     return (
-      <Post 
+      <PostPreview 
         key={slug}
-        summary="true"
         limit={truncate ? truncate : defaultTruncate}
         title={title}
         slug={slug}
         tags={tagCollection}
         date={date}
         ttr={timeToRead}
-        excerpt={blurb || excerpt}
-        number={showNumbers? index : false}
+        number={index}
       >
-        {html}
-      </Post>
+        {blurb || excerpt}
+      </PostPreview>
     )
   })
-  
+}
+
+const Posts = ({ edges, truncate, startAt }) => {
+  if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
+
+  return (
+    <div className="posts">
+      <Listing 
+        edges={edges}
+        truncate={truncate}
+        startAt={startAt}
+      />
+    </div>
+  )
 }
 
 export default Posts

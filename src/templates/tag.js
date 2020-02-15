@@ -1,15 +1,17 @@
 import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import { H1 } from '../components/heading'
 import Posts from '../components/posts'
 
 export default (props) => {
-  console.log(props)
   const { tag } = props.pageContext
   const edges = props.data.allMarkdownRemark.edges
   return (
     <Layout>
       <SEO title={tag} />
+      <div className="spacer"></div>
+      <H1>{tag}</H1>
       <Posts
         edges={edges}
       />

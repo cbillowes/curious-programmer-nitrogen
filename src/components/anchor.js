@@ -1,257 +1,250 @@
 import React from 'react'
-import styled from 'styled-components'
 import { Link } from 'gatsby'
-import data from '../../gatsby-data.js'
+import './styles/anchor.scss'
 
-const colors = data.theme.colors
-const fonts = data.theme.fonts
-const transitions = data.theme.transitions
+// const BlandInternalLink = ({ to, title, style, children }) => {
+//   return (
+//     <>
+//       { " " }
+//       <Link
+//         to={to}
+//         title={title}
+//         style={style}
+//         data-component="bland-link-element"
+//         className="anchor"
+//       >
+//         {children}
+//       </Link>
+//       { " " }
+//     </>
+//   )
+// }
 
-const transition = `
-  -webkit-transition: all ${transitions.transition};
-  transition: all  ${transitions.transition};
-  transition-property: ${transitions.property};
-  transition-duration: ${transitions.duration};
-  transition-timing-function: ${transitions.timing};
-  transition-delay: ${transitions.delay};
-  text-decoration: none;
-`
+// const InternalLink = ({ to, title, children }) => {
+//   return (
+//     <>
+//     { " " }
+//       <Link
+//         to={to}
+//         title={title}
+//         data-component="link-element"
+//         className="anchor default"
+//       >
+//         {children}
+//       </Link>
+//     { " " }
+//     </>
+//   )
+// }
 
-const LinkElement = styled(Link)`
-  color: ${colors.accentFirst};
-  text-decoration: none;
-  padding: .05rem;
-  border-bottom: solid 1px ${colors.accentFirst};
+// const BlandExternalLink = ({ to, title, children }) => {
+//   return (
+//     <>
+//       { " " }
+//       <a
+//         href={to}
+//         rel="nofollow noopener noreferrer"
+//         title={title}
+//         target="_blank"
+//         data-component="bland-external-link-element"
+//         className="anchor"
+//       >
+//         {children}
+//       </a>
+//       { " " }
+//     </>
+//   )
+// }
 
-  :hover {
-    background-color: ${colors.accentSecond};
-    color: ${colors.lightest};
-    border-bottom: ${colors.accentSecond};
-  }
-`
+// const PrettyExternalLink = ({ to, title, className, children }) => {
+//   return (
+//     <>
+//       { " " }
+//       <a
+//         href={to}
+//         rel="nofollow noopener noreferrer"
+//         title={title}
+//         target="_blank"
+//         data-component="pretty-external-link-element"
+//         className={`anchor default ${className}`}
+//       >
+//         {children}
+//       </a>
+//       { " " }
+//     </>
+//   )
+// }
 
-const TagAnchorElement = styled.a`
-  font-weight: 400;
-  font-family: ${fonts.sans};
-  text-shadow: none;
-  line-height: 1.75em;
-  color: ${colors.darkest};
-  background-color: ${colors.accentFirst};
-  padding: 0 .5em;
-  border-radius: 4px;
-  margin: .25em;
-  text-decoration: none;
-  display: inline-block;
-  ${transition}
+// const TagExternalLink = ({ to, title, children }) => {
+//   return (
+//     <>
+//       { " " }
+//       <a
+//         href={to}
+//         rel="nofollow noopener noreferrer"
+//         title={title}
+//         target="_blank"
+//         data-component="tag-external-link-element"
+//         className="anchor tag"
+//       >
+//         {children}
+//       </a>
+//     </>
+//   )
+// }
 
-  :hover {
-    background-color: ${colors.accentSecond};
-    color: ${colors.lightest};
-    border-bottom: ${colors.accentSecond};
-  }
-`
+// const TagInternalLink = ({ to, title, children }) => {
+//   return (
+//     <>
+//       { " " }
+//       <Link
+//         to={to}
+//         title={title}
+//         data-component="tag-internal-link-element"
+//         className="anchor tag"
+//       >
+//         {children}
+//       </Link>
+//       { " " }
+//     </>
+//   )
+// }
 
-const TagLinkElement = styled(Link)`
-  font-family: ${fonts.sans};
-  text-shadow: none;
-  line-height: 1.75rem;
-  color: ${colors.darkest};
-  background-color: ${colors.accentFirst};
-  padding: .37rem .75rem;
-  border-radius: .25rem;
-  margin: .25rem;
-  text-decoration: none;
-  font-size: 80%;
-  ${transition}
+// function Anchor ({ to, title, bland, tag, className, style, children }) {
+//   if (!to) throw new Error(`url for the anchor is required`)
+  
+//   const external = to.startsWith(`http`) || to.startsWith(`mailto:`)
 
-  :hover {
-    background-color: ${colors.accentSecond};
-    color: ${colors.lightest};
-    border-bottom: ${colors.accentSecond};
-  }
-`
+//   if (tag && external)
+//     return (
+//       <TagExternalLink
+//         to={to}
+//         title={title}
+//         className={className}
+//       >
+//         {children}
+//       </TagExternalLink>
+//     )
 
-const AnchorElement = styled.a`
-  color: ${colors.accentFirst};
-  text-decoration: none;
-  padding: .05rem;
-  border-bottom: solid 1px ${colors.accentFirst};
+//   if (tag)
+//     return (
+//       <TagInternalLink
+//         to={to}
+//         title={title}
+//         className={className}
+//       >
+//         {children}
+//       </TagInternalLink>
+//     )
 
-  :hover {
-    background-color: ${colors.accentSecond};
-    color: ${colors.lightest};
-    border-bottom: ${colors.accentSecond};
-  }
-`
+//   if (external && bland)
+//     return (
+//       <BlandExternalLink
+//         to={to}
+//         title={title}
+//         className={className}
+//       >
+//         {children}
+//       </BlandExternalLink>
+//     )
 
-const BlandInternalLink = ({ to, title, style, children }) => {
-  return (
-    <>
-      { " " }
-      <Link
-        to={to}
-        title={title}
-        style={style}
-        data-component="bland-link-element"
-        className="anchor bland-link-element"
-      >
-        {children}
-      </Link>
-      { " " }
-    </>
-  )
+//   if (external)
+//     return (
+//       <PrettyExternalLink
+//         to={to}
+//         title={title}
+//         className={className}
+//       >
+//         {children}
+//       </PrettyExternalLink>
+//     )
+
+//   if (bland)
+//       return (
+//         <BlandInternalLink
+//           to={to}
+//           title={title}
+//           className={className}
+//           style={style}
+//         >
+//           {children}
+//         </BlandInternalLink>
+//       )
+
+//   return (
+//     <InternalLink
+//       to={to}
+//       title={title}
+//       className={className}
+//     >
+//       {children}
+//     </InternalLink>
+//   )
+// }
+
+// export default Anchor
+
+function getClassName(defaultStyle, className) {
+  return `${(defaultStyle) ? `free` : ``} ${className || ``}`.trim()
 }
 
-const InternalLink = ({ to, title, children }) => {
+const ExternalLink = ({to, title, defaultStyle, className, children}) => {
   return (
     <>
-    { " " }
-      <LinkElement
-        to={to}
-        title={title}
-        data-component="link-element"
-        className="anchor link-element"
-      >
-        {children}
-      </LinkElement>
-    { " " }
-    </>
-  )
-}
-
-const BlandExternalLink = ({ to, title, children }) => {
-  return (
-    <>
-      { " " }
+      {" "}
       <a
         href={to}
-        rel="nofollow noopener noreferrer"
+        rel={`nofollow noopener noreferrer`}
         title={title}
-        target="_blank"
-        data-component="bland-external-link-element"
-        className="anchor bland-external-link-element"
+        target={`_blank`}
+        className={getClassName(defaultStyle, className)}
+        data-component={`anchor-external-link`}
       >
         {children}
       </a>
-      { " " }
+      {" "}
     </>
   )
 }
 
-const PrettyExternalLink = ({ to, title, children }) => {
+const InternalLink = ({to, title, defaultStyle, className, children}) => {
   return (
     <>
-      { " " }
-      <AnchorElement
-        href={to}
-        rel="nofollow noopener noreferrer"
-        title={title}
-        target="_blank"
-        data-component="pretty-external-link-element"
-        className="anchor pretty-external-link-element"
-      >
-        {children}
-      </AnchorElement>
-      { " " }
-    </>
-  )
-}
-
-const TagExternalLink = ({ to, title, children }) => {
-  return (
-    <>
-      { " " }
-      <TagAnchorElement
-        href={to}
-        rel="nofollow noopener noreferrer"
-        title={title}
-        target="_blank"
-        data-component="tag-external-link-element"
-        className="anchor tag-external-link-element"
-      >
-        {children}
-      </TagAnchorElement>
-    </>
-  )
-}
-
-const TagInternalLink = ({ to, title, children }) => {
-  return (
-    <>
-      { " " }
-      <TagLinkElement
+      {" "}
+      <Link 
         to={to}
         title={title}
-        data-component="tag-internal-link-element"
-        className="anchor tag-internal-link-element"
+        className={getClassName(defaultStyle, className)}
+        data-component={`anchor-internal-link`}
       >
         {children}
-      </TagLinkElement>
-      { " " }
+      </Link>
+    {" "}
     </>
   )
 }
 
-function Anchor ({ to, title, bland, tag, style, children }) {
-  if (!to) throw new Error(`url for the anchor is required`)
-  
+function Anchor ({ to, title, className, defaultStyle, children }) {
+  if (!to) throw new Error(`url for anchor is required`)
   const external = to.startsWith(`http`) || to.startsWith(`mailto:`)
-
-  if (tag && external)
-    return (
-      <TagExternalLink
-        to={to}
-        title={title}
-      >
-        {children}
-      </TagExternalLink>
-    )
-
-  if (tag)
-    return (
-      <TagInternalLink
-        to={to}
-        title={title}
-      >
-        {children}
-      </TagInternalLink>
-    )
-
-  if (external && bland)
-    return (
-      <BlandExternalLink
-        to={to}
-        title={title}
-      >
-        {children}
-      </BlandExternalLink>
-    )
-
+  
   if (external)
-    return (
-      <PrettyExternalLink
+    return(
+      <ExternalLink
         to={to}
         title={title}
+        className={getClassName(defaultStyle, className)}
       >
         {children}
-      </PrettyExternalLink>
+      </ExternalLink>
     )
-
-  if (bland)
-      return (
-        <BlandInternalLink
-          to={to}
-          title={title}
-          style={style}
-        >
-          {children}
-        </BlandInternalLink>
-      )
 
   return (
     <InternalLink
       to={to}
       title={title}
+      className={className}
+      defaultStyle={defaultStyle}
     >
       {children}
     </InternalLink>

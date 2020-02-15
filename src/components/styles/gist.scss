@@ -1,0 +1,76 @@
+@import "./variables.scss";
+
+.gist .gist-file {
+  border-color: $neutral;
+  border-radius: 0;
+  text-shadow: none;
+  font-family: $mono;
+  width: 100%;
+}
+
+.gist .gist-data {
+  background-color: transparent;
+  border-bottom: solid 1px $neutral;
+  border-radius: 0;
+}
+
+.gist .blob-wrapper {
+  border-radius: 0;
+}
+
+.gist .blob-num {
+  color: $faded;
+  background-color: $darkest;
+}
+
+.gist .blob-code-inner {
+  white-space: pre-wrap;
+  color: #ffffff;
+}
+
+.gist .highlight {
+  background-color: $dark;
+  font-family: $mono;
+}
+
+.gist .gist-meta {
+  background-color: $dark;
+  border-radius: 0;
+  color: $lightest;
+  font-size: 80%;
+  font-family: $symbol;
+  overflow: hidden;
+  padding: 10px;
+
+  a {
+    color: $primary;
+
+    &:hover {
+      color: $dark;
+    }
+  }
+}
+
+// comment
+.gist .pl-c {
+  color: #737373;
+}
+
+// keyword
+.gist .pl-k {
+  color: #39f5ff;
+}
+
+// variable
+.gist .pl-s .pl-s1, .gist .pl-smi {
+  color: #fbff29;
+}
+
+.gist .pl-pds, .gist .pl-s, .gist .pl-s .pl-pse .pl-s1, .gist .pl-sr, .gist .pl-sr .pl-cce, .gist .pl-sr .pl-sra, .gist .pl-sr .pl-sre {
+  color: #bdbdbd;
+}
+
+.gist .pl-c1, .gist .pl-s .pl-v {
+  color: #ff4ed8;
+  font-weight: bold;
+}

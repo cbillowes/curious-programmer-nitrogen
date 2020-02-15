@@ -18,7 +18,6 @@ async function generateBlogPosts( graphql, actions, reporter ) {
   await graphql(`
     query {
       allMarkdownRemark(
-        filter: {fields: {slug: {nin: "/blog/template"}}}
         sort: {order: DESC, fields: fields___date}) 
       {
         edges {
@@ -69,6 +68,7 @@ async function generateBlogPosts( graphql, actions, reporter ) {
           date: date,
           next: next,
           previous: previous,
+          number: posts.length - i,
         },
       })
     }

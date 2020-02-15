@@ -1,0 +1,60 @@
+@import "./variables.scss";
+
+.footer {
+  background-color: $darkest;
+  font-family: $sans;
+  font-size: 65%;
+  line-height: 120%;
+  padding: 3rem 5rem;
+  
+  .container {
+    display: flex;
+    padding: 0;
+
+    @include small-screen() {
+      display: block;
+    }
+
+    .licenses {
+      font-size: 80%;
+      line-height: 200%;
+      justify-content: baseline;
+
+      .creative-commons-logo {
+        margin-top: 3.5rem;
+        margin-right: .75rem;
+        margin-bottom: .75rem;
+        float: left;
+      }
+    }
+
+    .social {
+      min-width: 30%;
+      margin-left: 1rem;
+
+      @include medium-screen {
+        margin-top: 5px;
+        margin-left: 0;
+      }
+
+      @include small-screen {
+        margin-top: 5px;
+        margin-left: 0;
+      }
+
+      .icon {
+        width: 5rem;
+        height: 5rem;
+        border: solid 10px transparent;
+        border-radius: 50%;
+
+        &:hover {
+          background-color: $primary;
+          border-top: solid 10px $primary;
+          border-right: solid 10px $secondary;
+          $border-bottom: solid 10px $secondary;
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,15 @@
+@import "./variables.scss";
+
+iframe {
+  width: 100%;
+  height: 600px;
+  border-color: $neutral;
+
+  @include medium-screen() {
+    height: 400px;
+  }
+
+  @include small-screen() {
+    height: 300px;
+  }
+}

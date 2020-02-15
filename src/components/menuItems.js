@@ -1,77 +1,21 @@
 import React, { Component } from "react"
-import { Link } from "gatsby"
-import styled from "styled-components"
 import Data from "../../gatsby-data.js"
+import Anchor from './anchor'
+import './styles/menu.scss'
 
-const Theme = Data.theme
 const Navigation = Data.navigation
 
-const Container = styled.div`
-  overflow: scroll;
-  position: relative;
-  height: 80vh;
-`
-
-const Item = styled.div`
-  font-family: ${Theme.fonts.sans};
-
-  a {
-    color: ${Theme.colors.lightest};
-    display: block;
-    text-align: center;
-    padding: 0.5rem 2rem;
-    text-decoration: none;
-    margin: .5rem 1rem;
-  }
-
-  a:hover {
-    background-color: ${Theme.colors.accentFirst};
-    color: ${Theme.colors.darkest};
-  }
-`
-
-const ActiveItem = styled(Item)`
-  a {
-    background-color: ${Theme.colors.accentSecond};
-    color: ${Theme.colors.lightest};
-    font-weight: bold;
-  }
-`
-
-const LinkedItem = ({ item, className }) => {
-  if (item.external) {
-    return (
-      <Item>
-        <a 
-          href={item.to}
-        >
-          {item.name}
-        </a>
-      </Item>
-    )
-  }
-
-  if (className === "active") {
-    return (
-      <ActiveItem>
-        <Link 
-          to={item.to}
-          data-selected={true}
-        >
-          {item.name}
-        </Link>
-      </ActiveItem>
-    )
-  }
+const LinkedItem = ({ item, active }) => {
+  const { to, name } = item
 
   return (
-    <Item>
-      <Link 
-        to={item.to}
-      >
-        {item.name}
-      </Link>
-    </Item>
+    <Anchor
+      to={to}
+      className={`item ${active ? `active` : ``}`}
+      data-selected={active}
+    >
+      {name}
+    </Anchor>
   )
 }
 
@@ -82,7 +26,7 @@ const Items = ({ path }) => {
       <LinkedItem
         key={key}
         item={item}
-        className={path === item.to ? "active" : ""}
+        active={path === item.to}
       />
     )
   })
@@ -100,11 +44,11 @@ class MenuItems extends Component {
   render() {
     const { path } = this.props
     return (
-      <Container>
+      <div className="menu">
         <Items
           path={path}
         />
-      </Container>
+      </div>
     )
   }
 }

@@ -2,21 +2,19 @@ import React from 'react'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { H1 } from '../components/heading'
+import { SmallSpacer } from '../components/spacer'
 import Posts from '../components/posts'
-import './posts.scss'
 
 const ArchivesPage = (props) => (
-  <Layout className="archives-page">
+  <Layout className="archives">
     <SEO title="Archives" />
-    <div classNmae="spacer"></div>
-    <H1 className="heading spacer">Archives of all the things</H1>
-    <div className="posts-container">
-      <Posts
-        edges={props.data.allMarkdownRemark.edges}
-        truncate={20}
-        showNumbers={true}
-      />
-    </div>
+    <SmallSpacer />
+    <H1 className="heading">Archives of all the things</H1>
+    <Posts
+      edges={props.data.allMarkdownRemark.edges}
+      truncate={20}
+      showNumbers={true}
+    />
   </Layout>
 )
 

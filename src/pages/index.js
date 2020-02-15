@@ -3,20 +3,17 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Posts from '../components/posts'
 import ShowMore from '../components/showMore'
-import './index.css'
 
 const IndexPage = (props) => (
-  <Layout className="home-page">
+  <Layout className="blog">
     <SEO title="Blog" />
     <div className="spacer"></div>
-    <div className="posts-container">
-      <Posts 
-        edges={props.data.allMarkdownRemark.edges} 
-        showNumbers={true} 
-        startAt={props.data.allMarkdownRemark.totalCount}
-      />
-      <ShowMore />
-    </div>
+    <Posts 
+      edges={props.data.allMarkdownRemark.edges} 
+      showNumbers={true} 
+      startAt={props.data.allMarkdownRemark.totalCount}
+    />
+    <ShowMore />
   </Layout>
 )
 

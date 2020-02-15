@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.panels {
+  .panel {
+    .title {
+      cursor: pointer;
+      background-color: $dark;
+      font-family: $sans;
+      font-size: 70%;
+      font-weight: bold;
+      border-bottom: solid 1px $neutral;
+      border-top: solid 1px darken($darkest, 2%);
+
+      &:hover, &.active:hover {
+        background-color: $secondary;
+      }
+
+      &.active {
+        background-color: $tertiary;
+      }
+    }
+
+    .body {
+      margin: 0;
+      background-color: darken($darkest, 1%);
+      padding: 1rem 3rem;
+    }
+
+    &:last-child {
+      border: none;
+    }
+  }  
+}

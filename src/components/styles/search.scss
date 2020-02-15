@@ -1,0 +1,128 @@
+@import "./variables.scss";
+
+@mixin message() {
+  margin-top: 1.25rem;
+  font-family: $sans;
+  text-align: center;
+
+  h1, p {
+    margin: 0;
+  }  
+}
+
+.search {
+  background-color: $darkest;
+  position: absolute;
+  top: 7.3rem;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  height: 100vh;
+  overflow: scroll;
+
+  &.open {
+    transform: translateX(0%);
+    transition: transform .5s ease-in-out;
+  }
+
+  &.closed {
+    transform: translateX(100%);
+    transition: transform .5s ease-in-out;
+  }
+
+  .search-box {
+    border: none;
+    background-color: $primary;
+    padding: 1.5rem 1rem;
+    font-size: 3rem;
+    text-shadow: 1px 1px 1px $primary-light;
+    width: 100%;
+    font-family: $mono;
+    letter-spacing: -.15rem;
+    text-align: center;
+  
+    &:focus {
+      outline: none;
+    }
+
+    &::placeholder {
+      color: $primary-dark;
+      text-shadow: 1px 1px 1px $primary-light;
+    }
+  
+    @media medium-screen {
+      padding: 1.5rem 3rem 1.5rem 1.5rem;
+      font-size: 1.5rem;
+    }
+
+    @media small-screen {
+      padding: 1.5rem 3rem 1.5rem 1.5rem;
+      font-size: 1.5rem;
+    }
+  }
+
+  .error {
+    $with-border: no;
+    @include message();
+    @include tertiary-text($with-border);
+  }
+
+  .empty-results {
+    $with-border: no;
+    @include message();
+    @include secondary-text($with-border);
+  }
+
+  // .tags {
+  //   padding: .5rem 2.5rem;
+  //   list-style: none;
+
+  //   li {
+  //     display: inline-block;
+  //   }
+
+  //   &.visible {
+  //     display: block;
+  //   }
+
+  //   &.hidden {
+  //     display: none;
+  //   }  
+  // }
+
+
+
+  // .results {
+  //   list-style: none;
+  //   margin: 0;
+  //   padding: 1.5rem 0 1.5rem 1.5rem;
+  
+  //   li {
+  //     padding: .5rem 0 .5rem .5rem;
+  //     margin: 0;
+  //     font-family: $sans;
+  //     color: $light;
+  //   }
+  
+  //   a {
+  //     font-family: $sans;
+  //     color: $light;
+  //     text-decoration: none;
+  //   }
+  
+  //   a:hover {
+  //     color: $primary;
+  //   }
+  // }
+}
+
+.search-button {
+  position: relative;
+  @include button();
+
+  svg {
+    position: absolute;
+    left: -10px;
+    top: 0;
+  }
+}

@@ -7,7 +7,10 @@ function Tags ({ tags }) {
   const renderable = Array.isArray(tags) ? tags : tags.split(`,`)
   return (
     <>
-      <div data-component="tags">
+      <div
+        className="tags" 
+        data-component="tags"
+      >
         {renderable.map(tag => {
           return (
             <Tag

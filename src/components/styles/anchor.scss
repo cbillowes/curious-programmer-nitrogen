@@ -1,0 +1,88 @@
+@import "./variables.scss";
+
+@mixin default() {
+  $with-border: yes;
+  text-decoration: none;
+  padding: .1rem .25rem;
+  @include primary-text($with-border);
+
+  &:hover {
+    @include rounded-primary();
+  }
+
+  //https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector
+  &:visited {
+    $with-border: no;
+    @include dimmed-text($with-border);
+
+    &:hover {
+      color: $dark;
+      background-color: $primary-dark;
+    }
+  }
+}
+
+@mixin free() {
+  &.free {
+    $with-border: no;
+    padding: 0;
+    @include primary-text($with-border);
+
+    &:hover {
+      @include secondary-text($with-border);
+    }
+
+    &:visited {
+      $with-border: no;
+      @include dimmed-text($with-border);
+  
+      &:hover {
+        color: $secondary-dark;
+      }
+    }
+  }
+}
+
+@mixin tags() {
+  &.tag {
+    &.primary {
+      @include primary-tag();
+    }
+
+    &.secondary {
+      @include secondary-tag();
+    }
+
+    &.tertiary {
+      @include tertiary-tag();
+    }
+    
+    &.disabled {
+      @include disabled-tag();
+    }
+  }
+}
+
+@mixin logo() {
+  &.logo, &.logo:hover {
+    color: #fff;
+    border: none;
+    background: transparent;
+    text-shadow: 1px 1px 1px $faded;
+  }
+}
+
+a {
+  @include default();
+  @include free();
+  @include tags();
+  @include logo();
+
+  &:before {
+    content: " ";
+  }
+
+  &:after {
+    content: " ";
+  }
+}

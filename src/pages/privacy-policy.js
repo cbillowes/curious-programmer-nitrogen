@@ -5,7 +5,7 @@ import Anchor from '../components/anchor'
 import { H1, H2, H3, H4 } from '../components/heading'
 
 const PrivacyPolicyPage = () => (
-  <Layout>
+  <Layout className="privacy-policy">
     <SEO title="Privacy Policy">
       This blog collects some personal data from its users. 
       It is important to know what and how it is used.

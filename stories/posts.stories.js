@@ -51,11 +51,6 @@ storiesOf('Post', module)
   .add('listing', () => 
     <Posts
       edges={edges}
-    />
-  )
-  .add('ribbons', () =>
-    <Posts
-      edges={edges}
       showNumbers={true}
     />
   )

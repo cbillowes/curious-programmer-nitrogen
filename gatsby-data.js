@@ -24,13 +24,6 @@ module.exports = {
       sans: "'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif",
       serif: "'Crimson Text','Times New Roman',serif",
     },
-    transitions: {
-      transition: ".3s",
-      property: ".3s",
-      duration: ".3s",
-      timing: "ease",
-      delay: "0s",
-    },
   },
   navigation: [
     {

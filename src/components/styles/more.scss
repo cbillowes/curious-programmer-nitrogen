@@ -1,0 +1,21 @@
+@import "./variables.scss";
+
+.show-more {
+  margin-top: 1.5rem;
+  text-align: center;
+
+  a.free, a.free:visited {
+    $with-border: no;
+    @include primary-text($with-border);
+
+    &:hover {
+      @include secondary-text($with-border);
+    }
+
+    svg {
+      font-size: 5rem;
+      display: inline-block;
+      padding: 0 2rem;
+    }
+  }
+}

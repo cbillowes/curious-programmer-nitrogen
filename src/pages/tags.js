@@ -3,6 +3,7 @@ import { graphql } from 'gatsby'
 import Tag from '../components/tag'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import ReadingPane from '../components/readingPane'
 const _ = require('lodash')
 
 class TagsPage extends Component {
@@ -25,16 +26,19 @@ class TagsPage extends Component {
 
   render() {
     return (
-      <Layout>
+      <Layout className="tags">
         <SEO
           title="Tags"
           description="Discover articles that have been tagged over time."
         />
         <div data-page="tags">
-          <h1>Tags</h1>
-          {this.getTags(this.props.data.allMarkdownRemark.edges).map(tag => {
-            return <Tag title={tag} />
-          })}
+          <ReadingPane
+            heading="Tags"
+          >
+            {this.getTags(this.props.data.allMarkdownRemark.edges).map(tag => {
+              return <Tag title={tag} />
+            })}
+          </ReadingPane>
         </div>
       </Layout>
     )
@@ -42,7 +46,7 @@ class TagsPage extends Component {
 }
 
 export default TagsPage
-
+            
 export const pageQuery = graphql`
   query TagsPage {
     allMarkdownRemark(limit: 1000) {

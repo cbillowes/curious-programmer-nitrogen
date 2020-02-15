@@ -45,7 +45,7 @@
   } 
 }
 
-.wrapped:nth-child(n+1) {
+.post:nth-child(n+1) {
   .ribbon {
     .text {
       background-color: #cf09ae;
@@ -61,7 +61,7 @@
   }
 }
 
-.wrapped:nth-child(2n+1) {
+.post:nth-child(2n+1) {
   .ribbon {
     .text {
       background-color: #097acf;
@@ -77,7 +77,7 @@
   }
 }
 
-.wrapped:nth-child(3n+1) {
+.post:nth-child(3n+1) {
   .ribbon {
     .text {
       background-color: #abad10;
@@ -93,7 +93,7 @@
   }
 }
 
-.wrapped:nth-child(4n+1) {
+.post:nth-child(4n+1) {
   .ribbon {
     .text {
       border-color: #777;

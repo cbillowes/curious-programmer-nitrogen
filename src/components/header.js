@@ -1,31 +1,8 @@
 import React, { Component } from "react"
-import styled from "styled-components"
 import Logo from "./logo"
 import SearchBar from "./searchBar"
 import Navigation from "./navigation"
-import data from "../../gatsby-data.js"
-
-const colors = data.theme.colors
-
-const Container = styled.header`
-  background-color: ${colors.darkest};
-  margin-bottom: 1.45rem;
-  border-bottom: solid 10px ${colors.accentFirst};
-  position: fixed;
-  z-index: 9999;
-  right: 0;
-  left: 0;
-  top: 0;
-`
-
-const Wrapper = styled.div`
-  margin: 0 auto;
-  max-width: 960;
-  padding: 0 2%;
-  display: flexbox;
-  justify-content: space-between;
-  align-items: center;
-`
+import './styles/header.scss'
 
 class Header extends Component {
   constructor(props) {
@@ -54,8 +31,8 @@ class Header extends Component {
 
   render() {
     return (
-      <Container>
-        <Wrapper>
+      <header className="header">
+        <div className="wrapper">
           <Logo />
           <SearchBar 
             toggleOnClick={this.toggleSearch.bind(this)} 
@@ -65,8 +42,8 @@ class Header extends Component {
             toggleOnClick={this.toggleNavigation.bind(this)} 
             isOpen={this.state.isMenuOpen} 
           />
-        </Wrapper>
-      </Container>
+        </div>
+      </header>
     )
   }
 }

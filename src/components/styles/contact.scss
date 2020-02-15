@@ -1,0 +1,22 @@
+.contact {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: row;
+
+  span { 
+    display: inline-block;
+    width: 3rem;
+    height: 3rem;
+    background-size: cover;
+    margin: 1rem;
+  }
+
+  a {
+    border: none;
+  }
+
+  a:hover {
+    background-color: transparent;
+  }
+}
