@@ -1,0 +1,12 @@
+@import "./variables.scss";
+
+.metadata {
+  text-align: right;
+  font-style: italic;
+  color: $light;
+  font-size: 85%;
+  color: $faded;
+  line-height: 200%;
+  margin-top: 1.5rem;
+  margin-bottom: 1.5rem;
+}
