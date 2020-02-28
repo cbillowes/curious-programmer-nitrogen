@@ -1,5 +1,8 @@
 @import "./variables.scss";
 @import "./anchor.scss";
+@import "./gist.scss";
+@import "./code.scss";
+@import "./video.scss";
 
 html {
   margin: 0;
@@ -15,23 +18,6 @@ body {
 
   .page {
     background-color: $darkest;
-  }
-
-  .reading-panel {
-    width: $reading-pane-max-width;
-    margin: 0 auto;
-  }
-
-  .spacer {
-    padding-top: 100px;
-
-    &.small {
-      padding-top: 50px;
-    }
-
-    &.large {
-      padding-top: 200px;
-    }
   }
 
   .container {
@@ -86,5 +72,22 @@ body {
     padding: 1% 5%;
     margin: 0;
     box-shadow: 3px 3px 3px darken($darkest, 2%);
+
+    a {
+      $with-border: no;
+      font-weight: bold;
+      @include tertiary-text($with-border);
+
+      &:hover {
+        @include secondary-text($with-border);
+      }
+    }
+  }
+
+  hr {
+    border-top: solid 1px $dark;
+    border-bottom: solid 1px $neutral;
+    border-left: none;
+    border-right: none;
   }
 }
