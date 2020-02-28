@@ -1,0 +1,11 @@
+.spacer {
+  padding-top: 100px;
+
+  &.small {
+    padding-top: 50px;
+  }
+
+  &.large {
+    padding-top: 200px;
+  }
+}
