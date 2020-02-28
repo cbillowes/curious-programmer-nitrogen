@@ -77,12 +77,4 @@ a {
   @include free();
   @include tags();
   @include logo();
-
-  &:before {
-    content: " ";
-  }
-
-  &:after {
-    content: " ";
-  }
 }
