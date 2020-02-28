@@ -2,11 +2,11 @@ import React, { Component } from 'react'
 import Anchor from './anchor'
 import Search from './search'
 import Loader from './loader'
+import { SmallSpacer } from './spacer'
 import { H1 } from './heading'
+import './styles/search.scss'
 
-const charsRequiredForAutoSearch = 6
 const timeout = 10000
-const searchDelay = 10000
 const domain = `https://rocket.curiousprogrammer.dev/search/oxygen/query`
 
 function quickPromise(timeout, promise) {
@@ -24,22 +24,32 @@ const ContactMe = ({ children }) => {
 
 const ErrorMessage = ({ error }) => {
   const type = error.toString()
-  let message 
+
+  let message
   switch (type) {
+    case `Error: Too many consecutive tries`:
+      message = `You've tried one too many times. The server doesn\`t like that. :[`
+      break;
+
     case `TypeError: Failed to fetch:`:
       message = `Fetching data from the API simply didn't happen. O_o`
+      break;
 
     case `Error: Connection has timed out`:
       message = `The connection porked out. ¯\_(ツ)_/¯`
+      break;
 
     default:
       message = `Something ominous is going on! ¯\(°_o)/¯`
   }
+
   return (
     <div className="error">
       <H1>Shit! Sorry about this.</H1>
       <p>
-        {message}<br/>Debug the network activity for fun.
+        {message}
+        <br/>
+        Debug the network activity for fun.
         <br/>
         Be a sport and <ContactMe>tell me</ContactMe> about it.
       </p>
@@ -107,11 +117,9 @@ class SearchBar extends Component {
   }
 
   search(e) {
-    const query = this.state.query
     const enter = e.keyCode === 13
-    const searchable = query.length >= charsRequiredForAutoSearch
 
-    if (searchable || enter) {
+    if (enter) {
       this.setState({
         searching: true,
       })
@@ -183,6 +191,7 @@ class SearchBar extends Component {
             onKeyDown={(e) => this.cull(e)}
             onKeyPress={(e) => this.query(e)}
           />
+          <SmallSpacer />
           <Status
             searching={this.state.searching}
             error={this.state.error}
