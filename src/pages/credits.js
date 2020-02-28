@@ -2,7 +2,7 @@ import React from "react"
 import Layout from "../components/layout"
 import SEO from "../components/seo"
 import ReadingPane from '../components/readingPane'
-import { H1, H2 } from "../components/heading"
+import { H2 } from "../components/heading"
 import Credit from "../components/credit"
 import Anchor from "../components/anchor"
 
