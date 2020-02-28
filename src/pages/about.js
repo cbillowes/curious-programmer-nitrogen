@@ -11,7 +11,7 @@ import '../components/styles/about.scss'
 const AboutPage = () => (
   <Layout>
     <SEO title="About">
-      My name is Clarice Bouwer. I love software. 
+      My name is Clarice Bouwer. I love software.
       I am a learner for life.
     </SEO>
     <SmallSpacer />
@@ -24,8 +24,8 @@ const AboutPage = () => (
         <H2>Senior Software Engineer</H2>
         <H3>Cloudsure &middot; Grand Baie, Mauritius</H3>
         <H4>
-          <Anchor to="mailto:clarice@bouwer.dev" className="tag">clarice@bouwer.dev</Anchor> &middot; 
-          <Anchor to="https://curiousprogrammer.dev" className="tag">curiousprogrammer.dev</Anchor> &middot; 
+          <Anchor to="mailto:clarice@bouwer.dev" className="tag">clarice@bouwer.dev</Anchor> &middot;
+          <Anchor to="https://curiousprogrammer.dev" className="tag">curiousprogrammer.dev</Anchor> &middot;
           <Anchor to="https://clarice.bouwer.dev" className="tag">clarice.bouwer.dev</Anchor>
         </H4>
       </aside>
@@ -61,20 +61,20 @@ const AboutPage = () => (
             I need a laptop, preferrably a MacBook Pro.
           </p>
           <p>
-            My full profile, the technologies I use and my career path is available on <Anchor to="https://clarice.bouwer.dev">clarice.bouwer.dev</Anchor>. 
+            My full profile, the technologies I use and my career path is available on <Anchor to="https://clarice.bouwer.dev">clarice.bouwer.dev</Anchor>.
           </p>
         </Panel>
         <Panel title="How I was motivated">
           <p>
             Between computer games, the Internet, the movie Hackers, the Jolly Rodger's cookbook and an Inkjet printer, I was hooked.
-            Both my cousin and I were watching an Inkjet printer do it's thing. 
+            Both my cousin and I were watching an Inkjet printer do it's thing.
             I was fascinated at how methodical and ingenius this device was to me.
-            I asked her what she wanted to be when she grew up. 
+            I asked her what she wanted to be when she grew up.
             I don't know what she said but I said "a programmer".
           </p>
           <p>
             I remember having a Spectrum.
-            Apart from the most awesome Space Invaders 👾, there was a cartridge for learning how to program in BASIC. 
+            Apart from the most awesome Space Invaders <span role="img" aria-label="Space Invaders">👾</span>, there was a cartridge for learning how to program in BASIC.
             I enjoyed that too.
           </p>
         </Panel>
@@ -89,7 +89,7 @@ const AboutPage = () => (
         </Panel>
         <Panel title="I studied stuff">
           <p>
-           I attended CTI (Computer Training Institute) in Bedfordview, South Africa for the years of 2004 and 2005. 
+           I attended CTI (Computer Training Institute) in Bedfordview, South Africa for the years of 2004 and 2005.
            I completed National Diplomas in Computer Science and Information Systems.
          </p>
         </Panel>
@@ -100,38 +100,21 @@ const AboutPage = () => (
             I specialized in Microsoft web applications writing in C#, VB.NET and T-SQL.
           </p>
           <p>
-            In 2018, I switched over to Linux &amp; Mac and started working in 
-            <Anchor to="https://clojure.org/">Clojure</Anchor> with a bit of 
+            In 2018, I switched over to Linux &amp; Mac and started working in
+            <Anchor to="https://clojure.org/">Clojure</Anchor> with a bit of
             <Anchor to="https://www.datomic.com/">Datomic</Anchor>.
           </p>
         </Panel>
         <Panel title="What keeps me ticking">
           <p>
             Focus on writing both user and developer friendly systems.
-            Surrounding myself with others who know more than me. 
+            Surrounding myself with others who know more than me.
             Blog about what I learn.
           </p>
         </Panel>
       </div>
     </section>
   </Layout>
-
-
-  //           I enjoy blogging as a form of sharing what I learn. I strive to write developer and user-friendly systems.
-  //           I relish in learn and teaching myself new things.
-  //           I enjoy solving problems.
-  //         </p>
-  //         <p>
-  //           I am shy in the beginning, then I shine. 
-  //           I enjoy informal interviews over coffee and I prefer at-home assignments to showcase my technical skills. 
-  //         </p>
-  //       </div>
-  //       <p>
-  //         My full profile, the technologies I use and my career path is available on <Anchor to="https://clarice.bouwer.dev">clarice.bouwer.dev</Anchor>.
-  //       </p>
-  //     </section>
-  //   </div>
-  // </Layout>
 )
 
 export default AboutPage
