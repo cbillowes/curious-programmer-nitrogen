@@ -1,6 +1,33 @@
 const path = require(`path`)
 const _ = require('lodash')
 
+const nodes = []
+
+function getTimestamp(date) {
+  return new Date(date).getTime()
+}
+
+function addNodeFieldsOnSortedCollection(createNodeField, reporter) {
+  const sortedNodes = nodes.sort((a, b) => getTimestamp(a.fields.date) - getTimestamp(b.fields.date))
+  for (let i = 0; i < sortedNodes.length; i += 1) {
+    const current = sortedNodes[i]
+    createNodeField({
+      node: current,
+      name: "number",
+      value: i + 1
+    })
+    reporter.info(`+number (${i}): ${current.fields.slug}`)
+  }
+}
+
+exports.setFieldsOnGraphQLNodeType = ({ type, actions, reporter }) => {
+  const { name } = type
+  const { createNodeField } = actions
+  if (name === "MarkdownRemark") {
+    addNodeFieldsOnSortedCollection(createNodeField, reporter)
+  }
+}
+
 function generateBlogPage( actions ) {
   const { createPage } = actions
   const template = path.resolve(`./src/pages/index.js`)
@@ -18,7 +45,7 @@ async function generateBlogPosts( graphql, actions, reporter ) {
   await graphql(`
     query {
       allMarkdownRemark(
-        sort: {order: DESC, fields: fields___date}) 
+        sort: {order: ASC, fields: fields___date})
       {
         edges {
           node {
@@ -48,30 +75,25 @@ async function generateBlogPosts( graphql, actions, reporter ) {
 
     const template = path.resolve(`./src/templates/post.js`)
     const posts = result.data.allMarkdownRemark.edges
-    for (let i = 0; i < posts.length; i++) {
-      const nextIdx = i + 1 < posts.length ? i + 1 : 0
-      const previousIdx = i - 1 >= 0 ? i - 1 : posts.length - 1
-      const current = posts[i]
-      const next = posts[nextIdx]
-      const previous = posts[previousIdx]
-      const { slug, date } = current.node.fields
 
-      reporter.info(
-        `Generating blog post: ${slug}
-         Previous: ${previous.node.fields.slug}
-         Next: ${next.node.fields.slug}\n`)
+    posts.forEach(({ node }, index) => {
+      const { slug } = node.fields
+      const previous = index === 0 ? posts[posts.length - 1].node : posts[index - 1].node
+      const next = index === (posts.length - 1) ? posts[0].node : posts[index + 1].node
       createPage({
         path: slug,
         component: template,
         context: {
-          slug: slug,
-          date: date,
-          next: next,
-          previous: previous,
-          number: posts.length - i,
-        },
+          slug,
+          date: node.fields.date,
+          number: index + 1,
+          previous,
+          next,
+        }
       })
-    }
+
+      reporter.info(`${index}: Generating blog post: ${slug}\n${previous ? `Previous: ${previous.fields.slug}\n` : ``}${next ? `Next: ${next.fields.slug}\n` : ``}`)
+    })
   })
 }
 
@@ -105,7 +127,7 @@ async function generateTags( graphql, actions, reporter ) {
         const path = `/tag/${tag.toLowerCase().replace(/ /g, `-`)}`
         if (tags.indexOf(tag) > -1)
           return
-        
+
         tags.push(tag)
 
         reporter.info(`Generating tag page: ${path}`)
@@ -143,6 +165,7 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
       value: date,
     })
 
+    nodes.push(node)
     reporter.info(`Create nodes: ${slug}, ${date}`)
   }
 }

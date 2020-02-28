@@ -8,9 +8,9 @@ import Post from '../components/post'
 import { LargeSpacer } from '../components/spacer'
 
 function postNavigation(edge) {
-  const { timeToRead, excerpt } = edge.node
-  const { title, author, tags } = edge.node.frontmatter
-  const { slug, date } = edge.node.fields
+  const { timeToRead, excerpt } = edge
+  const { title, author, tags } = edge.frontmatter
+  const { slug, date } = edge.fields
   return {
     title,
     slug,
@@ -22,12 +22,12 @@ function postNavigation(edge) {
   }
 }
 
-export default (props) => {
-  const remark = props.data.markdownRemark
-  const { slug, next, previous, number } = props.pageContext
-  const { html, timeToRead } = remark
-  const { title, tags, excerpt } = remark.frontmatter
-  const { date } = remark.fields
+export default ({ data, pageContext }) => {
+  const { markdownRemark } = data
+  const { slug, next, previous, number } = pageContext
+  const { title, tags, excerpt, html } = markdownRemark.frontmatter
+  const { date } = markdownRemark.fields
+  const { timeToRead } = markdownRemark
   const previousPost = postNavigation(previous)
   const nextPost = postNavigation(next)
   return (

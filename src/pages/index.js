@@ -8,10 +8,9 @@ const IndexPage = (props) => (
   <Layout className="blog">
     <SEO title="Blog" />
     <div className="spacer"></div>
-    <Posts 
-      edges={props.data.allMarkdownRemark.edges} 
-      showNumbers={true} 
-      startAt={props.data.allMarkdownRemark.totalCount}
+    <Posts
+      edges={props.data.allMarkdownRemark.edges}
+      showNumbers={true}
     />
     <ShowMore />
   </Layout>
@@ -22,7 +21,7 @@ export default IndexPage
 export const pageQuery = graphql`
   query IndexQuery {
     allMarkdownRemark(
-      filter: {fields: {slug: {nin: "/blog/template"}}} 
+      filter: {fields: {slug: {nin: "/blog/template"}}}
       sort: {order: DESC, fields: fields___date}
       limit: 10
     ) {
@@ -35,6 +34,7 @@ export const pageQuery = graphql`
           fields {
             slug
             date
+            number
           }
           frontmatter {
             title

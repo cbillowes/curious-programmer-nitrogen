@@ -46,7 +46,7 @@ class TagsPage extends Component {
 }
 
 export default TagsPage
-            
+
 export const pageQuery = graphql`
   query TagsPage {
     allMarkdownRemark(limit: 1000) {

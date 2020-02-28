@@ -5,7 +5,6 @@ import SEO from '../components/seo'
 import ReadingPane from '../components/readingPane'
 import Anchor from '../components/anchor'
 import Posts from '../components/posts'
-import { H1 } from '../components/heading'
 
 const NotFoundPage = (props) => {
   const posts = props.data.allMarkdownRemark.edges
@@ -43,7 +42,6 @@ const NotFoundPage = (props) => {
       </ReadingPane>
       <Posts 
         edges={posts}
-        startAt={startsAt}
       />
     </Layout>
   )

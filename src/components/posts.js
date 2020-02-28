@@ -5,14 +5,13 @@ import './styles/posts.scss'
 
 const defaultTruncate = 50
 
-const Listing = ({ edges, truncate, startAt }) => {
-  let index = (startAt || edges.length) + 1
+const Listing = ({ edges, truncate }) => {
   return edges.map(edge => {
     const { timeToRead, excerpt } = edge.node
-    const { slug, date } = edge.node.fields
+    const { slug, date, number } = edge.node.fields
+    console.log(edge.node)
     const { title, tags, blurb } = edge.node.frontmatter
     const tagCollection = tags ? tags.join(`,`) : ``
-    index--
     return (
       <PostPreview 
         key={slug}
@@ -22,7 +21,7 @@ const Listing = ({ edges, truncate, startAt }) => {
         tags={tagCollection}
         date={date}
         ttr={timeToRead}
-        number={index}
+        number={number}
       >
         {blurb || excerpt}
       </PostPreview>
@@ -30,7 +29,7 @@ const Listing = ({ edges, truncate, startAt }) => {
   })
 }
 
-const Posts = ({ edges, truncate, startAt }) => {
+const Posts = ({ edges, truncate }) => {
   if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
 
   return (
@@ -38,7 +37,6 @@ const Posts = ({ edges, truncate, startAt }) => {
       <Listing 
         edges={edges}
         truncate={truncate}
-        startAt={startAt}
       />
     </div>
   )
