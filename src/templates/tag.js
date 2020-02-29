@@ -3,6 +3,14 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { H1 } from '../components/heading'
 import Posts from '../components/posts'
+import ShowMore from '../components/showMore'
+import { SmallSpacer } from '../components/spacer'
+
+const MoreTags = () => (
+  <ShowMore
+    to="/tags"
+    title="See more tags" />
+)
 
 export default (props) => {
   const { tag } = props.pageContext
@@ -10,11 +18,13 @@ export default (props) => {
   return (
     <Layout>
       <SEO title={tag} />
-      <div className="spacer"></div>
+      <SmallSpacer />
       <H1>{tag}</H1>
+      <MoreTags />
       <Posts
         edges={edges}
       />
+      <MoreTags />
     </Layout>
   )
 }

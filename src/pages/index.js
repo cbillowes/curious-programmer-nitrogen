@@ -12,7 +12,9 @@ const IndexPage = (props) => (
       edges={props.data.allMarkdownRemark.edges}
       showNumbers={true}
     />
-    <ShowMore />
+    <ShowMore
+      to="/archives"
+      title="Show more articles" />
   </Layout>
 )
 
