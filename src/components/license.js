@@ -3,19 +3,19 @@ import Anchor from './anchor'
 
 const CreativeCommonsLogo = () => {
   return (
-    <span 
+    <span
       data-component="license-creative-commons-logo"
     >
-      <Anchor 
-        to="http://creativecommons.org/licenses/by-sa/4.0/" 
+      <Anchor
+        to="http://creativecommons.org/licenses/by-sa/4.0/"
         defaultStyle="true"
       >
-        <img 
+        <img
           className="creative-commons-logo"
           alt="Creative Commons License"
           src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
           title="Creative Commons Attribution-ShareAlike 4.0 International License"
-        />  
+        />
       </Anchor>
     </span>
   )
@@ -23,7 +23,7 @@ const CreativeCommonsLogo = () => {
 
 function Author() {
   return (
-    <Anchor 
+    <Anchor
       to="/about"
       data-component="license-author"
     >
@@ -34,29 +34,29 @@ function Author() {
 
 function CreativeCommonsLicense() {
   return (
-    <Anchor 
+    <Anchor
       to="https://creativecommons.org/licenses/by-sa/4.0/"
       data-component="license-creative-commons-license"
     >
       Creative Commons Attribution-ShareAlike 4.0 International License
-    </Anchor> 
+    </Anchor>
   )
 }
 
 function CodeLicense() {
   return (
-    <Anchor 
+    <Anchor
       to="/license"
       data-component="license-code-license"
     >
       license
-    </Anchor>  
+    </Anchor>
   )
 }
 
 function PrivacyPolicy() {
   return (
-    <Anchor 
+    <Anchor
       to="/privacy-policy"
       data-component="license-privacy-policy"
     >
@@ -67,7 +67,7 @@ function PrivacyPolicy() {
 
 function GitHub() {
   return (
-    <Anchor 
+    <Anchor
       to="https://github.com/cbillowes/curious-programmer-nitrogen"
       data-component="license-github"
     >
@@ -76,7 +76,7 @@ function GitHub() {
   )
 }
 
-function License () {
+function License() {
   return (
     <>
       <CreativeCommonsLogo />
@@ -84,7 +84,7 @@ function License () {
         <p>
           The content is written by <Author /> and is licensed under the <CreativeCommonsLicense />.
           References to external resources are subject to their own terms and conditions.
-          There is a <CodeLicense /> for the code. 
+          There is a <CodeLicense /> for the code.
           It's probably a good idea to read the <PrivacyPolicy />.
           The website is open-source and is available on <GitHub />.
           Please give it a star if you think it is cool.

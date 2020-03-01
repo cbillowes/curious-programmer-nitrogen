@@ -1,14 +1,14 @@
 import React from 'react'
 import Tag from './tag'
 
-function Tags ({ tags }) {
+function Tags({ tags }) {
   if (!tags) return <span></span>
 
   const renderable = Array.isArray(tags) ? tags : tags.split(`,`)
   return (
     <>
       <div
-        className="tags" 
+        className="tags"
         data-component="tags"
       >
         {renderable.map(tag => {

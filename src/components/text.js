@@ -40,8 +40,8 @@ function truncate(text, limit) {
   return (
     (
       words.length > limit ?
-      words.splice(0, limit) :
-      words
+        words.splice(0, limit) :
+        words
     ).join(` `)
   )
 }
@@ -52,8 +52,8 @@ function ellipsies(text, limit) {
   const words = text.trim().split(` `)
   return (
     words.length > limit ?
-    `...` :
-    ``
+      `...` :
+      ``
   )
 }
 

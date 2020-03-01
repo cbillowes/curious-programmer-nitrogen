@@ -17,18 +17,18 @@ const Title = ({ children }) => {
 const Body = ({ children }) => {
   return (
     typeof children === `string` ?
-    <div
-      className="reading-panel"
-      dangerouslySetInnerHTML={{__html: children}}
-      data-component="post-article-body"
-    >
-    </div> :
-    <div
-      className="reading-panel"
-      data-component="post-article-body"
-    >
-      {children}
-    </div> 
+      <div
+        className="reading-panel"
+        dangerouslySetInnerHTML={{ __html: children }}
+        data-component="post-article-body"
+      >
+      </div> :
+      <div
+        className="reading-panel"
+        data-component="post-article-body"
+      >
+        {children}
+      </div>
   )
 }
 
@@ -58,8 +58,8 @@ function Post({ title, tags, date, author, ttr, number, children }) {
           author={author}
           ttr={ttr}
         />
-        <Tags 
-          tags={tags} 
+        <Tags
+          tags={tags}
         />
         <SmallSpacer />
         <Body>

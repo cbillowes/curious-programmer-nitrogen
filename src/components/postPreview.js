@@ -9,7 +9,7 @@ import "./styles/preview.scss"
 
 const Blurb = ({ children, limit }) => {
   return (
-    <div 
+    <div
       className="blurb"
       data-component="post-preview-blurb"
     >
@@ -23,7 +23,7 @@ const Blurb = ({ children, limit }) => {
 const Metadata = ({ date, author, ttr }) => {
   return (
     <>
-      <div 
+      <div
         className="metadata"
         data-component="post-preview-metadata"
       >
@@ -40,7 +40,7 @@ const Metadata = ({ date, author, ttr }) => {
 const TagList = ({ tags }) => {
   return (
     <>
-      <div 
+      <div
         className="tags"
         data-component="post-preview-tags"
       >
@@ -71,7 +71,7 @@ const Heading = ({ children, slug }) => {
 function PostPreview({ title, slug, tags, date, author, ttr, number, limit, children }) {
   return (
     <>
-      <section 
+      <section
         className="post preview"
         data-component="post-preview"
       >

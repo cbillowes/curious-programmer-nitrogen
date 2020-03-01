@@ -1,14 +1,14 @@
-import React from "react"
-import { useStaticQuery, graphql } from "gatsby"
-import Img from "gatsby-image"
+import React from 'react'
+import { useStaticQuery, graphql } from 'gatsby'
+import Img from 'gatsby-image'
 
-function getFile (files, src) {
+function getFile(files, src) {
   return files.images.edges.find(image =>
     image.node.relativePath === src
   )
 }
 
-function getFluidImage (file) {
+function getFluidImage(file) {
   return file.node.childImageSharp.fluid
 }
 

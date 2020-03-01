@@ -16,8 +16,8 @@ const Layout = ({ className, reading, footer, children }) => {
       </section>
       {
         footer === `hidden` ?
-        <></> :
-        <Footer />
+          <></> :
+          <Footer />
       }
     </div>
   )

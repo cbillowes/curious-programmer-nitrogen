@@ -8,10 +8,10 @@ const Content = () => (
   </>
 )
 
-function Logo ({ theme }) {
+function Logo() {
   return (
     <div className="logo">
-      <Anchor 
+      <Anchor
         to="/"
         title="Curious Programmer"
       >

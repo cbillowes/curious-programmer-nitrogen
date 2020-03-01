@@ -7,7 +7,7 @@ const Search = ({ toggleOnClick, isOpen }) => {
   return (
     <button
       onClick={toggleOnClick}
-      className={(isOpen) ? `search-button active`: `search-button`}
+      className={(isOpen) ? `search-button active` : `search-button`}
     >
       <FontAwesomeIcon
         icon={faSearch}

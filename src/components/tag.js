@@ -7,7 +7,7 @@ const Bare = ({ children }) => {
     <div
       data-container="bare-tag-element"
     >
-     {children}
+      {children}
     </div>
   )
 }
@@ -23,7 +23,7 @@ const Disabled = ({ children }) => {
   )
 }
 
-function Tag ({ title, to, disabled, readonly }) {
+function Tag({ title, to, disabled, readonly }) {
   if (!title) return <></>
   if (!to) to = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
 

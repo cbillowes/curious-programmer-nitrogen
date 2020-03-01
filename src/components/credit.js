@@ -1,5 +1,5 @@
-import React from "react"
-import Tag from "./tag"
+import React from 'react'
+import Tag from './tag'
 
 const Credit = ({ to, title, children }) => {
   if (to) {

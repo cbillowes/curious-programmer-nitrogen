@@ -17,7 +17,7 @@ const Navigation = ({ post }) => {
         title={title}
         className="nav-link"
       >
-        <Text 
+        <Text
           limit={limit}
         >
           {title}
@@ -30,19 +30,19 @@ const Navigation = ({ post }) => {
 function PostNavigationTiny({ previous, next }) {
   return (
     <>
-      <nav 
+      <nav
         className="post navigation tiny"
         data-component="post-navigation-tiny"
       >
-        <aside 
+        <aside
           className="previous"
           data-component="post-navigation-previous"
         >
-          <Navigation 
-            post={previous} 
+          <Navigation
+            post={previous}
           />
         </aside>
-        <aside 
+        <aside
           className="next"
           data-component="post-navigation-next"
         >

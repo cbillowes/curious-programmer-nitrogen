@@ -7,7 +7,7 @@ const Menu = ({ toggleOnClick, isOpen }) => {
   return (
     <button
       onClick={toggleOnClick}
-      className={(isOpen) ? `menu-button active`: `menu-button`}
+      className={(isOpen) ? `menu-button active` : `menu-button`}
     >
       <FontAwesomeIcon
         icon={faEllipsisV}

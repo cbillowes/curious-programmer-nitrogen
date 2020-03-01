@@ -1,5 +1,5 @@
-import React, { Component } from "react"
-import Data from "../../gatsby-data.js"
+import React, { Component } from 'react'
+import Data from '../../gatsby-data.js'
 import Anchor from './anchor'
 import './styles/menu.scss'
 

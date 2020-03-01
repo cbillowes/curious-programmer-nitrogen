@@ -30,12 +30,12 @@ class Panel extends Component {
         <button
           className={this.titleClassName()}
           onClick={() => this.click()}>
-            {title}
+          {title}
         </button>
         {this.state.clicked ?
-          <div className="body">{children}</div>:
+          <div className="body">{children}</div> :
           <></>
-         }
+        }
       </div>
     )
   }

@@ -3,13 +3,13 @@ import './styles/number.scss'
 
 const Number = ({ number }) => {
   return (
-    <div 
+    <div
       className="post number ribbon"
       data-component="post-number"
     >
       <div className="backdrop">
         <div className="text">
-          #{number} 
+          #{number}
         </div>
       </div>
     </div>

@@ -48,9 +48,9 @@ const ErrorMessage = ({ error }) => {
       <H1>Shit! Sorry about this.</H1>
       <p>
         {message}
-        <br/>
+        <br />
         Debug the network activity for fun.
-        <br/>
+        <br />
         Be a sport and <ContactMe>tell me</ContactMe> about it.
       </p>
     </div>
@@ -69,8 +69,8 @@ const EmptyResultsMessage = () => {
     <div className="empty-results">
       <H1>Sorry.</H1>
       <p>
-        So one of two things could have happend here.<br/>
-        Either the indexing has stopped working or I haven't written about it.<br/>
+        So one of two things could have happend here.<br />
+        Either the indexing has stopped working or I haven't written about it.<br />
         I am sorry that I can&rsquo;t tell you which one it is.
       </p>
     </div>

@@ -68,7 +68,7 @@ const Navigation = ({ post }) => {
           ttr={ttr}
         />
       </Anchor>
-      <Tags 
+      <Tags
         tags={tags}
       />
     </>
@@ -87,7 +87,7 @@ function PostNavigationTeaser({ previous, next }) {
           data-component="post-navigation-previous"
         >
           <Navigation
-            post={previous} 
+            post={previous}
           />
         </aside>
         <aside

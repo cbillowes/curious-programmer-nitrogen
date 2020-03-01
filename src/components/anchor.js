@@ -6,7 +6,7 @@ function isInternalLink(url) {
   return !(url.startsWith(`http`) || url.startsWith(`mailto:`))
 }
 
-const ExternalLink = ({to, title, children}) => {
+const ExternalLink = ({ to, title, children }) => {
   return (
     <>
       {" "}
@@ -23,7 +23,7 @@ const ExternalLink = ({to, title, children}) => {
   )
 }
 
-const InternalLink = ({to, title, children}) => {
+const InternalLink = ({ to, title, children }) => {
   return (
     <>
       {" "}
@@ -33,12 +33,12 @@ const InternalLink = ({to, title, children}) => {
       >
         {children}
       </Link>
-    {" "}
+      {" "}
     </>
   )
 }
 
-function Anchor ({ to, title, children }) {
+function Anchor({ to, title, children }) {
   if (to) {
     if (isInternalLink(to))
       return (

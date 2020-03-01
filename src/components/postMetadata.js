@@ -13,9 +13,9 @@ function renderDate(date) {
   const format = metadata.date.format
   return (
     <>
-      <Moment 
+      <Moment
         format={format}>
-          {then}
+        {then}
       </Moment>
     </>
   )

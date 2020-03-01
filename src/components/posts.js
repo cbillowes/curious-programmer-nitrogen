@@ -13,7 +13,7 @@ const Listing = ({ edges, truncate }) => {
     const { title, tags, blurb } = edge.node.frontmatter
     const tagCollection = tags ? tags.join(`,`) : ``
     return (
-      <PostPreview 
+      <PostPreview
         key={slug}
         limit={truncate ? truncate : defaultTruncate}
         title={title}
@@ -34,7 +34,7 @@ const Posts = ({ edges, truncate }) => {
 
   return (
     <div className="posts">
-      <Listing 
+      <Listing
         edges={edges}
         truncate={truncate}
       />
