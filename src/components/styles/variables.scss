@@ -48,22 +48,22 @@ $secondary-dark: darken($secondary, 15%);
 $tertiary-dark: darken($tertiary, 15%);
 
 @mixin large-screen {
-  @media screen and 
+  @media screen and
          (min-width: $breakpoint-large + 1) {
     @content;
   }
 }
 
 @mixin medium-screen {
-  @media screen and 
-         (min-width: $breakpoint-medium + 1) and 
+  @media screen and
+         (min-width: $breakpoint-medium + 1) and
          (max-width: $breakpoint-large) {
     @content;
   }
 }
 
 @mixin small-screen {
-  @media screen and 
+  @media screen and
          (max-width: $breakpoint-medium) {
     @content;
   }
@@ -93,8 +93,8 @@ $tertiary-dark: darken($tertiary, 15%);
   text-shadow: 1px 1px 1px $shadow;
 }
 
-@mixin sexy-text($color, 
-                 $shadow, 
+@mixin sexy-text($color,
+                 $shadow,
                  $with-border) {
   color: $color;
   background: transparent;
@@ -114,11 +114,11 @@ $tertiary-dark: darken($tertiary, 15%);
   }
 }
 
-@mixin tag($background, 
-           $foreground, 
-           $shadow, 
-           $hover-background, 
-           $hover-foreground, 
+@mixin tag($background,
+           $foreground,
+           $shadow,
+           $hover-background,
+           $hover-foreground,
            $hover-shadow) {
   line-height: 180%;
   font-family: $sans;
@@ -162,7 +162,7 @@ $tertiary-dark: darken($tertiary, 15%);
   $color: $dark;
   $shadow: $secondary-light;
   $background: $secondary;
-  @include rounded-text($color, $shadow, $background); 
+  @include rounded-text($color, $shadow, $background);
 }
 
 @mixin tertiary-text($with-border) {
@@ -220,7 +220,7 @@ $tertiary-dark: darken($tertiary, 15%);
 
 @mixin button() {
   cursor: pointer;
-  margin-left: 1%em;
+  margin-left: 1em;
   width: 4rem;
   height: 3.75rem;
   border-radius: $border-radius;
@@ -228,6 +228,8 @@ $tertiary-dark: darken($tertiary, 15%);
   background-color: $darkest;
   color: #fff;
   text-align: center;
+  border: none;
+  padding: 0;
 
   &:hover {
     background-color: $dark;
