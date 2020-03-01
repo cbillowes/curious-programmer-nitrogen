@@ -1,24 +1,23 @@
 import React from 'react'
-import Anchor from './anchor' 
+import Anchor from './anchor'
 import License from './license'
 import './styles/footer.scss'
 
 const Intro = () => {
   return (
-    <div data-component="footer-intro-element">
+    <div>
       <strong>A curious place for a curious mind.</strong>
       {` `}
       Copyright &copy; {new Date().getFullYear()}.
       Built with
-      <Anchor 
-        to="https://www.gatsbyjs.org" 
+      <Anchor
+        to="https://www.gatsbyjs.org"
         defaultStyle="true">
           Gastby
       </Anchor>
-      and other 
-      <Anchor 
-        to="/credits" 
-        defaultStyle="true">
+      and other
+      <Anchor
+        to="/credits">
           cool stuff
       </Anchor>.
     </div>
@@ -27,9 +26,8 @@ const Intro = () => {
 
 const Licenses = () => {
   return (
-    <span 
-      className="licenses" 
-      data-component="footer-license-element"
+    <span
+      className="licenses"
     >
       <License />
     </span>
@@ -46,16 +44,16 @@ const SocialIcon = ({ to, title, src }) => {
       <img
         className="icon"
         src={src}
+        alt={title}
       />
     </Anchor>
-  )  
+  )
 }
 
 const Social = () => {
   return (
     <div
       className="social"
-      data-component="footer-social-icons"
     >
       <SocialIcon
         to="https://www.linkedin.com/in/cbouwer"
@@ -65,7 +63,7 @@ const Social = () => {
 
       <SocialIcon
         to="https://twitter.com/cbillowes"
-        title="LinkedIn"
+        title="Twitter"
         src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojNjVBMkQ5OyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMzQTdDQTU7IiBkPSJNMzkzLjAxNCwxMzkuMzI2Yy0yNi43MDMsMjMuMTY5LTUzLjI1Myw0My40NzUtNzQuOTU0LDcxLjg1MiAgYy01My4zODEsNjQuMzcyLTExOC42MTMsMTU1LjctMjA3LjM4NiwxNDIuMDg2bDE1OC42MSwxNTguMzk2YzEzNC40NTYtNi44NzMsMjQxLjQ5Ny0xMTcuNDkzLDI0Mi42ODYtMjUzLjM3NkwzOTMuMDE0LDEzOS4zMjZ6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzk3Ljg3MiwxNjIuNDcxYy02LjUxMywyLjg4OS0xMy4yNzEsNS4xNjctMjAuMjA4LDYuODE1YzcuNjQ0LTcuMjYxLDEzLjM5LTE2LjM0NiwxNi42MzEtMjYuNDg0ICBjMC45MjYtMi44OTMtMi4yMTktNS4zOTgtNC44MzItMy44NDhjLTkuNjUsNS43MjUtMjAuMDQ0LDEwLjAxNi0zMC44OTQsMTIuNzYyYy0wLjYyOCwwLjE2LTEuMjc2LDAuMjQtMS45MjksMC4yNCAgYy0xLjk3OSwwLTMuODk2LTAuNzMzLTUuNDExLTIuMDY1Yy0xMS41NDItMTAuMTc0LTI2LjM5LTE1Ljc3Ny00MS44MDUtMTUuNzc3Yy02LjY3MiwwLTEzLjQwNSwxLjA0LTIwLjAxNiwzLjA5MSAgYy0yMC40ODcsNi4zNTMtMzYuMjk1LDIzLjI1NC00MS4yNTcsNDQuMTAzYy0xLjg2LDcuODE4LTIuMzYyLDE1LjY0OC0xLjQ5NiwyMy4yNjRjMC4wOTcsMC44NzYtMC4zMTQsMS40ODYtMC41NjksMS43NzIgIGMtMC40NSwwLjUwMi0xLjA4NCwwLjc5MS0xLjc0NSwwLjc5MWMtMC4wNzIsMC0wLjE1LTAuMDAzLTAuMjI0LTAuMDFjLTQ0Ljg0Ni00LjE2OC04NS4yODctMjUuNzcyLTExMy44NjktNjAuODM3ICBjLTEuNDU1LTEuNzg5LTQuMjUzLTEuNTY5LTUuNDE1LDAuNDIyYy01LjU5Niw5LjYwNi04LjU1NCwyMC41ODktOC41NTQsMzEuNzY2YzAsMTcuMTI3LDYuODg0LDMzLjI3LDE4LjgzNyw0NS4wMzkgIGMtNS4wMjctMS4xOTMtOS44OTMtMy4wNy0xNC40MTQtNS41ODJjLTIuMTg4LTEuMjE0LTQuODc3LDAuMzUtNC45MDgsMi44NTFjLTAuMzEsMjUuNDQ1LDE0LjU4OCw0OC4wODcsMzYuOTA1LDU4LjI4MiAgYy0wLjQ1LDAuMDEtMC45LDAuMDE0LTEuMzUsMC4wMTRjLTMuNTM3LDAtNy4xMjEtMC4zMzgtMTAuNjQ1LTEuMDE1Yy0yLjQ2My0wLjQ2Ny00LjUzMiwxLjg2Ny0zLjc2OCw0LjI1MyAgYzcuMjQ2LDIyLjYxOCwyNi43MTcsMzkuMjg4LDUwLjAyMSw0My4wN2MtMTkuMzM5LDEyLjk4My00MS44NjMsMTkuODMtNjUuMzAyLDE5LjgzbC03LjMwNi0wLjAwM2MtMi4yNTUsMC00LjE2LDEuNDY5LTQuNzMsMy42NSAgYy0wLjU2NSwyLjE0NSwwLjQ3NCw0LjQxMywyLjM5Niw1LjUzYzI2LjQxMiwxNS4zNzIsNTYuNTQxLDIzLjQ5NSw4Ny4xMzgsMjMuNDk1YzI2Ljc4NCwwLDUxLjgzOC01LjMxMyw3NC40NjYtMTUuNzk4ICBjMjAuNzQ1LTkuNjA5LDM5LjA3Ni0yMy4zNDUsNTQuNDg2LTQwLjgyN2MxNC4zNTctMTYuMjg2LDI1LjU4MS0zNS4wODUsMzMuMzY1LTU1Ljg3OWM3LjQxOC0xOS44MTYsMTEuMzQtNDAuOTY3LDExLjM0LTYxLjE1NCAgdi0wLjk2NGMwLTMuMjQxLDEuNDY1LTYuMjkxLDQuMDI0LTguMzdjOS43MDYtNy44ODIsMTguMTYtMTcuMTU4LDI1LjEyMi0yNy41NzJDNDAzLjc5NiwxNjQuNTc4LDQwMC44OTYsMTYxLjEzLDM5Ny44NzIsMTYyLjQ3MSAgTDM5Ny44NzIsMTYyLjQ3MXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0QxRDFEMTsiIGQ9Ik0zOTcuODcyLDE2Mi40NzFjLTYuNTE1LDIuODg5LTEzLjI3MSw1LjE2Ny0yMC4yMDgsNi44MTVjNy42NDQtNy4yNjEsMTMuMzktMTYuMzQ2LDE2LjYzMi0yNi40ODQgIGMwLjkyNi0yLjg5My0yLjIxOS01LjM5OC00LjgzMi0zLjg0OGMtOS42NSw1LjcyNS0yMC4wNDQsMTAuMDE2LTMwLjg5NCwxMi43NjJjLTAuNjI4LDAuMTYtMS4yNzYsMC4yNC0xLjkyOSwwLjI0ICBjLTEuOTc5LDAtMy44OTYtMC43MzMtNS40MTEtMi4wNjVjLTExLjU0Mi0xMC4xNzQtMjYuMzktMTUuNzc3LTQxLjgwNS0xNS43NzdjLTYuNjcxLDAtMTMuNDA1LDEuMDQtMjAuMDE2LDMuMDkxICBjLTE0LjMyMiw0LjQ0MS0yNi4zNDMsMTQuMDQ4LTMzLjk4NSwyNi41NDZ2MjA1LjQ3N2M2LjIyMi0yLjAyOSwxMi4yOTMtNC40MDMsMTguMTk4LTcuMTM5ICBjMjAuNzQ1LTkuNjA5LDM5LjA3Ni0yMy4zNDUsNTQuNDg2LTQwLjgyN2MxNC4zNTctMTYuMjg3LDI1LjU4MS0zNS4wODUsMzMuMzY1LTU1Ljg3OWM3LjQxOC0xOS44MTYsMTEuMzQtNDAuOTY3LDExLjM0LTYxLjE1NCAgdi0wLjk2NGMwLTMuMjQxLDEuNDY1LTYuMjkxLDQuMDI0LTguMzdjOS43MDYtNy44ODIsMTguMTYtMTcuMTU4LDI1LjEyMi0yNy41NzJDNDAzLjc5NiwxNjQuNTc4LDQwMC44OTYsMTYxLjEzLDM5Ny44NzIsMTYyLjQ3MXoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
       />
 
