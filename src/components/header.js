@@ -34,13 +34,13 @@ class Header extends Component {
       <header className="header">
         <div className="wrapper">
           <Logo />
-          <SearchBar 
-            toggleOnClick={this.toggleSearch.bind(this)} 
-            isOpen={this.state.isSearchOpen} 
+          <SearchBar
+            toggleOnClick={this.toggleSearch.bind(this)}
+            isOpen={this.state.isSearchOpen}
           />
-          <Navigation 
-            toggleOnClick={this.toggleNavigation.bind(this)} 
-            isOpen={this.state.isMenuOpen} 
+          <Navigation
+            toggleOnClick={this.toggleNavigation.bind(this)}
+            isOpen={this.state.isMenuOpen}
           />
         </div>
       </header>
