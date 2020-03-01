@@ -101,7 +101,7 @@ excludes any remote file systems.
 ```bash
 df -lh
 ```
-```example
+```bash
 ➜  resources  ➜ df -lh
 Filesystem               Size  Used Avail Use% Mounted on
 devtmpfs                 7.8G     0  7.8G   0% /dev
@@ -121,7 +121,7 @@ the disk space available for the file systems each one is on.
 ```bash
 df -lh / ~
 ```
-```example
+```bash
 ➜  ~ ➜ df -lh / ~
 Filesystem               Size  Used Avail Use% Mounted on
 /dev/mapper/fedora_root   49G   18G   29G  39% /
@@ -136,7 +136,7 @@ can get information on all of them using the all `-a` switch.
 ```bash
 df -lah
 ```
-```example
+```bash
 ➜  resources  ➜ df -lah
 Filesystem                Size  Used Avail Use% Mounted on
 sysfs                        0     0     0    - /sys
@@ -173,7 +173,7 @@ on the current working directory.
 ```bash
 du -h
 ```
-```example
+```bash
 ➜  public  ➜ du -h
 20K     ./html
 28K     ./public/img
@@ -190,7 +190,7 @@ space used by each file and directory.
 ```bash
 du -hs
 ```
-```example
+```bash
 ➜  public  ➜ du -hs
 80K     .
 ```
@@ -201,7 +201,7 @@ disk usage for them. With `-a` you will get all files, not just directories.
 ```bash
 du -ah logos fonts
 ```
-```example
+```bash
 ➜ public ➜ du -ah logos fonts
 8.0K    logos/logo.png
 4.0K    logos/128x128.png
@@ -234,7 +234,7 @@ Below I want all files excluding **html** and **txt** files.
 ```bash
 du -hs * --exclude="*.html" --exclude="*.txt"
 ```
-```example
+```bash
 ➜  public ➜ du -hs * --exclude="*.html" --exclude="*.txt"
 4.0K	favicon.png
 36K	    fonts
@@ -249,7 +249,7 @@ plus you can page through the results (`less`).
 ```bash
 du -h | sort -rn | less
 ```
-```example
+```bash
 ➜  resources  ➜ du -h | sort -rn | less
 80K     .
 48K     ./public
@@ -265,7 +265,7 @@ This includes the summary as it is part of the result set.
 ```bash
 du -h | sort -rn | head -n 3
 ```
-```example
+```bash
 ➜  resources  ➜ du -h | sort -rn | head -n 3
 80K     .
 48K     ./public
@@ -282,7 +282,7 @@ This will include hidden files such as your dotfiles.
 ```bash
 ls -lah | less
 ```
-```example
+```bash
 ➜  imgs ➜ ls -lah | less
 total 48K
 drwxrwxr-x. 2 clarice clarice 4.0K Jan 12 06:05 .
@@ -337,7 +337,7 @@ It will recursively iterate and list your files
 in a really cool colored tree-like structure.
 No colors in the examples though :pensive:, so go on - use it. :stuck_out_tongue:
 
-```example
+```bash
 ➜  public ➜  tree
 .
 ├── favicon.png
@@ -369,7 +369,7 @@ directory.
 ```bash
 tree -sh
 ```
-```example
+```bash
 ➜  public ➜ tree -sh
 .
 ├── [ 1.9K]  favicon.png

@@ -17,7 +17,7 @@ vim /etc/motd
 
 You can generate [ASCII art](https://www.kammerl.de/ascii/AsciiSignature.php) and paste it into the motd file to spice things up.
 
-```example
+```
    __                  _                  __
   / /   ___ _   _ _ __(_) ___  _   _ ___  \ \
  | |   / __| | | | '__| |/ _ \| | | / __|  | |

@@ -32,7 +32,7 @@ ls -lah
 
 I should see a few lines that look like this:
 
-```example
+```bash
 lrwxrwxrwx. 1 me me   26 Jan 27 10:49 .zsh_history -> /home/me/.zsh_history
 lrwxrwxrwx. 1 me me   20 Jan 27 10:49 .zshrc -> /home/me/.zshrc
 ```

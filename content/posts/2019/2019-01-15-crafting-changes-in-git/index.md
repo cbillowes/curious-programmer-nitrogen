@@ -70,7 +70,7 @@ Quickly check the status of the file in `git status` and see that
 it is already **staged**. This file must not be committed in its
 entirety so the file must not be staged.
 
-```example
+```bash
 ➜  ahoy git:master ✗ 9cc08bf ➜ git status
 On branch master
 Changes to be committed:
@@ -79,7 +79,7 @@ Changes to be committed:
 	renamed:    data/ship.json -> data/ships.json
 	modified:   layout.scss
 	modified:   src/pirate.clj
-    modified:   components/parrot.jsx
+  modified:   components/parrot.jsx
 ```
 
 ## Crafting atomic changes
@@ -98,7 +98,7 @@ status screen which is like `git status` on steroids.
 * To your right you have unstaged changes. If the file is fully
 staged then it will display **nothing**.
 
-```example
+```bash
 ➜  ahoy git:master ✗ 9cc08bf ➜ git add -i
            staged     unstaged path
   1:       +0/-12      nothing data/ship.json
@@ -175,7 +175,7 @@ Stage this hunk [y,n,q,a,d,s,e,?]?
 ```
 Ahoy matey, there be options:
 
-```example
+```bash
 y - stage this hunk
 n - do not stage this hunk
 q - quit; do not stage this hunk or any of the remaining ones
@@ -188,7 +188,7 @@ e - manually edit the current hunk
 
 Press `s` to split that hunk into baby hunks. Now there are more options
 
-```example
+```bash
 Stage this hunk [y,n,q,a,d,K,g,/,e,?]?
 ...
 g - select a hunk to go to

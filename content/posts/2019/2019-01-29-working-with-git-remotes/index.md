@@ -65,7 +65,7 @@ Get information about remote.
 git remote show origin
 ```
 
-```example
+```bash
 * remote origin
   Fetch URL: git@github.com:clarice/ahoy.git
   Push  URL: git@github.com:clarice/ahoy.git

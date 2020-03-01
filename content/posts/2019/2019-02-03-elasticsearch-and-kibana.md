@@ -88,7 +88,7 @@ sudo journalctl --unit elasticsearch --since  "2016-10-30 18:17:16"
 curl -X GET "localhost:9200/"
 ```
 
-```example
+```
 {
   "name" : "Cp8oag6",
   "cluster_name" : "elasticsearch",
@@ -148,7 +148,7 @@ Logs at `/var/log/kibana/`
 curl -X HEAD -I "http://localhost:5601/"
 ```
 
-```example
+```
 HTTP/1.1 302 Found
 location: /app/kibana
 kbn-name: kibana
