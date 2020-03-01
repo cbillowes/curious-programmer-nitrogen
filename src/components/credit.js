@@ -1,24 +1,22 @@
 import React from "react"
 import Tag from "./tag"
 
-const Credit = ({ to, title, readonly, children }) => {
+const Credit = ({ to, title, children }) => {
   if (to) {
     return (
       <div>
         <Tag
-          title={title} 
-          readonly={readonly}
+          title={title}
           to={to}
         />
         {children}
       </div>
-    ) 
+    )
   }
   return (
     <div>
       <Tag
         title={title}
-        readonly={readonly}
       />
       {children}
     </div>
