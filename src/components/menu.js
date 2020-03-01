@@ -5,14 +5,14 @@ import './styles/menu.scss'
 
 const Menu = ({ toggleOnClick, isOpen }) => {
   return (
-    <div 
-      onClick={toggleOnClick} 
+    <button
+      onClick={toggleOnClick}
       className={(isOpen) ? `menu-button active`: `menu-button`}
     >
       <FontAwesomeIcon
         icon={faEllipsisV}
       />
-    </div>
+    </button>
   )
 }
 

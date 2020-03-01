@@ -5,14 +5,14 @@ import './styles/search.scss'
 
 const Search = ({ toggleOnClick, isOpen }) => {
   return (
-    <div 
-      onClick={toggleOnClick} 
+    <button
+      onClick={toggleOnClick}
       className={(isOpen) ? `search-button active`: `search-button`}
     >
       <FontAwesomeIcon
         icon={faSearch}
       />
-    </div>
+    </button>
   )
 }
 

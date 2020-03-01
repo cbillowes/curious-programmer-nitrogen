@@ -9,14 +9,14 @@ class Panel extends Component {
       clicked: false,
     }
   }
-  
+
   click() {
     const current = this.state.clicked;
     this.setState({
       clicked: !current,
     })
   }
-  
+
   titleClassName() {
     return `title ${this.state.clicked ? `active` : ``}`
   }
@@ -24,16 +24,16 @@ class Panel extends Component {
   render() {
     const { title, children } = this.props
     return (
-      <div 
+      <div
         className="panel"
       >
-        <div 
+        <button
           className={this.titleClassName()}
           onClick={() => this.click()}>
             {title}
-        </div>
-        {this.state.clicked ? 
-          <div className="body">{children}</div>: 
+        </button>
+        {this.state.clicked ?
+          <div className="body">{children}</div>:
           <></>
          }
       </div>
