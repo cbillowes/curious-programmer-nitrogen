@@ -36,11 +36,11 @@ const ErrorMessage = ({ error }) => {
       break;
 
     case `Error: Connection has timed out`:
-      message = `The connection porked out. ¯\_(ツ)_/¯`
+      message = `The connection porked out. ¯\\_(ツ)_/¯`
       break;
 
     default:
-      message = `Something ominous is going on! ¯\(°_o)/¯`
+      message = `Something ominous is going on! ¯\\(°_o)/¯`
   }
 
   return (
