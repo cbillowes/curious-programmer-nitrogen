@@ -1,77 +1,87 @@
 import React from 'react'
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-import { containsElement } from './helpers'
 import Text from '../text'
+import { containsElement } from './_helpers'
 
-Enzyme.configure({ adapter: new Adapter() })
-
-function sutHtml(props) {
-  return (
-    <Text 
-      limit={props.limit}
-    >
-      <p>Hello World.</p>
-      <p>Hello Galaxy.</p>
-      <p>Hello <strong>STRONG</strong> something.</p>
-    </Text>
-  )
-}
-
-function sutPlainText(props) {
+function sut(props) {
   return (
     <Text
       limit={props.limit}
     >
-      “In my experience there is no such thing as luck.” – Obi-Wan Kenobi.
+      {props.content}
     </Text>
   )
 }
 
-describe('Text', () => {
-
-  it('should render all text from HTML elements', () => {
-    const contains = containsElement(
-      sutHtml({}),
-      <span className="text">
-        Hello World. Hello Galaxy. Hello STRONG something.
+function elementsToConvertToText() {
+  return (
+    <>
+      <h1>Don't panic!</h1>
+      <p>Time is an illusion.</p>
+      <p>
+        Would it save you a lot of time if
+        <strong>I just gave up and went mad now?</strong>
+      </p>
+      <span>
+          The ships hung in the sky in much the same way
+          that bricks don't.
       </span>
-    )
-    expect(contains).toBe(true)
-  })
+    </>
+  )
+}
 
-  it('should render truncated text from HTML elements', () => {
-    const contains = containsElement(
-      sutHtml({
-        limit: 10,
+
+describe(`Text`, () => {
+
+  it(`should extract all content from html elements into plain text`, () => {
+    const expected = containsElement(
+      sut({
+        content: elementsToConvertToText(),
       }),
       <span className="text">
-        Hello World. Hello Galaxy. Hello STRONG something.
+        Don't panic! Time is an illusion. Would it save you a lot of
+        time if I just gave up and went mad now? The ships hung in the sky in much the same way
+        that bricks don't.
       </span>
     )
-    expect(contains).toBe(true)
+    expect(expected).toBeTruthy()
   })
 
-  it('should render all text from plain text', () => {
-    const contains = containsElement(
-      sutPlainText({}),
-      <span className="text">
-        “In my experience there is no such thing as luck.” – Obi-Wan Kenobi.
-      </span>
-    )
-    expect(contains).toBe(true)
-  })
-
-  it('should render truncated text from plain text', () => {
-    const contains = containsElement(
-      sutPlainText({
-        limit: 10,
+  it(`should limit the number of words from extracted html content and follow it by an ellispies`, () => {
+    const expected = containsElement(
+      sut({
+        content: elementsToConvertToText(),
+        limit: 2,
       }),
       <span className="text">
-        “In my experience there is no such thing as luck.”...
+        Don't panic!...
       </span>
     )
-    expect(contains).toBe(true)
+    expect(expected).toBeTruthy()
+  })
+
+  it(`should render all content from plain text`, () => {
+    const expected = containsElement(
+      sut({
+        content: `Don't panic! Time is an illusion.`,
+      }),
+      <span className="text">
+        Don't panic! Time is an illusion.
+      </span>
+    )
+    expect(expected).toBeTruthy()
+  })
+
+  it(`should limit the number of words from plain text`, () =>{
+    const expected = containsElement(
+      sut({
+        content: `Don't panic! Time is an illusion.`,
+        limit: 3,
+      }),
+      <span className="text">
+        Don't panic! Time...
+      </span>
+    )
+    expect(expected).toBeTruthy()
   })
 
 })

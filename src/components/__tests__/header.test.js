@@ -1,45 +1,111 @@
 import React from 'react'
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-import { containsElement } from './helpers'
 import Header from '../header'
 import Logo from '../logo'
-import Search from '../search'
-import Menu from '../menu'
+import SearchBar from '../searchBar'
 import Navigation from '../navigation'
+import { containsElement, getMountedComponent } from './_helpers'
 
-Enzyme.configure({ adapter: new Adapter() })
+function sut(props) {
+  return (
+    <Header
+      isMenuOpen={props.isMenuOpen}
+      isSearchOpen={props.isSearchOpen}
+    />
+  )
+}
 
-describe('Header', () => {
-  it('should render the logo', () => {
-    const contains = containsElement(
-      <Header />,
-      <Logo />,
-    )
-    expect(contains).toBe(true)
+let header
+
+describe(`Header`, () => {
+
+  describe(`should contain the class name`, () => {
+
+    beforeEach(() => {
+      header = getMountedComponent(sut({}))
+    })
+
+    it(`for the component`, () => {
+      expect(header.find(`.header`).length).toBe(1)
+    })
+
+    it(`to align those components on the page`, () => {
+      expect(header.find(`.wrapper`).length).toBe(1)
+    })
+
   })
 
-  it('should render the search button', () => {
-    const contains = containsElement(
-      <Header />,
-      <Search />,
-    )
-    expect(contains).toBe(true)
+  describe(`should render the`, () => {
+
+    beforeEach(() => {
+      header = sut({})
+    })
+
+    it(`logo`, () => {
+      const match = containsElement(
+        header,
+        <Logo />
+      )
+      expect(match).toBeTruthy()
+    })
+
+    it(`search bar`, () => {
+      const match = containsElement(
+        header,
+        <SearchBar />
+      )
+      expect(match).toBeTruthy()
+    })
+
+    it(`navigation`, () => {
+      const match = containsElement(
+        header,
+        <Navigation />
+      )
+      expect(match).toBeTruthy()
+    })
+
   })
 
-  it('should render the menu button', () => {
-    const contains = containsElement(
-      <Header />,
-      <Menu />,
-    )
-    expect(contains).toBe(true)
+  describe(`should hide elements when unactiviated, including the`, () => {
+
+    let component
+
+    beforeEach(() => {
+      component = getMountedComponent(sut({
+        isMenuOpen: false,
+        isSearchOpen:false,
+      }))
+    })
+
+    it(`navigation`, () => {
+      expect(component.find(`.navigation`).hasClass(`closed`)).toBe(true)
+    })
+
+    it(`search bar`, () => {
+      expect(component.find(`.search-button`).hasClass(`active`)).toBe(false)
+    })
+
   })
 
-  it('should render the navigation', () => {
-    const contains = containsElement(
-      <Header />,
-      <Navigation />,
-    )
-    expect(contains).toBe(true)
+  describe(`should show elements when activated, including the`, () => {
+
+    let component
+
+    beforeEach(() => {
+      component = getMountedComponent(sut({
+        isMenuOpen: true,
+        isSearchOpen: true,
+      }))
+    })
+
+    it(`navigation`, () => {
+      expect(component.find(`.navigation`).hasClass(`open`)).toBe(true)
+    })
+
+    it(`search bar`, () => {
+      expect(component.find(`.search-button`).hasClass(`active`)).toBe(true)
+    })
+
   })
+
 })

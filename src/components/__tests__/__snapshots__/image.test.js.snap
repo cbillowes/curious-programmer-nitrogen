@@ -1,0 +1,56 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Image should render correctly 1`] = `
+<div
+  className=" gatsby-image-wrapper"
+  style={
+    Object {
+      "overflow": "hidden",
+      "position": "relative",
+    }
+  }
+>
+  <div
+    style={
+      Object {
+        "paddingBottom": "100%",
+        "width": "100%",
+      }
+    }
+  />
+  <picture>
+    <source
+      sizes="(max-width: 64px) 100vw, 64px"
+      srcSet="/static/902e86a7b3f31818f9cd33b4adb71503/fc3a2/favicon.png 64w"
+    />
+    <img
+      alt=""
+      loading="lazy"
+      onLoad={[Function]}
+      sizes="(max-width: 64px) 100vw, 64px"
+      src="/static/902e86a7b3f31818f9cd33b4adb71503/fc3a2/favicon.png"
+      srcSet="/static/902e86a7b3f31818f9cd33b4adb71503/fc3a2/favicon.png 64w"
+      style={
+        Object {
+          "height": "100%",
+          "left": 0,
+          "objectFit": "cover",
+          "objectPosition": "center",
+          "opacity": 0,
+          "position": "absolute",
+          "top": 0,
+          "transition": "opacity 500ms",
+          "width": "100%",
+        }
+      }
+    />
+  </picture>
+  <noscript
+    dangerouslySetInnerHTML={
+      Object {
+        "__html": "<picture><source srcset=\\"/static/902e86a7b3f31818f9cd33b4adb71503/fc3a2/favicon.png 64w\\" sizes=\\"(max-width: 64px) 100vw, 64px\\" /><img loading=\\"lazy\\" sizes=\\"(max-width: 64px) 100vw, 64px\\" srcset=\\"/static/902e86a7b3f31818f9cd33b4adb71503/fc3a2/favicon.png 64w\\" src=\\"/static/902e86a7b3f31818f9cd33b4adb71503/fc3a2/favicon.png\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+      }
+    }
+  />
+</div>
+`;

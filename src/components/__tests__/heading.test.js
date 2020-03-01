@@ -1,59 +1,79 @@
 import React from 'react'
-import Enzyme from 'enzyme'
-import Adapter from 'enzyme-adapter-react-16'
-import { containsElement } from './helpers'
-import { H1, H2, H3, H4 } from '../heading'
+import { getMountedComponent } from "./_helpers"
+import { H1, H2, H3, H4 } from "../heading"
 
-Enzyme.configure({ adapter: new Adapter() })
+describe(`Heading`, () => {
 
-describe('Heading', () => {
+  describe(`should render`, () => {
 
-  it('should render level one', () => {
-    const contains = containsElement(
-      <H1>
-        I am a big bold heading
-      </H1>,
-      <h1>
-        I am a big bold heading
-      </h1>,
-    )
-    expect(contains).toBe(true)
+    it(`h1`, () => {
+      const heading = getMountedComponent(<H1 />)
+      expect(heading).toBeDefined()
+    })
+
+    it(`h2`, () => {
+      const heading = getMountedComponent(<H2 />)
+      expect(heading).toBeDefined()
+    })
+
+    it(`h3`, () => {
+      const heading = getMountedComponent(<H3 />)
+      expect(heading).toBeDefined()
+    })
+
+    it(`h4`, () => {
+      const heading = getMountedComponent(<H4 />)
+      expect(heading).toBeDefined()
+    })
+
   })
 
-  it('should render level two', () => {
-    const contains = containsElement(
-      <H2>
-        I am a big bold heading
-      </H2>,
-      <h2>
-        I am a big bold heading
-      </h2>,
-    )
-    expect(contains).toBe(true)
+  describe(`should display heading for`, () => {
+
+    it(`h1`, () => {
+      const heading = getMountedComponent(<H1>Don't Panic.</H1>)
+      expect(heading.text()).toEqual(`Don't Panic.`)
+    })
+
+    it(`h2`, () => {
+      const heading = getMountedComponent(<H2>Time is an illusion. Lunchtime doubly so.</H2>)
+      expect(heading.text()).toEqual(`Time is an illusion. Lunchtime doubly so.`)
+    })
+
+    it(`h3`, () => {
+      const heading = getMountedComponent(<H3>So long and thanks for all the fish</H3>)
+      expect(heading.text()).toEqual(`So long and thanks for all the fish`)
+    })
+
+    it(`h4`, () => {
+      const heading = getMountedComponent(<H4>The ships hung in the sky in much the same way that bricks don't.</H4>)
+      expect(heading.text()).toEqual(`The ships hung in the sky in much the same way that bricks don't.`)
+    })
+
   })
 
-  it('should render level three', () => {
-    const contains = containsElement(
-      <H3>
-        I am a big bold heading
-      </H3>,
-      <h3>
-        I am a big bold heading
-      </h3>,
-    )
-    expect(contains).toBe(true)
-  })
+  describe(`should set the class for`, () => {
 
-  it('should render level four', () => {
-    const contains = containsElement(
-      <H4>
-        I am a big bold heading
-      </H4>,
-      <h4>
-        I am a big bold heading
-      </h4>,
-    )
-    expect(contains).toBe(true)
+    it(`h1`, () => {
+      const heading = getMountedComponent(<H1 className="one" />)
+      expect(heading.hasClass(`one`)).toBe(true)
+    })
+
+    it(`h2`, () => {
+      const heading = getMountedComponent(<H2 className="two" />)
+      expect(heading.hasClass(`two`)).toBe(true)
+    })
+
+    it(`h3`, () => {
+      const heading = getMountedComponent(<H3 className="three" />)
+      expect(heading.hasClass(`three`)).toBe(true)
+    })
+
+    it(`h4`, () => {
+      const heading = getMountedComponent(<H4 className="four" />)
+      expect(heading.hasClass(`four`)).toBe(true)
+    })
+
   })
 
 })
