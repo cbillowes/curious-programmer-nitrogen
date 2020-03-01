@@ -14,7 +14,7 @@ const Bare = ({ children }) => {
 
 const Disabled = ({ children }) => {
   return (
-    <div 
+    <div
       data-disabled="true"
       data-container="disabled-tag-element"
     >
@@ -24,7 +24,7 @@ const Disabled = ({ children }) => {
 }
 
 function Tag ({ title, to, disabled, readonly }) {
-  if (!title) throw new Error(`title for the tag is required`)
+  if (!title) return <></>
   if (!to) to = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
 
   const lowerTitle = title.toLowerCase()
@@ -44,7 +44,7 @@ function Tag ({ title, to, disabled, readonly }) {
     )
 
   return (
-    <Anchor 
+    <Anchor
       to={to}
       title={title}
       tag="true"
