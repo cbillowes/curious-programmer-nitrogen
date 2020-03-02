@@ -1,0 +1,45 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Heading should capture class names 1`] = `
+<div>
+  <h1
+    className="un"
+  >
+    un
+  </h1>
+  <h2
+    className="deux"
+  >
+    deux
+  </h2>
+  <h3
+    className="trois"
+  >
+    trois
+  </h3>
+  <h4
+    className="quatre"
+  >
+    quatre
+  </h4>
+</div>
+`;
+
+exports[`Heading should not render when empty 1`] = `<div />`;
+
+exports[`Heading should render 1`] = `
+<div>
+  <h1>
+    Don't panic.
+  </h1>
+  <h2>
+    Time is an illusion. Lunchtime doubly so.
+  </h2>
+  <h3>
+    So long and thanks for all the fish.
+  </h3>
+  <h4>
+    The ships hung in the sky in much the same way that bricks don't.
+  </h4>
+</div>
+`;
