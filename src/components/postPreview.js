@@ -4,7 +4,7 @@ import Number from './number'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
 import Anchor from './anchor'
-import Text from './text'
+import { Blurb as Text } from './blurb'
 import "./styles/preview.scss"
 
 const Blurb = ({ children, limit }) => {

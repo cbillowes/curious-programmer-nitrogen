@@ -1,7 +1,7 @@
 import React from 'react'
 import { H1 } from './heading'
 import Anchor from './anchor'
-import Text from './text'
+import Blurb from './blurb'
 import './styles/postNavigation.scss'
 
 const limit = 5
@@ -17,11 +17,11 @@ const Navigation = ({ post }) => {
         title={title}
         className="nav-link"
       >
-        <Text
+        <Blurb
           limit={limit}
         >
           {title}
-        </Text>
+        </Blurb>
       </Anchor>
     </H1>
   )

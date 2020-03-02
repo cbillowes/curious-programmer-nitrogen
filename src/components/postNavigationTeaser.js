@@ -3,7 +3,7 @@ import { H1 } from './heading'
 import Anchor from './anchor'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
-import Text from './text'
+import Blurb from './blurb'
 import './styles/postNavigation.scss'
 
 const defaultTruncationLimit = 250
@@ -21,11 +21,11 @@ const Body = ({ limit, excerpt }) => {
     <div
       className="body"
     >
-      <Text
+      <Blurb
         limit={limit}
       >
         {excerpt || ``}
-      </Text>
+      </Blurb>
     </div>
   )
 }

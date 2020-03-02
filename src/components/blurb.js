@@ -15,27 +15,20 @@ function squashToPlainText(content) {
   if (typeof content === `string`)
     return stripHtml(content)
 
-  if (Array.isArray(content)) {
-    let plainText = ``
-    content.map(html => {
-      if (typeof html === `string`) {
-        plainText = `${plainText} ${html.trim()}`.trim()
-      } else {
-        const squashed = squashToPlainText(html.props.children)
-        plainText = `${plainText} ${squashed}`
-      }
-      return plainText
-    })
+  let plainText = ``
+  content.map(html => {
+    if (typeof html === `string`) {
+      plainText = `${plainText} ${html.trim()}`.trim()
+    } else {
+      const squashed = squashToPlainText(html.props.children)
+      plainText = `${plainText} ${squashed}`
+    }
     return plainText
-  }
-
-  const children = content.props.children
-  return squashToPlainText(children)
+  })
+  return plainText
 }
 
 function truncate(text, limit) {
-  if (!text) return ``
-
   const words = text.trim().split(` `)
   return (
     (
@@ -47,8 +40,6 @@ function truncate(text, limit) {
 }
 
 function ellipsies(text, limit) {
-  if (!text) return ``
-
   const words = text.trim().split(` `)
   return (
     words.length > limit ?
@@ -57,16 +48,21 @@ function ellipsies(text, limit) {
   )
 }
 
+function getContent(limit, body) {
+  const plainText = squashToPlainText(body)
+  const content = truncate(plainText, limit)
+  const truncated = ellipsies(plainText, limit)
+  return `${content}${truncated}`
+}
+
 function Blurb({ limit, children }) {
-  const truncation = limit || defaultLimit
-  const plainText = squashToPlainText(children)
-  const truncated = truncate(plainText, truncation)
-  const more = ellipsies(plainText, truncation)
+  if (!children) return <></>
+
+  const content = getContent(limit || defaultLimit, children)
   return (
     <>
       <span className="text">
-        {truncated}
-        {more}
+        {content}
       </span>
     </>
   )
