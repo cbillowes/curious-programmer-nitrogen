@@ -1,0 +1,204 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header should render 1`] = `
+<header
+  className="header"
+>
+  <div
+    className="wrapper"
+  >
+    <div
+      className="logo"
+    >
+       
+      <a
+        aria-current="page"
+        className=""
+        href="/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        style={Object {}}
+        title="Curious Programmer"
+      >
+        <strong>
+          {
+        </strong>
+         :curious 
+        <strong>
+          "programmer"
+        </strong>
+         
+        <strong>
+          }
+        </strong>
+      </a>
+       
+    </div>
+    <button
+      className="search-button"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-search fa-w-16 "
+        data-icon="search"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 512 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+    <div
+      className="search closed"
+    >
+      <input
+        className="search-box"
+        onKeyDown={[Function]}
+        onKeyPress={[Function]}
+        onKeyUp={[Function]}
+        placeholder="Looking for something?"
+      />
+      <div
+        className="spacer small"
+      />
+      <div
+        className="empty-results"
+      >
+        <h1>
+          Sorry.
+        </h1>
+        <p>
+          So one of two things could have happend here.
+          <br />
+          Either the indexing has stopped working or I haven't written about it.
+          <br />
+          I am sorry that I can’t tell you which one it is.
+        </p>
+      </div>
+      <ul
+        className="results"
+      />
+    </div>
+    <button
+      className="menu-button"
+      onClick={[Function]}
+    >
+      <svg
+        aria-hidden="true"
+        className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+        data-icon="ellipsis-v"
+        data-prefix="fas"
+        focusable="false"
+        role="img"
+        style={Object {}}
+        viewBox="0 0 192 512"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <path
+          d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+          fill="currentColor"
+          style={Object {}}
+        />
+      </svg>
+    </button>
+    <nav
+      className="navigation closed"
+      data-container="navigation"
+    >
+      <div
+        className="menu"
+      >
+         
+        <a
+          href="/blog"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Blog
+        </a>
+         
+         
+        <a
+          href="/about"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          About
+        </a>
+         
+         
+        <a
+          href="/archives"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Archives
+        </a>
+         
+         
+        <a
+          href="/tags"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Tags
+        </a>
+         
+         
+        <a
+          href="/credits"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Credits
+        </a>
+         
+         
+        <a
+          href="/privacy-policy"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Privacy Policy
+        </a>
+         
+         
+        <a
+          href="/license"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          License
+        </a>
+         
+         
+        <a
+          href="https://github.com/cbillowes"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+        >
+          Github
+        </a>
+         
+         
+        <a
+          href="https://www.linkedin.com/in/cbouwer/"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+        >
+          LinkedIn
+        </a>
+         
+      </div>
+    </nav>
+  </div>
+</header>
+`;
