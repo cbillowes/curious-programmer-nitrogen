@@ -1,6 +1,6 @@
 import React from 'react'
 import { PureImage as Image } from '../image'
-import { getSnapshot, mustContainValue, mustNotContainValue } from './_helpers'
+import { getSnapshot } from './_helpers'
 
 const data = {
   "images": {
@@ -35,15 +35,6 @@ const data = {
       },
     ]
   }
-}
-
-function ImageUnderTest(props) {
-  return (
-    <Image
-      data={data}
-      src={props.src}
-    />
-  )
 }
 
 describe(`Image`, () => {
