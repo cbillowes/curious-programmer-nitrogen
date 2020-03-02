@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Logo should render 1`] = `
+<div
+  className="logo"
+>
+   
+  <a
+    aria-current="page"
+    className=""
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={Object {}}
+    title="Curious Programmer"
+  >
+    <strong>
+      {
+    </strong>
+     :curious 
+    <strong>
+      "programmer"
+    </strong>
+     
+    <strong>
+      }
+    </strong>
+  </a>
+   
+</div>
+`;
