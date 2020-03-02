@@ -1,0 +1,20 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Navigation should render 1`] = `
+<div
+  className="post number ribbon"
+>
+  <div
+    className="backdrop"
+  >
+    <div
+      className="text"
+    >
+      #
+      42
+    </div>
+  </div>
+</div>
+`;
+
+exports[`Navigation should render empty when there is no number 1`] = `null`;
