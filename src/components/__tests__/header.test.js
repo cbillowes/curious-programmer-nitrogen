@@ -10,6 +10,20 @@ describe(`Header`, () => {
     expect(tree).toMatchSnapshot()
   })
 
+  describe(`should be able to click on the`, () => {
+    let header
+    beforeEach(() => {
+      header = getMountedComponent(<Header />)
+    })
+    it(`menu button`, () => {
+      expect(header.find(`.menu-button`).simulate(`click`))
+    })
+
+    it(`search button`, () => {
+      expect(header.find(`.search-button`).simulate(`click`))
+    })
+  })
+
   describe(`should hide`, () => {
     let header
     beforeEach(() => {
@@ -21,11 +35,13 @@ describe(`Header`, () => {
     })
 
     it(`navigation`, () => {
+      expect(header.find(`.menu-button`).hasClass(`active`)).toBe(false)
       expect(header.find(`.navigation`).hasClass(`closed`)).toBe(true)
     })
 
     it(`search`, () => {
       expect(header.find(`.search-button`).hasClass(`active`)).toBe(false)
+      expect(header.find(`.search`).hasClass(`closed`)).toBe(true)
     })
   })
 
