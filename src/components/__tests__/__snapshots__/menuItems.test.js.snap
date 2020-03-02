@@ -1,0 +1,89 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu items should render 1`] = `
+<div
+  className="menu"
+>
+   
+  <a
+    href="/blog"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Blog
+  </a>
+   
+   
+  <a
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    About
+  </a>
+   
+   
+  <a
+    href="/archives"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Archives
+  </a>
+   
+   
+  <a
+    href="/tags"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Tags
+  </a>
+   
+   
+  <a
+    href="/credits"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Credits
+  </a>
+   
+   
+  <a
+    href="/privacy-policy"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Privacy Policy
+  </a>
+   
+   
+  <a
+    href="/license"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    License
+  </a>
+   
+   
+  <a
+    href="https://github.com/cbillowes"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Github
+  </a>
+   
+   
+  <a
+    href="https://www.linkedin.com/in/cbouwer/"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    LinkedIn
+  </a>
+   
+</div>
+`;
