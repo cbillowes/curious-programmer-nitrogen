@@ -1,6 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Image should render correctly 1`] = `
+exports[`Image should not render an image that does not exist 1`] = `null`;
+
+exports[`Image should render an image that exists 1`] = `
 <div
   className=" gatsby-image-wrapper"
   style={

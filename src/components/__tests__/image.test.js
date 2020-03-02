@@ -1,6 +1,6 @@
 import React from 'react'
 import { PureImage as Image } from '../image'
-import { snapshot, mustContainValue, mustNotContainValue } from './_helpers'
+import { getSnapshot, mustContainValue, mustNotContainValue } from './_helpers'
 
 const data = {
   "images": {
@@ -47,35 +47,25 @@ function ImageUnderTest(props) {
 }
 
 describe(`Image`, () => {
-
-  it(`should render correctly`, () => {
-    const tree = snapshot(
-      <ImageUnderTest
+  it(`should render an image that exists`, () => {
+    const image = (
+      <Image
+        data={data}
         src="favicon.png"
       />
     )
-
+    const tree = getSnapshot(image)
     expect(tree).toMatchSnapshot()
   })
 
-  it(`should render the image when it exists`, () => {
-    const match = mustContainValue(
-      <ImageUnderTest
-        src="favicon.png"
-      />,
-      data.images.edges[0].node.childImageSharp.fluid.src
+  it(`should not render an image that does not exist`, () => {
+    const image = (
+      <Image
+        data={data}
+        src="i-do-not-exist.png"
+      />
     )
-    expect(match).toBe(true)
+    const tree = getSnapshot(image)
+    expect(tree).toMatchSnapshot()
   })
-
-  it(`should not render when there is no image`, () => {
-    const match = mustNotContainValue(
-      <ImageUnderTest
-        src="no-such-image.png"
-      />,
-      `picture`
-    )
-    expect(match).toBe(true)
-  })
-
 })
