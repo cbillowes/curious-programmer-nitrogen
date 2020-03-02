@@ -74,37 +74,6 @@
     "storybook": "NODE_ENV=production start-storybook -s public -p 6006",
     "build-storybook": "NODE_ENV=production build-storybook -s public"
   },
-  "jest": {
-    "transform": {
-      "^.+\\.jsx?$": "<rootDir>/jest-preprocess.js"
-    },
-    "moduleNameMapper": {
-      ".+\\.(css|styl|less|sass|scss)$": "identity-obj-proxy",
-      ".+\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js"
-    },
-    "setupFilesAfterEnv": [
-      "<rootDir>/setupTests.js"
-    ],
-    "testPathIgnorePatterns": [
-      "node_modules",
-      "/.cache/"
-    ],
-    "transformIgnorePatterns": [
-      "node_modules/(?!(gatsby)/)"
-    ],
-    "collectCoverageFrom": [
-      "src/**/*.js"
-    ],
-    "globals": {
-      "__PATH_PREFIX__": ""
-    },
-    "setupFiles": [
-      "<rootDir>/loadershim.js"
-    ],
-    "snapshotSerializers": [
-      "enzyme-to-json/serializer"
-    ]
-  },
   "repository": {
     "type": "git",
     "url": "https://github.com/gatsbyjs/gatsby-starter-default"
