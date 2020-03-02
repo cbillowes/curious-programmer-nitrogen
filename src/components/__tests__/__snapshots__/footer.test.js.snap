@@ -39,9 +39,7 @@ exports[`Footer should render 1`] = `
     <span
       className="licenses"
     >
-      <span
-        data-component="license-creative-commons-logo"
-      >
+      <span>
          
         <a
           href="http://creativecommons.org/licenses/by-sa/4.0/"
@@ -57,9 +55,7 @@ exports[`Footer should render 1`] = `
         </a>
          
       </span>
-      <span
-        data-component="license-text-element"
-      >
+      <span>
         <p>
           The content is written by 
            
