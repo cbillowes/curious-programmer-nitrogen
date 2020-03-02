@@ -1,0 +1,49 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Credit should be empty 1`] = `<div />`;
+
+exports[`Credit should only render its body 1`] = `
+<div>
+  <p>
+    Only this will be rendered.
+  </p>
+</div>
+`;
+
+exports[`Credit should render an external credit 1`] = `
+<div>
+   
+  <a
+    href="https://curiousprogrammer.dev"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+    title="Curious Programmer"
+  >
+    curious programmer
+  </a>
+   
+  Curious Programmer
+</div>
+`;
+
+exports[`Credit should render an internal credit 1`] = `
+<div>
+   
+  <a
+    href="/blog"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    title="Curious Programmer"
+  >
+    curious programmer
+  </a>
+   
+  Curious Programmer
+</div>
+`;
+
+exports[`Credit should use the title for its empty body 1`] = `
+<div>
+  Use me instead.
+</div>
+`;

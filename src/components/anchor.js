@@ -2,8 +2,8 @@ import React from 'react'
 import { Link } from 'gatsby'
 import './styles/anchor.scss'
 
-function isInternalLink(url) {
-  return !(url.startsWith(`http`) || url.startsWith(`mailto:`))
+function isExternalLink(url) {
+  return (url.startsWith(`http`) || url.startsWith(`mailto:`))
 }
 
 const ExternalLink = ({ to, title, children }) => {
@@ -39,17 +39,9 @@ const InternalLink = ({ to, title, children }) => {
 }
 
 function Anchor({ to, title, children }) {
-  if (to) {
-    if (isInternalLink(to))
-      return (
-        <InternalLink
-          to={to}
-          title={title}
-        >
-          {children}
-        </InternalLink>
-      )
+  if (!to) return <></>
 
+  if (isExternalLink(to))
     return (
       <ExternalLink
         to={to}
@@ -58,7 +50,15 @@ function Anchor({ to, title, children }) {
         {children}
       </ExternalLink>
     )
-  }
+
+  return (
+    <InternalLink
+      to={to}
+      title={title}
+    >
+      {children}
+    </InternalLink>
+  )
 }
 
 export default Anchor

@@ -25,7 +25,6 @@ const Disabled = ({ children }) => {
 
 function Tag({ title, to, disabled, readonly }) {
   if (!title) return <></>
-  if (!to) to = `/tag/${title.toLowerCase().replace(/ /g, "-")}`
 
   const lowerTitle = title.toLowerCase()
 

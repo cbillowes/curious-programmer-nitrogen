@@ -16,13 +16,19 @@ module.exports = {
     `node_modules`,
     `.cache`,
     `public`,
+    `.test.js.snap`,
+    `.stories.js`
+  ],
+  coveragePathIgnorePatterns: [
+    `.test.js.snap`,
+    `.stories.js`,
   ],
   collectCoverageFrom: [
-    `<rootDir>/src/components/*.{js,jsx}`,
-    `!<rootDir>/src/components/__tests__/`
+    `src/components/**/*.{js,jsx}`,
+    `!src/components/__tests__/**/*`
   ],
   transformIgnorePatterns: [
-    `node_modules/(?!(gatsby)/)`
+    `node_modules/(?!(gatsby)/)`,
   ],
   globals: {
     __PATH_PREFIX__: ``,

@@ -2,6 +2,8 @@ import React from 'react'
 import Tag from './tag'
 
 const Credit = ({ to, title, children }) => {
+  const body = children || title
+
   if (to) {
     return (
       <div>
@@ -9,7 +11,7 @@ const Credit = ({ to, title, children }) => {
           title={title}
           to={to}
         />
-        {children}
+        {body}
       </div>
     )
   }
@@ -18,7 +20,7 @@ const Credit = ({ to, title, children }) => {
       <Tag
         title={title}
       />
-      {children}
+      {body}
     </div>
   )
 }
