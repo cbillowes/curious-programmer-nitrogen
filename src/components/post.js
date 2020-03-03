@@ -20,12 +20,10 @@ const Body = ({ children }) => {
       <div
         className="reading-panel"
         dangerouslySetInnerHTML={{ __html: children }}
-        data-component="post-article-body"
       >
       </div> :
       <div
         className="reading-panel"
-        data-component="post-article-body"
       >
         {children}
       </div>
@@ -47,7 +45,6 @@ function Post({ title, tags, date, author, ttr, number, children }) {
     <>
       <article
         className="post article"
-        data-component="post-article"
       >
         <Number number={number} />
         <Title>
@@ -74,4 +71,3 @@ export default Post
 
 
 //TODO: add proptypes
-//TODO: destroy data-component attribs

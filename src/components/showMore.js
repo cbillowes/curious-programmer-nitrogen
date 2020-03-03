@@ -8,7 +8,6 @@ const ShowMore = ({ to, title }) => {
   return (
     <div
       className="show-more"
-      data-component="show-more"
     >
       <Anchor
         to={to}

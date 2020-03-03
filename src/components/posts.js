@@ -9,7 +9,6 @@ const Listing = ({ edges, truncate }) => {
   return edges.map(edge => {
     const { timeToRead, excerpt } = edge.node
     const { slug, date, number } = edge.node.fields
-    console.log(edge.node)
     const { title, tags, blurb } = edge.node.frontmatter
     const tagCollection = tags ? tags.join(`,`) : ``
     return (

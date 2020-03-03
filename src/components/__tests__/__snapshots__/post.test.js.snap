@@ -3,7 +3,6 @@
 exports[`Post should render 1`] = `
 <article
   className="post article"
-  data-component="post-article"
 >
   <div
     className="metadata"
@@ -34,7 +33,6 @@ exports[`Post should render 1`] = `
   />
   <div
     className="reading-panel"
-    data-component="post-article-body"
   />
 </article>
 `;

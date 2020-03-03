@@ -9,7 +9,6 @@ function Tags({ tags }) {
     <>
       <div
         className="tags"
-        data-component="tags"
       >
         {renderable.map(tag => {
           return (
@@ -27,4 +26,3 @@ function Tags({ tags }) {
 export default Tags
 
 //TODO: add proptypes
-//TODO: destroy data-component attribs
