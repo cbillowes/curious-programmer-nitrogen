@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Panel should not render children unless the title has been clicked on 1`] = `
+<div
+  className="panel"
+>
+  <button
+    className="title "
+    onClick={[Function]}
+  >
+    Want to hire me?
+  </button>
+</div>
+`;
+
+exports[`Panel should not render without a title 1`] = `null`;
+
+exports[`Panel should not render without children elements 1`] = `null`;
+
+exports[`Panel should render 1`] = `
+<div
+  className="panel"
+>
+  <button
+    className="title active"
+    onClick={[Function]}
+  >
+    Want to hire me?
+  </button>
+  <div
+    className="body"
+  >
+    <p>
+      <strong>
+        I am NOT on the market at the moment.
+      </strong>
+      When I am, ask me to do a test at home or invite me to an informal interview over coffee. I am shy but I warm up and shine in time. I can handle realistic pressure. Working persistent long hours is not a job for me. I prefer remote work in Clojure, React or Gatsby. I use Spacemacs (Evil mode) and Visual Studio Code. I need a laptop, preferrably a MacBook Pro.
+    </p>
+  </div>
+</div>
+`;

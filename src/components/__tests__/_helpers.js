@@ -29,8 +29,13 @@ export function getSnapshot(component) {
   return renderer.create(component).toJSON()
 }
 
+export function getMount(component) {
+  return mount(component)
+}
+
+//TODO: refactor - getMountWithChildren
 export function getMountedComponent(component) {
-  return mount(component).children()
+  return getMount(component).children()
 }
 
 export function mustContainValue(component, value) {

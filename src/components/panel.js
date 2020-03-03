@@ -10,7 +10,7 @@ class Panel extends Component {
     }
   }
 
-  click() {
+  onExpand() {
     const current = this.state.clicked;
     this.setState({
       clicked: !current,
@@ -23,13 +23,15 @@ class Panel extends Component {
 
   render() {
     const { title, children } = this.props
+    if (!title || !children) return <></>
+
     return (
       <div
         className="panel"
       >
         <button
           className={this.titleClassName()}
-          onClick={() => this.click()}>
+          onClick={this.onExpand.bind(this)}>
           {title}
         </button>
         {this.state.clicked ?
