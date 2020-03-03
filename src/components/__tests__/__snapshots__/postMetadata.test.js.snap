@@ -1,0 +1,27 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post metadata should render 1`] = `
+<div
+  className="metadata"
+>
+  posted on
+   
+  <time
+    dateTime={null}
+  >
+    Invalid date
+  </time>
+   
+  <span
+    data-container="metadata-author"
+  >
+    by Clarice Bouwer
+  </span>
+   
+  <span
+    data-container="metadata-ttr"
+  >
+    
+  </span>
+</div>
+`;

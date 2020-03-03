@@ -1,0 +1,8 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Show more items should render 1`] = `
+<div
+  className="show-more"
+  data-component="show-more"
+/>
+`;
