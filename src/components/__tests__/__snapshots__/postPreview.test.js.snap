@@ -1,0 +1,121 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post preview should limit the blurb word count 1`] = `
+<section
+  className="post preview"
+>
+  <h1>
+     
+    <a
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="Don't panic."
+    >
+      Don't panic.
+    </a>
+     
+  </h1>
+  <div
+    className="blurb"
+  >
+    <span
+      className="text"
+    >
+      Earthman Arthur Dent is rescued...
+    </span>
+  </div>
+  <div
+    className="metadata"
+  >
+    <div
+      className="metadata"
+    >
+      posted on
+       
+      <time
+        dateTime={null}
+      >
+        Invalid date
+      </time>
+       
+      <span
+        data-container="metadata-author"
+      >
+        by Clarice Bouwer
+      </span>
+       
+      <span
+        data-container="metadata-ttr"
+      >
+        
+      </span>
+    </div>
+  </div>
+  <div
+    className="tags"
+  >
+    <span />
+  </div>
+</section>
+`;
+
+exports[`Post preview should render when all required props are provided 1`] = `
+<section
+  className="post preview"
+>
+  <h1>
+     
+    <a
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="Don't panic."
+    >
+      Don't panic.
+    </a>
+     
+  </h1>
+  <div
+    className="blurb"
+  >
+    <span
+      className="text"
+    >
+      Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.
+    </span>
+  </div>
+  <div
+    className="metadata"
+  >
+    <div
+      className="metadata"
+    >
+      posted on
+       
+      <time
+        dateTime={null}
+      >
+        Invalid date
+      </time>
+       
+      <span
+        data-container="metadata-author"
+      >
+        by Clarice Bouwer
+      </span>
+       
+      <span
+        data-container="metadata-ttr"
+      >
+        
+      </span>
+    </div>
+  </div>
+  <div
+    className="tags"
+  >
+    <span />
+  </div>
+</section>
+`;

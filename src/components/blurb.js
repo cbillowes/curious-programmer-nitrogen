@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const defaultLimit = 250
 
@@ -15,17 +16,23 @@ function squashToPlainText(content) {
   if (typeof content === `string`)
     return stripHtml(content)
 
-  let plainText = ``
-  content.map(html => {
-    if (typeof html === `string`) {
-      plainText = `${plainText} ${html.trim()}`.trim()
-    } else {
-      const squashed = squashToPlainText(html.props.children)
-      plainText = `${plainText} ${squashed}`
-    }
+  if (Array.isArray(content)) {
+    let plainText = ``
+    content.map(html => {
+      if (typeof html === `string`) {
+        plainText = `${plainText} ${html.trim()}`.trim()
+      } else {
+        const squashed = squashToPlainText(html.props.children)
+        plainText = `${plainText} ${squashed}`
+      }
+    })
     return plainText
-  })
-  return plainText
+  }
+  if (content.props) {
+    const children = content.props.children
+    return squashToPlainText(children)
+  }
+  return `${typeof content} / ${Array.isArray(content)} / WTF is this then?`
 }
 
 function truncate(text, limit) {
@@ -68,6 +75,9 @@ function Blurb({ limit, children }) {
   )
 }
 
-export default Blurb
+Blurb.propTypes = {
+  children: PropTypes.node.isRequired,
+  limit: PropTypes.number,
+}
 
-//TODO: add proptypes
+export default Blurb

@@ -47,5 +47,3 @@ exports[`Blurb should limit words extracted from plain text 1`] = `
   The ships hung in the sky...
 </span>
 `;
-
-exports[`Blurb should not render without content 1`] = `null`;

@@ -1,21 +1,23 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { H1 } from './heading'
 import Number from './number'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
 import Anchor from './anchor'
-import { Blurb as Text } from './blurb'
+import Blurb from './blurb'
 import "./styles/preview.scss"
 
-const Blurb = ({ children, limit }) => {
+const Body = ({ children, limit }) => {
   return (
     <div
       className="blurb"
-      data-component="post-preview-blurb"
     >
-      <Text limit={limit}>
+      <Blurb
+        limit={limit}
+      >
         {children}
-      </Text>
+      </Blurb>
     </div>
   )
 }
@@ -25,7 +27,6 @@ const Metadata = ({ date, author, ttr }) => {
     <>
       <div
         className="metadata"
-        data-component="post-preview-metadata"
       >
         <PostMetadata
           date={date}
@@ -42,7 +43,6 @@ const TagList = ({ tags }) => {
     <>
       <div
         className="tags"
-        data-component="post-preview-tags"
       >
         <Tags
           tags={tags}
@@ -73,24 +73,43 @@ function PostPreview({ title, slug, tags, date, author, ttr, number, limit, chil
     <>
       <section
         className="post preview"
-        data-component="post-preview"
       >
-        <Number number={number} />
-        <Heading slug={slug}>
+        <Number
+          number={number}
+        />
+        <Heading
+          slug={slug}
+        >
           {title}
         </Heading>
-        <Blurb limit={limit}>
+        <Body
+          limit={limit}
+        >
           {children}
-        </Blurb>
-        <Metadata date={date} author={author} ttr={ttr} />
-        <TagList tags={tags} />
+        </Body>
+        <Metadata
+          date={date}
+          author={author}
+          ttr={ttr}
+        />
+        <TagList
+          tags={tags}
+        />
       </section>
     </>
   )
 }
 
+PostPreview.propTypes = {
+  title: PropTypes.string.isRequired,
+  slug: PropTypes.string.isRequired,
+  tags: PropTypes.string,
+  date: PropTypes.instanceOf(Date),
+  author: PropTypes.string,
+  ttr: PropTypes.number,
+  number: PropTypes.number,
+  limit: PropTypes.number,
+  children: PropTypes.node.isRequired,
+}
+
 export default PostPreview
-
-
-//TODO: destroy data-component attribs
-//TODO: add proptypes

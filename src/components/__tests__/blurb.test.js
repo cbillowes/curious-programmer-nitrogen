@@ -3,12 +3,6 @@ import Blurb from '../blurb'
 import { getSnapshot } from './_helpers'
 
 describe(`Blurb`, () => {
-  it(`should not render without content`, () => {
-    const text = <Blurb />
-    const tree = getSnapshot(text)
-    expect(tree).toMatchSnapshot()
-  })
-
   describe(`should extract content`, () => {
     it(`from plain text`, () => {
       const text = (
@@ -45,7 +39,7 @@ describe(`Blurb`, () => {
     it(`extracted from plain text`, () => {
       const text = (
         <Blurb
-          limit="6"
+          limit={6}
         >
           The ships hung in the sky in much the same way
           that bricks don't.
@@ -58,7 +52,7 @@ describe(`Blurb`, () => {
     it(`extracted from html elements`, () => {
       const text = (
         <Blurb
-          limit="6"
+          limit={6}
         >
           <h1>Don't panic!</h1>
           <p>Time is an illusion.</p>
