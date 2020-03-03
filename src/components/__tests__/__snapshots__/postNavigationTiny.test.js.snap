@@ -1,17 +1,48 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Post navigation tiny should render 1`] = `
+exports[`Post navigation tiny should always render both posts 1`] = `
 <nav
   className="post navigation tiny"
-  data-component="post-navigation-tiny"
 >
   <aside
     className="previous"
-    data-component="post-navigation-previous"
-  />
+  >
+    <h1>
+       
+      <a
+        href="/previous"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Don't panic."
+      >
+        <span
+          className="text"
+        >
+          Don't panic.
+        </span>
+      </a>
+       
+    </h1>
+  </aside>
   <aside
     className="next"
-    data-component="post-navigation-next"
-  />
+  >
+    <h1>
+       
+      <a
+        href="/next"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Come to the dark side of the force."
+      >
+        <span
+          className="text"
+        >
+          Come to the dark side...
+        </span>
+      </a>
+       
+    </h1>
+  </aside>
 </nav>
 `;

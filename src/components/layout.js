@@ -23,6 +23,7 @@ const Layout = ({ className, reading, footer, children }) => {
   )
 }
 
+//https://www.npmjs.com/package/prop-types
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
 }

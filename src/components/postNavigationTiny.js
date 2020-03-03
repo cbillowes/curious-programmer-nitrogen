@@ -1,7 +1,8 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { H1 } from './heading'
 import Anchor from './anchor'
-import Blurb from './blurb'
+import Text from './blurb'
 import './styles/postNavigation.scss'
 
 const limit = 5
@@ -17,11 +18,11 @@ const Navigation = ({ post }) => {
         title={title}
         className="nav-link"
       >
-        <Blurb
+        <Text
           limit={limit}
         >
           {title}
-        </Blurb>
+        </Text>
       </Anchor>
     </H1>
   )
@@ -32,11 +33,9 @@ function PostNavigationTiny({ previous, next }) {
     <>
       <nav
         className="post navigation tiny"
-        data-component="post-navigation-tiny"
       >
         <aside
           className="previous"
-          data-component="post-navigation-previous"
         >
           <Navigation
             post={previous}
@@ -44,7 +43,6 @@ function PostNavigationTiny({ previous, next }) {
         </aside>
         <aside
           className="next"
-          data-component="post-navigation-next"
         >
           <Navigation
             post={next}
@@ -55,7 +53,9 @@ function PostNavigationTiny({ previous, next }) {
   )
 }
 
-export default PostNavigationTiny
+PostNavigationTiny.propTypes = {
+  previous: PropTypes.object.isRequired,
+  next: PropTypes.object.isRequired,
+}
 
-//TODO: destroy data-component attribs
-//TODO: add proptypes
+export default PostNavigationTiny
