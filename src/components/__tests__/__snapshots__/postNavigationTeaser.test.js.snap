@@ -1,0 +1,116 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Post navigation teaser should not render without a next post 1`] = `null`;
+
+exports[`Post navigation teaser should not render without previous post 1`] = `null`;
+
+exports[`Post navigation teaser should render 1`] = `
+<nav
+  className="post navigation teaser"
+>
+  <aside
+    className="previous"
+  >
+     
+    <a
+      href="/previous"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="Don't panic."
+    >
+      <h1>
+        Don't panic.
+      </h1>
+      <div
+        className="body"
+      >
+        <span
+          className="text"
+        >
+          Earthman Arthur Dent is rescued by his friend, Ford Prefect—an...
+        </span>
+      </div>
+      <div
+        className="metadata"
+      >
+        posted on
+         
+        <time
+          dateTime={null}
+        >
+          Invalid date
+        </time>
+         
+        <span
+          data-container="metadata-author"
+        >
+          by Pixie
+        </span>
+         
+        <span
+          data-container="metadata-ttr"
+        >
+          (Est. 1 minute read)
+        </span>
+      </div>
+    </a>
+     
+    <div
+      className="tags"
+      data-component="tags"
+    />
+  </aside>
+  <aside
+    className="next"
+  >
+     
+    <a
+      href="/next"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="Come to the dark side."
+    >
+      <h1>
+        Come to the dark side.
+      </h1>
+      <div
+        className="body"
+      >
+        <span
+          className="text"
+        >
+          Luke Skywalker's peaceful and solitary existence gets upended when he...
+        </span>
+      </div>
+      <div
+        className="metadata"
+      >
+        posted on
+         
+        <time
+          dateTime={null}
+        >
+          Invalid date
+        </time>
+         
+        <span
+          data-container="metadata-author"
+        >
+          by Elby
+        </span>
+         
+        <span
+          data-container="metadata-ttr"
+        >
+          (Est. 2 minute read)
+        </span>
+      </div>
+    </a>
+     
+    <div
+      className="tags"
+      data-component="tags"
+    />
+  </aside>
+</nav>
+`;

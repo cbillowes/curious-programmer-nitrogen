@@ -96,3 +96,11 @@ export function validateValues(component, expected) {
   })
   return matches.indexOf(false) === -1
 }
+
+/*
+mount/shallow does not rerender when props change or apply new props on update #1229
+https://github.com/enzymejs/enzyme/issues/1229
+
+How to mock Date with Jest
+https://dev.to/maxpou/how-to-mock-date-with-jest-3k4b
+*/

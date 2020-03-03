@@ -75,16 +75,16 @@ const Navigation = ({ post }) => {
   )
 }
 
-function PostNavigationTeaser({ previous, next }) {
+const PostNavigationTeaser = ({ previous, next }) => {
+  if (!(previous && next)) return <></>
+
   return (
     <>
       <nav
         className="post navigation teaser"
-        data-component="post-navigation-teaser"
       >
         <aside
           className="previous"
-          data-component="post-navigation-previous"
         >
           <Navigation
             post={previous}
@@ -92,7 +92,6 @@ function PostNavigationTeaser({ previous, next }) {
         </aside>
         <aside
           className="next"
-          data-component="post-navigation-next"
         >
           <Navigation
             post={next}
@@ -104,3 +103,9 @@ function PostNavigationTeaser({ previous, next }) {
 }
 
 export default PostNavigationTeaser
+
+/*
+  TODO:
+    * Add proptypes
+    * Refactor name to Teaser?
+*/
