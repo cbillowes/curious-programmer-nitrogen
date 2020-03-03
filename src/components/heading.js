@@ -33,3 +33,5 @@ const H4 = ({ className, children }) => {
 }
 
 export { H1, H2, H3, H4 }
+
+//TODO: add proptypes

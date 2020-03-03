@@ -43,3 +43,8 @@ const Posts = ({ edges, truncate }) => {
 }
 
 export default Posts
+
+//TODO: add proptypes
+//TODO: serious housekeeping required in this component
+//TODO: move Lang to gatsby-config?
+//TODO: somewhere the actual post needs to be rendered

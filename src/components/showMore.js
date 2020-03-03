@@ -24,3 +24,5 @@ const ShowMore = ({ to, title }) => {
 }
 
 export default ShowMore
+
+//TODO: add proptypes

@@ -17,3 +17,5 @@ const Search = ({ toggleOnClick, isOpen }) => {
 }
 
 export default Search
+
+//TODO: add proptypes

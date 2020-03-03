@@ -28,3 +28,5 @@ Layout.propTypes = {
 }
 
 export default Layout
+
+//TODO: update proptypes

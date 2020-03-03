@@ -86,3 +86,7 @@ SEO.propTypes = {
 }
 
 export default SEO
+
+//TODO: use proptypes as a reference for other components
+//TODO: rather use single quotes in imports to stay consistent throughout
+//TODO: extract SEO into a PureSEO component without the query so that it can be tested

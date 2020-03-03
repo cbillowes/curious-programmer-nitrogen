@@ -62,3 +62,5 @@ function Anchor({ to, title, children }) {
 }
 
 export default Anchor
+
+//TODO: add proptypes

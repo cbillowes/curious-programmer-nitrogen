@@ -25,3 +25,6 @@ function Tags({ tags }) {
 }
 
 export default Tags
+
+//TODO: add proptypes
+//TODO: destroy data-component attribs

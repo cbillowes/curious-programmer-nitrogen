@@ -49,3 +49,5 @@ export const Image = props => {
 }
 
 export default Image
+
+//TODO: add proptypes

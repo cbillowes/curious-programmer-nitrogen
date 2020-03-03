@@ -207,3 +207,6 @@ class SearchBar extends Component {
 }
 
 export default SearchBar
+
+//TODO: add proptypes
+//TODO: convert all ajaxy things to use redux

@@ -18,3 +18,5 @@ const Number = ({ number }) => {
 }
 
 export default Number
+
+//TODO: add proptypes

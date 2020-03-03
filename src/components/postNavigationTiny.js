@@ -56,3 +56,6 @@ function PostNavigationTiny({ previous, next }) {
 }
 
 export default PostNavigationTiny
+
+//TODO: destroy data-component attribs
+//TODO: add proptypes

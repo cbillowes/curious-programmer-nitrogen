@@ -26,3 +26,5 @@ const Credit = ({ to, title, children }) => {
 }
 
 export default Credit
+
+//TODO: add proptypes

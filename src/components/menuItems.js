@@ -54,3 +54,5 @@ class MenuItems extends Component {
 }
 
 export default MenuItems
+
+//TODO: add proptypes

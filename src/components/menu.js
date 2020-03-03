@@ -17,3 +17,5 @@ const Menu = ({ toggleOnClick, isOpen }) => {
 }
 
 export default Menu
+
+//TODO: add proptypes

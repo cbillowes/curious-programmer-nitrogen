@@ -104,8 +104,7 @@ const PostNavigationTeaser = ({ previous, next }) => {
 
 export default PostNavigationTeaser
 
-/*
-  TODO:
-    * Add proptypes
-    * Refactor name to Teaser?
-*/
+//TODO: add proptypes
+//TODO: refactor name to Teaser?
+//TODO: date is invalid in snapshot
+//TODO: tags are missing in snapshot

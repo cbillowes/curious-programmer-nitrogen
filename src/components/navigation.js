@@ -40,3 +40,5 @@ class Navigation extends Component {
 }
 
 export default Navigation
+
+//TODO: add proptypes

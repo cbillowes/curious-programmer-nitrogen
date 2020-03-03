@@ -16,3 +16,5 @@ const ReadingPane = ({ heading, children }) => {
 }
 
 export default ReadingPane
+
+//TODO: add proptypes

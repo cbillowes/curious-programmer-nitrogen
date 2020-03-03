@@ -40,3 +40,8 @@ function PostMetadata({ date, author, ttr }) {
 }
 
 export default PostMetadata
+
+
+//TODO: revise locale (get rid of Lang - env instead?)
+//TODO: don't show date when invalid - is it possible?
+//TODO: add proptypes

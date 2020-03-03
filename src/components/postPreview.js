@@ -90,3 +90,7 @@ function PostPreview({ title, slug, tags, date, author, ttr, number, limit, chil
 }
 
 export default PostPreview
+
+
+//TODO: destroy data-component attribs
+//TODO: add proptypes

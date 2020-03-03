@@ -44,3 +44,6 @@ class Panel extends Component {
 }
 
 export default Panel
+
+
+//TODO: add proptypes

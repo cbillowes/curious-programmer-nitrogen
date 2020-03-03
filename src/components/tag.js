@@ -55,3 +55,7 @@ function Tag({ title, to, disabled, readonly }) {
 }
 
 export default Tag
+
+//TODO: add proptypes
+//TODO: destroy data-component attribs
+//TODO: rethink what tags are necessary

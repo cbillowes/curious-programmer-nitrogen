@@ -69,3 +69,5 @@ function Blurb({ limit, children }) {
 }
 
 export default Blurb
+
+//TODO: add proptypes
