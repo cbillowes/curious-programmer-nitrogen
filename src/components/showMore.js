@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Anchor from "./anchor"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
@@ -22,6 +23,9 @@ const ShowMore = ({ to, title }) => {
   )
 }
 
-export default ShowMore
+ShowMore.propTypes = {
+  to: PropTypes.string.isRequired,
+  title: PropTypes.string,
+}
 
-//TODO: add proptypes
+export default ShowMore

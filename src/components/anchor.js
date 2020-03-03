@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { Link } from 'gatsby'
 import './styles/anchor.scss'
 
@@ -61,6 +62,10 @@ function Anchor({ to, title, children }) {
   )
 }
 
-export default Anchor
+Anchor.propTypes = {
+  to: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  children: PropTypes.node.isRequired,
+}
 
-//TODO: add proptypes
+export default Anchor

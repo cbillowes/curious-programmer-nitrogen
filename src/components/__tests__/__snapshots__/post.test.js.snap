@@ -27,7 +27,6 @@ exports[`Post should render 1`] = `
       
     </span>
   </div>
-  <span />
   <div
     className="spacer small"
   />

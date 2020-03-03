@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { H1 } from './heading'
 import Anchor from './anchor'
 import PostMetadata from './postMetadata'
@@ -102,9 +103,24 @@ const PostNavigationTeaser = ({ previous, next }) => {
   )
 }
 
+const shape = PropTypes.shape({
+  slug: PropTypes.string.isRequired,
+  title: PropTypes.string.isRequired,
+  excerpt: PropTypes.string.isRequired,
+  limitExcerpt: PropTypes.number,
+  date: PropTypes.instanceOf(Date).isRequired,
+  author: PropTypes.string.isRequired,
+  ttr: PropTypes.number.isRequired,
+  tags: PropTypes.string,
+})
+
+PostNavigationTeaser.propTypes = {
+  previous: shape,
+  next: shape,
+}
+
 export default PostNavigationTeaser
 
-//TODO: add proptypes
 //TODO: refactor name to Teaser?
 //TODO: date is invalid in snapshot
 //TODO: tags are missing in snapshot

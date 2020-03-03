@@ -1,19 +1,21 @@
+import _ from 'lodash'
 import React from 'react'
+import PropTypes from 'prop-types'
 import Tag from './tag'
 
 function Tags({ tags }) {
-  if (!tags) return <span></span>
+  if (!tags) return <></>
 
-  const renderable = Array.isArray(tags) ? tags : tags.split(`,`)
   return (
     <>
       <div
         className="tags"
       >
-        {renderable.map(tag => {
+        {tags.split(`,`).map(tag => {
           return (
             <Tag
               key={tag}
+              to={`/tag/${_.kebabCase(tag)}`}
               title={tag}
             />
           )
@@ -23,6 +25,8 @@ function Tags({ tags }) {
   )
 }
 
-export default Tags
+Tags.propTypes = {
+  tags: PropTypes.string,
+}
 
-//TODO: add proptypes
+export default Tags

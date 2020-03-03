@@ -7,7 +7,9 @@ Array [
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
-  />,
+  >
+    About
+  </a>,
   " ",
 ]
 `;
@@ -19,7 +21,9 @@ Array [
     href="mailto:clarice@bouwer.dev"
     rel="nofollow noopener noreferrer"
     target="_blank"
-  />,
+  >
+    clarice@bouwer.dev
+  </a>,
   " ",
 ]
 `;
@@ -31,9 +35,9 @@ Array [
     href="https://curiousprogrammer.dev"
     rel="nofollow noopener noreferrer"
     target="_blank"
-  />,
+  >
+    Curious Programmer
+  </a>,
   " ",
 ]
 `;
-
-exports[`Anchor should not have a link 1`] = `null`;

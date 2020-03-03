@@ -54,9 +54,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
   </div>
   <div
     className="tags"
-  >
-    <span />
-  </div>
+  />
 </section>
 `;
 
@@ -114,8 +112,6 @@ exports[`Post preview should render when all required props are provided 1`] = `
   </div>
   <div
     className="tags"
-  >
-    <span />
-  </div>
+  />
 </section>
 `;

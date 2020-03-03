@@ -1,10 +1,109 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Post navigation teaser should not render without a next post 1`] = `null`;
+exports[`Post navigation teaser should render all that is required 1`] = `
+<nav
+  className="post navigation teaser"
+>
+  <aside
+    className="previous"
+  >
+     
+    <a
+      href="/previous"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="Previous"
+    >
+      <h1>
+        Previous
+      </h1>
+      <div
+        className="body"
+      >
+        <span
+          className="text"
+        >
+          Excerpt
+        </span>
+      </div>
+      <div
+        className="metadata"
+      >
+        posted on
+         
+        <time
+          dateTime={"2018-04-01T00:00:00.000Z"}
+        >
+          Sunday, 1 April 2018
+        </time>
+         
+        <span
+          data-container="metadata-author"
+        >
+          by Clarice Bouwer
+        </span>
+         
+        <span
+          data-container="metadata-ttr"
+        >
+          (Est. 15 minute read)
+        </span>
+      </div>
+    </a>
+     
+  </aside>
+  <aside
+    className="next"
+  >
+     
+    <a
+      href="/next"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="Next"
+    >
+      <h1>
+        Next
+      </h1>
+      <div
+        className="body"
+      >
+        <span
+          className="text"
+        >
+          Excerpt
+        </span>
+      </div>
+      <div
+        className="metadata"
+      >
+        posted on
+         
+        <time
+          dateTime={"2018-04-01T00:00:00.000Z"}
+        >
+          Sunday, 1 April 2018
+        </time>
+         
+        <span
+          data-container="metadata-author"
+        >
+          by Clarice Bouwer
+        </span>
+         
+        <span
+          data-container="metadata-ttr"
+        >
+          (Est. 15 minute read)
+        </span>
+      </div>
+    </a>
+     
+  </aside>
+</nav>
+`;
 
-exports[`Post navigation teaser should not render without previous post 1`] = `null`;
-
-exports[`Post navigation teaser should render 1`] = `
+exports[`Post navigation teaser should render everything else 1`] = `
 <nav
   className="post navigation teaser"
 >
@@ -36,9 +135,9 @@ exports[`Post navigation teaser should render 1`] = `
         posted on
          
         <time
-          dateTime={null}
+          dateTime={"2018-04-01T00:00:00.000Z"}
         >
-          Invalid date
+          Sunday, 1 April 2018
         </time>
          
         <span
@@ -57,7 +156,38 @@ exports[`Post navigation teaser should render 1`] = `
      
     <div
       className="tags"
-    />
+    >
+       
+      <a
+        href="/tag/douglas"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="douglas"
+      >
+        douglas
+      </a>
+       
+       
+      <a
+        href="/tag/adams"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="adams"
+      >
+        adams
+      </a>
+       
+       
+      <a
+        href="/tag/novel"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="novel"
+      >
+        novel
+      </a>
+       
+    </div>
   </aside>
   <aside
     className="next"
@@ -87,9 +217,9 @@ exports[`Post navigation teaser should render 1`] = `
         posted on
          
         <time
-          dateTime={null}
+          dateTime={"2019-04-01T00:00:00.000Z"}
         >
-          Invalid date
+          Monday, 1 April 2019
         </time>
          
         <span
@@ -108,7 +238,28 @@ exports[`Post navigation teaser should render 1`] = `
      
     <div
       className="tags"
-    />
+    >
+       
+      <a
+        href="/tag/star"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="star"
+      >
+        star
+      </a>
+       
+       
+      <a
+        href="/tag/wars"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="wars"
+      >
+        wars
+      </a>
+       
+    </div>
   </aside>
 </nav>
 `;
