@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Menu from './menu'
 import MenuItems from './menuItems'
 import Data from '../../gatsby-data'
@@ -6,39 +7,43 @@ import './styles/menu.scss'
 
 const Nav = Data.navigation
 
-class Navigation extends Component {
-  getPathName(path) {
-    const rootPath = `/`
-    const defaultPath = Nav[0].to
-    const pathname = path || (typeof window === "undefined" || !window ? "/" : window.location.pathname)
-    return pathname === rootPath || !pathname ? defaultPath : pathname
-  }
+function getNavigationClassName(isOpen) {
+  return `navigation ${isOpen ? `open` : `closed`}`
+}
 
-  getClassName(open) {
-    return `navigation ${open ? `open` : `closed`}`
-  }
+export const Navigation = ({ toggleOnClick, isOpen, path }) => {
+  const defaultPath = Nav[0].to
+  const location = typeof window !== `undefined` ? window.location.href : `/`
+  const currentPath = path || location || defaultPath
 
-  render() {
-    const { toggleOnClick, isOpen, path } = this.props
-    return (
-      <>
-        <Menu
-          toggleOnClick={toggleOnClick}
-          isOpen={isOpen}
+  return (
+    <>
+      <Menu
+        toggleOnClick={toggleOnClick}
+        isOpen={isOpen}
+      />
+      <nav
+        className={getNavigationClassName(isOpen)}
+      >
+        <MenuItems
+          path={currentPath}
         />
-        <nav
-          data-container="navigation"
-          className={this.getClassName(isOpen)}
-        >
-          <MenuItems
-            path={this.getPathName(path)}
-          />
-        </nav>
-      </>
-    )
-  }
+      </nav>
+    </>
+  )
+}
+
+Navigation.defaultProps = {
+  isOpen: false,
+  path: `/`,
+}
+
+Navigation.propTypes = {
+  toggleOnClick: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool,
+  path: PropTypes.string,
 }
 
 export default Navigation
 
-//TODO: add proptypes
+//TODO: keep data.nav? maybe?

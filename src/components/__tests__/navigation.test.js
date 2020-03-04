@@ -3,9 +3,36 @@ import Navigation from '../navigation'
 import { getSnapshot } from './_helpers'
 
 describe(`Navigation`, () => {
-  it(`should render`, () => {
+  const toggleOnClick = jest.fn()
+
+  it(`should render default navigation`, () => {
     const navigation = (
-      <Navigation />
+      <Navigation
+        toggleOnClick={() => toggleOnClick}
+      />
+    )
+    const tree = getSnapshot(navigation)
+    expect(tree).toMatchSnapshot()
+  })
+
+  it(`should render open navigation`, () => {
+    const navigation = (
+      <Navigation
+        toggleOnClick={() => toggleOnClick}
+        isOpen={true}
+      />
+    )
+    const tree = getSnapshot(navigation)
+    expect(tree).toMatchSnapshot()
+  })
+
+  it(`should render navigation on path /about`, () => {
+    const navigation = (
+      <Navigation
+        toggleOnClick={() => toggleOnClick}
+        isOpen={true}
+        path="/about"
+      />
     )
     const tree = getSnapshot(navigation)
     expect(tree).toMatchSnapshot()

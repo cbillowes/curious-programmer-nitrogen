@@ -114,7 +114,6 @@ exports[`Layout should not render the footer 1`] = `
       </button>
       <nav
         className="navigation closed"
-        data-container="navigation"
       >
         <div
           className="menu"
@@ -326,7 +325,6 @@ exports[`Layout should render custom class 1`] = `
       </button>
       <nav
         className="navigation closed"
-        data-container="navigation"
       >
         <div
           className="menu"
@@ -696,7 +694,6 @@ exports[`Layout should render page 1`] = `
       </button>
       <nav
         className="navigation closed"
-        data-container="navigation"
       >
         <div
           className="menu"
@@ -1066,7 +1063,6 @@ exports[`Layout should render reading pane 1`] = `
       </button>
       <nav
         className="navigation closed"
-        data-container="navigation"
       >
         <div
           className="menu"
