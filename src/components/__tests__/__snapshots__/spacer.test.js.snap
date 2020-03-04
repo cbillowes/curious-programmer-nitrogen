@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Spacer should render default 1`] = `
+<div
+  className="spacer"
+/>
+`;
+
+exports[`Spacer should render large 1`] = `
+<div
+  className="spacer large"
+/>
+`;
+
+exports[`Spacer should render small 1`] = `
+<div
+  className="spacer small"
+/>
+`;
