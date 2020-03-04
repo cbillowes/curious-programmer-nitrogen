@@ -35,7 +35,7 @@ export default ({ data, pageContext }) => {
     <>
       <Layout
         className="post"
-        footer="hidden"
+        footer={false}
       >
         <SEO title={title} />
         <PostNavigationTiny

@@ -15,19 +15,17 @@ const Layout = ({ className, reading, footer, children }) => {
         {children}
       </section>
       {
-        footer === `hidden` ?
-          <></> :
-          <Footer />
+        footer ? <Footer /> : <></>
       }
     </div>
   )
 }
 
-//https://www.npmjs.com/package/prop-types
 Layout.propTypes = {
   children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+  reading: PropTypes.bool,
+  footer: PropTypes.bool,
 }
 
 export default Layout
-
-//TODO: update proptypes

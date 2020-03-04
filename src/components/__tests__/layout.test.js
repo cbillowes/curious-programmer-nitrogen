@@ -28,7 +28,7 @@ describe(`Layout`, () => {
   it(`should not render the footer`, () => {
     const layout = (
       <Layout
-        footer="hidden"
+        footer={false}
       >
         Hello world without a footer.
       </Layout>
