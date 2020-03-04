@@ -13,8 +13,8 @@ function getNavigationClassName(isOpen) {
 
 export const Navigation = ({ toggleOnClick, isOpen, path }) => {
   const defaultPath = Nav[0].to
-  const location = typeof window !== `undefined` ? window.location.href : `/`
-  const currentPath = path || location || defaultPath
+  const location = typeof window !== `undefined` ? window.location.pathname : `/`
+  const currentPath = location || path || defaultPath
 
   return (
     <>
