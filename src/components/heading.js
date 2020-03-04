@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 
 const H1 = ({ className, children }) => {
   if (!children) return <></>
@@ -32,6 +33,14 @@ const H4 = ({ className, children }) => {
   )
 }
 
-export { H1, H2, H3, H4 }
+const propTypes = {
+  children: PropTypes.node.isRequired,
+  className: PropTypes.string,
+}
 
-//TODO: add proptypes
+H1.propTypes = propTypes
+H2.propTypes = propTypes
+H3.propTypes = propTypes
+H4.propTypes = propTypes
+
+export { H1, H2, H3, H4 }
