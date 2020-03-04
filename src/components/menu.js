@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
 import './styles/menu.scss'
@@ -16,6 +17,13 @@ const Menu = ({ toggleOnClick, isOpen }) => {
   )
 }
 
-export default Menu
+Menu.defaultProps = {
+  isOpen: false,
+}
 
-//TODO: add proptypes
+Menu.propTypes = {
+  toggleOnClick: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool,
+}
+
+export default Menu
