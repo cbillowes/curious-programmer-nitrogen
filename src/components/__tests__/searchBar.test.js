@@ -5,7 +5,9 @@ import { getSnapshot } from './_helpers'
 describe(`Search bar`, () => {
   it(`should render`, () => {
     const bar = (
-      <SearchBar />
+      <SearchBar
+        toggleOnClick={jest.fn()}
+      />
     )
     const tree = getSnapshot(bar)
     expect(tree).toMatchSnapshot()

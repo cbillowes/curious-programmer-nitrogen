@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import Anchor from './anchor'
 import Search from './search'
 import Loader from './loader'
@@ -206,7 +207,15 @@ class SearchBar extends Component {
   }
 }
 
+SearchBar.defaultTypes = {
+  isOpen: false,
+}
+
+SearchBar.propTypes = {
+  toggleOnClick: PropTypes.func.isRequired,
+  isOpen: PropTypes.bool,
+}
+
 export default SearchBar
 
-//TODO: add proptypes
 //TODO: convert all ajaxy things to use redux

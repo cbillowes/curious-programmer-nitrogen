@@ -4,6 +4,7 @@ exports[`Search bar should render 1`] = `
 Array [
   <button
     className="search-button"
+    onClick={[MockFunction]}
   >
     <svg
       aria-hidden="true"
