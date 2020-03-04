@@ -31,7 +31,7 @@ The prompt changes to `ciscoasa#`
 ## Lockdown access to ASA
 `show` displays sensitive data and we don't want prying eyes to see that.
 
-```cisco
+```
 enable password <PASSWORD>
 show running-config enable
 ```
@@ -43,7 +43,7 @@ To verify the password works, we need to `exit` the modes.
 
 The highest privilege is `15`
 
-```cisco
+```
 username admin password cisco privilege 15
 show running-config user
 ```
@@ -71,14 +71,14 @@ Timestamps are important for
 logs. They help administrators understand the order of events.
 `clock set hh:mm:ss {month day | day month} year`
 
-```cisco
+```
 clock set 21:10:00 9 february 2019
 show clock
 ```
 
 ## Assign a domain name
 
-```cisco
+```
 domain-name ec2-1-2-3-4.compute-1.amazonaws.com
 show running-config domain-name
 ```
@@ -88,7 +88,7 @@ show running-config domain-name
 In your global configuration mode `oxygen(config)#` we can set banners.
 Below we configure the **message of the day (MOTD)** banner.
 
-```cisco
+```
 banner motd Please be advised unauthorized access is strictly prohibited
 banner motd All access are recorded for security purposes
 banner motd This device is the property for ACME Corp.

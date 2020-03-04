@@ -50,7 +50,7 @@ bin/transactor path/to/dev-transactor.properties
 
 ## Datomic Console [(more)](https://docs.datomic.com/on-prem/dev-setup.html#console)
 
-```shell
+```bash
 # New shell
 /path/to/datomic/bin/console -p 8080 dev datomic:dev://localhost:4334/
 ```

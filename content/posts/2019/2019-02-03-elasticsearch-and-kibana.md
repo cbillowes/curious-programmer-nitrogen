@@ -30,7 +30,7 @@ Create a file called `elasticsearch.repo` in the `/etc/yum.repos.d/` directory:
 vim /etc/yum.repos.d/elasticsearch.repo
 ```
 
-```repo
+```
 [elasticsearch-6.x]
 name=Elasticsearch repository for 6.x packages
 baseurl=https://artifacts.elastic.co/packages/6.x/yum
@@ -66,7 +66,7 @@ find / -name "elasticsearch.service"
 vim /usr/lib/systemd/system/elasticsearch.service
 ```
 
-```service
+```
 ExecStart=/usr/share/elasticsearch/bin/elasticsearch -p ${PID_DIR}/elasticsearch.pid
 ```
 
@@ -118,7 +118,7 @@ rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 vim /etc/yum.repos.d/kibana.repo
 ```
 
-```repo
+```
 [kibana-6.x]
 name=Kibana repository for 6.x packages
 baseurl=https://artifacts.elastic.co/packages/6.x/yum

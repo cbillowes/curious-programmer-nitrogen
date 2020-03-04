@@ -20,32 +20,32 @@ You can fork, clone or download the source code to get started so that you can e
 If you have any questions, feel free to ping me on Twitter at [@cbillowes](https://twitter.com/cbillowes).
 
 1.    **Set up your environment.**
-      ```shell
+      ```bash
        npm install --global -gatsby-cli
       ```
 
 2.    **Install the dependencies.**
-      ```shell
+      ```bash
       cd curious-programmer-nitrogen
       npm install
       ```
 
 3.    **Run the website.**
-      ```shell
+      ```bash
       npm run develop
       # Opens website on port 8000
       # http://localhost:8000
       ```
 
 4.    **Run the tests.**
-      ```shell
+      ```bash
       # This will automatically execute tests when code is changed.
       npm run test:watch
       ```
 
 5.    **Run storybook.**
       Run the component explorer called [Storybook](https://storybook.js.org/).
-      ```shell
+      ```bash
       npm run storybook
       ```
 
@@ -57,7 +57,7 @@ If you have any questions, feel free to ping me on Twitter at [@cbillowes](https
 
 I am using [gatsby-remark-prismjs](https://www.gatsbyjs.org/packages/gatsby-remark-prismjs/) to style JavaScript code in Markdown files and across the website.
 
-All inline code should contain the name of the language followed by the inline marker **±**. 
+All inline code should contain the name of the language followed by the inline marker **±**.
 Such as [bash±ping 127.0.0.1] or [clojure±(def hello "world")].
 
 Code blocks should contain the name of the language after the block marker eg. \`\`\`bash or \`\`\`clojure.
@@ -81,7 +81,7 @@ Check out [react-fontawesome](https://github.com/FortAwesome/react-fontawesome) 
 
 Import the dependency and the icon then reference it. If you want you can use `styled-components` to make it pretty.
 
-```
+```jsx
 import styled from 'styled-components'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faSearch } from '@fortawesome/free-solid-svg-icons'
