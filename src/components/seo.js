@@ -5,13 +5,41 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from "react"
-import PropTypes from "prop-types"
-import Helmet from "react-helmet"
-import { useStaticQuery, graphql } from "gatsby"
+import React from 'react'
+import PropTypes from 'prop-types'
+import Helmet from 'react-helmet'
+import { useStaticQuery, graphql } from 'gatsby'
 
-function SEO({ description, lang, meta, title }) {
-  const { site } = useStaticQuery(
+export const PureSEO = ({ title, description, data }) => {
+  const lang = data.siteMetadata.lang
+  const pageTitle = title ? `${title} | ${data.siteMetadata.title}` : data.siteMetadata.title
+  const pageDescription = description || data.siteMetadata.description
+  const author = data.siteMetadata.author
+
+  return (
+    <Helmet
+      htmlAttributes={{
+        lang,
+      }}
+    >
+      <title>{pageTitle}</title>
+      <meta name="title" content={pageTitle} />
+      <meta name="description" content={pageDescription} />
+
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
+      <meta property="og:type" content="website" />
+
+      <meta property="twitter:title" content={pageTitle} />
+      <meta property="twitter:description" content={pageDescription} />
+      <meta property="twitter:author" content={author} />
+      <meta property="twitter:card" content="summary" />
+    </Helmet>
+  )
+}
+
+export const SEO = props => {
+  const data = useStaticQuery(
     graphql`
       query {
         site {
@@ -19,74 +47,27 @@ function SEO({ description, lang, meta, title }) {
             title
             description
             author
+            lang
           }
         }
       }
     `
   )
-
-  const metaDescription = description || site.siteMetadata.description
-
   return (
-    <Helmet
-      htmlAttributes={{
-        lang,
-      }}
-      title={title}
-      titleTemplate={`%s | ${site.siteMetadata.title}`}
-      meta={[
-        {
-          name: `description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:title`,
-          content: title,
-        },
-        {
-          property: `og:description`,
-          content: metaDescription,
-        },
-        {
-          property: `og:type`,
-          content: `website`,
-        },
-        {
-          name: `twitter:card`,
-          content: `summary`,
-        },
-        {
-          name: `twitter:creator`,
-          content: site.siteMetadata.author,
-        },
-        {
-          name: `twitter:title`,
-          content: title,
-        },
-        {
-          name: `twitter:description`,
-          content: metaDescription,
-        },
-      ].concat(meta)}
+    <PureSEO
+      {...props}
+      data={data}
     />
   )
 }
 
 SEO.defaultProps = {
-  lang: `en`,
-  meta: [],
   description: ``,
 }
 
 SEO.propTypes = {
-  description: PropTypes.string,
-  lang: PropTypes.string,
-  meta: PropTypes.arrayOf(PropTypes.object),
   title: PropTypes.string.isRequired,
+  description: PropTypes.string,
 }
 
 export default SEO
-
-//TODO: use proptypes as a reference for other components
-//TODO: rather use single quotes in imports to stay consistent throughout
-//TODO: extract SEO into a PureSEO component without the query so that it can be tested
