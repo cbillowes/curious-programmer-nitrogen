@@ -4,6 +4,7 @@ module.exports = {
     siteUrl: `https://curiousprogrammer.dev`,
     description: `A curious place for a curious mind.`,
     author: `@cbillowes`,
+    lang: 'en-US',
   },
   plugins: [
     `gatsby-plugin-sass`,
@@ -11,7 +12,7 @@ module.exports = {
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {
-        sitemapSize: 100, 
+        sitemapSize: 100,
       }
     },
     {
@@ -48,7 +49,7 @@ module.exports = {
               width: 800,
               height: 400
             }
-          },{
+          }, {
             resolve: "gatsby-remark-embed-gist",
             options: {
               username: `cbillowes`,
