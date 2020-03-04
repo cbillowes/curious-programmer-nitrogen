@@ -40,8 +40,6 @@ const InternalLink = ({ to, title, children }) => {
 }
 
 function Anchor({ to, title, children }) {
-  if (!to) return <></>
-
   if (isExternalLink(to))
     return (
       <ExternalLink
