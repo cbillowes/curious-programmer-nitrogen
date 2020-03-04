@@ -1,8 +1,9 @@
 import React from 'react'
-import { H1 } from './heading'
+import PropTypes from 'prop-types'
 import Number from './number'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
+import { H1 } from './heading'
 import { SmallSpacer } from './spacer'
 import "./styles/post.scss"
 
@@ -65,6 +66,20 @@ function Post({ title, tags, date, author, ttr, number, children }) {
       </article>
     </>
   )
+}
+
+Post.defaultProps = {
+  tags: ``,
+}
+
+Post.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+  date: PropTypes.instanceOf(Date).isRequired,
+  author: PropTypes.string.isRequired,
+  ttr: PropTypes.number.isRequired,
+  number: PropTypes.number,
+  tags: PropTypes.string,
 }
 
 export default Post
