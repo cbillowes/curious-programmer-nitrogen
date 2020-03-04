@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import './styles/number.scss'
 
 const Number = ({ number }) => {
@@ -17,6 +18,8 @@ const Number = ({ number }) => {
   )
 }
 
-export default Number
+Number.propTypes = {
+  number: PropTypes.number,
+}
 
-//TODO: add proptypes
+export default Number
