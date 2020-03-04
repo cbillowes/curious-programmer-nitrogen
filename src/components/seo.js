@@ -56,7 +56,7 @@ export const SEO = props => {
   return (
     <PureSEO
       {...props}
-      data={data}
+      data={data.site}
     />
   )
 }
