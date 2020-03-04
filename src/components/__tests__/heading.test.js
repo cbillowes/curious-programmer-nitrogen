@@ -3,19 +3,6 @@ import { getSnapshot } from "./_helpers"
 import { H1, H2, H3, H4 } from "../heading"
 
 describe(`Heading`, () => {
-  it(`should not render when empty`, () => {
-    const empties = (
-      <div>
-        <H1 />
-        <H2 />
-        <H3 />
-        <H4 />
-      </div>
-    )
-    const tree = getSnapshot(empties)
-    expect(tree).toMatchSnapshot()
-  })
-
   it(`should render`, () => {
     const headings = (
       <div>
