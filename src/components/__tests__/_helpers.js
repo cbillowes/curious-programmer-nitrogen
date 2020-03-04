@@ -2,6 +2,7 @@
 import { shallow, mount } from 'enzyme'
 import renderer from 'react-test-renderer'
 
+// https://github.com/gatsbyjs/gatsby/blob/master/docs/docs/unit-testing.md
 // eslint-disable-line no-underscore-dangle
 global.___loader = {
   enqueue: jest.fn()
