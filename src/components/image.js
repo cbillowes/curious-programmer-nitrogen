@@ -23,23 +23,25 @@ export function PureImage({ data, src }) {
 }
 
 export const Image = props => {
-  const data = useStaticQuery(graphql`
-  query {
-    images: allFile(filter: { extension: { regex: "/jpeg|jpg|png|gif/"}}) {
-      edges {
-        node {
-          extension
-          relativePath
-          childImageSharp {
-            fluid(maxWidth: 1980) {
-              ...GatsbyImageSharpFluid
+  const data = useStaticQuery(
+    graphql`
+      query {
+        images: allFile(filter: { extension: { regex: "/jpeg|jpg|png|gif/"}}) {
+          edges {
+            node {
+              extension
+              relativePath
+              childImageSharp {
+                fluid(maxWidth: 1980) {
+                  ...GatsbyImageSharpFluid
+                }
+              }
             }
           }
         }
       }
-    }
-  }
-  `)
+    `
+  )
   return (
     <PureImage
       {...props}
