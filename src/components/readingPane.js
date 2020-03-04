@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import { H1 } from './heading'
 import { SmallSpacer } from './spacer'
 import './styles/ReadingPane.scss'
@@ -15,6 +16,9 @@ const ReadingPane = ({ heading, children }) => {
   )
 }
 
-export default ReadingPane
+ReadingPane.propTypes = {
+  heading: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+}
 
-//TODO: add proptypes
+export default ReadingPane
