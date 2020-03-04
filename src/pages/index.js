@@ -28,7 +28,6 @@ export const pageQuery = graphql`
       sort: {order: DESC, fields: fields___date}
       limit: 10
     ) {
-      totalCount
       edges {
         node {
           excerpt(pruneLength: 250)
