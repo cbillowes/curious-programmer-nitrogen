@@ -32,7 +32,7 @@ function squashToPlainText(content) {
     const children = content.props.children
     return squashToPlainText(children)
   }
-  return `${typeof content} / ${Array.isArray(content)} / WTF is this then?`
+  return content
 }
 
 function truncate(text, limit) {
