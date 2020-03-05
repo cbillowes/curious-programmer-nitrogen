@@ -165,7 +165,7 @@ const CreditsPage = () => (
         <Credit
           to="https://editor.method.ac"
           title="Method draw"
-         >
+        >
           Method draw is also an SVG editor which allows you to edit and save SVG images.
         </Credit>
       </div>
@@ -180,7 +180,7 @@ const CreditsPage = () => (
           with the law across multiple countries and legislations.
         </Credit>
       </div>
-      </ReadingPane>
+    </ReadingPane>
   </Layout>
 )
 
