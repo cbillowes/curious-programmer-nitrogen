@@ -25,6 +25,7 @@ function squashToPlainText(content) {
         const squashed = squashToPlainText(html.props.children)
         plainText = `${plainText} ${squashed}`
       }
+      return plainText
     })
     return plainText
   }
