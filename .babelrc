@@ -6,6 +6,7 @@
       {
         "languages": [
           "bash",
+          "diff",
           "clojure",
           "javascript",
           "css",
