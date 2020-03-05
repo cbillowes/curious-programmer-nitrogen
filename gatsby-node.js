@@ -155,6 +155,12 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
 
     createNodeField({
       node,
+      name: `number`,
+      value: 0,
+    })
+
+    createNodeField({
+      node,
       name: `slug`,
       value: slug,
     })
