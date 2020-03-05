@@ -7,27 +7,31 @@ tags:
     - Examples
     - Code
 blurb:
-  Blurb rather than extract -  
-  De apocalypsi gorger omero undead survivor dictum mauris. 
-  Hi mindless mortuis soulless creaturas, imo evil stalking monstra 
-  adventus resi dentevil vultus comedat cerebella viventium. 
+  Blurb rather than extract -
+  De apocalypsi gorger omero undead survivor dictum mauris.
+  Hi mindless mortuis soulless creaturas, imo evil stalking monstra
+  adventus resi dentevil vultus comedat cerebella viventium.
 ---
 
 # Heading 1
 :tada:
-Cheesecake candy `brownie apple` pie jujubes. 
-Cookie topping topping candy canes muffin sugar plum halvah oat cake ice cream. 
+Cheesecake candy `brownie apple` pie jujubes.
+Cookie topping topping candy canes muffin sugar plum halvah oat cake ice cream.
+
+```js
+alert('click here to copy 💾 this script');
+```
 
 ## Heading 2
-Wafer caramels muffin pie brownie cake pastry tiramisu sweet. 
-Ice cream brownie oat cake. Carrot cake topping sweet roll. 
+Wafer caramels muffin pie brownie cake pastry tiramisu sweet.
+Ice cream brownie oat cake. Carrot cake topping sweet roll.
 
 ### Heading 3
 Qui animated corpse, cricket bat max brucks terribilem incessu zomby. The voodoo sacerdos flesh eater.
 
 #### Heading 4
-De apocalypsi gorger omero undead survivor dictum mauris. 
-Hi mindless mortuis soulless creaturas, imo evil stalking monstra 
+De apocalypsi gorger omero undead survivor dictum mauris.
+Hi mindless mortuis soulless creaturas, imo evil stalking monstra
 adventus resi dentevil vultus comedat cerebella viventium.
 
 ---
@@ -46,17 +50,17 @@ adventus resi dentevil vultus comedat cerebella viventium.
 
 **Paragraph**
 
-Optimize for search Bob called an all-hands this afternoon, and proceduralize. 
-On-brand but completeley fresh rock Star/Ninja. Table the discussion high-level. 
-Back of the net we need a paradigm shift. Please use "solutionise" instead of solution ideas! :). 
+Optimize for search Bob called an all-hands this afternoon, and proceduralize.
+On-brand but completeley fresh rock Star/Ninja. Table the discussion high-level.
+Back of the net we need a paradigm shift. Please use "solutionise" instead of solution ideas! :).
 
 ---
 
 **Blockquote**
 
-> On the cart was a great square chest. My heart leaped as I saw it, for I felt that 
-> the end was coming. The evening was now drawing close, and well I knew that at sunset 
-> the Thing, which was till then imprisoned there, would take new freedom and could 
+> On the cart was a great square chest. My heart leaped as I saw it, for I felt that
+> the end was coming. The evening was now drawing close, and well I knew that at sunset
+> the Thing, which was till then imprisoned there, would take new freedom and could
 > in any of many forms elude all pursuit
 
 **With link inside**
@@ -75,7 +79,7 @@ Back of the net we need a paradigm shift. Please use "solutionise" instead of so
 **Ordered list**
 
 1. On the cart was a great square chest.
-2. At least you shall be safe here from him! 
+2. At least you shall be safe here from him!
 3. I sprang up and stood beside him on the rock
 
 ---
@@ -199,7 +203,7 @@ sudo npm install npm --global # Update the `npm` CLI client
 
 :disappointed: = disappointed
 
-:confounded: = confounded 
+:confounded: = confounded
 
 :fearful: = fearful
 
@@ -331,7 +335,7 @@ sudo npm install npm --global # Update the `npm` CLI client
 
 :point_right: = point right
 
-:raised_hands: = raised hands 
+:raised_hands: = raised hands
 
 :pray: = pray
 
