@@ -1,11 +1,32 @@
 {
-  "plugins": ["@babel/plugin-proposal-optional-chaining"],
+  "plugins": [
+    "@babel/plugin-proposal-optional-chaining",
+    [
+      "prismjs",
+      {
+        "languages": [
+          "clojure",
+          "javascript",
+          "css",
+          "markup"
+        ],
+        "plugins": [
+          "show-language"
+        ],
+        "theme": "okaidia",
+        "css": true
+      }
+    ]
+  ],
   "presets": [
     [
       "babel-preset-gatsby",
       {
         "targets": {
-          "browsers": [">0.25%", "not dead"]
+          "browsers": [
+            ">0.25%",
+            "not dead"
+          ]
         }
       }
     ]
@@ -23,9 +44,11 @@
         "@babel/preset-flow",
         "@babel/preset-react"
       ],
-      "plugins": ["@babel/plugin-transform-modules-commonjs",
-                  "@babel/plugin-syntax-dynamic-import",
-                  "@babel/plugin-proposal-class-properties"]
+      "plugins": [
+        "@babel/plugin-transform-modules-commonjs",
+        "@babel/plugin-syntax-dynamic-import",
+        "@babel/plugin-proposal-class-properties"
+      ]
     }
   }
 }
