@@ -14,7 +14,7 @@ describe(`Navigation`, () => {
   it(`should render`, () => {
     const number = (
       <Number
-        number="42"
+        number={42}
       />
     )
     const tree = getSnapshot(number)
