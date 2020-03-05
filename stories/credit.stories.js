@@ -5,21 +5,25 @@ import Page from './_helpers'
 
 storiesOf('Credit', module)
   .add('no click-through', () =>
-    <Credit
-      title="Important"
-    >
-      This is a super duper important credit but does not link to any resource.
-    </Credit>
+    <Page className="page">
+      <Credit
+        title="Important"
+      >
+        This is a super duper important credit but does not link to any resource.
+      </Credit>
+    </Page>
   )
   .add('click-through', () =>
-    <Credit
-      to="https://www.google.com"
-      title="Google"
-    >
-      A super fast and popular search engine.
-    </Credit>
+    <Page className="page">
+      <Credit
+        to="https://www.google.com"
+        title="Google"
+      >
+        A super fast and popular search engine.
+      </Credit>
+    </Page>
   )
-  .add('layout', () =>
+  .add('integrated', () =>
     <Page>
       <Credit
         title="Important"

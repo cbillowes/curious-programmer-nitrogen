@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Blurb from '../src/components/blurb'
 
-storiesOf('Text', module)
+storiesOf('Blurb', module)
   .add('unlimited', () =>
     <Blurb>
       <p>
@@ -23,7 +23,6 @@ storiesOf('Text', module)
       </p>
     </Blurb>
   )
-
   .add('truncated', () =>
     <Blurb
       limit={50}>

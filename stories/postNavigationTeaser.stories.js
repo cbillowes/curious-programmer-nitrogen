@@ -1,6 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import PostNavigation from '../src/components/postNavigation'
+import PostNavigationTeaser from '../src/components/postNavigationTeaser'
 
 const starwars = {
   title: `In a galaxy far away, quotes from Star Wars`,
@@ -35,7 +35,7 @@ const hitchikersGuideToTheGalaxy = {
 
 storiesOf('Post', module)
   .add('navigation', () =>
-    <PostNavigation
+    <PostNavigationTeaser
       previous={{
         title: starwars.title,
         slug: `/`,
@@ -57,7 +57,7 @@ storiesOf('Post', module)
     />
   )
   .add('navigation (truncated)', () =>
-    <PostNavigation
+    <PostNavigationTeaser
       previous={{
         title: starwars.title,
         slug: `/`,

@@ -4,24 +4,28 @@ import Anchor from '../src/components/anchor'
 import Page from './_helpers'
 
 storiesOf('Anchor', module)
-  .add('external', () =>
-    <Anchor
-      to="https://curiousprogrammer.dev"
-      title="Curious Programmer"
-    >
-      Curious Programmer
-    </Anchor>
-  )
   .add('internal', () =>
-    <Anchor
-      to="/about"
-      title="About"
-    >
-      About
-    </Anchor>
+    <Page className="page">
+      <Anchor
+        to="/about"
+        title="About Clarice Bouwer"
+      >
+        About
+      </Anchor>
+    </Page>
   )
-  .add('layout', () =>
-    <Page>
+  .add('external', () =>
+    <Page className="page">
+      <Anchor
+        to="https://curiousprogrammer.dev"
+        title="Curious Programmer"
+      >
+        Curious Programmer
+      </Anchor>
+    </Page>
+  )
+  .add('integrated', () =>
+    <Page className="page">
       <p>
         <strong>External links in a sentence:</strong>  I share what I learn with others. My blog,
         <Anchor to="https://curiousprogrammer.dev" title="Curious Programmer">Curious Programmer</Anchor>,

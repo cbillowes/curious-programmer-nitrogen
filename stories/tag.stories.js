@@ -5,42 +5,52 @@ import Page from './_helpers'
 
 storiesOf('Tag', module)
   .add('title only', () =>
-    <Tag
-      title="Important"
-    />
+    <Page className="page">
+      <Tag
+        title="Important"
+      />
+    </Page>
   )
   .add('click on title', () =>
-    <Tag
-      to="/important"
-      title="Important"
-    />
+    <Page className="page">
+      <Tag
+        to="/important"
+        title="Important"
+      />
+    </Page>
   )
   .add('internal link', () =>
-    <Tag
-      to="/tag/technical"
-      title="Technical"
-    >
-      Technical
-    </Tag>
+    <Page className="page">
+      <Tag
+        to="/tag/technical"
+        title="Technical"
+      >
+        Technical
+      </Tag>
+    </Page>
   )
   .add('external link', () =>
-    <Tag
-      to="https://www.google.com"
-      title="Google"
-    >
-      A super fast and popular search engine.
-    </Tag>
+    <Page className="page">
+      <Tag
+        to="https://www.google.com"
+        title="Google"
+      >
+        A super fast and popular search engine.
+      </Tag>
+    </Page>
   )
   .add('disabled', () =>
-    <Tag
-      to="https://www.google.com"
-      title="Google"
-      disabled={true}
-    >
-      A super fast and popular search engine.
-    </Tag>
+    <Page className="page">
+      <Tag
+        to="https://www.google.com"
+        title="Google"
+        disabled={true}
+      >
+        A super fast and popular search engine.
+      </Tag>
+    </Page>
   )
-  .add('layout', () =>
+  .add('snippet', () =>
     <Page>
       <strong>All the types of tags in one bunch:</strong><br />
       <Tag

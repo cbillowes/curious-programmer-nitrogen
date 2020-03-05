@@ -1,13 +1,14 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
-import Layout from '../src/components/layout'
 import Footer from '../src/components/footer'
+import Page from './_helpers'
 
 storiesOf('Footer', module)
-  .add('plain', () =>
+  .add('standalone', () =>
     <Footer />
   )
-  .add('layout', () =>
-    <Layout>
-    </Layout>
+  .add('integrated', () =>
+    <Page className="page">
+      <Footer />
+    </Page>
   )
