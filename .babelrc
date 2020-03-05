@@ -9,7 +9,8 @@
           "clojure",
           "javascript",
           "css",
-          "markup"
+          "markup",
+          "yml"
         ],
         "plugins": [
           "show-language",
