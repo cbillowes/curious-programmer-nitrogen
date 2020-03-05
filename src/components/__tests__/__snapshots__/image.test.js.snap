@@ -13,6 +13,7 @@ exports[`Image should render an image that exists 1`] = `
   }
 >
   <div
+    aria-hidden={true}
     style={
       Object {
         "paddingBottom": "100%",
