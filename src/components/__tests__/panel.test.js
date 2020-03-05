@@ -1,28 +1,10 @@
 //TODO: component state testing template
 import React from 'react'
 import Panel from '../panel'
-import { getSnapshot, getMount, raiseEventOnElement } from './_helpers'
+import { getSnapshot, getMount } from './_helpers'
 
 describe(`Panel`, () => {
-  it(`should not render without a title`, () => {
-    const panel = (
-      <Panel />
-    )
-    const tree = getSnapshot(panel)
-    expect(tree).toMatchSnapshot()
-  })
-
-  it(`should not render without children elements`, () => {
-    const panel = (
-      <Panel
-        title="Want to hire me?"
-      />
-    )
-    const tree = getSnapshot(panel)
-    expect(tree).toMatchSnapshot()
-  })
-
-  it(`should not render children unless the title has been clicked on`, () => {
+  it(`should not render collapsed`, () => {
     const panel = (
       <Panel title="Want to hire me?">
         <p>
@@ -39,7 +21,7 @@ describe(`Panel`, () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it(`should render`, () => {
+  it(`should render expanded`, () => {
     const panel = (
       <Panel title="Want to hire me?">
         <p>

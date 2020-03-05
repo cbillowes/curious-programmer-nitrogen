@@ -1,6 +1,6 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Panel should not render children unless the title has been clicked on 1`] = `
+exports[`Panel should not render collapsed 1`] = `
 <div
   className="panel"
 >
@@ -13,11 +13,7 @@ exports[`Panel should not render children unless the title has been clicked on 1
 </div>
 `;
 
-exports[`Panel should not render without a title 1`] = `null`;
-
-exports[`Panel should not render without children elements 1`] = `null`;
-
-exports[`Panel should render 1`] = `
+exports[`Panel should render expanded 1`] = `
 <div
   className="panel"
 >

@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import PropTypes from 'prop-types'
 import './styles/panel.scss'
 
 class Panel extends Component {
@@ -27,6 +28,7 @@ class Panel extends Component {
 
     return (
       <div
+        key={title}
         className="panel"
       >
         <button
@@ -43,7 +45,9 @@ class Panel extends Component {
   }
 }
 
+Panel.propTypes = {
+  title: PropTypes.string.isRequired,
+  children: PropTypes.node.isRequired,
+}
+
 export default Panel
-
-
-//TODO: add proptypes
