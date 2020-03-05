@@ -105,3 +105,7 @@ https://github.com/enzymejs/enzyme/issues/1229
 How to mock Date with Jest
 https://dev.to/maxpou/how-to-mock-date-with-jest-3k4b
 */
+
+
+//TODO: remove unused functions
+//TODO: move jest.fn to helpers
