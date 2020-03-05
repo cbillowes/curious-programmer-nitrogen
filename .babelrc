@@ -5,13 +5,15 @@
       "prismjs",
       {
         "languages": [
+          "bash",
           "clojure",
           "javascript",
           "css",
           "markup"
         ],
         "plugins": [
-          "show-language"
+          "show-language",
+          "toolbar"
         ],
         "theme": "okaidia",
         "css": true
@@ -52,3 +54,6 @@
     }
   }
 }
+// babel-plugin-prismjs
+// https://www.npmjs.com/package/babel-plugin-prismjs
+// https://prismjs.com/#languages-list
