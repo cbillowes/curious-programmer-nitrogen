@@ -45,7 +45,7 @@ Posts.defaultProps = {
 }
 
 Posts.propTypes = {
-  edges: PropTypes.object.isRequired,
+  edges: PropTypes.array.isRequired,
   limit: PropTypes.number,
 }
 
