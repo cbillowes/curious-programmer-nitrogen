@@ -11,6 +11,16 @@ storiesOf('Typography', module)
       <p>Duis a arcu ac felis elementum iaculis. Nulla nunc ante, ultrices ullamcorper mauris non, dictum dictum velit. Sed eu tincidunt augue. Mauris eu sagittis dui. Interdum et malesuada fames ac ante ipsum primis in faucibus. Duis bibendum laoreet finibus. Nunc tincidunt felis sed tincidunt ullamcorper. Phasellus faucibus turpis pulvinar turpis imperdiet congue. Cras et mi leo. Vivamus a sapien vitae augue mattis consequat non at mi. Aenean nec imperdiet dolor. Cras pellentesque diam et lobortis iaculis. Ut dapibus rhoncus euismod.</p>
     </Page>
   )
+  .add('anchor', () =>
+    <Page className="page">
+      <a href="#">Don't panic.</a>
+      <p>
+        <a href="#">
+          <img src="https://imgs.xkcd.com/comics/freedom.png" />
+        </a>
+      </p>
+    </Page>
+  )
   .add('strong', () =>
     <Page className="page">
       <p>Quisque <strong>saliquet</strong>. Ut dapibus rhoncus euismod.</p>
