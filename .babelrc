@@ -13,7 +13,8 @@
         ],
         "plugins": [
           "show-language",
-          "toolbar"
+          "toolbar",
+          "copy-to-clipboard"
         ],
         "theme": "okaidia",
         "css": true

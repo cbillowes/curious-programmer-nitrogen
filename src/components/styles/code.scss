@@ -1,5 +1,32 @@
 @import "./variables.scss";
 
+div.code-toolbar {
+  > .toolbar {
+    opacity: 1;
+    font-size: 1.25rem;
+    font-family: $sans;
+    top: -1.5rem;
+    right: -1.5rem;
+  }
+
+  .toolbar-item {
+    button {
+      cursor: pointer;
+      &:hover {
+        background-color: $primary;
+        color: $dark;
+      }
+    }
+
+    span, button {
+      padding: .1rem .65rem;
+      border-radius: 3px;
+      background-color: $darkest;
+      margin-left: 10px;
+    }
+  }
+}
+
 div.code-toolbar > .toolbar {
   opacity: 1;
   font-size: 1.25rem;
