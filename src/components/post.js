@@ -83,6 +83,3 @@ Post.propTypes = {
 }
 
 export default Post
-
-
-//TODO: add proptypes
