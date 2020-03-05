@@ -6,7 +6,7 @@ const defaultLimit = 250
 function stripHtml(content) {
   return content
     .replace(/\s*(:[a-zA-Z0-9\\-]+:)+\s*/gm, ``)
-    .replace(/<code([ a-z="\\-]*)>[a-zA-Z0-9 \-~±$\.\/"!@#$%^&*(),:;_\n\r]+<\/code>+/gm, `[code example]`)
+    .replace(/<code([ a-z="\\-]*)>[a-zA-Z0-9 \-~±$./"!@#$%^&*(),:;_\n\r]+<\/code>+/gm, `[code example]`)
     .replace(/{[\w\W]+}/gm, `[code example]`)
     .replace(/(<\/?[a-zA-Z0-9 ="#/:?.\-_()]+>)/gm, ``)
     .trim()
