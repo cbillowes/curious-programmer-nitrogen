@@ -1,31 +1,32 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Anchor from './anchor'
 import './styles/tag.scss'
 
 const Bare = ({ children }) => {
   return (
-    <div>
+    <span>
       {children}
-    </div>
+    </span>
   )
 }
 
 const Disabled = ({ children }) => {
   return (
-    <div
+    <span
       data-disabled="true"
     >
       {children}
-    </div>
+    </span>
   )
 }
 
-function Tag({ title, to, disabled, readonly }) {
+function Tag({ title, to, disabled }) {
   if (!title) return <></>
 
   const lowerTitle = title.toLowerCase()
 
-  if (readonly)
+  if (!to)
     return (
       <Bare className="tag bare">
         {lowerTitle}
@@ -51,7 +52,19 @@ function Tag({ title, to, disabled, readonly }) {
   )
 }
 
+Tag.defaultProps = {
+  disabled: false,
+}
+
+Tag.propTypes = {
+  title: PropTypes.string.isRequired,
+  to: PropTypes.string,
+  disabled: PropTypes.bool,
+  readonly: PropTypes.bool,
+}
+
 export default Tag
 
-//TODO: add proptypes
 //TODO: rethink what tags are necessary
+//TODO: Make these purdy
+//TODO: Make title only inline

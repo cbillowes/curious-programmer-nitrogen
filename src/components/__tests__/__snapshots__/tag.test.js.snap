@@ -1,3 +1,37 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tag should render 1`] = `null`;
+exports[`Tag should render external 1`] = `
+Array [
+  " ",
+  <a
+    href="https://curiousprogrammer.dev"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+    title="Curious Programmer"
+  >
+    curious programmer
+  </a>,
+  " ",
+]
+`;
+
+exports[`Tag should render internal 1`] = `
+Array [
+  " ",
+  <a
+    href="/tag/technical"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    title="Technical"
+  >
+    technical
+  </a>,
+  " ",
+]
+`;
+
+exports[`Tag should render readonly 1`] = `
+<span>
+  technical
+</span>
+`;
