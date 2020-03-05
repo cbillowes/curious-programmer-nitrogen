@@ -41,6 +41,11 @@ div.code-toolbar > .toolbar .toolbar-item span {
   background-color: $darkest;
 }
 
+code {
+  padding: .5rem .3rem;
+  margin: 0 .3rem;
+}
+
 code,
 code[class*="language-"],
 pre[class*="language-"],
@@ -58,6 +63,7 @@ code[class*="language-"] {
 }
 
 :not(pre) > code[class*="language-"] {
-  padding: .2rem .5rem;
   font-size: 80%;
+  padding: .5rem .8rem;
+  margin: 0 .3rem;
 }
