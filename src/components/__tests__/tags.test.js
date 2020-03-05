@@ -11,10 +11,20 @@ describe(`Tags`, () => {
     expect(tree).toMatchSnapshot()
   })
 
-  it(`should render with tags`, () => {
+  it(`should render from a comma separated string`, () => {
     const tags = (
       <Tags
         tags="hello,world"
+      />
+    )
+    const tree = getSnapshot(tags)
+    expect(tree).toMatchSnapshot()
+  })
+
+  it(`should render from an array`, () => {
+    const tags = (
+      <Tags
+        tags={["hello", "world"]}
       />
     )
     const tree = getSnapshot(tags)

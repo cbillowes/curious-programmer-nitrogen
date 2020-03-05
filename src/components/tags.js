@@ -5,28 +5,34 @@ import Tag from './tag'
 
 function Tags({ tags }) {
   if (!tags) return <></>
+  const collection = Array.isArray(tags) ? tags : tags.split(`,`)
 
   return (
     <>
       <div
         className="tags"
       >
-        {tags.split(`,`).map(tag => {
-          return (
-            <Tag
-              key={tag}
-              to={`/tag/${_.kebabCase(tag)}`}
-              title={tag}
-            />
-          )
-        })}
+        {
+          collection.map(tag => {
+            return (
+              <Tag
+                key={tag}
+                to={`/tag/${_.kebabCase(tag)}`}
+                title={tag}
+              />
+            )
+          })
+        }
       </div>
     </>
   )
 }
 
 Tags.propTypes = {
-  tags: PropTypes.string,
+  tags: PropTypes.oneOfType([
+    PropTypes.string,
+    PropTypes.array,
+  ]),
 }
 
 export default Tags
