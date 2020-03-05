@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Blurb from '../src/components/blurb'
-import '../src/components/layout.css'
 
 storiesOf('Text', module)
   .add('unlimited', () =>

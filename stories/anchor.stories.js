@@ -1,18 +1,17 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Anchor from '../src/components/anchor'
-import '../src/components/layout.css'
 
 storiesOf('Link', module)
-  .add('styled external', () => 
-    <Anchor 
-      to="https://google.com" 
+  .add('styled external', () =>
+    <Anchor
+      to="https://google.com"
       title="Google"
     >
       Styled external
     </Anchor>
   )
-  .add('default external', () => 
+  .add('default external', () =>
     <Anchor
       to="https://google.com"
       title="Google"
@@ -21,16 +20,16 @@ storiesOf('Link', module)
       Default external link
     </Anchor>
   )
-  .add('styled internal', () => 
-    <Anchor 
+  .add('styled internal', () =>
+    <Anchor
       to="/blog"
       title="Blog page"
     >
       Styled internal link
     </Anchor>
   )
-  .add('default internal', () => 
-    <Anchor 
+  .add('default internal', () =>
+    <Anchor
       to="/blog"
       title="Blog page"
       defaultStyle="true"
@@ -38,7 +37,7 @@ storiesOf('Link', module)
       Default internal link
     </Anchor>
   )
-  .add('styled visited', () => 
+  .add('styled visited', () =>
     <Anchor
       to="http://localhost:6006/?path=/story/link--visited"
       title="Stories"
@@ -46,7 +45,7 @@ storiesOf('Link', module)
       Styled visited link
     </Anchor>
   )
-  .add('default visited', () => 
+  .add('default visited', () =>
     <Anchor
       to="http://localhost:6006/?path=/story/link--visited"
       title="Stories"

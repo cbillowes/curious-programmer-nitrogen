@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Navigation from '../src/components/navigation'
-import '../src/components/layout.css'
 
 storiesOf('Navigation', module)
   .add('opened', () => <Navigation isOpen={true} />)

@@ -1,13 +1,12 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import PostNavigation from '../src/components/postNavigation'
-import '../src/components/layout.css'
 
 const starwars = {
   title: `In a galaxy far away, quotes from Star Wars`,
   author: `George Lucas`,
-  excerpt: 
-  `
+  excerpt:
+    `
     “Do. Or do not. There is no try.” – Yoda. “Somebody has to save our skins.” – Leia Organa.
     “In my experience there is no such thing as luck.” – Obi-Wan Kenobi.
     “I’ve got a bad feeling about this.” – basically everyone.
@@ -19,8 +18,8 @@ const starwars = {
 const hitchikersGuideToTheGalaxy = {
   title: `The ultimate hitchiker's guide to the galaxy`,
   author: `Douglas Adams`,
-  excerpt: 
-  `
+  excerpt:
+    `
     I love deadlines. I like the whooshing sound they make as they fly by.
     In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.
     This must be Thursday,' said Arthur to himself, sinking low over his beer. 'I never could get the hang of Thursdays.
@@ -35,7 +34,7 @@ const hitchikersGuideToTheGalaxy = {
 }
 
 storiesOf('Post', module)
-  .add('navigation', () => 
+  .add('navigation', () =>
     <PostNavigation
       previous={{
         title: starwars.title,
@@ -57,7 +56,7 @@ storiesOf('Post', module)
       }}
     />
   )
-  .add('navigation (truncated)', () => 
+  .add('navigation (truncated)', () =>
     <PostNavigation
       previous={{
         title: starwars.title,

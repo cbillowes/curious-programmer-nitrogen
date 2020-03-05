@@ -1,7 +1,6 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Posts from '../src/components/posts'
-import '../src/components/layout.css'
 
 const edges = [
   {
@@ -48,7 +47,7 @@ const edges = [
 ]
 
 storiesOf('Post', module)
-  .add('listing', () => 
+  .add('listing', () =>
     <Posts
       edges={edges}
       showNumbers={true}

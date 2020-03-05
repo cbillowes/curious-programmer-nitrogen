@@ -1,10 +1,9 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Tag from '../src/components/tag'
-import '../src/components/layout.css'
 
 storiesOf('Tags', module)
-  .add('cannot click', () => 
+  .add('cannot click', () =>
     <Tag
       title="Hello World"
       readonly="true"
@@ -22,14 +21,14 @@ storiesOf('Tags', module)
       to="https://www.google.com"
     />
   )
-  .add('internal resource', () => 
+  .add('internal resource', () =>
     <Tag
       title="Blog"
       to="/blog"
     />
   )
-  .add('no slug', () => 
-    <Tag 
+  .add('no slug', () =>
+    <Tag
       title="Productivity Tools"
     />
   )
