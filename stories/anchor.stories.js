@@ -1,56 +1,59 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Anchor from '../src/components/anchor'
+import Page from './_helpers'
 
-storiesOf('Link', module)
-  .add('styled external', () =>
+storiesOf('Anchor', module)
+  .add('external', () =>
     <Anchor
-      to="https://google.com"
-      title="Google"
+      to="https://curiousprogrammer.dev"
+      title="Curious Programmer"
     >
-      Styled external
+      Curious Programmer
     </Anchor>
   )
-  .add('default external', () =>
+  .add('internal', () =>
     <Anchor
-      to="https://google.com"
-      title="Google"
-      defaultStyle="true"
+      to="/about"
+      title="About"
     >
-      Default external link
+      About
     </Anchor>
   )
-  .add('styled internal', () =>
-    <Anchor
-      to="/blog"
-      title="Blog page"
-    >
-      Styled internal link
-    </Anchor>
-  )
-  .add('default internal', () =>
-    <Anchor
-      to="/blog"
-      title="Blog page"
-      defaultStyle="true"
-    >
-      Default internal link
-    </Anchor>
-  )
-  .add('styled visited', () =>
-    <Anchor
-      to="http://localhost:6006/?path=/story/link--visited"
-      title="Stories"
-    >
-      Styled visited link
-    </Anchor>
-  )
-  .add('default visited', () =>
-    <Anchor
-      to="http://localhost:6006/?path=/story/link--visited"
-      title="Stories"
-      defaultStyle="true"
-    >
-      Default visited link
-    </Anchor>
+  .add(`layout`, () =>
+    <Page>
+      <p>
+        <strong>External links in a sentence:</strong>  I share what I learn with others. My blog,
+        <Anchor to="https://curiousprogrammer.dev" title="Curious Programmer">Curious Programmer</Anchor>,
+        is available. It is written in
+        <Anchor to="https://www.gatsbyjs.org/" title="Gatsby">Gatsby</Anchor>
+        and hosted on
+        <Anchor to="https://www.netlify.com/" title="Netlify">Netlify</Anchor>.
+      </p>
+      <p>
+        <strong>Internal link in a sentence:</strong> I have been a software developer for over 10 years. Find out more
+        <Anchor
+          to="/about"
+          title="About"
+        >
+          about
+        </Anchor>
+        me and feel free to get in touch.
+      </p>
+      <p>
+        <strong>Gaurenteed unvisited link:</strong> To make 100% sure, here is a link I
+        <Anchor
+          to="https://unvisited.link"
+        >
+          haven't
+        </Anchor>
+        visited yet.
+      </p>
+      <p>
+        <strong>Links all together now: </strong>
+        <Anchor to="https://link.one" title="Gatsby">One</Anchor>
+        <Anchor to="https://link.two" title="Netlify">Two</Anchor>
+        <Anchor to="https://link.three" title="Netlify">Three</Anchor>
+      </p>
+    </Page>
   )

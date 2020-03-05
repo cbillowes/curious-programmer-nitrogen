@@ -28,7 +28,7 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions, reporter }) => {
   }
 }
 
-function generateBlogPage( actions ) {
+function generateBlogPage(actions) {
   const { createPage } = actions
   const template = path.resolve(`./src/pages/index.js`)
   createPage({
@@ -40,7 +40,7 @@ function generateBlogPage( actions ) {
   })
 }
 
-async function generateBlogPosts( graphql, actions, reporter ) {
+async function generateBlogPosts(graphql, actions, reporter) {
   const { createPage } = actions
   await graphql(`
     query {
@@ -67,37 +67,37 @@ async function generateBlogPosts( graphql, actions, reporter ) {
       }
     }
   `)
-  .then(result => {
-    if (result.errors) {
-      reporter.panicOnBuild(`Generating blog post: GraphQL query error`)
-      return
-    }
+    .then(result => {
+      if (result.errors) {
+        reporter.panicOnBuild(`Generating blog post: GraphQL query error`)
+        return
+      }
 
-    const template = path.resolve(`./src/templates/post.js`)
-    const posts = result.data.allMarkdownRemark.edges
+      const template = path.resolve(`./src/templates/post.js`)
+      const posts = result.data.allMarkdownRemark.edges
 
-    posts.forEach(({ node }, index) => {
-      const { slug } = node.fields
-      const previous = index === 0 ? posts[posts.length - 1].node : posts[index - 1].node
-      const next = index === (posts.length - 1) ? posts[0].node : posts[index + 1].node
-      createPage({
-        path: slug,
-        component: template,
-        context: {
-          slug,
-          date: node.fields.date,
-          number: index + 1,
-          previous,
-          next,
-        }
+      posts.forEach(({ node }, index) => {
+        const { slug } = node.fields
+        const previous = index === 0 ? posts[posts.length - 1].node : posts[index - 1].node
+        const next = index === (posts.length - 1) ? posts[0].node : posts[index + 1].node
+        createPage({
+          path: slug,
+          component: template,
+          context: {
+            slug,
+            date: node.fields.date,
+            number: index + 1,
+            previous,
+            next,
+          }
+        })
+
+        reporter.info(`${index}: Generating blog post: ${slug}\n${previous ? `Previous: ${previous.fields.slug}\n` : ``}${next ? `Next: ${next.fields.slug}\n` : ``}`)
       })
-
-      reporter.info(`${index}: Generating blog post: ${slug}\n${previous ? `Previous: ${previous.fields.slug}\n` : ``}${next ? `Next: ${next.fields.slug}\n` : ``}`)
     })
-  })
 }
 
-async function generateTags( graphql, actions, reporter ) {
+async function generateTags(graphql, actions, reporter) {
   const { createPage } = actions
   await graphql(`
     query {
@@ -113,38 +113,38 @@ async function generateTags( graphql, actions, reporter ) {
       }
     }
   `)
-  .then(result => {
-    if (result.errors) {
-      reporter.panicOnBuild(`Generating tag page: GrapghQL query`)
-      return
-    }
+    .then(result => {
+      if (result.errors) {
+        reporter.panicOnBuild(`Generating tag page: GrapghQL query`)
+        return
+      }
 
-    const tags = []
-    const template = path.resolve(`./src/templates/tag.js`)
-    result.data.allMarkdownRemark.edges.map(edge => {
-      const postTags = edge.node.frontmatter.tags || []
-      postTags.map(tag => {
-        const path = `/tag/${tag.toLowerCase().replace(/ /g, `-`)}`
-        if (tags.indexOf(tag) > -1)
+      const tags = []
+      const template = path.resolve(`./src/templates/tag.js`)
+      result.data.allMarkdownRemark.edges.map(edge => {
+        const postTags = edge.node.frontmatter.tags || []
+        postTags.map(tag => {
+          const path = `/tag/${tag.toLowerCase().replace(/ /g, `-`)}`
+          if (tags.indexOf(tag) > -1)
+            return
+
+          tags.push(tag)
+
+          reporter.info(`Generating tag page: ${path}`)
+          createPage({
+            path,
+            component: template,
+            context: {
+              tag,
+              slug: path,
+              date: edge.node.frontmatter.date,
+            },
+          })
           return
-
-        tags.push(tag)
-
-        reporter.info(`Generating tag page: ${path}`)
-        createPage({
-          path,
-          component: template,
-          context: {
-            tag,
-            slug: path,
-            date: edge.node.frontmatter.date,
-          },
         })
         return
       })
-      return
     })
-  })
 }
 
 exports.onCreateNode = ({ node, actions, reporter }) => {

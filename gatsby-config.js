@@ -7,8 +7,14 @@ module.exports = {
     lang: 'en-US',
   },
   plugins: [
-    `gatsby-plugin-sass`,
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-sass`,
+      options: {
+        precision: 8,
+        sourceMap: true,
+      },
+    },
     {
       resolve: `gatsby-plugin-sitemap`,
       options: {

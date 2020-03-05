@@ -35,7 +35,7 @@
     &:visited {
       $with-border: no;
       @include dimmed-text($with-border);
-  
+
       &:hover {
         color: $secondary-dark;
       }
@@ -56,7 +56,7 @@
     &.tertiary {
       @include tertiary-tag();
     }
-    
+
     &.disabled {
       @include disabled-tag();
     }
