@@ -24,8 +24,6 @@
     "gatsby-plugin-sharp": "^2.4.5",
     "gatsby-plugin-sitemap": "^2.2.27",
     "gatsby-plugin-styled-components": "^3.1.19",
-    "gatsby-remark-code-buttons": "^2.0.4",
-    "gatsby-remark-code-titles": "^1.1.0",
     "gatsby-remark-embed-gist": "^1.1.9",
     "gatsby-remark-embed-youtube": "0.0.7",
     "gatsby-remark-emoji": "0.0.3",
