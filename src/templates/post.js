@@ -26,9 +26,9 @@ function postNavigation(edge) {
 export default ({ data, pageContext }) => {
   const { markdownRemark } = data
   const { slug, next, previous, number } = pageContext
-  const { title, tags, excerpt, html } = markdownRemark.frontmatter
+  const { title, tags, excerpt } = markdownRemark.frontmatter
   const { date } = markdownRemark.fields
-  const { timeToRead } = markdownRemark
+  const { html, timeToRead } = markdownRemark
   const previousPost = postNavigation(previous)
   const nextPost = postNavigation(next)
   return (
