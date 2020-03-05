@@ -20,7 +20,7 @@ storiesOf('Anchor', module)
       About
     </Anchor>
   )
-  .add(`layout`, () =>
+  .add('layout', () =>
     <Page>
       <p>
         <strong>External links in a sentence:</strong>  I share what I learn with others. My blog,
