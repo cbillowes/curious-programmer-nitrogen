@@ -1,5 +1,19 @@
 @import "./variables.scss";
 
+div.code-toolbar > .toolbar {
+  opacity: 1;
+  font-size: 1.25rem;
+  font-family: $sans;
+  top: -1.5rem;
+  right: -1.5rem;
+}
+
+div.code-toolbar > .toolbar .toolbar-item span {
+  padding: .1rem .65rem;
+  border-radius: 3px;
+  background-color: $darkest;
+}
+
 code,
 code[class*="language-"],
 pre[class*="language-"],
