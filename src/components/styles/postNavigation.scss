@@ -4,7 +4,8 @@
   display: flex;
   flex-direction: row;
   align-items: strecth;
-  
+  height: auto;
+
   .previous, .next {
     flex-grow: 1;
     flex-basis: 50%;
@@ -25,7 +26,7 @@
     @include small-screen() {
       margin-top: 2rem;
     }
-  
+
     .previous, .next {
       h1 {
         a {
@@ -118,7 +119,7 @@
         @include tertiary-tag();
       }
 
-      .nav-link:hover { 
+      .nav-link:hover {
         h1, .body {
           color: $tertiary;
         }
@@ -142,7 +143,7 @@
         @include secondary-tag();
       }
 
-      .nav-link:hover { 
+      .nav-link:hover {
         h1, .body {
           color: $secondary;
         }
