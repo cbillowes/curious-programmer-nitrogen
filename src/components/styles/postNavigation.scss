@@ -77,6 +77,11 @@
     font-size: 80%;
     line-height: 2.5rem;
 
+
+    @include small-screen {
+      display: none;
+    }
+
     h1 {
       font-size: 110%;
     }
