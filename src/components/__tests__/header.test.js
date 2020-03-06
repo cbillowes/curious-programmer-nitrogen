@@ -1,5 +1,5 @@
 import React from 'react'
-import Header from '../header'
+import Header, { toggleSearchFeature } from '../header'
 import { getMountedComponent, getSnapshot } from './_helpers'
 
 describe(`Header`, () => {
@@ -11,17 +11,21 @@ describe(`Header`, () => {
   })
 
   describe(`should be able to click on the`, () => {
-    let header
-    beforeEach(() => {
-      header = getMountedComponent(<Header />)
-    })
-    it(`menu button`, () => {
-      expect(header.find(`.menu-button`).simulate(`click`))
-    })
+    if (toggleSearchFeature) {
+      let header
+      beforeEach(() => {
+        header = getMountedComponent(<Header />)
+      })
+      it(`menu button`, () => {
+        expect(header.find(`.menu-button`).simulate(`click`))
+      })
 
-    it(`search button`, () => {
-      expect(header.find(`.search-button`).simulate(`click`))
-    })
+      it(`search button`, () => {
+        expect(header.find(`.search-button`).simulate(`click`))
+      })
+    } else {
+      expect(header.find(`.search-button`).length).toBe(0)
+    }
   })
 
   describe(`should hide`, () => {
@@ -40,8 +44,12 @@ describe(`Header`, () => {
     })
 
     it(`search`, () => {
-      expect(header.find(`.search-button`).hasClass(`active`)).toBe(false)
-      expect(header.find(`.search`).hasClass(`closed`)).toBe(true)
+      if (toggleSearchFeature) {
+        expect(header.find(`.search-button`).hasClass(`active`)).toBe(false)
+        expect(header.find(`.search`).hasClass(`closed`)).toBe(true)
+      } else {
+        expect(header.find(`.search-button`).length).toBe(0)
+      }
     })
   })
 
@@ -61,7 +69,11 @@ describe(`Header`, () => {
     })
 
     it(`search`, () => {
-      expect(header.find(`.search-button`).hasClass(`active`)).toBe(true)
+      if (toggleSearchFeature) {
+        expect(header.find(`.search-button`).hasClass(`active`)).toBe(true)
+      } else {
+        expect(header.find(`.search-button`).length).toBe(0)
+      }
     })
   })
 })
