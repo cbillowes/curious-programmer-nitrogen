@@ -1,77 +1,82 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`License should render 1`] = `
-Array [
-  <span>
+<p
+  className="license"
+>
+  <span
+    className="creative-commons-logo"
+  >
      
     <a
+      className="plain"
       href="http://creativecommons.org/licenses/by-sa/4.0/"
       rel="nofollow noopener noreferrer"
       target="_blank"
     >
       <img
         alt="Creative Commons License"
-        className="creative-commons-logo"
         src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
         title="Creative Commons Attribution-ShareAlike 4.0 International License"
       />
     </a>
      
-  </span>,
-  <span>
-    <p>
-      The content is written by 
-       
-      <a
-        href="/about"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Clarice Bouwer
-      </a>
-       
-       and is licensed under the 
-       
-      <a
-        href="https://creativecommons.org/licenses/by-sa/4.0/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Creative Commons Attribution-ShareAlike 4.0 International License
-      </a>
-       
-      . References to external resources are subject to their own terms and conditions. There is a 
-       
-      <a
-        href="/license"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        license
-      </a>
-       
-       for the code. It's probably a good idea to read the 
-       
-      <a
-        href="/privacy-policy"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        privacy policy
-      </a>
-       
-      . The website is open-source and is available on 
-       
-      <a
-        href="https://github.com/cbillowes/curious-programmer-nitrogen"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        GitHub
-      </a>
-       
-      . Please give it a star if you think it is cool.
-    </p>
-  </span>,
-]
+  </span>
+  The content is written by 
+   
+  <a
+    className="underline-only"
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Clarice Bouwer
+  </a>
+   
+   and is licensed under the 
+   
+  <a
+    className="underline-only"
+    href="https://creativecommons.org/licenses/by-sa/4.0/"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Creative Commons Attribution-ShareAlike 4.0 International License
+  </a>
+   
+  . References to external resources are subject to their own terms and conditions. There is a 
+   
+  <a
+    className="underline-only"
+    href="/license"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    license
+  </a>
+   
+   for the code. It's probably a good idea to read the 
+   
+  <a
+    className="underline-only"
+    href="/privacy-policy"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    privacy policy
+  </a>
+   
+  . The website is open-source and is available on 
+   
+  <a
+    className="underline-only"
+    href="https://github.com/cbillowes/curious-programmer-nitrogen"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    GitHub
+  </a>
+   
+  . Please give it a star if you think it is cool.
+</p>
 `;

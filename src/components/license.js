@@ -3,12 +3,12 @@ import Anchor from './anchor'
 
 const CreativeCommonsLogo = () => {
   return (
-    <span>
+    <span className="creative-commons-logo">
       <Anchor
         to="http://creativecommons.org/licenses/by-sa/4.0/"
+        className="plain"
       >
         <img
-          className="creative-commons-logo"
           alt="Creative Commons License"
           src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
           title="Creative Commons Attribution-ShareAlike 4.0 International License"
@@ -18,70 +18,73 @@ const CreativeCommonsLogo = () => {
   )
 }
 
-function Author() {
+const Author = () => {
   return (
     <Anchor
       to="/about"
+      className="underline-only"
     >
       Clarice Bouwer
     </Anchor>
   )
 }
 
-function CreativeCommonsLicense() {
+const CreativeCommonsLicense = () => {
   return (
     <Anchor
       to="https://creativecommons.org/licenses/by-sa/4.0/"
+      className="underline-only"
     >
       Creative Commons Attribution-ShareAlike 4.0 International License
     </Anchor>
   )
 }
 
-function CodeLicense() {
+const CodeLicense = () => {
   return (
     <Anchor
       to="/license"
+      className="underline-only"
     >
       license
     </Anchor>
   )
 }
 
-function PrivacyPolicy() {
+const PrivacyPolicy = () => {
   return (
     <Anchor
       to="/privacy-policy"
+      className="underline-only"
     >
       privacy policy
     </Anchor>
   )
 }
 
-function GitHub() {
+const GitHub = () => {
   return (
     <Anchor
       to="https://github.com/cbillowes/curious-programmer-nitrogen"
+      className="underline-only"
     >
       GitHub
     </Anchor>
   )
 }
 
-function License() {
+const License = () => {
   return (
     <>
-      <CreativeCommonsLogo />
-      <span>
-        <p>
-          The content is written by <Author /> and is licensed under the <CreativeCommonsLicense />.
-          References to external resources are subject to their own terms and conditions.
-          There is a <CodeLicense /> for the code.
-          It's probably a good idea to read the <PrivacyPolicy />.
-          The website is open-source and is available on <GitHub />.
-          Please give it a star if you think it is cool.
-        </p>
-      </span>
+      <p className="license">
+        <CreativeCommonsLogo />
+        The content is written by <Author /> and is licensed under the <CreativeCommonsLicense />.
+        References to external resources are subject to their own terms and conditions.
+        There is a <CodeLicense /> for the code.
+        It's probably a good idea to read the <PrivacyPolicy />.
+        The website is open-source and is available on <GitHub />.
+        Please give it a star if you think it is cool.
+      </p>
     </>
   )
 }

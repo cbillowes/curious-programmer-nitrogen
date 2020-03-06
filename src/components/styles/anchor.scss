@@ -56,3 +56,20 @@ a {
   @include tags();
   @include logo();
 }
+
+a.plain {
+  border: none;
+
+  &:hover {
+    background-color: transparent;
+  }
+}
+
+a.underline-only {
+  &:hover {
+    background-color: transparent;
+    border-radius: 0;
+    border-bottom-color: $secondary;
+    @include light-shadowed-text($secondary);
+  }
+}

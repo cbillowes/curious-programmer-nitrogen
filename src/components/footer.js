@@ -5,31 +5,24 @@ import './styles/footer.scss'
 
 const Intro = () => {
   return (
-    <div>
+    <span>
       <strong>A curious place for a curious mind.</strong>
       {` `}
       Copyright &copy; {new Date().getFullYear()}.
       Built with
       <Anchor
         to="https://www.gatsbyjs.org"
-        defaultStyle="true">
-          Gastby
+        className="underline-only"
+      >
+        Gastby
       </Anchor>
       and other
       <Anchor
-        to="/credits">
-          cool stuff
+        to="/credits"
+        className="underline-only"
+      >
+        cool stuff
       </Anchor>.
-    </div>
-  )
-}
-
-const Licenses = () => {
-  return (
-    <span
-      className="licenses"
-    >
-      <License />
     </span>
   )
 }
@@ -39,7 +32,7 @@ const SocialIcon = ({ to, title, src }) => {
     <Anchor
       to={to}
       title={title}
-      defaultStyle={true}
+      className="plain"
     >
       <img
         className="icon"
@@ -81,7 +74,7 @@ const Footer = () => {
     <footer className="footer">
       <Intro />
       <div className="container">
-        <Licenses />
+        <License />
         <Social />
       </div>
     </footer>
