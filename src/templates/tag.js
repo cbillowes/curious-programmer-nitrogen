@@ -2,16 +2,10 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
-import { H1 } from '../components/heading'
+import Anchor from '../components/anchor'
 import Posts from '../components/posts'
-import ShowMore from '../components/showMore'
+import { H1 } from '../components/heading'
 import { SmallSpacer } from '../components/spacer'
-
-const MoreTags = () => (
-  <ShowMore
-    to="/tags"
-    title="See more tags" />
-)
 
 export default (props) => {
   const { tag } = props.pageContext
@@ -20,12 +14,12 @@ export default (props) => {
     <Layout>
       <SEO title={tag} />
       <SmallSpacer />
-      <H1>{tag}</H1>
-      <MoreTags />
+      <H1>
+        <Anchor to="/tags" title="Tags">tags</Anchor>: {tag.toLowerCase()}
+      </H1>
       <Posts
         edges={edges}
       />
-      <MoreTags />
     </Layout>
   )
 }
