@@ -34,6 +34,7 @@ class Header extends Component {
   }
 
   render() {
+    console.log(process.env.SEARCH_FEATURE_ENABLED)
     return (
       <header className="header">
         <div className="wrapper">
