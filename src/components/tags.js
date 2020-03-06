@@ -8,7 +8,7 @@ const Collection = ({ tags }) => {
     return (
       <Tag
         key={tag}
-        to={`/tag/${_.kebabCase(tag)}`}
+        to={`/tag/${_.kebabCase(tag.toLowerCase())}`}
         title={tag}
       />
     )

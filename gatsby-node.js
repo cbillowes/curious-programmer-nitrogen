@@ -124,7 +124,7 @@ async function generateTags(graphql, actions, reporter) {
       result.data.allMarkdownRemark.edges.map(edge => {
         const postTags = edge.node.frontmatter.tags || []
         postTags.map(tag => {
-          const path = `/tag/${tag.toLowerCase().replace(/ /g, `-`)}`
+          const path = `/tag/${_.kebabCase(tag.toLowerCase())}`
           if (tags.indexOf(tag) > -1)
             return
 
