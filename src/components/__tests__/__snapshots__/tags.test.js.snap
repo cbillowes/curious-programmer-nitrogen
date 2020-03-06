@@ -1,14 +1,12 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tags should accept missing tags 1`] = `null`;
-
 exports[`Tags should render from list 1`] = `
 <div
   className="tags"
 >
    
   <a
-    className="tag anchor"
+    className="tag"
     href="/tag/hello"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -19,7 +17,7 @@ exports[`Tags should render from list 1`] = `
    
    
   <a
-    className="tag anchor"
+    className="tag"
     href="/tag/world"
     onClick={[Function]}
     onMouseEnter={[Function]}

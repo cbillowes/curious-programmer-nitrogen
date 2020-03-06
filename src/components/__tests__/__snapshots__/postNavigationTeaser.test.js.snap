@@ -57,7 +57,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
     >
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/douglas"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -68,7 +68,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
        
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/adams"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -132,7 +132,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
     >
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/douglas"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -143,7 +143,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
        
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/adams"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -214,7 +214,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
     >
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/douglas"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -225,7 +225,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
        
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/adams"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -289,7 +289,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
     >
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/star"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -300,7 +300,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
        
        
       <a
-        className="tag anchor"
+        className="tag"
         href="/tag/wars"
         onClick={[Function]}
         onMouseEnter={[Function]}

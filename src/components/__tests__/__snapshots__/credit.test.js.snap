@@ -4,7 +4,7 @@ exports[`Credit should render an external credit 1`] = `
 <div>
    
   <a
-    className="tag anchor"
+    className="tag"
     href="https://curiousprogrammer.dev"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -21,7 +21,7 @@ exports[`Credit should render an internal credit 1`] = `
 <div>
    
   <a
-    className="tag anchor"
+    className="tag"
     href="/blog"
     onClick={[Function]}
     onMouseEnter={[Function]}

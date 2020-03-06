@@ -9,14 +9,13 @@ const Listing = ({ edges, limit }) => {
     const { timeToRead, excerpt } = edge.node
     const { slug, date, number } = edge.node.fields
     const { title, tags, blurb, author } = edge.node.frontmatter
-    const tagCollection = tags ? tags.join(`,`) : ``
     return (
       <PostPreview
         key={slug}
         limit={limit}
         title={title}
         slug={slug}
-        tags={tagCollection}
+        tags={tags}
         author={author}
         date={date}
         ttr={timeToRead}

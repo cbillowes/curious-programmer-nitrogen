@@ -38,20 +38,6 @@ const Metadata = ({ date, author, ttr }) => {
   )
 }
 
-const TagList = ({ tags }) => {
-  return (
-    <>
-      <div
-        className="tags"
-      >
-        <Tags
-          tags={tags}
-        />
-      </div>
-    </>
-  )
-}
-
 const Heading = ({ children, slug }) => {
   return (
     <>
@@ -92,7 +78,7 @@ function PostPreview({ title, slug, tags, date, author, ttr, number, limit, chil
           author={author}
           ttr={ttr}
         />
-        <TagList
+        <Tags
           tags={tags}
         />
       </section>

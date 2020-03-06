@@ -65,7 +65,30 @@ exports[`Posts should render with default word limit 1`] = `
     </div>
     <div
       className="tags"
-    />
+    >
+       
+      <a
+        className="tag"
+        href="/tag/dont"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
   </section>
   <section
     className="post preview"
@@ -128,7 +151,30 @@ exports[`Posts should render with default word limit 1`] = `
     </div>
     <div
       className="tags"
-    />
+    >
+       
+      <a
+        className="tag"
+        href="/tag/dont"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
   </section>
 </div>
 `;
@@ -198,7 +244,30 @@ exports[`Posts should render with specified word limit of 5 1`] = `
     </div>
     <div
       className="tags"
-    />
+    >
+       
+      <a
+        className="tag"
+        href="/tag/dont"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
   </section>
   <section
     className="post preview"
@@ -261,7 +330,30 @@ exports[`Posts should render with specified word limit of 5 1`] = `
     </div>
     <div
       className="tags"
-    />
+    >
+       
+      <a
+        className="tag"
+        href="/tag/dont"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
   </section>
 </div>
 `;

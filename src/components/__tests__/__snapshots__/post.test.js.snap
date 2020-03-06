@@ -49,7 +49,7 @@ exports[`Post should render with a number 1`] = `
   >
      
     <a
-      className="tag anchor"
+      className="tag"
       href="/tag/dont"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -60,7 +60,7 @@ exports[`Post should render with a number 1`] = `
      
      
     <a
-      className="tag anchor"
+      className="tag"
       href="/tag/panic"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -118,7 +118,7 @@ exports[`Post should render with html 1`] = `
   >
      
     <a
-      className="tag anchor"
+      className="tag"
       href="/tag/dont"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -129,7 +129,7 @@ exports[`Post should render with html 1`] = `
      
      
     <a
-      className="tag anchor"
+      className="tag"
       href="/tag/panic"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -187,7 +187,7 @@ exports[`Post should render with plain text 1`] = `
   >
      
     <a
-      className="tag anchor"
+      className="tag"
       href="/tag/dont"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -198,7 +198,7 @@ exports[`Post should render with plain text 1`] = `
      
      
     <a
-      className="tag anchor"
+      className="tag"
       href="/tag/panic"
       onClick={[Function]}
       onMouseEnter={[Function]}

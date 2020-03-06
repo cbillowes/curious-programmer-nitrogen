@@ -21,9 +21,7 @@ const Disabled = ({ children }) => {
   )
 }
 
-function Tag({ title, to, disabled }) {
-  if (!title) return <></>
-
+const Tag = ({ title, to, disabled }) => {
   const lowerTitle = title.toLowerCase()
 
   if (!to)
@@ -44,8 +42,7 @@ function Tag({ title, to, disabled }) {
     <Anchor
       to={to}
       title={title}
-      tag="true"
-      className="tag anchor"
+      className="tag"
     >
       {lowerTitle}
     </Anchor>
@@ -60,11 +57,9 @@ Tag.propTypes = {
   title: PropTypes.string.isRequired,
   to: PropTypes.string,
   disabled: PropTypes.bool,
-  readonly: PropTypes.bool,
 }
 
 export default Tag
 
 //TODO: rethink what tags are necessary
-//TODO: Make these purdy
 //TODO: Make title only inline

@@ -1,48 +1,55 @@
-import React, { Component } from 'react'
+import React from 'react'
 import { graphql } from 'gatsby'
-import Tag from '../components/tag'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ReadingPane from '../components/readingPane'
-const _ = require('lodash')
+import Tags from '../components/tags'
 
-class TagsPage extends Component {
+function flatten(tags) {
+  let flattened = []
+  tags.map(item => {
+    flattened = flattened.concat(item)
+  })
+  return flattened
+}
 
-  getTags = (edges) => {
-    let data = edges
-      .map((item) => item.node.frontmatter)
-      .map((item) => item.tags)
+function distinct(tags) {
+  let hashmap = []
+  tags.map(item => {
+    if (hashmap.indexOf(item) === -1)
+      hashmap.push(item)
+  })
+  return hashmap
+}
 
-    const tagCollection = data.map(item => (!item ? [] : item))
-    let tags = []
-    for (let i = 0; i < tagCollection.length; i++) {
-      for (let j = 0; j < tagCollection[i].length; j++) {
-        let tag = tagCollection[i][j]
-        if (!_.includes(tags, tag)) tags.push(tag)
-      }
-    }
-    return tags.sort()
-  }
+function getTags(edges) {
+  const tags = edges
+    .map(item => item.node.frontmatter)
+    .map(item => item.tags)
+    .map(item => !item ? [] : item)
+  return distinct(flatten(tags)).sort()
+}
 
-  render() {
-    return (
-      <Layout className="tags">
-        <SEO
-          title="Tags"
-          description="Discover articles that have been tagged over time."
-        />
-        <div data-page="tags">
-          <ReadingPane
-            heading="Tags"
-          >
-            {this.getTags(this.props.data.allMarkdownRemark.edges).map(tag => {
-              return <Tag title={tag} />
-            })}
-          </ReadingPane>
-        </div>
-      </Layout>
-    )
-  }
+const TagsPage = ({ data }) => {
+  const edges = data.allMarkdownRemark.edges
+  const tags = getTags(edges)
+  return (
+    <Layout className="tags">
+      <SEO
+        title="Tags"
+        description="Discover articles that have been tagged over time."
+      />
+      <div data-page="tags">
+        <ReadingPane
+          heading="Tags"
+        >
+          <Tags
+            tags={tags}
+          />
+        </ReadingPane>
+      </div>
+    </Layout>
+  )
 }
 
 export default TagsPage
@@ -61,3 +68,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+//TODO: test flatten and distinct functions
