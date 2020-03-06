@@ -22,27 +22,6 @@
   }
 }
 
-@mixin free() {
-  &.free {
-    $with-border: no;
-    padding: 0;
-    @include primary-text($with-border);
-
-    &:hover {
-      @include secondary-text($with-border);
-    }
-
-    &:visited {
-      $with-border: no;
-      @include dimmed-text($with-border);
-
-      &:hover {
-        color: $secondary-dark;
-      }
-    }
-  }
-}
-
 @mixin tags() {
   &.tag {
     &.primary {
@@ -74,7 +53,6 @@
 
 a {
   @include default();
-  @include free();
   @include tags();
   @include logo();
 }

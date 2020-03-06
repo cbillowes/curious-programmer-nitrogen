@@ -4,7 +4,7 @@
   margin-top: 1.5rem;
   text-align: center;
 
-  a.free, a.free:visited {
+  a, a:visited {
     $with-border: no;
     @include primary-text($with-border);
 
