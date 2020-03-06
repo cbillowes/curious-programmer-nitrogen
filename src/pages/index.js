@@ -6,7 +6,10 @@ import Posts from '../components/posts'
 import ShowMore from '../components/showMore'
 
 const IndexPage = (props) => (
-  <Layout className="blog">
+  <Layout
+    className="blog-page"
+    footer={true}
+  >
     <SEO title="Blog" />
     <div className="spacer"></div>
     <Posts

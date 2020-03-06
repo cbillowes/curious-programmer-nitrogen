@@ -9,7 +9,10 @@ import { H1, H2, H3, H4 } from '../components/heading'
 import '../components/styles/about.scss'
 
 const AboutPage = () => (
-  <Layout>
+  <Layout
+    className="about-page"
+    footer={true}
+  >
     <SEO title="About">
       My name is Clarice Bouwer. I love software.
       I am a learner for life.
@@ -89,8 +92,8 @@ const AboutPage = () => (
         </Panel>
         <Panel title="I studied stuff">
           <p>
-           I attended CTI (Computer Training Institute) in Bedfordview, South Africa for the years of 2004 and 2005.
-           I completed National Diplomas in Computer Science and Information Systems.
+            I attended CTI (Computer Training Institute) in Bedfordview, South Africa for the years of 2004 and 2005.
+            I completed National Diplomas in Computer Science and Information Systems.
          </p>
         </Panel>
         <Panel title="My experience so far">

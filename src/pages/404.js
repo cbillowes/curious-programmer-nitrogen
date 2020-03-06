@@ -10,7 +10,10 @@ const NotFoundPage = (props) => {
   const posts = props.data.allMarkdownRemark.edges
 
   return (
-    <Layout>
+    <Layout
+      className="not-found-page"
+      footer={true}
+    >
       <SEO
         title="Page cannot be found"
       >

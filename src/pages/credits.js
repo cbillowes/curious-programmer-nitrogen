@@ -7,7 +7,10 @@ import Credit from "../components/credit"
 import Anchor from "../components/anchor"
 
 const CreditsPage = () => (
-  <Layout>
+  <Layout
+    className="credits-page"
+    footer={true}
+  >
     <SEO title="Credits">
       The tech I use to craft this blog.
     </SEO>

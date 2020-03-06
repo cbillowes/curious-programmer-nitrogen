@@ -11,7 +11,10 @@ export default (props) => {
   const { tag } = props.pageContext
   const edges = props.data.allMarkdownRemark.edges
   return (
-    <Layout>
+    <Layout
+      className="tags-template"
+      footer={true}
+    >
       <SEO title={tag} />
       <SmallSpacer />
       <H1>

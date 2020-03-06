@@ -7,7 +7,10 @@ import { SmallSpacer } from '../components/spacer'
 import Posts from '../components/posts'
 
 const ArchivesPage = (props) => (
-  <Layout className="archives">
+  <Layout
+    className="archives-page"
+    footer={true}
+  >
     <SEO title="Archives" />
     <SmallSpacer />
     <H1 className="heading">Archives of all the things</H1>

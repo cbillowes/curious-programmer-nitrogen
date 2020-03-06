@@ -34,7 +34,10 @@ const TagsPage = ({ data }) => {
   const edges = data.allMarkdownRemark.edges
   const tags = getTags(edges)
   return (
-    <Layout className="tags">
+    <Layout
+      className="tags"
+      footer={true}
+    >
       <SEO
         title="Tags"
         description="Discover articles that have been tagged over time."
