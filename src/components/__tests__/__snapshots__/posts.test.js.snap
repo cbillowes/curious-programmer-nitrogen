@@ -110,7 +110,7 @@ exports[`Posts should render with default word limit 1`] = `
     <h1>
        
       <a
-        href="/dont-panic"
+        href="/bring-your-own-towel"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title=""
@@ -155,12 +155,12 @@ exports[`Posts should render with default word limit 1`] = `
        
       <a
         className="tag"
-        href="/tag/dont"
+        href="/tag/towel"
         onClick={[Function]}
         onMouseEnter={[Function]}
-        title="don't"
+        title="towel"
       >
-        don't
+        towel
       </a>
        
        
@@ -289,7 +289,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
     <h1>
        
       <a
-        href="/dont-panic"
+        href="/bring-your-own-towel"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title=""
@@ -334,12 +334,12 @@ exports[`Posts should render with specified word limit of 5 1`] = `
        
       <a
         className="tag"
-        href="/tag/dont"
+        href="/tag/towel"
         onClick={[Function]}
         onMouseEnter={[Function]}
-        title="don't"
+        title="towel"
       >
-        don't
+        towel
       </a>
        
        

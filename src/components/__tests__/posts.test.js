@@ -29,7 +29,7 @@ describe(`Posts`, () => {
         timeToRead: `12`,
         html: `,`,
         fields: {
-          slug: `/dont-panic`,
+          slug: `/bring-your-own-towel`,
           date: `2019-02-01T00:00:00.000Z`,
           number: 42,
         },
@@ -38,7 +38,7 @@ describe(`Posts`, () => {
           author: `Clarice Bouwer`,
           blurb: ``,
           ttr: `42`,
-          tags: [`don't`, `panic`],
+          tags: [`towel`, `panic`],
         },
       },
     },
