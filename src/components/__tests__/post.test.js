@@ -7,9 +7,9 @@ describe(`Post`, () => {
     const post = (
       <Post
         title="Don't panic."
-        date={new Date(2019, 1, 1)}
+        date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr={1}
+        ttr="1"
       >
         Arthur Dent (Martin Freeman) is trying to prevent his house from being bulldozed
         when his friend Ford Prefect (Mos Def) whisks him into outer space. It turns out
@@ -28,9 +28,9 @@ describe(`Post`, () => {
     const post = (
       <Post
         title="Don't panic."
-        date={new Date(2019, 1, 1)}
+        date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr={1}
+        ttr="1"
       >
         <p>
           Arthur Dent (Martin Freeman) is trying to prevent his house from being bulldozed
@@ -52,9 +52,9 @@ describe(`Post`, () => {
     const post = (
       <Post
         title="Don't panic."
-        date={new Date(2019, 1, 1)}
+        date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr={1}
+        ttr="1"
         number={42}
       >
         <p>
@@ -72,9 +72,9 @@ describe(`Post`, () => {
     const post = (
       <Post
         title="Don't panic."
-        date={new Date(2019, 1, 1)}
+        date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr={1}
+        ttr="1"
         number={42}
         tags="hitchikers,guide,to,the,galaxy"
       >

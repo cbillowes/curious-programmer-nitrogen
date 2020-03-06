@@ -75,9 +75,9 @@ Post.defaultProps = {
 Post.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  ttr: PropTypes.number.isRequired,
+  ttr: PropTypes.string.isRequired,
   number: PropTypes.number,
   tags: PropTypes.string,
 }

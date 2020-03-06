@@ -7,11 +7,11 @@ describe(`Posts`, () => {
     {
       node: {
         excerpt: ``,
-        timeToRead: 1,
+        timeToRead: `12`,
         html: `,`,
         fields: {
           slug: `/dont-panic`,
-          date: new Date(""),
+          date: `2019-02-01T00:00:00.000Z`,
           number: 42,
         },
         frontmatter: {
@@ -19,6 +19,7 @@ describe(`Posts`, () => {
           tags: [],
           author: `Clarice Bouwer`,
           blurb: ``,
+          ttr: `42`,
         }
       }
     }

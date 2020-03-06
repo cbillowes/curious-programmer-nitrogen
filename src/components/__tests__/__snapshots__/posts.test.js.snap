@@ -45,9 +45,9 @@ exports[`Posts should render with default word limit 1`] = `
         posted on
          
         <time
-          dateTime={null}
+          dateTime={"2019-02-01T00:00:00.000Z"}
         >
-          Invalid date
+          Friday, 1 February 2019
         </time>
          
         <span
@@ -59,7 +59,7 @@ exports[`Posts should render with default word limit 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 1 minute read)
+          (Est. 12 minute read)
         </span>
       </div>
     </div>
@@ -115,9 +115,9 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         posted on
          
         <time
-          dateTime={null}
+          dateTime={"2019-02-01T00:00:00.000Z"}
         >
-          Invalid date
+          Friday, 1 February 2019
         </time>
          
         <span
@@ -129,7 +129,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 1 minute read)
+          (Est. 12 minute read)
         </span>
       </div>
     </div>

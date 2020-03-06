@@ -8,6 +8,9 @@ describe(`Post preview`, () => {
       <PostPreview
         title="Don't panic."
         slug="/dont-panic"
+        date="2019-02-01T00:00:00.000Z"
+        author="Clarice Bouwer"
+        ttr="2"
       >
         <p>Earthman Arthur Dent is rescued by his friend, Ford Prefect—an
           alien researcher for the titular Hitchhiker's Guide to the
@@ -26,7 +29,10 @@ describe(`Post preview`, () => {
       <PostPreview
         title="Don't panic."
         slug="/dont-panic"
-        limit={5}
+        date="2019-02-01T00:00:00.000Z"
+        author="Clarice Bouwer"
+        ttr="1"
+        limit={42}
       >
         <p>Earthman Arthur Dent is rescued by his friend, Ford Prefect—an
           alien researcher for the titular Hitchhiker's Guide to the

@@ -1,4 +1,5 @@
 import React from 'react'
+import PropTypes from 'prop-types'
 import Moment from 'react-moment'
 import Lang from '../../gatsby-lang'
 import './styles/metadata.scss'
@@ -39,9 +40,14 @@ function PostMetadata({ date, author, ttr }) {
   )
 }
 
+PostMetadata.propTypes = {
+  date: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
+  ttr: PropTypes.string.isRequired
+}
+
 export default PostMetadata
 
 
 //TODO: revise locale (get rid of Lang - env instead?)
 //TODO: don't show date when invalid - is it possible?
-//TODO: add proptypes

@@ -108,9 +108,9 @@ const shape = PropTypes.shape({
   title: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
   limitExcerpt: PropTypes.number,
-  date: PropTypes.instanceOf(Date).isRequired,
+  date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  ttr: PropTypes.number.isRequired,
+  ttr: PropTypes.string.isRequired,
   tags: PropTypes.string,
 })
 

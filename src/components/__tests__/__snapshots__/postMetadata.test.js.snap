@@ -7,9 +7,9 @@ exports[`Post metadata should render 1`] = `
   posted on
    
   <time
-    dateTime={null}
+    dateTime={"2019-02-01T00:00:00.000Z"}
   >
-    Invalid date
+    Friday, 1 February 2019
   </time>
    
   <span
@@ -21,7 +21,7 @@ exports[`Post metadata should render 1`] = `
   <span
     data-container="metadata-ttr"
   >
-    
+    (Est. 42 minute read)
   </span>
 </div>
 `;

@@ -22,7 +22,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
     <span
       className="text"
     >
-      Earthman Arthur Dent is rescued...
+      Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.
     </span>
   </div>
   <div
@@ -34,9 +34,9 @@ exports[`Post preview should limit the blurb word count 1`] = `
       posted on
        
       <time
-        dateTime={null}
+        dateTime={"2019-02-01T00:00:00.000Z"}
       >
-        Invalid date
+        Friday, 1 February 2019
       </time>
        
       <span
@@ -48,7 +48,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
       <span
         data-container="metadata-ttr"
       >
-        
+        (Est. 1 minute read)
       </span>
     </div>
   </div>
@@ -92,9 +92,9 @@ exports[`Post preview should render when all required props are provided 1`] = `
       posted on
        
       <time
-        dateTime={null}
+        dateTime={"2019-02-01T00:00:00.000Z"}
       >
-        Invalid date
+        Friday, 1 February 2019
       </time>
        
       <span
@@ -106,7 +106,7 @@ exports[`Post preview should render when all required props are provided 1`] = `
       <span
         data-container="metadata-ttr"
       >
-        
+        (Est. 2 minute read)
       </span>
     </div>
   </div>
