@@ -52,6 +52,32 @@ exports[`Post navigation teaser should render all that is required 1`] = `
       </div>
     </a>
      
+    <div
+      className="tags"
+    >
+       
+      <a
+        className="tag anchor"
+        href="/tag/douglas"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Douglas"
+      >
+        douglas
+      </a>
+       
+       
+      <a
+        className="tag anchor"
+        href="/tag/adams"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Adams"
+      >
+        adams
+      </a>
+       
+    </div>
   </aside>
   <aside
     className="next"
@@ -101,6 +127,32 @@ exports[`Post navigation teaser should render all that is required 1`] = `
       </div>
     </a>
      
+    <div
+      className="tags"
+    >
+       
+      <a
+        className="tag anchor"
+        href="/tag/douglas"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Douglas"
+      >
+        douglas
+      </a>
+       
+       
+      <a
+        className="tag anchor"
+        href="/tag/adams"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Adams"
+      >
+        adams
+      </a>
+       
+    </div>
   </aside>
 </nav>
 `;
@@ -166,7 +218,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
         href="/tag/douglas"
         onClick={[Function]}
         onMouseEnter={[Function]}
-        title="douglas"
+        title="Douglas"
       >
         douglas
       </a>
@@ -177,20 +229,9 @@ exports[`Post navigation teaser should render everything else 1`] = `
         href="/tag/adams"
         onClick={[Function]}
         onMouseEnter={[Function]}
-        title="adams"
+        title="Adams"
       >
         adams
-      </a>
-       
-       
-      <a
-        className="tag anchor"
-        href="/tag/novel"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="novel"
-      >
-        novel
       </a>
        
     </div>

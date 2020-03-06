@@ -9,7 +9,7 @@ storiesOf('Post', module)
     <Post
       title="Hello World"
       slug="/blog/hello-world"
-      tags="hello,world,greetings"
+      tags={[`hello`, `world`, `greetings`]}
       date="1 April 2019"
       author="Clarice Bouwer"
       ttr="15"
@@ -29,7 +29,7 @@ storiesOf('Post', module)
     <Post
       title="Hello Galaxy"
       slug="/blog/hello-galaxy"
-      tags="hello,galaxy,greetings"
+      tags={[`hello`, `galaxy`, `greetings`]}
       date="1 April 2018"
       author="Clarice Bouwer"
       ttr="15"

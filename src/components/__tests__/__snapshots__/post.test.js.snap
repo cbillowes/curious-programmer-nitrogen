@@ -45,6 +45,32 @@ exports[`Post should render with a number 1`] = `
     </span>
   </div>
   <div
+    className="tags"
+  >
+     
+    <a
+      className="tag anchor"
+      href="/tag/dont"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="don't"
+    >
+      don't
+    </a>
+     
+     
+    <a
+      className="tag anchor"
+      href="/tag/panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="panic"
+    >
+      panic
+    </a>
+     
+  </div>
+  <div
     className="spacer small"
   />
   <div
@@ -86,6 +112,32 @@ exports[`Post should render with html 1`] = `
     >
       (Est. 1 minute read)
     </span>
+  </div>
+  <div
+    className="tags"
+  >
+     
+    <a
+      className="tag anchor"
+      href="/tag/dont"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="don't"
+    >
+      don't
+    </a>
+     
+     
+    <a
+      className="tag anchor"
+      href="/tag/panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="panic"
+    >
+      panic
+    </a>
+     
   </div>
   <div
     className="spacer small"
@@ -131,6 +183,32 @@ exports[`Post should render with plain text 1`] = `
     </span>
   </div>
   <div
+    className="tags"
+  >
+     
+    <a
+      className="tag anchor"
+      href="/tag/dont"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="don't"
+    >
+      don't
+    </a>
+     
+     
+    <a
+      className="tag anchor"
+      href="/tag/panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="panic"
+    >
+      panic
+    </a>
+     
+  </div>
+  <div
     className="spacer small"
   />
   <div
@@ -141,121 +219,5 @@ exports[`Post should render with plain text 1`] = `
       }
     }
   />
-</article>
-`;
-
-exports[`Post should render with tags 1`] = `
-<article
-  className="post article"
->
-  <div
-    className="post number ribbon"
-  >
-    <div
-      className="backdrop"
-    >
-      <div
-        className="text"
-      >
-        #
-        42
-      </div>
-    </div>
-  </div>
-  <h1>
-    Don't panic.
-  </h1>
-  <div
-    className="metadata"
-  >
-    posted on
-     
-    <time
-      dateTime={"2019-02-01T00:00:00.000Z"}
-    >
-      Friday, 1 February 2019
-    </time>
-     
-    <span
-      data-container="metadata-author"
-    >
-      by Clarice Bouwer
-    </span>
-     
-    <span
-      data-container="metadata-ttr"
-    >
-      (Est. 1 minute read)
-    </span>
-  </div>
-  <div
-    className="tags"
-  >
-     
-    <a
-      className="tag anchor"
-      href="/tag/hitchikers"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      title="hitchikers"
-    >
-      hitchikers
-    </a>
-     
-     
-    <a
-      className="tag anchor"
-      href="/tag/guide"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      title="guide"
-    >
-      guide
-    </a>
-     
-     
-    <a
-      className="tag anchor"
-      href="/tag/to"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      title="to"
-    >
-      to
-    </a>
-     
-     
-    <a
-      className="tag anchor"
-      href="/tag/the"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      title="the"
-    >
-      the
-    </a>
-     
-     
-    <a
-      className="tag anchor"
-      href="/tag/galaxy"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
-      title="galaxy"
-    >
-      galaxy
-    </a>
-     
-  </div>
-  <div
-    className="spacer small"
-  />
-  <div
-    className="reading-panel"
-  >
-    <p>
-      Don't panic.
-    </p>
-  </div>
 </article>
 `;

@@ -45,7 +45,7 @@ storiesOf('Navigation (Tiny)', module)
           author: starwars.author,
           date: `20 October 2019`,
           ttr: `1`,
-          tags: `star wars,vader,yoda`,
+          tags: [`star wars`, `vader`, `yoda`],
         }}
         next={{
           title: hitchikersGuideToTheGalaxy.title,
@@ -54,7 +54,7 @@ storiesOf('Navigation (Tiny)', module)
           author: hitchikersGuideToTheGalaxy.author,
           date: `1 April 2019`,
           ttr: `3`,
-          tags: `hitchickers,beer,towel`,
+          tags: [`hitchickers`, `beer`, `towel`],
         }}
       />
     </Layout>
@@ -69,7 +69,7 @@ storiesOf('Navigation (Tiny)', module)
           author: starwars.author,
           date: `20 October 2019`,
           ttr: `1`,
-          tags: `star wars,vader,yoda`,
+          tags: [`star wars`, `vader`, `yoda`],
         }}
         next={{
           title: hitchikersGuideToTheGalaxy.title,
@@ -78,7 +78,7 @@ storiesOf('Navigation (Tiny)', module)
           author: hitchikersGuideToTheGalaxy.author,
           date: `1 April 2019`,
           ttr: `3`,
-          tags: `hitchickers,beer,towel`,
+          tags: [`hitchickers`, `beer`, `towel`],
         }}
       />
     </>

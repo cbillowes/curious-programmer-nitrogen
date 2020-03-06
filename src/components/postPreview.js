@@ -103,7 +103,7 @@ function PostPreview({ title, slug, tags, date, author, ttr, number, limit, chil
 PostPreview.propTypes = {
   title: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  tags: PropTypes.string,
+  tags: PropTypes.array.isRequired,
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.string.isRequired,

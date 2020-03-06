@@ -68,18 +68,14 @@ function Post({ title, tags, date, author, ttr, number, children }) {
   )
 }
 
-Post.defaultProps = {
-  tags: ``,
-}
-
 Post.propTypes = {
   title: PropTypes.string.isRequired,
   children: PropTypes.node.isRequired,
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.string.isRequired,
+  tags: PropTypes.array.isRequired,
   number: PropTypes.number,
-  tags: PropTypes.string,
 }
 
 export default Post

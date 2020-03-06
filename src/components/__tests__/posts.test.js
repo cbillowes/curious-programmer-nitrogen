@@ -16,13 +16,32 @@ describe(`Posts`, () => {
         },
         frontmatter: {
           title: ``,
-          tags: [],
           author: `Clarice Bouwer`,
           blurb: ``,
           ttr: `42`,
-        }
-      }
-    }
+          tags: [`don't`, `panic`],
+        },
+      },
+    },
+    {
+      node: {
+        excerpt: ``,
+        timeToRead: `12`,
+        html: `,`,
+        fields: {
+          slug: `/dont-panic`,
+          date: `2019-02-01T00:00:00.000Z`,
+          number: 42,
+        },
+        frontmatter: {
+          title: ``,
+          author: `Clarice Bouwer`,
+          blurb: ``,
+          ttr: `42`,
+          tags: [`don't`, `panic`],
+        },
+      },
+    },
   ]
 
   it(`should render with default word limit`, () => {
@@ -39,7 +58,7 @@ describe(`Posts`, () => {
     const posts = (
       <Posts
         edges={edges}
-        limit={5}
+        limit={1}
       />
     )
     const tree = getSnapshot(posts)

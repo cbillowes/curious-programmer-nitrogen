@@ -3,12 +3,7 @@ import { storiesOf } from '@storybook/react'
 import Tags from '../src/components/tags'
 
 storiesOf('Tags', module)
-  .add('comma separated', () =>
-    <Tags
-      tags="hello,world,how,are,you"
-    />
-  )
-  .add('array', () =>
+  .add('should render', () =>
     <Tags
       tags={["hello", "world", "how", "are", "you"]}
     />

@@ -1,37 +1,8 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Tags should not render when there are no tags to render 1`] = `null`;
+exports[`Tags should accept missing tags 1`] = `null`;
 
-exports[`Tags should render from a comma separated string 1`] = `
-<div
-  className="tags"
->
-   
-  <a
-    className="tag anchor"
-    href="/tag/hello"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    title="hello"
-  >
-    hello
-  </a>
-   
-   
-  <a
-    className="tag anchor"
-    href="/tag/world"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    title="world"
-  >
-    world
-  </a>
-   
-</div>
-`;
-
-exports[`Tags should render from an array 1`] = `
+exports[`Tags should render from list 1`] = `
 <div
   className="tags"
 >

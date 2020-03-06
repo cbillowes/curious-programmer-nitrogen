@@ -11,6 +11,7 @@ describe(`Post preview`, () => {
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
         ttr="2"
+        tags={[`don't`, `panic`]}
       >
         <p>Earthman Arthur Dent is rescued by his friend, Ford Prefect—an
           alien researcher for the titular Hitchhiker's Guide to the
@@ -32,6 +33,7 @@ describe(`Post preview`, () => {
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
         ttr="1"
+        tags={[`don't`, `panic`]}
         limit={42}
       >
         <p>Earthman Arthur Dent is rescued by his friend, Ford Prefect—an

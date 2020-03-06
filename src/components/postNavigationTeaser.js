@@ -111,7 +111,7 @@ const shape = PropTypes.shape({
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.string.isRequired,
-  tags: PropTypes.string,
+  tags: PropTypes.array.isRequired,
 })
 
 PostNavigationTeaser.propTypes = {

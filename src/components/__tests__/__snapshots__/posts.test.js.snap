@@ -67,6 +67,69 @@ exports[`Posts should render with default word limit 1`] = `
       className="tags"
     />
   </section>
+  <section
+    className="post preview"
+  >
+    <div
+      className="post number ribbon"
+    >
+      <div
+        className="backdrop"
+      >
+        <div
+          className="text"
+        >
+          #
+          42
+        </div>
+      </div>
+    </div>
+    <h1>
+       
+      <a
+        href="/dont-panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title=""
+      >
+        
+      </a>
+       
+    </h1>
+    <div
+      className="blurb"
+    />
+    <div
+      className="metadata"
+    >
+      <div
+        className="metadata"
+      >
+        posted on
+         
+        <time
+          dateTime={"2019-02-01T00:00:00.000Z"}
+        >
+          Friday, 1 February 2019
+        </time>
+         
+        <span
+          data-container="metadata-author"
+        >
+          by Clarice Bouwer
+        </span>
+         
+        <span
+          data-container="metadata-ttr"
+        >
+          (Est. 12 minute read)
+        </span>
+      </div>
+    </div>
+    <div
+      className="tags"
+    />
+  </section>
 </div>
 `;
 
@@ -74,6 +137,69 @@ exports[`Posts should render with specified word limit of 5 1`] = `
 <div
   className="posts"
 >
+  <section
+    className="post preview"
+  >
+    <div
+      className="post number ribbon"
+    >
+      <div
+        className="backdrop"
+      >
+        <div
+          className="text"
+        >
+          #
+          42
+        </div>
+      </div>
+    </div>
+    <h1>
+       
+      <a
+        href="/dont-panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title=""
+      >
+        
+      </a>
+       
+    </h1>
+    <div
+      className="blurb"
+    />
+    <div
+      className="metadata"
+    >
+      <div
+        className="metadata"
+      >
+        posted on
+         
+        <time
+          dateTime={"2019-02-01T00:00:00.000Z"}
+        >
+          Friday, 1 February 2019
+        </time>
+         
+        <span
+          data-container="metadata-author"
+        >
+          by Clarice Bouwer
+        </span>
+         
+        <span
+          data-container="metadata-ttr"
+        >
+          (Est. 12 minute read)
+        </span>
+      </div>
+    </div>
+    <div
+      className="tags"
+    />
+  </section>
   <section
     className="post preview"
   >

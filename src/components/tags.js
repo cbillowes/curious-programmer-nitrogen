@@ -4,8 +4,7 @@ import PropTypes from 'prop-types'
 import Tag from './tag'
 
 function Tags({ tags }) {
-  if (!tags) return <></>
-  const collection = Array.isArray(tags) ? tags : tags.split(`,`)
+  if (!Array.isArray(tags)) return <></>
 
   return (
     <>
@@ -13,7 +12,7 @@ function Tags({ tags }) {
         className="tags"
       >
         {
-          collection.map(tag => {
+          tags.map(tag => {
             return (
               <Tag
                 key={tag}
@@ -29,10 +28,7 @@ function Tags({ tags }) {
 }
 
 Tags.propTypes = {
-  tags: PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.array,
-  ]),
+  tags: PropTypes.array.isRequired,
 }
 
 export default Tags

@@ -14,6 +14,7 @@ describe(`Post navigation teaser`, () => {
             date: `2018-04-01T00:00:00Z`,
             author: `Clarice Bouwer`,
             ttr: "12",
+            tags: [`Douglas`, `Adams`],
           }
         }
         next={
@@ -24,6 +25,7 @@ describe(`Post navigation teaser`, () => {
             date: `2018-04-01T00:00:00Z`,
             author: `Clarice Bouwer`,
             ttr: "15",
+            tags: [`Douglas`, `Adams`],
           }
         }
       />
@@ -44,7 +46,7 @@ describe(`Post navigation teaser`, () => {
             author: `Pixie`,
             ttr: "1",
             limitExcerpt: 10,
-            tags: `douglas,adams,novel`,
+            tags: [`Douglas`, `Adams`],
           }
         }
         next={
@@ -56,7 +58,7 @@ describe(`Post navigation teaser`, () => {
             author: `Elby`,
             ttr: "2",
             limitExcerpt: 10,
-            tags: `star,wars`,
+            tags: [`star`, `wars`],
           }
         }
       />

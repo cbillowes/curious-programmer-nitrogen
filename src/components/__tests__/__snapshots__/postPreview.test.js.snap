@@ -54,7 +54,34 @@ exports[`Post preview should limit the blurb word count 1`] = `
   </div>
   <div
     className="tags"
-  />
+  >
+    <div
+      className="tags"
+    >
+       
+      <a
+        className="tag anchor"
+        href="/tag/dont"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag anchor"
+        href="/tag/panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
+  </div>
 </section>
 `;
 
@@ -112,6 +139,33 @@ exports[`Post preview should render when all required props are provided 1`] = `
   </div>
   <div
     className="tags"
-  />
+  >
+    <div
+      className="tags"
+    >
+       
+      <a
+        className="tag anchor"
+        href="/tag/dont"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag anchor"
+        href="/tag/panic"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
+  </div>
 </section>
 `;

@@ -10,6 +10,7 @@ describe(`Post`, () => {
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
         ttr="1"
+        tags={["don't", "panic"]}
       >
         Arthur Dent (Martin Freeman) is trying to prevent his house from being bulldozed
         when his friend Ford Prefect (Mos Def) whisks him into outer space. It turns out
@@ -31,6 +32,7 @@ describe(`Post`, () => {
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
         ttr="1"
+        tags={["don't", "panic"]}
       >
         <p>
           Arthur Dent (Martin Freeman) is trying to prevent his house from being bulldozed
@@ -56,27 +58,7 @@ describe(`Post`, () => {
         author="Clarice Bouwer"
         ttr="1"
         number={42}
-      >
-        <p>
-          Don't panic.
-        </p>
-
-      </Post>
-    )
-    const tree = getSnapshot(post)
-    expect(tree).toMatchSnapshot()
-  })
-
-
-  it(`should render with tags`, () => {
-    const post = (
-      <Post
-        title="Don't panic."
-        date="2019-02-01T00:00:00.000Z"
-        author="Clarice Bouwer"
-        ttr="1"
-        number={42}
-        tags="hitchikers,guide,to,the,galaxy"
+        tags={["don't", "panic"]}
       >
         <p>
           Don't panic.
