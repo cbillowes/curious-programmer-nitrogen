@@ -1,11 +1,27 @@
+@import './variables.scss';
+
 .spacer {
-  padding-top: 100px;
+  padding-top: 1%;
 
   &.small {
-    padding-top: 50px;
+    @include medium-screen {
+      padding-top: 3%;
+    }
+
+    @include small-screen {
+      padding-top: 5%;
+    }
   }
 
   &.large {
-    padding-top: 200px;
+    padding-top: 2%;
+
+    @include medium-screen {
+      padding-top: 5%;
+    }
+
+    @include small-screen {
+      padding-top: 10%;
+    }
   }
 }
