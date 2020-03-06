@@ -4,6 +4,7 @@ exports[`Tag should render external 1`] = `
 Array [
   " ",
   <a
+    className="tag anchor"
     href="https://curiousprogrammer.dev"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -19,6 +20,7 @@ exports[`Tag should render internal 1`] = `
 Array [
   " ",
   <a
+    className="tag anchor"
     href="/tag/technical"
     onClick={[Function]}
     onMouseEnter={[Function]}

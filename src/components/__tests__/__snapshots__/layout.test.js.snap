@@ -120,6 +120,7 @@ exports[`Layout should not render the footer 1`] = `
         >
            
           <a
+            className="item "
             href="/blog"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -129,6 +130,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="/about"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -138,6 +140,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="/archives"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -147,6 +150,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="/tags"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -156,6 +160,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="/credits"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -165,6 +170,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="/privacy-policy"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -174,6 +180,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="/license"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -183,6 +190,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="https://github.com/cbillowes"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -192,6 +200,7 @@ exports[`Layout should not render the footer 1`] = `
            
            
           <a
+            className="item "
             href="https://www.linkedin.com/in/cbouwer/"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -331,6 +340,7 @@ exports[`Layout should render custom class 1`] = `
         >
            
           <a
+            className="item "
             href="/blog"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -340,6 +350,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="/about"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -349,6 +360,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="/archives"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -358,6 +370,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="/tags"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -367,6 +380,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="/credits"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -376,6 +390,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="/privacy-policy"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -385,6 +400,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="/license"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -394,6 +410,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="https://github.com/cbillowes"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -403,6 +420,7 @@ exports[`Layout should render custom class 1`] = `
            
            
           <a
+            className="item "
             href="https://www.linkedin.com/in/cbouwer/"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -542,6 +560,7 @@ exports[`Layout should render page 1`] = `
         >
            
           <a
+            className="item "
             href="/blog"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -551,6 +570,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="/about"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -560,6 +580,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="/archives"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -569,6 +590,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="/tags"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -578,6 +600,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="/credits"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -587,6 +610,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="/privacy-policy"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -596,6 +620,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="/license"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -605,6 +630,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="https://github.com/cbillowes"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -614,6 +640,7 @@ exports[`Layout should render page 1`] = `
            
            
           <a
+            className="item "
             href="https://www.linkedin.com/in/cbouwer/"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -753,6 +780,7 @@ exports[`Layout should render reading pane 1`] = `
         >
            
           <a
+            className="item "
             href="/blog"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -762,6 +790,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="/about"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -771,6 +800,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="/archives"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -780,6 +810,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="/tags"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -789,6 +820,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="/credits"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -798,6 +830,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="/privacy-policy"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -807,6 +840,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="/license"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -816,6 +850,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="https://github.com/cbillowes"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -825,6 +860,7 @@ exports[`Layout should render reading pane 1`] = `
            
            
           <a
+            className="item "
             href="https://www.linkedin.com/in/cbouwer/"
             rel="nofollow noopener noreferrer"
             target="_blank"

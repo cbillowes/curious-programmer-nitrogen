@@ -35,4 +35,28 @@ describe(`Anchor`, () => {
     )
     expect(tree).toMatchSnapshot()
   })
+
+  it(`should configure class name internally`, () => {
+    const tree = getSnapshot(
+      <Anchor
+        to="/about"
+        className="some-or-other-class"
+      >
+        About
+      </Anchor>
+    )
+    expect(tree).toMatchSnapshot()
+  })
+
+  it(`should configure class name externally`, () => {
+    const tree = getSnapshot(
+      <Anchor
+        to="https://curiousprogrammer.dev"
+        className="some-or-other-class"
+      >
+        Curious Programmer
+      </Anchor>
+    )
+    expect(tree).toMatchSnapshot()
+  })
 })

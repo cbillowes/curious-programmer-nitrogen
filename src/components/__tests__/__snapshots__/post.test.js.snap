@@ -193,6 +193,7 @@ exports[`Post should render with tags 1`] = `
   >
      
     <a
+      className="tag anchor"
       href="/tag/hitchikers"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -203,6 +204,7 @@ exports[`Post should render with tags 1`] = `
      
      
     <a
+      className="tag anchor"
       href="/tag/guide"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -213,6 +215,7 @@ exports[`Post should render with tags 1`] = `
      
      
     <a
+      className="tag anchor"
       href="/tag/to"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -223,6 +226,7 @@ exports[`Post should render with tags 1`] = `
      
      
     <a
+      className="tag anchor"
       href="/tag/the"
       onClick={[Function]}
       onMouseEnter={[Function]}
@@ -233,6 +237,7 @@ exports[`Post should render with tags 1`] = `
      
      
     <a
+      className="tag anchor"
       href="/tag/galaxy"
       onClick={[Function]}
       onMouseEnter={[Function]}

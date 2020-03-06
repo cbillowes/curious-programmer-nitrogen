@@ -7,7 +7,7 @@ function isExternalLink(url) {
   return (url.startsWith(`http`) || url.startsWith(`mailto:`))
 }
 
-const ExternalLink = ({ to, title, children }) => {
+const ExternalLink = ({ to, title, className, children }) => {
   return (
     <>
       {" "}
@@ -15,6 +15,7 @@ const ExternalLink = ({ to, title, children }) => {
         href={to}
         rel={`nofollow noopener noreferrer`}
         title={title}
+        className={className}
         target={`_blank`}
       >
         {children}
@@ -24,13 +25,14 @@ const ExternalLink = ({ to, title, children }) => {
   )
 }
 
-const InternalLink = ({ to, title, children }) => {
+const InternalLink = ({ to, title, className, children }) => {
   return (
     <>
       {" "}
       <Link
         to={to}
         title={title}
+        className={className}
       >
         {children}
       </Link>
@@ -39,12 +41,13 @@ const InternalLink = ({ to, title, children }) => {
   )
 }
 
-function Anchor({ to, title, children }) {
+function Anchor({ to, title, className, children }) {
   if (isExternalLink(to))
     return (
       <ExternalLink
         to={to}
         title={title}
+        className={className}
       >
         {children}
       </ExternalLink>
@@ -54,6 +57,7 @@ function Anchor({ to, title, children }) {
     <InternalLink
       to={to}
       title={title}
+      className={className}
     >
       {children}
     </InternalLink>
@@ -63,6 +67,7 @@ function Anchor({ to, title, children }) {
 Anchor.propTypes = {
   to: PropTypes.string.isRequired,
   title: PropTypes.string,
+  className: PropTypes.string,
   children: PropTypes.node.isRequired,
 }
 

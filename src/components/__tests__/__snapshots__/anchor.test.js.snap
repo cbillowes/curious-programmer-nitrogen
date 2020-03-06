@@ -28,6 +28,36 @@ Array [
 ]
 `;
 
+exports[`Anchor should configure class name externally 1`] = `
+Array [
+  " ",
+  <a
+    className="some-or-other-class"
+    href="https://curiousprogrammer.dev"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Curious Programmer
+  </a>,
+  " ",
+]
+`;
+
+exports[`Anchor should configure class name internally 1`] = `
+Array [
+  " ",
+  <a
+    className="some-or-other-class"
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    About
+  </a>,
+  " ",
+]
+`;
+
 exports[`Anchor should link to http/https 1`] = `
 Array [
   " ",
