@@ -53,7 +53,7 @@ ZSH_THEME="powerlevel9k/powerlevel9k"
 
 [Powerline fonts](https://github.com/powerline/fonts) are pre-patched and adjusted fonts that are used with the Powerline statusline plugin.
 
-``` bash
+```bash
 sudo dnf -y install powerline-fonts
 ```
 

@@ -69,7 +69,7 @@ find / -name "elasticsearch.service"
 vim /usr/lib/systemd/system/elasticsearch.service
 ```
 
-```
+```bash
 ExecStart=/usr/share/elasticsearch/bin/elasticsearch -p ${PID_DIR}/elasticsearch.pid
 ```
 

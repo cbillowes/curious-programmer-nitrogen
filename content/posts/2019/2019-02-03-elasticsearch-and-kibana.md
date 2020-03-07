@@ -66,7 +66,7 @@ find / -name "elasticsearch.service"
 vim /usr/lib/systemd/system/elasticsearch.service
 ```
 
-```
+```bash
 ExecStart=/usr/share/elasticsearch/bin/elasticsearch -p ${PID_DIR}/elasticsearch.pid
 ```
 
@@ -88,7 +88,7 @@ sudo journalctl --unit elasticsearch --since  "2016-10-30 18:17:16"
 curl -X GET "localhost:9200/"
 ```
 
-```
+```json
 {
   "name" : "Cp8oag6",
   "cluster_name" : "elasticsearch",
