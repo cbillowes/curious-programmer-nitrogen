@@ -58,7 +58,7 @@ refer to server commands in which case I will specify the server OS.
 `bash±df` will show you the amount of disk space available on your file system.
 
 ### Blocks
-```extract
+```bash
 1K-blocks     Used Available Use%
   8145968        0   8145968   0%
 ```
@@ -83,7 +83,7 @@ the `-h` switch.
 ```bash
 df -h
 ```
-```extract
+```bash
 Size  Used Avail Use%
 7.8G     0  7.8G   0%
 ```
