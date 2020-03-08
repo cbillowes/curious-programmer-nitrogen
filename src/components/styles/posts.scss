@@ -1,7 +1,15 @@
+@import './variables.scss';
+
 .posts {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
   flex-grow: 2;
   justify-content: space-evenly;
+
+  .blurb {
+    @include small-screen {
+      display: none;
+    }
+  }
 }
