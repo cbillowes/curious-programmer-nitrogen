@@ -2,7 +2,7 @@
 
 exports[`Spacer should render default 1`] = `
 <div
-  className="spacer"
+  className="spacer no-heading"
 />
 `;
 

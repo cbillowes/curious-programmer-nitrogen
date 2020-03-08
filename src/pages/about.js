@@ -4,7 +4,7 @@ import SEO from '../components/seo'
 import Image from '../components/image'
 import Anchor from '../components/anchor'
 import Panel from '../components/panel'
-import { SmallSpacer } from '../components/spacer'
+import { NoHeadingSpacer, SmallSpacer } from '../components/spacer'
 import { H1, H2, H3, H4 } from '../components/heading'
 import '../components/styles/about.scss'
 
@@ -17,7 +17,7 @@ const AboutPage = () => (
       My name is Clarice Bouwer. I love software.
       I am a learner for life.
     </SEO>
-    <SmallSpacer />
+    <NoHeadingSpacer />
     <section className="about">
       <aside className="picture">
         <Image src="profile.jpg" />

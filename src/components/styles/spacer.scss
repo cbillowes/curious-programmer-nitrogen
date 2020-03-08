@@ -1,7 +1,10 @@
 @import './variables.scss';
 
 .spacer {
-  padding-top: 1%;
+
+  &.no-heading {
+    padding-top: 5.5rem;
+  }
 
   &.small {
     @include medium-screen {

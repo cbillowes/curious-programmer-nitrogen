@@ -1,9 +1,9 @@
 import React from 'react'
 import './styles/spacer.scss'
 
-const Spacer = () => {
+const NoHeadingSpacer = () => {
   return (
-    <div className="spacer"></div>
+    <div className="spacer no-heading"></div>
   )
 }
 
@@ -19,4 +19,4 @@ const LargeSpacer = () => {
   )
 }
 
-export { Spacer, SmallSpacer, LargeSpacer }
+export { NoHeadingSpacer, SmallSpacer, LargeSpacer }
