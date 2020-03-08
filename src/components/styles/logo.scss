@@ -5,6 +5,20 @@
   font-family: $sans;
   font-size: 130%;
 
+  .partial {
+    display: none;
+  }
+
+  @include small-screen {
+    .partial {
+      display: block;
+    }
+
+    .full {
+      display: none;
+    }
+  }
+
   a, a:visited {
     text-decoration: none;
     border: none;
