@@ -4,7 +4,7 @@ import PropTypes from 'prop-types'
 import Tag from './tag'
 
 const Collection = ({ tags }) => {
-  return tags.map(tag => {
+  return (tags || []).map(tag => {
     return (
       <Tag
         key={tag}
@@ -30,3 +30,5 @@ Tags.propTypes = {
 }
 
 export default Tags
+
+//TODO: find out why the production build fails - map is not a function for tags
