@@ -4,7 +4,7 @@ import Number from './number'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
 import { H1 } from './heading'
-import { SmallSpacer } from './spacer'
+import { WithHeadingSpacer } from './spacer'
 import "./styles/post.scss"
 
 const Title = ({ children }) => {
@@ -59,7 +59,7 @@ function Post({ title, tags, date, author, ttr, number, children }) {
         <Tags
           tags={tags}
         />
-        <SmallSpacer />
+        <WithHeadingSpacer />
         <Body>
           {children}
         </Body>

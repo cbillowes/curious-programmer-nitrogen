@@ -28,19 +28,25 @@ body {
     }
 
     @include large-screen {
-      padding: 5rem 4rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
 
     @include medium-screen {
-      padding: 5rem 4rem;
+      padding-left: 5rem;
+      padding-right: 5rem;
     }
 
     @include small-screen {
-      padding: 6rem 2rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
     }
   }
 
-  h1, h2, h3, h4 {
+  h1,
+  h2,
+  h3,
+  h4 {
     font-weight: 800;
     font-family: $sans;
     line-height: 150%;
@@ -53,7 +59,8 @@ body {
 
   @include large-screen {
     font-size: $font-size-large;
-    line-height: $line-height-large;;
+    line-height: $line-height-large;
+    ;
   }
 
   @include medium-screen {
@@ -90,4 +97,10 @@ body {
     border-left: none;
     border-right: none;
   }
+
+  .danger {
+    color: $tertiary;
+  }
+
+  //TODO: add story
 }

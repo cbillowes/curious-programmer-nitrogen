@@ -3,7 +3,7 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { H1 } from '../components/heading'
-import { SmallSpacer } from '../components/spacer'
+import { WithHeadingSpacer } from '../components/spacer'
 import Posts from '../components/posts'
 
 const ArchivesPage = (props) => (
@@ -12,7 +12,7 @@ const ArchivesPage = (props) => (
     footer={true}
   >
     <SEO title="Archives" />
-    <SmallSpacer />
+    <WithHeadingSpacer />
     <H1 className="heading">Archives of all the things</H1>
     <Posts
       edges={props.data.allMarkdownRemark.edges}
@@ -35,6 +35,7 @@ export const pageQuery = graphql`
           excerpt(pruneLength: 250)
           timeToRead
           fields {
+            number
             slug
             date
           }

@@ -73,7 +73,7 @@ const Footer = () => {
   return (
     <footer className="footer">
       <Intro />
-      <div className="container">
+      <div className="wrapper">
         <License />
         <Social />
       </div>

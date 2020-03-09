@@ -3,7 +3,7 @@
 exports[`Reading pane should render 1`] = `
 <div>
   <div
-    className="spacer small"
+    className="spacer with-heading"
   />
   <h1>
     Don't panic.

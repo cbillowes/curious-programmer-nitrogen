@@ -1,83 +1,72 @@
 @import "./variables.scss";
 
 .footer {
-  background-color: $darkest;
   font-family: $sans;
   font-size: 1rem;
   line-height: 1.75rem;
-  padding: 3rem 5rem;
 
-  .container {
-    display: flex;
-    padding: 0;
+  @include small-screen {
+    margin: 2rem 0;
+    padding: 0 2rem;
+  }
 
-    @include small-screen() {
-      display: block;
+  @include medium-screen {
+    margin: 2.5rem 0;
+    padding: 0 5rem;
+  }
+
+  @include large-screen {
+    margin: 4rem 0;
+    padding: 0 5.5rem;
+  }
+
+  .wrapper {
+    @include large-screen {
+      display: flex;
     }
 
     .creative-commons-logo {
       margin-top: .5rem;
-      margin-right: 1rem;
+      margin-right: 1.5rem;
       float: left;
     }
 
     .license {
       font-size: .85rem;
-      line-height: 1.75rem;
-      justify-content: baseline;
+      line-height: 1.85rem;
+
+      @include large-screen {
+        justify-content: baseline;
+      }
     }
 
     .social {
-      padding-left: 1rem;
-      min-width: 30%;
-      margin-left: 1rem;
-      margin-top: -2rem;
       text-align: center;
 
-      @include medium-screen {
-        margin-left: 0;
-        max-width: 1rem;
-        min-width: auto;
-      }
-
-      @include small-screen {
-        margin-top: 5px;
-        margin-left: 0;
+      @include large-screen {
+        min-width: 30%;
+        margin-left: 1rem;
+        margin-top: -2rem;
       }
 
       .icon {
         width: 5rem;
         height: 5rem;
-        border: solid 10px transparent;
+        margin: .5rem;
+        border: solid .5rem $dark;
         border-radius: 50%;
 
         &:hover {
-          background-color: $primary;
-          border-top: solid 10px $primary;
-          border-right: solid 10px $secondary;
-          $border-bottom: solid 10px $secondary;
-        }
-
-        @include medium-screen {
-          width: 3rem;
-          height: 3rem;
-          border-width: 5px;
-          margin-bottom: .25rem;
-
-          &:hover {
-            border-width: 5px;
-          }
+          border-top: solid .5rem $primary;
+          border-right: solid .5rem $secondary;
+          border-bottom: solid .5rem $secondary;
+          border-left: solid .5rem $primary;
         }
 
         @include small-screen {
           width: 3rem;
           height: 3rem;
-          border-width: 5px;
-          margin-bottom: .25rem;
-
-          &:hover {
-            border-width: 5px;
-          }
+          margin: .25rem;
         }
       }
     }

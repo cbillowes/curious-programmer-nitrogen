@@ -16,7 +16,7 @@ exports[`Layout should not render the footer 1`] = `
          
         <a
           aria-current="page"
-          className=""
+          className="full"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -31,6 +31,25 @@ exports[`Layout should not render the footer 1`] = `
             "programmer"
           </strong>
            
+          <strong>
+            }
+          </strong>
+        </a>
+         
+         
+        <a
+          aria-current="page"
+          className="partial"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          style={Object {}}
+          title="Curious Programmer"
+        >
+          <strong>
+            {
+          </strong>
+           :curious 
           <strong>
             }
           </strong>
@@ -70,7 +89,7 @@ exports[`Layout should not render the footer 1`] = `
           placeholder="Looking for something?"
         />
         <div
-          className="spacer small"
+          className="spacer with-heading"
         />
         <div
           className="empty-results"
@@ -236,7 +255,7 @@ exports[`Layout should render custom class 1`] = `
          
         <a
           aria-current="page"
-          className=""
+          className="full"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -251,6 +270,25 @@ exports[`Layout should render custom class 1`] = `
             "programmer"
           </strong>
            
+          <strong>
+            }
+          </strong>
+        </a>
+         
+         
+        <a
+          aria-current="page"
+          className="partial"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          style={Object {}}
+          title="Curious Programmer"
+        >
+          <strong>
+            {
+          </strong>
+           :curious 
           <strong>
             }
           </strong>
@@ -290,7 +328,7 @@ exports[`Layout should render custom class 1`] = `
           placeholder="Looking for something?"
         />
         <div
-          className="spacer small"
+          className="spacer with-heading"
         />
         <div
           className="empty-results"
@@ -456,7 +494,7 @@ exports[`Layout should render page 1`] = `
          
         <a
           aria-current="page"
-          className=""
+          className="full"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -471,6 +509,25 @@ exports[`Layout should render page 1`] = `
             "programmer"
           </strong>
            
+          <strong>
+            }
+          </strong>
+        </a>
+         
+         
+        <a
+          aria-current="page"
+          className="partial"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          style={Object {}}
+          title="Curious Programmer"
+        >
+          <strong>
+            {
+          </strong>
+           :curious 
           <strong>
             }
           </strong>
@@ -510,7 +567,7 @@ exports[`Layout should render page 1`] = `
           placeholder="Looking for something?"
         />
         <div
-          className="spacer small"
+          className="spacer with-heading"
         />
         <div
           className="empty-results"
@@ -676,7 +733,7 @@ exports[`Layout should render reading pane 1`] = `
          
         <a
           aria-current="page"
-          className=""
+          className="full"
           href="/"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -691,6 +748,25 @@ exports[`Layout should render reading pane 1`] = `
             "programmer"
           </strong>
            
+          <strong>
+            }
+          </strong>
+        </a>
+         
+         
+        <a
+          aria-current="page"
+          className="partial"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          style={Object {}}
+          title="Curious Programmer"
+        >
+          <strong>
+            {
+          </strong>
+           :curious 
           <strong>
             }
           </strong>
@@ -730,7 +806,7 @@ exports[`Layout should render reading pane 1`] = `
           placeholder="Looking for something?"
         />
         <div
-          className="spacer small"
+          className="spacer with-heading"
         />
         <div
           className="empty-results"

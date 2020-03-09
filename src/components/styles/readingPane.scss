@@ -1,6 +1,6 @@
 @import "./variables.scss";
 
 .reading-pane {
-  width: $reading-pane-max-width;
+  max-width: $reading-pane-max-width;
   margin: 0 auto;
 }

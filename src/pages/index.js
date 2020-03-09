@@ -4,7 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Posts from '../components/posts'
 import ShowMore from '../components/showMore'
-import { NoHeadingSpacer } from '../components/spacer'
+import { WithoutHeadingSpacer } from '../components/spacer'
 
 const IndexPage = (props) => (
   <Layout
@@ -12,7 +12,7 @@ const IndexPage = (props) => (
     footer={true}
   >
     <SEO title="Blog" />
-    <NoHeadingSpacer />
+    <WithoutHeadingSpacer />
     <Posts
       edges={props.data.allMarkdownRemark.edges}
       showNumbers={true}

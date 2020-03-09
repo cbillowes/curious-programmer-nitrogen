@@ -1,12 +1,12 @@
 import React from 'react'
-import { NoHeadingSpacer, LargeSpacer, SmallSpacer } from '../spacer'
+import { WithoutHeadingSpacer, LargeSpacer, WithHeadingSpacer } from '../spacer'
 import { getSnapshot } from './_helpers'
 
 describe(`Spacer`, () => {
 
   it(`should render default`, () => {
     const spacer = (
-      <NoHeadingSpacer />
+      <WithoutHeadingSpacer />
     )
     const tree = getSnapshot(spacer)
     expect(tree).toMatchSnapshot()
@@ -22,7 +22,7 @@ describe(`Spacer`, () => {
 
   it(`should render small`, () => {
     const spacer = (
-      <SmallSpacer />
+      <WithHeadingSpacer />
     )
     const tree = getSnapshot(spacer)
     expect(tree).toMatchSnapshot()

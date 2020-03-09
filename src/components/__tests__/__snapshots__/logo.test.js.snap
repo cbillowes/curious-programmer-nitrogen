@@ -7,7 +7,7 @@ exports[`Logo should render 1`] = `
    
   <a
     aria-current="page"
-    className=""
+    className="full"
     href="/"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -22,6 +22,25 @@ exports[`Logo should render 1`] = `
       "programmer"
     </strong>
      
+    <strong>
+      }
+    </strong>
+  </a>
+   
+   
+  <a
+    aria-current="page"
+    className="partial"
+    href="/"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+    style={Object {}}
+    title="Curious Programmer"
+  >
+    <strong>
+      {
+    </strong>
+     :curious 
     <strong>
       }
     </strong>

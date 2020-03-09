@@ -76,15 +76,19 @@ const GitHub = () => {
 const License = () => {
   return (
     <>
-      <p className="license">
-        <CreativeCommonsLogo />
-        The content is written by <Author /> and is licensed under the <CreativeCommonsLicense />.
-        References to external resources are subject to their own terms and conditions.
-        There is a <CodeLicense /> for the code.
-        It's probably a good idea to read the <PrivacyPolicy />.
-        The website is open-source and is available on <GitHub />.
-        Please give it a star if you think it is cool.
-      </p>
+      <div className="license">
+        <p>
+          <CreativeCommonsLogo />
+          The content is written by <Author /> and is licensed under the <CreativeCommonsLicense />.
+          References to external resources are subject to their own terms and conditions.
+          There is a <CodeLicense /> for the code.
+          It's probably a good idea to read the <PrivacyPolicy />.
+          The website is open-source and is available on <GitHub />.
+          Please give it a star if you think it is cool.
+          <br />
+          Icons made by <a href="https://www.flaticon.com/authors/freepik" title="Freepik">Freepik</a> from
+          <a href="https://www.flaticon.com/" title="Flaticon">www.flaticon.com</a></p>
+      </div>
     </>
   )
 }

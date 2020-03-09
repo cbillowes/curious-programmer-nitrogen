@@ -4,7 +4,7 @@ import SEO from '../components/seo'
 import Image from '../components/image'
 import Anchor from '../components/anchor'
 import Panel from '../components/panel'
-import { NoHeadingSpacer, SmallSpacer } from '../components/spacer'
+import { WithoutHeadingSpacer, WithHeadingSpacer } from '../components/spacer'
 import { H1, H2, H3, H4 } from '../components/heading'
 import '../components/styles/about.scss'
 
@@ -17,7 +17,7 @@ const AboutPage = () => (
       My name is Clarice Bouwer. I love software.
       I am a learner for life.
     </SEO>
-    <NoHeadingSpacer />
+    <WithoutHeadingSpacer />
     <section className="about">
       <aside className="picture">
         <Image src="profile.jpg" />
@@ -27,8 +27,8 @@ const AboutPage = () => (
         <H2>Senior Software Engineer</H2>
         <H3>Cloudsure &middot; Grand Baie, Mauritius</H3>
         <H4>
-          <Anchor to="mailto:clarice@bouwer.dev" className="tag">clarice@bouwer.dev</Anchor> &middot;
-          <Anchor to="https://curiousprogrammer.dev" className="tag">curiousprogrammer.dev</Anchor> &middot;
+          <Anchor to="mailto:clarice@bouwer.dev" className="tag">clarice@bouwer.dev</Anchor>
+          <Anchor to="https://curiousprogrammer.dev" className="tag">curiousprogrammer.dev</Anchor>
           <Anchor to="https://clarice.bouwer.dev" className="tag">clarice.bouwer.dev</Anchor>
         </H4>
       </aside>
@@ -39,7 +39,6 @@ const AboutPage = () => (
         <Anchor to="https://github.com/cbillowes" className="github" />
         <Anchor to="https://www.linkedin.com/in/cbouwer/" className="linked-in" />
       </aside>
-      <SmallSpacer />
       <aside className="qualities">
         <ul>
           <li>Passionate</li>
@@ -52,11 +51,10 @@ const AboutPage = () => (
           <li>What is this comfort zone thing?</li>
         </ul>
       </aside>
-      <SmallSpacer />
       <div className="panels">
         <Panel title="Want to hire me?">
           <p>
-            <strong>I am NOT on the market at the moment.</strong>
+            <strong className="danger">I am not on the market.</strong><br />
             When I am, ask me to do a test at home or invite me to an informal interview over coffee. I am shy but I warm up and shine in time.
             I can handle realistic pressure. Working persistent long hours is not a job for me.
             I prefer remote work in Clojure, React or Gatsby.
@@ -121,3 +119,6 @@ const AboutPage = () => (
 )
 
 export default AboutPage
+
+//TODO: update content to be more friendly and open, especially under "hire me"
+//TODO: fix contact buttons. two clarice@bouwer.dev's

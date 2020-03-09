@@ -5,7 +5,7 @@ import SEO from '../components/seo'
 import Anchor from '../components/anchor'
 import Posts from '../components/posts'
 import { H1 } from '../components/heading'
-import { SmallSpacer } from '../components/spacer'
+import { WithHeadingSpacer } from '../components/spacer'
 
 export default (props) => {
   const { tag } = props.pageContext
@@ -16,7 +16,7 @@ export default (props) => {
       footer={true}
     >
       <SEO title={tag} />
-      <SmallSpacer />
+      <WithHeadingSpacer />
       <H1>
         <Anchor to="/tags" title="Tags">tags</Anchor>: {tag.toLowerCase()}
       </H1>

@@ -71,7 +71,7 @@ exports[`Post should render with a number 1`] = `
      
   </div>
   <div
-    className="spacer small"
+    className="spacer with-heading"
   />
   <div
     className="reading-panel"
@@ -140,7 +140,7 @@ exports[`Post should render with html 1`] = `
      
   </div>
   <div
-    className="spacer small"
+    className="spacer with-heading"
   />
   <div
     className="reading-panel"
@@ -209,7 +209,7 @@ exports[`Post should render with plain text 1`] = `
      
   </div>
   <div
-    className="spacer small"
+    className="spacer with-heading"
   />
   <div
     className="reading-panel"

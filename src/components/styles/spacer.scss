@@ -3,16 +3,30 @@
 .spacer {
 
   &.no-heading {
-    padding-top: 5.5rem;
-  }
+    @include large-screen {
+      padding-top: 12rem;
+    }
 
-  &.small {
     @include medium-screen {
-      padding-top: 3%;
+      padding-top: 11rem;
     }
 
     @include small-screen {
-      padding-top: 5%;
+      padding-top: 10rem;
+    }
+  }
+
+  &.with-heading {
+    @include large-screen {
+      padding-top: 6rem;
+    }
+
+    @include medium-screen {
+      padding-top: 7rem;
+    }
+
+    @include small-screen {
+      padding-top: 8rem;
     }
   }
 

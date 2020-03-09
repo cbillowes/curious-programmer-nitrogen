@@ -14,6 +14,6 @@ exports[`Spacer should render large 1`] = `
 
 exports[`Spacer should render small 1`] = `
 <div
-  className="spacer small"
+  className="spacer with-heading"
 />
 `;

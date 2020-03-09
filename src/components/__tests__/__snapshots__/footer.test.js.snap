@@ -36,86 +36,103 @@ exports[`Footer should render 1`] = `
     .
   </span>
   <div
-    className="container"
+    className="wrapper"
   >
-    <p
+    <div
       className="license"
     >
-      <span
-        className="creative-commons-logo"
-      >
+      <p>
+        <span
+          className="creative-commons-logo"
+        >
+           
+          <a
+            className="plain"
+            href="http://creativecommons.org/licenses/by-sa/4.0/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            <img
+              alt="Creative Commons License"
+              src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+              title="Creative Commons Attribution-ShareAlike 4.0 International License"
+            />
+          </a>
+           
+        </span>
+        The content is written by 
          
         <a
-          className="plain"
-          href="http://creativecommons.org/licenses/by-sa/4.0/"
+          className="underline-only"
+          href="/about"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          Clarice Bouwer
+        </a>
+         
+         and is licensed under the 
+         
+        <a
+          className="underline-only"
+          href="https://creativecommons.org/licenses/by-sa/4.0/"
           rel="nofollow noopener noreferrer"
           target="_blank"
         >
-          <img
-            alt="Creative Commons License"
-            src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
-            title="Creative Commons Attribution-ShareAlike 4.0 International License"
-          />
+          Creative Commons Attribution-ShareAlike 4.0 International License
         </a>
          
-      </span>
-      The content is written by 
-       
-      <a
-        className="underline-only"
-        href="/about"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Clarice Bouwer
-      </a>
-       
-       and is licensed under the 
-       
-      <a
-        className="underline-only"
-        href="https://creativecommons.org/licenses/by-sa/4.0/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Creative Commons Attribution-ShareAlike 4.0 International License
-      </a>
-       
-      . References to external resources are subject to their own terms and conditions. There is a 
-       
-      <a
-        className="underline-only"
-        href="/license"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        license
-      </a>
-       
-       for the code. It's probably a good idea to read the 
-       
-      <a
-        className="underline-only"
-        href="/privacy-policy"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        privacy policy
-      </a>
-       
-      . The website is open-source and is available on 
-       
-      <a
-        className="underline-only"
-        href="https://github.com/cbillowes/curious-programmer-nitrogen"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        GitHub
-      </a>
-       
-      . Please give it a star if you think it is cool.
-    </p>
+        . References to external resources are subject to their own terms and conditions. There is a 
+         
+        <a
+          className="underline-only"
+          href="/license"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          license
+        </a>
+         
+         for the code. It's probably a good idea to read the 
+         
+        <a
+          className="underline-only"
+          href="/privacy-policy"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        >
+          privacy policy
+        </a>
+         
+        . The website is open-source and is available on 
+         
+        <a
+          className="underline-only"
+          href="https://github.com/cbillowes/curious-programmer-nitrogen"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+        >
+          GitHub
+        </a>
+         
+        . Please give it a star if you think it is cool.
+        <br />
+        Icons made by 
+        <a
+          href="https://www.flaticon.com/authors/freepik"
+          title="Freepik"
+        >
+          Freepik
+        </a>
+         from
+        <a
+          href="https://www.flaticon.com/"
+          title="Flaticon"
+        >
+          www.flaticon.com
+        </a>
+      </p>
+    </div>
     <div
       className="social"
     >

@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Anchor from './anchor'
 import Search from './search'
 import Loader from './loader'
-import { SmallSpacer } from './spacer'
+import { WithHeadingSpacer } from './spacer'
 import { H1 } from './heading'
 import './styles/search.scss'
 
@@ -192,7 +192,7 @@ class SearchBar extends Component {
             onKeyDown={(e) => this.cull(e)}
             onKeyPress={(e) => this.query(e)}
           />
-          <SmallSpacer />
+          <WithHeadingSpacer />
           <Status
             searching={this.state.searching}
             error={this.state.error}

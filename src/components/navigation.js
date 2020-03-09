@@ -47,3 +47,5 @@ Navigation.propTypes = {
 export default Navigation
 
 //TODO: keep data.nav? maybe?
+//TODO: /tag/ not selected as active menu item
+//TODO: click on active menu item does not close menu

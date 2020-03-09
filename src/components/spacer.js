@@ -1,15 +1,15 @@
 import React from 'react'
 import './styles/spacer.scss'
 
-const NoHeadingSpacer = () => {
+const WithoutHeadingSpacer = () => {
   return (
     <div className="spacer no-heading"></div>
   )
 }
 
-const SmallSpacer = () => {
+const WithHeadingSpacer = () => {
   return (
-    <div className="spacer small"></div>
+    <div className="spacer with-heading"></div>
   )
 }
 
@@ -19,4 +19,4 @@ const LargeSpacer = () => {
   )
 }
 
-export { NoHeadingSpacer, SmallSpacer, LargeSpacer }
+export { WithoutHeadingSpacer, WithHeadingSpacer, LargeSpacer }
