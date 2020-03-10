@@ -18,7 +18,7 @@ function Logo() {
         title="Curious Programmer"
         className="partial"
       >
-        <strong>&#123;</strong> :curious <strong>&#125;</strong>
+        <strong>&#123; &#125;</strong>
       </Anchor>
     </div>
   )

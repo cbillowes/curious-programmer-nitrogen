@@ -38,11 +38,7 @@ exports[`Logo should render 1`] = `
     title="Curious Programmer"
   >
     <strong>
-      {
-    </strong>
-     :curious 
-    <strong>
-      }
+      { }
     </strong>
   </a>
    

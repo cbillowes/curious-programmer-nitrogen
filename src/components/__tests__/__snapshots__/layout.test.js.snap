@@ -47,11 +47,7 @@ exports[`Layout should not render the footer 1`] = `
           title="Curious Programmer"
         >
           <strong>
-            {
-          </strong>
-           :curious 
-          <strong>
-            }
+            { }
           </strong>
         </a>
          
@@ -286,11 +282,7 @@ exports[`Layout should render custom class 1`] = `
           title="Curious Programmer"
         >
           <strong>
-            {
-          </strong>
-           :curious 
-          <strong>
-            }
+            { }
           </strong>
         </a>
          
@@ -525,11 +517,7 @@ exports[`Layout should render page 1`] = `
           title="Curious Programmer"
         >
           <strong>
-            {
-          </strong>
-           :curious 
-          <strong>
-            }
+            { }
           </strong>
         </a>
          
@@ -764,11 +752,7 @@ exports[`Layout should render reading pane 1`] = `
           title="Curious Programmer"
         >
           <strong>
-            {
-          </strong>
-           :curious 
-          <strong>
-            }
+            { }
           </strong>
         </a>
          
