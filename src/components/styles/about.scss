@@ -129,9 +129,9 @@
     }
   }
 
-  .qualities {
+  .values {
     background-color: $dark;
-    border-radius: $border-radius;
+    border-radius: $border-radius 0 0 $border-radius;
     box-shadow: 1px 1px 1px $neutral;
     padding: .5rem 2rem;
 
@@ -190,32 +190,9 @@
   }
 
   .panels {
-    margin-top: 1.25rem;
-
-    .panel {
-      border-bottom: solid 5px $darkest;
-
-      .title {
-        background-color: $dark;
-        color: $lightest;
-        border: none;
-        font-weight: normal;
-        display: block;
-        width: 100%;
-        padding: 1.5rem .75rem;
-        text-align: center;
-
-        &:hover {
-          background-color: $primary;
-          color: $darkest;
-        }
-
-        &:focus {
-          outline: 0;
-          color: $darkest;
-          border: solid 1px $primary;
-          background-color: $primary;
-        }
+    &:first-child {
+      .panel {
+        margin-top: 1rem;
       }
     }
   }
