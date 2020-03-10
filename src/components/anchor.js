@@ -68,7 +68,7 @@ Anchor.propTypes = {
   to: PropTypes.string.isRequired,
   title: PropTypes.string,
   className: PropTypes.string,
-  children: PropTypes.node.isRequired,
+  children: PropTypes.node,
 }
-
+//TODO: update tests and stuff to allow for missing children. ie. about:36 example
 export default Anchor

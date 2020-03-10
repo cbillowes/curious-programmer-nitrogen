@@ -28,6 +28,19 @@ Array [
 ]
 `;
 
+exports[`Anchor should configure an empty anchor 1`] = `
+Array [
+  " ",
+  <a
+    className="blog"
+    href="https://curiousprogrammer.dev"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  />,
+  " ",
+]
+`;
+
 exports[`Anchor should configure class name externally 1`] = `
 Array [
   " ",

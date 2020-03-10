@@ -1,6 +1,6 @@
 import React from 'react'
 import Anchor from '../anchor'
-import { validateValues, getSnapshot } from './_helpers'
+import { getSnapshot } from './_helpers'
 
 describe(`Anchor`, () => {
   it(`should link to http/https`, () => {
@@ -56,6 +56,16 @@ describe(`Anchor`, () => {
       >
         Curious Programmer
       </Anchor>
+    )
+    expect(tree).toMatchSnapshot()
+  })
+
+  it(`should configure an empty anchor`, () => {
+    const tree = getSnapshot(
+      <Anchor
+        to="https://curiousprogrammer.dev"
+        className="blog"
+      />
     )
     expect(tree).toMatchSnapshot()
   })
