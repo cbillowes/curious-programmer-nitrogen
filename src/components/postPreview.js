@@ -92,7 +92,7 @@ PostPreview.propTypes = {
   tags: PropTypes.array.isRequired,
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  ttr: PropTypes.string.isRequired,
+  ttr: PropTypes.number.isRequired,
   number: PropTypes.number,
   limit: PropTypes.number,
   children: PropTypes.node.isRequired,

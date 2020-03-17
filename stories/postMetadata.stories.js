@@ -8,5 +8,5 @@ storiesOf('Post', module)
       moment="5 days ago"
       date="1 April 2019"
       author="Clarice Bouwer"
-      ttr="15"
+      ttr={42}
     />)

@@ -42,8 +42,8 @@ function PostMetadata({ date, author, ttr }) {
 
 PostMetadata.propTypes = {
   date: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  ttr: PropTypes.string.isRequired
+  ttr: PropTypes.number.isRequired,
+  author: PropTypes.string,
 }
 
 export default PostMetadata

@@ -42,7 +42,7 @@ storiesOf('Post', module)
         excerpt: starwars.excerpt,
         author: starwars.author,
         date: `20 October 2019`,
-        ttr: `1`,
+        ttr: 42,
         tags: [`star wars`, `vader`, `yoda`],
       }}
       next={{
@@ -51,7 +51,7 @@ storiesOf('Post', module)
         excerpt: hitchikersGuideToTheGalaxy.excerpt,
         author: hitchikersGuideToTheGalaxy.author,
         date: `1 April 2019`,
-        ttr: `3`,
+        ttr: 42,
         tags: [`hitchickers`, `beer`, `towel`],
       }}
     />
@@ -64,7 +64,7 @@ storiesOf('Post', module)
         excerpt: starwars.excerpt,
         author: starwars.author,
         date: `21 January 2018`,
-        ttr: `1`,
+        ttr: 42,
         tags: [`star wars`, `vader`, `yoda`],
         limitExcerpt: 20,
       }}
@@ -74,7 +74,7 @@ storiesOf('Post', module)
         excerpt: hitchikersGuideToTheGalaxy.excerpt,
         author: hitchikersGuideToTheGalaxy.author,
         date: `18 November 2017`,
-        ttr: `3`,
+        ttr: 42,
         tags: [`hitchickers`, `beer`, `towel`],
         limitExcerpt: 20,
       }}

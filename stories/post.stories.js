@@ -12,7 +12,7 @@ storiesOf('Post', module)
       tags={[`hello`, `world`, `greetings`]}
       date="1 April 2019"
       author="Clarice Bouwer"
-      ttr="15"
+      ttr={42}
     >
       <p>
         Jack Tar scurvy reef Corsair tack barque mutiny chase pinnace hempen halter.
@@ -32,7 +32,7 @@ storiesOf('Post', module)
       tags={[`hello`, `galaxy`, `greetings`]}
       date="1 April 2018"
       author="Clarice Bouwer"
-      ttr="15"
+      ttr={42}
     >
       {htmlString}
     </Post>

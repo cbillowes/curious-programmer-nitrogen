@@ -41,7 +41,7 @@ exports[`Post should render with a number 1`] = `
     <span
       data-container="metadata-ttr"
     >
-      (Est. 1 minute read)
+      (Est. 42 minute read)
     </span>
   </div>
   <div
@@ -110,7 +110,7 @@ exports[`Post should render with html 1`] = `
     <span
       data-container="metadata-ttr"
     >
-      (Est. 1 minute read)
+      (Est. 42 minute read)
     </span>
   </div>
   <div
@@ -179,7 +179,7 @@ exports[`Post should render with plain text 1`] = `
     <span
       data-container="metadata-ttr"
     >
-      (Est. 1 minute read)
+      (Est. 42 minute read)
     </span>
   </div>
   <div

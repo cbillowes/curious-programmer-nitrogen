@@ -13,7 +13,7 @@ describe(`Post navigation teaser`, () => {
             excerpt: `Excerpt`,
             date: `2018-04-01T00:00:00Z`,
             author: `Clarice Bouwer`,
-            ttr: "12",
+            ttr: 42,
             tags: [`Douglas`, `Adams`],
           }
         }
@@ -24,7 +24,7 @@ describe(`Post navigation teaser`, () => {
             excerpt: `Excerpt`,
             date: `2018-04-01T00:00:00Z`,
             author: `Clarice Bouwer`,
-            ttr: "15",
+            ttr: 42,
             tags: [`Douglas`, `Adams`],
           }
         }
@@ -44,7 +44,7 @@ describe(`Post navigation teaser`, () => {
             excerpt: `Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.`,
             date: `2018-04-01T00:00:00Z`,
             author: `Pixie`,
-            ttr: "1",
+            ttr: 42,
             limitExcerpt: 10,
             tags: [`Douglas`, `Adams`],
           }
@@ -56,7 +56,7 @@ describe(`Post navigation teaser`, () => {
             excerpt: `Luke Skywalker's peaceful and solitary existence gets upended when he encounters Rey, a young woman who shows strong signs of the Force. Her desire to learn the ways of the Jedi forces Luke to make a decision that changes their lives forever. Meanwhile, Kylo Ren and General Hux lead the First Order in an all-out assault against Leia and the Resistance for supremacy of the galaxy.`,
             date: `2019-04-01T00:00:00Z`,
             author: `Elby`,
-            ttr: "2",
+            ttr: 42,
             limitExcerpt: 10,
             tags: [`star`, `wars`],
           }

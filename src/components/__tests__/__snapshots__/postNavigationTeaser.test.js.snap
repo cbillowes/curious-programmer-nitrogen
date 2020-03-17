@@ -47,7 +47,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 12 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </a>
@@ -122,7 +122,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 15 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </a>
@@ -204,7 +204,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 1 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </a>
@@ -279,7 +279,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 2 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </a>

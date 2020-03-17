@@ -73,7 +73,7 @@ Post.propTypes = {
   children: PropTypes.node.isRequired,
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  ttr: PropTypes.string.isRequired,
+  ttr: PropTypes.number.isRequired,
   tags: PropTypes.array.isRequired,
   number: PropTypes.number,
 }

@@ -9,7 +9,7 @@ describe(`Post`, () => {
         title="Don't panic."
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr="1"
+        ttr={42}
         tags={["don't", "panic"]}
       >
         Arthur Dent (Martin Freeman) is trying to prevent his house from being bulldozed
@@ -31,7 +31,7 @@ describe(`Post`, () => {
         title="Don't panic."
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr="1"
+        ttr={42}
         tags={["don't", "panic"]}
       >
         <p>
@@ -56,7 +56,7 @@ describe(`Post`, () => {
         title="Don't panic."
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr="1"
+        ttr={42}
         number={42}
         tags={["don't", "panic"]}
       >

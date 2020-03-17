@@ -10,7 +10,7 @@ describe(`Post preview`, () => {
         slug="/dont-panic"
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr="2"
+        ttr={2}
         tags={[`don't`, `panic`]}
       >
         <p>Earthman Arthur Dent is rescued by his friend, Ford Prefect—an
@@ -32,7 +32,7 @@ describe(`Post preview`, () => {
         slug="/dont-panic"
         date="2019-02-01T00:00:00.000Z"
         author="Clarice Bouwer"
-        ttr="1"
+        ttr={1}
         tags={[`don't`, `panic`]}
         limit={42}
       >

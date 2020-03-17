@@ -44,7 +44,7 @@ storiesOf('Navigation (Tiny)', module)
           excerpt: starwars.excerpt,
           author: starwars.author,
           date: `20 October 2019`,
-          ttr: `1`,
+          ttr: 42,
           tags: [`star wars`, `vader`, `yoda`],
         }}
         next={{
@@ -53,7 +53,7 @@ storiesOf('Navigation (Tiny)', module)
           excerpt: hitchikersGuideToTheGalaxy.excerpt,
           author: hitchikersGuideToTheGalaxy.author,
           date: `1 April 2019`,
-          ttr: `3`,
+          ttr: 42,
           tags: [`hitchickers`, `beer`, `towel`],
         }}
       />
@@ -68,7 +68,7 @@ storiesOf('Navigation (Tiny)', module)
           excerpt: starwars.excerpt,
           author: starwars.author,
           date: `20 October 2019`,
-          ttr: `1`,
+          ttr: 42,
           tags: [`star wars`, `vader`, `yoda`],
         }}
         next={{
@@ -77,7 +77,7 @@ storiesOf('Navigation (Tiny)', module)
           excerpt: hitchikersGuideToTheGalaxy.excerpt,
           author: hitchikersGuideToTheGalaxy.author,
           date: `1 April 2019`,
-          ttr: `3`,
+          ttr: 42,
           tags: [`hitchickers`, `beer`, `towel`],
         }}
       />

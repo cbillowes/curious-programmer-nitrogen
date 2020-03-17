@@ -7,7 +7,7 @@ describe(`Posts`, () => {
     {
       node: {
         excerpt: ``,
-        timeToRead: `12`,
+        timeToRead: 42,
         html: `,`,
         fields: {
           slug: `/dont-panic`,
@@ -18,7 +18,7 @@ describe(`Posts`, () => {
           title: ``,
           author: `Clarice Bouwer`,
           blurb: ``,
-          ttr: `42`,
+          ttr: 42,
           tags: [`don't`, `panic`],
         },
       },
@@ -26,7 +26,7 @@ describe(`Posts`, () => {
     {
       node: {
         excerpt: ``,
-        timeToRead: `12`,
+        timeToRead: 42,
         html: `,`,
         fields: {
           slug: `/bring-your-own-towel`,
@@ -37,7 +37,7 @@ describe(`Posts`, () => {
           title: ``,
           author: `Clarice Bouwer`,
           blurb: ``,
-          ttr: `42`,
+          ttr: 42,
           tags: [`towel`, `panic`],
         },
       },

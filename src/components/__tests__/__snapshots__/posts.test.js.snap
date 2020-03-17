@@ -59,7 +59,7 @@ exports[`Posts should render with default word limit 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 12 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </div>
@@ -145,7 +145,7 @@ exports[`Posts should render with default word limit 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 12 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </div>
@@ -238,7 +238,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 12 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </div>
@@ -324,7 +324,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         <span
           data-container="metadata-ttr"
         >
-          (Est. 12 minute read)
+          (Est. 42 minute read)
         </span>
       </div>
     </div>
