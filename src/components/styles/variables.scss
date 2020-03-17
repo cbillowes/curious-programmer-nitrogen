@@ -1,9 +1,32 @@
 @import url("//fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Open+Sans:400,800|Courier+Prime:400");
 
-$sans: 'Open Sans','Helvetica Neue',Helvetica,Arial,sans-serif;
-$serif: 'Crimson Text','Times New Roman',serif;
-$mono: 'Courier Prime',SFMono-Regular,Consolas,'Liberation Mono',Menlo,Courier,monospace;
-$symbol: -apple-system,BlinkMacSystemFont,Segoe UI,Helvetica,Arial,sans-serif,Apple Color Emoji,Segoe UI Emoji,Segoe UI Symbol;
+$sans: 'Open Sans',
+'Helvetica Neue',
+Helvetica,
+Arial,
+sans-serif;
+
+$serif: 'Crimson Text',
+'Times New Roman',
+serif;
+
+$mono: 'Courier Prime',
+SFMono-Regular,
+Consolas,
+'Liberation Mono',
+Menlo,
+Courier,
+monospace;
+
+$symbol: -apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Helvetica,
+Arial,
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji,
+Segoe UI Symbol;
 
 $reading-pane-max-width: 820px;
 
@@ -48,23 +71,19 @@ $secondary-dark: darken($secondary, 15%);
 $tertiary-dark: darken($tertiary, 15%);
 
 @mixin large-screen {
-  @media screen and
-         (min-width: $breakpoint-large + 1) {
+  @media screen and (min-width: $breakpoint-large + 1) {
     @content;
   }
 }
 
 @mixin medium-screen {
-  @media screen and
-         (min-width: $breakpoint-medium + 1) and
-         (max-width: $breakpoint-large) {
+  @media screen and (min-width: $breakpoint-medium + 1) and (max-width: $breakpoint-large) {
     @content;
   }
 }
 
 @mixin small-screen {
-  @media screen and
-         (max-width: $breakpoint-medium) {
+  @media screen and (max-width: $breakpoint-medium) {
     @content;
   }
 }
@@ -85,8 +104,8 @@ $tertiary-dark: darken($tertiary, 15%);
 }
 
 @mixin rounded-text($color,
-                    $shadow,
-                    $background) {
+  $shadow,
+  $background) {
   border-radius: $border-radius;
   background-color: $background;
   color: $color;
@@ -94,14 +113,14 @@ $tertiary-dark: darken($tertiary, 15%);
 }
 
 @mixin sexy-text($color,
-                 $shadow,
-                 $with-border) {
+  $shadow,
+  $with-border) {
   color: $color;
   background: transparent;
   text-shadow: 1px 1px 1px $shadow;
   border: none;
 
-  @if $with-border == yes {
+  @if $with-border==yes {
     padding: 0.25rem;
     border-radius: 0;
     border-bottom: solid 1px $color;
@@ -115,11 +134,11 @@ $tertiary-dark: darken($tertiary, 15%);
 }
 
 @mixin tag($background,
-           $foreground,
-           $shadow,
-           $hover-background,
-           $hover-foreground,
-           $hover-shadow) {
+  $foreground,
+  $shadow,
+  $hover-background,
+  $hover-foreground,
+  $hover-shadow) {
   line-height: 180%;
   font-family: $sans;
   font-size: 70%;
