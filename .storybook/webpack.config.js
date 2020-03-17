@@ -2,8 +2,8 @@ const path = require('path')
 
 module.exports = ({ config, mode }) => {
   config.module.rules.push({
-    test: /\.scss$/,
-    use: ['style-loader', 'sass-loader', 'css-loader'],
+    test: /\.s?css$/,
+    use: ['style-loader', 'css-loader', 'sass-loader'],
     include: path.resolve(__dirname, '../src/components/styles'),
   })
   // Transpile Gatsby module because Gastby includes un-transpiled ES6 code.
