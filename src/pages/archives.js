@@ -11,7 +11,10 @@ const ArchivesPage = (props) => (
     className="archives-page"
     footer={true}
   >
-    <SEO title="Archives" />
+    <SEO
+      title="Archives"
+      crawl={false}
+    />
     <WithHeadingSpacer />
     <H1 className="heading">Archives of all the things</H1>
     <Posts

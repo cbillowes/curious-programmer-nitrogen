@@ -11,9 +11,10 @@ const CreditsPage = () => (
     className="credits-page"
     footer={true}
   >
-    <SEO title="Credits">
-      The tech I use to craft this blog.
-    </SEO>
+    <SEO
+      title="Credits"
+      crawl={false}
+    />
     <ReadingPane
       heading="Credits"
     >

@@ -12,9 +12,10 @@ const LicensePage = () => (
     className="license-page"
     footer={true}
   >
-    <SEO title="License">
-      The source code is licensed under MIT and the original content is licensed under CC BY-SA 4.0.
-    </SEO>
+    <SEO
+      title="License"
+      crawl={false}
+    />
     <ReadingPane>
       <div data-page="license-page">
         <H1>License</H1>

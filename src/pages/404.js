@@ -15,35 +15,38 @@ const NotFoundPage = (props) => {
       footer={true}
     >
       <SEO
-        title="Page cannot be found"
-      >
-        The page you are looking for cannot be found.
-      </SEO>
+        title="Something is missing"
+        crawl={false}
+      />
       <ReadingPane
         heading="Embarrassing much? O_o"
       >
         <p>
           Something doesn&lsquo;t seem quite right.
           Whatever you clicked on cannot be found or no longer exists.
-          I may have accidentally changed the route or deleted the file.
+          I may have accidentally changed the route or deleted the file
+          or you accessed a broken link.
+        </p>
+        <p>
           <Anchor
             to="/about"
             title="Contact me"
           >
-            Drop me a line
+            Let me know
           </Anchor>
           if you are looking for something in particular.
-          In the meantime, check out some of my latest posts or browse the
+          In the meantime, check out some of my latest posts below or browse the
           <Anchor
             to="/archives"
             title="Archives"
           >
             archives
-          </Anchor> for more.
+          </Anchor> for everything.
         </p>
       </ReadingPane>
       <Posts
         edges={posts}
+        showNumbers={true}
       />
     </Layout>
   )
@@ -55,7 +58,7 @@ export const pageQuery = graphql`
     allMarkdownRemark(
       filter: {fields: {slug: {nin: "/blog/template"}}}
       sort: { fields: [fields___date], order: DESC }
-      limit: 5
+      limit: 6
     ) {
       edges {
         node {
@@ -63,6 +66,7 @@ export const pageQuery = graphql`
           timeToRead
           fields {
             slug
+            number
           }
           frontmatter {
             title

@@ -40,7 +40,7 @@ const TagsPage = ({ data }) => {
     >
       <SEO
         title="Tags"
-        description="Discover articles that have been tagged over time."
+        crawl={false}
       />
       <div data-page="tags">
         <ReadingPane

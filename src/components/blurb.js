@@ -56,7 +56,7 @@ function ellipsies(text, limit) {
   )
 }
 
-function getContent(limit, body) {
+export function getContent(limit, body) {
   const plainText = squashToPlainText(body)
   const content = truncate(plainText, limit)
   const truncated = ellipsies(plainText, limit)

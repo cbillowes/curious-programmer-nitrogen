@@ -15,7 +15,10 @@ export default (props) => {
       className="tags-template"
       footer={true}
     >
-      <SEO title={tag} />
+      <SEO
+        title={tag}
+        crawl={false}
+      />
       <WithHeadingSpacer />
       <H1>
         <Anchor to="/tags" title="Tags">tags</Anchor>: {tag.toLowerCase()}

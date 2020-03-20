@@ -71,6 +71,28 @@ describe(`SEO`, () => {
     expect(wrapper.find(`meta[property="twitter:description"]`).props().content).toBe(description)
   })
 
+  it(`should disable crawling`, () => {
+    const seo = (
+      <SEO
+        crawl={false}
+        data={{ siteMetadata: {} }}
+      />
+    )
+    const wrapper = getWrapper(seo)
+    expect(wrapper.find(`meta[name="robots"]`).props().content).toBe("noindex")
+  })
+
+  it(`should enable crawling`, () => {
+    const seo = (
+      <SEO
+        crawl={true}
+        data={{ siteMetadata: {} }}
+      />
+    )
+    const wrapper = getWrapper(seo)
+    expect(wrapper.find(`meta[name="robots"]`).props().content).toBe("index")
+  })
+
   it(`should render the site author`, () => {
     const seo = (
       <SEO

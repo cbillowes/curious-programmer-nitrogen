@@ -10,10 +10,10 @@ const PrivacyPolicyPage = () => (
     className="privacy-policy-page"
     footer={true}
   >
-    <SEO title="Privacy Policy">
-      This blog collects some personal data from its users.
-      It is important to know what and how it is used.
-    </SEO>
+    <SEO
+      title="Privacy Policy"
+      crawl={false}
+    />
     <ReadingPane>
       <div>
         <H1>Privacy Policy</H1>

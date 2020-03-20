@@ -2,6 +2,7 @@ import React from 'react'
 import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
+import Blurb from '../components/blurb'
 import Footer from '../components/footer'
 import PostNavigationTiny from '../components/postNavigationTiny'
 import PostNavigationTeaser from '../components/postNavigationTeaser'
@@ -37,7 +38,16 @@ export default ({ data, pageContext }) => {
         className="post"
         footer={false}
       >
-        <SEO title={title} />
+        <SEO
+          title={title}
+          crawl={true}
+        >
+          <Blurb
+            limit={20}
+          >
+            {html}
+          </Blurb>
+        </SEO>
         <WithHeadingSpacer />
         <PostNavigationTiny
           previous={previousPost}

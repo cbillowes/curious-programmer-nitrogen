@@ -4,7 +4,7 @@ import SEO from '../components/seo'
 import Image from '../components/image'
 import Anchor from '../components/anchor'
 import Panel from '../components/panel'
-import { WithoutHeadingSpacer, WithHeadingSpacer } from '../components/spacer'
+import { WithoutHeadingSpacer } from '../components/spacer'
 import { H1, H2, H3, H4 } from '../components/heading'
 import '../components/styles/about.scss'
 
@@ -13,9 +13,13 @@ const AboutPage = () => (
     className="about-page"
     footer={true}
   >
-    <SEO title="About">
-      My name is Clarice Bouwer. I love software.
-      I am a learner for life.
+    <SEO
+      title="About"
+      crawl={true}
+    >
+      My name is Clarice Bouwer.
+      I am curious and am always learning new things.
+      I am a Senior Software Engineer generalist.
     </SEO>
     <WithoutHeadingSpacer />
     <section className="about">
