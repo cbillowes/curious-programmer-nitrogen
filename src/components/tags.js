@@ -2,7 +2,7 @@ import _ from 'lodash'
 import React from 'react'
 import PropTypes from 'prop-types'
 import Tag from './tag'
-import './styles/tags.scss'
+import '../styles/tags.scss'
 
 const Collection = ({ tags }) => {
   return (tags || []).map(tag => {

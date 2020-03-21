@@ -2,7 +2,7 @@ import React, { Component } from "react"
 import Logo from "./logo"
 import SearchBar from "./searchBar"
 import Navigation from "./navigation"
-import './styles/header.scss'
+import '../styles/header.scss'
 
 export const toggleSearchFeature = () => {
   return false;

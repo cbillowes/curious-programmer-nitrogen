@@ -4,9 +4,9 @@ import SEO from '../components/seo'
 import Image from '../components/image'
 import Anchor from '../components/anchor'
 import Panel from '../components/panel'
-import { WithoutHeadingSpacer } from '../components/spacer'
 import { H1, H2, H3, H4 } from '../components/heading'
-import '../components/styles/about.scss'
+import '../styles/about.scss'
+import '../styles/page.scss'
 
 const AboutPage = () => (
   <Layout
@@ -21,7 +21,6 @@ const AboutPage = () => (
       I am curious and am always learning new things.
       I am a Senior Software Engineer generalist.
     </SEO>
-    <WithoutHeadingSpacer />
     <section className="about">
       <aside className="picture">
         <Image src="profile.jpg" />

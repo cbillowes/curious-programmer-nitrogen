@@ -6,6 +6,7 @@ import Anchor from '../components/anchor'
 import License from '../components/license'
 import ReadingPane from '../components/readingPane'
 import { H1, H2 } from '../components/heading'
+import '../styles/page.scss'
 
 const LicensePage = () => (
   <Layout

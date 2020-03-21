@@ -5,6 +5,7 @@ import ReadingPane from '../components/readingPane'
 import { H2 } from "../components/heading"
 import Credit from "../components/credit"
 import Anchor from "../components/anchor"
+import '../styles/page.scss'
 
 const CreditsPage = () => (
   <Layout

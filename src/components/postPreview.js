@@ -6,7 +6,7 @@ import PostMetadata from './postMetadata'
 import Tags from './tags'
 import Anchor from './anchor'
 import Blurb from './blurb'
-import "./styles/preview.scss"
+import '../styles/preview.scss'
 
 const Body = ({ children, limit }) => {
   return (

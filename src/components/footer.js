@@ -1,7 +1,7 @@
 import React from 'react'
 import Anchor from './anchor'
 import License from './license'
-import './styles/footer.scss'
+import '../styles/footer.scss'
 
 const Intro = () => {
   return (

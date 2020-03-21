@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Moment from 'react-moment'
 import Lang from '../../gatsby-lang'
-import './styles/metadata.scss'
+import '../styles/metadata.scss'
 
 const moment = require('moment')
 const metadata = Lang.posts.metadata

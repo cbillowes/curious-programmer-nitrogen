@@ -3,9 +3,8 @@ import PropTypes from 'prop-types'
 import Anchor from './anchor'
 import Search from './search'
 import Loader from './loader'
-import { WithHeadingSpacer } from './spacer'
 import { H1 } from './heading'
-import './styles/search.scss'
+import '../styles/search.scss'
 
 const timeout = 10000
 const domain = `https://rocket.curiousprogrammer.dev/search/oxygen/query`
@@ -192,7 +191,6 @@ class SearchBar extends Component {
             onKeyDown={(e) => this.cull(e)}
             onKeyPress={(e) => this.query(e)}
           />
-          <WithHeadingSpacer />
           <Status
             searching={this.state.searching}
             error={this.state.error}

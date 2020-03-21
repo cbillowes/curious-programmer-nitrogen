@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Menu from './menu'
 import MenuItems from './menuItems'
 import Data from '../../gatsby-data'
-import './styles/navigation.scss'
+import '../styles/navigation.scss'
 
 const Nav = Data.navigation
 

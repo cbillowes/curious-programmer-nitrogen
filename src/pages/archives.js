@@ -3,8 +3,8 @@ import { graphql } from 'gatsby'
 import Layout from '../components/layout'
 import SEO from '../components/seo'
 import { H1 } from '../components/heading'
-import { WithHeadingSpacer } from '../components/spacer'
 import Posts from '../components/posts'
+import '../styles/page.scss'
 
 const ArchivesPage = (props) => (
   <Layout
@@ -15,7 +15,6 @@ const ArchivesPage = (props) => (
       title="Archives"
       crawl={false}
     />
-    <WithHeadingSpacer />
     <H1 className="heading">Archives of all the things</H1>
     <Posts
       edges={props.data.allMarkdownRemark.edges}

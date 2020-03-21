@@ -60,7 +60,7 @@ export const SEO = props => {
       }
     `
   )
-  const description = getContent(25, props.children)
+  const description = props.children ? getContent(25, props.children) : ``
   return (
     <PureSEO
       {...props}

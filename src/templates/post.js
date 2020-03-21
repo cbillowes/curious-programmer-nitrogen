@@ -7,7 +7,7 @@ import Footer from '../components/footer'
 import PostNavigationTiny from '../components/postNavigationTiny'
 import PostNavigationTeaser from '../components/postNavigationTeaser'
 import Post from '../components/post'
-import { LargeSpacer, WithHeadingSpacer } from '../components/spacer'
+import '../styles/post.scss'
 
 function postNavigation(edge) {
   const { timeToRead, excerpt } = edge
@@ -35,7 +35,7 @@ export default ({ data, pageContext }) => {
   return (
     <>
       <Layout
-        className="post"
+        className="post-page"
         footer={false}
       >
         <SEO
@@ -48,12 +48,10 @@ export default ({ data, pageContext }) => {
             {html}
           </Blurb>
         </SEO>
-        <WithHeadingSpacer />
         <PostNavigationTiny
           previous={previousPost}
           next={nextPost}
         />
-        <LargeSpacer />
         <Post
           slug={slug}
           title={title}

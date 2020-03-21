@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import Anchor from "./anchor"
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisH } from '@fortawesome/free-solid-svg-icons'
-import './styles/more.scss'
+import '../styles/more.scss'
 
 const ShowMore = ({ to, title }) => {
   return (

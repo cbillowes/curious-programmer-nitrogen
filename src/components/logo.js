@@ -1,6 +1,6 @@
 import React from 'react'
 import Anchor from './anchor'
-import './styles/logo.scss'
+import '../styles/logo.scss'
 
 function Logo() {
   return (

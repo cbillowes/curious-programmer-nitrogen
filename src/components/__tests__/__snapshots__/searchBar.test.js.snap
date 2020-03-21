@@ -35,9 +35,6 @@ Array [
       placeholder="Looking for something?"
     />
     <div
-      className="spacer with-heading"
-    />
-    <div
       className="empty-results"
     >
       <h1>

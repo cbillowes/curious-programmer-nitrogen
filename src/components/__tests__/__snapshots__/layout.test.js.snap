@@ -85,9 +85,6 @@ exports[`Layout should not render the footer 1`] = `
           placeholder="Looking for something?"
         />
         <div
-          className="spacer with-heading"
-        />
-        <div
           className="empty-results"
         >
           <h1>
@@ -318,9 +315,6 @@ exports[`Layout should render custom class 1`] = `
           onKeyPress={[Function]}
           onKeyUp={[Function]}
           placeholder="Looking for something?"
-        />
-        <div
-          className="spacer with-heading"
         />
         <div
           className="empty-results"
@@ -555,9 +549,6 @@ exports[`Layout should render page 1`] = `
           placeholder="Looking for something?"
         />
         <div
-          className="spacer with-heading"
-        />
-        <div
           className="empty-results"
         >
           <h1>
@@ -788,9 +779,6 @@ exports[`Layout should render reading pane 1`] = `
           onKeyPress={[Function]}
           onKeyUp={[Function]}
           placeholder="Looking for something?"
-        />
-        <div
-          className="spacer with-heading"
         />
         <div
           className="empty-results"

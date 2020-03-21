@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import PropTypes from 'prop-types'
-import './styles/panel.scss'
+import '../styles/panel.scss'
 
 class Panel extends Component {
   constructor(props) {

@@ -5,21 +5,20 @@ import SEO from '../components/seo'
 import Anchor from '../components/anchor'
 import Posts from '../components/posts'
 import { H1 } from '../components/heading'
-import { WithHeadingSpacer } from '../components/spacer'
+import '../styles/tag.scss'
 
 export default (props) => {
   const { tag } = props.pageContext
   const edges = props.data.allMarkdownRemark.edges
   return (
     <Layout
-      className="tags-template"
+      className="tag-page"
       footer={true}
     >
       <SEO
         title={tag}
         crawl={false}
       />
-      <WithHeadingSpacer />
       <H1>
         <Anchor to="/tags" title="Tags">tags</Anchor>: {tag.toLowerCase()}
       </H1>

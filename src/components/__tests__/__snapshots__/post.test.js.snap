@@ -71,9 +71,6 @@ exports[`Post should render with a number 1`] = `
      
   </div>
   <div
-    className="spacer with-heading"
-  />
-  <div
     className="reading-panel"
   >
     <p>
@@ -140,9 +137,6 @@ exports[`Post should render with html 1`] = `
      
   </div>
   <div
-    className="spacer with-heading"
-  />
-  <div
     className="reading-panel"
   >
     <p>
@@ -208,9 +202,6 @@ exports[`Post should render with plain text 1`] = `
     </a>
      
   </div>
-  <div
-    className="spacer with-heading"
-  />
   <div
     className="reading-panel"
     dangerouslySetInnerHTML={

@@ -5,6 +5,7 @@ import SEO from '../components/seo'
 import ReadingPane from '../components/readingPane'
 import Anchor from '../components/anchor'
 import Posts from '../components/posts'
+import '../styles/page.scss'
 
 const NotFoundPage = (props) => {
   const posts = props.data.allMarkdownRemark.edges

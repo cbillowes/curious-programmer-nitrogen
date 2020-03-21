@@ -4,6 +4,7 @@ import SEO from '../components/seo'
 import Anchor from '../components/anchor'
 import { H1, H2, H3, H4 } from '../components/heading'
 import ReadingPane from '../components/readingPane'
+import '../styles/page.scss'
 
 const PrivacyPolicyPage = () => (
   <Layout

@@ -5,7 +5,7 @@ import Anchor from './anchor'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
 import Blurb from './blurb'
-import './styles/postNavigation.scss'
+import '../styles/postNavigation.scss'
 
 const defaultTruncationLimit = 250
 

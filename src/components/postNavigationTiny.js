@@ -3,7 +3,7 @@ import PropTypes from 'prop-types'
 import { H1 } from './heading'
 import Anchor from './anchor'
 import Text from './blurb'
-import './styles/postNavigation.scss'
+import '../styles/postNavigation.scss'
 
 const limit = 5
 

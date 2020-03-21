@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import PostPreview from './postPreview'
 import Lang from '../../gatsby-lang'
-import './styles/posts.scss'
+import '../styles/posts.scss'
 
 const Listing = ({ edges, limit }) => {
   return edges.map(edge => {

@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Anchor from './anchor'
-import './styles/tag.scss'
+import '../styles/tag.scss'
 
 const Bare = ({ children }) => {
   return (

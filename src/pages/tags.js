@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import ReadingPane from '../components/readingPane'
 import Tags from '../components/tags'
+import '../styles/page.scss'
 
 function flatten(tags) {
   let flattened = []
@@ -35,7 +36,7 @@ const TagsPage = ({ data }) => {
   const tags = getTags(edges)
   return (
     <Layout
-      className="tags"
+      className="tags-page"
       footer={true}
     >
       <SEO

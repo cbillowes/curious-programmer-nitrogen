@@ -4,6 +4,7 @@ import Layout from '../components/layout'
 import SEO from '../components/seo'
 import Posts from '../components/posts'
 import ShowMore from '../components/showMore'
+import '../styles/page.scss'
 
 const IndexPage = (props) => (
   <Layout

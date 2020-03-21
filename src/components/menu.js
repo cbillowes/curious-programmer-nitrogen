@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faEllipsisV } from '@fortawesome/free-solid-svg-icons'
-import './styles/menu.scss'
+import '../styles/menu.scss'
 
 const Menu = ({ toggleOnClick, isOpen }) => {
   return (

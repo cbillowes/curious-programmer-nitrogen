@@ -4,7 +4,7 @@ import Prism from 'prismjs'
 import Header from './header'
 import Footer from './footer'
 import Constants from '../../gatsby-data'
-import './styles/layout.scss'
+import '../styles/layout.scss'
 
 const site = Constants.site
 
