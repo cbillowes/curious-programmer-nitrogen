@@ -4,12 +4,17 @@ import PropTypes from 'prop-types'
 import Tag from './tag'
 import '../styles/tags.scss'
 
+function getListOfTags(tags) {
+  const flattened = [].concat(...(tags || []))
+  return [...new Set(flattened)].sort()
+}
+
 const Collection = ({ tags }) => {
-  return (tags || []).map(tag => {
+  return tags.map(tag => {
     return (
       <Tag
         key={tag}
-        to={`/tag/${_.kebabCase(tag.toLowerCase())}`}
+        to={`/tag/${_.kebabCase(tag.toLowerCase())}/`}
         title={tag}
       />
     )
@@ -17,13 +22,21 @@ const Collection = ({ tags }) => {
 }
 
 const Tags = ({ tags }) => {
+  const listOfTags = getListOfTags(tags)
   return (
     <div className="tags">
       <Collection
-        tags={tags}
+        tags={listOfTags}
       />
     </div>
   )
+}
+
+export const getTagsFromEdges = (edges) => {
+  return edges
+    .map(item => item.node.frontmatter)
+    .map(item => item.tags)
+    .map(item => item ? item : [])
 }
 
 Tags.propTypes = {
@@ -31,5 +44,3 @@ Tags.propTypes = {
 }
 
 export default Tags
-
-//TODO: find out why the production build fails - map is not a function for tags

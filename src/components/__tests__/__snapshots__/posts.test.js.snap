@@ -69,7 +69,7 @@ exports[`Posts should render with default word limit 1`] = `
        
       <a
         className="tag"
-        href="/tag/dont"
+        href="/tag/dont/"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title="don't"
@@ -80,7 +80,7 @@ exports[`Posts should render with default word limit 1`] = `
        
       <a
         className="tag"
-        href="/tag/panic"
+        href="/tag/panic/"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title="panic"
@@ -155,23 +155,23 @@ exports[`Posts should render with default word limit 1`] = `
        
       <a
         className="tag"
-        href="/tag/towel"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="towel"
-      >
-        towel
-      </a>
-       
-       
-      <a
-        className="tag"
-        href="/tag/panic"
+        href="/tag/panic/"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title="panic"
       >
         panic
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/towel/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="towel"
+      >
+        towel
       </a>
        
     </div>
@@ -248,7 +248,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
        
       <a
         className="tag"
-        href="/tag/dont"
+        href="/tag/dont/"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title="don't"
@@ -259,7 +259,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
        
       <a
         className="tag"
-        href="/tag/panic"
+        href="/tag/panic/"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title="panic"
@@ -334,23 +334,23 @@ exports[`Posts should render with specified word limit of 5 1`] = `
        
       <a
         className="tag"
-        href="/tag/towel"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="towel"
-      >
-        towel
-      </a>
-       
-       
-      <a
-        className="tag"
-        href="/tag/panic"
+        href="/tag/panic/"
         onClick={[Function]}
         onMouseEnter={[Function]}
         title="panic"
       >
         panic
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/towel/"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="towel"
+      >
+        towel
       </a>
        
     </div>
