@@ -1,0 +1,902 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Privacy policy page should render 1`] = `
+<div
+  className="page"
+>
+  <header
+    className="header"
+  >
+    <div
+      className="wrapper"
+    >
+      <div
+        className="logo"
+      >
+         
+        <a
+          aria-current="page"
+          className="full"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          style={Object {}}
+          title="Curious Programmer"
+        >
+          <strong>
+            {
+          </strong>
+           :curious 
+          <strong>
+            "programmer"
+          </strong>
+           
+          <strong>
+            }
+          </strong>
+        </a>
+         
+         
+        <a
+          aria-current="page"
+          className="partial"
+          href="/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          style={Object {}}
+          title="Curious Programmer"
+        >
+          <strong>
+            { }
+          </strong>
+        </a>
+         
+      </div>
+      <button
+        className="search-button"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-search fa-w-16 "
+          data-icon="search"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 512 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+      <div
+        className="search closed"
+      >
+        <input
+          className="search-box"
+          onKeyDown={[Function]}
+          onKeyPress={[Function]}
+          onKeyUp={[Function]}
+          placeholder="Looking for something?"
+        />
+        <div
+          className="empty-results"
+        >
+          <h1>
+            Sorry.
+          </h1>
+          <p>
+            So one of two things could have happend here.
+            <br />
+            Either the indexing has stopped working or I haven't written about it.
+            <br />
+            I am sorry that I can’t tell you which one it is.
+          </p>
+        </div>
+        <ul
+          className="results"
+        />
+      </div>
+      <button
+        className="menu-button"
+        onClick={[Function]}
+      >
+        <svg
+          aria-hidden="true"
+          className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+          data-icon="ellipsis-v"
+          data-prefix="fas"
+          focusable="false"
+          role="img"
+          style={Object {}}
+          viewBox="0 0 192 512"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <path
+            d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+            fill="currentColor"
+            style={Object {}}
+          />
+        </svg>
+      </button>
+      <nav
+        className="navigation closed"
+      >
+        <div
+          className="menu"
+        >
+           
+          <a
+            className="item "
+            href="/blog"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Blog
+          </a>
+           
+           
+          <a
+            className="item "
+            href="/about"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            About
+          </a>
+           
+           
+          <a
+            className="item "
+            href="/archives"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Archives
+          </a>
+           
+           
+          <a
+            className="item "
+            href="/tags"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Tags
+          </a>
+           
+           
+          <a
+            className="item "
+            href="/credits"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Credits
+          </a>
+           
+           
+          <a
+            className="item "
+            href="/privacy-policy"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Privacy Policy
+          </a>
+           
+           
+          <a
+            className="item "
+            href="/license"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            License
+          </a>
+           
+           
+          <a
+            className="item "
+            href="https://github.com/cbillowes"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Github
+          </a>
+           
+           
+          <a
+            className="item "
+            href="https://www.linkedin.com/in/cbouwer/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            LinkedIn
+          </a>
+           
+        </div>
+      </nav>
+    </div>
+  </header>
+  <section
+    className="container  privacy-policy-page"
+  >
+    <div>
+      <h1>
+        Privacy Policy
+      </h1>
+      <div
+        className="reading-pane"
+      >
+        <div>
+          <p>
+            Latest update: December 28, 2018
+          </p>
+          <div>
+            <p>
+              <strong>
+                curiousprogrammer.dev
+              </strong>
+               collects some Personal Data from its Users. The
+               
+              <a
+                href="https://www.iubenda.com/private/privacy-policy/621007?preview=true&ifr=true&height=800&an=no"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                simplified Privacy Policy
+              </a>
+               
+              is available for you to quickly skim through it.
+            </p>
+          </div>
+          <div>
+            <h2>
+              Owner and data controller
+            </h2>
+            <p>
+              Clarice Bouwer, 
+               
+              <a
+                href="mailto:clarice@bouwer.dev"
+                rel="nofollow noopener noreferrer"
+                target="_blank"
+              >
+                clarice@bouwer.dev
+              </a>
+               
+              .
+            </p>
+          </div>
+          <div>
+            <h2>
+              Quick overview
+            </h2>
+            <p>
+              Personal Data collected for the following purposes and using the following services:
+            </p>
+            <ul>
+              <li>
+                <h3>
+                  Analytics
+                </h3>
+                <p>
+                  <b>
+                    Google Analytics
+                  </b>
+                  <br />
+                  Personal Data: Cookies and Usage Data
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Content commenting
+                </h3>
+                <p>
+                  <b>
+                    Disqus
+                  </b>
+                  <br />
+                  Personal Data: Cookies, Usage Data and various types of Data as specified in the privacy policy of the service
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>
+              Types of Data collected
+            </h2>
+            <p>
+              Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies and Usage Data.
+            </p>
+            <p>
+              Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation      texts displayed prior to the Data collection.
+              <br />
+              Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Application.
+              <br />
+              Unless specified otherwise, all Data requested by this Application is mandatory and failure to provide this Data may make it impossible for this Application to provide its services. In cases where this Application specifically states that some Data is not mandatory, Users are free not to communicate this Data without consequences to the availability or the functioning of the Service.
+              <br />
+              Users who are uncertain about which Personal Data is mandatory are welcome to contact the Owner.
+              <br />
+              Any use of Cookies – or of other tracking tools – by this Application or by the owners of third-party services used by this Application serves the purpose of providing the Service required by the User, in addition to any other purposes described in the present document and in the Cookie Policy, if available.
+            </p>
+            <p>
+              Users are responsible for any third-party Personal Data obtained, published or shared through this Application and confirm that they have the third party's consent to provide the Data to the Owner.
+            </p>
+          </div>
+          <div>
+            <h2>
+              Mode and place of processing the Data
+            </h2>
+            <h3>
+              Methods of processing
+            </h3>
+            <p>
+              The Owner takes appropriate security measures to prevent unauthorized access, disclosure, modification, or unauthorized destruction of the Data.
+              <br />
+              The Data processing is carried out using computers and/or IT enabled tools, following organizational procedures and modes strictly related to the purposes indicated. In addition to the Owner, in some cases, the Data may be accessible to certain types of persons in charge, involved with the operation of this Application (administration, sales, marketing, legal, system administration) or external parties (such as third-party technical service providers, mail carriers, hosting providers, IT companies, communications agencies) appointed, if necessary, as Data Processors by the Owner. The updated list of these parties may be requested from the Owner at any time.
+            </p>
+            <h3>
+              Legal basis of processing
+            </h3>
+            <p>
+              The Owner may process Personal Data relating to Users if one of the following applies:
+            </p>
+            <ul>
+              <li>
+                Users have given their consent for one or more specific purposes. Note: Under some legislation the Owner may be allowed to process Personal Data until the User objects to such processing (“opt-out”), without having to rely on consent or any other of the following legal bases. This, however, does not apply, whenever the processing of Personal Data is subject to European data protection law;
+              </li>
+              <li>
+                provision of Data is necessary for the performance of an agreement with the User and/or for any pre-contractual obligations thereof;
+              </li>
+              <li>
+                processing is necessary for compliance with a legal obligation to which the Owner is subject;
+              </li>
+              <li>
+                processing is related to a task that is carried out in the public interest or in the exercise of official authority vested in the Owner;
+              </li>
+              <li>
+                processing is necessary for the purposes of the legitimate interests pursued by the Owner or by a third party.
+              </li>
+            </ul>
+            <p>
+              In any case, the Owner will gladly help to clarify the specific legal basis that applies to the processing, and in particular whether the provision of Personal Data is a statutory or contractual requirement, or a requirement necessary to enter into a contract.
+            </p>
+            <h3>
+              Place
+            </h3>
+            <p>
+              The Data is processed at the Owner's operating offices and in any other places where the parties involved in the processing are located.
+            </p>
+            <p>
+              Depending on the User's location, data transfers may involve transferring the User's Data to a country other than their own. To find out more about the place of processing of such transferred Data, Users can check the section containing details about the processing of Personal Data.
+            </p>
+            <p>
+              Users are also entitled to learn about the legal basis of Data transfers to a country outside the European Union or to any international organization governed by public international law or set up by two or more countries, such as the UN, and about the security measures taken by the Owner to safeguard their Data.
+            </p>
+            <p>
+              If any such transfer takes place, Users can find out more by checking the relevant sections of this document or inquire with the Owner using the information provided in the contact section.
+            </p>
+            <h3>
+              Retention time
+            </h3>
+            <p>
+              Personal Data shall be processed and stored for as long as required by the purpose they have been collected for.
+            </p>
+            <p>
+              Therefore:
+            </p>
+            <ul>
+              <li>
+                Personal Data collected for purposes related to the performance of a contract between the Owner and the User shall be retained until such contract has been fully performed.
+              </li>
+              <li>
+                Personal Data collected for the purposes of the Owner’s legitimate interests shall be retained as long as needed to fulfill such purposes. Users may find specific information regarding the legitimate interests pursued by the Owner within the relevant sections of this document or by contacting the Owner.
+              </li>
+            </ul>
+            <p>
+              The Owner may be allowed to retain Personal Data for a longer period whenever the User has given consent to such processing, as long as such consent is not withdrawn. Furthermore, the Owner may be obliged to retain Personal Data for a longer period whenever required to do so for the performance of a legal obligation or upon order of an authority.
+            </p>
+            <p>
+              Once the retention period expires, Personal Data shall be deleted. Therefore, the right to access, the right to erasure, the right to rectification and the right to data portability cannot be enforced after expiration of the retention period.
+            </p>
+          </div>
+          <div>
+            <h2>
+              The purposes of processing
+            </h2>
+            <p>
+              The Data concerning the User is collected to allow the Owner to provide its Services, as well as for the following purposes: Content commenting and Analytics.
+            </p>
+            <p>
+              Users can find further detailed information about such purposes of processing and about the specific Personal Data used for each purpose in the respective sections of this document.
+            </p>
+          </div>
+          <div>
+            <h2>
+              Detailed information on the processing of Personal Data
+            </h2>
+            <p>
+              Personal Data is collected for the following purposes and using the following services:
+            </p>
+            <ul>
+              <li>
+                <h3>
+                  Analytics
+                </h3>
+                <p>
+                  The services contained in this section enable the Owner to monitor and analyze web traffic and can be used to keep track of User behavior.
+                </p>
+                <h4>
+                  Google Analytics (Google Inc.)
+                </h4>
+                <p>
+                  Google Analytics is a web analysis service provided by Google Inc. (“Google”). Google utilizes the Data collected to track and examine the use of this Application, to prepare reports on its activities and share them with other Google services.
+                  <br />
+                  Google may use the Data collected to contextualize and personalize the ads of its own advertising network.
+                </p>
+                <p>
+                  Personal Data collected: Cookies and Usage Data.
+                </p>
+                <p>
+                  Place of processing: US –
+                   
+                  <a
+                    href="https://www.google.com/intl/en/policies/privacy/"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    Privacy Policy
+                  </a>
+                   
+                  -
+                   
+                  <a
+                    href="https://tools.google.com/dlpage/gaoptout?hl=en"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    Opt Out
+                  </a>
+                   
+                  .
+                </p>
+              </li>
+              <li>
+                <h3>
+                  Content Commenting
+                </h3>
+                <p>
+                  Content commenting services allow Users to make and publish their comments on the contents of this Application.
+                  <br />
+                  Depending on the settings chosen by the Owner, Users may also leave anonymous comments. If there is an email address among the Personal Data provided by the User, it may be used to send notifications of comments on the same content. Users are responsible for the content of their own comments.
+                  <br />
+                  If a content commenting service provided by third parties is installed, it may still collect web traffic data for the pages where the comment service is installed, even when Users do not use the content commenting service.
+                </p>
+                <h4>
+                  Disqus (Disqus)
+                </h4>
+                <p>
+                  Disqus is a content commenting service provided by Big Heads Labs Inc.
+                </p>
+                <p>
+                  Personal Data collected: Cookies, Usage Data and various types of Data as specified in the privacy policy of the service.
+                </p>
+                <p>
+                  Place of processing: US –
+                   
+                  <a
+                    href="https://help.disqus.com/customer/portal/articles/466259-privacy-policy"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    Privacy Policy
+                  </a>
+                   
+                  -
+                   
+                  <a
+                    href="https://help.disqus.com/customer/portal/articles/1657951"
+                    rel="nofollow noopener noreferrer"
+                    target="_blank"
+                  >
+                    Opt Out
+                  </a>
+                   
+                  .
+                </p>
+              </li>
+            </ul>
+          </div>
+          <div>
+            <h2>
+              The rights of Users
+            </h2>
+            <p>
+              Users may exercise certain rights regarding their Data processed by the Owner.
+            </p>
+            <p>
+              In particular, Users have the right to do the following:
+            </p>
+            <ul>
+              <li>
+                <b>
+                  Withdraw their consent at any time.
+                </b>
+                 Users have the right to withdraw consent where they have previously given their consent to the processing of their Personal Data.
+              </li>
+              <li>
+                <b>
+                  Object to processing of their Data.
+                </b>
+                 Users have the right to object to the processing of their Data if the processing is carried out on a legal basis other than consent. Further details are provided in the dedicated section below.
+              </li>
+              <li>
+                <b>
+                  Access their Data.
+                </b>
+                 Users have the right to learn if Data is being processed by the Owner, obtain disclosure regarding certain aspects of the processing and obtain a copy of the Data undergoing processing.
+              </li>
+              <li>
+                <b>
+                  Verify and seek rectification.
+                </b>
+                 Users have the right to verify the accuracy of their Data and ask for it to be updated or corrected.
+              </li>
+              <li>
+                <b>
+                  Restrict the processing of their Data.
+                </b>
+                 Users have the right, under certain circumstances, to restrict the processing of their Data. In this case, the Owner will not process their Data for any purpose other than storing it.
+              </li>
+              <li>
+                <b>
+                  Have their Personal Data deleted or otherwise removed.
+                </b>
+                 Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.
+              </li>
+              <li>
+                <b>
+                  Receive their Data and have it transferred to another controller.
+                </b>
+                 Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User's consent, on a contract which the User is part of or on pre-contractual obligations thereof.
+              </li>
+              <li>
+                <b>
+                  Lodge a complaint.
+                </b>
+                 Users have the right to bring a claim before their competent data protection authority.
+              </li>
+            </ul>
+            <h3>
+              Details about the right to object to processing
+            </h3>
+            <p>
+              Where Personal Data is processed for a public interest, in the exercise of an official authority vested in the Owner or for the purposes of the legitimate interests pursued by the Owner, Users may object to such processing by providing a ground related to their particular situation to justify the objection.
+            </p>
+            <p>
+              Users must know that, however, should their Personal Data be processed for direct marketing purposes, they can object to that processing at any time without providing any justification. To learn, whether the Owner is processing Personal Data for direct marketing purposes, Users may refer to the relevant sections of this document.
+            </p>
+            <h3>
+              How to exercise these rights
+            </h3>
+            <p>
+              Any requests to exercise User rights can be directed to the Owner through the contact details provided in this document. These requests can be exercised free of charge and will be addressed by the Owner as early as possible and always within one month.
+            </p>
+          </div>
+          <div>
+            <h2>
+              Additional information about Data collection and processing
+            </h2>
+            <h3>
+              Legal action
+            </h3>
+            <p>
+              The User's Personal Data may be used for legal purposes by the Owner in Court or in the stages leading to possible legal action arising from improper use of this Application or the related Services.
+              <br />
+              The User declares to be aware that the Owner may be required to reveal personal data upon request of public authorities.
+            </p>
+            <h3>
+              Additional information about User's Personal Data
+            </h3>
+            <p>
+              In addition to the information contained in this privacy policy, this Application may provide the User with additional and contextual information concerning particular Services or the collection and processing of Personal Data upon request.
+            </p>
+            <h3>
+              System logs and maintenance
+            </h3>
+            <p>
+              For operation and maintenance purposes, this Application and any third-party services may collect files that record interaction with this Application (System logs) use other Personal Data (such as the IP Address) for this purpose.
+            </p>
+            <h3>
+              Information not contained in this policy
+            </h3>
+            <p>
+              More details concerning the collection or processing of Personal Data may be requested from the Owner at any time. Please see the contact information at the beginning of this document.
+            </p>
+            <h3>
+              How “Do Not Track” requests are handled
+            </h3>
+            <p>
+              This Application does not support “Do Not Track” requests.
+              <br />
+              To determine whether any of the third-party services it uses honor the “Do Not Track” requests, please read their privacy policies.
+            </p>
+            <h3>
+              Changes to this privacy policy
+            </h3>
+            <p>
+              The Owner reserves the right to make changes to this privacy policy at any time by giving notice to its Users on this page and possibly within this Application and/or - as far as technically and legally feasible - sending a notice to Users via any contact information available to the Owner. It is strongly recommended to check this page often, referring to the date of the last modification listed at the bottom.
+            </p>
+            <p>
+              Should the changes affect processing activities performed on the basis of the User’s consent, the Owner shall collect new consent from the User, where required.
+            </p>
+            <h3>
+              Definitions and legal references
+            </h3>
+            <h4>
+              Personal Data (or Data)
+            </h4>
+            <p>
+              Any information that directly, indirectly, or in connection with other information — including a personal identification number — allows for the identification or identifiability of a natural person.
+            </p>
+            <h4>
+              Usage Data
+            </h4>
+            <p>
+              Information collected automatically through this Application (or third-party services employed in this Application), which can include: the IP addresses or domain names of the computers utilized by the Users who use this Application, the URI addresses (Uniform Resource Identifier), the time of the request, the method utilized to submit the request to the server, the size of the file received in response, the numerical code indicating the status of the server's answer (successful outcome, error, etc.), the country of origin, the features of the browser and the operating system utilized by the User, the various time details per visit (e.g., the time spent on each page within the Application) and the details about the path followed within the Application with special reference to the sequence of pages visited, and other parameters about the device operating system and/or the User's IT environment.
+            </p>
+            <h4>
+              User
+            </h4>
+            <p>
+              The individual using this Application who, unless otherwise specified, coincides with the Data Subject.
+            </p>
+            <h4>
+              Data Subject
+            </h4>
+            <p>
+              The natural person to whom the Personal Data refers.
+            </p>
+            <h4>
+              Data Processor (or Data Supervisor)
+            </h4>
+            <p>
+              The natural or legal person, public authority, agency or other body which processes Personal Data on behalf of the Controller, as described in this privacy policy.
+            </p>
+            <h4>
+              Data Controller (or Owner)
+            </h4>
+            <p>
+              The natural or legal person, public authority, agency or other body which, alone or jointly with others, determines the purposes and means of the processing of Personal Data, including the security measures concerning the operation and use of this Application. The Data Controller, unless otherwise specified, is the Owner of this Application.
+            </p>
+            <h4>
+              This Application
+            </h4>
+            <p>
+              The means by which the Personal Data of the User is collected and processed.
+            </p>
+            <h4>
+              Service
+            </h4>
+            <p>
+              The service provided by this Application as described in the relative terms (if available) and on this site/application.
+            </p>
+            <h4>
+              European Union (or EU)
+            </h4>
+            <p>
+              Unless otherwise specified, all references made within this document to the European Union include all current member states to the European Union and the European Economic Area.
+            </p>
+            <h4>
+              Cookies
+            </h4>
+            <p>
+              Small piece of data stored in the User's device.
+            </p>
+            <hr />
+            <h4>
+              Legal information
+            </h4>
+            <p>
+              This privacy statement has been prepared based on provisions of multiple legislations, including Art. 13/14 of Regulation (EU) 2016/679 (General Data Protection Regulation).
+            </p>
+            <p>
+              This privacy policy relates solely to this Application, if not stated otherwise within this document.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <footer
+    className="footer"
+  >
+    <span>
+      <strong>
+        A curious place for a curious mind.
+      </strong>
+       
+      Copyright © 
+      2020
+      . Built with
+       
+      <a
+        className="underline-only"
+        href="https://www.gatsbyjs.org"
+        rel="nofollow noopener noreferrer"
+        target="_blank"
+      >
+        Gastby
+      </a>
+       
+      and other
+       
+      <a
+        className="underline-only"
+        href="/credits"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+      >
+        cool stuff
+      </a>
+       
+      .
+    </span>
+    <div
+      className="wrapper"
+    >
+      <div
+        className="license"
+      >
+        <p>
+          <span
+            className="creative-commons-logo"
+          >
+             
+            <a
+              className="plain"
+              href="http://creativecommons.org/licenses/by-sa/4.0/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              <img
+                alt="Creative Commons License"
+                src="https://i.creativecommons.org/l/by-sa/4.0/88x31.png"
+                title="Creative Commons Attribution-ShareAlike 4.0 International License"
+              />
+            </a>
+             
+          </span>
+          The content is written by 
+           
+          <a
+            className="underline-only"
+            href="/about"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            Clarice Bouwer
+          </a>
+           
+           and is licensed under the 
+           
+          <a
+            className="underline-only"
+            href="https://creativecommons.org/licenses/by-sa/4.0/"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            Creative Commons Attribution-ShareAlike 4.0 International License
+          </a>
+           
+          . References to external resources are subject to their own terms and conditions. There is a 
+           
+          <a
+            className="underline-only"
+            href="/license"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            license
+          </a>
+           
+           for the code. It's probably a good idea to read the 
+           
+          <a
+            className="underline-only"
+            href="/privacy-policy"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+          >
+            privacy policy
+          </a>
+           
+          . The website is open-source and is available on 
+           
+          <a
+            className="underline-only"
+            href="https://github.com/cbillowes/curious-programmer-nitrogen"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
+          >
+            GitHub
+          </a>
+           
+          . Please give it a star if you think it is cool.
+          <br />
+          Icons made by 
+          <a
+            href="https://www.flaticon.com/authors/freepik"
+            title="Freepik"
+          >
+            Freepik
+          </a>
+           from
+          <a
+            href="https://www.flaticon.com/"
+            title="Flaticon"
+          >
+            www.flaticon.com
+          </a>
+        </p>
+      </div>
+      <div
+        className="social"
+      >
+         
+        <a
+          className="plain"
+          href="https://www.linkedin.com/in/cbouwer"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          title="LinkedIn"
+        >
+          <img
+            alt="LinkedIn"
+            className="icon"
+            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIuMDAyIDUxMi4wMDIiIHN0eWxlPSJlbmFibGUtYmFja2dyb3VuZDpuZXcgMCAwIDUxMi4wMDIgNTEyLjAwMjsiIHhtbDpzcGFjZT0icHJlc2VydmUiIHdpZHRoPSI1MTJweCIgaGVpZ2h0PSI1MTJweCI+CjxjaXJjbGUgc3R5bGU9ImZpbGw6IzQzNzZCMTsiIGN4PSIyNTYuMDAxIiBjeT0iMjU2IiByPSIyNTYiLz4KPHBhdGggc3R5bGU9ImZpbGw6IzMzNjY5OTsiIGQ9Ik01MTEuMDE2LDIzMy42MzRMMzk0LjcyOSwxMTcuMTk4Yy03MS4wMzUsOS4yMzctMTQ1LjI3LDcuODU5LTIxNi4zMDUsOS41MTEgIGMtMjkuMzA2LDAtNTguNjEzLDEzLjc5MS01My40NDEsNDYuNTQ1YzEwLjM0Myw2NS41MDgsMTUuNTE1LDEyOS4yOTMsMy40NDgsMTk2LjUyNWMtMS45LDguNTQ1LTUuODk3LDE3LjA4OS0xMS4xMTcsMjUuMDU5ICBMMjMzLjQ4LDUxMS4wMDVjNy40MjEsMC42NDYsMTQuOTI5LDAuOTk2LDIyLjUxOSwwLjk5NmMxNDEuMzg0LDAsMjU2LTExNC42MTYsMjU2LTI1NiAgQzUxMi4wMDEsMjQ4LjQ2MSw1MTEuNjU2LDI0MS4wMDUsNTExLjAxNiwyMzMuNjM0eiIvPgo8cGF0aCBzdHlsZT0iZmlsbDojRkZGRkZGOyIgZD0iTTM3Ni4wMjMsMTA5LjQ2OEgxMzUuOTc5Yy0xNC42NDMsMC0yNi41MSwxMS44NjctMjYuNTEsMjYuNTFWMzc2LjAyICBjMCwxNC42MzksMTEuODY3LDI2LjUxLDI2LjUxLDI2LjUxaDI0MC4wNDJjMTQuNjM5LDAsMjYuNTEtMTEuODcxLDI2LjUxLTI2LjUxVjEzNS45NzggIEM0MDIuNTMzLDEyMS4zMzUsMzkwLjY2MiwxMDkuNDY4LDM3Ni4wMjMsMTA5LjQ2OEwzNzYuMDIzLDEwOS40Njh6IE0yMDAuMTU1LDM2Mi41MTdjMCw0LjI2My0zLjQ1Myw3LjcxNi03LjcxNiw3LjcxNmgtMzIuODM3ICBjLTQuMjYzLDAtNy43MTYtMy40NTUtNy43MTYtNy43MTZWMjI0Ljg1NmMwLTQuMjYzLDMuNDU1LTcuNzE2LDcuNzE2LTcuNzE2aDMyLjgzOWM0LjI2MywwLDcuNzE2LDMuNDU1LDcuNzE2LDcuNzE2djEzNy42NjEgIEgyMDAuMTU1eiBNMTc2LjAyLDIwNC4xNjJjLTE3LjIzLDAtMzEuMTk2LTEzLjk2OS0zMS4xOTYtMzEuMjAxYzAtMTcuMjI5LDEzLjk2NS0zMS4xOTYsMzEuMTk2LTMxLjE5NiAgYzE3LjIzMiwwLDMxLjE5OCwxMy45NjksMzEuMTk4LDMxLjE5NkMyMDcuMjE4LDE5MC4xOTUsMTkzLjI1MSwyMDQuMTYyLDE3Ni4wMiwyMDQuMTYyTDE3Ni4wMiwyMDQuMTYyeiBNMzcxLjc3MywzNjMuMTM5ICBjMCwzLjkxOC0zLjE3NSw3LjA5Ni03LjA5LDcuMDk2aC0zNS4yNDJjLTMuOTE1LDAtNy4wOTItMy4xNzctNy4wOTItNy4wOTZ2LTY0LjU3NGMwLTkuNjMsMi44MjYtNDIuMjEtMjUuMTcyLTQyLjIxICBjLTIxLjcxOSwwLTI2LjEyNCwyMi4zLTI3LjAwOCwzMi4zMDR2NzQuNDc4YzAsMy45MTgtMy4xNzUsNy4wOTYtNy4wOTQsNy4wOTZoLTM0LjA4MmMtMy45MTgsMC03LjA5Ni0zLjE3Ny03LjA5Ni03LjA5NlYyMjQuMjM0ICBjMC0zLjkxOCwzLjE3Ny03LjA5Niw3LjA5Ni03LjA5NmgzNC4wODJjMy45MTgsMCw3LjA5NCwzLjE3Nyw3LjA5NCw3LjA5NnYxMi4wMDljOC4wNTQtMTIuMDg1LDIwLjAyMy0yMS40MTYsNDUuNTAyLTIxLjQxNiAgYzU2LjQyNSwwLDU2LjEwNSw1Mi43MTcsNTYuMTA1LDgxLjY4NnY2Ni42MjdIMzcxLjc3M3oiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0QxRDFEMTsiIGQ9Ik0zNzYuMDIzLDEwOS40NjhIMjU1LjQyN3YxMDcuNjdoNy42NDdjMy45MTgsMCw3LjA5NCwzLjE3Nyw3LjA5NCw3LjA5NnYxMi4wMDkgIGM4LjA1NC0xMi4wODUsMjAuMDIzLTIxLjQxNiw0NS41MDMtMjEuNDE2YzU2LjQyNSwwLDU2LjEwNSw1Mi43MTcsNTYuMTA1LDgxLjY4NnY2Ni42MjVjMCwzLjkxOC0zLjE3NSw3LjA5Ni03LjA5LDcuMDk2aC0zNS4yNDIgIGMtMy45MTUsMC03LjA5Mi0zLjE3Ny03LjA5Mi03LjA5NnYtNjQuNTc0YzAtOS42MywyLjgyNi00Mi4yMS0yNS4xNzItNDIuMjFjLTIxLjcxOSwwLTI2LjEyNCwyMi4zLTI3LjAwOCwzMi4zMDR2NzQuNDc4ICBjMCwzLjkxOC0zLjE3NSw3LjA5Ni03LjA5NCw3LjA5NmgtNy42NDd2MzIuMzAxaDEyMC41OTZjMTQuNjM5LDAsMjYuNTEtMTEuODcxLDI2LjUxLTI2LjUxVjEzNS45NzggIEM0MDIuNTMzLDEyMS4zMzUsMzkwLjY2MiwxMDkuNDY4LDM3Ni4wMjMsMTA5LjQ2OHoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+          />
+        </a>
+         
+         
+        <a
+          className="plain"
+          href="https://twitter.com/cbillowes"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          title="Twitter"
+        >
+          <img
+            alt="Twitter"
+            className="icon"
+            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIiBlbmNvZGluZz0iaXNvLTg4NTktMSI/Pgo8IS0tIEdlbmVyYXRvcjogQWRvYmUgSWxsdXN0cmF0b3IgMTkuMC4wLCBTVkcgRXhwb3J0IFBsdWctSW4gLiBTVkcgVmVyc2lvbjogNi4wMCBCdWlsZCAwKSAgLS0+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB4bWxuczp4bGluaz0iaHR0cDovL3d3dy53My5vcmcvMTk5OS94bGluayIgdmVyc2lvbj0iMS4xIiBpZD0iTGF5ZXJfMSIgeD0iMHB4IiB5PSIwcHgiIHZpZXdCb3g9IjAgMCA1MTIgNTEyIiBzdHlsZT0iZW5hYmxlLWJhY2tncm91bmQ6bmV3IDAgMCA1MTIgNTEyOyIgeG1sOnNwYWNlPSJwcmVzZXJ2ZSIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij4KPGNpcmNsZSBzdHlsZT0iZmlsbDojNjVBMkQ5OyIgY3g9IjI1NiIgY3k9IjI1NiIgcj0iMjU2Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiMzQTdDQTU7IiBkPSJNMzkzLjAxNCwxMzkuMzI2Yy0yNi43MDMsMjMuMTY5LTUzLjI1Myw0My40NzUtNzQuOTU0LDcxLjg1MiAgYy01My4zODEsNjQuMzcyLTExOC42MTMsMTU1LjctMjA3LjM4NiwxNDIuMDg2bDE1OC42MSwxNTguMzk2YzEzNC40NTYtNi44NzMsMjQxLjQ5Ny0xMTcuNDkzLDI0Mi42ODYtMjUzLjM3NkwzOTMuMDE0LDEzOS4zMjZ6Ii8+CjxwYXRoIHN0eWxlPSJmaWxsOiNGRkZGRkY7IiBkPSJNMzk3Ljg3MiwxNjIuNDcxYy02LjUxMywyLjg4OS0xMy4yNzEsNS4xNjctMjAuMjA4LDYuODE1YzcuNjQ0LTcuMjYxLDEzLjM5LTE2LjM0NiwxNi42MzEtMjYuNDg0ICBjMC45MjYtMi44OTMtMi4yMTktNS4zOTgtNC44MzItMy44NDhjLTkuNjUsNS43MjUtMjAuMDQ0LDEwLjAxNi0zMC44OTQsMTIuNzYyYy0wLjYyOCwwLjE2LTEuMjc2LDAuMjQtMS45MjksMC4yNCAgYy0xLjk3OSwwLTMuODk2LTAuNzMzLTUuNDExLTIuMDY1Yy0xMS41NDItMTAuMTc0LTI2LjM5LTE1Ljc3Ny00MS44MDUtMTUuNzc3Yy02LjY3MiwwLTEzLjQwNSwxLjA0LTIwLjAxNiwzLjA5MSAgYy0yMC40ODcsNi4zNTMtMzYuMjk1LDIzLjI1NC00MS4yNTcsNDQuMTAzYy0xLjg2LDcuODE4LTIuMzYyLDE1LjY0OC0xLjQ5NiwyMy4yNjRjMC4wOTcsMC44NzYtMC4zMTQsMS40ODYtMC41NjksMS43NzIgIGMtMC40NSwwLjUwMi0xLjA4NCwwLjc5MS0xLjc0NSwwLjc5MWMtMC4wNzIsMC0wLjE1LTAuMDAzLTAuMjI0LTAuMDFjLTQ0Ljg0Ni00LjE2OC04NS4yODctMjUuNzcyLTExMy44NjktNjAuODM3ICBjLTEuNDU1LTEuNzg5LTQuMjUzLTEuNTY5LTUuNDE1LDAuNDIyYy01LjU5Niw5LjYwNi04LjU1NCwyMC41ODktOC41NTQsMzEuNzY2YzAsMTcuMTI3LDYuODg0LDMzLjI3LDE4LjgzNyw0NS4wMzkgIGMtNS4wMjctMS4xOTMtOS44OTMtMy4wNy0xNC40MTQtNS41ODJjLTIuMTg4LTEuMjE0LTQuODc3LDAuMzUtNC45MDgsMi44NTFjLTAuMzEsMjUuNDQ1LDE0LjU4OCw0OC4wODcsMzYuOTA1LDU4LjI4MiAgYy0wLjQ1LDAuMDEtMC45LDAuMDE0LTEuMzUsMC4wMTRjLTMuNTM3LDAtNy4xMjEtMC4zMzgtMTAuNjQ1LTEuMDE1Yy0yLjQ2My0wLjQ2Ny00LjUzMiwxLjg2Ny0zLjc2OCw0LjI1MyAgYzcuMjQ2LDIyLjYxOCwyNi43MTcsMzkuMjg4LDUwLjAyMSw0My4wN2MtMTkuMzM5LDEyLjk4My00MS44NjMsMTkuODMtNjUuMzAyLDE5LjgzbC03LjMwNi0wLjAwM2MtMi4yNTUsMC00LjE2LDEuNDY5LTQuNzMsMy42NSAgYy0wLjU2NSwyLjE0NSwwLjQ3NCw0LjQxMywyLjM5Niw1LjUzYzI2LjQxMiwxNS4zNzIsNTYuNTQxLDIzLjQ5NSw4Ny4xMzgsMjMuNDk1YzI2Ljc4NCwwLDUxLjgzOC01LjMxMyw3NC40NjYtMTUuNzk4ICBjMjAuNzQ1LTkuNjA5LDM5LjA3Ni0yMy4zNDUsNTQuNDg2LTQwLjgyN2MxNC4zNTctMTYuMjg2LDI1LjU4MS0zNS4wODUsMzMuMzY1LTU1Ljg3OWM3LjQxOC0xOS44MTYsMTEuMzQtNDAuOTY3LDExLjM0LTYxLjE1NCAgdi0wLjk2NGMwLTMuMjQxLDEuNDY1LTYuMjkxLDQuMDI0LTguMzdjOS43MDYtNy44ODIsMTguMTYtMTcuMTU4LDI1LjEyMi0yNy41NzJDNDAzLjc5NiwxNjQuNTc4LDQwMC44OTYsMTYxLjEzLDM5Ny44NzIsMTYyLjQ3MSAgTDM5Ny44NzIsMTYyLjQ3MXoiLz4KPHBhdGggc3R5bGU9ImZpbGw6I0QxRDFEMTsiIGQ9Ik0zOTcuODcyLDE2Mi40NzFjLTYuNTE1LDIuODg5LTEzLjI3MSw1LjE2Ny0yMC4yMDgsNi44MTVjNy42NDQtNy4yNjEsMTMuMzktMTYuMzQ2LDE2LjYzMi0yNi40ODQgIGMwLjkyNi0yLjg5My0yLjIxOS01LjM5OC00LjgzMi0zLjg0OGMtOS42NSw1LjcyNS0yMC4wNDQsMTAuMDE2LTMwLjg5NCwxMi43NjJjLTAuNjI4LDAuMTYtMS4yNzYsMC4yNC0xLjkyOSwwLjI0ICBjLTEuOTc5LDAtMy44OTYtMC43MzMtNS40MTEtMi4wNjVjLTExLjU0Mi0xMC4xNzQtMjYuMzktMTUuNzc3LTQxLjgwNS0xNS43NzdjLTYuNjcxLDAtMTMuNDA1LDEuMDQtMjAuMDE2LDMuMDkxICBjLTE0LjMyMiw0LjQ0MS0yNi4zNDMsMTQuMDQ4LTMzLjk4NSwyNi41NDZ2MjA1LjQ3N2M2LjIyMi0yLjAyOSwxMi4yOTMtNC40MDMsMTguMTk4LTcuMTM5ICBjMjAuNzQ1LTkuNjA5LDM5LjA3Ni0yMy4zNDUsNTQuNDg2LTQwLjgyN2MxNC4zNTctMTYuMjg3LDI1LjU4MS0zNS4wODUsMzMuMzY1LTU1Ljg3OWM3LjQxOC0xOS44MTYsMTEuMzQtNDAuOTY3LDExLjM0LTYxLjE1NCAgdi0wLjk2NGMwLTMuMjQxLDEuNDY1LTYuMjkxLDQuMDI0LTguMzdjOS43MDYtNy44ODIsMTguMTYtMTcuMTU4LDI1LjEyMi0yNy41NzJDNDAzLjc5NiwxNjQuNTc4LDQwMC44OTYsMTYxLjEzLDM5Ny44NzIsMTYyLjQ3MXoiLz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPGc+CjwvZz4KPC9zdmc+Cg=="
+          />
+        </a>
+         
+         
+        <a
+          className="plain"
+          href="https://github.com/cbillowes"
+          rel="nofollow noopener noreferrer"
+          target="_blank"
+          title="GitHub"
+        >
+          <img
+            alt="GitHub"
+            className="icon"
+            src="data:image/svg+xml;utf8;base64,PD94bWwgdmVyc2lvbj0iMS4wIj8+CjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB2aWV3Qm94PSIwIDAgNTEyIDUxMiIgd2lkdGg9IjUxMnB4IiBoZWlnaHQ9IjUxMnB4Ij48cGF0aCBkPSJtNTEyIDI1N2MwIDEyMC04NC4xMDE1NjIgMjIwLjUtMTk2IDI0Ny41bC0zMC42MDE1NjItOTcuMTk5MjE5aC01OC43OTY4NzZsLTI5LjYwMTU2MiA5Ny4xOTkyMTljLTExMS44OTg0MzgtMjctMTk3LTEyNy41LTE5Ny0yNDcuNSAwLTE0MC42OTkyMTkgMTE1LjMwMDc4MS0yNTcgMjU2LTI1N3MyNTYgMTE2LjMwMDc4MSAyNTYgMjU3em0wIDAiIGZpbGw9IiMzODQ5NDkiLz48cGF0aCBkPSJtNTEyIDI1N2MwIDEyMC04NC4xMDE1NjIgMjIwLjUtMTk2IDI0Ny41bC0zMC42MDE1NjItOTcuMTk5MjE5aC0yOS4zOTg0Mzh2LTQwNy4zMDA3ODFjMTQwLjY5OTIxOSAwIDI1NiAxMTYuMzAwNzgxIDI1NiAyNTd6bTAgMCIgZmlsbD0iIzI5MzkzOSIvPjxwYXRoIGQ9Im0xODEuMjc3MzQ0IDQzMC4wNTg1OTRjLTYuMDc4MTI1IDAtMTIuMDExNzE5LS44NjcxODgtMTcuODI4MTI1LTIuNTc4MTI1LTE1LjEyODkwNy00LjQ2ODc1LTI3LjQyMTg3NS0xNC41NDY4NzUtMzYuNTQ2ODc1LTI5LjkxNDA2My00LjE2MDE1Ni03LjAxNTYyNS04LjQ5NjA5NC0xMS44Nzg5MDYtMTMuNjA1NDY5LTE1LjMwODU5NC01LjAyNzM0NC0zLjM4MjgxMi05LjAzOTA2My00LjY3MTg3NC0xMy4yNzM0MzctNC4zNjMyODFsLTIuNjM2NzE5LTI5Ljg4MjgxMmMxMS4xMTcxODctLjk1MzEyNSAyMS43NTM5MDYgMi4wNjI1IDMyLjU5Mzc1IDkuMzE2NDA2IDguODMyMDMxIDUuOTAyMzQ0IDE2LjI1NzgxMiAxNC4wNjI1IDIyLjcxODc1IDI0LjkxNDA2MyA1LjMwNDY4NyA4LjkyMTg3NCAxMS40MTAxNTYgMTQuMTUyMzQzIDE5LjI1IDE2LjQ2ODc1IDguODA0Njg3IDIuNTg5ODQzIDE3Ljk0MTQwNiAxLjUwNzgxMiAyOS42MzI4MTItMy40NzI2NTdsMTEuODA4NTk0IDI3LjU2NjQwN2MtMTEuMjk2ODc1IDQuODM1OTM3LTIxLjkyOTY4NyA3LjI1MzkwNi0zMi4xMTMyODEgNy4yNTM5MDZ6bTAgMCIgZmlsbD0iI2VjZWNmMSIvPjxwYXRoIGQ9Im00MDAuOTAyMzQ0IDI4Ny4zMDA3ODFjLTEwLjUwMzkwNiAyNy44OTg0MzgtMzYuOTAyMzQ0IDYzLjMwMDc4MS0xMDMuODAwNzgyIDczLjE5OTIxOSA4LjY5OTIxOSAxMi44OTg0MzggMTkuMTk5MjE5IDE5LjgwMDc4MSAxOC44OTg0MzggNDYuODAwNzgxdjk3LjE5OTIxOWMtMTkuMTk5MjE5IDQuODAwNzgxLTM5LjMwMDc4MSA3LjUtNjAgNy41cy0zOS44MDA3ODEtMi42OTkyMTktNTktNy41di05OC40MDIzNDRjMC0yNi42OTkyMTggMTAuMTAxNTYyLTM0LjE5OTIxOCAxNy44OTg0MzgtNDUuNTk3NjU2LTY2Ljg5ODQzOC05LjkwMjM0NC05My4yOTY4NzYtNDUuMzAwNzgxLTEwMy44MDA3ODItNzMuMTk5MjE5LTE0LjA5NzY1Ni0zNy4yMDMxMjUtNi41OTc2NTYtODMuNDAyMzQzIDE4LjAwMzkwNi0xMTIuODAwNzgxLjU5NzY1Ny0uNjAxNTYyIDEuNS0yLjEwMTU2MiAxLjE5OTIxOS0zLTExLjQwMjM0My0zNC4xOTkyMTkgMi4zOTg0MzgtNjIuNjk5MjE5IDMtNjUuNjk5MjE5IDEyLjg5ODQzOCAzLjg5ODQzOCAxNS0zLjkwMjM0MyA1Ni42OTkyMTkgMjEuNTk3NjU3bDcuMTk5MjE5IDQuMjAzMTI0YzMgMS43OTY4NzYgMi4xMDE1NjIuNTk3NjU3IDUuMTAxNTYyLjU5NzY1NyAxNy4zOTg0MzgtNC44MDA3ODEgMzUuNjk5MjE5LTcuNSA1My42OTkyMTktNy41IDE4LjMwMDc4MSAwIDM2LjMwMDc4MSAyLjY5OTIxOSA1NC41OTc2NTYgNy41bDIuMTAxNTYzLjMwMDc4MXMuNTk3NjU2IDAgMi4xMDE1NjItLjg5ODQzOGM1MS44OTg0MzgtMzEuNTAzOTA2IDUwLjA5NzY1Ny0yMS4zMDA3ODEgNjQuMTk1MzEzLTI1LjgwMDc4MS4zMDA3ODEgMyAxNC4xMDE1NjIgMzEuNzk2ODc1IDIuNzAzMTI1IDY1LjY5OTIxOS0xLjUgNC41IDQ1IDQ3LjA5NzY1NiAxOS4yMDMxMjUgMTE1LjgwMDc4MXptMCAwIiBmaWxsPSIjZWNlY2YxIi8+PHBhdGggZD0ibTQwMC45MDIzNDQgMjg3LjMwMDc4MWMtMTAuNTAzOTA2IDI3Ljg5ODQzOC0zNi45MDIzNDQgNjMuMzAwNzgxLTEwMy44MDA3ODIgNzMuMTk5MjE5IDguNjk5MjE5IDEyLjg5ODQzOCAxOS4xOTkyMTkgMTkuODAwNzgxIDE4Ljg5ODQzOCA0Ni44MDA3ODF2OTcuMTk5MjE5Yy0xOS4xOTkyMTkgNC44MDA3ODEtMzkuMzAwNzgxIDcuNS02MCA3LjV2LTM4Ny4zMDA3ODFjMTguMzAwNzgxIDAgMzYuMzAwNzgxIDIuNjk5MjE5IDU0LjYwMTU2MiA3LjVsMi4wOTc2NTcuMzAwNzgxcy42MDE1NjIgMCAyLjEwMTU2Mi0uODk4NDM4YzUxLjg5ODQzOC0zMS41MDM5MDYgNTAuMDk3NjU3LTIxLjMwMDc4MSA2NC4xOTkyMTktMjUuODAwNzgxLjMwMDc4MSAzIDE0LjEwMTU2MiAzMS43OTY4NzUgMi42OTkyMTkgNjUuNjk5MjE5LTEuNSA0LjUgNDUgNDcuMDk3NjU2IDE5LjIwMzEyNSAxMTUuODAwNzgxem0wIDAiIGZpbGw9IiNlMmUyZTciLz48L3N2Zz4K"
+          />
+        </a>
+         
+      </div>
+    </div>
+  </footer>
+</div>
+`;

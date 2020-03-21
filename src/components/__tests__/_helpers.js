@@ -109,3 +109,39 @@ https://dev.to/maxpou/how-to-mock-date-with-jest-3k4b
 
 //TODO: remove unused functions
 //TODO: move jest.fn to helpers
+
+export function getListOfPostEdges() {
+  return [
+    {
+      node: {
+        excerpt: `Just pack your towel and you will be fine.`,
+        timeToRead: 42,
+        fields: {
+          slug: `/dont-panic`,
+          date: `2019-02-01T00:00:00.000Z`,
+        },
+        frontmatter: {
+          title: `Don't panic`,
+          tags: [`don't`, `panic`],
+          author: `Clarice Bouwer`,
+          blurb: `It's all about the towel.`
+        },
+      },
+    },
+    {
+      node: {
+        excerpt: `Keep packing your towels and you will be fine.`,
+        timeToRead: 42,
+        fields: {
+          slug: `/still-dont-panic`,
+          date: `2019-02-01T00:00:00.000Z`,
+        },
+        frontmatter: {
+          title: `Still don't panic`,
+          tags: [`still`, `don't`, `panic`],
+          author: `Clarice Bouwer`,
+        },
+      },
+    },
+  ]
+}

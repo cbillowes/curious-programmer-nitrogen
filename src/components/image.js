@@ -1,58 +1,23 @@
 import React from 'react'
 import PropTypes from 'prop-types'
-import { useStaticQuery, graphql } from 'gatsby'
 import Img from 'gatsby-image'
 
-function getFile(files, src) {
-  return files.images.edges.find(image =>
-    image.node.relativePath === src
-  )
-}
+export const Image = ({ data }) => {
+  const edges = data.images ? data.images.edges : []
+  if (edges.length === 0) return <></>
 
-function getFluidImage(file) {
-  return file.node.childImageSharp.fluid
-}
+  const fluidImage = edges[0].node.childImageSharp.fluid
+  if (!fluidImage) return <></>
 
-export function PureImage({ data, src }) {
-  const file = getFile(data, src)
-  if (!file) return <></>
-
-  const fluidImage = getFluidImage(file)
   return (
-    <Img fluid={fluidImage} />
-  )
-}
-
-export const Image = props => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        images: allFile(filter: { extension: { regex: "/jpeg|jpg|png|gif/"}}) {
-          edges {
-            node {
-              extension
-              relativePath
-              childImageSharp {
-                fluid(maxWidth: 1980) {
-                  ...GatsbyImageSharpFluid
-                }
-              }
-            }
-          }
-        }
-      }
-    `
-  )
-  return (
-    <PureImage
-      {...props}
-      data={data}
+    <Img
+      fluid={fluidImage}
     />
   )
 }
 
 Image.propTypes = {
-  src: PropTypes.string.isRequired,
+  data: PropTypes.object.isRequired,
 }
 
 export default Image

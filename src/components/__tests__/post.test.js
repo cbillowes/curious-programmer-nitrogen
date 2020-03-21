@@ -43,7 +43,6 @@ describe(`Post`, () => {
           Arthur makes his way across the stars while seeking the meaning of life, or
           something close to it.
         </p>
-
       </Post>
     )
     const tree = getSnapshot(post)
@@ -63,7 +62,6 @@ describe(`Post`, () => {
         <p>
           Don't panic.
         </p>
-
       </Post>
     )
     const tree = getSnapshot(post)

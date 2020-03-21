@@ -1,27 +1,32 @@
 import React from 'react'
-import { graphql } from 'gatsby'
+import { graphql, useStaticQuery } from 'gatsby'
+import SEO from '../components/seo'
 import TagsPage from '../components/pages/tags'
 
-const Page = ({ data }) => {
-  const edges = data.allMarkdownRemark.edges
-  return (
-    <TagsPage edges={edges} />
-  )
-}
-
-export default Page
-
-export const pageQuery = graphql`
-  query TagsPage {
-    allMarkdownRemark(limit: 1000) {
-      totalCount
-      edges {
-        node {
-          frontmatter {
-            tags
+export default () => {
+  const edges = useStaticQuery(
+    graphql`
+    query {
+      allMarkdownRemark(limit: 1000) {
+        totalCount
+        edges {
+          node {
+            frontmatter {
+              tags
+            }
           }
         }
       }
     }
-  }
-`
+   `
+  )
+  return (
+    <>
+      <SEO
+        title="Tags"
+        crawl={false}
+      />
+      <TagsPage edges={edges} />
+    </>
+  )
+}

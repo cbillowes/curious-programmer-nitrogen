@@ -1,5 +1,5 @@
 import React from 'react'
-import { PureImage as Image } from '../image'
+import Image from '../image'
 import { getSnapshot } from './_helpers'
 
 const data = {
@@ -19,20 +19,6 @@ const data = {
           }
         }
       },
-      {
-        "node": {
-          "extension": "png",
-          "relativePath": "gatsby-astronaut.png",
-          "childImageSharp": {
-            "fluid": {
-              "sizes": "(max-width: 800px) 100vw, 800px",
-              "src": "/static/6d91c86c0fde632ba4cd01062fd9ccfa/a54c6/gatsby-astronaut.png",
-              "srcSet": "/static/6d91c86c0fde632ba4cd01062fd9ccfa/59beb/gatsby-astronaut.png 200w,\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/c0bbd/gatsby-astronaut.png 400w,\n/static/6d91c86c0fde632ba4cd01062fd9ccfa/a54c6/gatsby-astronaut.png 800w",
-              "aspectRatio": 1
-            }
-          }
-        }
-      },
     ]
   }
 }
@@ -42,7 +28,6 @@ describe(`Image`, () => {
     const image = (
       <Image
         data={data}
-        src="favicon.png"
       />
     )
     const tree = getSnapshot(image)
@@ -52,8 +37,7 @@ describe(`Image`, () => {
   it(`should not render an image that does not exist`, () => {
     const image = (
       <Image
-        data={data}
-        src="i-do-not-exist.png"
+        data={{}}
       />
     )
     const tree = getSnapshot(image)
