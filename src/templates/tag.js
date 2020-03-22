@@ -56,3 +56,5 @@ export const pageQuery = graphql`
     }
   }
 `
+
+//TODO: move graphql queries across the site inline using useStaticQuery

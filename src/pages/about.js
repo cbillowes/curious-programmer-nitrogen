@@ -15,7 +15,7 @@ export default () => {
               extension
               relativePath
               childImageSharp {
-                fluid(maxWidth: 1980) {
+                fluid(maxWidth: 500) {
                   ...GatsbyImageSharpFluid
                 }
               }
