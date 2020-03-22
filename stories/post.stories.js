@@ -4,7 +4,7 @@ import Post from '../src/components/post'
 
 const htmlString = `<p>Hello Galaxy, <br/>tell me <strong>HOW</strong> you're doing.</p>`
 
-storiesOf('Post', module)
+storiesOf('Components/post', module)
   .add('single', () =>
     <Post
       title="Hello World"

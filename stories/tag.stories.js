@@ -3,16 +3,16 @@ import { storiesOf } from '@storybook/react'
 import Tag from '../src/components/tag'
 import Page from './_helpers'
 
-storiesOf('Tag', module)
+storiesOf('Components/tag', module)
   .add('title only', () =>
-    <Page className="page">
+    <Page>
       <Tag
         title="Important"
       />
     </Page>
   )
   .add('click on title', () =>
-    <Page className="page">
+    <Page>
       <Tag
         to="/important"
         title="Important"
@@ -20,7 +20,7 @@ storiesOf('Tag', module)
     </Page>
   )
   .add('internal link', () =>
-    <Page className="page">
+    <Page>
       <Tag
         to="/tag/technical"
         title="Technical"
@@ -30,7 +30,7 @@ storiesOf('Tag', module)
     </Page>
   )
   .add('external link', () =>
-    <Page className="page">
+    <Page>
       <Tag
         to="https://www.google.com"
         title="Google"
@@ -40,7 +40,7 @@ storiesOf('Tag', module)
     </Page>
   )
   .add('disabled', () =>
-    <Page className="page">
+    <Page>
       <Tag
         to="https://www.google.com"
         title="Google"

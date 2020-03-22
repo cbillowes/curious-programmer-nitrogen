@@ -2,9 +2,10 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Page from './_helpers'
 
-storiesOf('Lists', module)
+storiesOf('Typography/list', module)
   .add('unordered', () =>
-    <Page className="page">
+    <Page>
+      <br />
       <ul>
         <li>Lorem ipsum dolor sit amet.</li>
         <li>Duis a arcu ac felis elementum iaculis.</li>
@@ -13,7 +14,8 @@ storiesOf('Lists', module)
     </Page>
   )
   .add('ordered', () =>
-    <Page className="page">
+    <Page>
+      <br />
       <ol>
         <li>Lorem ipsum dolor sit amet.</li>
         <li>Duis a arcu ac felis elementum iaculis.</li>

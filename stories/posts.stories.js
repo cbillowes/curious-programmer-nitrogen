@@ -46,7 +46,7 @@ const edges = [
   },
 ]
 
-storiesOf('Post', module)
+storiesOf('Components/post', module)
   .add('listing', () =>
     <Posts
       edges={edges}

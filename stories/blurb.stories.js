@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Blurb from '../src/components/blurb'
 
-storiesOf('Blurb', module)
+storiesOf('Components/blurb', module)
   .add('unlimited', () =>
     <Blurb>
       <p>

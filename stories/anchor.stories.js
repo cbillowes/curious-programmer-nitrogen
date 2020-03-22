@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'
 import Anchor from '../src/components/anchor'
 import Page from './_helpers'
 
-storiesOf('Anchor', module)
+storiesOf('Components/anchor', module)
   .add('internal', () =>
-    <Page className="page">
+    <Page>
       <Anchor
         to="/about"
         title="About Clarice Bouwer"
@@ -15,7 +15,7 @@ storiesOf('Anchor', module)
     </Page>
   )
   .add('external', () =>
-    <Page className="page">
+    <Page>
       <Anchor
         to="https://curiousprogrammer.dev"
         title="Curious Programmer"
@@ -24,8 +24,8 @@ storiesOf('Anchor', module)
       </Anchor>
     </Page>
   )
-  .add('integrated', () =>
-    <Page className="page">
+  .add('snippet', () =>
+    <Page>
       <p>
         <strong>External links in a sentence:</strong>  I share what I learn with others. My blog,
         <Anchor to="https://curiousprogrammer.dev" title="Curious Programmer">Curious Programmer</Anchor>,

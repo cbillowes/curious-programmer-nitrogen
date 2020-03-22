@@ -13,7 +13,7 @@ const Tags = [
   { tag: 'Somewhere special', slug: '/somewhere/special' }
 ]
 
-storiesOf('Search bar', module)
+storiesOf('Components/search bar', module)
   .add('default', () => <SearchBar isOpen={false} results={[]} />)
   .add('active', () => <SearchBar isOpen={true} results={[]} />)
   .add('with results', () => <SearchBar isOpen={true} results={Results} />)

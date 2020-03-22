@@ -1,7 +1,7 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import { H1 } from './heading'
-import '../styles/ReadingPane.scss'
+import '../styles/readingPane.scss'
 
 const ReadingPane = ({ heading, children }) => {
   return (

@@ -1,7 +1,7 @@
 import React from 'react'
 import { storiesOf } from '@storybook/react'
 import PostNavigationTiny from '../src/components/postNavigationTiny'
-import Layout from '../src/components/layout'
+import Page from './_helpers'
 
 const starwars = {
   title: `In a galaxy far away, quotes from Star Wars`,
@@ -34,9 +34,9 @@ const hitchikersGuideToTheGalaxy = {
   `,
 }
 
-storiesOf('Navigation (Tiny)', module)
-  .add('layout', () =>
-    <Layout>
+storiesOf('Components/post/navigation', module)
+  .add('tiny', () =>
+    <Page>
       <PostNavigationTiny
         previous={{
           title: starwars.title,
@@ -57,29 +57,5 @@ storiesOf('Navigation (Tiny)', module)
           tags: [`hitchickers`, `beer`, `towel`],
         }}
       />
-    </Layout>
-  )
-  .add('plain', () =>
-    <>
-      <PostNavigationTiny
-        previous={{
-          title: starwars.title,
-          slug: `/`,
-          excerpt: starwars.excerpt,
-          author: starwars.author,
-          date: `20 October 2019`,
-          ttr: 42,
-          tags: [`star wars`, `vader`, `yoda`],
-        }}
-        next={{
-          title: hitchikersGuideToTheGalaxy.title,
-          slug: `/`,
-          excerpt: hitchikersGuideToTheGalaxy.excerpt,
-          author: hitchikersGuideToTheGalaxy.author,
-          date: `1 April 2019`,
-          ttr: 42,
-          tags: [`hitchickers`, `beer`, `towel`],
-        }}
-      />
-    </>
+    </Page>
   )

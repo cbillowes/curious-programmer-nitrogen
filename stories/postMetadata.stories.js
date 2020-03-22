@@ -2,7 +2,7 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import PostMetadata from '../src/components/postMetadata'
 
-storiesOf('Post', module)
+storiesOf('Components/post', module)
   .add('metadata', () =>
     <PostMetadata
       moment="5 days ago"

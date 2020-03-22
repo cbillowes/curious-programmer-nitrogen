@@ -2,56 +2,51 @@ import React from 'react'
 import { storiesOf } from '@storybook/react'
 import Page from './_helpers'
 
-storiesOf('Code', module)
+storiesOf('Typography/code', module)
   .add('inline', () =>
-    <Page className="page">
+    <Page>
       <p>Inline <code>code</code> block.</p>
     </Page>
   )
-  .add('inline #bash', () =>
-    <Page className="page">
-      <p><code className="language-bash">npm run develop</code></p>
+  .add('bash', () =>
+    <Page>
+      <p>
+        <code className="language-bash">npm run develop</code>
+      </p>
     </Page>
   )
-  .add('block #javascript', () =>
-    <Page className="page">
+  .add('html', () =>
+    <Page>
       <pre>
-        <code className="language-javascript">
-          const x = "something x related"
-          const y = 2
-          console.log(x + y) // &lt;-- don't do this!
+        <code className="language-html">
+          &lt;title&gt;Look at me, I am a title!&lt;/title&gt;
         </code>
       </pre>
     </Page>
   )
-  .add('block #clojure', () =>
-    <Page className="page">
+  .add('javascript', () =>
+    <Page>
+      <pre>
+        <code className="language-javascript">
+          const x = "something x related"
+          const y = 2
+          console.log(x + y)
+          // you can put this in a function
+        </code>
+      </pre>
+    </Page>
+  )
+  .add('clojure', () =>
+    <Page>
       <pre>
         <code className="language-clojure">
           (let [greeting "hello"
               name "Clarice"]
               (println (str greeting " " name)))
+          ; You can put this in a function
         </code>
       </pre>
     </Page>
   )
-  .add('integrated', () =>
-    <Page className="page">
-      <p>Inline <code>code</code> block.</p>
-      <p><code className="language-bash">npm run develop</code></p>
-      <pre>
-        <code className="language-javascript">
-          const x = "something x related"
-          const y = 2
-          console.log(x + y) // &lt;-- don't do this!
-        </code>
-      </pre>
-      <pre>
-        <code className="language-clojure">
-          (let [greeting "hello"
-              name "Clarice"]
-              (println (str greeting " " name)))
-        </code>
-      </pre>
-    </Page>
-  )
+
+  //TODO: fix token tag (it's styling it with tag when it shouldn't)

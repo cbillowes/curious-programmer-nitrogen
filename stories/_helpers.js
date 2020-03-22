@@ -1,11 +1,13 @@
 import React from 'react'
 import Layout from '../src/components/layout'
 
-const Page = ({ className, children }) => {
+const Page = ({ children }) => {
   return (
     <Layout
-      className={className}
+      className="page"
     >
+      <br />
+      <br />
       {children}
     </Layout>
   )

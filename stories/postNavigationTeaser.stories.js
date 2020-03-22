@@ -33,8 +33,8 @@ const hitchikersGuideToTheGalaxy = {
   `,
 }
 
-storiesOf('Post', module)
-  .add('navigation', () =>
+storiesOf('Components/post/navigation/teaser', module)
+  .add('unlimited', () =>
     <PostNavigationTeaser
       previous={{
         title: starwars.title,
@@ -56,7 +56,7 @@ storiesOf('Post', module)
       }}
     />
   )
-  .add('navigation (truncated)', () =>
+  .add('truncated', () =>
     <PostNavigationTeaser
       previous={{
         title: starwars.title,

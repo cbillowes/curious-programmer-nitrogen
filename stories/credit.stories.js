@@ -3,9 +3,9 @@ import { storiesOf } from '@storybook/react'
 import Credit from '../src/components/credit'
 import Page from './_helpers'
 
-storiesOf('Credit', module)
+storiesOf('Components/credit', module)
   .add('no click-through', () =>
-    <Page className="page">
+    <Page>
       <Credit
         title="Important"
       >
@@ -14,7 +14,7 @@ storiesOf('Credit', module)
     </Page>
   )
   .add('click-through', () =>
-    <Page className="page">
+    <Page>
       <Credit
         to="https://www.google.com"
         title="Google"
@@ -23,7 +23,7 @@ storiesOf('Credit', module)
       </Credit>
     </Page>
   )
-  .add('integrated', () =>
+  .add('snippet', () =>
     <Page>
       <Credit
         title="Important"
