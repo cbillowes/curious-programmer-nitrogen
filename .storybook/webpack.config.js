@@ -4,7 +4,7 @@ module.exports = ({ config, mode }) => {
   config.module.rules.push({
     test: /\.s?css$/,
     use: ['style-loader', 'css-loader', 'sass-loader'],
-    include: path.resolve(__dirname, '../src/components/styles'),
+    include: path.resolve(__dirname, '../src/styles/'),
   })
   // Transpile Gatsby module because Gastby includes un-transpiled ES6 code.
   config.module.rules[0].exclude = [/node_modules\/(?!(gatsby)\/)/]
