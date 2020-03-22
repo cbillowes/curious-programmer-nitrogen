@@ -132,7 +132,7 @@ exports[`Credits page should render 1`] = `
         >
            
           <a
-            className="item"
+            className="menu-item"
             href="/blog"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -142,7 +142,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="/about"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -152,7 +152,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="/archives"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -162,7 +162,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="/tags"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -172,7 +172,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="/credits"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -182,7 +182,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="/privacy-policy"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -192,7 +192,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="/license"
             onClick={[Function]}
             onMouseEnter={[Function]}
@@ -202,7 +202,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="https://github.com/cbillowes"
             rel="nofollow noopener noreferrer"
             target="_blank"
@@ -212,7 +212,7 @@ exports[`Credits page should render 1`] = `
            
            
           <a
-            className="item"
+            className="menu-item"
             href="https://www.linkedin.com/in/cbouwer/"
             rel="nofollow noopener noreferrer"
             target="_blank"

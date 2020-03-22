@@ -6,7 +6,7 @@ exports[`Menu items should not set any page as active when the page does not exi
 >
    
   <a
-    className="item"
+    className="menu-item"
     href="/blog"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -16,7 +16,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -26,7 +26,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -36,7 +36,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -46,7 +46,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -56,7 +56,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/privacy-policy"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -66,7 +66,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -76,7 +76,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -86,7 +86,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -103,7 +103,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
 >
    
   <a
-    className="item"
+    className="menu-item"
     href="/blog"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -113,7 +113,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -123,7 +123,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -133,7 +133,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -143,7 +143,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -152,7 +152,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
   </a>
    
   <div
-    className="item active"
+    className="menu-item active"
     onClick={[Function]}
     role="button"
   >
@@ -160,7 +160,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
   </div>
    
   <a
-    className="item"
+    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -170,7 +170,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -180,7 +180,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -196,7 +196,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
   className="menu"
 >
   <div
-    className="item active"
+    className="menu-item active"
     onClick={[Function]}
     role="button"
   >
@@ -204,7 +204,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
   </div>
    
   <a
-    className="item"
+    className="menu-item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -214,7 +214,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -224,7 +224,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -234,7 +234,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -244,7 +244,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/privacy-policy"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -254,7 +254,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -264,7 +264,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -274,7 +274,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -290,7 +290,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
   className="menu"
 >
   <div
-    className="item active"
+    className="menu-item active"
     onClick={[Function]}
     role="button"
   >
@@ -298,7 +298,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
   </div>
    
   <a
-    className="item"
+    className="menu-item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -308,7 +308,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -318,7 +318,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -328,7 +328,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -338,7 +338,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/privacy-policy"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -348,7 +348,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -358,7 +358,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -368,7 +368,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -384,7 +384,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
   className="menu"
 >
   <div
-    className="item active"
+    className="menu-item active"
     onClick={[Function]}
     role="button"
   >
@@ -392,7 +392,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
   </div>
    
   <a
-    className="item"
+    className="menu-item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -402,7 +402,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -412,7 +412,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -422,7 +422,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -432,7 +432,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/privacy-policy"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -442,7 +442,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -452,7 +452,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -462,7 +462,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
    
   <a
-    className="item"
+    className="menu-item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"

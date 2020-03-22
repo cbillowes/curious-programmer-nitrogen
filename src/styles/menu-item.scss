@@ -1,0 +1,33 @@
+@import "./variables.scss";
+
+.menu-item {
+  cursor: pointer;
+  font-family: $sans;
+  color: $lightest;
+  display: block;
+  text-align: center;
+  padding: .5rem 2rem;
+  text-decoration: none;
+  border: none;
+  margin: .5rem 1rem;
+  border-radius: $border-radius;
+
+  &:hover,
+  &:visited:hover {
+    color: $dark;
+    text-shadow: 1px 1px 1px $primary-light;
+    background-color: $primary;
+  }
+
+  &.active {
+    font-weight: bold;
+    color: $dark;
+    background-color: $secondary;
+    text-shadow: 1px 1px 1px $secondary-light;
+
+    &:hover {
+      background-color: $tertiary;
+      text-shadow: 1px 1px 1px $tertiary-light;
+    }
+  }
+}

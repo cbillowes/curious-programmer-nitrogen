@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Menu item should be active 1`] = `
+<div
+  className="menu-item active"
+  onClick={[Function]}
+  role="button"
+>
+  Blog
+</div>
+`;
+
+exports[`Menu item should be inactive 1`] = `
+Array [
+  " ",
+  <a
+    className="menu-item"
+    href="/blog"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Blog
+  </a>,
+  " ",
+]
+`;
