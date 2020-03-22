@@ -268,15 +268,11 @@ exports[`Blog page should render 1`] = `
               Friday, 1 February 2019
             </time>
              
-            <span
-              data-container="metadata-author"
-            >
+            <span>
               by Clarice Bouwer
             </span>
              
-            <span
-              data-container="metadata-ttr"
-            >
+            <span>
               (Est. 42 minute read)
             </span>
           </div>
@@ -346,15 +342,11 @@ exports[`Blog page should render 1`] = `
               Friday, 1 February 2019
             </time>
              
-            <span
-              data-container="metadata-author"
-            >
+            <span>
               by Clarice Bouwer
             </span>
              
-            <span
-              data-container="metadata-ttr"
-            >
+            <span>
               (Est. 42 minute read)
             </span>
           </div>

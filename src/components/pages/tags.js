@@ -12,7 +12,7 @@ const TagsPage = ({ edges }) => {
       className="tags-page"
       footer={true}
     >
-      <div data-page="tags">
+      <div>
         <ReadingPane
           heading="Tags"
         >

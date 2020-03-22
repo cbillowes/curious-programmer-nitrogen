@@ -12,7 +12,6 @@ const LinkedItem = ({ item, active }) => {
     <Anchor
       to={to}
       className={`item ${active ? `active` : ``}`}
-      data-selected={active}
     >
       {name}
     </Anchor>

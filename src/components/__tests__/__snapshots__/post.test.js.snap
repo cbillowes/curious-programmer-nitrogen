@@ -32,15 +32,11 @@ exports[`Post should render with a number 1`] = `
       Friday, 1 February 2019
     </time>
      
-    <span
-      data-container="metadata-author"
-    >
+    <span>
       by Clarice Bouwer
     </span>
      
-    <span
-      data-container="metadata-ttr"
-    >
+    <span>
       (Est. 42 minute read)
     </span>
   </div>
@@ -98,15 +94,11 @@ exports[`Post should render with html 1`] = `
       Friday, 1 February 2019
     </time>
      
-    <span
-      data-container="metadata-author"
-    >
+    <span>
       by Clarice Bouwer
     </span>
      
-    <span
-      data-container="metadata-ttr"
-    >
+    <span>
       (Est. 42 minute read)
     </span>
   </div>
@@ -164,15 +156,11 @@ exports[`Post should render with plain text 1`] = `
       Friday, 1 February 2019
     </time>
      
-    <span
-      data-container="metadata-author"
-    >
+    <span>
       by Clarice Bouwer
     </span>
      
-    <span
-      data-container="metadata-ttr"
-    >
+    <span>
       (Est. 42 minute read)
     </span>
   </div>

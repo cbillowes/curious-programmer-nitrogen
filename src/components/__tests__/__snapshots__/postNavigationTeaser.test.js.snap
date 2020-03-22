@@ -38,15 +38,11 @@ exports[`Post navigation teaser should render all that is required 1`] = `
           Sunday, 1 April 2018
         </time>
          
-        <span
-          data-container="metadata-author"
-        >
+        <span>
           by Clarice Bouwer
         </span>
          
-        <span
-          data-container="metadata-ttr"
-        >
+        <span>
           (Est. 42 minute read)
         </span>
       </div>
@@ -113,15 +109,11 @@ exports[`Post navigation teaser should render all that is required 1`] = `
           Sunday, 1 April 2018
         </time>
          
-        <span
-          data-container="metadata-author"
-        >
+        <span>
           by Clarice Bouwer
         </span>
          
-        <span
-          data-container="metadata-ttr"
-        >
+        <span>
           (Est. 42 minute read)
         </span>
       </div>
@@ -195,15 +187,11 @@ exports[`Post navigation teaser should render everything else 1`] = `
           Sunday, 1 April 2018
         </time>
          
-        <span
-          data-container="metadata-author"
-        >
+        <span>
           by Pixie
         </span>
          
-        <span
-          data-container="metadata-ttr"
-        >
+        <span>
           (Est. 42 minute read)
         </span>
       </div>
@@ -270,15 +258,11 @@ exports[`Post navigation teaser should render everything else 1`] = `
           Monday, 1 April 2019
         </time>
          
-        <span
-          data-container="metadata-author"
-        >
+        <span>
           by Elby
         </span>
          
-        <span
-          data-container="metadata-ttr"
-        >
+        <span>
           (Est. 42 minute read)
         </span>
       </div>

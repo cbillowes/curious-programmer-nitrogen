@@ -29,10 +29,10 @@ function PostMetadata({ date, author, ttr }) {
       <div className="metadata">
         {metadata.date.prefix}{` `}
         {renderDate(date)}{` `}
-        <span data-container="metadata-author">
+        <span>
           {metadata.author(author)}
         </span>{` `}
-        <span data-container="metadata-ttr">
+        <span>
           {metadata.ttr(ttr)}
         </span>
       </div>

@@ -227,9 +227,7 @@ exports[`Tags page should render 1`] = `
   <section
     className="container  tags-page"
   >
-    <div
-      data-page="tags"
-    >
+    <div>
       <div>
         <h1>
           Tags
