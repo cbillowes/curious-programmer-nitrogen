@@ -32,7 +32,7 @@ Array [
     >
        
       <a
-        className="item "
+        className="item"
         href="/blog"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -42,7 +42,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/about"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -52,7 +52,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/archives"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -62,7 +62,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/tags"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -72,7 +72,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/credits"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -82,7 +82,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/privacy-policy"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -92,7 +92,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/license"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -102,7 +102,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="https://github.com/cbillowes"
         rel="nofollow noopener noreferrer"
         target="_blank"
@@ -112,257 +112,7 @@ Array [
        
        
       <a
-        className="item "
-        href="https://www.linkedin.com/in/cbouwer/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        LinkedIn
-      </a>
-       
-    </div>
-  </nav>,
-]
-`;
-
-exports[`Navigation should render navigation on path /about 1`] = `
-Array [
-  <button
-    className="menu-button active"
-    onClick={[Function]}
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-ellipsis-v fa-w-6 "
-      data-icon="ellipsis-v"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 192 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>,
-  <nav
-    className="navigation open"
-  >
-    <div
-      className="menu"
-    >
-       
-      <a
-        className="item "
-        href="/blog"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Blog
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/about"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        About
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/archives"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Archives
-      </a>
-       
-       
-      <a
-        className="item active"
-        href="/tags"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Tags
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Credits
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/privacy-policy"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Privacy Policy
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/license"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        License
-      </a>
-       
-       
-      <a
-        className="item "
-        href="https://github.com/cbillowes"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Github
-      </a>
-       
-       
-      <a
-        className="item "
-        href="https://www.linkedin.com/in/cbouwer/"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        LinkedIn
-      </a>
-       
-    </div>
-  </nav>,
-]
-`;
-
-exports[`Navigation should render navigation on path from window.location.href /tags 1`] = `
-Array [
-  <button
-    className="menu-button active"
-    onClick={[Function]}
-  >
-    <svg
-      aria-hidden="true"
-      className="svg-inline--fa fa-ellipsis-v fa-w-6 "
-      data-icon="ellipsis-v"
-      data-prefix="fas"
-      focusable="false"
-      role="img"
-      style={Object {}}
-      viewBox="0 0 192 512"
-      xmlns="http://www.w3.org/2000/svg"
-    >
-      <path
-        d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
-        fill="currentColor"
-        style={Object {}}
-      />
-    </svg>
-  </button>,
-  <nav
-    className="navigation open"
-  >
-    <div
-      className="menu"
-    >
-       
-      <a
-        className="item "
-        href="/blog"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Blog
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/about"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        About
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/archives"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Archives
-      </a>
-       
-       
-      <a
-        className="item active"
-        href="/tags"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Tags
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Credits
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/privacy-policy"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        Privacy Policy
-      </a>
-       
-       
-      <a
-        className="item "
-        href="/license"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-      >
-        License
-      </a>
-       
-       
-      <a
-        className="item "
-        href="https://github.com/cbillowes"
-        rel="nofollow noopener noreferrer"
-        target="_blank"
-      >
-        Github
-      </a>
-       
-       
-      <a
-        className="item "
+        className="item"
         href="https://www.linkedin.com/in/cbouwer/"
         rel="nofollow noopener noreferrer"
         target="_blank"
@@ -407,7 +157,7 @@ Array [
     >
        
       <a
-        className="item "
+        className="item"
         href="/blog"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -417,7 +167,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/about"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -427,7 +177,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/archives"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -437,7 +187,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/tags"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -447,7 +197,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/credits"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -457,7 +207,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/privacy-policy"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -467,7 +217,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="/license"
         onClick={[Function]}
         onMouseEnter={[Function]}
@@ -477,7 +227,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="https://github.com/cbillowes"
         rel="nofollow noopener noreferrer"
         target="_blank"
@@ -487,7 +237,7 @@ Array [
        
        
       <a
-        className="item "
+        className="item"
         href="https://www.linkedin.com/in/cbouwer/"
         rel="nofollow noopener noreferrer"
         target="_blank"

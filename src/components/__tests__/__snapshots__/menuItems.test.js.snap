@@ -6,7 +6,7 @@ exports[`Menu items should not set any page as active when the page does not exi
 >
    
   <a
-    className="item "
+    className="item"
     href="/blog"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -16,7 +16,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -26,7 +26,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -36,7 +36,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -46,7 +46,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -56,7 +56,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="/privacy-policy"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -66,7 +66,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -76,7 +76,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -86,7 +86,7 @@ exports[`Menu items should not set any page as active when the page does not exi
    
    
   <a
-    className="item "
+    className="item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -97,13 +97,13 @@ exports[`Menu items should not set any page as active when the page does not exi
 </div>
 `;
 
-exports[`Menu items should set blog page as active when post in /blog/ is displayed 1`] = `
+exports[`Menu items should set another page to active in the navigation items 1`] = `
 <div
   className="menu"
 >
    
   <a
-    className="item active"
+    className="item"
     href="/blog"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -113,7 +113,7 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
    
    
   <a
-    className="item "
+    className="item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -123,7 +123,7 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
    
    
   <a
-    className="item "
+    className="item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -133,7 +133,7 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
    
    
   <a
-    className="item "
+    className="item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -143,7 +143,7 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
    
    
   <a
-    className="item "
+    className="item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -151,19 +151,16 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
     Credits
   </a>
    
-   
-  <a
-    className="item "
-    href="/privacy-policy"
+  <div
+    className="item active"
     onClick={[Function]}
-    onMouseEnter={[Function]}
+    role="button"
   >
     Privacy Policy
-  </a>
-   
+  </div>
    
   <a
-    className="item "
+    className="item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -173,7 +170,7 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
    
    
   <a
-    className="item "
+    className="item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -183,7 +180,7 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
    
    
   <a
-    className="item "
+    className="item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -194,23 +191,20 @@ exports[`Menu items should set blog page as active when post in /blog/ is displa
 </div>
 `;
 
-exports[`Menu items should set blog page as active with trailing / 1`] = `
+exports[`Menu items should set the blog page to active for /blog 1`] = `
 <div
   className="menu"
 >
-   
-  <a
+  <div
     className="item active"
-    href="/blog"
     onClick={[Function]}
-    onMouseEnter={[Function]}
+    role="button"
   >
     Blog
-  </a>
-   
+  </div>
    
   <a
-    className="item "
+    className="item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -220,7 +214,7 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -230,7 +224,7 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -240,7 +234,7 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -250,7 +244,7 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/privacy-policy"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -260,7 +254,7 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -270,7 +264,7 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -280,7 +274,7 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -291,23 +285,20 @@ exports[`Menu items should set blog page as active with trailing / 1`] = `
 </div>
 `;
 
-exports[`Menu items should set blog page as active without trailing / 1`] = `
+exports[`Menu items should set the blog page to active for /blog/ 1`] = `
 <div
   className="menu"
 >
-   
-  <a
+  <div
     className="item active"
-    href="/blog"
     onClick={[Function]}
-    onMouseEnter={[Function]}
+    role="button"
   >
     Blog
-  </a>
-   
+  </div>
    
   <a
-    className="item "
+    className="item"
     href="/about"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -317,7 +308,7 @@ exports[`Menu items should set blog page as active without trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/archives"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -327,7 +318,7 @@ exports[`Menu items should set blog page as active without trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/tags"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -337,7 +328,7 @@ exports[`Menu items should set blog page as active without trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/credits"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -347,7 +338,7 @@ exports[`Menu items should set blog page as active without trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/privacy-policy"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -357,7 +348,7 @@ exports[`Menu items should set blog page as active without trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
@@ -367,7 +358,7 @@ exports[`Menu items should set blog page as active without trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
     href="https://github.com/cbillowes"
     rel="nofollow noopener noreferrer"
     target="_blank"
@@ -377,7 +368,101 @@ exports[`Menu items should set blog page as active without trailing / 1`] = `
    
    
   <a
-    className="item "
+    className="item"
+    href="https://www.linkedin.com/in/cbouwer/"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    LinkedIn
+  </a>
+   
+</div>
+`;
+
+exports[`Menu items should set the blog page to active for a given post 1`] = `
+<div
+  className="menu"
+>
+  <div
+    className="item active"
+    onClick={[Function]}
+    role="button"
+  >
+    Blog
+  </div>
+   
+  <a
+    className="item"
+    href="/about"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    About
+  </a>
+   
+   
+  <a
+    className="item"
+    href="/archives"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Archives
+  </a>
+   
+   
+  <a
+    className="item"
+    href="/tags"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Tags
+  </a>
+   
+   
+  <a
+    className="item"
+    href="/credits"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Credits
+  </a>
+   
+   
+  <a
+    className="item"
+    href="/privacy-policy"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    Privacy Policy
+  </a>
+   
+   
+  <a
+    className="item"
+    href="/license"
+    onClick={[Function]}
+    onMouseEnter={[Function]}
+  >
+    License
+  </a>
+   
+   
+  <a
+    className="item"
+    href="https://github.com/cbillowes"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Github
+  </a>
+   
+   
+  <a
+    className="item"
     href="https://www.linkedin.com/in/cbouwer/"
     rel="nofollow noopener noreferrer"
     target="_blank"

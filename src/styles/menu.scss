@@ -6,7 +6,8 @@
   position: relative;
   height: 80vh;
 
-  a.item {
+  .item {
+    cursor: pointer;
     font-family: $sans;
     color: $lightest;
     display: block;

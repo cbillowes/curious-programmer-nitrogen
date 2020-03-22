@@ -129,7 +129,7 @@ exports[`Header should render 1`] = `
       >
          
         <a
-          className="item "
+          className="item"
           href="/blog"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -139,7 +139,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="/about"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -149,7 +149,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="/archives"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -159,7 +159,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="/tags"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -169,7 +169,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="/credits"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -179,7 +179,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="/privacy-policy"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -189,7 +189,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="/license"
           onClick={[Function]}
           onMouseEnter={[Function]}
@@ -199,7 +199,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="https://github.com/cbillowes"
           rel="nofollow noopener noreferrer"
           target="_blank"
@@ -209,7 +209,7 @@ exports[`Header should render 1`] = `
          
          
         <a
-          className="item "
+          className="item"
           href="https://www.linkedin.com/in/cbouwer/"
           rel="nofollow noopener noreferrer"
           target="_blank"

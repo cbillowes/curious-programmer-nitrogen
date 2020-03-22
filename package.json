@@ -58,6 +58,8 @@
     "enzyme-to-json": "^3.4.4",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
+    "jest-environment-jsdom": "^25.1.0",
+    "jest-environment-jsdom-global": "^1.2.1",
     "prettier": "^1.19.1"
   },
   "keywords": [

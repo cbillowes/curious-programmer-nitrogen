@@ -7,26 +7,27 @@ import '../styles/navigation.scss'
 
 const Nav = Data.navigation
 
-function getNavigationClassName(isOpen) {
+function toggleDisplay(e, toggleOnClick) {
+  e.preventDefault()
+  toggleOnClick(e)
+}
+
+const displayAs = isOpen => {
   return `navigation ${isOpen ? `open` : `closed`}`
 }
 
-export const Navigation = ({ toggleOnClick, isOpen, path }) => {
-  const defaultPath = Nav[0].to
-  const location = typeof window !== `undefined` ? window.location.pathname : `/`
-  const currentPath = location || path || defaultPath
-
+const Navigation = ({ toggleOnClick, isOpen }) => {
   return (
     <>
       <Menu
-        toggleOnClick={toggleOnClick}
+        toggleOnClick={e => toggleDisplay(e, toggleOnClick)}
         isOpen={isOpen}
       />
       <nav
-        className={getNavigationClassName(isOpen)}
+        className={displayAs(isOpen)}
       >
         <MenuItems
-          path={currentPath}
+          toggleOnClick={e => toggleDisplay(e, toggleOnClick)}
         />
       </nav>
     </>
@@ -35,16 +36,13 @@ export const Navigation = ({ toggleOnClick, isOpen, path }) => {
 
 Navigation.defaultProps = {
   isOpen: false,
-  path: `/`,
 }
 
 Navigation.propTypes = {
   toggleOnClick: PropTypes.func.isRequired,
   isOpen: PropTypes.bool,
-  path: PropTypes.string,
 }
 
 export default Navigation
 
 //TODO: keep data.nav? maybe?
-//TODO: click on active menu item does not close menu
