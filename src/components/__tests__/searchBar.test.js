@@ -1,12 +1,12 @@
 import React from 'react'
 import SearchBar from '../searchBar'
-import { getSnapshot } from './_helpers'
+import { getSnapshot, mockFn } from './_helpers'
 
 describe(`Search bar`, () => {
   it(`should render`, () => {
     const bar = (
       <SearchBar
-        toggleOnClick={jest.fn()}
+        toggleOnClick={mockFn()}
       />
     )
     const tree = getSnapshot(bar)

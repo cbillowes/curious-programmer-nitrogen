@@ -1,9 +1,9 @@
 import React from 'react'
 import Navigation from '../navigation'
-import { getSnapshot } from './_helpers'
+import { getSnapshot, mockFn } from './_helpers'
 
 describe(`Navigation`, () => {
-  const toggleOnClick = jest.fn()
+  const toggleOnClick = mockFn()
 
   it(`should render default navigation`, () => {
     const navigation = (

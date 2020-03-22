@@ -1,12 +1,12 @@
 import React from 'react'
 import Menu from '../menu'
-import { getSnapshot } from './_helpers'
+import { getSnapshot, mockFn } from './_helpers'
 
 describe(`Menu`, () => {
   it(`should render`, () => {
     const menu = (
       <Menu
-        toggleOnClick={jest.fn()}
+        toggleOnClick={mockFn()}
       />
     )
     const tree = getSnapshot(menu)
@@ -16,7 +16,7 @@ describe(`Menu`, () => {
   it(`should render opened`, () => {
     const menu = (
       <Menu
-        toggleOnClick={jest.fn()}
+        toggleOnClick={mockFn()}
         isOpen={true}
       />
     )
@@ -27,7 +27,7 @@ describe(`Menu`, () => {
   it(`should render closed`, () => {
     const menu = (
       <Menu
-        toggleOnClick={jest.fn()}
+        toggleOnClick={mockFn()}
         isOpen={false}
       />
     )

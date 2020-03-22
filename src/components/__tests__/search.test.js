@@ -1,12 +1,14 @@
 import React from 'react'
 import Search from '../search'
-import { getSnapshot } from './_helpers'
+import { getSnapshot, mockFn } from './_helpers'
 
 describe(`Search`, () => {
+  const toggleOnClick = mockFn()
+
   it(`should render default`, () => {
     const search = (
       <Search
-        toggleOnClick={jest.fn()}
+        toggleOnClick={toggleOnClick}
       />
     )
     const tree = getSnapshot(search)
@@ -16,7 +18,7 @@ describe(`Search`, () => {
   it(`should render open`, () => {
     const search = (
       <Search
-        toggleOnClick={jest.fn()}
+        toggleOnClick={toggleOnClick}
         isOpen={true}
       />
     )
@@ -27,7 +29,7 @@ describe(`Search`, () => {
   it(`should render closed`, () => {
     const search = (
       <Search
-        toggleOnClick={jest.fn()}
+        toggleOnClick={toggleOnClick}
         isOpen={false}
       />
     )
