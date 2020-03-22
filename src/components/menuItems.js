@@ -22,11 +22,12 @@ const LinkedItem = ({ item, active }) => {
 const Items = ({ path }) => {
   return Navigation.map(item => {
     const key = item.name.replace(/ /g, "")
+    const isActive = path === item.to || path.startsWith(`${item.to}/`)
     return (
       <LinkedItem
         key={key}
         item={item}
-        active={path === item.to}
+        active={isActive}
       />
     )
   })
