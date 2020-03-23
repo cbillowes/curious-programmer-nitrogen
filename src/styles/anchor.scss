@@ -43,7 +43,9 @@
 }
 
 @mixin logo() {
-  &.logo, &.logo:hover {
+
+  &.logo,
+  &.logo:hover {
     color: #fff;
     border: none;
     background: transparent;

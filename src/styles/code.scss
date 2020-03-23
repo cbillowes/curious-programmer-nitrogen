@@ -1,7 +1,7 @@
 @import "./variables.scss";
 
 div.code-toolbar {
-  > .toolbar {
+  >.toolbar {
     opacity: 1;
     font-size: 1.25rem;
     font-family: $sans;
@@ -12,13 +12,15 @@ div.code-toolbar {
   .toolbar-item {
     button {
       cursor: pointer;
+
       &:hover {
         background-color: $primary;
         color: $dark;
       }
     }
 
-    span, button {
+    span,
+    button {
       padding: .1rem .65rem;
       border-radius: 3px;
       background-color: $darkest;
@@ -27,7 +29,7 @@ div.code-toolbar {
   }
 }
 
-div.code-toolbar > .toolbar {
+div.code-toolbar>.toolbar {
   opacity: 1;
   font-size: 1.25rem;
   font-family: $sans;
@@ -35,7 +37,7 @@ div.code-toolbar > .toolbar {
   right: -1.5rem;
 }
 
-div.code-toolbar > .toolbar .toolbar-item span {
+div.code-toolbar>.toolbar .toolbar-item span {
   padding: .1rem .65rem;
   border-radius: 3px;
   background-color: $darkest;
@@ -49,7 +51,7 @@ code {
 code,
 code[class*="language-"],
 pre[class*="language-"],
-:not(pre) > code[class*="language-"] {
+:not(pre)>code[class*="language-"] {
   background-color: $dark;
   border: solid 1px $neutral;
   font-family: $mono;
@@ -62,7 +64,7 @@ code[class*="language-"] {
   border: none;
 }
 
-:not(pre) > code[class*="language-"] {
+:not(pre)>code[class*="language-"] {
   font-size: 80%;
   padding: .5rem .8rem;
   margin: 0 .3rem;

@@ -62,15 +62,23 @@
 }
 
 // variable
-.gist .pl-s .pl-s1, .gist .pl-smi {
+.gist .pl-s .pl-s1,
+.gist .pl-smi {
   color: #fbff29;
 }
 
-.gist .pl-pds, .gist .pl-s, .gist .pl-s .pl-pse .pl-s1, .gist .pl-sr, .gist .pl-sr .pl-cce, .gist .pl-sr .pl-sra, .gist .pl-sr .pl-sre {
+.gist .pl-pds,
+.gist .pl-s,
+.gist .pl-s .pl-pse .pl-s1,
+.gist .pl-sr,
+.gist .pl-sr .pl-cce,
+.gist .pl-sr .pl-sra,
+.gist .pl-sr .pl-sre {
   color: #bdbdbd;
 }
 
-.gist .pl-c1, .gist .pl-s .pl-v {
+.gist .pl-c1,
+.gist .pl-s .pl-v {
   color: #ff4ed8;
   font-weight: bold;
 }

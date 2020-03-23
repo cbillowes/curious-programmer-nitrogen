@@ -5,9 +5,10 @@
   font-family: $sans;
   text-align: center;
 
-  h1, p {
+  h1,
+  p {
     margin: 0;
-  }  
+  }
 }
 
 .search {
@@ -40,7 +41,7 @@
     font-family: $mono;
     letter-spacing: -.15rem;
     text-align: center;
-  
+
     &:focus {
       outline: none;
     }
@@ -49,7 +50,7 @@
       color: $primary-dark;
       text-shadow: 1px 1px 1px $primary-light;
     }
-  
+
     @media medium-screen {
       padding: 1.5rem 3rem 1.5rem 1.5rem;
       font-size: 1.5rem;
@@ -73,7 +74,8 @@
     @include secondary-text($with-border);
   }
 
-  a:hover, a:visited:hover {
+  a:hover,
+  a:visited:hover {
     $with-border: yes;
     @include secondary-text($with-border);
   }

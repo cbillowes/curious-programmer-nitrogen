@@ -7,7 +7,8 @@
   height: auto;
   position: relative;
 
-  .previous, .next {
+  .previous,
+  .next {
     flex-grow: 1;
     flex-basis: 50%;
   }
@@ -28,7 +29,8 @@
       margin-top: 2rem;
     }
 
-    .previous, .next {
+    .previous,
+    .next {
       h1 {
         a {
           border: none;
@@ -117,7 +119,10 @@
       padding-left: 10%;
       border-top: solid 10px $tertiary;
 
-      h1, .tags, .body, .metadata {
+      h1,
+      .tags,
+      .body,
+      .metadata {
         text-align: right;
       }
 
@@ -126,7 +131,9 @@
       }
 
       .nav-link:hover {
-        h1, .body {
+
+        h1,
+        .body {
           color: $tertiary;
         }
 
@@ -141,7 +148,8 @@
       padding-right: 10%;
       border-top: solid 10px $secondary;
 
-      h1, .tags {
+      h1,
+      .tags {
         text-align: left;
       }
 
@@ -150,7 +158,9 @@
       }
 
       .nav-link:hover {
-        h1, .body {
+
+        h1,
+        .body {
           color: $secondary;
         }
 
