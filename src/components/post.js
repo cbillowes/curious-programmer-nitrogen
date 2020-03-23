@@ -1,18 +1,10 @@
 import React from 'react'
 import PropTypes from 'prop-types'
+import ReadingPane from './readingPane'
 import Number from './number'
 import PostMetadata from './postMetadata'
 import Tags from './tags'
-import { H1 } from './heading'
 import '../styles/post.scss'
-
-const Title = ({ children }) => {
-  return (
-    <H1>
-      {children}
-    </H1>
-  )
-}
 
 const Body = ({ children }) => {
   return (
@@ -46,21 +38,24 @@ function Post({ title, tags, date, author, ttr, number, children }) {
       <article
         className="post article"
       >
-        <Number number={number} />
-        <Title>
-          {title}
-        </Title>
-        <Metadata
-          date={date}
-          author={author}
-          ttr={ttr}
+        <Number
+          number={number}
         />
-        <Tags
-          tags={tags}
-        />
-        <Body>
-          {children}
-        </Body>
+        <ReadingPane
+          heading={title}
+        >
+          <Metadata
+            date={date}
+            author={author}
+            ttr={ttr}
+          />
+          <Tags
+            tags={tags}
+          />
+          <Body>
+            {children}
+          </Body>
+        </ReadingPane>
       </article>
     </>
   )

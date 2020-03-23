@@ -291,73 +291,79 @@ Array [
             </div>
           </div>
         </div>
-        <h1>
-          Don't Panic.
-        </h1>
-        <div
-          className="metadata"
-        >
-          posted on
-           
-          <time
-            dateTime={"2019-02-01T00:00:00.000Z"}
+        <div>
+          <h1>
+            Don't Panic.
+          </h1>
+          <div
+            className="reading-pane"
           >
-            Friday, 1 February 2019
-          </time>
-           
-          <span>
-            by Clarice Bouwer
-          </span>
-           
-          <span>
-            (Est. 42 minute read)
-          </span>
+            <div
+              className="metadata"
+            >
+              posted on
+               
+              <time
+                dateTime={"2019-02-01T00:00:00.000Z"}
+              >
+                Friday, 1 February 2019
+              </time>
+               
+              <span>
+                by Clarice Bouwer
+              </span>
+               
+              <span>
+                (Est. 42 minute read)
+              </span>
+            </div>
+            <div
+              className="tags"
+            >
+               
+              <a
+                className="tag"
+                href="/tag/display/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="display"
+              >
+                display
+              </a>
+               
+               
+              <a
+                className="tag"
+                href="/tag/example/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="example"
+              >
+                example
+              </a>
+               
+               
+              <a
+                className="tag"
+                href="/tag/post/"
+                onClick={[Function]}
+                onMouseEnter={[Function]}
+                title="post"
+              >
+                post
+              </a>
+               
+            </div>
+            <div
+              className="reading-panel"
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "<p>Hello world.</p>",
+                }
+              }
+            />
+          </div>
         </div>
-        <div
-          className="tags"
-        >
-           
-          <a
-            className="tag"
-            href="/tag/display/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="display"
-          >
-            display
-          </a>
-           
-           
-          <a
-            className="tag"
-            href="/tag/example/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="example"
-          >
-            example
-          </a>
-           
-           
-          <a
-            className="tag"
-            href="/tag/post/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="post"
-          >
-            post
-          </a>
-           
-        </div>
-        <div
-          className="reading-panel"
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": "<p>Hello world.</p>",
-            }
-          }
-        />
       </article>
     </section>
   </div>,
