@@ -1,5 +1,6 @@
 @import "./variables.scss";
 
-.tag, .tag:visited {
+.tag,
+.tag:visited {
   @include primary-tag();
 }
