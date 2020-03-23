@@ -1,13 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Menu item should be active 1`] = `
-<div
+<a
   className="menu-item active"
+  href="/#"
   onClick={[Function]}
+  onKeyUp={[Function]}
   role="button"
+  tabIndex="0"
 >
   Blog
-</div>
+</a>
 `;
 
 exports[`Menu item should be inactive 1`] = `

@@ -151,13 +151,16 @@ exports[`Menu items should set another page to active in the navigation items 1`
     Credits
   </a>
    
-  <div
+  <a
     className="menu-item active"
+    href="/#"
     onClick={[Function]}
+    onKeyUp={[Function]}
     role="button"
+    tabIndex="0"
   >
     Privacy Policy
-  </div>
+  </a>
    
   <a
     className="menu-item"
@@ -195,13 +198,16 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
 <div
   className="menu"
 >
-  <div
+  <a
     className="menu-item active"
+    href="/#"
     onClick={[Function]}
+    onKeyUp={[Function]}
     role="button"
+    tabIndex="0"
   >
     Blog
-  </div>
+  </a>
    
   <a
     className="menu-item"
@@ -289,13 +295,16 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
 <div
   className="menu"
 >
-  <div
+  <a
     className="menu-item active"
+    href="/#"
     onClick={[Function]}
+    onKeyUp={[Function]}
     role="button"
+    tabIndex="0"
   >
     Blog
-  </div>
+  </a>
    
   <a
     className="menu-item"
@@ -383,13 +392,16 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
 <div
   className="menu"
 >
-  <div
+  <a
     className="menu-item active"
+    href="/#"
     onClick={[Function]}
+    onKeyUp={[Function]}
     role="button"
+    tabIndex="0"
   >
     Blog
-  </div>
+  </a>
    
   <a
     className="menu-item"

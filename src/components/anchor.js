@@ -7,7 +7,7 @@ function isExternalLink(url) {
   return (url.startsWith(`http`) || url.startsWith(`mailto:`))
 }
 
-const ExternalLink = ({ to, title, className, children }) => {
+const ExternalLink = ({ to, title, className, children, ...props }) => {
   return (
     <>
       {" "}
@@ -17,6 +17,7 @@ const ExternalLink = ({ to, title, className, children }) => {
         title={title}
         className={className}
         target={`_blank`}
+        {...props}
       >
         {children}
       </a>
@@ -25,7 +26,7 @@ const ExternalLink = ({ to, title, className, children }) => {
   )
 }
 
-const InternalLink = ({ to, title, className, children }) => {
+const InternalLink = ({ to, title, className, children, ...props }) => {
   return (
     <>
       {" "}
@@ -33,6 +34,7 @@ const InternalLink = ({ to, title, className, children }) => {
         to={to}
         title={title}
         className={className}
+        {...props}
       >
         {children}
       </Link>
@@ -41,13 +43,14 @@ const InternalLink = ({ to, title, className, children }) => {
   )
 }
 
-function Anchor({ to, title, className, children }) {
+function Anchor({ to, title, className, children, ...props }) {
   if (isExternalLink(to))
     return (
       <ExternalLink
         to={to}
         title={title}
         className={className}
+        {...props}
       >
         {children}
       </ExternalLink>
@@ -58,6 +61,7 @@ function Anchor({ to, title, className, children }) {
       to={to}
       title={title}
       className={className}
+      {...props}
     >
       {children}
     </InternalLink>

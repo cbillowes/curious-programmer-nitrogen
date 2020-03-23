@@ -240,6 +240,7 @@ exports[`Blog page should render 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             title="Don't panic"
+            unstyled={true}
           >
             Don't panic
           </a>
@@ -314,6 +315,7 @@ exports[`Blog page should render 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             title="Still don't panic"
+            unstyled={true}
           >
             Still don't panic
           </a>
@@ -395,6 +397,7 @@ exports[`Blog page should render 1`] = `
     >
        
       <a
+        defaultStyle="true"
         href="/archives"
         onClick={[Function]}
         onMouseEnter={[Function]}
