@@ -2,10 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import Menu from './menu'
 import MenuItems from './menuItems'
-import Data from '../../gatsby-data'
 import '../styles/navigation.scss'
-
-const Nav = Data.navigation
 
 function toggleDisplay(e, toggleOnClick) {
   e.preventDefault()
@@ -44,5 +41,3 @@ Navigation.propTypes = {
 }
 
 export default Navigation
-
-//TODO: keep data.nav? maybe?
