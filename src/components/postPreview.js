@@ -93,9 +93,9 @@ PostPreview.propTypes = {
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.number.isRequired,
+  children: PropTypes.node.isRequired,
   number: PropTypes.number,
   limit: PropTypes.number,
-  children: PropTypes.node.isRequired,
 }
 
 export default PostPreview
