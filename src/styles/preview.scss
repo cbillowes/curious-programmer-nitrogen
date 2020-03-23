@@ -27,17 +27,30 @@
   h1 {
     font-size: 120%;
 
-    a, a:visited {
+    a,
+    a:visited {
       color: $lightest;
       border-bottom-color: $faded;
       border-radius: 0;
       text-shadow: 1px 1px 1px $dark;
 
-      &:hover, &:visited:hover {
+      &:hover,
+      &:visited:hover {
         color: $primary;
         border-bottom-color: $primary-dark;
         background-color: transparent;
       }
+    }
+  }
+
+  .metadata {
+    color: $faded;
+    font-size: 90%;
+    text-align: center;
+
+    @include small-screen() {
+      margin: 1rem 2.5rem .5rem 2.5rem;
+      line-height: 2rem;
     }
   }
 
