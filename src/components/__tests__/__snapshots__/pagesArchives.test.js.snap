@@ -256,7 +256,7 @@ exports[`Archives page should render 1`] = `
           <span
             className="text"
           >
-            It's all about the towel.
+            Just pack your towel and you will be fine.
           </span>
         </div>
         <div

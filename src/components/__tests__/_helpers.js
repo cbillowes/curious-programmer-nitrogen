@@ -56,7 +56,6 @@ export function getListOfPostEdges() {
           title: `Don't panic`,
           tags: [`don't`, `panic`],
           author: `Clarice Bouwer`,
-          blurb: `It's all about the towel.`
         },
       },
     },

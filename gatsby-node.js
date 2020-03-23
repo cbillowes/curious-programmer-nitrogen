@@ -60,7 +60,6 @@ async function generateBlogPosts(graphql, actions, reporter) {
               title
               tags
               author
-              blurb
             }
           }
         }

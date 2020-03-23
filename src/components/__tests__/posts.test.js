@@ -17,7 +17,6 @@ describe(`Posts`, () => {
         frontmatter: {
           title: ``,
           author: `Clarice Bouwer`,
-          blurb: ``,
           ttr: 42,
           tags: [`don't`, `panic`],
         },
@@ -36,7 +35,6 @@ describe(`Posts`, () => {
         frontmatter: {
           title: ``,
           author: `Clarice Bouwer`,
-          blurb: ``,
           ttr: 42,
           tags: [`towel`, `panic`],
         },

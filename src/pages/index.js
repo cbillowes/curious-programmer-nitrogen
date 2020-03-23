@@ -26,7 +26,6 @@ export default () => {
                 title
                 tags
                 author
-                blurb
               }
             }
           }

@@ -1,432 +1,556 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`404 page should render 1`] = `
-<div
-  className="page"
->
-  <header
-    className="header"
+exports[`Post page should render 1`] = `
+Array [
+  <div
+    className="page"
   >
-    <div
-      className="wrapper"
+    <header
+      className="header"
     >
       <div
-        className="logo"
+        className="wrapper"
       >
-         
-        <a
-          aria-current="page"
-          className="full"
-          href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
-          title="Curious Programmer"
-        >
-          <strong>
-            {
-          </strong>
-           :curious 
-          <strong>
-            "programmer"
-          </strong>
-           
-          <strong>
-            }
-          </strong>
-        </a>
-         
-         
-        <a
-          aria-current="page"
-          className="partial"
-          href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
-          title="Curious Programmer"
-        >
-          <strong>
-            { }
-          </strong>
-        </a>
-         
-      </div>
-      <button
-        className="search-button"
-        onClick={[Function]}
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-search fa-w-16 "
-          data-icon="search"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-      <div
-        className="search closed"
-      >
-        <input
-          className="search-box"
-          onKeyDown={[Function]}
-          onKeyPress={[Function]}
-          onKeyUp={[Function]}
-          placeholder="Looking for something?"
-        />
         <div
-          className="empty-results"
+          className="logo"
+        >
+           
+          <a
+            aria-current="page"
+            className="full"
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            style={Object {}}
+            title="Curious Programmer"
+          >
+            <strong>
+              {
+            </strong>
+             :curious 
+            <strong>
+              "programmer"
+            </strong>
+             
+            <strong>
+              }
+            </strong>
+          </a>
+           
+           
+          <a
+            aria-current="page"
+            className="partial"
+            href="/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            style={Object {}}
+            title="Curious Programmer"
+          >
+            <strong>
+              { }
+            </strong>
+          </a>
+           
+        </div>
+        <button
+          className="search-button"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-search fa-w-16 "
+            data-icon="search"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 512 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M505 442.7L405.3 343c-4.5-4.5-10.6-7-17-7H372c27.6-35.3 44-79.7 44-128C416 93.1 322.9 0 208 0S0 93.1 0 208s93.1 208 208 208c48.3 0 92.7-16.4 128-44v16.3c0 6.4 2.5 12.5 7 17l99.7 99.7c9.4 9.4 24.6 9.4 33.9 0l28.3-28.3c9.4-9.4 9.4-24.6.1-34zM208 336c-70.7 0-128-57.2-128-128 0-70.7 57.2-128 128-128 70.7 0 128 57.2 128 128 0 70.7-57.2 128-128 128z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <div
+          className="search closed"
+        >
+          <input
+            className="search-box"
+            onKeyDown={[Function]}
+            onKeyPress={[Function]}
+            onKeyUp={[Function]}
+            placeholder="Looking for something?"
+          />
+          <div
+            className="empty-results"
+          >
+            <h1>
+              Sorry.
+            </h1>
+            <p>
+              So one of two things could have happend here.
+              <br />
+              Either the indexing has stopped working or I haven't written about it.
+              <br />
+              I am sorry that I can’t tell you which one it is.
+            </p>
+          </div>
+          <ul
+            className="results"
+          />
+        </div>
+        <button
+          className="menu-button"
+          onClick={[Function]}
+        >
+          <svg
+            aria-hidden="true"
+            className="svg-inline--fa fa-ellipsis-v fa-w-6 "
+            data-icon="ellipsis-v"
+            data-prefix="fas"
+            focusable="false"
+            role="img"
+            style={Object {}}
+            viewBox="0 0 192 512"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
+              fill="currentColor"
+              style={Object {}}
+            />
+          </svg>
+        </button>
+        <nav
+          className="navigation closed"
+        >
+          <div
+            className="menu"
+          >
+             
+            <a
+              className="menu-item"
+              href="/blog"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Blog
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="/about"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              About
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="/archives"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Archives
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="/tags"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Tags
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="/credits"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Credits
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="/privacy-policy"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              Privacy Policy
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="/license"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            >
+              License
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="https://github.com/cbillowes"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Github
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="https://www.linkedin.com/in/cbouwer/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              LinkedIn
+            </a>
+             
+          </div>
+        </nav>
+      </div>
+    </header>
+    <section
+      className="container  post-page"
+    >
+      <nav
+        className="post navigation tiny"
+      >
+        <aside
+          className="previous"
         >
           <h1>
-            Sorry.
+             
+            <a
+              className="nav-link"
+              href="/blog/advanced-git-commands"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              title="Advanced Git commands"
+            >
+              <span
+                className="text"
+              >
+                Advanced Git commands
+              </span>
+            </a>
+             
           </h1>
-          <p>
-            So one of two things could have happend here.
-            <br />
-            Either the indexing has stopped working or I haven't written about it.
-            <br />
-            I am sorry that I can’t tell you which one it is.
-          </p>
-        </div>
-        <ul
-          className="results"
-        />
-      </div>
-      <button
-        className="menu-button"
-        onClick={[Function]}
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-ellipsis-v fa-w-6 "
-          data-icon="ellipsis-v"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 192 512"
-          xmlns="http://www.w3.org/2000/svg"
+        </aside>
+        <aside
+          className="next"
         >
-          <path
-            d="M96 184c39.8 0 72 32.2 72 72s-32.2 72-72 72-72-32.2-72-72 32.2-72 72-72zM24 80c0 39.8 32.2 72 72 72s72-32.2 72-72S135.8 8 96 8 24 40.2 24 80zm0 352c0 39.8 32.2 72 72 72s72-32.2 72-72-32.2-72-72-72-72 32.2-72 72z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </button>
-      <nav
-        className="navigation closed"
-      >
-        <div
-          className="menu"
-        >
-           
-          <a
-            className="menu-item"
-            href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Blog
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            About
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Archives
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Tags
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Credits
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/privacy-policy"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            Privacy Policy
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-          >
-            License
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="https://github.com/cbillowes"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-          >
-            Github
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="https://www.linkedin.com/in/cbouwer/"
-            rel="nofollow noopener noreferrer"
-            target="_blank"
-          >
-            LinkedIn
-          </a>
-           
-        </div>
+          <h1>
+             
+            <a
+              className="nav-link"
+              href="/blog/advanced-git-commands"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+              title="Advanced Git commands"
+            >
+              <span
+                className="text"
+              >
+                Advanced Git commands
+              </span>
+            </a>
+             
+          </h1>
+        </aside>
       </nav>
-    </div>
-  </header>
-  <section
-    className="container  not-found-page"
+      <article
+        className="post article"
+      >
+        <div
+          className="post number ribbon"
+        >
+          <div
+            className="backdrop"
+          >
+            <div
+              className="text"
+            >
+              #
+              42
+            </div>
+          </div>
+        </div>
+        <h1>
+          Don't Panic.
+        </h1>
+        <div
+          className="metadata"
+        >
+          posted on
+           
+          <time
+            dateTime={"2019-02-01T00:00:00.000Z"}
+          >
+            Friday, 1 February 2019
+          </time>
+           
+          <span>
+            by Clarice Bouwer
+          </span>
+           
+          <span>
+            (Est. 42 minute read)
+          </span>
+        </div>
+        <div
+          className="tags"
+        >
+           
+          <a
+            className="tag"
+            href="/tag/display/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="display"
+          >
+            display
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/example/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="example"
+          >
+            example
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/post/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="post"
+          >
+            post
+          </a>
+           
+        </div>
+        <div
+          className="reading-panel"
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "<p>Hello world.</p>",
+            }
+          }
+        />
+      </article>
+    </section>
+  </div>,
+  <nav
+    className="post navigation teaser"
   >
-    <div>
-      <h1>
-        Embarrassing much? O_o
-      </h1>
-      <div
-        className="reading-pane"
-      >
-        <p>
-          Something doesn‘t seem quite right. Whatever you clicked on cannot be found or no longer exists. I may have accidentally changed the route or deleted the file or you accessed a broken link.
-        </p>
-        <p>
-           
-          <a
-            href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="Contact me"
-          >
-            Let me know
-          </a>
-           
-          if you are looking for something in particular. In the meantime, check out some of my latest posts below or browse the
-           
-          <a
-            href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="Archives"
-          >
-            archives
-          </a>
-           
-           for everything.
-        </p>
-      </div>
-    </div>
-    <div
-      className="posts"
+    <aside
+      className="previous"
     >
-      <section
-        className="post preview"
+       
+      <a
+        className="nav-link"
+        href="/blog/advanced-git-commands"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Advanced Git commands"
       >
         <h1>
-           
-          <a
-            href="/dont-panic"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="Don't panic"
-          >
-            Don't panic
-          </a>
-           
+          Advanced Git commands
         </h1>
         <div
-          className="blurb"
+          className="body"
         >
           <span
             className="text"
           >
-            Just pack your towel and you will be fine.
+            This is an excerpt.
           </span>
         </div>
         <div
           className="metadata"
         >
-          <div
-            className="metadata"
+          posted on
+           
+          <time
+            dateTime={"2019-09-11T00:00:00.000Z"}
           >
-            posted on
-             
-            <time
-              dateTime={"2019-02-01T00:00:00.000Z"}
-            >
-              Friday, 1 February 2019
-            </time>
-             
-            <span>
-              by Clarice Bouwer
-            </span>
-             
-            <span>
-              (Est. 42 minute read)
-            </span>
-          </div>
+            Wednesday, 11 September 2019
+          </time>
+           
+          <span>
+            by Clarice Bouwer
+          </span>
+           
+          <span>
+            (Est. 1 minute read)
+          </span>
         </div>
-        <div
-          className="tags"
+      </a>
+       
+      <div
+        className="tags"
+      >
+         
+        <a
+          className="tag"
+          href="/tag/advanced/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Advanced"
         >
-           
-          <a
-            className="tag"
-            href="/tag/dont/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="don't"
-          >
-            don't
-          </a>
-           
-           
-          <a
-            className="tag"
-            href="/tag/panic/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="panic"
-          >
-            panic
-          </a>
-           
-        </div>
-      </section>
-      <section
-        className="post preview"
+          advanced
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/commands/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Commands"
+        >
+          commands
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/git/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Git"
+        >
+          git
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/technical/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Technical"
+        >
+          technical
+        </a>
+         
+      </div>
+    </aside>
+    <aside
+      className="next"
+    >
+       
+      <a
+        className="nav-link"
+        href="/blog/advanced-git-commands"
+        onClick={[Function]}
+        onMouseEnter={[Function]}
+        title="Advanced Git commands"
       >
         <h1>
-           
-          <a
-            href="/still-dont-panic"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="Still don't panic"
-          >
-            Still don't panic
-          </a>
-           
+          Advanced Git commands
         </h1>
         <div
-          className="blurb"
+          className="body"
         >
           <span
             className="text"
           >
-            Keep packing your towels and you will be fine.
+            This is an excerpt.
           </span>
         </div>
         <div
           className="metadata"
         >
-          <div
-            className="metadata"
+          posted on
+           
+          <time
+            dateTime={"2019-09-11T00:00:00.000Z"}
           >
-            posted on
-             
-            <time
-              dateTime={"2019-02-01T00:00:00.000Z"}
-            >
-              Friday, 1 February 2019
-            </time>
-             
-            <span>
-              by Clarice Bouwer
-            </span>
-             
-            <span>
-              (Est. 42 minute read)
-            </span>
-          </div>
+            Wednesday, 11 September 2019
+          </time>
+           
+          <span>
+            by Clarice Bouwer
+          </span>
+           
+          <span>
+            (Est. 1 minute read)
+          </span>
         </div>
-        <div
-          className="tags"
+      </a>
+       
+      <div
+        className="tags"
+      >
+         
+        <a
+          className="tag"
+          href="/tag/advanced/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Advanced"
         >
-           
-          <a
-            className="tag"
-            href="/tag/dont/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="don't"
-          >
-            don't
-          </a>
-           
-           
-          <a
-            className="tag"
-            href="/tag/panic/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="panic"
-          >
-            panic
-          </a>
-           
-           
-          <a
-            className="tag"
-            href="/tag/still/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            title="still"
-          >
-            still
-          </a>
-           
-        </div>
-      </section>
-    </div>
-  </section>
+          advanced
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/commands/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Commands"
+        >
+          commands
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/git/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Git"
+        >
+          git
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/technical/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="Technical"
+        >
+          technical
+        </a>
+         
+      </div>
+    </aside>
+  </nav>,
   <footer
     className="footer"
   >
@@ -609,6 +733,6 @@ exports[`404 page should render 1`] = `
          
       </div>
     </div>
-  </footer>
-</div>
+  </footer>,
+]
 `;

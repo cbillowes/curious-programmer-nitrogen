@@ -1,93 +1,53 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import { graphql, useStaticQuery } from 'gatsby'
 import SEO from '../components/seo'
-import Blurb from '../components/blurb'
-import Footer from '../components/footer'
-import PostNavigationTiny from '../components/postNavigationTiny'
-import PostNavigationTeaser from '../components/postNavigationTeaser'
-import Post from '../components/post'
-import '../styles/post.scss'
+import PostPage from '../components/pages/post'
 
-function postNavigation(edge) {
-  const { timeToRead, excerpt } = edge
-  const { title, author, tags } = edge.frontmatter
-  const { slug, date } = edge.fields
-  return {
-    title,
-    slug,
-    excerpt,
-    author,
-    date,
-    ttr: timeToRead,
-    tags,
-  }
-}
+export default context => {
+  useStaticQuery(
+    graphql`
+      query($path: String!) {
+        markdownRemark(fields: { slug: { eq: $path } }) {
+          html
+          excerpt
+          timeToRead
+          fields {
+            date
+          }
+          frontmatter {
+            title
+            tags
+          }
+        }
+      }
+    `
+  )
+  const { slug, next, previous, number } = context.pageContext
+  const { html, excerpt, timeToRead } = context.data.markdownRemark
+  const { date } = context.data.markdownRemark.fields
+  const { title, tags, author } = context.data.markdownRemark.frontmatter
 
-export default ({ data, pageContext }) => {
-  const { markdownRemark } = data
-  const { slug, next, previous, number } = pageContext
-  const { title, tags, excerpt } = markdownRemark.frontmatter
-  const { date } = markdownRemark.fields
-  const { html, timeToRead } = markdownRemark
-  const previousPost = postNavigation(previous)
-  const nextPost = postNavigation(next)
   return (
     <>
-      <Layout
-        className="post-page"
-        footer={false}
+      <SEO
+        title={title}
+        crawl={true}
       >
-        <SEO
-          title={title}
-          crawl={true}
-        >
-          <Blurb
-            limit={20}
-          >
-            {html}
-          </Blurb>
-        </SEO>
-        <PostNavigationTiny
-          previous={previousPost}
-          next={nextPost}
-        />
-        <Post
-          slug={slug}
-          title={title}
-          date={date}
-          tags={tags}
-          ttr={timeToRead}
-          excerpt={excerpt}
-          number={number}
-        >
-          {html}
-        </Post>
-      </Layout>
-      <PostNavigationTeaser
-        previous={previousPost}
-        next={nextPost}
+        {description}
+      </SEO>
+      <PostPage
+        slug={slug}
+        title={title}
+        date={date}
+        tags={tags}
+        excerpt={excerpt}
+        timeToRead={timeToRead}
+        author={author}
+        html={html}
+        next={next}
+        previous={previous}
+        number={number}
       />
-      <Footer />
     </>
   )
 }
-
-export const postQuery = graphql`
-  query BlogPostPage($slug: String!) {
-    markdownRemark(fields: { slug: { eq: $slug } }) {
-      html
-      excerpt
-      timeToRead
-      fields {
-        slug
-        date
-      }
-      frontmatter {
-        title
-        tags
-        blurb
-      }
-    }
-  }
-`
