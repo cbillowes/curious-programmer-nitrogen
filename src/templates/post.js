@@ -33,7 +33,7 @@ export default context => {
         title={title}
         crawl={true}
       >
-        {description}
+        {excerpt}
       </SEO>
       <PostPage
         slug={slug}
