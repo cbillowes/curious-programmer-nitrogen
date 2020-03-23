@@ -45,7 +45,7 @@ storiesOf('Components/anchor', module)
         me and feel free to get in touch.
       </p>
       <p>
-        <strong>Gaurenteed unvisited link:</strong> To make 100% sure, here is a link I
+        <strong>Guaranteed unvisited link:</strong> To make 100% sure, here is a link I
         <Anchor
           to="https://unvisited.link"
         >

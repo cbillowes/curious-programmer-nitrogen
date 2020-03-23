@@ -16,7 +16,7 @@ const edges = [
       },
       timeToRead: 15,
       excerpt: `
-        A few words from the hitchiker's guide to the galaxy.
+        A few words from the hitchhiker's guide to the galaxy.
         I love deadlines. I like the whooshing sound they make as they fly by.
         In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.
         The ships hung in the sky in much the same way that bricks don't.

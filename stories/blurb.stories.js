@@ -6,7 +6,7 @@ storiesOf('Components/blurb', module)
   .add('unlimited', () =>
     <Blurb>
       <p>
-        A few words from the hitchiker's guide to the galaxy.
+        A few words from the hitchhiker's guide to the galaxy.
       </p>
       <p>
         I love deadlines. I like the <strong>whooshing</strong> sound they make as they fly by.
@@ -27,7 +27,7 @@ storiesOf('Components/blurb', module)
     <Blurb
       limit={50}>
       <p>
-        A few words from the hitchiker's guide to the galaxy.
+        A few words from the hitchhiker's guide to the galaxy.
       </p>
       <p>
         I love deadlines. I like the <strong>whooshing</strong> sound they make as they fly by.

@@ -16,8 +16,8 @@ const starwars = {
   `,
 }
 
-const hitchikersGuideToTheGalaxy = {
-  title: `The ultimate hitchiker's guide to the galaxy`,
+const hitchhikersGuideToTheGalaxy = {
+  title: `The ultimate hitchhiker's guide to the galaxy`,
   author: `Douglas Adams`,
   excerpt:
     `
@@ -48,13 +48,13 @@ storiesOf('Components/post/navigation', module)
           tags: [`star wars`, `vader`, `yoda`],
         }}
         next={{
-          title: hitchikersGuideToTheGalaxy.title,
+          title: hitchhikersGuideToTheGalaxy.title,
           slug: `/`,
-          excerpt: hitchikersGuideToTheGalaxy.excerpt,
-          author: hitchikersGuideToTheGalaxy.author,
+          excerpt: hitchhikersGuideToTheGalaxy.excerpt,
+          author: hitchhikersGuideToTheGalaxy.author,
           date: `1 April 2019`,
           ttr: 42,
-          tags: [`hitchickers`, `beer`, `towel`],
+          tags: [`hitchhikers`, `beer`, `towel`],
         }}
       />
     </Page>
