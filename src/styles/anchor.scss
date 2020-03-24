@@ -12,12 +12,10 @@
 
   //https://developer.mozilla.org/en-US/docs/Web/CSS/Privacy_and_the_:visited_selector
   &:visited {
-    $with-border: no;
-    @include dimmed-text($with-border);
+    @include dimmed-text($with-border: no);
 
     &:hover {
-      color: $dark;
-      background-color: $primary-dark;
+      @include rounded-primary();
     }
   }
 }
