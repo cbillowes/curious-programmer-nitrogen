@@ -20,7 +20,7 @@ export default (props) => {
         crawl={false}
       />
       <H1>
-        <Anchor to="/tags" title="Tags">tags</Anchor>: {tag.toLowerCase()}
+        &#123; <Anchor to="/tags" title="Tags">:tags</Anchor> {tag.toLowerCase()}&#125;
       </H1>
       <Posts
         edges={edges}
