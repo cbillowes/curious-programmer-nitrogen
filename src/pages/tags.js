@@ -4,20 +4,20 @@ import SEO from '../components/seo'
 import TagsPage from '../components/pages/tags'
 
 export default () => {
-  const edges = useStaticQuery(
+  const remark = useStaticQuery(
     graphql`
-    query {
-      allMarkdownRemark(limit: 1000) {
-        totalCount
-        edges {
-          node {
-            frontmatter {
-              tags
+      query {
+        allMarkdownRemark(limit: 1000) {
+          totalCount
+          edges {
+            node {
+              frontmatter {
+                tags
+              }
             }
           }
         }
       }
-    }
    `
   )
   return (
@@ -26,7 +26,7 @@ export default () => {
         title="Tags"
         crawl={false}
       />
-      <TagsPage edges={edges} />
+      <TagsPage edges={remark.allMarkdownRemark.edges} />
     </>
   )
 }
