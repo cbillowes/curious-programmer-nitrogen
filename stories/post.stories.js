@@ -62,7 +62,7 @@ const post = {
 let html = (
   <div>
     <p>
-      🎉 Let's get started with some hitchhiker's Guide to the Galaxy quotes, shall we!
+      🎉 Let's get <a href="/#">started with</a> some hitchhiker's Guide to the Galaxy quotes, shall we!
     </p>
 
     <h2>Why, what did she tell you? 🙋</h2>
@@ -367,7 +367,7 @@ let html = (
   </div >
 )
 
-storiesOf('Layout/Pages', module)
+storiesOf('Layout/examples', module)
   .add('post', () =>
     <PostPage
       slug="/blog/template"
