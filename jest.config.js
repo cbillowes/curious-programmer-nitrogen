@@ -1,5 +1,6 @@
 //https://en.wikipedia.org/wiki/List_of_tz_database_time_zones
 process.env.TZ = `EG`
+process.env.GATSBY_SEARCH_FEATURE = `true`
 
 module.exports = {
   verbose: true,

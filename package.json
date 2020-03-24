@@ -76,8 +76,8 @@
     "test": "jest",
     "test:watch": "jest --watch",
     "test:coverage": "jest --coverage",
-    "storybook": "NODE_ENV=production start-storybook -s public -p 6006",
-    "storybook:develop": "NODE_ENV=development start-storybook -s public -p 6007",
+    "storybook": "NODE_ENV=development start-storybook -s public -p 6006",
+    "storybook:production": "NODE_ENV=production start-storybook -s public -p 6007",
     "build-storybook": "NODE_ENV=production build-storybook -s public"
   },
   "repository": {

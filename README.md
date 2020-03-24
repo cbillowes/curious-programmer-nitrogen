@@ -101,6 +101,16 @@ I push to GitHub, it detects latest commits, builds and then deploys. It's simpl
 
 ---
 
+### 📦 Environment variables
+
+A [Gatsby environment variables](https://www.gatsbyjs.org/docs/environment-variables/) guide.
+
+```
+GATSBY_SEARCH_FEATURE
+```
+
+Get Jest environment variables working in Visual Studio Code
+
 ## Create your own blog.
 
 Create a new Gatsby website using `gatsby new my-gatsby-blog` or create one from an [official and community-created starter](https://www.gatsbyjs.org/docs/gatsby-starters/).

@@ -4,10 +4,6 @@ import SearchBar from "./searchBar"
 import Navigation from "./navigation"
 import '../styles/header.scss'
 
-export const toggleSearchFeature = () => {
-  return false;
-}
-
 class Header extends Component {
   constructor(props) {
     super(props)
@@ -39,7 +35,7 @@ class Header extends Component {
         <div className="wrapper">
           <Logo />
           {
-            toggleSearchFeature ?
+            process.env.GATSBY_SEARCH_FEATURE === "true" ?
               <SearchBar
                 toggleOnClick={this.toggleSearch.bind(this)}
                 isOpen={this.state.isSearchOpen}
