@@ -11,7 +11,6 @@ exports[`Post preview should limit the blurb word count 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       title="Don't panic."
-      unstyled={true}
     >
       Don't panic.
     </a>
@@ -89,7 +88,6 @@ exports[`Post preview should render when all required props are provided 1`] = `
       onClick={[Function]}
       onMouseEnter={[Function]}
       title="Don't panic."
-      unstyled={true}
     >
       Don't panic.
     </a>

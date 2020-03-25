@@ -28,7 +28,6 @@ exports[`Posts should render with default word limit 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
         title=""
-        unstyled={true}
       >
         
       </a>
@@ -111,7 +110,6 @@ exports[`Posts should render with default word limit 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
         title=""
-        unstyled={true}
       >
         
       </a>
@@ -201,7 +199,6 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
         title=""
-        unstyled={true}
       >
         
       </a>
@@ -284,7 +281,6 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         onClick={[Function]}
         onMouseEnter={[Function]}
         title=""
-        unstyled={true}
       >
         
       </a>

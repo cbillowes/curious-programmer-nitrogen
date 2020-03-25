@@ -276,7 +276,6 @@ exports[`404 page should render 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             title="Don't panic"
-            unstyled={true}
           >
             Don't panic
           </a>
@@ -351,7 +350,6 @@ exports[`404 page should render 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
             title="Still don't panic"
-            unstyled={true}
           >
             Still don't panic
           </a>

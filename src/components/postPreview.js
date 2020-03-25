@@ -45,7 +45,6 @@ const Heading = ({ children, slug }) => {
         <Anchor
           to={slug}
           title={children}
-          unstyled={true}
         >
           {children}
         </Anchor>
