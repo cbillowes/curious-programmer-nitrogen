@@ -74,5 +74,5 @@ Anchor.propTypes = {
   className: PropTypes.string,
   children: PropTypes.node,
 }
-//TODO: update tests and stuff to allow for missing children. ie. about:36 example
+
 export default Anchor
