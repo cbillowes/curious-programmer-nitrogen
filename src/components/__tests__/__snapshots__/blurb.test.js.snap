@@ -16,7 +16,7 @@ exports[`Blurb should extract content from plain text 1`] = `
 </span>
 `;
 
-exports[`Blurb should forceably limit words extracted from html elements 1`] = `
+exports[`Blurb should forcibly limit words extracted from html elements 1`] = `
 <span
   className="text"
 >
@@ -24,7 +24,7 @@ exports[`Blurb should forceably limit words extracted from html elements 1`] = `
 </span>
 `;
 
-exports[`Blurb should forceably limit words extracted from plain text 1`] = `
+exports[`Blurb should forcibly limit words extracted from plain text 1`] = `
 <span
   className="text"
 >

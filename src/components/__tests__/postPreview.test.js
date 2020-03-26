@@ -4,7 +4,7 @@ import { getSnapshot } from './_helpers'
 
 describe(`Post preview`, () => {
   it(`should render when all required props are provided`, () => {
-    const preview = (
+    const component = (
       <PostPreview
         title="Don't panic."
         slug="/dont-panic"
@@ -21,12 +21,12 @@ describe(`Post preview`, () => {
         </p>
       </PostPreview>
     )
-    const tree = getSnapshot(preview)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should limit the blurb word count`, () => {
-    const preview = (
+    const component = (
       <PostPreview
         title="Don't panic."
         slug="/dont-panic"
@@ -44,7 +44,7 @@ describe(`Post preview`, () => {
         </p>
       </PostPreview>
     )
-    const tree = getSnapshot(preview)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

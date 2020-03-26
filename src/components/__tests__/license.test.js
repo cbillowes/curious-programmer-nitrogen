@@ -4,10 +4,10 @@ import { getSnapshot } from './_helpers'
 
 describe(`License`, () => {
   it(`should render`, () => {
-    const license = (
+    const component = (
       <License />
     )
-    const tree = getSnapshot(license)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

@@ -4,10 +4,10 @@ import { getSnapshot } from './_helpers'
 
 describe(`Logo`, () => {
   it(`should render`, () => {
-    const logo = (
+    const component = (
       <Logo />
     )
-    const tree = getSnapshot(logo)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

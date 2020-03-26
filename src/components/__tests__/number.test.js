@@ -4,20 +4,20 @@ import { getSnapshot } from './_helpers'
 
 describe(`Navigation`, () => {
   it(`should render empty when there is no number`, () => {
-    const number = (
+    const component = (
       <Number />
     )
-    const tree = getSnapshot(number)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render`, () => {
-    const number = (
+    const component = (
       <Number
         number={42}
       />
     )
-    const tree = getSnapshot(number)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

@@ -4,12 +4,12 @@ import { getSnapshot, mockFn } from './_helpers'
 
 describe(`Search bar`, () => {
   it(`should render`, () => {
-    const bar = (
+    const component = (
       <SearchBar
         toggleOnClick={mockFn()}
       />
     )
-    const tree = getSnapshot(bar)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

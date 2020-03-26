@@ -43,23 +43,23 @@ describe(`Posts`, () => {
   ]
 
   it(`should render with default word limit`, () => {
-    const posts = (
+    const component = (
       <Posts
         edges={edges}
       />
     )
-    const tree = getSnapshot(posts)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render with specified word limit of 5`, () => {
-    const posts = (
+    const component = (
       <Posts
         edges={edges}
         limit={1}
       />
     )
-    const tree = getSnapshot(posts)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

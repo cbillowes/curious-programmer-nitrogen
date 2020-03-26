@@ -4,12 +4,12 @@ import { getSnapshot } from './_helpers'
 
 describe(`Tags`, () => {
   it(`should render from list`, () => {
-    const tags = (
+    const component = (
       <Tags
         tags={[`hello`, `world`]}
       />
     )
-    const tree = getSnapshot(tags)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
@@ -44,8 +44,8 @@ describe(`Tags`, () => {
         },
       },
     ]
-    const tags = getTagsFromEdges(edges)
-    expect(tags).toStrictEqual(
+    const component = getTagsFromEdges(edges)
+    expect(component).toStrictEqual(
       [
         [`don't`, `panic`],
         [`bring`, `your`, `towel`],

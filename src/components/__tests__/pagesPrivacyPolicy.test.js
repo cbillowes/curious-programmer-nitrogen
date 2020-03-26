@@ -4,10 +4,10 @@ import { getSnapshot } from './_helpers'
 
 describe(`Privacy policy page`, () => {
   it(`should render`, () => {
-    const aboutPage = (
+    const component = (
       <PrivacyPolicyPage />
     )
-    const tree = getSnapshot(aboutPage)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

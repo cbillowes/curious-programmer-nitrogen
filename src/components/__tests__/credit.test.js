@@ -4,16 +4,17 @@ import { getSnapshot } from './_helpers'
 
 describe(`Credit`, () => {
   it(`should use the title for its empty body`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Credit
         title="Use me instead.">
       </Credit>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render an external credit`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Credit
         to="https://curiousprogrammer.dev"
         title="Curious Programmer"
@@ -21,11 +22,12 @@ describe(`Credit`, () => {
         Curious Programmer
       </Credit>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render an internal credit`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Credit
         to="/blog"
         title="Curious Programmer"
@@ -33,6 +35,7 @@ describe(`Credit`, () => {
         Curious Programmer
       </Credit>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

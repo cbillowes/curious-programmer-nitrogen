@@ -5,10 +5,10 @@ import { getSnapshot } from './_helpers'
 describe(`Tags page`, () => {
   it(`should render when there are no tags`, () => {
     const edges = []
-    const tagsPage = (
+    const component = (
       <TagsPage edges={edges} />
     )
-    const tree = getSnapshot(tagsPage)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
@@ -29,10 +29,10 @@ describe(`Tags page`, () => {
         },
       },
     ]
-    const tagsPage = (
+    const component = (
       <TagsPage edges={edges} />
     )
-    const tree = getSnapshot(tagsPage)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

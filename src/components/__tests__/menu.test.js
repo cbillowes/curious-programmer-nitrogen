@@ -4,34 +4,34 @@ import { getSnapshot, mockFn } from './_helpers'
 
 describe(`Menu`, () => {
   it(`should render`, () => {
-    const menu = (
+    const component = (
       <Menu
         toggleOnClick={mockFn()}
       />
     )
-    const tree = getSnapshot(menu)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render opened`, () => {
-    const menu = (
+    const component = (
       <Menu
         toggleOnClick={mockFn()}
         isOpen={true}
       />
     )
-    const tree = getSnapshot(menu)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render closed`, () => {
-    const menu = (
+    const component = (
       <Menu
         toggleOnClick={mockFn()}
         isOpen={false}
       />
     )
-    const tree = getSnapshot(menu)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

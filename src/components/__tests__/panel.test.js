@@ -5,7 +5,7 @@ import { getSnapshot, getMount } from './_helpers'
 
 describe(`Panel`, () => {
   it(`should not render collapsed`, () => {
-    const panel = (
+    const component = (
       <Panel title="Want to hire me?">
         <p>
           <strong>I am NOT on the market at the moment.</strong>
@@ -17,12 +17,12 @@ describe(`Panel`, () => {
         </p>
       </Panel>
     )
-    const tree = getSnapshot(panel)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render expanded`, () => {
-    const panel = (
+    const component = (
       <Panel title="Want to hire me?">
         <p>
           <strong>I am NOT on the market at the moment.</strong>
@@ -30,35 +30,35 @@ describe(`Panel`, () => {
           I can handle realistic pressure. Working persistent long hours is not a job for me.
           I prefer remote work in Clojure, React or Gatsby.
           I use Spacemacs (Evil mode) and Visual Studio Code.
-          I need a laptop, preferrably a MacBook Pro.
+          I need a laptop, preferably a MacBook Pro.
       </p>
       </Panel>
     )
-    const component = getMount(panel)
-    component.find(`.title`).simulate(`click`)
+    const mounted = getMount(component)
+    mounted.find(`.title`).simulate(`click`)
 
-    const tree = getSnapshot(component.find(`.panel`))
+    const tree = getSnapshot(mounted.find(`.panel`))
     expect(tree).toMatchSnapshot()
   })
 
   it(`should be able to toggle`, () => {
-    const panel = (
+    const component = (
       <Panel title="Want to hire me?">
         <p>
           <strong>I am NOT on the market at the moment.</strong>
         </p>
       </Panel>
     )
-    const component = getMount(panel)
-    expect(component.state(`clicked`)).toBe(false)
-    expect(component.find(`.body`).length).toBe(0)
+    const mounted = getMount(component)
+    expect(mounted.state(`clicked`)).toBe(false)
+    expect(mounted.find(`.body`).length).toBe(0)
 
-    component.find(`.title`).simulate(`click`)
-    expect(component.state(`clicked`)).toBe(true)
-    expect(component.find(`.body`).length).toBe(1)
+    mounted.find(`.title`).simulate(`click`)
+    expect(mounted.state(`clicked`)).toBe(true)
+    expect(mounted.find(`.body`).length).toBe(1)
 
-    component.find(`.title`).simulate(`click`)
-    expect(component.state(`clicked`)).toBe(false)
-    expect(component.find(`.body`).length).toBe(0)
+    mounted.find(`.title`).simulate(`click`)
+    expect(mounted.state(`clicked`)).toBe(false)
+    expect(mounted.find(`.body`).length).toBe(0)
   })
 })

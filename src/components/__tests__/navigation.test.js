@@ -6,23 +6,23 @@ describe(`Navigation`, () => {
   const toggleOnClick = mockFn()
 
   it(`should render default navigation`, () => {
-    const navigation = (
+    const component = (
       <Navigation
         toggleOnClick={() => toggleOnClick}
       />
     )
-    const tree = getSnapshot(navigation)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render open navigation`, () => {
-    const navigation = (
+    const component = (
       <Navigation
         toggleOnClick={() => toggleOnClick}
         isOpen={true}
       />
     )
-    const tree = getSnapshot(navigation)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

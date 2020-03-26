@@ -4,34 +4,34 @@ import { getSnapshot } from './_helpers'
 
 describe(`Tag`, () => {
   it(`should render readonly`, () => {
-    const tag = (
+    const component = (
       <Tag
         title="Technical"
       />
     )
-    const tree = getSnapshot(tag)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render internal`, () => {
-    const tag = (
+    const component = (
       <Tag
         title="Technical"
         to="/tag/technical"
       />
     )
-    const tree = getSnapshot(tag)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render external`, () => {
-    const tag = (
+    const component = (
       <Tag
         title="Curious Programmer"
         to="https://curiousprogrammer.dev"
       />
     )
-    const tree = getSnapshot(tag)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

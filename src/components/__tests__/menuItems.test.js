@@ -10,12 +10,12 @@ describe(`Menu items`, () => {
     jsdom.reconfigure({
       url: `${domain}/blogging`,
     })
-    const menuItems = (
+    const component = (
       <MenuItems
         toggleOnClick={toggleOnClick}
       />
     )
-    const tree = getSnapshot(menuItems)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
@@ -23,12 +23,12 @@ describe(`Menu items`, () => {
     jsdom.reconfigure({
       url: `${domain}/blog`,
     })
-    const menuItems = (
+    const component = (
       <MenuItems
         toggleOnClick={toggleOnClick}
       />
     )
-    const tree = getSnapshot(menuItems)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
@@ -36,12 +36,12 @@ describe(`Menu items`, () => {
     jsdom.reconfigure({
       url: `${domain}/blog/`,
     })
-    const menuItems = (
+    const component = (
       <MenuItems
         toggleOnClick={toggleOnClick}
       />
     )
-    const tree = getSnapshot(menuItems)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
@@ -49,12 +49,12 @@ describe(`Menu items`, () => {
     jsdom.reconfigure({
       url: `${domain}/blog/dont-panic`,
     })
-    const menuItems = (
+    const component = (
       <MenuItems
         toggleOnClick={toggleOnClick}
       />
     )
-    const tree = getSnapshot(menuItems)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
@@ -62,12 +62,12 @@ describe(`Menu items`, () => {
     jsdom.reconfigure({
       url: `${domain}/privacy-policy/`,
     })
-    const menuItems = (
+    const component = (
       <MenuItems
         toggleOnClick={toggleOnClick}
       />
     )
-    const tree = getSnapshot(menuItems)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

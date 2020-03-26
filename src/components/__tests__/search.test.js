@@ -6,34 +6,34 @@ describe(`Search`, () => {
   const toggleOnClick = mockFn()
 
   it(`should render default`, () => {
-    const search = (
+    const component = (
       <Search
         toggleOnClick={toggleOnClick}
       />
     )
-    const tree = getSnapshot(search)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render open`, () => {
-    const search = (
+    const component = (
       <Search
         toggleOnClick={toggleOnClick}
         isOpen={true}
       />
     )
-    const tree = getSnapshot(search)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render closed`, () => {
-    const search = (
+    const component = (
       <Search
         toggleOnClick={toggleOnClick}
         isOpen={false}
       />
     )
-    const tree = getSnapshot(search)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

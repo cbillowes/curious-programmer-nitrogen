@@ -5,12 +5,12 @@ import { getSnapshot, getListOfPostEdges } from './_helpers'
 describe(`404 page`, () => {
   it(`should render`, () => {
     const edges = getListOfPostEdges()
-    const tagsPage = (
+    const component = (
       <PageNotFound
         edges={edges}
       />
     )
-    const tree = getSnapshot(tagsPage)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

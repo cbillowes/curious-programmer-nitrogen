@@ -5,9 +5,10 @@ import { getMountedComponent, getSnapshot } from './_helpers'
 const search = process.env.GATSBY_SEARCH_FEATURE === "true"
 describe(`Header (GATSBY_SEARCH_FEATURE=${process.env.GATSBY_SEARCH_FEATURE})`, () => {
   it(`should render`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Header />
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
@@ -15,7 +16,10 @@ describe(`Header (GATSBY_SEARCH_FEATURE=${process.env.GATSBY_SEARCH_FEATURE})`, 
     let header
 
     beforeEach(() => {
-      header = getMountedComponent(<Header />)
+      const component = (
+        <Header />
+      )
+      header = getMountedComponent(component)
     })
 
     it(`menu button`, () => {
@@ -35,11 +39,13 @@ describe(`Header (GATSBY_SEARCH_FEATURE=${process.env.GATSBY_SEARCH_FEATURE})`, 
     let header
 
     beforeEach(() => {
-      header = getMountedComponent(
+      const component = (
         <Header
           isMenuOpen={false}
           isSearchOpen={false}
-        />)
+        />
+      )
+      header = getMountedComponent(component)
     })
 
     it(`navigation`, () => {
@@ -60,12 +66,13 @@ describe(`Header (GATSBY_SEARCH_FEATURE=${process.env.GATSBY_SEARCH_FEATURE})`, 
   describe(`should show`, () => {
     let header
     beforeEach(() => {
-      header = getMountedComponent(
+      const component = (
         <Header
           isMenuOpen={true}
           isSearchOpen={true}
         />
       )
+      header = getMountedComponent(component)
     })
 
     it(`navigation`, () => {

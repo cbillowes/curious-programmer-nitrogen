@@ -12,13 +12,13 @@ describe(`Post navigation tiny`, () => {
       slug: `/next`,
       title: `Come to the dark side of the force.`,
     }
-    const tiny = (
+    const component = (
       <PostNavigationTiny
         previous={previous}
         next={next}
       />
     )
-    const tree = getSnapshot(tiny)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

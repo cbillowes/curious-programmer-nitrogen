@@ -24,7 +24,7 @@ describe(`Post page`, () => {
         "author": "Clarice Bouwer",
       }
     }
-    const postPage = (
+    const component = (
       <PostPage
         slug="/blog/template"
         title="Don't Panic."
@@ -39,7 +39,7 @@ describe(`Post page`, () => {
         previous={post}
       />
     )
-    const tree = getSnapshot(postPage)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

@@ -4,7 +4,7 @@ import { getSnapshot } from './_helpers'
 
 describe(`Reading pane`, () => {
   it(`should render`, () => {
-    const pane = (
+    const component = (
       <ReadingPane
         heading="Don't panic."
       >
@@ -15,7 +15,7 @@ describe(`Reading pane`, () => {
         </p>
       </ReadingPane>
     )
-    const tree = getSnapshot(pane)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

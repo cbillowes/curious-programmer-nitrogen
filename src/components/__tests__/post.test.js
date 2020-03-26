@@ -4,7 +4,7 @@ import { getSnapshot } from './_helpers'
 
 describe(`Post`, () => {
   it(`should render with plain text`, () => {
-    const post = (
+    const component = (
       <Post
         title="Don't panic."
         date="2019-02-01T00:00:00.000Z"
@@ -21,12 +21,12 @@ describe(`Post`, () => {
         something close to it.
       </Post>
     )
-    const tree = getSnapshot(post)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render with html`, () => {
-    const post = (
+    const component = (
       <Post
         title="Don't panic."
         date="2019-02-01T00:00:00.000Z"
@@ -45,12 +45,12 @@ describe(`Post`, () => {
         </p>
       </Post>
     )
-    const tree = getSnapshot(post)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render with a number`, () => {
-    const post = (
+    const component = (
       <Post
         title="Don't panic."
         date="2019-02-01T00:00:00.000Z"
@@ -64,7 +64,7 @@ describe(`Post`, () => {
         </p>
       </Post>
     )
-    const tree = getSnapshot(post)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

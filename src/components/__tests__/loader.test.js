@@ -4,10 +4,10 @@ import { getSnapshot } from './_helpers'
 
 describe(`Loader`, () => {
   it(`should render`, () => {
-    const loader = (
+    const component = (
       <Loader />
     )
-    const tree = getSnapshot(loader)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

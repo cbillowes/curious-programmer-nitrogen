@@ -5,18 +5,18 @@ import { getSnapshot } from './_helpers'
 describe(`Blurb`, () => {
   describe(`should extract content`, () => {
     it(`from plain text`, () => {
-      const text = (
+      const component = (
         <Blurb>
           The ships hung in the sky in much the same way
           that bricks don't.
         </Blurb>
       )
-      const tree = getSnapshot(text)
+      const tree = getSnapshot(component)
       expect(tree).toMatchSnapshot()
     })
 
     it(`from html elements`, () => {
-      const text = (
+      const component = (
         <Blurb>
           <h1>Don't panic!</h1>
           <p>Time is an illusion.</p>
@@ -30,14 +30,14 @@ describe(`Blurb`, () => {
           </span>
         </Blurb>
       )
-      const tree = getSnapshot(text)
+      const tree = getSnapshot(component)
       expect(tree).toMatchSnapshot()
     })
   })
 
   describe(`should limit words`, () => {
     it(`extracted from plain text`, () => {
-      const text = (
+      const component = (
         <Blurb
           limit={6}
         >
@@ -45,12 +45,12 @@ describe(`Blurb`, () => {
           that bricks don't.
         </Blurb>
       )
-      const tree = getSnapshot(text)
+      const tree = getSnapshot(component)
       expect(tree).toMatchSnapshot()
     })
 
     it(`extracted from html elements`, () => {
-      const text = (
+      const component = (
         <Blurb
           limit={6}
         >
@@ -66,29 +66,29 @@ describe(`Blurb`, () => {
           </span>
         </Blurb>
       )
-      const tree = getSnapshot(text)
+      const tree = getSnapshot(component)
       expect(tree).toMatchSnapshot()
     })
   })
 
-  describe(`should forceably limit words`, () => {
+  describe(`should forcibly limit words`, () => {
     it(`extracted from plain text`, () => {
-      const text = (
+      const component = (
         <Blurb>
           {Array(300).fill().map((_, i) => ++i).map(i => { return i.toString() })}
         </Blurb>
       )
-      const tree = getSnapshot(text)
+      const tree = getSnapshot(component)
       expect(tree).toMatchSnapshot()
     })
 
     it(`extracted from html elements`, () => {
-      const text = (
+      const component = (
         <Blurb>
           {Array(300).fill().map((_, i) => ++i).map(i => { return <p key={i}>{i.toString()}</p> })}
         </Blurb>
       )
-      const tree = getSnapshot(text)
+      const tree = getSnapshot(component)
       expect(tree).toMatchSnapshot()
     })
   })

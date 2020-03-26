@@ -4,9 +4,10 @@ import Footer from '../footer'
 
 describe(`Footer`, () => {
   it(`should render`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Footer />
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

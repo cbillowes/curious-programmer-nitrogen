@@ -4,12 +4,12 @@ import { getSnapshot } from './_helpers'
 
 describe(`Show more items`, () => {
   it(`should render`, () => {
-    const showMore = (
+    const component = (
       <ShowMore
         to="/archives"
       />
     )
-    const tree = getSnapshot(showMore)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

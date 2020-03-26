@@ -4,7 +4,7 @@ import { getSnapshot } from './_helpers'
 
 describe(`Post navigation teaser`, () => {
   it(`should render all that is required`, () => {
-    const teaser = (
+    const component = (
       <PostNavigationTeaser
         previous={
           {
@@ -30,12 +30,12 @@ describe(`Post navigation teaser`, () => {
         }
       />
     )
-    const tree = getSnapshot(teaser)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render everything else`, () => {
-    const teaser = (
+    const component = (
       <PostNavigationTeaser
         previous={
           {
@@ -63,7 +63,7 @@ describe(`Post navigation teaser`, () => {
         }
       />
     )
-    const tree = getSnapshot(teaser)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

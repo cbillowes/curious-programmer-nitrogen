@@ -4,10 +4,10 @@ import { getSnapshot } from './_helpers'
 
 describe(`Credits page`, () => {
   it(`should render`, () => {
-    const aboutPage = (
+    const component = (
       <CreditsPage />
     )
-    const tree = getSnapshot(aboutPage)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

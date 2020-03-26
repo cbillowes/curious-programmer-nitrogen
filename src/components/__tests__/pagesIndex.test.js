@@ -5,12 +5,12 @@ import { getSnapshot, getListOfPostEdges } from './_helpers'
 describe(`Blog page`, () => {
   it(`should render`, () => {
     const edges = getListOfPostEdges()
-    const indexPage = (
+    const component = (
       <IndexPage
         edges={edges}
       />
     )
-    const tree = getSnapshot(indexPage)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

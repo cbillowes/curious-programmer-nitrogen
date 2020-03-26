@@ -25,22 +25,22 @@ const data = {
 
 describe(`Image`, () => {
   it(`should render an image that exists`, () => {
-    const image = (
+    const component = (
       <Image
         data={data}
       />
     )
-    const tree = getSnapshot(image)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should not render an image that does not exist`, () => {
-    const image = (
+    const component = (
       <Image
         data={{}}
       />
     )
-    const tree = getSnapshot(image)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

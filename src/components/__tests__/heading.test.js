@@ -4,7 +4,7 @@ import { H1, H2, H3, H4 } from "../heading"
 
 describe(`Heading`, () => {
   it(`should render`, () => {
-    const headings = (
+    const component = (
       <div>
         <H1>Don't panic.</H1>
         <H2>Time is an illusion. Lunchtime doubly so.</H2>
@@ -12,12 +12,12 @@ describe(`Heading`, () => {
         <H4>The ships hung in the sky in much the same way that bricks don't.</H4>
       </div>
     )
-    const tree = getSnapshot(headings)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should capture class names`, () => {
-    const headings = (
+    const component = (
       <div>
         <H1 className="un">un</H1>
         <H2 className="deux">deux</H2>
@@ -25,7 +25,7 @@ describe(`Heading`, () => {
         <H4 className="quatre">quatre</H4>
       </div>
     )
-    const tree = getSnapshot(headings)
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })

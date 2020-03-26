@@ -4,40 +4,43 @@ import { getSnapshot } from './_helpers'
 
 describe(`Anchor`, () => {
   it(`should link to http/https`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Anchor
         to="https://curiousprogrammer.dev"
       >
         Curious Programmer
       </Anchor>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`link to mailto`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Anchor
         to="mailto:clarice@bouwer.dev"
       >
         clarice@bouwer.dev
       </Anchor>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`link internally`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Anchor
         to="/about"
       >
         About
       </Anchor>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should configure class name internally`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Anchor
         to="/about"
         className="some-or-other-class"
@@ -45,11 +48,12 @@ describe(`Anchor`, () => {
         About
       </Anchor>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should configure class name externally`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Anchor
         to="https://curiousprogrammer.dev"
         className="some-or-other-class"
@@ -57,16 +61,18 @@ describe(`Anchor`, () => {
         Curious Programmer
       </Anchor>
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should configure an empty anchor`, () => {
-    const tree = getSnapshot(
+    const component = (
       <Anchor
         to="https://curiousprogrammer.dev"
         className="blog"
       />
     )
+    const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 })
