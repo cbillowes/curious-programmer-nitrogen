@@ -64,6 +64,7 @@ PostPage.propType = {
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
+  author: PropTypes.string.isRequired,
   tags: PropTypes.array.isRequired,
   excerpt: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,

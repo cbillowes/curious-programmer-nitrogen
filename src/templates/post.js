@@ -25,7 +25,8 @@ export default context => {
   const { slug, next, previous, number } = context.pageContext
   const { html, excerpt, timeToRead } = context.data.markdownRemark
   const { date } = context.data.markdownRemark.fields
-  const { title, tags, author } = context.data.markdownRemark.frontmatter
+  const { title, tags } = context.data.markdownRemark.frontmatter
+  const author = `Clarice Bouwer`
 
   return (
     <>

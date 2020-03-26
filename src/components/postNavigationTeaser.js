@@ -120,6 +120,3 @@ PostNavigationTeaser.propTypes = {
 }
 
 export default PostNavigationTeaser
-
-//TODO: refactor name to Teaser?
-//TODO: tags are missing in snapshot

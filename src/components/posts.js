@@ -8,7 +8,8 @@ const Listing = ({ edges, limit }) => {
   return edges.map(edge => {
     const { timeToRead, excerpt } = edge.node
     const { slug, date, number } = edge.node.fields
-    const { title, tags, author } = edge.node.frontmatter
+    const { title, tags } = edge.node.frontmatter
+    const author = "Clarice Bouwer"
     return (
       <PostPreview
         key={slug}
@@ -51,6 +52,5 @@ Posts.propTypes = {
 
 export default Posts
 
-//TODO: serious housekeeping required in this component
 //TODO: move Lang to gatsby-config?
 //TODO: somewhere the actual post needs to be rendered
