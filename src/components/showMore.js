@@ -13,7 +13,6 @@ const ShowMore = ({ to, title }) => {
       <Anchor
         to={to}
         title={title}
-        defaultStyle="true"
       >
         <FontAwesomeIcon
           icon={faEllipsisH}

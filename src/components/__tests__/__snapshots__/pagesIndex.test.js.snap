@@ -395,7 +395,6 @@ exports[`Blog page should render 1`] = `
     >
        
       <a
-        defaultStyle="true"
         href="/archives"
         onClick={[Function]}
         onMouseEnter={[Function]}
