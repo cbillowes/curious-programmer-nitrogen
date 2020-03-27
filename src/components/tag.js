@@ -60,6 +60,3 @@ Tag.propTypes = {
 }
 
 export default Tag
-
-//TODO: rethink what tags are necessary
-//TODO: Make title only inline

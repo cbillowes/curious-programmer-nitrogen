@@ -1,5 +1,19 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Tag should render bare readonly 1`] = `
+<span>
+  technical
+</span>
+`;
+
+exports[`Tag should render disabled 1`] = `
+<span
+  data-disabled="true"
+>
+  curious programmer
+</span>
+`;
+
 exports[`Tag should render external 1`] = `
 Array [
   " ",
@@ -30,10 +44,4 @@ Array [
   </a>,
   " ",
 ]
-`;
-
-exports[`Tag should render readonly 1`] = `
-<span>
-  technical
-</span>
 `;

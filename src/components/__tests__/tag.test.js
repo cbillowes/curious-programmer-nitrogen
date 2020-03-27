@@ -3,7 +3,7 @@ import Tag from '../tag'
 import { getSnapshot } from './_helpers'
 
 describe(`Tag`, () => {
-  it(`should render readonly`, () => {
+  it(`should render bare readonly`, () => {
     const component = (
       <Tag
         title="Technical"
@@ -29,6 +29,18 @@ describe(`Tag`, () => {
       <Tag
         title="Curious Programmer"
         to="https://curiousprogrammer.dev"
+      />
+    )
+    const tree = getSnapshot(component)
+    expect(tree).toMatchSnapshot()
+  })
+
+  it(`should render disabled`, () => {
+    const component = (
+      <Tag
+        title="Curious Programmer"
+        to="https://curiousprogrammer.dev"
+        disabled={true}
       />
     )
     const tree = getSnapshot(component)
