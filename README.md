@@ -106,7 +106,7 @@ I push to GitHub, it detects latest commits, builds and then deploys. It's simpl
 A [Gatsby environment variables](https://www.gatsbyjs.org/docs/environment-variables/) guide.
 
 ```
-GATSBY_SEARCH_FEATURE
+GATSBY_SEARCH_FEATURE=[boolean]
 ```
 
 Get Jest environment variables working in Visual Studio Code
