@@ -26,9 +26,9 @@ const Credit = ({ to, title, children }) => {
 }
 
 Credit.propTypes = {
+  children: PropTypes.node.isRequired,
+  title: PropTypes.string.isRequired,
   to: PropTypes.string,
-  title: PropTypes.string,
-  children: PropTypes.node,
 }
 
 export default Credit
