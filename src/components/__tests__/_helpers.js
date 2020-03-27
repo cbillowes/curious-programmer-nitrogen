@@ -8,13 +8,6 @@ global.___loader = {
   enqueue: jest.fn()
 }
 
-class ValidationException {
-  constructor(type, message) {
-    this.type = type
-    this.message = message
-  }
-}
-
 export function mockFn() {
   return jest.fn()
 }
