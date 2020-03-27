@@ -1,13 +1,16 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Tag should render bare readonly 1`] = `
-<span>
+<span
+  className="tag bare"
+>
   technical
 </span>
 `;
 
 exports[`Tag should render disabled 1`] = `
 <span
+  className="tag disabled"
   data-disabled="true"
 >
   curious programmer

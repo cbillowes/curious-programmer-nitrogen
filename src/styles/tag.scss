@@ -3,4 +3,12 @@
 .tag,
 .tag:visited {
   @include primary-tag();
+
+  &.bare {
+    @include bare-tag();
+  }
+
+  &.disabled {
+    @include disabled-tag();
+  }
 }

@@ -5,7 +5,7 @@ import '../styles/tag.scss'
 
 const Bare = ({ children }) => {
   return (
-    <span>
+    <span className="tag bare">
       {children}
     </span>
   )
@@ -14,6 +14,7 @@ const Bare = ({ children }) => {
 const Disabled = ({ children }) => {
   return (
     <span
+      className="tag disabled"
       data-disabled="true"
     >
       {children}
@@ -26,14 +27,14 @@ const Tag = ({ title, to, disabled }) => {
 
   if (!to)
     return (
-      <Bare className="tag bare">
+      <Bare>
         {lowerTitle}
       </Bare>
     )
 
   if (disabled)
     return (
-      <Disabled className="tag disabled">
+      <Disabled>
         {lowerTitle}
       </Disabled>
     )

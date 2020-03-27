@@ -7,15 +7,7 @@ storiesOf('Components/tag', module)
   .add('title only', () =>
     <Page>
       <Tag
-        title="Important"
-      />
-    </Page>
-  )
-  .add('click on title', () =>
-    <Page>
-      <Tag
-        to="/important"
-        title="Important"
+        title="Can't touch dis!"
       />
     </Page>
   )
