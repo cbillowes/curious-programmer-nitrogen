@@ -8,13 +8,16 @@
 import React from 'react'
 import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
-import { useStaticQuery, graphql } from 'gatsby'
 import { getContent } from './blurb'
 
-export const PureSEO = ({ title, description, crawl, data }) => {
+const SEO = ({ title, description, crawl, data }) => {
   const lang = data.siteMetadata.lang
   const pageTitle = title ? `${title} | ${data.siteMetadata.title}` : data.siteMetadata.title
-  const pageDescription = description || data.siteMetadata.description
+  const pageDescription =
+    getContent(25,
+      (typeof description === `string` ? description : undefined) ||
+      data.siteMetadata.description
+    )
   const author = data.siteMetadata.author
 
   return (
@@ -42,31 +45,6 @@ export const PureSEO = ({ title, description, crawl, data }) => {
       <meta property="twitter:author" content={author} />
       <meta property="twitter:card" content="summary" />
     </Helmet>
-  )
-}
-
-export const SEO = props => {
-  const data = useStaticQuery(
-    graphql`
-      query {
-        site {
-          siteMetadata {
-            title
-            description
-            author
-            lang
-          }
-        }
-      }
-    `
-  )
-  const description = props.children ? getContent(25, props.children) : ``
-  return (
-    <PureSEO
-      {...props}
-      description={description}
-      data={data.site}
-    />
   )
 }
 
