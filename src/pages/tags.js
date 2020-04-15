@@ -4,9 +4,15 @@ import SEO from '../components/seo'
 import TagsPage from '../components/pages/tags'
 
 export default () => {
-  const remark = useStaticQuery(
+  const data = useStaticQuery(
     graphql`
       query {
+        site {
+          siteMetadata {
+            lang
+            title
+          }
+        }
         allMarkdownRemark(limit: 1000) {
           totalCount
           edges {
@@ -20,13 +26,14 @@ export default () => {
       }
    `
   )
+  const site = data.site.siteMetadata
   return (
     <>
       <SEO
-        title="Tags"
+        title={`Tags | ${site.title}`}
         crawl={false}
       />
-      <TagsPage edges={remark.allMarkdownRemark.edges} />
+      <TagsPage edges={data.allMarkdownRemark.edges} />
     </>
   )
 }

@@ -10,15 +10,8 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { getContent } from './blurb'
 
-const SEO = ({ title, description, crawl, data }) => {
-  const lang = data.siteMetadata.lang
-  const pageTitle = title ? `${title} | ${data.siteMetadata.title}` : data.siteMetadata.title
-  const pageDescription =
-    getContent(25,
-      (typeof description === `string` ? description : undefined) ||
-      data.siteMetadata.description
-    )
-  const author = data.siteMetadata.author
+const SEO = ({ title, crawl, lang, author, children }) => {
+  const description = description ? getContent(25, children) : ``
 
   return (
     <Helmet
@@ -26,9 +19,9 @@ const SEO = ({ title, description, crawl, data }) => {
         lang,
       }}
     >
-      <title>{pageTitle}</title>
-      <meta name="title" content={pageTitle} />
-      <meta name="description" content={pageDescription} />
+      <title>{title}</title>
+      <meta name="title" content={title} />
+      <meta name="description" content={description} />
 
       {
         crawl ?
@@ -36,12 +29,12 @@ const SEO = ({ title, description, crawl, data }) => {
           <meta name="robots" content="noindex" />
       }
 
-      <meta property="og:title" content={pageTitle} />
-      <meta property="og:description" content={pageDescription} />
+      <meta property="og:title" content={title} />
+      <meta property="og:description" content={description} />
       <meta property="og:type" content="website" />
 
-      <meta property="twitter:title" content={pageTitle} />
-      <meta property="twitter:description" content={pageDescription} />
+      <meta property="twitter:title" content={title} />
+      <meta property="twitter:description" content={description} />
       <meta property="twitter:author" content={author} />
       <meta property="twitter:card" content="summary" />
     </Helmet>
@@ -49,14 +42,15 @@ const SEO = ({ title, description, crawl, data }) => {
 }
 
 SEO.defaultProps = {
-  description: ``,
   crawl: false,
 }
 
 SEO.propTypes = {
   title: PropTypes.string.isRequired,
   crawl: PropTypes.bool,
-  description: PropTypes.string,
+  lang: PropTypes.string,
+  author: PropTypes.string,
+  children: PropTypes.node,
 }
 
 export default SEO

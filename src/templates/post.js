@@ -7,6 +7,12 @@ export default context => {
   useStaticQuery(
     graphql`
       query($path: String!) {
+        site {
+          siteMetadata {
+            lang
+            title
+          }
+        }
         markdownRemark(fields: { slug: { eq: $path } }) {
           html
           excerpt
@@ -22,6 +28,7 @@ export default context => {
       }
     `
   )
+  const site = context.data.site.siteMetadata
   const { slug, next, previous, number } = context.pageContext
   const { html, excerpt, timeToRead } = context.data.markdownRemark
   const { date } = context.data.markdownRemark.fields
@@ -31,8 +38,10 @@ export default context => {
   return (
     <>
       <SEO
-        title={title}
+        title={`${title} | ${site.title}`}
         crawl={true}
+        lang={site.lang}
+        author={site.author}
       >
         {excerpt}
       </SEO>
