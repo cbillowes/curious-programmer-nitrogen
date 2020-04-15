@@ -6,22 +6,22 @@ const Credit = ({ to, title, children }) => {
   const body = children || title
   if (to) {
     return (
-      <div>
+      <span>
         <Tag
           title={title}
           to={to}
         />
         {body}
-      </div>
+      </span>
     )
   }
   return (
-    <div>
+    <span>
       <Tag
         title={title}
       />
       {body}
-    </div>
+    </span>
   )
 }
 

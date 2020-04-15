@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Credit should render an external credit 1`] = `
-<div>
+<span>
    
   <a
     className="tag"
@@ -14,11 +14,11 @@ exports[`Credit should render an external credit 1`] = `
   </a>
    
   Curious Programmer
-</div>
+</span>
 `;
 
 exports[`Credit should render an internal credit 1`] = `
-<div>
+<span>
    
   <a
     className="tag"
@@ -31,16 +31,16 @@ exports[`Credit should render an internal credit 1`] = `
   </a>
    
   Curious Programmer
-</div>
+</span>
 `;
 
 exports[`Credit should use the title for its empty body 1`] = `
-<div>
+<span>
   <span
     className="tag bare"
   >
     use me instead.
   </span>
   Use me instead.
-</div>
+</span>
 `;

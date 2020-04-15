@@ -118,6 +118,41 @@ const CreditsPage = () => (
       </div>
 
       <div>
+        <h2>Icons</h2>
+        <Credit
+          to="https://www.flaticon.com/free-icon/gmail_324123?term=gmail&page=1&position=38"
+          title="Gmail"
+        >
+          &nbsp;
+        </Credit>
+        <Credit
+          to="https://www.flaticon.com/free-icon/twitter_255331?term=twitter&page=1&position=20"
+          title="Twitter"
+        >
+          &nbsp;
+        </Credit>
+        <Credit
+          to="https://www.iconfinder.com/icons/1220346/overflow_stachoverflow_stack_stackoverflow_icon"
+          title="StackOverflow"
+        >
+          &nbsp;
+        </Credit>
+        <Credit
+          to="https://www.flaticon.com/free-icon/github_1322053?term=github&page=1&position=46"
+          title="GitHub"
+        >
+          &nbsp;
+        </Credit>
+        <Credit
+          to="https://www.flaticon.com/free-icon/linkedin_255319?term=linkedin&page=1&position=23"
+          title="LinkedIn"
+        >
+          &nbsp;
+        </Credit>
+
+      </div>
+
+      <div>
         <H2>Photography</H2>
         <Credit
           to="https://picsum.photos"

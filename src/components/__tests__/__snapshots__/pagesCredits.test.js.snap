@@ -238,7 +238,7 @@ exports[`Credits page should render 1`] = `
           <h2>
             Hosting
           </h2>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -251,8 +251,8 @@ exports[`Credits page should render 1`] = `
             </a>
              
             is where I host my cloud server which powers the search for my blog.
-          </div>
-          <div>
+          </span>
+          <span>
              
             <a
               className="tag"
@@ -265,13 +265,13 @@ exports[`Credits page should render 1`] = `
             </a>
              
             is where I host my website. It is an all-in-one workflow that combines global deployment, continuous integration and automatic HTTPS.
-          </div>
+          </span>
         </div>
         <div>
           <h2>
             Search
           </h2>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -284,8 +284,8 @@ exports[`Credits page should render 1`] = `
             </a>
              
             is the service I run to power my search. It is a popular, blazing-fast, open source enterprise search platform built on Apache Lucene.
-          </div>
-          <div>
+          </span>
+          <span>
              
             <a
               className="tag"
@@ -298,13 +298,13 @@ exports[`Credits page should render 1`] = `
             </a>
              
             is an open source and collaborative framework for extracting the data from websites.
-          </div>
+          </span>
         </div>
         <div>
           <h2>
             Site Generation
           </h2>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -367,11 +367,11 @@ exports[`Credits page should render 1`] = `
                 builds and manages icons and typefaces in a single place, then serves them with a single line of code.
               </li>
             </ul>
-          </div>
+          </span>
           <h2>
             Snippets
           </h2>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -394,11 +394,11 @@ exports[`Credits page should render 1`] = `
             </a>
              
             .
-          </div>
+          </span>
           <h2>
             Emojis
           </h2>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -411,13 +411,88 @@ exports[`Credits page should render 1`] = `
             </a>
              
             is the emoji-list full of emojis, names, short codes, unicode and html entities that I reference.
-          </div>
+          </span>
+        </div>
+        <div>
+          <h2>
+            Icons
+          </h2>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/gmail_324123?term=gmail&page=1&position=38"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Gmail"
+            >
+              gmail
+            </a>
+             
+             
+          </span>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/twitter_255331?term=twitter&page=1&position=20"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Twitter"
+            >
+              twitter
+            </a>
+             
+             
+          </span>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.iconfinder.com/icons/1220346/overflow_stachoverflow_stack_stackoverflow_icon"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="StackOverflow"
+            >
+              stackoverflow
+            </a>
+             
+             
+          </span>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/github_1322053?term=github&page=1&position=46"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="GitHub"
+            >
+              github
+            </a>
+             
+             
+          </span>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/linkedin_255319?term=linkedin&page=1&position=23"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="LinkedIn"
+            >
+              linkedin
+            </a>
+             
+             
+          </span>
         </div>
         <div>
           <h2>
             Photography
           </h2>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -430,13 +505,13 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Lorem Ipsum... but for photos.
-          </div>
+          </span>
         </div>
         <div>
           <h2>
             Tools
           </h2>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -449,8 +524,8 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Visual Studio Code is an open-source and free source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
-          </div>
-          <div>
+          </span>
+          <span>
              
             <a
               className="tag"
@@ -463,8 +538,8 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Pixlr is a cloud-based set of image tools and utilities, including a number of photo editors, a screen recorder browser extension, and a photo sharing service. The suite was intended for non-professionals, however the apps range from simple to advanced photo editing.
-          </div>
-          <div>
+          </span>
+          <span>
              
             <a
               className="tag"
@@ -477,8 +552,8 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Base64 Image is an online image converter converting images to Base64 which can be embedded in code instead of making an HTTP request.
-          </div>
-          <div>
+          </span>
+          <span>
              
             <a
               className="tag"
@@ -491,8 +566,8 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Vector Paint is an SVG editor which gives you the ability to create unique artwork with shapes, color gradients and layers. You can use Vector Paint for posters, web graphics or diagrams.
-          </div>
-          <div>
+          </span>
+          <span>
              
             <a
               className="tag"
@@ -505,13 +580,13 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Method draw is also an SVG editor which allows you to edit and save SVG images.
-          </div>
+          </span>
         </div>
         <h2>
           Privacy Policy
         </h2>
         <div>
-          <div>
+          <span>
              
             <a
               className="tag"
@@ -524,7 +599,7 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Attorney-level solutions to make your websites and apps compliant with the law across multiple countries and legislation.
-          </div>
+          </span>
         </div>
       </div>
     </div>
