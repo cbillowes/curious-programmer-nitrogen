@@ -177,7 +177,7 @@ exports[`Tags page should render all tags 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            
@@ -639,7 +639,7 @@ exports[`Tags page should render when there are no tags 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            

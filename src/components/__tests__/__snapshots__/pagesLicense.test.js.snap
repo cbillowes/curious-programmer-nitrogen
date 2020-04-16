@@ -177,7 +177,7 @@ exports[`Credits page should render 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            

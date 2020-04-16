@@ -177,7 +177,7 @@ exports[`Credits page should render 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            
@@ -229,7 +229,7 @@ exports[`Credits page should render 1`] = `
   >
     <div>
       <h1>
-        Credits
+        Credits & Resources
       </h1>
       <div
         className="reading-pane"
@@ -242,20 +242,6 @@ exports[`Credits page should render 1`] = `
              
             <a
               className="tag"
-              href="https://www.cloudafrica.net/"
-              rel="nofollow noopener noreferrer"
-              target="_blank"
-              title="CloudAfrica"
-            >
-              cloudafrica
-            </a>
-             
-            is where I host my cloud server which powers the search for my blog.
-          </span>
-          <span>
-             
-            <a
-              className="tag"
               href="https://netlify.com"
               rel="nofollow noopener noreferrer"
               target="_blank"
@@ -264,40 +250,22 @@ exports[`Credits page should render 1`] = `
               netlify
             </a>
              
-            is where I host my website. It is an all-in-one workflow that combines global deployment, continuous integration and automatic HTTPS.
+            is an all-in-one workflow that combines global deployment, continuous integration and automatic HTTPS and is where I host my blog.
           </span>
-        </div>
-        <div>
-          <h2>
-            Search
-          </h2>
+          <br />
           <span>
              
             <a
               className="tag"
-              href="https://lucene.apache.org/solr/"
+              href="https://www.cloudafrica.net/"
               rel="nofollow noopener noreferrer"
               target="_blank"
-              title="Apache Solr"
+              title="CloudAfrica"
             >
-              apache solr
+              cloudafrica
             </a>
              
-            is the service I run to power my search. It is a popular, blazing-fast, open source enterprise search platform built on Apache Lucene.
-          </span>
-          <span>
-             
-            <a
-              className="tag"
-              href="https://scrapy.org/"
-              rel="nofollow noopener noreferrer"
-              target="_blank"
-              title="Scrapy"
-            >
-              scrapy
-            </a>
-             
-            is an open source and collaborative framework for extracting the data from websites.
+            is a dedicated provider providing high performance, highly stable cloud environments and is where I host my server which powers my search feature.
           </span>
         </div>
         <div>
@@ -316,7 +284,7 @@ exports[`Credits page should render 1`] = `
               gatsby
             </a>
              
-            is the super cool static site generator that I use to generate the blog from markdown files. Gatsby is a React-based, GraphQL powered, static site generator.
+            is a React-based, GraphQL powered, static site generator. It is the super cool and conveniently generates my blog from markdown files.
             <ul>
               <li>
                  
@@ -328,31 +296,7 @@ exports[`Credits page should render 1`] = `
                   gatsby-starter-default
                 </a>
                  
-                the default Gatsby start to kick off projects with this default boilerplate.
-              </li>
-              <li>
-                 
-                <a
-                  href="https://www.gatsbyjs.org/packages/gatsby-plugin-advanced-sitemap/"
-                  rel="nofollow noopener noreferrer"
-                  target="_blank"
-                >
-                  gatsby-plugin-advanced-sitemap
-                </a>
-                 
-                adds more power and configuration, generating a single or multiple sitemaps with full XSL templates to make them neatly organized and human + machine readable, as well linking image resources to encourage media indexing.
-              </li>
-              <li>
-                 
-                <a
-                  href="https://www.gatsbyjs.org/packages/gatsby-plugin-robots-txt/"
-                  rel="nofollow noopener noreferrer"
-                  target="_blank"
-                >
-                  gatsby-plugin-robots-txt
-                </a>
-                 
-                creates robots.txt files for your Gatsby sites.
+                is a boilerplate with some bells and whistles to help kick-off new Gatsby projects. This is the starter that I used for my blog.
               </li>
               <li>
                  
@@ -366,10 +310,114 @@ exports[`Credits page should render 1`] = `
                  
                 builds and manages icons and typefaces in a single place, then serves them with a single line of code.
               </li>
+              <li>
+                 
+                <a
+                  href="https://github.com/zenorocha/clipboard.js#readme"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  clipboard
+                </a>
+                 
+                is a modern copy to clipboard library with no flash and gzipped to 3kb.
+              </li>
+              <li>
+                 
+                <a
+                  href="https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-plugin-sitemap#readme"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  gatsby-plugin-sitemap
+                </a>
+                 
+              </li>
+              <li>
+                 
+                <a
+                  href="https://www.gatsbyjs.org/packages/gatsby-plugin-robots-txt/"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  gatsby-plugin-robots-txt
+                </a>
+                 
+              </li>
+              <li>
+                 
+                <a
+                  href="https://github.com/Rulikkk/gatsby-remark-emoji#readme"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  gatsby-remark-emoji
+                </a>
+                 
+                adds slack-style emoji to gatsby's markdown 🚀
+              </li>
+              <li>
+                 
+                <a
+                  href="https://github.com/gatsbyjs/gatsby/tree/master/packages/gatsby-remark-prismjs#readme"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  gatsby-remark-prismjs
+                </a>
+                 
+                adds syntax highlighting to code blocks in markdown files using
+                 
+                <a
+                  href="https://prismjs.com/"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  PrismJs
+                </a>
+                 
+                .
+              </li>
+              <li>
+                 
+                <a
+                  href="https://www.npmjs.com/package/gatsby-remark-responsive-iframe"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  gatsby-remark-responsive-iframe
+                </a>
+                 
+                wraps iframes or objects (e.g. embedded YouTube videos) within markdown files in a responsive elastic container with a fixed aspect ratio. This ensures that the iframe or object will scale proportionally and to the full width of its container.
+              </li>
+              <li>
+                 
+                <a
+                  href="https://github.com/ntwcklng/gatsby-remark-embed-youtube#readme"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  gatsby-remark-embed-youtube
+                </a>
+                 
+              </li>
+              <li>
+                 
+                <a
+                  href="https://github.com/weirdpattern/gatsby-remark-embed-gist#readme"
+                  rel="nofollow noopener noreferrer"
+                  target="_blank"
+                >
+                  gatsby-remark-embed-gist
+                </a>
+                 
+              </li>
             </ul>
           </span>
+        </div>
+        <div>
           <h2>
-            Snippets
+            Code
           </h2>
           <span>
              
@@ -395,8 +443,10 @@ exports[`Credits page should render 1`] = `
              
             .
           </span>
+        </div>
+        <div>
           <h2>
-            Emojis
+            Emoji Resources
           </h2>
           <span>
              
@@ -411,6 +461,55 @@ exports[`Credits page should render 1`] = `
             </a>
              
             is the emoji-list full of emojis, names, short codes, unicode and html entities that I reference.
+          </span>
+          <br />
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.webfx.com/tools/emoji-cheat-sheet/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="webfx.com"
+            >
+              webfx.com
+            </a>
+             
+            emoji cheat sheet.
+          </span>
+        </div>
+        <div>
+          <h2>
+            Search
+          </h2>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://lucene.apache.org/solr/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Apache Solr"
+            >
+              apache solr
+            </a>
+             
+            is the service I run to power my search. It is a popular, blazing-fast, open source enterprise search platform built on Apache Lucene.
+          </span>
+          <br />
+          <span>
+             
+            <a
+              className="tag"
+              href="https://scrapy.org/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Scrapy"
+            >
+              scrapy
+            </a>
+             
+            is an open source and collaborative framework for extracting the data from websites.
           </span>
         </div>
         <div>
@@ -523,8 +622,19 @@ exports[`Credits page should render 1`] = `
               microsoft visual studio code
             </a>
              
-            Visual Studio Code is an open-source and free source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring.
+            is an open-source and free source code editor developed by Microsoft for Windows, Linux and macOS. It includes support for debugging, embedded Git control, syntax highlighting, intelligent code completion, snippets, and code refactoring. I also work with a bunch of
+             
+            <a
+              href="https://gist.github.com/cbillowes/b26b35133ee86fbd19bf3825f5a2736c"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              extensions
+            </a>
+             
+            .
           </span>
+          <br />
           <span>
              
             <a
@@ -537,8 +647,9 @@ exports[`Credits page should render 1`] = `
               pixlr.com
             </a>
              
-            Pixlr is a cloud-based set of image tools and utilities, including a number of photo editors, a screen recorder browser extension, and a photo sharing service. The suite was intended for non-professionals, however the apps range from simple to advanced photo editing.
+            is a cloud-based set of image tools and utilities, including a number of photo editors, a screen recorder browser extension, and a photo sharing service. The suite was intended for non-professionals, however the apps range from simple to advanced photo editing.
           </span>
+          <br />
           <span>
              
             <a
@@ -551,8 +662,9 @@ exports[`Credits page should render 1`] = `
               base64 image
             </a>
              
-            Base64 Image is an online image converter converting images to Base64 which can be embedded in code instead of making an HTTP request.
+            is an online image converter converting images to Base64 which can be embedded in code instead of making an HTTP request.
           </span>
+          <br />
           <span>
              
             <a
@@ -565,8 +677,9 @@ exports[`Credits page should render 1`] = `
               vector paint
             </a>
              
-            Vector Paint is an SVG editor which gives you the ability to create unique artwork with shapes, color gradients and layers. You can use Vector Paint for posters, web graphics or diagrams.
+            is an SVG editor which gives you the ability to create unique artwork with shapes, color gradients and layers. You can use Vector Paint for posters, web graphics or diagrams.
           </span>
+          <br />
           <span>
              
             <a
@@ -579,7 +692,7 @@ exports[`Credits page should render 1`] = `
               method draw
             </a>
              
-            Method draw is also an SVG editor which allows you to edit and save SVG images.
+            is also an SVG editor which allows you to edit and save SVG images.
           </span>
         </div>
         <h2>

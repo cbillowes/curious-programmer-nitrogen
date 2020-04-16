@@ -20,9 +20,12 @@ export default () => {
   return (
     <>
       <SEO
-        title={`Credits | ${site.title}`}
-        crawl={false}
-      />
+        title={`Credits & Resources | ${site.title}`}
+        crawl={true}
+      >
+        I share a bunch of services, plugins, tools and stuff to help
+        make my blog what it is today.
+      </SEO>
       <CreditsPage />
     </>
   )

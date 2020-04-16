@@ -43,7 +43,7 @@ module.exports = {
       to: "/tags",
     },
     {
-      name: "Credits",
+      name: "Credits & Resources",
       to: "/credits",
     },
     {

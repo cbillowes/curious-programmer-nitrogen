@@ -177,7 +177,7 @@ exports[`Layout should not render the footer 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            
@@ -409,7 +409,7 @@ exports[`Layout should render custom class 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            
@@ -641,7 +641,7 @@ exports[`Layout should render page 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            
@@ -873,7 +873,7 @@ exports[`Layout should render reading pane 1`] = `
             onClick={[Function]}
             onMouseEnter={[Function]}
           >
-            Credits
+            Credits & Resources
           </a>
            
            
