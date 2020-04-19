@@ -3,16 +3,6 @@ import Credit from '../credit'
 import { getSnapshot } from './_helpers'
 
 describe(`Credit`, () => {
-  it(`should use the title for its empty body`, () => {
-    const component = (
-      <Credit
-        title="Use me instead.">
-      </Credit>
-    )
-    const tree = getSnapshot(component)
-    expect(tree).toMatchSnapshot()
-  })
-
   it(`should render an external credit`, () => {
     const component = (
       <Credit

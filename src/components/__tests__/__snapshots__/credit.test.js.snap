@@ -33,14 +33,3 @@ exports[`Credit should render an internal credit 1`] = `
   Curious Programmer
 </span>
 `;
-
-exports[`Credit should use the title for its empty body 1`] = `
-<span>
-  <span
-    className="tag bare"
-  >
-    use me instead.
-  </span>
-  Use me instead.
-</span>
-`;
