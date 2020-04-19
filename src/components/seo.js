@@ -10,18 +10,36 @@ import PropTypes from 'prop-types'
 import Helmet from 'react-helmet'
 import { getContent } from './blurb'
 
-const SEO = ({ title, crawl, lang, author, children }) => {
-  const description = description ? getContent(25, children) : ``
+const getTitle = (data, pageTitle) => {
+  const siteTitle = (data && data.siteMetadata) ? data.siteMetadata.title : ``
+  if (pageTitle && siteTitle) return `${pageTitle} | ${siteTitle}`
+  if (pageTitle) return pageTitle
+  return siteTitle
+}
 
+const getDescription = (data, pageDescription) => {
+  const limit = 25
+  if (data && data.siteMetadata && data.siteMetadata.description)
+    return getContent(limit, data.siteMetadata.description)
+  if (pageDescription)
+    return getContent(limit, pageDescription)
+  return ``
+}
+
+const SEO = ({ title, crawl, data, children }) => {
+  const seoTitle = getTitle(data, title)
+  const seoDescription = getDescription(data, children)
+  const seoAuthor = data && data.siteMetadata ? data.siteMetadata.author : ``
+  const seoLang = data && data.siteMetadata ? data.siteMetadata.lang : ``
   return (
     <Helmet
       htmlAttributes={{
-        lang,
+        seoLang,
       }}
     >
-      <title>{title}</title>
-      <meta name="title" content={title} />
-      <meta name="description" content={description} />
+      <title>{seoTitle}</title>
+      <meta name="title" content={seoTitle} />
+      <meta name="description" content={seoDescription} />
 
       {
         crawl ?
@@ -29,13 +47,13 @@ const SEO = ({ title, crawl, lang, author, children }) => {
           <meta name="robots" content="noindex" />
       }
 
-      <meta property="og:title" content={title} />
-      <meta property="og:description" content={description} />
+      <meta property="og:title" content={seoTitle} />
+      <meta property="og:description" content={seoDescription} />
       <meta property="og:type" content="website" />
 
-      <meta property="twitter:title" content={title} />
-      <meta property="twitter:description" content={description} />
-      <meta property="twitter:author" content={author} />
+      <meta property="twitter:title" content={seoTitle} />
+      <meta property="twitter:description" content={seoDescription} />
+      <meta property="twitter:author" content={seoAuthor} />
       <meta property="twitter:card" content="summary" />
     </Helmet>
   )
@@ -48,8 +66,7 @@ SEO.defaultProps = {
 SEO.propTypes = {
   title: PropTypes.string.isRequired,
   crawl: PropTypes.bool,
-  lang: PropTypes.string,
-  author: PropTypes.string,
+  data: PropTypes.object,
   children: PropTypes.node,
 }
 

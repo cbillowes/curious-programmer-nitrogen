@@ -47,7 +47,7 @@ function truncate(text, limit) {
   )
 }
 
-function ellipsies(text, limit) {
+function ellipsis(text, limit) {
   const words = text.trim().split(` `)
   return (
     words.length > limit ?
@@ -59,7 +59,7 @@ function ellipsies(text, limit) {
 export function getContent(limit, body) {
   const plainText = squashToPlainText(body)
   const content = truncate(plainText, limit)
-  const truncated = ellipsies(plainText, limit)
+  const truncated = ellipsis(plainText, limit)
   return `${content}${truncated}`
 }
 

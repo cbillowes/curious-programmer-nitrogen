@@ -11,12 +11,43 @@ describe(`SEO`, () => {
         data={{
           siteMetadata: {
             title: `Curious Programmer`,
-            description: `A curious place for a curious mind.`,
           }
         }}
       />
     )
     const title = `Don't Panic. | Curious Programmer`
+    const wrapper = getWrapper(component)
+    expect(wrapper.find(`title`).text()).toBe(title)
+    expect(wrapper.find(`meta[name="title"]`).props().content).toBe(title)
+    expect(wrapper.find(`meta[property="og:title"]`).props().content).toBe(title)
+    expect(wrapper.find(`meta[property="twitter:title"]`).props().content).toBe(title)
+  })
+
+  it(`should render the page title only`, () => {
+    const component = (
+      <SEO
+        title="Don't Panic."
+      />
+    )
+    const title = `Don't Panic.`
+    const wrapper = getWrapper(component)
+    expect(wrapper.find(`title`).text()).toBe(title)
+    expect(wrapper.find(`meta[name="title"]`).props().content).toBe(title)
+    expect(wrapper.find(`meta[property="og:title"]`).props().content).toBe(title)
+    expect(wrapper.find(`meta[property="twitter:title"]`).props().content).toBe(title)
+  })
+
+  it(`should render the site title only`, () => {
+    const component = (
+      <SEO
+        data={{
+          siteMetadata: {
+            title: `Curious Programmer`,
+          }
+        }}
+      />
+    )
+    const title = `Curious Programmer`
     const wrapper = getWrapper(component)
     expect(wrapper.find(`title`).text()).toBe(title)
     expect(wrapper.find(`meta[name="title"]`).props().content).toBe(title)
@@ -33,21 +64,6 @@ describe(`SEO`, () => {
             description: `One early morning, Arthur's friend, who's actually an alien, informs him of Earth's impending doom and whisks him away in a spaceship. While Arthur deals with his woes, he also has a great adventure.`,
           }
         }}
-      />
-    )
-    const description = getContent(25, `One early morning, Arthur's friend, who's actually an alien, informs him of Earth's impending doom and whisks him away in a spaceship. While Arthur deals with his woes, he also has a great adventure.`)
-    const wrapper = getWrapper(component)
-    expect(wrapper.find(`meta[name="description"]`).props().content).toBe(description)
-    expect(wrapper.find(`meta[property="og:description"]`).props().content).toBe(description)
-    expect(wrapper.find(`meta[property="twitter:description"]`).props().content).toBe(description)
-  })
-
-  it(`should render the page description only`, () => {
-    const component = (
-      <SEO
-        title="Don't Panic."
-        description="One early morning, Arthur's friend, who's actually an alien, informs him of Earth's impending doom and whisks him away in a spaceship. While Arthur deals with his woes, he also has a great adventure."
-        data={{ siteMetadata: {} }}
       />
     )
     const description = getContent(25, `One early morning, Arthur's friend, who's actually an alien, informs him of Earth's impending doom and whisks him away in a spaceship. While Arthur deals with his woes, he also has a great adventure.`)
@@ -79,12 +95,7 @@ describe(`SEO`, () => {
       <SEO
         title="Don't Panic."
         crawl={true}
-        data={{
-          siteMetadata:
-          {
-            description: `A curious place for a curious mind.`,
-          }
-        }}
+        data={{}}
       />
     )
     const wrapper = getWrapper(component)
