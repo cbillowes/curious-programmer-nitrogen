@@ -1,10 +1,9 @@
 @import "./variables.scss";
 
 @mixin default() {
-  $with-border: yes;
   text-decoration: none;
   padding: .1rem .25rem;
-  @include primary-text($with-border);
+  @include primary-text($with-border: no);
 
   &:hover {
     @include rounded-primary();
