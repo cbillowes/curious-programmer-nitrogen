@@ -21,16 +21,46 @@
 .gist .blob-num {
   color: $faded;
   background-color: $darkest;
+  font-family: $mono;
 }
 
 .gist .blob-code-inner {
   white-space: pre-wrap;
   color: #ffffff;
+  font-family: $mono;
 }
 
 .gist .highlight {
   background-color: $dark;
   font-family: $mono;
+}
+
+@include large-screen {
+
+  .gist .blob-num,
+  .gist .blob-code-inner {
+    font-size: ($font-size-large) * .8;
+    line-height: ($font-size-large * .8) * 2;
+  }
+}
+
+
+@include medium-screen {
+
+  .gist .blob-num,
+  .gist .blob-code-inner {
+    font-size: ($font-size-medium * .8);
+    line-height: ($font-size-medium * .8) * 2;
+  }
+}
+
+@include small-screen {
+
+  .gist .blob-num,
+  .gist .blob-code-inner {
+    font-size: ($font-size-small * .8);
+    line-height: ($font-size-small * .8) * 2;
+  }
 }
 
 .gist .gist-meta {
