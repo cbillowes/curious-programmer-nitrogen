@@ -37,24 +37,6 @@ describe(`SEO`, () => {
     expect(wrapper.find(`meta[property="twitter:title"]`).props().content).toBe(title)
   })
 
-  it(`should render the site title only`, () => {
-    const component = (
-      <SEO
-        data={{
-          siteMetadata: {
-            title: `Curious Programmer`,
-          }
-        }}
-      />
-    )
-    const title = `Curious Programmer`
-    const wrapper = getWrapper(component)
-    expect(wrapper.find(`title`).text()).toBe(title)
-    expect(wrapper.find(`meta[name="title"]`).props().content).toBe(title)
-    expect(wrapper.find(`meta[property="og:title"]`).props().content).toBe(title)
-    expect(wrapper.find(`meta[property="twitter:title"]`).props().content).toBe(title)
-  })
-
   it(`should render the site description only`, () => {
     const component = (
       <SEO
