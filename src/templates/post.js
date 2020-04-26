@@ -1,38 +1,40 @@
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import PostPage from '../components/pages/post'
 
-export default context => {
-  useStaticQuery(
-    graphql`
-      query($path: String!) {
-        site {
-          siteMetadata {
-            title
-            author
-          }
-        }
-        markdownRemark(fields: { slug: { eq: $path } }) {
-          html
-          excerpt
-          timeToRead
-          fields {
-            date
-          }
-          frontmatter {
-            title
-            tags
-          }
-        }
+export const query = graphql`
+  query PostTemplateQuery ($path: String!) {
+    site {
+      siteMetadata {
+        title
+        author
       }
-    `
-  )
-  const siteMetadata = context.data.site.siteMetadata
-  const { slug, next, previous, number } = context.pageContext
-  const { html, excerpt, timeToRead } = context.data.markdownRemark
-  const { date } = context.data.markdownRemark.fields
-  const { title, tags } = context.data.markdownRemark.frontmatter
+    }
+    markdownRemark(fields: { slug: { eq: $path } }) {
+      html
+      excerpt
+      timeToRead
+      fields {
+        slug
+        date
+        number
+      }
+      frontmatter {
+        title
+        tags
+        author
+      }
+    }
+  }
+`
+
+export default ({ data, pageContext }) => {
+  const siteMetadata = data.site.siteMetadata
+  const { slug, next, previous, number } = pageContext
+  const { html, excerpt, timeToRead } = data.markdownRemark
+  const { date } = data.markdownRemark.fields
+  const { title, tags } = data.markdownRemark.frontmatter
 
   return (
     <>
