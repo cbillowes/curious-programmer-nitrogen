@@ -81,7 +81,7 @@ describe(`SEO`, () => {
           {description}
         </SEO>
       )
-      assertDescriptions(component, getContent(25, description))
+      assertDescriptions(component, getContent(30, description))
     })
 
     it(`for site`, () => {

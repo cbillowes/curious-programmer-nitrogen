@@ -9,19 +9,19 @@ export default () => {
       query {
         site {
           siteMetadata {
-            lang
             title
           }
         }
       }
     `
   )
-  const site = data.site.siteMetadata
+  const siteMetadata = data.site.siteMetadata
   return (
     <>
       <SEO
-        title={`License | ${site.title}`}
+        title="License"
         crawl={false}
+        siteMetadata={siteMetadata}
       />
       <LicensePage />
     </>

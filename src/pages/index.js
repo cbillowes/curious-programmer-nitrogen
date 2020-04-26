@@ -9,8 +9,8 @@ export default () => {
       query {
         site {
           siteMetadata {
-            lang
             title
+            author
           }
         }
         allMarkdownRemark(
@@ -39,15 +39,14 @@ export default () => {
       }
     `
   )
-  const site = data.site.siteMetadata
+  const siteMetadata = data.site.siteMetadata
   const edges = data.allMarkdownRemark.edges
   return (
     <>
       <SEO
-        title={`Blog | ${site.title}`}
+        title="Blog"
         crawl={true}
-        lang={site.lang}
-        author={site.author}
+        siteMetadata={siteMetadata}
       >
         I share thoughts. I share ideas. I share knowledge.
         This is my blog as a curious programmer.

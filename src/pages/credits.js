@@ -9,22 +9,23 @@ export default () => {
       query {
         site {
           siteMetadata {
-            lang
             title
           }
         }
       }
     `
   )
-  const site = data.site.siteMetadata
+  const siteMetadata = data.site.siteMetadata
   return (
     <>
       <SEO
-        title={`Credits & Resources | ${site.title}`}
+        title="Credits & Resources"
         crawl={true}
+        siteMetadata={siteMetadata}
       >
-        I share a bunch of services, plugins, tools and stuff to help
-        make my blog what it is today.
+        A lot of things go into making this blog.
+        They make me happy.
+        I have created a list of these libraries, frameworks, services, plugins, tools and stuff.
       </SEO>
       <CreditsPage />
     </>

@@ -7,12 +7,6 @@ export default () => {
   const data = useStaticQuery(
     graphql`
       query {
-        site {
-          siteMetadata {
-            lang
-            title
-          }
-        }
         allMarkdownRemark(
           filter: {fields: {slug: {nin: "/blog/template"}}}
           sort: { fields: [fields___date], order: DESC }
@@ -37,14 +31,12 @@ export default () => {
       }
     `
   )
-  const site = data.site.siteMetadata
   const edges = data.allMarkdownRemark.edges
   return (
     <>
       <SEO
-        title={`Something is missing | ${site.title}`}
+        title="Something is missing"
         crawl={false}
-        lang={site.lang}
       />
       <PageNotFound
         edges={edges}

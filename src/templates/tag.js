@@ -1,59 +1,60 @@
 import React from 'react'
-import { graphql } from 'gatsby'
-import Layout from '../components/layout'
+import { graphql, useStaticQuery } from 'gatsby'
 import SEO from '../components/seo'
-import Anchor from '../components/anchor'
-import Posts from '../components/posts'
-import { H1 } from '../components/heading'
+import TagPage from '../components/pages/tag'
 import '../styles/tag.scss'
 
-export default (props) => {
-  const { tag } = props.pageContext
-  const edges = props.data.allMarkdownRemark.edges
-  return (
-    <Layout
-      className="tag-page"
-      footer={true}
-    >
-      <SEO
-        title={tag}
-        crawl={false}
-      />
-      <H1>
-        &#123; <Anchor to="/tags" title="Tags">:tags</Anchor> {tag.toLowerCase()}&#125;
-      </H1>
-      <Posts
-        edges={edges}
-      />
-    </Layout>
-  )
-}
-
-export const pageQuery = graphql`
-  query TagPage($tag: String) {
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-    ) {
-      totalCount
-      edges {
-        node {
-          excerpt
-          timeToRead
-          fields {
-            slug
-            number
-            date
-          }
-          frontmatter {
+export default () => {
+  useStaticQuery(
+    graphql`
+      query($tag: String!) {
+        site {
+          siteMetadata {
             title
-            tags
+          }
+        }
+        allMarkdownRemark(
+          limit: 1000
+          sort: { fields: [fields___date], order: DESC }
+          filter: { frontmatter: { tags: { in: [$tag] } } }
+        ) {
+          edges {
+            node {
+              excerpt(pruneLength: 250)
+              timeToRead
+              html
+              fields {
+                slug
+                date
+                number
+              }
+              frontmatter {
+                title
+                tags
+                author
+              }
+            }
           }
         }
       }
-    }
-  }
-`
+    `
+  )
 
-//TODO: move graphql queries across the site inline using useStaticQuery
+  const siteMetadata = props.data.site.siteMetadata
+  const edges = props.data.allMarkdownRemark.edges
+  return (
+    <>
+      <SEO
+        title={tag.toLowerCase()}
+        crawl={false}
+        siteMetadata={siteMetadata}
+      >
+      </SEO>
+      <TagPage
+        tag={tag}
+        edges={edges}
+      />
+    </>
+  )
+
+}

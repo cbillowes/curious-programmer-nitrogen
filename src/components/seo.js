@@ -25,7 +25,7 @@ const getPageDescription = (description, siteMetadata) => {
     (description) ? description :
       (siteMetadata && siteMetadata.description) ? siteMetadata.description :
         ``
-  return getContent(25, pageDescription)
+  return getContent(30, pageDescription)
 }
 
 const SEO = ({ title, crawl, siteMetadata, children }) => {

@@ -6,7 +6,7 @@ module.exports = {
     title: `Curious Programmer`,
     siteUrl: `https://curiousprogrammer.dev`,
     description: `A curious place for a curious mind.`,
-    author: `@cbillowes`,
+    author: `Clarice Bouwer`,
     lang: 'en-US',
   },
   plugins: [

@@ -9,7 +9,6 @@ export default () => {
       query {
         site {
           siteMetadata {
-            lang
             title
           }
         }
@@ -37,13 +36,14 @@ export default () => {
       }
     `
   )
-  const site = data.site.siteMetadata
+  const siteMetadata = data.site.siteMetadata
   const edges = data.allMarkdownRemark.edges
   return (
     <>
       <SEO
-        title={`Archives | ${site.title}`}
+        title="Archives"
         crawl={false}
+        siteMetadata={siteMetadata}
       />
       <ArchivesPage
         edges={edges}

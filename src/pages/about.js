@@ -11,8 +11,8 @@ export default () => {
       query {
         site {
           siteMetadata {
-            lang
             title
+            author
           }
         }
         images: allFile(filter: {relativePath: {eq: "profile.jpg"}}) {
@@ -31,18 +31,18 @@ export default () => {
       }
    `
   )
-  const site = data.site.siteMetadata
+  const siteMetadata = data.site.siteMetadata
   return (
     <>
       <SEO
         title={`About | ${site.title}`}
         crawl={true}
-        lang={site.lang}
-        author={site.author}
+        siteMetadata={siteMetadata}
       >
         My name is Clarice Bouwer.
+        I am a Senior Software Engineer.
         I am curious and am always learning new things.
-        I am a Senior Software Engineer generalist.
+        My passion is Clojure and Gatsby.
       </SEO>
       <AboutPage
         profileImage={data}

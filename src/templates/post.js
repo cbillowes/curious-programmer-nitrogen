@@ -9,8 +9,8 @@ export default context => {
       query($path: String!) {
         site {
           siteMetadata {
-            lang
             title
+            author
           }
         }
         markdownRemark(fields: { slug: { eq: $path } }) {
@@ -28,20 +28,18 @@ export default context => {
       }
     `
   )
-  const site = context.data.site.siteMetadata
+  const siteMetadata = context.data.site.siteMetadata
   const { slug, next, previous, number } = context.pageContext
   const { html, excerpt, timeToRead } = context.data.markdownRemark
   const { date } = context.data.markdownRemark.fields
   const { title, tags } = context.data.markdownRemark.frontmatter
-  const author = `Clarice Bouwer`
 
   return (
     <>
       <SEO
-        title={`${title} | ${site.title}`}
+        title={title}
         crawl={true}
-        lang={site.lang}
-        author={site.author}
+        siteMetadata={siteMetadata}
       >
         {excerpt}
       </SEO>
@@ -52,7 +50,7 @@ export default context => {
         tags={tags}
         excerpt={excerpt}
         timeToRead={timeToRead}
-        author={author}
+        author={siteMetadata.author}
         html={html}
         next={next}
         previous={previous}
