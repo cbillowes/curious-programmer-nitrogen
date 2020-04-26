@@ -5,41 +5,39 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
 import Helmet from 'react-helmet'
-import { getContent } from './blurb'
+import PropTypes from 'prop-types'
+import { getContent } from "./blurb"
 
-const getTitle = (data, pageTitle) => {
-  const siteTitle = (data && data.siteMetadata) ? data.siteMetadata.title : ``
-  if (pageTitle && siteTitle) return `${pageTitle} | ${siteTitle}`
-  if (pageTitle) return pageTitle
-  return siteTitle
+const getPageTitle = (title, siteMetadata) => {
+  if (title && siteMetadata && siteMetadata.title)
+    return `${title} | ${siteMetadata.title}`
+
+  if (!title && siteMetadata && siteMetadata.title)
+    return siteMetadata.title
+
+  return title
 }
 
-const getDescription = (data, pageDescription) => {
-  const limit = 25
-  if (data && data.siteMetadata && data.siteMetadata.description)
-    return getContent(limit, data.siteMetadata.description)
-  if (pageDescription)
-    return getContent(limit, pageDescription)
-  return ``
+const getPageDescription = (description, siteMetadata) => {
+  const pageDescription =
+    (description) ? description :
+      (siteMetadata && siteMetadata.description) ? siteMetadata.description :
+        ``
+  return getContent(25, pageDescription)
 }
 
-const SEO = ({ title, crawl, data, children }) => {
-  const seoTitle = getTitle(data, title)
-  const seoDescription = getDescription(data, children)
-  const seoAuthor = data && data.siteMetadata ? data.siteMetadata.author : ``
-  const seoLang = data && data.siteMetadata ? data.siteMetadata.lang : ``
+const SEO = ({ title, crawl, siteMetadata, children }) => {
+  const pageTitle = getPageTitle(title, siteMetadata)
+  const pageDescription = getPageDescription(children, siteMetadata)
+  const pageAuthor = siteMetadata && siteMetadata.author ? siteMetadata.author : ``
   return (
-    <Helmet
-      htmlAttributes={{
-        seoLang,
-      }}
-    >
-      <title>{seoTitle}</title>
-      <meta name="title" content={seoTitle} />
-      <meta name="description" content={seoDescription} />
+    <Helmet>
+      <title>{pageTitle}</title>
+
+      <meta name="title" content={pageTitle} />
+      <meta name="description" content={pageDescription} />
 
       {
         crawl ?
@@ -47,13 +45,13 @@ const SEO = ({ title, crawl, data, children }) => {
           <meta name="robots" content="noindex" />
       }
 
-      <meta property="og:title" content={seoTitle} />
-      <meta property="og:description" content={seoDescription} />
+      <meta property="og:title" content={pageTitle} />
+      <meta property="og:description" content={pageDescription} />
       <meta property="og:type" content="website" />
 
-      <meta property="twitter:title" content={seoTitle} />
-      <meta property="twitter:description" content={seoDescription} />
-      <meta property="twitter:author" content={seoAuthor} />
+      <meta property="twitter:title" content={pageTitle} />
+      <meta property="twitter:author" content={pageAuthor} />
+      <meta property="twitter:description" content={pageDescription} />
       <meta property="twitter:card" content="summary" />
     </Helmet>
   )
@@ -64,9 +62,9 @@ SEO.defaultProps = {
 }
 
 SEO.propTypes = {
-  title: PropTypes.string.isRequired,
+  title: PropTypes.string,
+  siteMetadata: PropTypes.object,
   crawl: PropTypes.bool,
-  data: PropTypes.object,
   children: PropTypes.node,
 }
 
