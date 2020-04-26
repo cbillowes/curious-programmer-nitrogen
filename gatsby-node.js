@@ -114,28 +114,27 @@ async function generateTags(graphql, actions, reporter) {
   `)
     .then(result => {
       if (result.errors) {
-        reporter.panicOnBuild(`Generating tag page: GrapghQL query`)
+        reporter.panicOnBuild(`Generating tag page: GraphQL query`)
         return
       }
-
-      const tags = []
+      const remark = result.data.allMarkdownRemark.edges
       const template = path.resolve(`./src/templates/tag.js`)
-      result.data.allMarkdownRemark.edges.map(edge => {
-        const postTags = edge.node.frontmatter.tags || []
-        postTags.map(tag => {
-          const path = `/tag/${_.kebabCase(tag.toLowerCase())}`
-          if (tags.indexOf(tag) > -1)
-            return
 
-          tags.push(tag)
+      const all = new Set()
+      remark.forEach(edge => {
+        const tags = edge.node.frontmatter.tags || []
+        tags.forEach(tag => {
+          if (all.has(tag)) return
 
-          reporter.verbose(`Generating tag page: ${path}`)
+          all.add(tag)
+          const slug = path.join(`tag`, _.kebabCase(tag).toLowerCase())
+          reporter.verbose(`Generating tag page: ${slug}`)
           createPage({
-            path,
+            path: slug,
             component: template,
             context: {
-              tag,
-              slug: path,
+              slug,
+              tag: tag,
               date: edge.node.frontmatter.date,
             },
           })

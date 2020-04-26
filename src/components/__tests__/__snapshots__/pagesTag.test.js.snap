@@ -225,55 +225,170 @@ exports[`Tag page should render with posts 1`] = `
     </div>
   </header>
   <section
-    className="container  tags-page"
+    className="container  tag-page"
   >
-    <div>
-      <div>
+    <div
+      className="posts"
+    >
+      <section
+        className="post preview"
+      >
         <h1>
-          Tags
+           
+          <a
+            href="/dont-panic"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="Don't panic"
+          >
+            Don't panic
+          </a>
+           
         </h1>
         <div
-          className="reading-pane"
+          className="blurb"
+        >
+          <span
+            className="text"
+          >
+            Just pack your towel and you will be fine.
+          </span>
+        </div>
+        <div
+          className="metadata"
         >
           <div
-            className="tags"
+            className="metadata"
           >
+            posted on
              
-            <a
-              className="tag"
-              href="/tag/do/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              title="do"
+            <time
+              dateTime={"2019-02-01T00:00:00.000Z"}
             >
-              do
-            </a>
+              Friday, 1 February 2019
+            </time>
              
+            <span>
+              by Clarice Bouwer
+            </span>
              
-            <a
-              className="tag"
-              href="/tag/not/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              title="not"
-            >
-              not
-            </a>
-             
-             
-            <a
-              className="tag"
-              href="/tag/panic/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-              title="panic"
-            >
-              panic
-            </a>
-             
+            <span>
+              (Est. 42 minute read)
+            </span>
           </div>
         </div>
-      </div>
+        <div
+          className="tags"
+        >
+           
+          <a
+            className="tag"
+            href="/tag/dont/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="don't"
+          >
+            don't
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/panic/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="panic"
+          >
+            panic
+          </a>
+           
+        </div>
+      </section>
+      <section
+        className="post preview"
+      >
+        <h1>
+           
+          <a
+            href="/still-dont-panic"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="Still don't panic"
+          >
+            Still don't panic
+          </a>
+           
+        </h1>
+        <div
+          className="blurb"
+        >
+          <span
+            className="text"
+          >
+            Keep packing your towels and you will be fine.
+          </span>
+        </div>
+        <div
+          className="metadata"
+        >
+          <div
+            className="metadata"
+          >
+            posted on
+             
+            <time
+              dateTime={"2019-02-01T00:00:00.000Z"}
+            >
+              Friday, 1 February 2019
+            </time>
+             
+            <span>
+              by Clarice Bouwer
+            </span>
+             
+            <span>
+              (Est. 42 minute read)
+            </span>
+          </div>
+        </div>
+        <div
+          className="tags"
+        >
+           
+          <a
+            className="tag"
+            href="/tag/dont/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="don't"
+          >
+            don't
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/panic/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="panic"
+          >
+            panic
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/still/"
+            onClick={[Function]}
+            onMouseEnter={[Function]}
+            title="still"
+          >
+            still
+          </a>
+           
+        </div>
+      </section>
     </div>
   </section>
   <footer
@@ -687,22 +802,9 @@ exports[`Tag page should render without posts 1`] = `
     </div>
   </header>
   <section
-    className="container  tags-page"
+    className="container  tag-page"
   >
-    <div>
-      <div>
-        <h1>
-          Tags
-        </h1>
-        <div
-          className="reading-pane"
-        >
-          <div
-            className="tags"
-          />
-        </div>
-      </div>
-    </div>
+    <div />
   </section>
   <footer
     className="footer"

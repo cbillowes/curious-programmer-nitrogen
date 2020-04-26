@@ -1,60 +1,57 @@
+import _ from "lodash"
 import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
+import { graphql } from 'gatsby'
 import SEO from '../components/seo'
 import TagPage from '../components/pages/tag'
 import '../styles/tag.scss'
 
-export default () => {
-  useStaticQuery(
-    graphql`
-      query($tag: String!) {
-        site {
-          siteMetadata {
+export const query = graphql`
+  query TagTemplateQuery ($tag: String!) {
+    site {
+      siteMetadata {
+        title
+        description
+      }
+    }
+    allMarkdownRemark (
+      limit: 1000,
+      sort: { fields: [fields___date], order: DESC },
+      filter: { frontmatter: { tags: { in: [$tag] } } }
+    ) {
+      edges {
+        node {
+          excerpt
+          fields {
+            number
+            slug
+          }
+          frontmatter {
             title
+            tags
           }
-        }
-        allMarkdownRemark(
-          limit: 1000
-          sort: { fields: [fields___date], order: DESC }
-          filter: { frontmatter: { tags: { in: [$tag] } } }
-        ) {
-          edges {
-            node {
-              excerpt(pruneLength: 250)
-              timeToRead
-              html
-              fields {
-                slug
-                date
-                number
-              }
-              frontmatter {
-                title
-                tags
-                author
-              }
-            }
-          }
+          html
+          timeToRead
         }
       }
-    `
-  )
+    }
+  }
+`
 
-  const siteMetadata = props.data.site.siteMetadata
-  const edges = props.data.allMarkdownRemark.edges
+export default ({ data, pageContext }) => {
+  const tag = _.upperFirst(pageContext.tag)
+  const siteMetadata = data.site.siteMetadata
+  const edges = data.allMarkdownRemark.edges
   return (
     <>
       <SEO
-        title={tag.toLowerCase()}
+        title={tag}
         crawl={false}
         siteMetadata={siteMetadata}
-      >
-      </SEO>
+      />
       <TagPage
         tag={tag}
         edges={edges}
       />
     </>
   )
-
 }
