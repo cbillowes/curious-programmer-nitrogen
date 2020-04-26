@@ -16,7 +16,7 @@ function addNodeFieldsOnSortedCollection(createNodeField, reporter) {
       name: "number",
       value: i + 1
     })
-    reporter.info(`+number (${i}): ${current.fields.slug}`)
+    reporter.verbose(`+number (${i}): ${current.fields.slug}`)
   }
 }
 
@@ -91,7 +91,7 @@ async function generateBlogPosts(graphql, actions, reporter) {
           }
         })
 
-        reporter.info(`${index}: Generating blog post: ${slug}\n${previous ? `Previous: ${previous.fields.slug}\n` : ``}${next ? `Next: ${next.fields.slug}\n` : ``}`)
+        reporter.verbose(`${index}: Generating blog post: ${slug}\n${previous ? `Previous: ${previous.fields.slug}\n` : ``}${next ? `Next: ${next.fields.slug}\n` : ``}`)
       })
     })
 }
@@ -171,7 +171,7 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
     })
 
     nodes.push(node)
-    reporter.info(`Create nodes: ${slug}, ${date}`)
+    reporter.verbose(`Create nodes: ${slug}, ${date}`)
   }
 }
 
