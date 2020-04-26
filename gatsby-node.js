@@ -129,7 +129,7 @@ async function generateTags(graphql, actions, reporter) {
 
           tags.push(tag)
 
-          reporter.info(`Generating tag page: ${path}`)
+          reporter.verbose(`Generating tag page: ${path}`)
           createPage({
             path,
             component: template,
