@@ -9,6 +9,7 @@ export const query = graphql`
       siteMetadata {
         title
         author
+        image
       }
     }
     markdownRemark(fields: { slug: { eq: $path } }) {

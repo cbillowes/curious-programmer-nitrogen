@@ -121,15 +121,31 @@ describe(`SEO`, () => {
 
   it(`should set the author`, () => {
     const author = `Douglas Adams`
+    const twitter = `@dadams`
     const component = (
       <SEO
         siteMetadata={{
           author,
+          twitter,
         }}
       />
     )
     const wrapper = getWrapper(component)
-    expect(wrapper.find(`meta[property="twitter:author"]`).props().content).toBe(author)
+    expect(wrapper.find(`meta[property="twitter:author"]`).props().content).toBe(twitter)
+  })
+
+  it(`should set the image`, () => {
+    const image = `/static/test.jpg`
+    const component = (
+      <SEO
+        siteMetadata={{
+          image,
+        }}
+      />
+    )
+    const wrapper = getWrapper(component)
+    expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(image)
+    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(image)
   })
 
   it(`should render static metadata`, () => {

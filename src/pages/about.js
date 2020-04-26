@@ -13,6 +13,7 @@ export default () => {
           siteMetadata {
             title
             author
+            image
           }
         }
         images: allFile(filter: {relativePath: {eq: "profile.jpg"}}) {
@@ -35,7 +36,7 @@ export default () => {
   return (
     <>
       <SEO
-        title={`About | ${site.title}`}
+        title="About"
         crawl={true}
         siteMetadata={siteMetadata}
       >

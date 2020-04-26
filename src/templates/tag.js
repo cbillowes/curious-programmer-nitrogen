@@ -11,6 +11,7 @@ export const query = graphql`
       siteMetadata {
         title
         description
+        image
       }
     }
     allMarkdownRemark (

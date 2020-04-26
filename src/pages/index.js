@@ -11,6 +11,7 @@ export default () => {
           siteMetadata {
             title
             author
+            image
           }
         }
         allMarkdownRemark(

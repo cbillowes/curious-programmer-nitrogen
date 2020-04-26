@@ -7,10 +7,19 @@ module.exports = {
     siteUrl: `https://curiousprogrammer.dev`,
     description: `A curious place for a curious mind.`,
     author: `Clarice Bouwer`,
+    twitter: `@cbillowes`,
+    image: `static/banner.jpeg`,
     lang: 'en-US',
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
+    {
+      resolve: `gatsby-plugin-google-analytics`,
+      options: {
+        trackingId: "UA-77127562-3",
+        head: false,
+      },
+    },
     {
       resolve: `gatsby-plugin-sass`,
       options: {
@@ -31,6 +40,13 @@ module.exports = {
         sitemap: 'https://curiousprogrammer.dev/sitemap.xml',
         policy: [{ userAgent: '*', allow: '/' }]
       }
+    },
+    {
+      resolve: `gatsby-source-filesystem`,
+      options: {
+        name: `files`,
+        path: `${__dirname}/src/static`,
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -80,11 +96,11 @@ module.exports = {
     {
       resolve: `gatsby-plugin-manifest`,
       options: {
-        name: `gatsby-starter-default`,
+        name: `Curious Programmer`,
         short_name: `starter`,
         start_url: `/`,
-        background_color: `#663399`,
-        theme_color: `#663399`,
+        background_color: `#c6c91c`,
+        theme_color: `#c6c91c`,
         display: `minimal-ui`,
         icon: `src/images/favicon.png`, // This path is relative to the root of the site.
       },

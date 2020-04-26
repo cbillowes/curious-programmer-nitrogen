@@ -10,6 +10,7 @@ export default () => {
         site {
           siteMetadata {
             title
+            image
           }
         }
       }
