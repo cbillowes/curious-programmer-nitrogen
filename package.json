@@ -29,6 +29,7 @@
     "gatsby-remark-embed-youtube": "0.0.7",
     "gatsby-remark-emoji": "0.0.3",
     "gatsby-remark-images": "^3.2.6",
+    "gatsby-remark-interactive-gifs": "^1.0.3",
     "gatsby-remark-prismjs": "^3.4.5",
     "gatsby-remark-responsive-iframe": "^2.3.4",
     "gatsby-source-filesystem": "^2.2.5",

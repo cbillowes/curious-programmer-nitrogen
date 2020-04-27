@@ -24,13 +24,7 @@ I got published on Offerzen with my article titled Quick front end bug-fixes. It
 ## What's new?
 Chrome releases major updates automatically about every six weeks. As much as I love exploring and discovering on my own, Chrome offers a quick and easy way to get up to speed. They release a video with articles and these highlights are accessible directly within the tool. The **What's New** panel shows these highlights and I know of three ways to access it.
 
-<div class="gif" alt="How to find out what is new in the Chrome DevTools">
-    <img class="still" src="/images/gifs/chrome-devtools/whats-new-1-still.gif" />
-    <img class="animated" src="/images/gifs/chrome-devtools/whats-new-1.gif" />
-    <a href="/images/gifs/chrome-devtools/whats-new-1.gif">
-</div>
-
-<a href="/images/gifs/chrome-devtools/whats-new.gif" target="_blank" nofollow><i>Open this gif in a new window</i></a>
+`gif:chrome-devtools-whats-new.gif`
 
 1. Press `ESC` in any panel. The [drawer] (https://developers.google.com/web/tools/chrome-devtools/ui#drawer) will pop up. Simply click on the What's New panel in the drawer.
 
@@ -51,11 +45,7 @@ Chrome releases major updates automatically about every six weeks. As much as I 
 * Undo all changes using `Command+Z` or `Ctrl+Z`.
 * **Note:** In Chrome 67, [CSS variable](https://developer.mozilla.org/en-US/docs/Web/CSS/Using_CSS_variables) colors (`color: var(--main-color)`) now have color blocks / indicators next to them like normal colors would.
 
-<div class="gif" alt="Using the built in color picker">
-    <img class="still" src="/images/gifs/chrome-devtools/color-picker-1-still.gif" />
-    <img class="animated" src="/images/gifs/chrome-devtools/color-picker-1.gif" />
-    <a href="/images/gifs/chrome-devtools/color-picker.gif">
-</div>
+`gif:chrome-devtools-color-picker.gif`
 
 ## Backtracking and fast-forwarding
 <blockquote class="twitter-tweet" data-lang="en"><p lang="en" dir="ltr">In <a href="https://twitter.com/ChromeDevTools?ref_src=twsrc%5Etfw">@ChromeDevTools</a>, if you&#39;ve made changes to elements and CSS, instead of refreshing to reset the page you can just undo using Ctrl+Z and redo using Ctrl+Y.</p>&mdash; Clarice Bouwer (@cbillowes) <a href="https://twitter.com/cbillowes/status/1018851449273380864?ref_src=twsrc%5Etfw">July 16, 2018</a></blockquote>
@@ -63,11 +53,7 @@ Chrome releases major updates automatically about every six weeks. As much as I 
 ## JavaScript Snippets
 If you need to run a repetitive script as a utility or debugging mechanism, you can save it as a snippet. Go to Sources > click on the show navigator button >> and select Snippets.
 
-<div class="gif" alt="Create experimental or utility code using the Snippets">
-    <img class="still" src="/images/gifs/chrome-devtools/snippets-1-still.gif" />
-    <img class="animated" src="/images/gifs/chrome-devtools/snippets-1.gif" />
-    <a href="/images/gifs/chrome-devtools/snippets.gif">
-</div>
+`gif:chrome-devtools-snippets.gif`
 
 I pasted the following code into my snippet.
 
@@ -100,12 +86,7 @@ Open the [Command Menu](https://developers.google.com/web/tools/chrome-devtools/
 * **Capture node screenshot:** Find an element you like and screenshot the node.
 * **Capture full size screenshot:** Take a screenshot of how the entire page looks.
 
-<div class="gif" alt="Taking screenshots of the screen and of a node">
-    <img class="still" src="/images/gifs/chrome-devtools/screenshot-1-still.gif" />
-    <img class="animated" src="/images/gifs/chrome-devtools/screenshot-1.gif" />
-    <a href="/images/gifs/chrome-devtools/screenshot.gif">
-</div>
-
+`gif:chrome-devtools-screenshot.gif`
 
 ## Uber search across resources
 Open the Search tab using `Command+Option+F` or `Ctrl+Shift+F` or access the drawer by pressing ESC, go to the kebab and click on search.

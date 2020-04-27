@@ -210,7 +210,33 @@ const CreditsPage = () => (
           &nbsp;
         </Credit>
       </div>
-
+      <div>
+        <H2>Interactive animated gifs</H2>
+        <Credit
+          to="https://www.flaticon.com/free-icon/play_281903"
+          title="Play icon"
+        >
+          Play icon made my <Anchor to="https://www.flaticon.com/authors/vitaly-gorbachev">Vitaly Gorbachev</Anchor> from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+        <Credit
+          to="https://www.flaticon.com/free-icon/photo_2793644"
+          title="Freepik"
+        >
+          Made by <Anchor to="https://www.flaticon.com/authors/freepik">Freepik</Anchor> from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+        <Credit
+          to="https://www.flaticon.com/free-icon/photo_2793644"
+          title="Freepick"
+        >
+          Made by <Anchor to="https://www.flaticon.com/authors/freepik">Freepik</Anchor> from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+        <Credit
+          to="https://loading.io/"
+          title="Loading image"
+        >
+          Generated from loading.io - ajax Loader, animated icons, live backgrounds.
+        </Credit>
+      </div>
       <div>
         <H2>Photography</H2>
         <Credit

@@ -589,6 +589,127 @@ exports[`Credits page should render 1`] = `
         </div>
         <div>
           <h2>
+            Interactive animated gifs
+          </h2>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/play_281903"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Play icon"
+            >
+              play icon
+            </a>
+             
+            Play icon made my 
+             
+            <a
+              href="https://www.flaticon.com/authors/vitaly-gorbachev"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Vitaly Gorbachev
+            </a>
+             
+             from 
+             
+            <a
+              href="https://www.flaticon.com"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              www.flaticon.com
+            </a>
+             
+            .
+          </span>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/photo_2793644"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Freepik"
+            >
+              freepik
+            </a>
+             
+            Made by 
+             
+            <a
+              href="https://www.flaticon.com/authors/freepik"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Freepik
+            </a>
+             
+             from 
+             
+            <a
+              href="https://www.flaticon.com"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              www.flaticon.com
+            </a>
+             
+            .
+          </span>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/photo_2793644"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Freepick"
+            >
+              freepick
+            </a>
+             
+            Made by 
+             
+            <a
+              href="https://www.flaticon.com/authors/freepik"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Freepik
+            </a>
+             
+             from 
+             
+            <a
+              href="https://www.flaticon.com"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              www.flaticon.com
+            </a>
+             
+            .
+          </span>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://loading.io/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Loading image"
+            >
+              loading image
+            </a>
+             
+            Generated from loading.io - ajax Loader, animated icons, live backgrounds.
+          </span>
+        </div>
+        <div>
+          <h2>
             Photography
           </h2>
           <span>
