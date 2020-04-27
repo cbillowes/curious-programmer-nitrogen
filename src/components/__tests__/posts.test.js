@@ -1,6 +1,6 @@
-import React from 'react'
-import Posts from '../posts'
-import { getSnapshot } from './_helpers'
+import React from "react"
+import Posts from "../posts"
+import { getSnapshot } from "./_helpers"
 
 describe(`Posts`, () => {
   const edges = [
@@ -43,22 +43,13 @@ describe(`Posts`, () => {
   ]
 
   it(`should render with default word limit`, () => {
-    const component = (
-      <Posts
-        edges={edges}
-      />
-    )
+    const component = <Posts edges={edges} />
     const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
 
   it(`should render with specified word limit of 5`, () => {
-    const component = (
-      <Posts
-        edges={edges}
-        limit={1}
-      />
-    )
+    const component = <Posts edges={edges} limit={1} />
     const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })

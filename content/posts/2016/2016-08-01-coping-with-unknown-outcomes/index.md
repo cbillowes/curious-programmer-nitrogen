@@ -1,9 +1,9 @@
 ---
-title:  "Coping with unknown outcomes"
+title: "Coping with unknown outcomes"
 cover: "https://picsum.photos/1600/800/?image=639"
-date:   2016-08-01 20:54:23 +0200
+date: 2016-08-01 20:54:23 +0200
 tags:
-    - Mindset
+  - Mindset
 ---
 
 > "I am an old man and I have known a great many troubles, but most of them
@@ -13,13 +13,13 @@ As software developers we have a lot of things that build unnecessary stress
 and anxiety in each day of our profession - just to mention a few and in no
 particular order:
 
--   Collaborating with different types of personalities
--   Dealing with conflict
--   Estimating effort
--   Managing expectations
--   Choosing the right technologies
--   Working on legacy repositories
--   Fighting fires in production
+- Collaborating with different types of personalities
+- Dealing with conflict
+- Estimating effort
+- Managing expectations
+- Choosing the right technologies
+- Working on legacy repositories
+- Fighting fires in production
 
 In many cases we don't know what the outcome of a situation will be. Although
 this applies to all aspects of life, dealing with the unknown only amplifies

@@ -2,9 +2,9 @@
 title: Who are you and where are you going?
 slug: "who-are-you"
 cover: "https://picsum.photos/1600/800/?image=156"
-date:   2017-05-13 10:59:08 +0200
+date: 2017-05-13 10:59:08 +0200
 tags:
-    - Mindset
+  - Mindset
 ---
 
 > Nathaniel Hawthorne says that happiness is a butterfly, which when pursued,
@@ -101,16 +101,16 @@ choices and actions that you make in the present moment.
 To balance who we are we need to fulfil some needs which are independent of
 time and space (place / circumstances / environment)
 
--   Acceptance
--   Contentment
--   Excitement
--   Happiness
--   Health
--   Love
--   Peace
--   Stability
--   Success
--   Wealth
+- Acceptance
+- Contentment
+- Excitement
+- Happiness
+- Health
+- Love
+- Peace
+- Stability
+- Success
+- Wealth
 
 As we require mental nourishment, we can find it through
 [Mindfulness](/blog/a-mindful-day-of-happiness/) practices by being present
@@ -124,9 +124,9 @@ judgement.
 Your mindset is powerful. You have the power to decide how you will feel in
 a situation. You should be aware of the circumstances and decide how to act.
 
--   What are the dangers of the situation?
--   What are the consequences of my actions?
--   Will it make me depressed or not depressed?
+- What are the dangers of the situation?
+- What are the consequences of my actions?
+- Will it make me depressed or not depressed?
 
 ### Depressed
 

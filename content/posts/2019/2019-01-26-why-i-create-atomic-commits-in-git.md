@@ -1,12 +1,12 @@
 ---
 title: "Why I Create Atomic Commits In Git"
 ogImage: /images/og/2019-01-15-git.png
-date:   2019-01-26 11:00:00 +0200
+date: 2019-01-26 11:00:00 +0200
 tags:
-    - Technical
-    - Terminal
-    - Git
-    - CLI
+  - Technical
+  - Terminal
+  - Git
+  - CLI
 ---
 
 I
@@ -30,6 +30,7 @@ clear in my
 post.
 
 ## An atomic commit
+
 Let's say I do a refactor but I also update a some features and add new
 ones.
 
@@ -45,6 +46,7 @@ my abilities but I don't always get it right.
 > refactor, upgrade, task...
 
 ## A monolithic commit
+
 Again. Let's say I do a refactor but I also update a some features and add new ones.
 
 The **entire changeset** gets committed in a monolithic commit.
@@ -60,44 +62,45 @@ my own doing), read, review and revert.
 ## Why go atomic?
 
 Atomic commits are easier to:
-* **track** - I know where they are in the history. `git log --oneline`
+
+- **track** - I know where they are in the history. `git log --oneline`
   shows me all commits. `git log --grep <pattern>` lets me find a commit based
   on a partial message. `git log <commit>` will jump to that commit and
   show previous commits.
 
-* **understand** - I document each change with a commit message and elaborate
+- **understand** - I document each change with a commit message and elaborate
   with an explanation if I need to.
 
-* **read** - it's a change focused on a single context which makes it smaller,
+- **read** - it's a change focused on a single context which makes it smaller,
   simpler and easier to read the patch `git show <commit>` or `git log <commit> -p`
 
-* **review** - as it's a small, focused, documented change, a reviewer should
+- **review** - as it's a small, focused, documented change, a reviewer should
   be able to follow the code changes and keep their sanity.
 
-* **revert** - reverting `git revert <commit>` an atomic commit will not revert
+- **revert** - reverting `git revert <commit>` an atomic commit will not revert
   unrelated changes like a monolithic commit would.
 
 ## What do I do?
 
-* **I try working on one thing** - this is not always possible, hence my
+- **I try working on one thing** - this is not always possible, hence my
   [previous](/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git)
   post. This is where I use the interactive mode to my advantage. Most GUIs come with
   intuitive interfaces.
 
   `git add -i`
 
-* **I try keep my changes as small as possible** - this makes it easier for me to
+- **I try keep my changes as small as possible** - this makes it easier for me to
   commit my changes once I am done especially when I go into an interactive mode.
 
-* **I try to commit often** - I amend my commits when I need to.
+- **I try to commit often** - I amend my commits when I need to.
 
   `git commit -m "<message>" --amend`
 
-* **I aim to be vigilant that tests pass** (I get this wrong sometimes). I want
+- **I aim to be vigilant that tests pass** (I get this wrong sometimes). I want
   failing/code tests fixed and committed as part of the context commit. Otherwise
   I have a "broken" commit.
 
-* **When I end up littering my feature commits** (features have
+- **When I end up littering my feature commits** (features have
   commits in a random order) then I use an interactive rebase to move and
   squash the commits prior to pushing them.
 
@@ -106,4 +109,3 @@ Atomic commits are easier to:
 > The goal of creating atomic commits is not to create "100 commits" but
 > rather **pragmatically** craft relevant changes for a better history,
 > cognitive load and an easier means to rollback changes.
-

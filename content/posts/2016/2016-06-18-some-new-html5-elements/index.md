@@ -1,9 +1,9 @@
 ---
-title:  "Some new HTML5 elements"
+title: "Some new HTML5 elements"
 cover: "https://picsum.photos/1600/800/?image=526"
-date:   2016-06-18 13:26:44 +0200
+date: 2016-06-18 13:26:44 +0200
 tags:
-    - Technical
+  - Technical
 ---
 
 The HTML5 specification has introduced more elements to aid us with
@@ -37,14 +37,11 @@ or `footer` elements.
 <main>
   <h1>Warcraft: The Beginning</h1>
   <p>
-    The peaceful realm of Azeroth stands on the brink
-    of war as its civilization faces a fearsome race
-    of invaders: orc warriors fleeing their dying
-    home to colonize another.
+    The peaceful realm of Azeroth stands on the brink of war as its civilization
+    faces a fearsome race of invaders: orc warriors fleeing their dying home to
+    colonize another.
   </p>
-  <p>
-    Source snippet from <cite>IMDB</cite>.
-  </p>
+  <p>Source snippet from <cite>IMDB</cite>.</p>
 </main>
 ```
 
@@ -61,9 +58,9 @@ provide additional information to a user.
 <details>
   <summary>World of Warcraft has a Wiki</summary>
   <p>
-    Check out the community driven World of Warcraft
-    wiki at http://wowwiki.wikia.com/wiki/ to find
-    out more about the Horde and the Alliance.
+    Check out the community driven World of Warcraft wiki at
+    http://wowwiki.wikia.com/wiki/ to find out more about the Horde and the
+    Alliance.
   </p>
 </details>
 ```
@@ -89,8 +86,8 @@ particular context like highlighting keywords from a search result.
 <h1>Search Results</h1>
 <p>You searched for "spoilers"</p>
 <p>
-  Beware of <mark>spoilers</mark> when reading up
-  on the "Warcraft: The Beginning" movie.
+  Beware of <mark>spoilers</mark> when reading up on the "Warcraft: The
+  Beginning" movie.
 </p>
 ```
 
@@ -109,15 +106,15 @@ You can use the `time` element for dates and/or times in the
 present it so that people can read it and encode it so that user agents
 can provide additional functionality such as:
 
--   adding reminders for birthdays and scheduled events to a user's calendar, or
--   producing smarter search results from search engines.
+- adding reminders for birthdays and scheduled events to a user's calendar, or
+- producing smarter search results from search engines.
 
 ```html
 <p>
   I'll be watching "Warcraft: The Beginning" on
   <time datetime="2016-06-17T20:00">
-    17 June at 8h00 pm
-  </time>.
+    17 June at 8h00 pm </time
+  >.
 </p>
 ```
 
@@ -136,7 +133,7 @@ If you remove it, the flow shouldn't be affected.
 
 ```html
 <figure>
-  <img src="medivh.jpg" alt="Photo of Medivh">
+  <img src="medivh.jpg" alt="Photo of Medivh" />
 </figure>
 ```
 
@@ -151,19 +148,19 @@ within the `figure` element.
 
 ```html
 <figure>
-  <img src="medivh.jpg" alt="Photo of Medivh" >
-  <figcaption> Photo of Medivh, the Last Guardian of Tirisfal.</figcaption>
+  <img src="medivh.jpg" alt="Photo of Medivh" />
+  <figcaption>Photo of Medivh, the Last Guardian of Tirisfal.</figcaption>
 </figure>
 ```
 
 [MDN Reference](https://developer.mozilla.org/en/docs/Web/HTML/Element/figcaption)
 
-* * *
+---
 
 ## References
 
--   [W3.org Wiki](https://www.w3.org/wiki/HTML_structural_elements)
--   A Book Apart: [HTML5 for web designers](https://abookapart.com/products/html5-for-web-designers)
-    by Jeremy Keith
--   Some [World of Warcraft](http://wowwiki.wikia.com/) references were used in
-    examples
+- [W3.org Wiki](https://www.w3.org/wiki/HTML_structural_elements)
+- A Book Apart: [HTML5 for web designers](https://abookapart.com/products/html5-for-web-designers)
+  by Jeremy Keith
+- Some [World of Warcraft](http://wowwiki.wikia.com/) references were used in
+  examples

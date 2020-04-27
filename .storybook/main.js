@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require("path")
 
 // Export a function. Accept the base config as the only param.
 module.exports = {
@@ -10,6 +10,6 @@ module.exports = {
     // Make whatever fine-grained changes you need
 
     // Return the altered config
-    return config;
+    return config
   },
-};
+}

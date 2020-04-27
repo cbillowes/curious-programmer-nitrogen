@@ -1,6 +1,6 @@
-const _ = require('lodash')
+const _ = require("lodash")
 const path = require(`path`)
-const fs = require('fs')
+const fs = require("fs")
 
 const nodes = []
 
@@ -9,13 +9,15 @@ function getTimestamp(date) {
 }
 
 function addNodeFieldsOnSortedCollection(createNodeField, reporter) {
-  const sortedNodes = nodes.sort((a, b) => getTimestamp(a.fields.date) - getTimestamp(b.fields.date))
+  const sortedNodes = nodes.sort(
+    (a, b) => getTimestamp(a.fields.date) - getTimestamp(b.fields.date)
+  )
   for (let i = 0; i < sortedNodes.length; i += 1) {
     const current = sortedNodes[i]
     createNodeField({
       node: current,
       name: "number",
-      value: i + 1
+      value: i + 1,
     })
     reporter.verbose(`+number (${i}): ${current.fields.slug}`)
   }
@@ -45,9 +47,7 @@ async function generateBlogPosts(graphql, actions, reporter) {
   const { createPage } = actions
   await graphql(`
     query {
-      allMarkdownRemark(
-        sort: {order: ASC, fields: fields___date})
-      {
+      allMarkdownRemark(sort: { order: ASC, fields: fields___date }) {
         edges {
           node {
             html
@@ -66,37 +66,42 @@ async function generateBlogPosts(graphql, actions, reporter) {
         }
       }
     }
-  `)
-    .then(result => {
-      if (result.errors) {
-        reporter.panicOnBuild(`Generating blog post: GraphQL query error`)
-        return
-      }
+  `).then(result => {
+    if (result.errors) {
+      reporter.panicOnBuild(`Generating blog post: GraphQL query error`)
+      return
+    }
 
-      const template = path.resolve(`./src/templates/post.js`)
-      const posts = result.data.allMarkdownRemark.edges
+    const template = path.resolve(`./src/templates/post.js`)
+    const posts = result.data.allMarkdownRemark.edges
 
-      exportSearchData(posts)
-      posts.forEach(({ node }, index) => {
-        const { slug } = node.fields
-        const previous = index === 0 ? posts[posts.length - 1].node : posts[index - 1].node
-        const next = index === (posts.length - 1) ? posts[0].node : posts[index + 1].node
+    exportSearchData(posts)
+    posts.forEach(({ node }, index) => {
+      const { slug } = node.fields
+      const previous =
+        index === 0 ? posts[posts.length - 1].node : posts[index - 1].node
+      const next =
+        index === posts.length - 1 ? posts[0].node : posts[index + 1].node
 
-        createPage({
-          path: slug,
-          component: template,
-          context: {
-            slug,
-            date: node.fields.date,
-            number: index + 1,
-            previous,
-            next,
-          }
-        })
-
-        reporter.verbose(`${index}: Generating blog post: ${slug}\n${previous ? `Previous: ${previous.fields.slug}\n` : ``}${next ? `Next: ${next.fields.slug}\n` : ``}`)
+      createPage({
+        path: slug,
+        component: template,
+        context: {
+          slug,
+          date: node.fields.date,
+          number: index + 1,
+          previous,
+          next,
+        },
       })
+
+      reporter.verbose(
+        `${index}: Generating blog post: ${slug}\n${
+          previous ? `Previous: ${previous.fields.slug}\n` : ``
+        }${next ? `Next: ${next.fields.slug}\n` : ``}`
+      )
     })
+  })
 }
 
 async function generateTags(graphql, actions, reporter) {
@@ -114,38 +119,37 @@ async function generateTags(graphql, actions, reporter) {
         }
       }
     }
-  `)
-    .then(result => {
-      if (result.errors) {
-        reporter.panicOnBuild(`Generating tag page: GraphQL query`)
-        return
-      }
-      const remark = result.data.allMarkdownRemark.edges
-      const template = path.resolve(`./src/templates/tag.js`)
+  `).then(result => {
+    if (result.errors) {
+      reporter.panicOnBuild(`Generating tag page: GraphQL query`)
+      return
+    }
+    const remark = result.data.allMarkdownRemark.edges
+    const template = path.resolve(`./src/templates/tag.js`)
 
-      const all = new Set()
-      remark.forEach(edge => {
-        const tags = edge.node.frontmatter.tags || []
-        tags.forEach(tag => {
-          if (all.has(tag)) return
+    const all = new Set()
+    remark.forEach(edge => {
+      const tags = edge.node.frontmatter.tags || []
+      tags.forEach(tag => {
+        if (all.has(tag)) return
 
-          all.add(tag)
-          const slug = path.join(`tag`, _.kebabCase(tag).toLowerCase())
-          reporter.verbose(`Generating tag page: ${slug}`)
-          createPage({
-            path: slug,
-            component: template,
-            context: {
-              slug,
-              tag: tag,
-              date: edge.node.frontmatter.date,
-            },
-          })
-          return
+        all.add(tag)
+        const slug = path.join(`tag`, _.kebabCase(tag).toLowerCase())
+        reporter.verbose(`Generating tag page: ${slug}`)
+        createPage({
+          path: slug,
+          component: template,
+          context: {
+            slug,
+            tag: tag,
+            date: edge.node.frontmatter.date,
+          },
         })
         return
       })
+      return
     })
+  })
 }
 
 exports.onCreateNode = ({ node, actions, reporter }) => {
@@ -189,9 +193,10 @@ exports.createPages = async ({ graphql, actions, reporter }) => {
  */
 
 function stripHtml(text) {
-  return text.replace(/<style[^>]*>.*<\/style>/gm, '')
-    .replace(/<[^>]+>/gm, '')
-    .replace(/([\r\n]+ +)+/gm, '')
+  return text
+    .replace(/<style[^>]*>.*<\/style>/gm, "")
+    .replace(/<[^>]+>/gm, "")
+    .replace(/([\r\n]+ +)+/gm, "")
     .replace(/\n/g, ` `)
 }
 
@@ -204,7 +209,12 @@ function exportSearchData(nodes) {
       slug: node.fields.slug,
     })
   })
-  fs.writeFile(`${__dirname}/export/search.json`, JSON.stringify(data), `utf8`, err => {
-    console.log(`Write to file ${err}`)
-  })
+  fs.writeFile(
+    `${__dirname}/export/search.json`,
+    JSON.stringify(data),
+    `utf8`,
+    err => {
+      console.log(`Write to file ${err}`)
+    }
+  )
 }

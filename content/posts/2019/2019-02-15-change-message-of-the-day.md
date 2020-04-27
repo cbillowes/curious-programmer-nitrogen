@@ -1,13 +1,13 @@
 ---
 title: "Greet users with the message of the day"
-date:   2019-02-15 05:00:00 +0200
+date: 2019-02-15 05:00:00 +0200
 tags:
-    - Technical
-    - Terminal
-    - Linux
+  - Technical
+  - Terminal
+  - Linux
 ---
 
-The message of the day is known as motd.  It's used to send a message
+The message of the day is known as motd. It's used to send a message
 to users after logging into a shell, commonly used on hosts.
 
 ```bash

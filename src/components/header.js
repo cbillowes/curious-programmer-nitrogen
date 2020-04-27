@@ -1,7 +1,7 @@
 import React, { Component } from "react"
 import Logo from "./logo"
 import Navigation from "./navigation"
-import '../styles/header.scss'
+import "../styles/header.scss"
 
 class Header extends Component {
   constructor(props) {
@@ -11,7 +11,7 @@ class Header extends Component {
     }
   }
 
-  toggleNavigation = (e) => {
+  toggleNavigation = e => {
     e.preventDefault()
     this.setState({
       isMenuOpen: !this.state.isMenuOpen,

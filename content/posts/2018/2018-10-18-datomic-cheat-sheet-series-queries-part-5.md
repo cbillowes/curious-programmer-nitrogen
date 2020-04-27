@@ -1,17 +1,17 @@
 ---
 title: "Datomic Cheat Sheet Series - Queries (Part 5) - Transactions"
 ogImage: images/og/2018-09-06-datomic.png
-date:   2018-10-18 04:54:00 +0200
+date: 2018-10-18 04:54:00 +0200
 tags:
-    - Technical
-    - Datomic
-    - Database
-    - Cheat sheet
+  - Technical
+  - Datomic
+  - Database
+  - Cheat sheet
 ---
 
 <div id="accordion"></div>
 
-In this post I work through transactions. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/transactions.html). *If you want to get started with Datomic, check out the [first post](/blog/datomic-cheat-sheet-series-getting-started) in the series. If you want to see other queries, then check out [part 1](/blog/datomic-cheat-sheet-series-queries-part-1) and [part 2](/blog/datomic-cheat-sheet-series-queries-part-2). If you want to set up query rules then check out [part 3](/blog/datomic-cheat-sheet-series-queries-part-3). If you want to learn more about pull then check out [part 4](blog/datomic-cheat-sheat-series-queries-part-4).*
+In this post I work through transactions. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/transactions.html). _If you want to get started with Datomic, check out the [first post](/blog/datomic-cheat-sheet-series-getting-started) in the series. If you want to see other queries, then check out [part 1](/blog/datomic-cheat-sheet-series-queries-part-1) and [part 2](/blog/datomic-cheat-sheet-series-queries-part-2). If you want to set up query rules then check out [part 3](/blog/datomic-cheat-sheet-series-queries-part-3). If you want to learn more about pull then check out [part 4](blog/datomic-cheat-sheat-series-queries-part-4)._
 
 <iframe width="1280" height="720" src="https://www.youtube.com/embed/bAilFQdaiHk" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
 
@@ -59,7 +59,7 @@ Create a database connection as a function
 
 You can specify an entity id in three ways by using a:
 
-* **a temporary id for a new entity being added to the database**
+- **a temporary id for a new entity being added to the database**
 
   ```clojure
   [[:db/add "jdoe" :person/first "Jan"]
@@ -68,9 +68,9 @@ You can specify an entity id in three ways by using a:
 
   ```clojure
    (d/tempid :db.part/user)
-   ```
+  ```
 
-* **an existing id for an entity that's already in the database**
+- **an existing id for an entity that's already in the database**
   For example, this query retrieves the id of an existing entity based on an email address.
 
   ```clojure
@@ -91,7 +91,7 @@ You can specify an entity id in three ways by using a:
   :customer/status :active}
   ```
 
-* **an identifier for an entity that's already in the database**
+- **an identifier for an entity that's already in the database**
   In the example below, the entity is specified by the ident :person/name:
 
   ```clojure

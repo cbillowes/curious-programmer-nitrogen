@@ -2,10 +2,10 @@
 title: "Rewire your brain (Part 3) - Distress tolerance"
 slug: "rewire-your-brain-3"
 cover: "https://picsum.photos/1600/800/?image=891"
-date:   2017-05-29 11:16:43 +0200
+date: 2017-05-29 11:16:43 +0200
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > Oliver Goldsmith says that the mind is ever ingenious in making its own distress.
@@ -44,7 +44,7 @@ We learn to tolerate the overwhelming emotions and minimize the suffering.
 Through deliberate practice, I believe that the more this skill is exercised, the
 more automatic it becomes, **thus our brains are rewired to minimize suffering**.
 
-* * *
+---
 
 We don't know when we are going to hurt and sometimes it's outside our control.
 Let's see how we can cope with the bullshit that comes our way.
@@ -80,7 +80,7 @@ drinking beer after beer alone at home not wanting to see other people.
 
 Now he has a semi-broken fist and a monstrous hangover to start a new day.
 
-* * *
+---
 
 Strategies such as dwelling on the past, being anxious about the future,
 isolation from others, taking frustrations out on others, substance abuse,
@@ -112,10 +112,10 @@ criticizing yourself for causing pain; you can radically accept the situation.
 
 That means that:
 
--   You should **acknowledge the situation** you currently find yourself in.
--   **Don't judge** the event **or criticize** yourself.
--   **Recognize** that **the situation exists because of** a lot of shit that happened
-    in **the past** leading up to this moment.
+- You should **acknowledge the situation** you currently find yourself in.
+- **Don't judge** the event **or criticize** yourself.
+- **Recognize** that **the situation exists because of** a lot of shit that happened
+  in **the past** leading up to this moment.
 
 You **cannot change what is outside of your control**. You can control your
 actions, behavior and attitude.
@@ -136,10 +136,10 @@ This can help you think more clearly and figure out a better way to cope.
 
 Tell yourself phrases like:
 
--   This is the way it has to be
--   It's no use fighting the past
--   The present is the only moment I have control over
--   This moment is exactly as it should be, given what’s happened before
+- This is the way it has to be
+- It's no use fighting the past
+- The present is the only moment I have control over
+- This moment is exactly as it should be, given what’s happened before
 
 ## Distraction plan
 
@@ -158,86 +158,86 @@ are facing, rather to get your mind to a place of clarity and focus. This will
 help you find better solutions to the challenges and behave or react in a
 healthier way.
 
--   **Distract yourself from self-destructive behaviors**
+- **Distract yourself from self-destructive behaviors**
 
-    Instead of hurting yourself try techniques like squeezing an ice-cube, screaming
-    into a pillow or while you're alone in your car, snap a rubber band on your wrist, write
-    hate letters to people and throw them away, throw socks or paper balls as hard
-    as you can on a wall or cry.
+  Instead of hurting yourself try techniques like squeezing an ice-cube, screaming
+  into a pillow or while you're alone in your car, snap a rubber band on your wrist, write
+  hate letters to people and throw them away, throw socks or paper balls as hard
+  as you can on a wall or cry.
 
-    Try any technique that you can think of, or Google,
-    that will alleviate the pain without you physically harming yourself.
+  Try any technique that you can think of, or Google,
+  that will alleviate the pain without you physically harming yourself.
 
--   **Distract yourself with pleasurable activities**
+- **Distract yourself with pleasurable activities**
 
-    Do something that makes you feel good such as exercise, a walk in the park,
-    stretch your muscles, play video games, go to the movies, make your favorite
-    food, watch something silly on YouTube, get a massage, sit in the garden,
-    read a good book, do something nice that you have been putting off, take a
-    bubble bath.
+  Do something that makes you feel good such as exercise, a walk in the park,
+  stretch your muscles, play video games, go to the movies, make your favorite
+  food, watch something silly on YouTube, get a massage, sit in the garden,
+  read a good book, do something nice that you have been putting off, take a
+  bubble bath.
 
-    Whatever your flavor of pleasurable things to do, try doing one
-    to take your mind off things allowing yourself time to cool down.
+  Whatever your flavor of pleasurable things to do, try doing one
+  to take your mind off things allowing yourself time to cool down.
 
--   **Distract yourself by paying attention to someone else**
+- **Distract yourself by paying attention to someone else**
 
-    Do something for someone else like seeing if a friend or family member needs help
-    with something or volunteer somewhere.
+  Do something for someone else like seeing if a friend or family member needs help
+  with something or volunteer somewhere.
 
-    Take the attention off yourself. You can be _creepy_ and go to a public place
-    like a mall and watch what other people are doing, what they're wearing, how they
-    are walking and what they are saying.
+  Take the attention off yourself. You can be _creepy_ and go to a public place
+  like a mall and watch what other people are doing, what they're wearing, how they
+  are walking and what they are saying.
 
-    Think about someone you care about. If you had to talk to them now, what would
-    they say to you?
+  Think about someone you care about. If you had to talk to them now, what would
+  they say to you?
 
--   **Distract your thoughts**
+- **Distract your thoughts**
 
-    We can't control what thoughts our brains conjure up for us. The more attention
-    we give it, the more it stays. The harder we try to forget about it, the same
-    applies.
+  We can't control what thoughts our brains conjure up for us. The more attention
+  we give it, the more it stays. The harder we try to forget about it, the same
+  applies.
 
-    When we get stuck in a negative thought pattern it keeps us [stuck](https://singjupost.com/the-secret-of-becoming-mentally-strong-by-amy-morin-full-transcript/).
-    We want to get out of the unhealthy beliefs of ourselves, others and the world.
+  When we get stuck in a negative thought pattern it keeps us [stuck](https://singjupost.com/the-secret-of-becoming-mentally-strong-by-amy-morin-full-transcript/).
+  We want to get out of the unhealthy beliefs of ourselves, others and the world.
 
-    To distract our thoughts we can try think of other memories or creative images.
-    Try picture pleasant events from the past or imagine a calming fantasy place.
+  To distract our thoughts we can try think of other memories or creative images.
+  Try picture pleasant events from the past or imagine a calming fantasy place.
 
-    Do this in detail. What detailed imagery do you see? What does it look like?
-    What colors do you see? Who is with you? What do they look like? What smells are there?
-    What sensations are you experiencing?
+  Do this in detail. What detailed imagery do you see? What does it look like?
+  What colors do you see? Who is with you? What do they look like? What smells are there?
+  What sensations are you experiencing?
 
--   **Distract yourself by leaving**
+- **Distract yourself by leaving**
 
-    Sometimes we forget that we can exit a situation.
+  Sometimes we forget that we can exit a situation.
 
-    If it is a heated conversation with a colleague or loved one and you aren't coping,
-    tell the person that you need to step out. Give them an idea when you will
-    be back so that you manage their expectations.
+  If it is a heated conversation with a colleague or loved one and you aren't coping,
+  tell the person that you need to step out. Give them an idea when you will
+  be back so that you manage their expectations.
 
-    If you are in a meeting and your emotions are flaring up, your contribution
-    won't be healthy. Politely excuse yourself from the meeting and return when
-    you have calmed down.
+  If you are in a meeting and your emotions are flaring up, your contribution
+  won't be healthy. Politely excuse yourself from the meeting and return when
+  you have calmed down.
 
-    If you are working on code that isn't compiling or working the way you intended
-    and find yourself getting frustrated, get up and clear your mind. It's also
-    wise to get two or more developers to work with you so that you can conquer
-    the problem as a collective.
+  If you are working on code that isn't compiling or working the way you intended
+  and find yourself getting frustrated, get up and clear your mind. It's also
+  wise to get two or more developers to work with you so that you can conquer
+  the problem as a collective.
 
-    If you are in a place waiting for service which is taking too long, instead
-    of getting angry, simply leave. You can always come back later if you so choose.
+  If you are in a place waiting for service which is taking too long, instead
+  of getting angry, simply leave. You can always come back later if you so choose.
 
--   **Distract yourself with tasks and chores**
+- **Distract yourself with tasks and chores**
 
-    Take the time to complete chores or things on your TODO list like doing the
-    dishes, cleaning your room, redecorating, cleaning out your closet, organizing
-    or calling someone you haven't called in a while.
+  Take the time to complete chores or things on your TODO list like doing the
+  dishes, cleaning your room, redecorating, cleaning out your closet, organizing
+  or calling someone you haven't called in a while.
 
--   **Distract yourself by counting**
+- **Distract yourself by counting**
 
-    This is a simple skill that can keep your mind busy. You can count your
-    breaths by breathing deeply; count cars, people, sounds, sensations, clouds;
-    or count or subtract in increments of a number greater than 1.
+  This is a simple skill that can keep your mind busy. You can count your
+  breaths by breathing deeply; count cars, people, sounds, sensations, clouds;
+  or count or subtract in increments of a number greater than 1.
 
 ## Relaxation plan
 
@@ -260,58 +260,58 @@ The activities you choose will formulate your relaxation plan that you can
 refer to when you find yourself in a pickle. It's wise to formulate two: one
 for at home and one outside of home.
 
--   **Smell**
+- **Smell**
 
-    Find smells that trigger good memories or make you feel good.
+  Find smells that trigger good memories or make you feel good.
 
-    You can burn scented candles or incense; use scented oils; perfumes/colognes; go somewhere
-    with pleasing scents; bake; lie down in the park; buy flowers; or hug someone
-    who smells good.
+  You can burn scented candles or incense; use scented oils; perfumes/colognes; go somewhere
+  with pleasing scents; bake; lie down in the park; buy flowers; or hug someone
+  who smells good.
 
--   **Sight**
+- **Sight**
 
-    Apparently a large portion of our brain is devoted solely to our sense of
-    sight so what you look at can have powerful effects on you.
+  Apparently a large portion of our brain is devoted solely to our sense of
+  sight so what you look at can have powerful effects on you.
 
-    That means that you can soothe yourself by finding images that have that effect on you. You
-    can find them in magazines, go to places, draw or paint your own or use a
-    photograph.
+  That means that you can soothe yourself by finding images that have that effect on you. You
+  can find them in magazines, go to places, draw or paint your own or use a
+  photograph.
 
-    You can also use cards with meaningful quotes or text on them. Some key rings
-    come in the form of small booklets with inspirational messages in them.
+  You can also use cards with meaningful quotes or text on them. Some key rings
+  come in the form of small booklets with inspirational messages in them.
 
--   **Hearing**
+- **Hearing**
 
-    Listen to music that soothes you, **not music that reinforces how you are
-    currently feeling**. It creates a negative reinforcing loop which sucks you
-    in deeper.
+  Listen to music that soothes you, **not music that reinforces how you are
+  currently feeling**. It creates a negative reinforcing loop which sucks you
+  in deeper.
 
-    You can listen to white noise; classical, relaxation or meditative music;
-    [music for developers](https://musicforprogramming.net/);
-    [coffee shop noises](https://coffitivity.com/); go to a place with peaceful sounds
-    like the Botanical Gardens or a day spa; [nature sounds or ambiance](https://www.calmsound.com/).
+  You can listen to white noise; classical, relaxation or meditative music;
+  [music for developers](https://musicforprogramming.net/);
+  [coffee shop noises](https://coffitivity.com/); go to a place with peaceful sounds
+  like the Botanical Gardens or a day spa; [nature sounds or ambiance](https://www.calmsound.com/).
 
--   **Taste**
+- **Taste**
 
-    Get in touch with tastes that ignite pleasant memories or make you feel good.
-    Try not to over-indulge as it may result in regret, guilt and shame.
+  Get in touch with tastes that ignite pleasant memories or make you feel good.
+  Try not to over-indulge as it may result in regret, guilt and shame.
 
-    Eat your favorite meal or snack; carry your favorite sweets with you; eat
-    ice cream, chocolate, pudding, fruit; or have a soothing hot beverage.
+  Eat your favorite meal or snack; carry your favorite sweets with you; eat
+  ice cream, chocolate, pudding, fruit; or have a soothing hot beverage.
 
-    Taste each bite (or sip) as you chew (or sip) slowly to enjoy it to its fullest.
+  Taste each bite (or sip) as you chew (or sip) slowly to enjoy it to its fullest.
 
--   **Touch**
+- **Touch**
 
-    We touch a lot of things each day. As our largest organ is our skin we can
-    use this to our advantage when we need to soothe ourselves.
+  We touch a lot of things each day. As our largest organ is our skin we can
+  use this to our advantage when we need to soothe ourselves.
 
-    Carry something you enjoy the touch of like something soft, fluffy or velvety;
-    enjoy a hot or cold shower where the water trickles on your skin;
-    have a warm bubble bath with scented oils, candles and dimmed lights where you
-    enjoy the bubbles popping gently on your skin; get a massage and enjoy the
-    sensation that activate and relax your muscles; or simply wear clothes that
-    you feel comfortable in.
+  Carry something you enjoy the touch of like something soft, fluffy or velvety;
+  enjoy a hot or cold shower where the water trickles on your skin;
+  have a warm bubble bath with scented oils, candles and dimmed lights where you
+  enjoy the bubbles popping gently on your skin; get a massage and enjoy the
+  sensation that activate and relax your muscles; or simply wear clothes that
+  you feel comfortable in.
 
 ## My final thoughts
 
@@ -329,15 +329,15 @@ situation. You can only control how you react in the circumstances.
 
 **Distract. Relax. Cope.**
 
--   Distract yourself temporarily from the overwhelming emotional pain.
--   Relax and soothe yourself so that you are in a better frame of mind.
--   Cope with the emotion to influence healthy behavior or reaction.
+- Distract yourself temporarily from the overwhelming emotional pain.
+- Relax and soothe yourself so that you are in a better frame of mind.
+- Cope with the emotion to influence healthy behavior or reaction.
 
 The more these steps are followed the more I believe our brains will be rewired
 to better deal with painful situations thus lowering the amount of suffering
 that we typically endure.
 
-* * *
+---
 
 **Credit**: This post is a summary of the Distress Tolerance chapter in The Dialectical
 Behavior Skills Workbook listed in the references below.
@@ -345,39 +345,36 @@ Behavior Skills Workbook listed in the references below.
 You can buy it on [Amazon](https://www.amazon.com/Dialectical-Behavior-Therapy-Skills-Workbook/dp/1572245131)
 and [Google Books](https://books.google.co.za/books/about/The_Dialectical_Behavior_Therapy_Skills.html?id=pan4976pG6sC&redir_esc=y).
 
-* * *
+---
 
 ## References
 
--   [DBT](http://behavioraltech.org/resources/whatisdbt.cfm),
-    What is DBT?, The Linehan Institute, Behavioral Tech Research
+- [DBT](http://behavioraltech.org/resources/whatisdbt.cfm),
+  What is DBT?, The Linehan Institute, Behavioral Tech Research
 
--   [Behavioral Tech](http://behavioraltech.org),
-    The Linehan Institute, Behavioral Tech Research
+- [Behavioral Tech](http://behavioraltech.org),
+  The Linehan Institute, Behavioral Tech Research
 
--   [The Dialectical Behavior Therapy Skills Workbook](https://myjourneythroughmadness.files.wordpress.com/2017/01/dbt.pdf),
-    Practical DBT exercises for learning Mindfulness, Interpersonal Effectiveness,
-    Emotion Regulation and Distress Tolerance by Matthew McKay, PH.D, Jeffrey C. Wood,
-    Psy.D, Jeffrey Brantley, MD
+- [The Dialectical Behavior Therapy Skills Workbook](https://myjourneythroughmadness.files.wordpress.com/2017/01/dbt.pdf),
+  Practical DBT exercises for learning Mindfulness, Interpersonal Effectiveness,
+  Emotion Regulation and Distress Tolerance by Matthew McKay, PH.D, Jeffrey C. Wood,
+  Psy.D, Jeffrey Brantley, MD
 
--   [The Secret of Becoming Mentally Strong](https://singjupost.com/the-secret-of-becoming-mentally-strong-by-amy-morin-full-transcript/),
-    Amy Morin, TEDxOcala
+- [The Secret of Becoming Mentally Strong](https://singjupost.com/the-secret-of-becoming-mentally-strong-by-amy-morin-full-transcript/),
+  Amy Morin, TEDxOcala
 
--   [Music for developers](https://musicforprogramming.net/),
-    musicForProgramming.net - A series of mixes intended for listening while
-    '+task+' to aid concentration and increase productivity
-    (also compatible with other activities).
+- [Music for developers](https://musicforprogramming.net/),
+  musicForProgramming.net - A series of mixes intended for listening while
+  '+task+' to aid concentration and increase productivity
+  (also compatible with other activities).
 
--   [Coffee shop noises](https://coffitivity.com/), Coffitivity recreates the
-    ambient sounds of a cafe to boost your creativity and help you work better.
+- [Coffee shop noises](https://coffitivity.com/), Coffitivity recreates the
+  ambient sounds of a cafe to boost your creativity and help you work better.
 
--   [Nature sounds or ambiance](https://www.calmsound.com/),
-    Calmsound - Free nature sounds, the oasis of relaxation.
+- [Nature sounds or ambiance](https://www.calmsound.com/),
+  Calmsound - Free nature sounds, the oasis of relaxation.
 
 [negative-reinforcing-loop-past]: /images/rewire-your-brain-3/negative-reinforcing-loop-past.jpg "I think about the past ↔ I regret thinking about the past"
-
 [negative-reinforcing-loop-victim]: /images/rewire-your-brain-3/negative-reinforcing-loop-victim.jpg "Blame, anger and criticize ↔ Pain and suffering"
-
 [keep-calm-distract]: /images/rewire-your-brain-3/keep-calm-distract.jpg "Keep calm and distract yourself"
-
 [keep-calm-relax]: /images/rewire-your-brain-3/keep-calm-relax.jpg "Keep calm and Relax and Soothe Yourself"

@@ -1,22 +1,15 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Anchor from './anchor'
-import '../styles/tag.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import Anchor from "./anchor"
+import "../styles/tag.scss"
 
 const Bare = ({ children }) => {
-  return (
-    <span className="tag bare">
-      {children}
-    </span>
-  )
+  return <span className="tag bare">{children}</span>
 }
 
 const Disabled = ({ children }) => {
   return (
-    <span
-      className="tag disabled"
-      data-disabled="true"
-    >
+    <span className="tag disabled" data-disabled="true">
       {children}
     </span>
   )
@@ -25,26 +18,12 @@ const Disabled = ({ children }) => {
 const Tag = ({ title, to, disabled }) => {
   const lowerTitle = title.toLowerCase()
 
-  if (!to)
-    return (
-      <Bare>
-        {lowerTitle}
-      </Bare>
-    )
+  if (!to) return <Bare>{lowerTitle}</Bare>
 
-  if (disabled)
-    return (
-      <Disabled>
-        {lowerTitle}
-      </Disabled>
-    )
+  if (disabled) return <Disabled>{lowerTitle}</Disabled>
 
   return (
-    <Anchor
-      to={to}
-      title={title}
-      className="tag"
-    >
+    <Anchor to={to} title={title} className="tag">
       {lowerTitle}
     </Anchor>
   )

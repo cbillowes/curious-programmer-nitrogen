@@ -1,4 +1,4 @@
-import React from 'react'
+import React from "react"
 import { getSnapshot } from "./_helpers"
 import { H1, H2, H3, H4 } from "../heading"
 
@@ -9,7 +9,9 @@ describe(`Heading`, () => {
         <H1>Don't panic.</H1>
         <H2>Time is an illusion. Lunchtime doubly so.</H2>
         <H3>So long and thanks for all the fish.</H3>
-        <H4>The ships hung in the sky in much the same way that bricks don't.</H4>
+        <H4>
+          The ships hung in the sky in much the same way that bricks don't.
+        </H4>
       </div>
     )
     const tree = getSnapshot(component)

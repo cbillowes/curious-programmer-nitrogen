@@ -1,11 +1,11 @@
 ---
 title: "Rewire your brain (Part 5) - The Satir Change Process Model"
 slug: "rewire-your-brain-5"
-date:   2017-06-25 22:02:42 +0200
+date: 2017-06-25 22:02:42 +0200
 cover: "https://picsum.photos/1600/800/?image=874"
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > Virginia Satir says that we can learn something new anytime we believe we can.
@@ -17,7 +17,7 @@ survival rules, analyze them and decide if they are beneficial today.
 Changing them is an interesting way of rewiring your brain as we change
 old behaviors as these rules no longer apply to the current day.
 
-* * *
+---
 
 This model was developed by the "Mother of Family Therapy": Virginia Satir
 <sup id="footnote-1">[1](#footnote-1-ref)</sup>. It can improve your life
@@ -62,22 +62,22 @@ also offer some creativity.
 
 So it may feel unsafe. You may feel strong emotions which may confuse you:
 
--   Stress
--   Confusion
--   Discomfort
--   Pain
--   Fear
--   Excitement
--   Euphoria
--   Strong sense of urgency
+- Stress
+- Confusion
+- Discomfort
+- Pain
+- Fear
+- Excitement
+- Euphoria
+- Strong sense of urgency
 
 You could behave in ways that are unfamiliar to you:
 
--   Trying to stay in control
--   Disengaging and retreating to some familiar activity
--   Focusing on one small part of the problem
--   Ignoring the chaos happening around you
--   Scrambling to find information about what is going on
+- Trying to stay in control
+- Disengaging and retreating to some familiar activity
+- Focusing on one small part of the problem
+- Ignoring the chaos happening around you
+- Scrambling to find information about what is going on
 
 This stage is vital to the transformation process so acknowledge your feelings
 and build and use support systems. It can be very creative and a lot of ideas
@@ -108,13 +108,13 @@ alert. You need to continue feeling safe in this space by practicing.
 
 Emery sums it up elegantly by saying that:
 
--   You feel good about how rapidly you are learning.
--   You turn your attention toward other important areas of your life, armed with
-    new skills, knowledge and confidence.
--   Eventually these new skills become second nature.
--   Your learnings become assumptions and expectations.
--   With time, the newness fades, and the New Status Quo becomes a Late Status Quo.
--   And the change cycle begins again.
+- You feel good about how rapidly you are learning.
+- You turn your attention toward other important areas of your life, armed with
+  new skills, knowledge and confidence.
+- Eventually these new skills become second nature.
+- Your learnings become assumptions and expectations.
+- With time, the newness fades, and the New Status Quo becomes a Late Status Quo.
+- And the change cycle begins again.
 
 ![Cycle](./satir-change-model-cycle.png "The Satir Change Process Model Cycle")
 _Source of image: Corporate Programmer_
@@ -129,20 +129,20 @@ of how we can do so through reflection.
 
 We don't want behaviors that cause:
 
--   Exhaustion
--   Misery
--   Lack of focus and concentration
--   Lack of self-care
--   Lack of social interaction
--   Lack of physical activity
--   Problems with relationships
--   Impending burn-out
+- Exhaustion
+- Misery
+- Lack of focus and concentration
+- Lack of self-care
+- Lack of social interaction
+- Lack of physical activity
+- Problems with relationships
+- Impending burn-out
 
 There is a lot of material out there describing the model in detail. I just
-wanted to document the idea as a model to help rewire the brain to transform  unhealthy behaviors to more positive behaviors. These stages show how a change
+wanted to document the idea as a model to help rewire the brain to transform unhealthy behaviors to more positive behaviors. These stages show how a change
 can impact us and how we can get to a point where we can thrive.
 
-* * *
+---
 
 ## References
 
@@ -156,34 +156,27 @@ can impact us and how we can get to a point where we can thrive.
 
 ### Resources
 
--   [Framework 59 Virginia Satir Change Process](http://www.billsynnotandassociates.com.au/kb/257-framework-59-virginia-satir-change-process.html),
-    Organisational Change Management Volume 1, Bill Synnot and Associates
+- [Framework 59 Virginia Satir Change Process](http://www.billsynnotandassociates.com.au/kb/257-framework-59-virginia-satir-change-process.html),
+  Organisational Change Management Volume 1, Bill Synnot and Associates
 
--   [Virginia Satir Change Curve](https://www.flickr.com/photos/jurgenappelo/5201852636),
-    Flicker, Jurgen Appelo says this illustration is part of the book [Management 3.0](http://www.management30.com)
+- [Virginia Satir Change Curve](https://www.flickr.com/photos/jurgenappelo/5201852636),
+  Flicker, Jurgen Appelo says this illustration is part of the book [Management 3.0](http://www.management30.com)
 
--   [Chaos during change – don’t try to avoid it, manage it](http://10minutehr.com/2013/11/11/chaos-in-the-organisational-change-process-dont-try-to-avoid-it-manage-it/)
+- [Chaos during change – don’t try to avoid it, manage it](http://10minutehr.com/2013/11/11/chaos-in-the-organisational-change-process-dont-try-to-avoid-it-manage-it/)
 
--   [You Can't Fight Change](https://www.stickyminds.com/article/you-cant-fight-change)
+- [You Can't Fight Change](https://www.stickyminds.com/article/you-cant-fight-change)
 
--   [Stress Is Needed For Success In NYC](http://www.hypnosisrapport.com/stress-is-needed-for-success-in-nyc/)
+- [Stress Is Needed For Success In NYC](http://www.hypnosisrapport.com/stress-is-needed-for-success-in-nyc/)
 
--   [Think Visually When Building an Agile Enterprise Change Plan](http://agileconsulting.blogspot.co.za/)
+- [Think Visually When Building an Agile Enterprise Change Plan](http://agileconsulting.blogspot.co.za/)
 
 <div>Icons made by <a href="http://www.freepik.com" title="Freepik">Freepik</a> from <a href="http://www.flaticon.com" title="Flaticon">www.flaticon.com</a> is licensed by <a href="http://creativecommons.org/licenses/by/3.0/" title="Creative Commons BY 3.0" target="\_blank">CC 3.0 BY</a></div>
 
 [satir-change-graph]: /images/rewire-your-brain-5/satir-change-graph.png "Virginia Satir Change Curve"
-
 [late-status-quo]: /images/rewire-your-brain-5/late-status-quo.png "The Late Status Quo"
-
 [foreign-element]: /images/rewire-your-brain-5/foreign-element.png "The Foreign Element"
-
 [chaos]: /images/rewire-your-brain-5/chaos.png "The Stage of Chaos"
-
 [transforming-idea]: /images/rewire-your-brain-5/transforming-idea.png "The Transforming Idea"
-
 [practice]: /images/rewire-your-brain-5/practice.png "Practice & Integration"
-
 [new-status-quo]: /images/rewire-your-brain-5/new-status-quo.png "The New Status Quo"
-
 [satir-change-model-cycle]: /images/rewire-your-brain-5/satir-change-model-cycle.png "Virginia Satir Change Curve"

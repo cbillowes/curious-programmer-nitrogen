@@ -2,13 +2,13 @@
 title: "Working With Git Remotes"
 ogImage: /images/og/2019-01-28-git.png
 cover: "../../images/backgrounds/git-cover.jpg"
-blur:  "../../images/backgrounds/git-cover-blur.jpg"
-date:   2019-01-29 04:30:00 +0200
+blur: "../../images/backgrounds/git-cover-blur.jpg"
+date: 2019-01-29 04:30:00 +0200
 tags:
-    - Technical
-    - Git
-    - Terminal
-    - Cheat Sheet
+  - Technical
+  - Git
+  - Terminal
+  - Cheat Sheet
 ---
 
 I have a repository with two remotes. **origin** is my personal repository
@@ -40,10 +40,13 @@ running Fedora release 28 (Twenty Eight) and Zsh.**
 > or write a comment below. :smile:
 
 ---
+
 ## Cheat Sheet
 
 ### View
+
 Verbose output. Fetch and push URLs for each remote.
+
 ```bash
 git remote -v
 ```
@@ -51,9 +54,11 @@ git remote -v
 ![Git remotes](remotes.png)
 
 URLs for the remote. `--all` and `--push` switches available.
+
 ```bash
 git remote get-url <name>
 ```
+
 example:
 `git remote get-url --all origin`
 `git remote get-url --push origin`
@@ -61,6 +66,7 @@ example:
 ![Git get-url](get-url.png)
 
 Get information about remote.
+
 ```bash
 git remote show origin
 ```
@@ -79,57 +85,77 @@ git remote show origin
 ```
 
 ### Create
+
 Create a new remote.
+
 ```bash
 git remote add <name> <url>
 ```
+
 example: `git remote add another git@another.com:clarice/ahoy.git`
 
 Add a remote that tracks selected branches.
+
 ```bash
 git remote add -f -t <branch> -m <branch> origin git@another.com/clarice/ahoy.git
 ```
+
 example: `git remote add -f -t <branch> -m <branch> origin git@another.com/clarice/ahoy.git`
 
 ### Remove
+
 Remote-tracking branches and configuration settings are removed.
+
 ```bash
 git remote rm <name>
 ```
+
 example: `git remote remove another`
 
 Deletes stale references associated with remote.
+
 ```bash
 git remote prune <name> --dry-run
 ```
+
 example: `git remote prune origin --dry-run`
 
 ### Push
 
 #### Single remote
+
 Push local changes to a remote.
+
 ```bash
 git push <remote> <branch>
 ```
+
 example: `git remote push another`
 
 #### All remotes
 
 ##### All branches
+
 Push local changes to all remotes.
+
 ```bash
 git remote | xargs -L1 git push --all
 ```
 
 ##### Specific branch
+
 Push local changes for a specific branch to all remotes.
+
 ```bash
 git remote | xargs -L1 -I R git push R <branch>
 ```
+
 example: `git remote | xargs -L1 -I R git push R master`
 
 ##### Create an alias
+
 Create an alias to push local changes to all remotes for all branches.
+
 ```bash
 git config --global alias.pushall '!git remote | xargs -L1 git push --all'
 ```
@@ -137,19 +163,25 @@ git config --global alias.pushall '!git remote | xargs -L1 git push --all'
 ### Edit
 
 #### Rename
+
 Rename remote. All remote-tracking branches and configuration settings for the remote
 are updated.
-``` bash
+
+```bash
 git remote rename <old-name> <new-name>
 ```
+
 example: `git remote rename github hub`
 
 #### Change URLs
+
 Set a new URL for the remote. `--push`, `--add` and `--delete` switches
 are available.
+
 ```bash
 git remote --push set-url <name> <url>
 ```
+
 example:
 `git remote set-url --push origin git@github.com:clarice/ahoy.com`
 

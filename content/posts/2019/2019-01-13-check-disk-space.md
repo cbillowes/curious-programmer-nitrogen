@@ -1,15 +1,15 @@
 ---
 title: "Checking Disk Usage in Linux"
 ogImage: images/og/2019-01-13-disk-usage.png
-date:   2019-01-13 07:30:00 +0200
+date: 2019-01-13 07:30:00 +0200
 tags:
-    - Technical
-    - Linux
-    - Terminal
-    - Cheat Sheet
+  - Technical
+  - Linux
+  - Terminal
+  - Cheat Sheet
 ---
 
-I had to find out  much free space was available
+I had to find out much free space was available
 on a file system on a Linux server. Now getting this information on the GUI is
 simple - a few clicks, modals and stuff, but the server doesn't
 have a GUI so it's off to the terminal I go :yum:
@@ -43,7 +43,7 @@ refer to server commands in which case I will specify the server OS.
 ---
 
 > **Just so by the way, I find this freakin' awesome:**<br/>
-> Use  `-- -x` to
+> Use `-- -x` to
 > grep anything starting with a `-`. I find this useful when looking
 > up switches for programs in their manuals
 > `bash±man sudo | grep -- -u`.
@@ -58,6 +58,7 @@ refer to server commands in which case I will specify the server OS.
 `bash±df` will show you the amount of disk space available on your file system.
 
 ### Blocks
+
 ```bash
 1K-blocks     Used Available Use%
   8145968        0   8145968   0%
@@ -83,6 +84,7 @@ the `-h` switch.
 ```bash
 df -h
 ```
+
 ```bash
 Size  Used Avail Use%
 7.8G     0  7.8G   0%
@@ -101,6 +103,7 @@ excludes any remote file systems.
 ```bash
 df -lh
 ```
+
 ```bash
 ➜  resources  ➜ df -lh
 Filesystem               Size  Used Avail Use% Mounted on
@@ -115,12 +118,14 @@ tmpfs                    7.8G   15M  7.8G   1% /tmp
 tmpfs                    1.6G   16K  1.6G   1% /run/user/42
 tmpfs                    1.6G  8.5M  1.6G   1% /run/user/1000
 ```
+
 You can pass in paths and file names as arguments. You will get
 the disk space available for the file systems each one is on.
 
 ```bash
 df -lh / ~
 ```
+
 ```bash
 ➜  ~ ➜ df -lh / ~
 Filesystem               Size  Used Avail Use% Mounted on
@@ -136,6 +141,7 @@ can get information on all of them using the all `-a` switch.
 ```bash
 df -lah
 ```
+
 ```bash
 ➜  resources  ➜ df -lah
 Filesystem                Size  Used Avail Use% Mounted on
@@ -173,6 +179,7 @@ on the current working directory.
 ```bash
 du -h
 ```
+
 ```bash
 ➜  public  ➜ du -h
 20K     ./html
@@ -190,6 +197,7 @@ space used by each file and directory.
 ```bash
 du -hs
 ```
+
 ```bash
 ➜  public  ➜ du -hs
 80K     .
@@ -201,6 +209,7 @@ disk usage for them. With `-a` you will get all files, not just directories.
 ```bash
 du -ah logos fonts
 ```
+
 ```bash
 ➜ public ➜ du -ah logos fonts
 8.0K    logos/logo.png
@@ -218,22 +227,22 @@ du -ah logos fonts
 ```
 
 > `du` takes a **shell pattern** argument.
->  This is not a regular expression.<br/>
-> &bull; **?** matches a single character.<br/>
-> &bull; **\*** matches any string.<br />
+> This is not a regular expression.<br/> > &bull; **?** matches a single character.<br/> > &bull; **\*** matches any string.<br />
 
 Examples of how to use the file name shell pattern:
 
-* `file.?ar` will return files where the extension ends with
+- `file.?ar` will return files where the extension ends with
   a three letter extension ending in **?ar** like `tar` and `rar`
 
-* `*.json` will return all **json** files which you could also
-exclude using `--exclude="*.json"`
+- `*.json` will return all **json** files which you could also
+  exclude using `--exclude="*.json"`
 
 Below I want all files excluding **html** and **txt** files.
+
 ```bash
 du -hs * --exclude="*.html" --exclude="*.txt"
 ```
+
 ```bash
 ➜  public ➜ du -hs * --exclude="*.html" --exclude="*.txt"
 4.0K	favicon.png
@@ -243,12 +252,14 @@ du -hs * --exclude="*.html" --exclude="*.txt"
 ```
 
 ### Sorting results
+
 You can sort the output in reverse (`-r`) numerical order (`-n`)
 plus you can page through the results (`less`).
 
 ```bash
 du -h | sort -rn | less
 ```
+
 ```bash
 ➜  resources  ➜ du -h | sort -rn | less
 80K     .
@@ -259,12 +270,14 @@ du -h | sort -rn | less
 8.0K    ./docs
 4.0K    ./public/js
 ```
-Futhermore, you can print out 1 to the *nth* results.
+
+Futhermore, you can print out 1 to the _nth_ results.
 This includes the summary as it is part of the result set.
 
 ```bash
 du -h | sort -rn | head -n 3
 ```
+
 ```bash
 ➜  resources  ➜ du -h | sort -rn | head -n 3
 80K     .
@@ -275,6 +288,7 @@ du -h | sort -rn | head -n 3
 ## Listing directories and files with their size
 
 ### Using the ls utility
+
 You can page through a column of all files and directories which
 include multiple attributes including the file size.
 This will include hidden files such as your dotfiles.
@@ -282,6 +296,7 @@ This will include hidden files such as your dotfiles.
 ```bash
 ls -lah | less
 ```
+
 ```bash
 ➜  imgs ➜ ls -lah | less
 total 48K
@@ -305,6 +320,7 @@ Use `-S` to sort by file size. The largest file size will be printed first.
 ```bash
 ls -lahS
 ```
+
 ```bash
 ls -lahSr
 ```
@@ -323,9 +339,11 @@ add the `-R` switch but beware.
 ```bash
 ls -lahR
 ```
+
 ```bash
 ls -lahR > space.out
 ```
+
 ```bash
 tail -f space.out
 ```
@@ -369,6 +387,7 @@ directory.
 ```bash
 tree -sh
 ```
+
 ```bash
 ➜  public ➜ tree -sh
 .
@@ -399,6 +418,7 @@ tree -sh
 ## Cheat sheet
 
 **Grep anything starting with** `-`
+
 ```bash
 man sudo | grep -- -u
 ```
@@ -406,21 +426,25 @@ man sudo | grep -- -u
 ### Disk usage on file systems
 
 **With human-readable sizes on all mounted file systems**
+
 ```bash
 df -h
 ```
 
 **Local file systems only**
+
 ```bash
 df -lh
 ```
 
 **For the file system each path/file specified is on**
+
 ```bash
 df -lh / ~
 ```
 
 **For pseudo, duplicate and inaccessible file systems**
+
 ```bash
 df -lah
 ```
@@ -428,79 +452,92 @@ df -lah
 ### Disk usage of files
 
 **Get estimated usage with human-readable sizes**
+
 ```bash
 du -h
 ```
 
 **Get a summary of disk space used**
+
 ```bash
 du -hs
 ```
 
 **Get all files for a give path**
+
 ```bash
 du -ah public/logos
 ```
 
 **Exclude files**
+
 ```bash
 du -hs * --exclude="*.html" --exclude="*.txt"
 ```
 
 **Sort**
+
 ```bash
 du -h | sort -rn | less
 ```
 
 **Get the top three sorted results**
+
 ```bash
 du -h | sort -rn | head -n 3
 ```
 
-#### Listing directories and files using *ls*
+#### Listing directories and files using _ls_
 
 **Get a paged list of files and directories**
+
 ```bash
 ls -lah | less
 ```
 
 **Sort the results by file size**
+
 ```bash
 ls -lahS | less
 ```
 
 **Reverse the sorted results**
+
 ```bash
 ls -lahSr | less
 ```
 
 **Recursively list files and directories**
+
 ```bash
 ls -lahR
 ```
 
 **Print the output of a recursive list to a file**
+
 ```bash
 ls -lahR > space.out
 ```
 
 **Watch a file while it is being printed to**
+
 ```bash
 tail -f space.out
 ```
 
 **List a tree of files and directories with file sizes**
+
 ```bash
 tree -sh
 ```
 
 ## Resources
 
-* `bash±man du`
-* `bash±man df`
-* `bash±man tree`
-* `bash±man ls`
-* [Non-GNU Standards](https://www.gnu.org/prep/standards/html_node/Non_002dGNU-Standards.html) - gnu.org
-* [Differences between df, df-h and df -l](https://askubuntu.com/questions/425791/differences-between-df-df-h-and-df-l) - askubuntu
-* [What is a pseudo file system in Linux?](https://superuser.com/questions/1198292/what-is-a-pseudo-file-system-in-linux#answer-1198293) - StackExchange
-* [Useful "df" Commands to Check Disk Space in Linux](https://www.tecmint.com/how-to-check-disk-space-in-linux/)
+- `bash±man du`
+- `bash±man df`
+- `bash±man tree`
+- `bash±man ls`
+- [Non-GNU Standards](https://www.gnu.org/prep/standards/html_node/Non_002dGNU-Standards.html) - gnu.org
+- [Differences between df, df-h and df -l](https://askubuntu.com/questions/425791/differences-between-df-df-h-and-df-l) - askubuntu
+- [What is a pseudo file system in Linux?](https://superuser.com/questions/1198292/what-is-a-pseudo-file-system-in-linux#answer-1198293) - StackExchange
+- [Useful "df" Commands to Check Disk Space in Linux](https://www.tecmint.com/how-to-check-disk-space-in-linux/)

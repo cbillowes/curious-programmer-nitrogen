@@ -1,6 +1,6 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Posts from '../src/components/posts'
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import Posts from "../src/components/posts"
 
 const edges = [
   {
@@ -46,10 +46,6 @@ const edges = [
   },
 ]
 
-storiesOf('Components/post', module)
-  .add('listing', () =>
-    <Posts
-      edges={edges}
-      showNumbers={true}
-    />
-  )
+storiesOf("Components/post", module).add("listing", () => (
+  <Posts edges={edges} showNumbers={true} />
+))

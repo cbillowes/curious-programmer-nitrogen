@@ -1,13 +1,13 @@
 ---
 title: "Learning Linux"
 cover: "../../images/backgrounds/bionic-cover.png"
-blur:  "../../images/backgrounds/bionic-cover-blur.png"
+blur: "../../images/backgrounds/bionic-cover-blur.png"
 custom: Image from Ubuntu 18.04 LTS
 ogImage: images/og/2018-07-26-ubuntu-linux.png
 date: "2018-07-27 07:00"
 tags:
-    - Technical
-    - Linux
+  - Technical
+  - Linux
 ---
 
 I have used Windows for over twenty years. Oh my goodness that's a long bloody time.
@@ -15,11 +15,13 @@ I have used Windows for over twenty years. Oh my goodness that's a long bloody t
 Now I've joined the Linux world. It's thrilling. I'm loving it, learning, sharing (and as always - documenting) what I love and learn.
 
 ---
+
 **Ubuntu's APT** (Advanced Packaging Tool) gives you access to some cool software that you can install . Run `man apt` for all available options. [Examples](https://www.tecmint.com/useful-basic-commands-of-apt-get-and-apt-cache-for-package-management/) are always useful.
 
 Want to know what you can download? `apt-cache search java | grep sdk-`
 
 ---
+
 That brings me to **pipe** | Sheesh this thing is cool. It takes the output stream of the first command, sends it to the next command which does something radical with it, or maybe not, it depends on the command I guess and these commands can chain! Here are some [examples](https://www.geeksforgeeks.org/piping-in-unix-or-linux/).
 
 ```bash
@@ -31,6 +33,7 @@ cat awesome.txt | grep "value" | tree file2.txt | wc -lm
 ```
 
 ---
+
 **tree** - It displays an indented directory tree. In your console. In color. So cool. I didn't have it installed by default so I installed it from apt.
 
 ```bash
@@ -42,7 +45,8 @@ sudo apt install tree
 !["Displays an indented directory tree, in color"](tree.png)
 
 ---
-**grep** - It stands for Global regular expression print and its an UBER plain-text search utility ` | grep <something to search for>`
+
+**grep** - It stands for Global regular expression print and its an UBER plain-text search utility `| grep <something to search for>`
 
 ```bash
 apt-cache search java | grep sdk
@@ -52,10 +56,11 @@ cat /etc/hosts | grep 127
 ```
 
 ---
+
 Copy **public key** after generating one.
 
-* Add it to the `known_hosts` on a server so that you can [authenticate](https://security.stackexchange.com/questions/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh) to it.
-* Add it to your repo for SSH authentication.
+- Add it to the `known_hosts` on a server so that you can [authenticate](https://security.stackexchange.com/questions/20706/what-is-the-difference-between-authorized-keys-and-known-hosts-file-for-ssh) to it.
+- Add it to your repo for SSH authentication.
 
 ```bash
 sudo apt install clipit # Send data to the clipboard
@@ -65,7 +70,9 @@ cat ~/.ssh/id_rsa.pub | clipit
 ```
 
 ---
+
 Get **system and distro information** - especially useful for online support.
+
 ```bash
 $ lsb_release -a # (Linux Standard Base) - prints all distribution specific information
 
@@ -81,11 +88,13 @@ Linux oxygen 4.15.0-29-generic #31-Ubuntu SMP Tue Jul 17 15:39:52 UTC 2018 x86_6
 ```
 
 ---
+
 **htop** - its like **top** but hotter. It shows you processes. Interact with them by scrolling through them or selecting them. You can sort, tag, untag, trace, kill. [Options](https://www.howtogeek.com/howto/ubuntu/using-htop-to-monitor-system-processes-on-linux/)! It comes with options!
 
 !["Interactive process viewer"](htop.png)
 
 ---
+
 [**shutdown**](https://www.cyberciti.biz/faq/howto-shutdown-linux/) from the console.
 
 ```bash
@@ -107,14 +116,16 @@ OPTIONS The following options are understood:
 ```
 
 ---
-* **whoami** prints the effective user name.
-* Check user roles:
+
+- **whoami** prints the effective user name.
+- Check user roles:
   ```bash
   cat /etc/passwd | grep clarice:x:1 # admin
   cat /etc/passwd | grep root:x:0 # root
   ```
 
 ---
+
 **chmod** changes the file mode bits so you can set a file to read-only, executable and so forth.
 
 ```bash
@@ -124,11 +135,13 @@ sudo chmod +x awesome.sh # executable
 ```
 
 ---
+
 `sudo nautilus` opens the file manager in admin mode giving me uber rights like being able to create folders and other admin stuff I am yet to explore.
 
 This is dangerous territory so tread with caution.
 
 ---
+
 Chromium is on the Ubuntu Software centre, but **Chrome** is not. Download it from their website. I needed flash and it only worked when I installed Chrome.
 
 I installed [oh-my-zsh](https://github.com/robbyrussell/oh-my-zsh) for a better shell experience. Settings are found in **~/.zshrc**
@@ -177,8 +190,8 @@ load-nvmrc() {
 ```
 
 ---
-**Freaking sound!** If I ever lose my sound card association again - because that happened 😢 - I can test my sound using `aplay /usr/share/sounds/alsa/Front_Center.wav` then install a bunch of [drivers] (
-https://help.ubuntu.com/community/SoundTroubleshootingProcedure)
+
+**Freaking sound!** If I ever lose my sound card association again - because that happened 😢 - I can test my sound using `aplay /usr/share/sounds/alsa/Front_Center.wav` then install a bunch of [drivers](https://help.ubuntu.com/community/SoundTroubleshootingProcedure)
 
 ```bash
 sudo apt-get update;
@@ -196,6 +209,7 @@ whoami
 ```
 
 ---
+
 I got to play around with Linux on a [Rock64](/blog/building-a-monitoring-display-with-a-rock-64). So much fun!
 
 ---

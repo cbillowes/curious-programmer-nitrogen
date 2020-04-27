@@ -1,15 +1,12 @@
 ---
 title: "A Service Has Gone Rogue. How Do I Manage It?"
-date:   2019-01-08 06:46:00 +0200
+date: 2019-01-08 06:46:00 +0200
 tags:
-    - Technical
-    - Linux
-    - Fedora
-    - Cheat Sheet
-
----
-
-Once I installed a development service on port **3000** and I forgot about it. When I ran my project I couldn't start it because the port
+  - Technical
+  - Linux
+  - Fedora
+  - Cheat Sheet
+---Once I installed a development service on port **3000** and I forgot about it. When I ran my project I couldn't start it because the port
 was in use. Baffled. :confused:
 
 ---
@@ -35,7 +32,7 @@ that port. I'll get to that. First let's take a look at how I interrogate the sy
 `systemctl` let's us query or send control commands to the `systemd`
 manager.`systemd` starts core programs, journal of system activity,
 the network stack, a cron-style job scheduler, user logins and other
-jobs. *Find out more at [ZDNet](https://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/)*.
+jobs. _Find out more at [ZDNet](https://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/)_.
 
 If we want to find a list of installed programs and services (units)
 that are enabled:
@@ -122,5 +119,5 @@ systemctl reset-failed
 
 ## References
 
-* [Linus Torvalds and others on Linux's systemd](https://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/) - ZDNet
-* [How to remove systemd services](https://superuser.com/questions/513159/how-to-remove-systemd-services) - superuser
+- [Linus Torvalds and others on Linux's systemd](https://www.zdnet.com/article/linus-torvalds-and-others-on-linuxs-systemd/) - ZDNet
+- [How to remove systemd services](https://superuser.com/questions/513159/how-to-remove-systemd-services) - superuser

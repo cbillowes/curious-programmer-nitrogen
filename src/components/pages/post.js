@@ -1,11 +1,11 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Layout from '../layout'
-import Post from '../post'
-import PostNavigationTiny from '../postNavigationTiny'
-import PostNavigationTeaser from '../postNavigationTeaser'
-import Footer from '../footer'
-import '../../styles/page.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import Layout from "../layout"
+import Post from "../post"
+import PostNavigationTiny from "../postNavigationTiny"
+import PostNavigationTeaser from "../postNavigationTeaser"
+import Footer from "../footer"
+import "../../styles/page.scss"
 
 function postNavigation(node, author) {
   const { timeToRead, excerpt } = node
@@ -22,20 +22,26 @@ function postNavigation(node, author) {
   }
 }
 
-const PostPage = ({ slug, title, date, tags, excerpt, author, timeToRead, html, next, previous, number }) => {
+const PostPage = ({
+  slug,
+  title,
+  date,
+  tags,
+  excerpt,
+  author,
+  timeToRead,
+  html,
+  next,
+  previous,
+  number,
+}) => {
   const previousPost = postNavigation(previous, author)
   const nextPost = postNavigation(next, author)
 
   return (
     <>
-      <Layout
-        className="post-page"
-        footer={false}
-      >
-        <PostNavigationTiny
-          previous={previousPost}
-          next={nextPost}
-        />
+      <Layout className="post-page" footer={false}>
+        <PostNavigationTiny previous={previousPost} next={nextPost} />
         <Post
           slug={slug}
           title={title}
@@ -49,10 +55,7 @@ const PostPage = ({ slug, title, date, tags, excerpt, author, timeToRead, html, 
           {html}
         </Post>
       </Layout>
-      <PostNavigationTeaser
-        previous={previousPost}
-        next={nextPost}
-      />
+      <PostNavigationTeaser previous={previousPost} next={nextPost} />
       <Footer />
     </>
   )

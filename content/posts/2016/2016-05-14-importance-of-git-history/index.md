@@ -1,10 +1,10 @@
 ---
 title: "The importance of Git history"
 cover: "https://picsum.photos/1600/800/?image=24"
-date:   2016-05-14 21:04:29 +0200
+date: 2016-05-14 21:04:29 +0200
 category: "tech"
 tags:
-    - Technical
+  - Technical
 ---
 
 > Version control is like time travel for source code. If commits are monolithic
@@ -91,9 +91,9 @@ in the `diff`. GUIs like [Source Tree](https://www.sourcetreeapp.com/) and
 [Git Extensions](https://gitextensions.github.io) allow you to easily stage
 or discard lines.
 
--   IDEs can make unnecessary changes to files
--   You may want to discard an experimental line
--   The line no longer makes sense to introduce
+- IDEs can make unnecessary changes to files
+- You may want to discard an experimental line
+- The line no longer makes sense to introduce
 
 **Note**: When you discard changes, always build the source code before
 completing the commit. If you forget this and there is a compilation or runtime
@@ -170,10 +170,10 @@ Guide team members who are new to version control - or to this mindset - so that
 they understand its true importance and can start practicing better version
 control etiquette.
 
-* * *
+---
 
 Want to find out more about Git?
 
--   [Getting Git right](https://www.atlassian.com/git/) by Atlassian
--   [Learn Version Control with Git](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/why-use-version-control)
-    a step-by-step course for the complete beginner
+- [Getting Git right](https://www.atlassian.com/git/) by Atlassian
+- [Learn Version Control with Git](https://www.git-tower.com/learn/git/ebook/en/command-line/basics/why-use-version-control)
+  a step-by-step course for the complete beginner

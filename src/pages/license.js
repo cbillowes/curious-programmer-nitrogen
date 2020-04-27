@@ -1,7 +1,7 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import SEO from '../components/seo'
-import LicensePage from '../components/pages/license'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
+import LicensePage from "../components/pages/license"
 
 export default () => {
   const data = useStaticQuery(
@@ -19,11 +19,7 @@ export default () => {
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO
-        title="License"
-        crawl={false}
-        siteMetadata={siteMetadata}
-      />
+      <SEO title="License" crawl={false} siteMetadata={siteMetadata} />
       <LicensePage />
     </>
   )

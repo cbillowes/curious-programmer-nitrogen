@@ -504,7 +504,8 @@ exports[`Credits page should render 1`] = `
               play icon
             </a>
              
-            Play icon made my 
+            Play icon made my
+             
              
             <a
               href="https://www.flaticon.com/authors/vitaly-gorbachev"
@@ -514,7 +515,8 @@ exports[`Credits page should render 1`] = `
               Vitaly Gorbachev
             </a>
              
-             from 
+             
+            from 
              
             <a
               href="https://www.flaticon.com"
@@ -538,7 +540,8 @@ exports[`Credits page should render 1`] = `
               freepik
             </a>
              
-            Made by 
+            Made by
+             
              
             <a
               href="https://www.flaticon.com/authors/freepik"
@@ -548,7 +551,8 @@ exports[`Credits page should render 1`] = `
               Freepik
             </a>
              
-             from 
+             
+            from 
              
             <a
               href="https://www.flaticon.com"
@@ -572,7 +576,8 @@ exports[`Credits page should render 1`] = `
               freepick
             </a>
              
-            Made by 
+            Made by
+             
              
             <a
               href="https://www.flaticon.com/authors/freepik"
@@ -582,7 +587,8 @@ exports[`Credits page should render 1`] = `
               Freepik
             </a>
              
-             from 
+             
+            from 
              
             <a
               href="https://www.flaticon.com"
@@ -809,7 +815,8 @@ exports[`Credits page should render 1`] = `
             Clarice Bouwer
           </a>
            
-           and is licensed under the 
+           and is licensed under the
+           
            
           <a
             className="underline-only"
@@ -831,7 +838,8 @@ exports[`Credits page should render 1`] = `
             license
           </a>
            
-           for the code. It's probably a good idea to read the 
+           
+          for the code. It's probably a good idea to read the 
            
           <a
             className="underline-only"
@@ -855,14 +863,16 @@ exports[`Credits page should render 1`] = `
            
           . Please give it a star if you think it is cool.
           <br />
-          Icons made by 
+          Icons made by
+           
           <a
             href="https://www.flaticon.com/authors/freepik"
             title="Freepik"
           >
             Freepik
           </a>
-           from
+           
+          from
           <a
             href="https://www.flaticon.com/"
             title="Flaticon"

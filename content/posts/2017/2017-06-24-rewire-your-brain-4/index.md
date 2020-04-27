@@ -2,10 +2,10 @@
 title: "Rewire your brain (Part 4) - Childhood survival rules"
 slug: "rewire-your-brain-4"
 cover: "https://picsum.photos/1600/800/?image=889"
-date:   2017-06-24 20:35:14 +0200
+date: 2017-06-24 20:35:14 +0200
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > Virginia Satir says that you have learned what you have learned very well.
@@ -17,7 +17,7 @@ behaviors so that you break the negative reinforcing loop.
 Through Radical Acceptance, Distraction Plans and Relaxation Plans we are one
 step closer to properly coping.
 
-* * *
+---
 
 Parents aren't handed instruction manuals. They just have to try. They need to
 do the best they can, the way they know how, and with all the help they can get.

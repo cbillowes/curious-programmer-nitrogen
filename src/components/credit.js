@@ -1,25 +1,20 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Tag from './tag'
+import React from "react"
+import PropTypes from "prop-types"
+import Tag from "./tag"
 
 const Credit = ({ to, title, children }) => {
   const body = children || title
   if (to) {
     return (
       <span>
-        <Tag
-          title={title}
-          to={to}
-        />
+        <Tag title={title} to={to} />
         {body}
       </span>
     )
   }
   return (
     <span>
-      <Tag
-        title={title}
-      />
+      <Tag title={title} />
       {body}
     </span>
   )

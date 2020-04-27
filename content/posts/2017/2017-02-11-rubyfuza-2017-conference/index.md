@@ -1,11 +1,11 @@
 ---
-title:  "Rubyfuza 2017 Conference"
+title: "Rubyfuza 2017 Conference"
 cover: "https://picsum.photos/1600/800/?image=0"
-date:   2017-02-11 23:00:00 +0200
+date: 2017-02-11 23:00:00 +0200
 tags:
-    - Mindset
-    - Comfort Zone
-    - Relationships
+  - Mindset
+  - Comfort Zone
+  - Relationships
 ---
 
 > I spoke at Rubyfuza 2017 in Cape Town about how Imposter Syndrome impacts
@@ -27,7 +27,7 @@ The content below is what I prepared but is not verbatim.
 
 _\*I have given an Ignite talk (5 minute talk) at [JoziJug](/blog/branding-your-identity/) in 2016_
 
-* * *
+---
 
 _[Displayed a slide of a photo of me looking happy]_
 
@@ -70,12 +70,12 @@ You simply don't believe them.​
 Even when there is evidence to the contrary, ​you tell yourself, and others, that
 you ​probably succeeded because of:​
 
--   Dumb luck,​
--   Your charm,​
--   A mistake or error,
--   Good timing,
--   Knowing the right people or,​
--   Being in the right place at the right time.​
+- Dumb luck,​
+- Your charm,​
+- A mistake or error,
+- Good timing,
+- Knowing the right people or,​
+- Being in the right place at the right time.​
 
 ## Signs
 
@@ -90,10 +90,10 @@ Identify and understand your inner imposter​ so that you can consciously
 
 If you don't address it, ​it can lead to self-destructive behavior where you​
 
--   Become obsessive​,
--   Feel anxious​,
--   Get depressed​, and
--   Even burn out from all the ​stress and pressure that you put yourself under​.
+- Become obsessive​,
+- Feel anxious​,
+- Get depressed​, and
+- Even burn out from all the ​stress and pressure that you put yourself under​.
 
 ### It Impacts Others
 
@@ -132,10 +132,10 @@ misunderstandings.​
 
 I got lost and started doubting myself more and more.​
 
--   I felt like I didn't know what I was doing,
--   I second-guessed my code & decisions,​
--   I believed everyone around me was smarter than me, and
--   I lost confidence in my skills as a developer.​
+- I felt like I didn't know what I was doing,
+- I second-guessed my code & decisions,​
+- I believed everyone around me was smarter than me, and
+- I lost confidence in my skills as a developer.​
 
 I did eventually convince myself ​that I just wasn't good enough ​and that
 I should quit - which I didn't do.
@@ -159,12 +159,12 @@ If you keep putting yourself down, ​you will feel negative about yourself.​
 If you don't address this, ​it can hold you back from doing even the most
 simplest things such as:​
 
--   **writing code** ​because you are afraid of being criticized and wrong,​
--   **prevents you from engaging with others** ​because you are afraid of what
-    others may think about your ideas or solutions,​
--   **kills innovation and creativity** ​because your mindset is so bleak​, and
--   **holds you back from grabbing amazing opportunities** ​like applying for that
-    position even if you don't check all the boxes.​
+- **writing code** ​because you are afraid of being criticized and wrong,​
+- **prevents you from engaging with others** ​because you are afraid of what
+  others may think about your ideas or solutions,​
+- **kills innovation and creativity** ​because your mindset is so bleak​, and
+- **holds you back from grabbing amazing opportunities** ​like applying for that
+  position even if you don't check all the boxes.​
 
 ### 2. Setting the Bar Too High
 
@@ -207,9 +207,9 @@ up to your expectations.\*
 
 _\*Adapted from [Chris Lema](https://youtu.be/uKTm3TV9u4M?t=1231) in his exceptional talk at WordCampPhx_
 
--   If you work long hours, you expect others to do the same,​
--   If you learn new tech in your spare time, then others must too and​,
--   Dare someone not do TDD if it is something you strong believe in and expect.​
+- If you work long hours, you expect others to do the same,​
+- If you learn new tech in your spare time, then others must too and​,
+- Dare someone not do TDD if it is something you strong believe in and expect.​
 
 It's important to know that people focus on different things in life​ and it is
 unfair for us to impose what we think is important on them.​
@@ -263,9 +263,9 @@ perfection​ exhausted me.​
 
 I created it for a [few reasons](/blog/branding-your-identity/):​
 
--   To give back to the community by sharing my perspective,​
--   Have a platform to showcase my skills for my career and​,
--   Tinker with different technologies.​
+- To give back to the community by sharing my perspective,​
+- Have a platform to showcase my skills for my career and​,
+- Tinker with different technologies.​
 
 I wanted something lightweight​ so I chose Jekyll - which absolutely rocks!​
 and I used Grunt for workflow automation​ such as image resizing, linting,
@@ -275,10 +275,10 @@ minification and so forth.​
 
 I created the website from scratch. Multiple times, in fact, where I
 
--   Redesigned the interface,
--   Restructured the folder contents,
--   Reworked the automation, and
--   Completely customized the Jekyll integration.
+- Redesigned the interface,
+- Restructured the folder contents,
+- Reworked the automation, and
+- Completely customized the Jekyll integration.
 
 I did this all because I wanted everything to be "perfect" before launch.
 
@@ -289,13 +289,13 @@ would spend the rest of the night working on it.
 
 So, what happened?
 
--   **Deprioritized health**: I neglected my health as I didn't eat well.
-    I skipped meals, didn't exercise or stretch.
--   **Fatigue**: I didn't get enough downtime and rest.
--   **Strain on relationships**: I stopped socializing with friends and family
-    because I was too busy.
--   **Frustration**: I got frustrated because I kept seeing flaws in the work
-    I was doing.
+- **Deprioritized health**: I neglected my health as I didn't eat well.
+  I skipped meals, didn't exercise or stretch.
+- **Fatigue**: I didn't get enough downtime and rest.
+- **Strain on relationships**: I stopped socializing with friends and family
+  because I was too busy.
+- **Frustration**: I got frustrated because I kept seeing flaws in the work
+  I was doing.
 
 #### Perfect Code
 
@@ -352,16 +352,16 @@ tips didn't save me. It was bad.
 It was something I wanted to achieve so I wanted to push through. I did four
 things:
 
--   **Fully commit to it**: I tweeted that I would be talking and booked my travel
-    and accommodation so that it would be considerably harder to back out.
--   **Breathe**: To deal with the panic attacks I had to learn to breathe deeply.
-    I needed to calm my mind so that I could think clearer to soothe the anxiety
-    and work on my content.
--   **Prepare**: Even though I was terrified, being unprepared would have made
-    matters worse. I prepared the content and practiced the delivery multiple times.
--   **Get a support structure**: Without the support structure from amazing people
-    in my life I may have backed out. I got different perspectives, coaching and
-    emotional support which helped to reduce the panic and anxiety.
+- **Fully commit to it**: I tweeted that I would be talking and booked my travel
+  and accommodation so that it would be considerably harder to back out.
+- **Breathe**: To deal with the panic attacks I had to learn to breathe deeply.
+  I needed to calm my mind so that I could think clearer to soothe the anxiety
+  and work on my content.
+- **Prepare**: Even though I was terrified, being unprepared would have made
+  matters worse. I prepared the content and practiced the delivery multiple times.
+- **Get a support structure**: Without the support structure from amazing people
+  in my life I may have backed out. I got different perspectives, coaching and
+  emotional support which helped to reduce the panic and anxiety.
 
 ## Techniques
 
@@ -376,60 +376,60 @@ and arrogant.
 
 Here are some of the techniques that can help you find your balance.
 
--   **Be honest with yourself**:
-    Juggling all these feelings can be scary and overwhelming.
-    Accept that you are experiencing Imposter Syndrome and know that you can
-    work through it.
+- **Be honest with yourself**:
+  Juggling all these feelings can be scary and overwhelming.
+  Accept that you are experiencing Imposter Syndrome and know that you can
+  work through it.
 
--   **You are in control**:
-    You may feel like a victim but your mind is creating this bleak reality. You
-    can actually control it even if it doesn't feel like it.
+- **You are in control**:
+  You may feel like a victim but your mind is creating this bleak reality. You
+  can actually control it even if it doesn't feel like it.
 
--   **Calm your mind**:
-    If your mind is too busy then you can't focus or be in control. Realize that
-    you are not your thoughts and feelings. They come and go, so you don't need
-    to be consumed by them.
+- **Calm your mind**:
+  If your mind is too busy then you can't focus or be in control. Realize that
+  you are not your thoughts and feelings. They come and go, so you don't need
+  to be consumed by them.
 
-    Breathing, meditation and mindfulness practices can help you calm your mind.
+  Breathing, meditation and mindfulness practices can help you calm your mind.
 
--   **Be kind to yourself**:
-    Being your own worst enemy isn't going to get you anywhere. Accept yourself
-    for who you are and be conscious of the words you use to talk about yourself.
+- **Be kind to yourself**:
+  Being your own worst enemy isn't going to get you anywhere. Accept yourself
+  for who you are and be conscious of the words you use to talk about yourself.
 
-    You are the most important person in your life. Look after yourself mentally,
-    physically and emotionally.
+  You are the most important person in your life. Look after yourself mentally,
+  physically and emotionally.
 
--   **Reflect**:
-    There are always things you can do to improve on. Reflect by asking yourself
-    what is going well, what isn't going so well and how can I improve?
+- **Reflect**:
+  There are always things you can do to improve on. Reflect by asking yourself
+  what is going well, what isn't going so well and how can I improve?
 
--   **Talk about it**:
-    So many people are affected by this but few talk about it or even realize it.
-    Know that you are not alone. You don't have to suffer in silence.
+- **Talk about it**:
+  So many people are affected by this but few talk about it or even realize it.
+  Know that you are not alone. You don't have to suffer in silence.
 
-    Get a different perspective on your performance and behavior by talking to
-    people around you. You can also give back by sharing your experiences and
-    perspective.
+  Get a different perspective on your performance and behavior by talking to
+  people around you. You can also give back by sharing your experiences and
+  perspective.
 
--   **Get support**:
-    Find a mentor with a similar personality to get guidance that will help you
-    in situations where you struggle.
+- **Get support**:
+  Find a mentor with a similar personality to get guidance that will help you
+  in situations where you struggle.
 
-    You could also start or join a meetup group where you have regular discussions
-    about this.
+  You could also start or join a meetup group where you have regular discussions
+  about this.
 
--   **Take it day by day**:
-    It's a bumpy road. Some days are good, others not so much.
+- **Take it day by day**:
+  It's a bumpy road. Some days are good, others not so much.
 
-    I have to put in a lot of effort and sometimes I feel like I'm right back at
-    the beginning of this road.
+  I have to put in a lot of effort and sometimes I feel like I'm right back at
+  the beginning of this road.
 
-    I just take it day by day and try not to be hard on myself. I am only human.
+  I just take it day by day and try not to be hard on myself. I am only human.
 
--   **Get outside your comfort zone**:
-    It's easy to stagnate in this place of comfort. If you want to grow then do
-    something that scares you, something you haven't done before or learn a new
-    skill.
+- **Get outside your comfort zone**:
+  It's easy to stagnate in this place of comfort. If you want to grow then do
+  something that scares you, something you haven't done before or learn a new
+  skill.
 
 And when all else fails, do what Barney Stinson says **"When I'm sad I stop being
 sad and be awesome instead."**
@@ -439,7 +439,7 @@ down and being scared of how other people see you?
 
 You are not immortal, so take your life back!
 
-* * *
+---
 
 **The Imposter Test**
 
@@ -456,26 +456,26 @@ frequently has Imposter feelings; and a score higher than 80 means the
 respondent often has intense IP experiences. The higher the score, the more
 frequently and seriously the Imposter Phenomenon interferes in a person’s life.
 
-* * *
+---
 
 ## Resources
 
--   [Download the slides (PDF)](/slides/rubyfuza-2017-the-imposter-within.pdf)
--   [YouTube Recording](https://www.youtube.com/watch?v=fkgAc0DY4s8)
--   [Twitter Moments](https://twitter.com/i/moments/830378337516322816)
--   [Beat Imposter Syndrome](http://beatImpostersyndrome.net/)
--   [Leaving Comfort Behind](http://developeronfire.com/podcast/episode-202-clarice-bouwer-leaving-comfort-behind) - Episode 202 on the Developer On Fire podcast
--   [I'm a phony. Are you?](http://www.hanselman.com/blog/ImAPhonyAreYou.aspx) by Scott Hanselman
--   [The Imposter](https://thedesignteam.io/the-imposter-ddbe96b14e14) by Pablo Stanley on Medium
--   [13 Charts That Will Make Total Sense to People with Imposter Syndrome](https://www.buzzfeed.com/kristinchirico/13-charts-that-will-make-total-sense-to-people-with-Imposter) by Kristin Chirico on BuzzFeed
--   [How To Fight The Programmer Imposter Syndrome?](https://www.youtube.com/channel/UCFxdcuY-S6yjZGq_2cjilHg) by John Sonmez on the Simple Programmer YouTube channel
--   **Presentations**
-    -   [Chris Lema](https://www.youtube.com/watch?v=uKTm3TV9u4M) at WordCampPhx
-    -   [Gitte Klitgaard](https://www.youtube.com/watch?v=vLpqq0ljawE) at GOTO 2016
-    -   [Lou Solomon](https://www.youtube.com/watch?v=whyUPLJZljE) at TEDxCharlotte
-    -   [Kirsty Walker](https://www.youtube.com/watch?v=xe9oSV9tZE0) at TEDx Whitehall Women
-    -   [Bianca Gibson](https://www.youtube.com/watch?v=hNlLM0OUXDc) at PyCon Australia
-    -   [Olivia Fox Cabane](https://www.youtube.com/watch?v=GU7AnA3ndJE) at Google - Charisma, Leadership and the Imposter Syndrome
--   [The power of vulnerability](https://www.ted.com/talks/brene_brown_on_vulnerability) - Ted Talk by Brené Brown
--   [Teach girls bravery, not perfection](https://www.ted.com/talks/reshma_saujani_teach_girls_bravery_not_perfection) - Ted Talk by Reshma Saujani
--   [The happy secret to better work](https://www.ted.com/talks/shawn_achor_the_happy_secret_to_better_work) - Ted Talk by Shawn Achor
+- [Download the slides (PDF)](/slides/rubyfuza-2017-the-imposter-within.pdf)
+- [YouTube Recording](https://www.youtube.com/watch?v=fkgAc0DY4s8)
+- [Twitter Moments](https://twitter.com/i/moments/830378337516322816)
+- [Beat Imposter Syndrome](http://beatImpostersyndrome.net/)
+- [Leaving Comfort Behind](http://developeronfire.com/podcast/episode-202-clarice-bouwer-leaving-comfort-behind) - Episode 202 on the Developer On Fire podcast
+- [I'm a phony. Are you?](http://www.hanselman.com/blog/ImAPhonyAreYou.aspx) by Scott Hanselman
+- [The Imposter](https://thedesignteam.io/the-imposter-ddbe96b14e14) by Pablo Stanley on Medium
+- [13 Charts That Will Make Total Sense to People with Imposter Syndrome](https://www.buzzfeed.com/kristinchirico/13-charts-that-will-make-total-sense-to-people-with-Imposter) by Kristin Chirico on BuzzFeed
+- [How To Fight The Programmer Imposter Syndrome?](https://www.youtube.com/channel/UCFxdcuY-S6yjZGq_2cjilHg) by John Sonmez on the Simple Programmer YouTube channel
+- **Presentations**
+  - [Chris Lema](https://www.youtube.com/watch?v=uKTm3TV9u4M) at WordCampPhx
+  - [Gitte Klitgaard](https://www.youtube.com/watch?v=vLpqq0ljawE) at GOTO 2016
+  - [Lou Solomon](https://www.youtube.com/watch?v=whyUPLJZljE) at TEDxCharlotte
+  - [Kirsty Walker](https://www.youtube.com/watch?v=xe9oSV9tZE0) at TEDx Whitehall Women
+  - [Bianca Gibson](https://www.youtube.com/watch?v=hNlLM0OUXDc) at PyCon Australia
+  - [Olivia Fox Cabane](https://www.youtube.com/watch?v=GU7AnA3ndJE) at Google - Charisma, Leadership and the Imposter Syndrome
+- [The power of vulnerability](https://www.ted.com/talks/brene_brown_on_vulnerability) - Ted Talk by Brené Brown
+- [Teach girls bravery, not perfection](https://www.ted.com/talks/reshma_saujani_teach_girls_bravery_not_perfection) - Ted Talk by Reshma Saujani
+- [The happy secret to better work](https://www.ted.com/talks/shawn_achor_the_happy_secret_to_better_work) - Ted Talk by Shawn Achor

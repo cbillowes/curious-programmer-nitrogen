@@ -1,11 +1,11 @@
 ---
 title: "Setting up my environment in Fedora - Installing apps"
 ogImage: images/og/2018-10-20-apps.png
-date:   2018-10-20 18:30:04 +0200
+date: 2018-10-20 18:30:04 +0200
 tags:
-    - Technical
-    - Fedora
-    - Linux
+  - Technical
+  - Fedora
+  - Linux
 ---
 
 I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
@@ -15,7 +15,7 @@ In this post, I focus on the installation of my most used apps.
 
 ## Get `dnf` ready
 
-`dnf` is [Dandified YUM](https://en.wikipedia.org/wiki/DNF_(software)), a `.rpm`-based distribution package manager.
+`dnf` is [Dandified YUM](<https://en.wikipedia.org/wiki/DNF_(software)>), a `.rpm`-based distribution package manager.
 To speed up the upgrade download times, try using
 [fastest mirror](https://ask.fedoraproject.org/en/question/7960/how-to-choose-a-specific-mirror-source/?answer=16346#post-id-16346).
 
@@ -27,19 +27,20 @@ sudo yum update
 
 sudo dnf upgrade
 ```
+
 ## Apps
 
 Here are some of the apps I use and where to download them from.
 
-* [Chrome](https://www.google.com/chrome/)
-* [GNOME Tweaks](https://connectwww.com/how-to-install-gnome-tweak-tool-or-tweaks-on-ubuntu/60665/)
-* [IntelliJ](https://www.jetbrains.com/idea/download/)
-* [VS Code](https://code.visualstudio.com/download)
-* [Terminator](https://gnometerminator.blogspot.com/p/introduction.html)
-* [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/linux/)
-* [Slack](https://slack.com/downloads/linux)
-* [Skype](https://www.skype.com/en/get-skype/)
-* [Datomic](https://my.datomic.com/downloads/free)
+- [Chrome](https://www.google.com/chrome/)
+- [GNOME Tweaks](https://connectwww.com/how-to-install-gnome-tweak-tool-or-tweaks-on-ubuntu/60665/)
+- [IntelliJ](https://www.jetbrains.com/idea/download/)
+- [VS Code](https://code.visualstudio.com/download)
+- [Terminator](https://gnometerminator.blogspot.com/p/introduction.html)
+- [VNC Viewer](https://www.realvnc.com/en/connect/download/viewer/linux/)
+- [Slack](https://slack.com/downloads/linux)
+- [Skype](https://www.skype.com/en/get-skype/)
+- [Datomic](https://my.datomic.com/downloads/free)
 
 ### IntelliJ
 
@@ -129,8 +130,8 @@ sudo yum install -y vim
 
 ### Datomic
 
-* Add license-key to `config/dev-transactor.properties` which is copied and renamed from `config/samples/dev-transactor-template.properties`
-* Create console.sh
+- Add license-key to `config/dev-transactor.properties` which is copied and renamed from `config/samples/dev-transactor-template.properties`
+- Create console.sh
 
   ```bash
   #!/bin/bash
@@ -142,7 +143,7 @@ sudo yum install -y vim
   sudo ln -s /home/<user>/Workspace/datomic-pro-0.9.5703/console.sh /usr/bin/datomic-console
   ```
 
-* Create transactor.sh
+- Create transactor.sh
 
   ```bash
   #!/bin/bash

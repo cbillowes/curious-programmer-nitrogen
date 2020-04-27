@@ -1,14 +1,14 @@
 ---
 title: Know your limits
 cover: "https://picsum.photos/1600/800/?image=177"
-date:   2017-05-12 21:02:04 +0200
+date: 2017-05-12 21:02:04 +0200
 tags:
-    - Mindset
-    - Comfort Zone
+  - Mindset
+  - Comfort Zone
 ---
 
 > "Know your limits, know when to give, know when to demand, know when to say
->  no, know when enough is enough"
+> no, know when enough is enough"
 
 Face your fears, get out of your comfort-zone, do something that you won't
 normally do. Yes, this is maybe great advice until it becomes debilitating and
@@ -30,11 +30,11 @@ for the making - no one else's.
 
 Ask yourself if you can really cope with this or if you need to back out:
 
--   Which is more detrimental to me?
--   What is the impact on my lifestyle, relationships and wellbeing?
--   What are the consequences of both?
--   Are there trade-offs or compromises that can be made?
--   Is it just fear or real debilitation in my day-to-day functioning?
+- Which is more detrimental to me?
+- What is the impact on my lifestyle, relationships and wellbeing?
+- What are the consequences of both?
+- Are there trade-offs or compromises that can be made?
+- Is it just fear or real debilitation in my day-to-day functioning?
 
 If it becomes so debilitating you may end up misusing or turning to mood altering
 substances, become obsessive and create unhealthy relationships.
@@ -55,10 +55,10 @@ Be the **FIRST beneficiary** for anything you do. If you are not benefiting from
 a particular task, function or activity then you are losing your precious
 time you have on this earth.
 
--   You need to put yourself first.
--   Understand your roles and responsibilities.
--   Know your capabilities and strengths.
--   Avoid burnout and being overwhelmed.
+- You need to put yourself first.
+- Understand your roles and responsibilities.
+- Know your capabilities and strengths.
+- Avoid burnout and being overwhelmed.
 
 Saying no gives you a way out of doing something outside of your limits.
 

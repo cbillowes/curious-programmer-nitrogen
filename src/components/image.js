@@ -1,6 +1,6 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Img from 'gatsby-image'
+import React from "react"
+import PropTypes from "prop-types"
+import Img from "gatsby-image"
 
 export const Image = ({ data }) => {
   const edges = data.images ? data.images.edges : []
@@ -9,11 +9,7 @@ export const Image = ({ data }) => {
   const fluidImage = edges[0].node.childImageSharp.fluid
   if (!fluidImage) return <></>
 
-  return (
-    <Img
-      fluid={fluidImage}
-    />
-  )
+  return <Img fluid={fluidImage} />
 }
 
 Image.propTypes = {

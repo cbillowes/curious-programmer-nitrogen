@@ -1,12 +1,10 @@
-import React from 'react'
-import Header from '../header'
-import { getMountedComponent, getSnapshot } from './_helpers'
+import React from "react"
+import Header from "../header"
+import { getMountedComponent, getSnapshot } from "./_helpers"
 
 describe(`Header`, () => {
   it(`should render`, () => {
-    const component = (
-      <Header />
-    )
+    const component = <Header />
     const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
@@ -15,9 +13,7 @@ describe(`Header`, () => {
     let header
 
     beforeEach(() => {
-      const component = (
-        <Header />
-      )
+      const component = <Header />
       header = getMountedComponent(component)
     })
 
@@ -30,11 +26,7 @@ describe(`Header`, () => {
     let header
 
     beforeEach(() => {
-      const component = (
-        <Header
-          isMenuOpen={false}
-        />
-      )
+      const component = <Header isMenuOpen={false} />
       header = getMountedComponent(component)
     })
 
@@ -47,17 +39,12 @@ describe(`Header`, () => {
   describe(`should show`, () => {
     let header
     beforeEach(() => {
-      const component = (
-        <Header
-          isMenuOpen={true}
-        />
-      )
+      const component = <Header isMenuOpen={true} />
       header = getMountedComponent(component)
     })
 
     it(`navigation`, () => {
       expect(header.find(`.navigation`).hasClass(`open`)).toBe(true)
     })
-
   })
 })

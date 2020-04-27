@@ -1,11 +1,11 @@
 ---
-title:  "Discovering yourself"
+title: "Discovering yourself"
 cover: "https://picsum.photos/1600/800/?image=103"
-date:   2017-02-27 23:16:49 +0200
+date: 2017-02-27 23:16:49 +0200
 tags:
-    - Mindset
-    - Communication
-    - Relationships
+  - Mindset
+  - Communication
+  - Relationships
 ---
 
 > “Knowing yourself is the beginning of all wisdom.” ― Aristotle
@@ -38,12 +38,12 @@ I struggle to keep a journal but do see the value in doing so as it documents
 your personality whereby you could draw interesting conclusions to what triggers
 your behavior over time especially when you have difficulty remembering things.
 
--   [How to Journal for Therapy](http://www.wikihow.com/Journal-for-Therapy) from
-    wikiHow
--   [10 Journaling Tips to Help You Heal, Grow and Thrive](http://tinybuddha.com/blog/10-journaling-tips-to-help-you-heal-grow-and-thrive/)
-    from the Tiny Buddha
--   [The Power in Writing About Yourself](https://www.theatlantic.com/health/archive/2014/12/ew-feelings/383475/)
-    from The Atlantic
+- [How to Journal for Therapy](http://www.wikihow.com/Journal-for-Therapy) from
+  wikiHow
+- [10 Journaling Tips to Help You Heal, Grow and Thrive](http://tinybuddha.com/blog/10-journaling-tips-to-help-you-heal-grow-and-thrive/)
+  from the Tiny Buddha
+- [The Power in Writing About Yourself](https://www.theatlantic.com/health/archive/2014/12/ew-feelings/383475/)
+  from The Atlantic
 
 ## Personality tests
 
@@ -51,8 +51,8 @@ I generally don't buy into personality tests and quizzes but I was recently
 exposed to two tests that yielded eerie results - capturing my core
 personality traits in words that I strongly relate to.
 
--   [Enneagram](https://www.integrative.co.za/enneagram/)
--   [16Personalities](https://www.16personalities.com/)
+- [Enneagram](https://www.integrative.co.za/enneagram/)
+- [16Personalities](https://www.16personalities.com/)
 
 Having taken the tests I have been exposed to a better understanding of
 myself - a stepping stone to self awareness - which would have taken much
@@ -60,16 +60,16 @@ longer to achieve through introspection and journaling.
 
 The combination of reports provide information relating to:
 
--   What makes you tick
--   Your strengths and weaknesses
--   Why and how you behave in different relationships and situations
--   Your behavior in teams, leadership and management
--   Your career paths and workplace habits
--   Your growth paths
--   Your blind spots
--   How you deal with conflict
--   How you make decisions
--   How to attain Mastery in your profession
+- What makes you tick
+- Your strengths and weaknesses
+- Why and how you behave in different relationships and situations
+- Your behavior in teams, leadership and management
+- Your career paths and workplace habits
+- Your growth paths
+- Your blind spots
+- How you deal with conflict
+- How you make decisions
+- How to attain Mastery in your profession
 
 ## Enneagram
 
@@ -150,11 +150,11 @@ _Note for the acronyms:_
 _These are the five personality aspects. They define the personality type when
 they are combined._
 
--   **_Mind_** - _Introversion (I) or Extraversion (E)_
--   **_Energy_** - _Intuition (N) or Sensing (S)_
--   **_Nature_** - _Thinking (T) or Feeling (F)_
--   **_Tactics_** - _Judging (J) or Perceiving (P)_
--   **_Identity_** - _Assertive (-A) or Turbulent (-T)_
+- **_Mind_** - _Introversion (I) or Extraversion (E)_
+- **_Energy_** - _Intuition (N) or Sensing (S)_
+- **_Nature_** - _Thinking (T) or Feeling (F)_
+- **_Tactics_** - _Judging (J) or Perceiving (P)_
+- **_Identity_** - _Assertive (-A) or Turbulent (-T)_
 
 _The Identity aspect underpins all personalities, showing how confident we are
 in our abilities and decisions. They elaborate on this in
@@ -162,59 +162,59 @@ in our abilities and decisions. They elaborate on this in
 
 ### Analysts
 
--   **[Architect](https://www.16personalities.com/intj-personality)**: (INTJ Personality)
-    Imaginative and strategic thinkers, with a plan for everything.
+- **[Architect](https://www.16personalities.com/intj-personality)**: (INTJ Personality)
+  Imaginative and strategic thinkers, with a plan for everything.
 
--   **[Logician](https://www.16personalities.com/intp-personality)**: (INTP Personality)
-    Innovative inventors with an unquenchable thirst for knowledge.
+- **[Logician](https://www.16personalities.com/intp-personality)**: (INTP Personality)
+  Innovative inventors with an unquenchable thirst for knowledge.
 
--   **[Commander](https://www.16personalities.com/entj-personality)**: (ENTJ Personality)
-    Bold, imaginative and strong-willed leaders, always finding a way – or making one.
+- **[Commander](https://www.16personalities.com/entj-personality)**: (ENTJ Personality)
+  Bold, imaginative and strong-willed leaders, always finding a way – or making one.
 
--   **[Debater](https://www.16personalities.com/entp-personality)**: (ENTP Personality)
-    Smart and curious thinkers who cannot resist an intellectual challenge.
+- **[Debater](https://www.16personalities.com/entp-personality)**: (ENTP Personality)
+  Smart and curious thinkers who cannot resist an intellectual challenge.
 
 ### Diplomats
 
--   **[Advocate](https://www.16personalities.com/infj-personality)**: (INFJ Personality)
-    Quiet and mystical, yet very inspiring and tireless idealists.
+- **[Advocate](https://www.16personalities.com/infj-personality)**: (INFJ Personality)
+  Quiet and mystical, yet very inspiring and tireless idealists.
 
--   **[Mediator](https://www.16personalities.com/infp-personality)**: (INFP Personality)
-    Poetic, kind and altruistic people, always eager to help a good cause.
+- **[Mediator](https://www.16personalities.com/infp-personality)**: (INFP Personality)
+  Poetic, kind and altruistic people, always eager to help a good cause.
 
--   **[Protagonist](https://www.16personalities.com/enfj-personality)**: (ENFJ Personality)
-    Charismatic and inspiring leaders, able to mesmerize their listeners.
+- **[Protagonist](https://www.16personalities.com/enfj-personality)**: (ENFJ Personality)
+  Charismatic and inspiring leaders, able to mesmerize their listeners.
 
--   **[Campaigner](https://www.16personalities.com/enfp-personality)**: (ENFP Personality)
-    Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.
+- **[Campaigner](https://www.16personalities.com/enfp-personality)**: (ENFP Personality)
+  Enthusiastic, creative and sociable free spirits, who can always find a reason to smile.
 
 ### Sentinels
 
--   **[Logistician](https://www.16personalities.com/istj-personality)**: (ISTJ Personality)
-    Practical and fact-minded individuals, whose reliability cannot be doubted.
+- **[Logistician](https://www.16personalities.com/istj-personality)**: (ISTJ Personality)
+  Practical and fact-minded individuals, whose reliability cannot be doubted.
 
--   **[Defender](https://www.16personalities.com/isfj-personality)**: (ISFJ Personality)
-    Very dedicated and warm protectors, always ready to defend their loved ones.
+- **[Defender](https://www.16personalities.com/isfj-personality)**: (ISFJ Personality)
+  Very dedicated and warm protectors, always ready to defend their loved ones.
 
--   **[Executive](https://www.16personalities.com/estj-personality)**: (ESTJ Personality)
-    Excellent administrators, unsurpassed at managing things – or people.
+- **[Executive](https://www.16personalities.com/estj-personality)**: (ESTJ Personality)
+  Excellent administrators, unsurpassed at managing things – or people.
 
--   **[Consul](https://www.16personalities.com/esfj-personality)**: (ESFJ Personality)
-    Extraordinarily caring, social and popular people, always eager to help.
+- **[Consul](https://www.16personalities.com/esfj-personality)**: (ESFJ Personality)
+  Extraordinarily caring, social and popular people, always eager to help.
 
 ### Explorers
 
--   **[Virtuoso](https://www.16personalities.com/istp-personality)**: (ISTP Personality)
-    Bold and practical experimenters, masters of all kinds of tools.
+- **[Virtuoso](https://www.16personalities.com/istp-personality)**: (ISTP Personality)
+  Bold and practical experimenters, masters of all kinds of tools.
 
--   **[Adventurer](https://www.16personalities.com/isfp-personality)**: (ISFP Personality)
-    Flexible and charming artists, always ready to explore and experience something new.
+- **[Adventurer](https://www.16personalities.com/isfp-personality)**: (ISFP Personality)
+  Flexible and charming artists, always ready to explore and experience something new.
 
--   **[Entrepreneur](https://www.16personalities.com/estp-personality)**: (ESTP Personality)
-    Smart, energetic and very perceptive people, who truly enjoy living on the edge.
+- **[Entrepreneur](https://www.16personalities.com/estp-personality)**: (ESTP Personality)
+  Smart, energetic and very perceptive people, who truly enjoy living on the edge.
 
--   **[Entertainer](https://www.16personalities.com/esfp-personality)**: (ESFP Personality)
-    Spontaneous, energetic and enthusiastic people – life is never boring around them.
+- **[Entertainer](https://www.16personalities.com/esfp-personality)**: (ESFP Personality)
+  Spontaneous, energetic and enthusiastic people – life is never boring around them.
 
 _Labels and descriptions taken from
 [16personalities.com](https://www.16personalities.com)._

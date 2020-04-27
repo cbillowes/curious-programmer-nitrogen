@@ -1,9 +1,9 @@
 ---
 title: "Streamline operations communication"
 cover: "https://picsum.photos/1600/800/?image=119"
-date:   2016-06-30 22:36:38 +0200
+date: 2016-06-30 22:36:38 +0200
 tags:
-    - Productivity
+  - Productivity
 ---
 
 > Get the support you need to make the product and operating the product
@@ -17,12 +17,12 @@ _Source of image: Clarice Bouwer_
 
 This form of communication can occur for many reasons:
 
--   Massive panic due to downtime or issues in production.
--   To get information for troubleshooting or pinpointing a problem.
--   Little to no escalation procedures or escalation procedures are not followed.
--   Lack of understanding the overall system or product architecture.
--   Little to no documentation of the overall system or product architecture.
--   Go-to people within a team who can quickly assist in the event of failure.
+- Massive panic due to downtime or issues in production.
+- To get information for troubleshooting or pinpointing a problem.
+- Little to no escalation procedures or escalation procedures are not followed.
+- Lack of understanding the overall system or product architecture.
+- Little to no documentation of the overall system or product architecture.
+- Go-to people within a team who can quickly assist in the event of failure.
 
 Obviously both the team and the people outside the team, including the users,
 want the system to be up and stable.
@@ -87,11 +87,11 @@ No team can function optimally without appropriate monitoring in place.
 It is essential to have your systems monitored with quick feedback loops so that
 you know when something is down or failing. Some examples include:
 
--   System health checks
--   Product and service availability and uptime
--   Dependency integration points are working
--   Changes you have made have not affected other features or products
-    (automated regression test suite)
+- System health checks
+- Product and service availability and uptime
+- Dependency integration points are working
+- Changes you have made have not affected other features or products
+  (automated regression test suite)
 
 When something does go down, dependent product teams need to be notified. This
 applies for when things are up and running again.

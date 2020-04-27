@@ -1,7 +1,7 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import SEO from '../components/seo'
-import PrivacyPolicyPage from '../components/pages/privacy-policy'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
+import PrivacyPolicyPage from "../components/pages/privacy-policy"
 
 export default () => {
   const data = useStaticQuery(
@@ -19,11 +19,7 @@ export default () => {
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO
-        title="Privacy Policy"
-        crawl={false}
-        siteMetadata={siteMetadata}
-      />
+      <SEO title="Privacy Policy" crawl={false} siteMetadata={siteMetadata} />
       <PrivacyPolicyPage />
     </>
   )

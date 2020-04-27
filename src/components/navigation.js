@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Menu from './menu'
-import MenuItems from './menuItems'
-import '../styles/navigation.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import Menu from "./menu"
+import MenuItems from "./menuItems"
+import "../styles/navigation.scss"
 
 function toggleDisplay(e, toggleOnClick) {
   e.preventDefault()
@@ -20,12 +20,8 @@ const Navigation = ({ toggleOnClick, isOpen }) => {
         toggleOnClick={e => toggleDisplay(e, toggleOnClick)}
         isOpen={isOpen}
       />
-      <nav
-        className={displayAs(isOpen)}
-      >
-        <MenuItems
-          toggleOnClick={e => toggleDisplay(e, toggleOnClick)}
-        />
+      <nav className={displayAs(isOpen)}>
+        <MenuItems toggleOnClick={e => toggleDisplay(e, toggleOnClick)} />
       </nav>
     </>
   )

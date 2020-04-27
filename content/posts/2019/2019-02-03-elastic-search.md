@@ -1,11 +1,11 @@
 ---
 title: "Migrage my search from Solr to Elasticsearch"
-date:   2019-02-05 06:00:00 +0200
+date: 2019-02-05 06:00:00 +0200
 tags:
-    - Technical
-    - Terminal
-    - Cheat sheet
-    - Linux
+  - Technical
+  - Terminal
+  - Cheat sheet
+  - Linux
 ---
 
 An NRT (near-realtime) search platform. It's about a one second delay
@@ -23,12 +23,15 @@ cheat sheet to install the service on Fedora.
 > platforms. Pick your [flavor](https://www.elastic.co/guide/en/elasticsearch/reference/current/install-elasticsearch.html).
 
 #### Public signing key
+
 ```bash
 rpm --import https://artifacts.elastic.co/GPG-KEY-elasticsearch
 ```
 
 #### Install from repository
+
 Create a file called `elasticsearch.repo` in the `/etc/yum.repos.d/` directory:
+
 ```bash
 vim /etc/yum.repos.d/elasticsearch.repo
 ```
@@ -49,6 +52,7 @@ sudo dnf install elasticsearch
 ```
 
 ### Run the service
+
 ```bash
 sudo systemctl daemon-reload
 sudo systemctl enable elasticsearch.service
@@ -93,21 +97,21 @@ curl -X GET "localhost:9200/"
 
 ```json
 {
-  "name" : "Cp8oag6",
-  "cluster_name" : "elasticsearch",
-  "cluster_uuid" : "AT69_T_DTp-1qgIJlatQqA",
-  "version" : {
-    "number" : "6.6.0",
-    "build_flavor" : "default",
-    "build_type" : "zip",
-    "build_hash" : "f27399d",
-    "build_date" : "2016-03-30T09:51:41.449Z",
-    "build_snapshot" : false,
-    "lucene_version" : "7.6.0",
-    "minimum_wire_compatibility_version" : "1.2.3",
-    "minimum_index_compatibility_version" : "1.2.3"
+  "name": "Cp8oag6",
+  "cluster_name": "elasticsearch",
+  "cluster_uuid": "AT69_T_DTp-1qgIJlatQqA",
+  "version": {
+    "number": "6.6.0",
+    "build_flavor": "default",
+    "build_type": "zip",
+    "build_hash": "f27399d",
+    "build_date": "2016-03-30T09:51:41.449Z",
+    "build_snapshot": false,
+    "lucene_version": "7.6.0",
+    "minimum_wire_compatibility_version": "1.2.3",
+    "minimum_index_compatibility_version": "1.2.3"
   },
-  "tagline" : "You Know, for Search"
+  "tagline": "You Know, for Search"
 }
 ```
 
@@ -168,7 +172,9 @@ curl -X GET "http://localhost:5601/app/kibana"
 ```
 
 ## Reverse Proxy
+
 `/etc/kibana/kibana.yml`
+
 ```yml
 # The URLs of the Elasticsearch instances to use for all your queries.
 elasticsearch.hosts: ["http://localhost:9200"]
@@ -306,7 +312,9 @@ http {
 ```
 
 ## Index
+
 Run on the server
+
 ```bash
 curl -X PUT "localhost:9200/search" -H 'Content-Type: application/json' -d'
 {
@@ -328,25 +336,25 @@ curl -X PUT "localhost:9200/search" -H 'Content-Type: application/json' -d'
 ```
 
 Check out the index
+
 ```bash
 curl -X GET "localhost:9200/search/_mapping/_doc"
 ```
 
 Get rid of it?
+
 ```bash
 curl -X DELETE "localhost:9200/search"
 ```
 
-
 ## References
 
-* [Installing Elasticsearch with RPM](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html) - elastic
-* [Install Kibana with RPM](https://www.elastic.co/guide/en/kibana/current/rpm.html) - elastic
-* [ELK with Nginx Gist](https://gist.github.com/Dev-Dipesh/2ac30a8a01afb7f65b2192928a875aa1) - Dev-Dipesh @ GitHub
-* [How can I install the htpasswd utility in Red Hat / Scientific Linux?](https://serverfault.com/questions/259505/how-can-i-install-the-htpasswd-utility-in-red-hat-scientific-linux) - ServerFault
-* Learning Elastic Stack 6.0
-By Pranav Shukla, Sharath Kumar
-December 2017
-
+- [Installing Elasticsearch with RPM](https://www.elastic.co/guide/en/elasticsearch/reference/current/rpm.html) - elastic
+- [Install Kibana with RPM](https://www.elastic.co/guide/en/kibana/current/rpm.html) - elastic
+- [ELK with Nginx Gist](https://gist.github.com/Dev-Dipesh/2ac30a8a01afb7f65b2192928a875aa1) - Dev-Dipesh @ GitHub
+- [How can I install the htpasswd utility in Red Hat / Scientific Linux?](https://serverfault.com/questions/259505/how-can-i-install-the-htpasswd-utility-in-red-hat-scientific-linux) - ServerFault
+- Learning Elastic Stack 6.0
+  By Pranav Shukla, Sharath Kumar
+  December 2017
 
 https://www.elastic.co/guide/en/kibana/current/using-kibana-with-security.html

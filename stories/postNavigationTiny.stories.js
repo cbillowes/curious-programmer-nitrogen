@@ -1,13 +1,12 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import PostNavigationTiny from '../src/components/postNavigationTiny'
-import Page from './_helpers'
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import PostNavigationTiny from "../src/components/postNavigationTiny"
+import Page from "./_helpers"
 
 const starwars = {
   title: `In a galaxy far away, quotes from Star Wars`,
   author: `George Lucas`,
-  excerpt:
-    `
+  excerpt: `
     “Do. Or do not. There is no try.” – Yoda. “Somebody has to save our skins.” – Leia Organa.
     “In my experience there is no such thing as luck.” – Obi-Wan Kenobi.
     “I’ve got a bad feeling about this.” – basically everyone.
@@ -19,8 +18,7 @@ const starwars = {
 const hitchhikersGuideToTheGalaxy = {
   title: `The ultimate hitchhiker's guide to the galaxy`,
   author: `Douglas Adams`,
-  excerpt:
-    `
+  excerpt: `
     I love deadlines. I like the whooshing sound they make as they fly by.
     In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.
     This must be Thursday,' said Arthur to himself, sinking low over his beer. 'I never could get the hang of Thursdays.
@@ -34,28 +32,27 @@ const hitchhikersGuideToTheGalaxy = {
   `,
 }
 
-storiesOf('Components/post/navigation', module)
-  .add('tiny', () =>
-    <Page>
-      <PostNavigationTiny
-        previous={{
-          title: starwars.title,
-          slug: `/`,
-          excerpt: starwars.excerpt,
-          author: starwars.author,
-          date: `20 October 2019`,
-          ttr: 42,
-          tags: [`star wars`, `vader`, `yoda`],
-        }}
-        next={{
-          title: hitchhikersGuideToTheGalaxy.title,
-          slug: `/`,
-          excerpt: hitchhikersGuideToTheGalaxy.excerpt,
-          author: hitchhikersGuideToTheGalaxy.author,
-          date: `1 April 2019`,
-          ttr: 42,
-          tags: [`hitchhikers`, `beer`, `towel`],
-        }}
-      />
-    </Page>
-  )
+storiesOf("Components/post/navigation", module).add("tiny", () => (
+  <Page>
+    <PostNavigationTiny
+      previous={{
+        title: starwars.title,
+        slug: `/`,
+        excerpt: starwars.excerpt,
+        author: starwars.author,
+        date: `20 October 2019`,
+        ttr: 42,
+        tags: [`star wars`, `vader`, `yoda`],
+      }}
+      next={{
+        title: hitchhikersGuideToTheGalaxy.title,
+        slug: `/`,
+        excerpt: hitchhikersGuideToTheGalaxy.excerpt,
+        author: hitchhikersGuideToTheGalaxy.author,
+        date: `1 April 2019`,
+        ttr: 42,
+        tags: [`hitchhikers`, `beer`, `towel`],
+      }}
+    />
+  </Page>
+))

@@ -1,11 +1,11 @@
 ---
 title: "Setting up my environment in Fedora - Customizing my shell"
 ogImage: images/og/2018-10-20-shell.png
-date:   2018-10-20 18:30:03 +0200
+date: 2018-10-20 18:30:03 +0200
 tags:
-    - Technical
-    - Fedora
-    - Linux
+  - Technical
+  - Fedora
+  - Linux
 ---
 
 I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.

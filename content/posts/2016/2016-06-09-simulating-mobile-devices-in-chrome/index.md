@@ -1,9 +1,9 @@
 ---
-title:  Simulating mobile devices in Chrome
+title: Simulating mobile devices in Chrome
 cover: "https://picsum.photos/1600/800/?image=3"
-date:   2016-06-09 00:17:28 +0200
+date: 2016-06-09 00:17:28 +0200
 tags:
-    - Technical
+  - Technical
 ---
 
 > Discover the simulation power behind the Device Mode feature in Google Chrome.
@@ -13,12 +13,12 @@ has a feature called **Device Mode** since Chrome 49.
 This feature extends some previous features by allowing you to simulate
 different devices and capabilities. Possible use cases include:
 
--   Visual aid for designing a mobile-first and / or responsive web site
--   Verify your implementation after you have implemented a design given to
-    you by a front-end developer or agency
--   Verify device, browser or OS specific features implemented on a web page
--   Mimic browsing from a specific location
--   Mimic different network conditions
+- Visual aid for designing a mobile-first and / or responsive web site
+- Verify your implementation after you have implemented a design given to
+  you by a front-end developer or agency
+- Verify device, browser or OS specific features implemented on a web page
+- Mimic browsing from a specific location
+- Mimic different network conditions
 
 **Disclaimer:** This tool will only simulate the display of a web page
 rendered by your version of the Chrome browser, so don't assume it works as expected
@@ -28,27 +28,29 @@ used to achieve this but is beyond the scope of this topic.
 
 ## Getting started
 
-1.  * Open the **Developer Tools** window.
+1.  - Open the **Developer Tools** window.
 
-    * Open the **Chrome menu**
+    - Open the **Chrome menu**
       at the top-right of your browser window, then select
       **More tools > Developer tools**.
 
-    * Use a shortcut:
-      -   Windows: `F12` or `Ctrl` + `Shift` + `I`
-      -   Mac: `Cmd` + `Opt` + `I`
+    - Use a shortcut:
+
+      - Windows: `F12` or `Ctrl` + `Shift` + `I`
+      - Mac: `Cmd` + `Opt` + `I`
 
       ![Icon](./icon-chrome-menu.png "Chrome menu icon")
 
-2.  * Enable the **Device Mode** feature.
+2.  - Enable the **Device Mode** feature.
 
-    * Click on the **Device Mode**
+    - Click on the **Device Mode**
       icon at the top-left of the **Developer Tools** window.
 
-    * You could use shortcuts, but make sure the focus is on the Developer Tools
+    - You could use shortcuts, but make sure the focus is on the Developer Tools
       window and not the browser window for it to work.
-      -   Windows: `Ctrl` + `Shift` + `M`
-      -   Mac: `Cmd` + `Shift` + `M`
+
+      - Windows: `Ctrl` + `Shift` + `M`
+      - Mac: `Cmd` + `Shift` + `M`
 
       ![Icon](./icon-device-mode.png "Device Mode icon")
 
@@ -159,10 +161,10 @@ _Source of image: Screenshot of emulating selected sensors in the Chrome Develop
 
 Find out more about [emulating sensors](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/device-input-and-sensors).
 
-* * *
+---
 
 ## Resources
 
--   [Chrome Keyboard and UI Shortcuts Reference](https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts)
--   [Simulate Mobile Devices with Device Mode](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/)
--   [Test Responsive and Device-specific Viewports](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/emulate-mobile-viewports)
+- [Chrome Keyboard and UI Shortcuts Reference](https://developers.google.com/web/tools/chrome-devtools/iterate/inspect-styles/shortcuts)
+- [Simulate Mobile Devices with Device Mode](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/)
+- [Test Responsive and Device-specific Viewports](https://developers.google.com/web/tools/chrome-devtools/iterate/device-mode/emulate-mobile-viewports)

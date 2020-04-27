@@ -211,7 +211,8 @@ exports[`Privacy policy page should render 1`] = `
               Owner and data controller
             </h2>
             <p>
-              Clarice Bouwer, 
+              Clarice Bouwer,
+               
                
               <a
                 href="mailto:clarice@bouwer.dev"
@@ -266,7 +267,7 @@ exports[`Privacy policy page should render 1`] = `
               Among the types of Personal Data that this Application collects, by itself or through third parties, there are: Cookies and Usage Data.
             </p>
             <p>
-              Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation      texts displayed prior to the Data collection.
+              Complete details on each type of Personal Data collected are provided in the dedicated sections of this privacy policy or by specific explanation texts displayed prior to the Data collection.
               <br />
               Personal Data may be freely provided by the User, or, in case of Usage Data, collected automatically when using this Application.
               <br />
@@ -509,13 +510,15 @@ exports[`Privacy policy page should render 1`] = `
                 <b>
                   Have their Personal Data deleted or otherwise removed.
                 </b>
-                 Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.
+                 
+                Users have the right, under certain circumstances, to obtain the erasure of their Data from the Owner.
               </li>
               <li>
                 <b>
                   Receive their Data and have it transferred to another controller.
                 </b>
-                 Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User's consent, on a contract which the User is part of or on pre-contractual obligations thereof.
+                 
+                Users have the right to receive their Data in a structured, commonly used and machine readable format and, if technically feasible, to have it transmitted to another controller without any hindrance. This provision is applicable provided that the Data is processed by automated means and that the processing is based on the User's consent, on a contract which the User is part of or on pre-contractual obligations thereof.
               </li>
               <li>
                 <b>
@@ -735,7 +738,8 @@ exports[`Privacy policy page should render 1`] = `
             Clarice Bouwer
           </a>
            
-           and is licensed under the 
+           and is licensed under the
+           
            
           <a
             className="underline-only"
@@ -757,7 +761,8 @@ exports[`Privacy policy page should render 1`] = `
             license
           </a>
            
-           for the code. It's probably a good idea to read the 
+           
+          for the code. It's probably a good idea to read the 
            
           <a
             className="underline-only"
@@ -781,14 +786,16 @@ exports[`Privacy policy page should render 1`] = `
            
           . Please give it a star if you think it is cool.
           <br />
-          Icons made by 
+          Icons made by
+           
           <a
             href="https://www.flaticon.com/authors/freepik"
             title="Freepik"
           >
             Freepik
           </a>
-           from
+           
+          from
           <a
             href="https://www.flaticon.com/"
             title="Flaticon"

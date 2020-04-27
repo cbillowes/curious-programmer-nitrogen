@@ -1,7 +1,7 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import PageNotFound from '../components/pages/404'
-import SEO from '../components/seo'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import PageNotFound from "../components/pages/404"
+import SEO from "../components/seo"
 
 export default () => {
   const data = useStaticQuery(
@@ -15,7 +15,7 @@ export default () => {
           }
         }
         allMarkdownRemark(
-          filter: {fields: {slug: {nin: "/blog/template"}}}
+          filter: { fields: { slug: { nin: "/blog/template" } } }
           sort: { fields: [fields___date], order: DESC }
           limit: 6
         ) {
@@ -47,9 +47,7 @@ export default () => {
         crawl={false}
         siteMetadata={siteMetadata}
       />
-      <PageNotFound
-        edges={edges}
-      />
+      <PageNotFound edges={edges} />
     </>
   )
 }

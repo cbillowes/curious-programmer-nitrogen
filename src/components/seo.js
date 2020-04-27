@@ -6,32 +6,33 @@
  */
 
 import React from "react"
-import Helmet from 'react-helmet'
-import PropTypes from 'prop-types'
+import Helmet from "react-helmet"
+import PropTypes from "prop-types"
 import { getContent } from "./blurb"
 
 const getPageTitle = (title, siteMetadata) => {
   if (title && siteMetadata && siteMetadata.title)
     return `${title} | ${siteMetadata.title}`
 
-  if (!title && siteMetadata && siteMetadata.title)
-    return siteMetadata.title
+  if (!title && siteMetadata && siteMetadata.title) return siteMetadata.title
 
   return title
 }
 
 const getPageDescription = (description, siteMetadata) => {
-  const pageDescription =
-    (description) ? description :
-      (siteMetadata && siteMetadata.description) ? siteMetadata.description :
-        ``
+  const pageDescription = description
+    ? description
+    : siteMetadata && siteMetadata.description
+    ? siteMetadata.description
+    : ``
   return getContent(30, pageDescription)
 }
 
 const SEO = ({ title, crawl, siteMetadata, children }) => {
   const pageTitle = getPageTitle(title, siteMetadata)
   const pageDescription = getPageDescription(children, siteMetadata)
-  const pageAuthor = siteMetadata && siteMetadata.twitter ? siteMetadata.twitter : ``
+  const pageAuthor =
+    siteMetadata && siteMetadata.twitter ? siteMetadata.twitter : ``
   const pageImage = siteMetadata && siteMetadata.image
   return (
     <Helmet>
@@ -40,11 +41,11 @@ const SEO = ({ title, crawl, siteMetadata, children }) => {
       <meta name="title" content={pageTitle} />
       <meta name="description" content={pageDescription} />
 
-      {
-        crawl ?
-          <meta name="robots" content="index" /> :
-          <meta name="robots" content="noindex" />
-      }
+      {crawl ? (
+        <meta name="robots" content="index" />
+      ) : (
+        <meta name="robots" content="noindex" />
+      )}
 
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />

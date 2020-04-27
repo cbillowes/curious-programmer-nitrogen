@@ -1,10 +1,10 @@
 ---
 title: "Days that rush away"
 cover: "https://picsum.photos/1600/800/?image=396"
-date:   2016-05-09 23:30:10 +0200
+date: 2016-05-09 23:30:10 +0200
 category: "tech"
 tags:
-    - Productivity
+  - Productivity
 ---
 
 > Are you busy but don't feel productive? I feel this way sometimes. It is
@@ -20,22 +20,22 @@ Have I fallen victim to "[rush hour syndrome](http://smartblogs.com/leadership/2
 When days get filled to the brim with noise and tasks that cannot be completed,
 how can we not feel exhausted and unaccomplished? Surely this can't be healthy.
 
--   **It's affected my memory**: And not in a good way. My memory gets worse
-    when I'm doing too many things at once. Stand-ups are challenging as I struggle
-    to recall the mixture of interlaced tasks that I juggled the day before.
+- **It's affected my memory**: And not in a good way. My memory gets worse
+  when I'm doing too many things at once. Stand-ups are challenging as I struggle
+  to recall the mixture of interlaced tasks that I juggled the day before.
 
--   **Quality suffers**: If I can't focus on something and do that well, the
-    quality will take a knock. Constant context-switching and multi-tasking
-    are a real threat.
+- **Quality suffers**: If I can't focus on something and do that well, the
+  quality will take a knock. Constant context-switching and multi-tasking
+  are a real threat.
 
--   **Expectations aren't met**: If I am too busy I struggle to get round to
-    [managing expectations](/blog/manage-expectations). If business is expecting
-    something but there is something else keeping me busy, they need to be aware of
-    it.
+- **Expectations aren't met**: If I am too busy I struggle to get round to
+  [managing expectations](/blog/manage-expectations). If business is expecting
+  something but there is something else keeping me busy, they need to be aware of
+  it.
 
--   **TODOs spiraling out of control**: Production bugs, changes, queries, issues,
-    improvements, suggestions... the list just grows. It feels like a mountain
-    growing on my back.
+- **TODOs spiraling out of control**: Production bugs, changes, queries, issues,
+  improvements, suggestions... the list just grows. It feels like a mountain
+  growing on my back.
 
 ## What went wrong?
 

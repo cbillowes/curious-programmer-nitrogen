@@ -252,7 +252,8 @@ exports[`Credits page should render 1`] = `
                 Clarice Bouwer
               </a>
                
-               and is licensed under the 
+               and is licensed under the
+               
                
               <a
                 className="underline-only"
@@ -274,7 +275,8 @@ exports[`Credits page should render 1`] = `
                 license
               </a>
                
-               for the code. It's probably a good idea to read the 
+               
+              for the code. It's probably a good idea to read the 
                
               <a
                 className="underline-only"
@@ -298,14 +300,16 @@ exports[`Credits page should render 1`] = `
                
               . Please give it a star if you think it is cool.
               <br />
-              Icons made by 
+              Icons made by
+               
               <a
                 href="https://www.flaticon.com/authors/freepik"
                 title="Freepik"
               >
                 Freepik
               </a>
-               from
+               
+              from
               <a
                 href="https://www.flaticon.com/"
                 title="Flaticon"
@@ -381,8 +385,7 @@ exports[`Credits page should render 1`] = `
               Lorem Picsum
             </a>
              
-             
-            which provides backgrounds by
+             which provides backgrounds by
              
              
             <a
@@ -393,9 +396,8 @@ exports[`Credits page should render 1`] = `
               Unsplash
             </a>
              
-            .
+            . The
              
-            The 
              
             <a
               href="https://unsplash.com/license"
@@ -487,7 +489,8 @@ exports[`Credits page should render 1`] = `
             Clarice Bouwer
           </a>
            
-           and is licensed under the 
+           and is licensed under the
+           
            
           <a
             className="underline-only"
@@ -509,7 +512,8 @@ exports[`Credits page should render 1`] = `
             license
           </a>
            
-           for the code. It's probably a good idea to read the 
+           
+          for the code. It's probably a good idea to read the 
            
           <a
             className="underline-only"
@@ -533,14 +537,16 @@ exports[`Credits page should render 1`] = `
            
           . Please give it a star if you think it is cool.
           <br />
-          Icons made by 
+          Icons made by
+           
           <a
             href="https://www.flaticon.com/authors/freepik"
             title="Freepik"
           >
             Freepik
           </a>
-           from
+           
+          from
           <a
             href="https://www.flaticon.com/"
             title="Flaticon"

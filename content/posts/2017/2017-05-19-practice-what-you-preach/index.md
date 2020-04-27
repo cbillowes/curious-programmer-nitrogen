@@ -1,11 +1,11 @@
 ---
 title: Practice what you preach
 cover: "https://picsum.photos/1600/800/?image=129"
-date:   2017-05-19 18:29:22 +0200
+date: 2017-05-19 18:29:22 +0200
 tags:
-    - Mindset
-    - Communication
-    - Relationships
+  - Mindset
+  - Communication
+  - Relationships
 ---
 
 > "Your beliefs don't make you a better person, our behavior does."
@@ -20,11 +20,11 @@ be benefiting me directly. I have _WOAH!_ moments of epiphanies where I realize 
 so many of the answers to challenges that I face yet struggle to incorporate them
 into my own life. Why? Maybe it's because:
 
--   I am not yet ready myself
--   Probably because it's not that simple
--   I don't fully understand how I can implement it
--   I am scared or too tired to try
--   I give up or give in too easily to old ways
+- I am not yet ready myself
+- Probably because it's not that simple
+- I don't fully understand how I can implement it
+- I am scared or too tired to try
+- I give up or give in too easily to old ways
 
 So if that is the case, is it really fair that I share my insights, opinions,
 beliefs and perspectives if I don't **_fully practice what I preach_**?
@@ -48,12 +48,12 @@ How about _practice the knowledge you trust in today_?
 Whatever you decide to call it, talking to someone experiencing similar
 challenges positively impacts me and may you:
 
--   I don't feel so alone in the circumstances or situation anymore
--   I can relate and empathize with the person
--   The more I talk about possibilities, the more it reinforces personally over time
--   I get exposed to alternate options, thought patterns, perspectives and possibilities
--   I get inspired, motivated and can learn to apply it
--   I have a sense of worth in helping someone else
+- I don't feel so alone in the circumstances or situation anymore
+- I can relate and empathize with the person
+- The more I talk about possibilities, the more it reinforces personally over time
+- I get exposed to alternate options, thought patterns, perspectives and possibilities
+- I get inspired, motivated and can learn to apply it
+- I have a sense of worth in helping someone else
 
 ## Winging it
 

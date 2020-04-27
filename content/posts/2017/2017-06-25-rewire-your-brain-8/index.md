@@ -1,11 +1,11 @@
 ---
 title: "Rewire your brain (Part 8) - Conclusion"
 slug: "rewire-your-brain-8"
-date:   2017-06-28 19:05:39 +0200
+date: 2017-06-28 19:05:39 +0200
 cover: "https://picsum.photos/1600/800/?image=903"
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > Page 172 of the book Rewire: Changing Your Brain to Break Bad Habits,

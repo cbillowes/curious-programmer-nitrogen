@@ -1,10 +1,10 @@
-import React from 'react'
-import { graphql } from 'gatsby'
-import SEO from '../components/seo'
-import PostPage from '../components/pages/post'
+import React from "react"
+import { graphql } from "gatsby"
+import SEO from "../components/seo"
+import PostPage from "../components/pages/post"
 
 export const query = graphql`
-  query PostTemplateQuery ($path: String!) {
+  query PostTemplateQuery($path: String!) {
     site {
       siteMetadata {
         title
@@ -39,11 +39,7 @@ export default ({ data, pageContext }) => {
 
   return (
     <>
-      <SEO
-        title={title}
-        crawl={true}
-        siteMetadata={siteMetadata}
-      >
+      <SEO title={title} crawl={true} siteMetadata={siteMetadata}>
         {excerpt}
       </SEO>
       <PostPage

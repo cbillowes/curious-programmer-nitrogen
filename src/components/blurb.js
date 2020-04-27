@@ -1,20 +1,22 @@
-import React from 'react'
-import PropTypes from 'prop-types'
+import React from "react"
+import PropTypes from "prop-types"
 
 const defaultLimit = 250
 
 function stripHtml(content) {
   return content
     .replace(/\s*(:[a-zA-Z0-9\\-]+:)+\s*/gm, ``)
-    .replace(/<code([ a-z="\\-]*)>[a-zA-Z0-9 \-~±$./"!@#$%^&*(),:;_\n\r]+<\/code>+/gm, `[code example]`)
+    .replace(
+      /<code([ a-z="\\-]*)>[a-zA-Z0-9 \-~±$./"!@#$%^&*(),:;_\n\r]+<\/code>+/gm,
+      `[code example]`
+    )
     .replace(/{[\w\W]+}/gm, `[code example]`)
     .replace(/(<\/?[a-zA-Z0-9 ="#/:?.\-_()]+>)/gm, ``)
     .trim()
 }
 
 function squashToPlainText(content) {
-  if (typeof content === `string`)
-    return stripHtml(content)
+  if (typeof content === `string`) return stripHtml(content)
 
   if (Array.isArray(content)) {
     let plainText = ``
@@ -38,22 +40,12 @@ function squashToPlainText(content) {
 
 function truncate(text, limit) {
   const words = text.trim().split(` `)
-  return (
-    (
-      words.length > limit ?
-        words.splice(0, limit) :
-        words
-    ).join(` `)
-  )
+  return (words.length > limit ? words.splice(0, limit) : words).join(` `)
 }
 
 function ellipsis(text, limit) {
   const words = text.trim().split(` `)
-  return (
-    words.length > limit ?
-      `...` :
-      ``
-  )
+  return words.length > limit ? `...` : ``
 }
 
 export function getContent(limit, body) {
@@ -69,9 +61,7 @@ function Blurb({ limit, children }) {
   const content = getContent(limit || defaultLimit, children)
   return (
     <>
-      <span className="text">
-        {content}
-      </span>
+      <span className="text">{content}</span>
     </>
   )
 }

@@ -1,10 +1,10 @@
 ---
-title:  "Words define your reality"
+title: "Words define your reality"
 cover: "https://picsum.photos/1600/800/?image=180"
-date:   2017-03-04 00:01:00 +0200
+date: 2017-03-04 00:01:00 +0200
 tags:
-    - Mindset
-    - Relationships
+  - Mindset
+  - Relationships
 ---
 
 > "Words are free. It's how you use them, that may cost you." - KushandWizdom
@@ -50,7 +50,7 @@ I came to realize that I have a voice inside my head,​ and that voice can be
 really mean.​ It sometimes puts me down and I believe it.​
 
 It's like having the voice of
-[Marvin the robot](https://en.wikipedia.org/wiki/Marvin_(character))
+[Marvin the robot](<https://en.wikipedia.org/wiki/Marvin_(character)>)
 from Hitchhiker's Guide to the Galaxy inside my head - ​only less funny.​
 
 When I first [spoke](/blog/rubyfuza-2017-conference/) about my experiences of
@@ -61,11 +61,11 @@ anything, everything, nothing_ and
 so forth, we describe things that have **no exceptions**. That's simply the way
 it is.
 
--   There is no ...
--   Everyone is ...
--   No one is ...
--   They always ...
--   We are constantly ...
+- There is no ...
+- Everyone is ...
+- No one is ...
+- They always ...
+- We are constantly ...
 
 We are probably just trying to convey the intensity of the thing that we are
 describing through the usage of absolute language because that is how we are
@@ -166,13 +166,13 @@ circumstances and experiences. If you get it wrong, don't be hard on yourself
 and don't ground yourself on the beliefs you speak of. Let them be variable
 while you keep building that bigger picture.
 
-* * *
+---
 
 ## Additional material
 
--   [26 Brilliant Quotes on the Super Power of Words](http://www.inc.com/peter-economy/26-brilliant-quotes-on-the-super-power-of-words.html)
-    from Inc.com
--   [3 Reasons Why We Should Be Careful When Using Absolutes](http://www.mtnuniversal.com/blogs/3-reasons-why-we-should-be-careful-when-using-absolutes)
-    from MTN Universal
+- [26 Brilliant Quotes on the Super Power of Words](http://www.inc.com/peter-economy/26-brilliant-quotes-on-the-super-power-of-words.html)
+  from Inc.com
+- [3 Reasons Why We Should Be Careful When Using Absolutes](http://www.mtnuniversal.com/blogs/3-reasons-why-we-should-be-careful-when-using-absolutes)
+  from MTN Universal
 
 <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>

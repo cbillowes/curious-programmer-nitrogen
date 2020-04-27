@@ -1,19 +1,13 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Layout from '../layout'
-import Posts from '../posts'
-import '../../styles/page.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import Layout from "../layout"
+import Posts from "../posts"
+import "../../styles/page.scss"
 
 const TagPage = ({ tag, edges }) => {
   return (
-    <Layout
-      className="tag-page"
-      footer={true}
-    >
-      <Posts
-        edges={edges}
-        showNumbers={true}
-      />
+    <Layout className="tag-page" footer={true}>
+      <Posts edges={edges} showNumbers={true} />
     </Layout>
   )
 }

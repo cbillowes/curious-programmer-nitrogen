@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { Link } from 'gatsby'
-import '../styles/anchor.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import { Link } from "gatsby"
+import "../styles/anchor.scss"
 
 function isExternalLink(url) {
-  return (url.startsWith(`http`) || url.startsWith(`mailto:`))
+  return url.startsWith(`http`) || url.startsWith(`mailto:`)
 }
 
 const ExternalLink = ({ to, title, className, children, ...props }) => {
@@ -20,8 +20,7 @@ const ExternalLink = ({ to, title, className, children, ...props }) => {
         {...props}
       >
         {children}
-      </a>
-      {" "}
+      </a>{" "}
     </>
   )
 }
@@ -30,15 +29,9 @@ const InternalLink = ({ to, title, className, children, ...props }) => {
   return (
     <>
       {" "}
-      <Link
-        to={to}
-        title={title}
-        className={className}
-        {...props}
-      >
+      <Link to={to} title={title} className={className} {...props}>
         {children}
-      </Link>
-      {" "}
+      </Link>{" "}
     </>
   )
 }
@@ -46,23 +39,13 @@ const InternalLink = ({ to, title, className, children, ...props }) => {
 function Anchor({ to, title, className, children, ...props }) {
   if (isExternalLink(to))
     return (
-      <ExternalLink
-        to={to}
-        title={title}
-        className={className}
-        {...props}
-      >
+      <ExternalLink to={to} title={title} className={className} {...props}>
         {children}
       </ExternalLink>
     )
 
   return (
-    <InternalLink
-      to={to}
-      title={title}
-      className={className}
-      {...props}
-    >
+    <InternalLink to={to} title={title} className={className} {...props}>
       {children}
     </InternalLink>
   )

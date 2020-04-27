@@ -1,9 +1,9 @@
 ---
-title:  "Coping with fears of public speaking"
+title: "Coping with fears of public speaking"
 cover: "https://picsum.photos/1600/800/?image=633"
-date:   2016-06-03 21:23:59 +0200
+date: 2016-06-03 21:23:59 +0200
 tags:
-    - Comfort Zone
+  - Comfort Zone
 ---
 
 > Fears sabotage our success and impede improvements we can make.
@@ -16,12 +16,12 @@ at an event. If you are brave enough, you may opt-in on your own.
 Chances are, if you are software developer, it's not something you will want
 to do. I know. For many years I have avoided it. It's terrifying.
 
--   I lose my entire vocabulary when I look at a crowd of people
--   I stumble and mess up the words I remember
--   I say nonsensical things that make me cringe afterward
--   I lose control over my voice
--   I forget what I am saying
--   I freeze and panic
+- I lose my entire vocabulary when I look at a crowd of people
+- I stumble and mess up the words I remember
+- I say nonsensical things that make me cringe afterward
+- I lose control over my voice
+- I forget what I am saying
+- I freeze and panic
 
 ## Just put yourself out there
 
@@ -77,19 +77,19 @@ LifeHack shared some great
 [content](http://www.lifehack.org/400146/7-public-speaking-tips-from-world-class-ted-presenters)
 about public speaking tips from world-class TED presenters.
 
--   Show up to give, not take
--   Focus on your breath to stay focused
--   Leave the slides for the boardroom
--   Use plain English
--   Leverage the power of the pause
--   Embrace the art of the unexpected
--   Get the audience involved
+- Show up to give, not take
+- Focus on your breath to stay focused
+- Leave the slides for the boardroom
+- Use plain English
+- Leverage the power of the pause
+- Embrace the art of the unexpected
+- Get the audience involved
 
 <small>
   Thanks to Justin Reddy for sharing.
 </small>
 
-* * *
+---
 
 [Robin Sharma](http://www.robinsharma.com/), a self-help writer and
 leadership speaker, shares some ideas in 9 minutes to help you overcome your
@@ -109,7 +109,7 @@ fears.
   Thanks to [Indran Naidoo](https://twitter.com/indrannaidoo) for sharing.
 </small>
 
-* * *
+---
 
 [Ben Orenstein](https://twitter.com/r00k) presented a great 48 minute talk with
 straightforward techniques for giving excellent presentations. This talk is
@@ -137,7 +137,7 @@ very entertaining and has some interesting filler lightning talks.
 
 I was introduced to the "Shadow Self" concept created by psychologist Carl Jung.
 
-[Wikipedia](https://en.wikipedia.org/wiki/Shadow_(psychology))
+[Wikipedia](<https://en.wikipedia.org/wiki/Shadow_(psychology)>)
 states that _"the shadow or 'shadow aspect' may
 refer to (1) an unconscious aspect of the personality which the conscious ego
 does not identify in itself. Because one tends to reject or remain ignorant of
@@ -222,7 +222,7 @@ I want to a live a life where I grab opportunities that build me. I want to
 succeed. Tackling this fear is a big win for me, regardless of the outcome it
 has on Saturday.
 
-* * *
+---
 
 Thanks to [Olga](https://twitter.com/chaos_olga) for coaching me and to
 everyone at

@@ -1,11 +1,11 @@
 ---
 title: "Using the tar Command in Linux"
-date:   2019-01-14 21:40:00 +0200
+date: 2019-01-14 21:40:00 +0200
 tags:
-    - Technical
-    - Linux
-    - Terminal
-    - Cheat Sheet
+  - Technical
+  - Linux
+  - Terminal
+  - Cheat Sheet
 ---
 
 I used to right-click on a zipped file and manage the archive using the
@@ -37,13 +37,13 @@ running Fedora release 28 (Twenty Eight) and Zsh.**
 
 ---
 
-* [List stuff](#listing-the-contents-of-an-archive)
-* [Create](#creating-a-new-archive)
-* [Update](#updating-an-archive)
-* [Extract](#extracting-data)
-* [Compare to changes on the file system](#comparing-against-the-file-system)
-* [Using zip](#using-zip)
-* [Cheat sheet](#cheat-sheet)
+- [List stuff](#listing-the-contents-of-an-archive)
+- [Create](#creating-a-new-archive)
+- [Update](#updating-an-archive)
+- [Extract](#extracting-data)
+- [Compare to changes on the file system](#comparing-against-the-file-system)
+- [Using zip](#using-zip)
+- [Cheat sheet](#cheat-sheet)
 
 As far as I understand, `bash±tar` files typically have the **tar** or **tar.gz**
 extensions. `bash±tar` is the archive that can preserve permissions and directory
@@ -61,11 +61,11 @@ Your can also run these commands as `bash±tar --file archive.tar.gz --list` and
 
 ### What are all these switches?
 
-* **t | -- list**: tells tar to list everything in the archive
-* **v | -- verbose**: verbose *(optional)*, prints out as much information as it can for you
-* **f | -- file**: specifies the file of the archive you want to list.
-  *(This must always be the last flag
-  as it precedes the filename in the command unless you use --file)*
+- **t | -- list**: tells tar to list everything in the archive
+- **v | -- verbose**: verbose _(optional)_, prints out as much information as it can for you
+- **f | -- file**: specifies the file of the archive you want to list.
+  _(This must always be the last flag
+  as it precedes the filename in the command unless you use --file)_
 
 ## Creating a new archive
 
@@ -91,7 +91,7 @@ Create a compressed **gzip** **tar** archive `bash±tar -cvzf archive.tar.gz /pa
 for the **/path/to/awesome** directory.
 
 If you want to archive and compress multiple members, chain the files and directories
-`bash±tar -cvzf archive.tar.gz  /path/to/something another/awesome somewhere/sauce.json`
+`bash±tar -cvzf archive.tar.gz /path/to/something another/awesome somewhere/sauce.json`
 
 ### Exclusions
 
@@ -106,16 +106,16 @@ file and **somewhere** directory.
 
 ### What are all these switches?
 
-* **c | --create**: tells tar to create a new archive
-* **v | --verbose**: verbose *(optional)*, prints out as much information as it can for you
-* **z | --gzip**: compresses the archive using gzip *(you can also use
-  <strong>-j</strong> | <strong>--bzip2</strong> for bzip2 compression)*
-* **f | --file**: specifies the file of the archive name that you want to create.
-  *(This must always be the last flag as it precedes the file name in the command unless
-  you use the --file switch)*
-* **--exclude**: exclude files given as a pattern
+- **c | --create**: tells tar to create a new archive
+- **v | --verbose**: verbose _(optional)_, prints out as much information as it can for you
+- **z | --gzip**: compresses the archive using gzip _(you can also use
+  <strong>-j</strong> | <strong>--bzip2</strong> for bzip2 compression)_
+- **f | --file**: specifies the file of the archive name that you want to create.
+  _(This must always be the last flag as it precedes the file name in the command unless
+  you use the --file switch)_
+- **--exclude**: exclude files given as a pattern
 
- ### Clean up
+### Clean up
 
 Sometimes I need to clean up files in a directory once I have created the archive. An example
 is one of my logs directories. Once I have archived all the logs, I want to delete
@@ -158,12 +158,12 @@ Extract a compressed archive to another directory
 
 ### What are all these switches?
 
-* **x | extract**: tells tar to extract the files from the archive
-* **v | --verbose**: verbose *(optional)*, prints out as much information as it can for you
-* **z | --gzip**: tells tar to decompress the archive using gzip - you can use **j | --bzip2** for `bzip2`
-* **C | --directory**: change to directory
-* **f | --file**: specifies the file of the archive you want to extract. *(This must always be the last flag
-  as it precedes the filename in the command)*
+- **x | extract**: tells tar to extract the files from the archive
+- **v | --verbose**: verbose _(optional)_, prints out as much information as it can for you
+- **z | --gzip**: tells tar to decompress the archive using gzip - you can use **j | --bzip2** for `bzip2`
+- **C | --directory**: change to directory
+- **f | --file**: specifies the file of the archive you want to extract. _(This must always be the last flag
+  as it precedes the filename in the command)_
 
 ### Extracting specific files
 
@@ -174,7 +174,7 @@ a few files then grab them out of the tar file:
    look for the file name(s) you are interested in.
 
 2. Extract the file `bash±tar -zxvf archive.tar.gz ./awesome.clj` or directory
-  `bash±tar --extract --file=archive.tar.gz src`
+   `bash±tar --extract --file=archive.tar.gz src`
 
 ### Extracting wildcards
 
@@ -198,8 +198,8 @@ mode, owner, modification date and contents.
 
 The following example compares the archive members 'rock', 'blues'
 and 'funk' in the archive 'bluesrock.tar' with files of the same
-name in the file system. *(Note that there is no file, `funk'; tar
-will report an error message.)*
+name in the file system. _(Note that there is no file, `funk'; tar
+will report an error message.)_
 
 ```bash
 # this section and example was found at gnu.org
@@ -280,6 +280,7 @@ tar -xvf archive.tar
 ```
 
 **Compressed**
+
 ```bash
 tar -xvzf archive.tar.gz
 tar -xvC directory -f archive.tar
@@ -304,20 +305,20 @@ unzip archive.zip
 
 ## References
 
-* `man tar`
-* `tar --help`
-* [Globbing](http://zsh.sourceforge.net/Intro/intro_2.html) - Zsh sourceforge
-* [15+ tar command usages with examples](https://www.crybit.com/tar-command-usages-with-examples/) - CRYBIT.com
-* [What is the difference between Tar and Gzip ?](https://www.crybit.com/difference-between-tar-and-gzip/) - CRYBIT.com
-* [Comparing Archive Members with the File System](http://www.gnu.org/software/tar/manual/html_node/compare.html) - gnu.org
-* [How can I update a tar.gz file?](https://askubuntu.com/questions/267344/how-can-i-update-a-tar-gz-file) - AskUbuntu
-* [What's the difference between .tar.gz and .gz, or .tar.7z and .7z?](https://askubuntu.com/questions/122141/whats-the-difference-between-tar-gz-and-gz-or-tar-7z-and-7z/122150) - AskUbuntu
-* [How to Update an Archive Using '--update'](http://www.gnu.org/software/tar/manual/html_node/how-to-update.html) - StackExchange
-* [Difference between ls -l and ll?](https://unix.stackexchange.com/questions/137703/difference-between-ls-l-and-ll?newreg=745ff77aab654a0fbb9b0c8b92a5a688) - Unix & Linux StackExchange
-* [How do I zip/unzip on the unix command line?](https://unix.stackexchange.com/questions/6596/how-do-i-zip-unzip-on-the-unix-command-line) - Unix & Linux StackExchange
-* [Remove all files/directories except for one file](https://unix.stackexchange.com/questions/153862/remove-all-files-directories-except-for-one-file) - Unix & Linux StackExchange
-* [How to Compress and Extract Files Using the tar Command on Linux](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
- \- How-To Geek
-* [How to Zip and Unzip in Linux: The Zip and Unzip Linux Commands](https://www.hacksparrow.com/how-to-zip-and-unzip-in-linux-the-zip-and-unzip-linux-commands.html)
- \- Hack Sparrow
-* [Tar Extract a Single File(s) From a Large Tarball](https://www.cyberciti.biz/faq/linux-unix-extracting-specific-files/)
+- `man tar`
+- `tar --help`
+- [Globbing](http://zsh.sourceforge.net/Intro/intro_2.html) - Zsh sourceforge
+- [15+ tar command usages with examples](https://www.crybit.com/tar-command-usages-with-examples/) - CRYBIT.com
+- [What is the difference between Tar and Gzip ?](https://www.crybit.com/difference-between-tar-and-gzip/) - CRYBIT.com
+- [Comparing Archive Members with the File System](http://www.gnu.org/software/tar/manual/html_node/compare.html) - gnu.org
+- [How can I update a tar.gz file?](https://askubuntu.com/questions/267344/how-can-i-update-a-tar-gz-file) - AskUbuntu
+- [What's the difference between .tar.gz and .gz, or .tar.7z and .7z?](https://askubuntu.com/questions/122141/whats-the-difference-between-tar-gz-and-gz-or-tar-7z-and-7z/122150) - AskUbuntu
+- [How to Update an Archive Using '--update'](http://www.gnu.org/software/tar/manual/html_node/how-to-update.html) - StackExchange
+- [Difference between ls -l and ll?](https://unix.stackexchange.com/questions/137703/difference-between-ls-l-and-ll?newreg=745ff77aab654a0fbb9b0c8b92a5a688) - Unix & Linux StackExchange
+- [How do I zip/unzip on the unix command line?](https://unix.stackexchange.com/questions/6596/how-do-i-zip-unzip-on-the-unix-command-line) - Unix & Linux StackExchange
+- [Remove all files/directories except for one file](https://unix.stackexchange.com/questions/153862/remove-all-files-directories-except-for-one-file) - Unix & Linux StackExchange
+- [How to Compress and Extract Files Using the tar Command on Linux](https://www.howtogeek.com/248780/how-to-compress-and-extract-files-using-the-tar-command-on-linux/)
+  \- How-To Geek
+- [How to Zip and Unzip in Linux: The Zip and Unzip Linux Commands](https://www.hacksparrow.com/how-to-zip-and-unzip-in-linux-the-zip-and-unzip-linux-commands.html)
+  \- Hack Sparrow
+- [Tar Extract a Single File(s) From a Large Tarball](https://www.cyberciti.biz/faq/linux-unix-extracting-specific-files/)

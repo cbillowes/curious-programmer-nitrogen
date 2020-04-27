@@ -1,17 +1,17 @@
 ---
 title: "Datomic Cheat Sheet Series - Queries (Part 2)"
 ogImage: images/og/2018-09-06-datomic.png
-date:   2018-09-20 05:30:00 +0200
+date: 2018-09-20 05:30:00 +0200
 tags:
-    - Technical
-    - Datomic
-    - Database
-    - Cheat sheet
+  - Technical
+  - Datomic
+  - Database
+  - Cheat sheet
 ---
 
 <div id="accordion"></div>
 
-In this post I work through more querying capabilities using the [Datomic MusicBrainz](https://github.com/Datomic/mbrainz-sample) sample database. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/query.html). *If you want to get started with Datomic, check out the [first post](/blog/datomic-cheat-sheet-series-getting-started) in the series. If you want to see some basic queries, then check out [part 1](/blog/datomic-cheat-sheet-series-queries-part-1).*
+In this post I work through more querying capabilities using the [Datomic MusicBrainz](https://github.com/Datomic/mbrainz-sample) sample database. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/query.html). _If you want to get started with Datomic, check out the [first post](/blog/datomic-cheat-sheet-series-getting-started) in the series. If you want to see some basic queries, then check out [part 1](/blog/datomic-cheat-sheet-series-queries-part-1)._
 
 ![Relationship diagram](https://raw.githubusercontent.com/Datomic/mbrainz-sample/master/relationships.png)
 
@@ -40,7 +40,9 @@ Create a database connection as a function
         db (d/db conn)]
     db))
 ```
+
 ## Not clauses [(more)](https://docs.datomic.com/on-prem/query.html#not-caluses)
+
 ```clojure
 ; count all artists who are not Canadian
 (d/q '[:find (count ?eid) .
@@ -70,6 +72,7 @@ Create a database connection as a function
 ```
 
 ## Or clauses [(more)](https://docs.datomic.com/on-prem/query.html#or-clauses)
+
 ```clojure
 ; the number of vinyl media
 (d/q '[:find (count ?medium) .
@@ -103,6 +106,7 @@ Create a database connection as a function
 ## Expression clauses [(more)](https://docs.datomic.com/on-prem/query.html#expression-clauses)
 
 ### [Predicate expressions](https://docs.datomic.com/on-prem/query.html#predicate-expressions)
+
 ```clojure
 ; get artists who started before 1600
 (d/q '[:find ?name ?year
@@ -114,6 +118,7 @@ Create a database connection as a function
 ```
 
 ### [Function expressions](https://docs.datomic.com/on-prem/query.html#function-expressions)
+
 ```clojure
 ; the minutes of each John Lennon track
 ; quot converts track lengths from milliseconds to minutes
@@ -145,6 +150,7 @@ Create a database connection as a function
 ## Built-in expression functions and predicates [(more)](https://docs.datomic.com/on-prem/query.html#built-in-expressions)
 
 ### [get-else](https://docs.datomic.com/on-prem/query.html#get-else)
+
 ```clojure
 ; show "N/A" when the artist's startYear is not in the database
 (d/q '[:find ?artist-name ?year
@@ -156,6 +162,7 @@ Create a database connection as a function
 ```
 
 ### [get-some](https://docs.datomic.com/on-prem/query.html#get-some)
+
 ```clojure
 ; find :country/name for entity and then falls back to :artist/name
 (d/q '[:find [?e ?attr ?name]
@@ -166,6 +173,7 @@ Create a database connection as a function
 ```
 
 ### [missing](https://docs.datomic.com/on-prem/query.html#missing)
+
 ```clojure
 ; all artists whose start year has not been recorded
 (d/q '[:find ?name
@@ -180,6 +188,7 @@ Create a database connection as a function
 ```
 
 ### [tx-ids](https://docs.datomic.com/on-prem/query.html#tx-ids)
+
 ```clojure
 ; all transactions from time t 1000 through 1050
 (def log (d/log conn))
@@ -191,6 +200,7 @@ Create a database connection as a function
 ```
 
 ### [tx-data](https://docs.datomic.com/on-prem/query.html#tx-data)
+
 ```clojure
 ; find entities referenced by the transaction id
 (def log (d/log conn))
@@ -204,6 +214,7 @@ Create a database connection as a function
 ## Calling Java methods [(more)](https://docs.datomic.com/on-prem/query.html#calling-java)
 
 ### [Static methods](https://docs.datomic.com/on-prem/query.html#calling-static-methods)
+
 ```clojure
 ; calls System.getProperties, binding property names to ?k and property values to ?v
 (defn get-props [] (System/getProperties))
@@ -218,6 +229,7 @@ Create a database connection as a function
 ```
 
 ### [Instance methods](https://docs.datomic.com/on-prem/query.html#calling-instance-methods)
+
 ```clojure
 ; calls System.getProperties, binding property names to ?k and property values to ?v
 (d/q '[:find ?k ?v
@@ -232,6 +244,7 @@ Create a database connection as a function
 ```
 
 ## Clojure functions [(more)](https://docs.datomic.com/on-prem/query.html#calling-clojure)
+
 ```clojure
 ; extract the first 5 letters of each word
 (d/q '[:find [?prefix ...]
@@ -248,6 +261,7 @@ Create a database connection as a function
 ```
 
 ## Aggregates [(more)](https://docs.datomic.com/on-prem/query.html#aggregates)
+
 ```clojure
 ; the number of heads possessed by a set of mythological monsters
 (d/q '[:find (sum ?heads) .
@@ -260,6 +274,7 @@ Create a database connection as a function
 ```
 
 ### [Aggregates returning a single value](https://docs.datomic.com/on-prem/query.html#aggregates-returning-a-single-value)
+
 ```clojure
 (min ?xs)
 (max ?xs)
@@ -314,6 +329,7 @@ Create a database connection as a function
 ```
 
 ### [Aggregates returning collections](https://docs.datomic.com/on-prem/query.html#aggregates-returning-a-single-value)
+
 ```clojure
 (distinct ?xs)
 (min n ?xs)
@@ -356,6 +372,7 @@ Create a database connection as a function
 ```
 
 ## Custom aggregates [(more)](https://docs.datomic.com/on-prem/query.html#custom-aggregates)
+
 ```clojure
 ; What is the most common release medium length, in tracks?
 (defn mode

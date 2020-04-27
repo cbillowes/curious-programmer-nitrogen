@@ -1,12 +1,12 @@
 ---
 title: "Datomic Cheat Sheet Series - Getting Started"
 ogImage: images/og/2018-09-06-datomic.png
-date:   2018-09-06 06:00:00 +0200
+date: 2018-09-06 06:00:00 +0200
 tags:
-    - Technical
-    - Datomic
-    - Database
-    - Cheat sheet
+  - Technical
+  - Datomic
+  - Database
+  - Cheat sheet
 ---
 
 <div id="accordion"></div>
@@ -80,7 +80,7 @@ lein repl
 # Exit with CTRL + D
 ```
 
-*Use <b>pro</b> to access the <b>dev</b> protocol.*
+_Use <b>pro</b> to access the <b>dev</b> protocol._
 
 ## Create a database [(more)](https://docs.datomic.com/on-prem/dev-setup.html#create-db)
 
@@ -104,6 +104,7 @@ lein repl
 ```
 
 ## Restore a database [(more)](https://docs.datomic.com/on-prem/backup.html)
+
 Grab a copy of the [mbrainz 1968-1973 sample set](https://github.com/Datomic/mbrainz-sample#getting-the-data) to follow along with some of the examples throughout the cheat sheet series.
 
 ```bash
@@ -155,34 +156,35 @@ bin/datomic restore-db file:///path/to/backup/mbrainz-1968-1973 datomic:dev://lo
 
 ### Attributes
 
-| Attribute | Description |
-|-----------|-------------|
-| :db/ident | Unique namespaced keyword **&lt;namespace&gt;/&lt;name&gt;** |
-| :db/valueType | Expressed keyword type value |
+| Attribute     | Description                                                  |
+| ------------- | ------------------------------------------------------------ |
+| :db/ident     | Unique namespaced keyword **&lt;namespace&gt;/&lt;name&gt;** |
+| :db/valueType | Expressed keyword type value                                 |
 
 ### Type values
 
-| Value type | Description |
-|------------|-------------|
+| Value type       | Description                                                                                                                                                         |
+| ---------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | :db.type/keyword | Value type for keywords. Keywords are used as names, and are interned for efficiency. Keywords map to the native interned-name type in languages that support them. |
-| :db.type/string | Value type for strings. |
-| :db.type/boolean | Boolean value type. |
-| :db.type/long | Fixed integer value type. Same semantics as a Java long: 64 bits wide, two's complement binary representation. |
-| :db.type/bigint | Value type for arbitrary precision integers. Maps to java.math.BigInteger on Java platforms. |
-| :db.type/float | Floating point value type. Same semantics as a Java float: single-precision 32-bit IEEE 754 floating point. |
-| :db.type/double | Floating point value type. Same semantics as a Java double: double-precision 64-bit IEEE 754 floating point. |
-| :db.type/bigdec | Value type for arbitrary precision floating point numbers. Maps to *java.math.BigDecimal* on Java platforms. |
-| :db.type/ref | Value type for references. All references from one entity to another are through attributes with this value type. |
-| :db.type/instant | Value type for instants in time. Stored internally as a number of milliseconds since midnight, January 1, 1970 UTC. Maps to java.util.Date on Java platforms. |
-| :db.type/uuid | Value type for UUIDs. Maps to java.util.UUID on Java platforms. |
-| :db.type/uri | Value type for URIs. Maps to java.net.URI on Java platforms. |
-| :db.type/bytes | Value type for small binary data. Maps to byte array on Java platforms. See [limitations](https://docs.datomic.com/on-prem/schema.html#bytes-limitations). |
+| :db.type/string  | Value type for strings.                                                                                                                                             |
+| :db.type/boolean | Boolean value type.                                                                                                                                                 |
+| :db.type/long    | Fixed integer value type. Same semantics as a Java long: 64 bits wide, two's complement binary representation.                                                      |
+| :db.type/bigint  | Value type for arbitrary precision integers. Maps to java.math.BigInteger on Java platforms.                                                                        |
+| :db.type/float   | Floating point value type. Same semantics as a Java float: single-precision 32-bit IEEE 754 floating point.                                                         |
+| :db.type/double  | Floating point value type. Same semantics as a Java double: double-precision 64-bit IEEE 754 floating point.                                                        |
+| :db.type/bigdec  | Value type for arbitrary precision floating point numbers. Maps to _java.math.BigDecimal_ on Java platforms.                                                        |
+| :db.type/ref     | Value type for references. All references from one entity to another are through attributes with this value type.                                                   |
+| :db.type/instant | Value type for instants in time. Stored internally as a number of milliseconds since midnight, January 1, 1970 UTC. Maps to java.util.Date on Java platforms.       |
+| :db.type/uuid    | Value type for UUIDs. Maps to java.util.UUID on Java platforms.                                                                                                     |
+| :db.type/uri     | Value type for URIs. Maps to java.net.URI on Java platforms.                                                                                                        |
+| :db.type/bytes   | Value type for small binary data. Maps to byte array on Java platforms. See [limitations](https://docs.datomic.com/on-prem/schema.html#bytes-limitations).          |
 
 ### Cardinality
+
 Specifies whether an attribute associates a single value or set of values with an entity.
 
-* :db.cardinality/one
-* :db.cardinality/many
+- :db.cardinality/one
+- :db.cardinality/many
 
 ## Adding data [(more)](https://docs.datomic.com/on-prem/getting-started/transact-data.html)
 

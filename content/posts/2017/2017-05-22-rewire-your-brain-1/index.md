@@ -2,10 +2,10 @@
 title: "Rewire your brain (Part 1) - Introduction"
 slug: "rewire-your-brain-1"
 cover: "https://picsum.photos/1600/800/?image=883"
-date:   2017-05-22 20:03:54 +0200
+date: 2017-05-22 20:03:54 +0200
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > John Medina said, "what you do and learn in life physically changes what your
@@ -58,11 +58,11 @@ the ideas behind these techniques and models.
 I have a deep personal interest in this topic as I desperately want to rewire
 my brain for a healthier approach to life. I do hope you benefit from this too.
 
-* * *
+---
 
 ## References
 
--   [After watching this, your brain will not be the same](https://www.youtube.com/watch?v=LNHBMFCzznE),
-    Lara Boyd at TEDxVancouver
--   [5 Ways To Rewire Your Brain For Meaningful Life Changes](https://www.mindbodygreen.com/0-11762/5-ways-to-rewire-your-brain-for-meaningful-life-changes.html),
-    MindBodyGreen, Dr. Hilary Stokes
+- [After watching this, your brain will not be the same](https://www.youtube.com/watch?v=LNHBMFCzznE),
+  Lara Boyd at TEDxVancouver
+- [5 Ways To Rewire Your Brain For Meaningful Life Changes](https://www.mindbodygreen.com/0-11762/5-ways-to-rewire-your-brain-for-meaningful-life-changes.html),
+  MindBodyGreen, Dr. Hilary Stokes

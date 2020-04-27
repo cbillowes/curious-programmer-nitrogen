@@ -1,10 +1,10 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Moment from 'react-moment'
-import Lang from '../../gatsby-lang'
-import '../styles/metadata.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import Moment from "react-moment"
+import Lang from "../../gatsby-lang"
+import "../styles/metadata.scss"
 
-const moment = require('moment')
+const moment = require("moment")
 const metadata = Lang.posts.metadata
 
 function renderDate(date) {
@@ -14,10 +14,7 @@ function renderDate(date) {
   const format = metadata.date.format
   return (
     <>
-      <Moment
-        format={format}>
-        {then}
-      </Moment>
+      <Moment format={format}>{then}</Moment>
     </>
   )
 }
@@ -27,14 +24,13 @@ function PostMetadata({ date, author, ttr }) {
   return (
     <>
       <div className="metadata">
-        {metadata.date.prefix}{` `}
-        {renderDate(date)}{` `}
-        <span>
-          {metadata.author(author)}
-        </span>{` `}
-        <span>
-          {metadata.ttr(ttr)}
-        </span>
+        {metadata.date.prefix}
+        {` `}
+        {renderDate(date)}
+        {` `}
+        <span>{metadata.author(author)}</span>
+        {` `}
+        <span>{metadata.ttr(ttr)}</span>
       </div>
     </>
   )
@@ -47,7 +43,6 @@ PostMetadata.propTypes = {
 }
 
 export default PostMetadata
-
 
 //TODO: revise locale (get rid of Lang - env instead?)
 //TODO: don't show date when invalid - is it possible?

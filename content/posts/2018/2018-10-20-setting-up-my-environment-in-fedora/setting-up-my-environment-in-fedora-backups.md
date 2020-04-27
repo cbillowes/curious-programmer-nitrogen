@@ -1,11 +1,11 @@
 ---
 title: "Setting up my environment in Fedora - Creating backups"
 ogImage: images/og/2018-10-20-backups.png
-date:   2018-10-20 18:30:01 +0200
+date: 2018-10-20 18:30:01 +0200
 tags:
-    - Technical
-    - Linux
-    - Fedora
+  - Technical
+  - Linux
+  - Fedora
 ---
 
 I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
@@ -17,8 +17,8 @@ installation.
 Whatever isn't in git gets archived. This is mainly my home directory.
 I want it backed up to my VM at [CloudAfrica](https://www.cloudafrica.net/)
 and to my external HDD. If I have learned anything in this process it is that my SSH keys are
-the most vital piece of bits that I own and that I need one copy in a *safe* location.
-*Whatever safe means in this world.*
+the most vital piece of bits that I own and that I need one copy in a _safe_ location.
+_Whatever safe means in this world._
 
 ## Archive
 
@@ -26,11 +26,11 @@ the most vital piece of bits that I own and that I need one copy in a *safe* loc
 tar cpzvf <archive>.tar.gz /home/<username>
 ```
 
-* -c, --create
-* -p, --preserve-permissions, --same-permissions
-* -z, --gzip, --gunzip, --ungzip
-* -v, --verbose
-* -f, --file=ARCHIVE
+- -c, --create
+- -p, --preserve-permissions, --same-permissions
+- -z, --gzip, --gunzip, --ungzip
+- -v, --verbose
+- -f, --file=ARCHIVE
 
 ## Copy to server
 
@@ -38,13 +38,13 @@ tar cpzvf <archive>.tar.gz /home/<username>
 rsync -avzh <username>@<host>:/path/to/copy/to/<archive>.tar.gz /path/to/copy/from/<archive>.tar.gz
 ```
 
-* -a, --archive
-* -v, --verbose
-* -z, --compress
-* -h, --human-readable
+- -a, --archive
+- -v, --verbose
+- -z, --compress
+- -h, --human-readable
 
-*I had a few permissions hiccups trying to tar my home directory so I took extra
-[steps](/blog/setting-up-my-environment-in-fedora) to tackle these problems.*
+_I had a few permissions hiccups trying to tar my home directory so I took extra
+[steps](/blog/setting-up-my-environment-in-fedora) to tackle these problems._
 
 ## Remote Git Repository
 
@@ -84,15 +84,15 @@ git remote add origin git@<host>:/srv/git/project.git
 git push origin master
 ```
 
-*If you have problems pushing, check that the directory permissions are not assigned to root `ls -lah`.
-Assign the files and folders to git using `sudo chown git *`*
+_If you have problems pushing, check that the directory permissions are not assigned to root `ls -lah`.
+Assign the files and folders to git using `sudo chown git _`\*
 
 ## Global save-to-git script
 
 Let's take a practical example: I want to store my [Gnote](https://wiki.gnome.org/Apps/Gnote) notes to my remote repository.
 
 1. Create a bash script `save-gnote` and add it to git. Make it add all
-unstaged files in the gnote directory and commit them using a timestamp in the commit message then push to origin.
+   unstaged files in the gnote directory and commit them using a timestamp in the commit message then push to origin.
 
 ```bash
 #!/bin/bash

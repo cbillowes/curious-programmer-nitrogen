@@ -1,11 +1,11 @@
 ---
 title: "What it means to be an expert"
 cover: "https://picsum.photos/1600/800/?image=26"
-date:   2016-06-22 21:10:43 +0200
+date: 2016-06-22 21:10:43 +0200
 tags:
-    - Mindset
-    - Comfort Zone
-    - Personal Brand
+  - Mindset
+  - Comfort Zone
+  - Personal Brand
 ---
 
 > Accelerate your learning by sharing what you learn with others while you are

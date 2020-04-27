@@ -1,11 +1,11 @@
 ---
 title: " Manage expectations"
 cover: "https://picsum.photos/1600/800/?image=1062"
-date:   2016-05-02 19:20:00 +0200
+date: 2016-05-02 19:20:00 +0200
 category: "tech"
 tags:
-    - Relationships
-    - Communication
+  - Relationships
+  - Communication
 ---
 
 > Do you keep business informed? Business won't know when things are not working
@@ -66,13 +66,13 @@ Interruptions don't disappear once you put steps into place. You need to "untrai
 what you have allowed in the past. You need to be strict with yourself and those
 around you.
 
--   Lean heavily on your scrum master for guidance and assistance.
--   Be mindful of emergencies and act accordingly.
--   If you are interrupted, communicate your expectations with that person.
-    If the team is at fault and you can't deal with it immediately,
-    bring it up directly after the next standup.
--   If it really gets out of hand, let your product owner know so that business
-    expectations can be managed and you can get more guidance.
+- Lean heavily on your scrum master for guidance and assistance.
+- Be mindful of emergencies and act accordingly.
+- If you are interrupted, communicate your expectations with that person.
+  If the team is at fault and you can't deal with it immediately,
+  bring it up directly after the next standup.
+- If it really gets out of hand, let your product owner know so that business
+  expectations can be managed and you can get more guidance.
 
 > Be aware that if you whine about interruptions without taking action, it could
 > look like you are making excuses.
@@ -105,10 +105,10 @@ Trying to fix everything in production _(especially if you are new to a product)
 could waste valuable time and increase stress. You need to understand the business value
 attached to it. Say you start fixing it only to find out that:
 
--   The product or feature is obsolete.
--   You should be working on something that has a bigger impact on customers or business.
--   There are more pressing issues that need immediate attention.
--   Another team is already working on it.
+- The product or feature is obsolete.
+- You should be working on something that has a bigger impact on customers or business.
+- There are more pressing issues that need immediate attention.
+- Another team is already working on it.
 
 You definitely need guidance from business.
 

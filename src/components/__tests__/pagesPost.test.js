@@ -1,28 +1,23 @@
-import React from 'react'
-import PostPage from '../pages/post'
-import { getSnapshot } from './_helpers'
+import React from "react"
+import PostPage from "../pages/post"
+import { getSnapshot } from "./_helpers"
 
 describe(`Post page`, () => {
   it(`should render`, () => {
     const post = {
-      "html": "<p>This is a post.</p>",
-      "excerpt": "This is an excerpt.",
-      "timeToRead": 1,
-      "fields": {
-        "number": 102,
-        "slug": "/blog/advanced-git-commands",
-        "date": "2019-09-11 02:00:00 +0200"
+      html: "<p>This is a post.</p>",
+      excerpt: "This is an excerpt.",
+      timeToRead: 1,
+      fields: {
+        number: 102,
+        slug: "/blog/advanced-git-commands",
+        date: "2019-09-11 02:00:00 +0200",
       },
-      "frontmatter": {
-        "title": "Advanced Git commands",
-        "tags": [
-          "Technical",
-          "Commands",
-          "Git",
-          "Advanced"
-        ],
-        "author": "Clarice Bouwer",
-      }
+      frontmatter: {
+        title: "Advanced Git commands",
+        tags: ["Technical", "Commands", "Git", "Advanced"],
+        author: "Clarice Bouwer",
+      },
     }
     const component = (
       <PostPage

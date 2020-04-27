@@ -1,11 +1,11 @@
 ---
 title: "Time is precious"
 cover: "https://picsum.photos/1600/800/?image=1077"
-date:   2016-05-11 23:16:23 +0200
+date: 2016-05-11 23:16:23 +0200
 category: "tech"
 tags:
-    - Productivity
-    - Time Management
+  - Productivity
+  - Time Management
 ---
 
 > When last did you just stop to smell a flower? Or take a peaceful walk

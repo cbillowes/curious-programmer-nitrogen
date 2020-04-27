@@ -2,10 +2,10 @@
 title: Rewire your brain (Part 2) - Activate neuro pathways
 slug: "rewire-your-brain-2"
 cover: "https://picsum.photos/1600/800/?image=881"
-date:   2017-05-25 20:03:54 +0200
+date: 2017-05-25 20:03:54 +0200
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > Dr. Hilary Stokes says that we have trillions of brain cells, resulting in
@@ -29,7 +29,7 @@ It's about activating neuro pathways to create new neural networks in the brain.
 My article is a summary of the original for documentation purposes and adaptation
 of my understanding of the content as best I can.
 
-* * *
+---
 
 ## Activate pathways
 
@@ -42,9 +42,9 @@ in order to create new neural networks in the brain.
 You need to believe that it is actually possible to change your behavior
 in a certain way. If you don't believe it is possible, you cannot change.
 
--   What are your beliefs regarding the particular behavior?
--   Identify the beliefs that make it possible to change your behavior.
--   Make these beliefs your intention.
+- What are your beliefs regarding the particular behavior?
+- Identify the beliefs that make it possible to change your behavior.
+- Make these beliefs your intention.
 
 Example: When someone is questioning Jane, she gets defensive because she
 feels interrogated and makes her feel threatened. Those are her beliefs.
@@ -60,9 +60,9 @@ the next time she is questioned but she must believe it.
 Neutral emotions don't have enough power to induce change. If you are feeling
 a strong enough emotion, use it as fuel to change your behavior.
 
--   What emotions do you feel that drive the need to change your behavior?
--   Why is this meaningful to you?
--   Spend time with the emotion while you focus on your intention.
+- What emotions do you feel that drive the need to change your behavior?
+- Why is this meaningful to you?
+- Spend time with the emotion while you focus on your intention.
 
 Example: Jane feels embarrassed by her defensive reaction. She gets angry,
 lashes out which only results in negative responses back at her.
@@ -79,8 +79,8 @@ Your brain is awesome but filled with trickery. Imagination can become reality.
 You can use this to your advantage to train your brain into new habits by
 mentally rehearsing them. This strengthens the ability to form new habits.
 
--   What imagery aligns with changing your behavior?
--   Visualize them daily
+- What imagery aligns with changing your behavior?
+- Visualize them daily
 
 Example: Jane could imagine being questioned by a colleague. She could imagine
 different types of questioning styles specifically the ones that make her
@@ -106,8 +106,8 @@ needs to do to get it right.
 You need to practice your new habit daily or you will fall back to your old
 ways.
 
--   Do this consciously (mindfully) and daily
--   Practice thinking, feeling, visualizing and acting in alignment
+- Do this consciously (mindfully) and daily
+- Practice thinking, feeling, visualizing and acting in alignment
 
 Example: Jane needs to be fully present in the moment of the conversation.
 She needs to be aware of her body language, posture, vocabulary and tone.
@@ -117,7 +117,7 @@ triggers that induce her rage.
 Through activating the different pathways and by practicing her intent
 she could succeed at breaking away from this behavior she chooses to change.
 
-* * *
+---
 
 Dr. Hilary Stokes continues to say that the key is to activate as many of these
 pathways as possible given they work synergistically.
@@ -139,9 +139,9 @@ and activate my own pathways.
 4.  What must I actually do to integrate this change?
 5.  How can I fully believe in this change and repeatedly practice it?
 
-* * *
+---
 
 ## References
 
--   [5 Ways To Rewire Your Brain For Meaningful Life Changes](https://www.mindbodygreen.com/0-11762/5-ways-to-rewire-your-brain-for-meaningful-life-changes.html),
-    MindBodyGreen, Dr. Hilary Stokes
+- [5 Ways To Rewire Your Brain For Meaningful Life Changes](https://www.mindbodygreen.com/0-11762/5-ways-to-rewire-your-brain-for-meaningful-life-changes.html),
+  MindBodyGreen, Dr. Hilary Stokes

@@ -1,10 +1,10 @@
 ---
-title:  "The imposter within"
+title: "The imposter within"
 cover: "https://picsum.photos/1600/800/?image=680"
-date:   2016-11-13 11:23:10 +0200
+date: 2016-11-13 11:23:10 +0200
 tags:
-    - Mindset
-    - Comfort Zone
+  - Mindset
+  - Comfort Zone
 ---
 
 > “Did I do anything wrong today,” he said, “or has the world always been like
@@ -13,20 +13,20 @@ tags:
 
 Just over a month ago I:
 
--   started doubting myself;
--   felt like I wasn't adding value or achieving much;
--   felt uncertain of my skills, the work I was doing and my career;
--   was comparing myself to others which made me feel inadequate;
--   found it difficult to concentrate and focus; and
--   felt like a hypocrite.
+- started doubting myself;
+- felt like I wasn't adding value or achieving much;
+- felt uncertain of my skills, the work I was doing and my career;
+- was comparing myself to others which made me feel inadequate;
+- found it difficult to concentrate and focus; and
+- felt like a hypocrite.
 
 This fraudulent feeling led me to neglecting simple things like contributing to
 my blog. Sadly, this is not the first time this has happened to me. My inner
 imposter was once again "shining" and I was left feeling inadequate.
 
 > He felt that his whole life was some kind of dream and he sometimes
->  wondered whose it was and whether they were enjoying it.
->  ― Douglas Adams, The Hitchhiker's Guide to the Galaxy
+> wondered whose it was and whether they were enjoying it.
+> ― Douglas Adams, The Hitchhiker's Guide to the Galaxy
 
 Imposter syndrome <sup id="footnote-1">[1](#footnote-1-ref)</sup> is getting
 a lot of attention within our community probably because research
@@ -72,15 +72,15 @@ are just better than others for me.
 There are many techniques <sup id="footnote-3">[3](#footnote-3-ref)</sup> to aid
 those suffering with self-doubt such as:
 
--   Remember past successes and know that you had a role contributing to it.
--   Talk to your peers about it. Chances are they are feeling the same.
--   Keep a journal. Write down the good and bad and try to find a pattern.
--   Don't beat yourself up.
--   Don't compare yourself to others. It's unfair on yourself as you may have
-    different focus areas.
--   Land an interview even if you're happy with your job. It can be a great
-    reminder that you're skilled and valuable.
--   Everyone struggles of something. Accept this, then punch fear in the face.
+- Remember past successes and know that you had a role contributing to it.
+- Talk to your peers about it. Chances are they are feeling the same.
+- Keep a journal. Write down the good and bad and try to find a pattern.
+- Don't beat yourself up.
+- Don't compare yourself to others. It's unfair on yourself as you may have
+  different focus areas.
+- Land an interview even if you're happy with your job. It can be a great
+  reminder that you're skilled and valuable.
+- Everyone struggles of something. Accept this, then punch fear in the face.
 
 ## Uncertainty
 
@@ -108,18 +108,18 @@ troubleshoot and fix things that are broken. We learn. We create.
 Some techniques <sup id="footnote-4">[4](#footnote-4-ref)</sup> we
 can use in the face of uncertainty include:
 
--   Know that certainty is an illusion. Things can change in a heartbeat.
--   Focus on what you can control.
--   Get confident about your coping and adapting skills.
--   Prepare for different possibilities.
--   Accept constant imperfection.
--   Don't get attached to everything. When it changes you tend to suffer.
--   Reconnect with the constants in your life.
--   Practice mindfulness.
--   Ask yourself these three questions:
-    -   What do I think is the worst possible realistic outcome of the situation?
-    -   How will I feel about it?
-    -   What will I do about it?
+- Know that certainty is an illusion. Things can change in a heartbeat.
+- Focus on what you can control.
+- Get confident about your coping and adapting skills.
+- Prepare for different possibilities.
+- Accept constant imperfection.
+- Don't get attached to everything. When it changes you tend to suffer.
+- Reconnect with the constants in your life.
+- Practice mindfulness.
+- Ask yourself these three questions:
+  - What do I think is the worst possible realistic outcome of the situation?
+  - How will I feel about it?
+  - What will I do about it?
 
 > We are water. We evaporate, we freeze, we fall, we cool, we crash in waves,
 > we ebb and flow, we soothe, swim and foam. A part of us looks the same to a
@@ -158,33 +158,33 @@ Let's give them a shout out based on my question "Anyone suffering from
 imposter syndrome lately? I'm writing a post. If you have any advice you wish
 to share let me know."
 
--   Far too often. I’m getting better at overcoming it, though. I wrote a
-    [post](http://codingwithempathy.com/2016/09/20/embrace-your-inner-imposter/) on
-    the topic recently. ― [Pavneet Singh Saund](https://twitter.com/pavsaund/status/795741588144214016)
--   Imposter syndrome isn't just for "actual" experts. It's for everyone in-between
-    who has their own little area of expertise ― [James Mallison](https://twitter.com/J7mbo/status/795940602357673986)
--   All the time ― [Joshua Lewis](https://twitter.com/joshilewis/status/795751736447270913)
--   I think most of us suffer from it ― [Christoff Truter](https://twitter.com/cstruter/status/795899354926223360)
--   Yup, and also found out what a negative impact it has on the rest of my team.
-    Working on keeping it suppressed, as it should be. ― [Johan Meiring](https://twitter.com/johanmeiring/status/795844400798633984)
--   Go land an interview, even if you're happy with your job. It can be a great reminder
-    that you're skilled & valuable ― [Chris McClellan](https://twitter.com/Rubberduck203/status/795798471727087619)
+- Far too often. I’m getting better at overcoming it, though. I wrote a
+  [post](http://codingwithempathy.com/2016/09/20/embrace-your-inner-imposter/) on
+  the topic recently. ― [Pavneet Singh Saund](https://twitter.com/pavsaund/status/795741588144214016)
+- Imposter syndrome isn't just for "actual" experts. It's for everyone in-between
+  who has their own little area of expertise ― [James Mallison](https://twitter.com/J7mbo/status/795940602357673986)
+- All the time ― [Joshua Lewis](https://twitter.com/joshilewis/status/795751736447270913)
+- I think most of us suffer from it ― [Christoff Truter](https://twitter.com/cstruter/status/795899354926223360)
+- Yup, and also found out what a negative impact it has on the rest of my team.
+  Working on keeping it suppressed, as it should be. ― [Johan Meiring](https://twitter.com/johanmeiring/status/795844400798633984)
+- Go land an interview, even if you're happy with your job. It can be a great reminder
+  that you're skilled & valuable ― [Chris McClellan](https://twitter.com/Rubberduck203/status/795798471727087619)
 
-* * *
+---
 
 ## References
 
 1.  <a id="footnote-1-ref"></a>**About Imposter Syndrome** ([Navigate back](#footnote-1))
 
-    -   [Imposter Syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome) _Wikipedia_
-    -   [The Impostor Syndrome](https://www.youtube.com/watch?v=vLpqq0ljawE)
-        _GOTO 2016 presentation_, Gitte Klitgaard
-    -   [Imposter Syndrome: Overcoming Self-Doubt in Success](https://www.youtube.com/watch?v=Bcth23hSRC0)
-        _PrairieCode() 2016 presentation_, Heather Downing
-    -   [21 Proven Ways To Overcome Impostor Syndrome](http://startupbros.com/21-ways-overcome-impostor-syndrome/)
-        _StartupBros_, Kyle Eschenroeder (2016)
-    -   [High-achievers suffering from 'Imposter Syndrome'](http://www.news.com.au/finance/highachievers-suffering-from-imposter-syndrome/story-e6frfm1i-1226779707766)
-        _News.com.au_ (2013)
+    - [Imposter Syndrome](https://en.wikipedia.org/wiki/Impostor_syndrome) _Wikipedia_
+    - [The Impostor Syndrome](https://www.youtube.com/watch?v=vLpqq0ljawE)
+      _GOTO 2016 presentation_, Gitte Klitgaard
+    - [Imposter Syndrome: Overcoming Self-Doubt in Success](https://www.youtube.com/watch?v=Bcth23hSRC0)
+      _PrairieCode() 2016 presentation_, Heather Downing
+    - [21 Proven Ways To Overcome Impostor Syndrome](http://startupbros.com/21-ways-overcome-impostor-syndrome/)
+      _StartupBros_, Kyle Eschenroeder (2016)
+    - [High-achievers suffering from 'Imposter Syndrome'](http://www.news.com.au/finance/highachievers-suffering-from-imposter-syndrome/story-e6frfm1i-1226779707766)
+      _News.com.au_ (2013)
 
 2.  <a id="footnote-2-ref"></a>**Research** ([Navigate back](#footnote-2))<br/>
     Clark, M.; Vardeman, K.; Barba, S. (2014).
@@ -194,26 +194,26 @@ to share let me know."
 
 3.  <a id="footnote-3-ref"></a>**Techniques to deal with self-doubt** ([Navigate back](#footnote-3))<br/>
 
-    -   [10 Powerful Ways to Overcome Self-Doubt So You Can Move Forward in Life](http://www.positivityblog.com/index.php/2015/12/16/overcome-self-doubt/)
-        _The Positivity Blog_, Henrik Edberg
-    -   [Tweet](https://twitter.com/Rubberduck203/status/795798471727087619)
-        _Twitter_, Chris McClellan (2016)<br/>
-        Cited "Land an interview even if you're happy with your job. It can be a great
-          reminder that you're skilled and valuable."
-    -   [Embrace your inner Imposter](http://codingwithempathy.com/2016/09/20/embrace-your-inner-imposter/)
-        _Coding with Empathy_, Pavneet Singh Saund (2016)<br/>
-        Cited "Everyone struggles of something. Accept this, then punch fear in the face."
+    - [10 Powerful Ways to Overcome Self-Doubt So You Can Move Forward in Life](http://www.positivityblog.com/index.php/2015/12/16/overcome-self-doubt/)
+      _The Positivity Blog_, Henrik Edberg
+    - [Tweet](https://twitter.com/Rubberduck203/status/795798471727087619)
+      _Twitter_, Chris McClellan (2016)<br/>
+      Cited "Land an interview even if you're happy with your job. It can be a great
+      reminder that you're skilled and valuable."
+    - [Embrace your inner Imposter](http://codingwithempathy.com/2016/09/20/embrace-your-inner-imposter/)
+      _Coding with Empathy_, Pavneet Singh Saund (2016)<br/>
+      Cited "Everyone struggles of something. Accept this, then punch fear in the face."
 
 4.  <a id="footnote-4-ref"></a>**Techniques to deal with uncertainty** ([Navigate back](#footnote-4))<br/>
-    -   [Coping with Unknown Outcomes](/blog/coping-with-unknown-outcomes/)
-        _Corporate Programmer_, Clarice Bouwer (2016)
-    -   [5 Ways to Let Go and Embrace an Uncertain Future](http://tinybuddha.com/blog/5-ways-to-let-go-and-embrace-an-uncertain-future/)
-        _Tiny Buddah_, Lori Deschene (2009)
-    -   [7 Ways to Deal with Uncertainty So You Can Be Happier and Less Anxious](http://tinybuddha.com/blog/7-ways-to-deal-with-uncertainty/)
-        _Tiny Buddah_, Lori Deschene (2010)
-    -   [Comment on 5 Ways to Let Go and Embrace an Uncertain Future](https://disqus.com/by/drb74/) _Disqus user
-        drb74_<br/>
-        Cited "We are water. We evaporate, we freeze, we fall, we cool, we
-        crash in waves, we ebb and flow, we soothe, swim and foam. A part of us
-        looks the same to a mind that wants to condense and categorize, but in
-        the end, we are constantly recreated anew." (2009)
+    - [Coping with Unknown Outcomes](/blog/coping-with-unknown-outcomes/)
+      _Corporate Programmer_, Clarice Bouwer (2016)
+    - [5 Ways to Let Go and Embrace an Uncertain Future](http://tinybuddha.com/blog/5-ways-to-let-go-and-embrace-an-uncertain-future/)
+      _Tiny Buddah_, Lori Deschene (2009)
+    - [7 Ways to Deal with Uncertainty So You Can Be Happier and Less Anxious](http://tinybuddha.com/blog/7-ways-to-deal-with-uncertainty/)
+      _Tiny Buddah_, Lori Deschene (2010)
+    - [Comment on 5 Ways to Let Go and Embrace an Uncertain Future](https://disqus.com/by/drb74/) _Disqus user
+      drb74_<br/>
+      Cited "We are water. We evaporate, we freeze, we fall, we cool, we
+      crash in waves, we ebb and flow, we soothe, swim and foam. A part of us
+      looks the same to a mind that wants to condense and categorize, but in
+      the end, we are constantly recreated anew." (2009)

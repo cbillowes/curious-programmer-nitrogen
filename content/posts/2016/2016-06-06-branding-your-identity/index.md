@@ -1,10 +1,10 @@
 ---
-title:  "Branding your identity"
+title: "Branding your identity"
 cover: "https://picsum.photos/1600/800/?image=628"
-date:   2016-06-06 20:13:40 +0200
+date: 2016-06-06 20:13:40 +0200
 tags:
-    - Personal Brand
-    - Comfort Zone
+  - Personal Brand
+  - Comfort Zone
 ---
 
 > It's important to know that having an engaging community presence is far more
@@ -33,18 +33,18 @@ tried and failed time and time again.
 My attempts at blogging were so bad that in 10 years I had 4 blogs—that
 failed. In total I had about 20 posts.
 
--   I didn't stick to a schedule
--   Others were already writing about what I wanted to write about
--   Each post took long to write
--   My topics weren't focused so my posts were sort of random
--   I doubted myself too much
+- I didn't stick to a schedule
+- Others were already writing about what I wanted to write about
+- Each post took long to write
+- My topics weren't focused so my posts were sort of random
+- I doubted myself too much
 
 I declined opportunities to speak at events and conferences because:
 
--   I didn't feel qualified enough
--   I didn't know what to present or talk about
--   I didn't believe in myself
--   I have a phobia for public speaking
+- I didn't feel qualified enough
+- I didn't know what to present or talk about
+- I didn't believe in myself
+- I have a phobia for public speaking
 
 As I doubted myself so much, I'd panic during interviews and tests, and If I got
 the job, I'd have to build my reputation from the ground up as people didn't
@@ -68,11 +68,11 @@ journey with small steps I could take to gradually build my reputation.
 I officially started my journey in 2014 by attending meetups and engaging
 more with the community.
 
--   I'm now more active on [Twitter](https://twitter.com/cbillowes)
--   I'm writing an article for [A List Apart](http://alistapart.com)
--   I'm consistent on my blog
--   And I presented my first talk at
-    [Jozi-JUG](http://meetup.com/Jozi-JUG/events/229688441/) on 4 June 2016
+- I'm now more active on [Twitter](https://twitter.com/cbillowes)
+- I'm writing an article for [A List Apart](http://alistapart.com)
+- I'm consistent on my blog
+- And I presented my first talk at
+  [Jozi-JUG](http://meetup.com/Jozi-JUG/events/229688441/) on 4 June 2016
 
 Admittedly it's easier to get started if you have help. I started my blog by
 taking a [course](http://devcareerboost.com/blog-course/) from
@@ -144,12 +144,12 @@ expert and how living documentation was created then check out
 When you are comfortable with your chosen platform and you are ready to branch
 out, then try other platforms:
 
--   Create a blog
--   Appear on a podcast / video interview
--   Create your own videos or podcasts
--   Write an article for your favorite website
--   Create a tutorial
--   Speak at an event/meetup
+- Create a blog
+- Appear on a podcast / video interview
+- Create your own videos or podcasts
+- Write an article for your favorite website
+- Create a tutorial
+- Speak at an event/meetup
 
 ## My final thoughts
 
@@ -160,7 +160,7 @@ there.
 But software development isn't just about your technical skills, so take it
 one step at a time.
 
-* * *
+---
 
 Most of the content here formed part of my Ignite talk that I presented a
 Jozi-JUG on 4 June 2016. Although the slides are mainly images, you can still

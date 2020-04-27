@@ -1,53 +1,37 @@
-import React from 'react'
-import Anchor from './anchor'
-import License from './license'
-import '../styles/footer.scss'
+import React from "react"
+import Anchor from "./anchor"
+import License from "./license"
+import "../styles/footer.scss"
 
 const Intro = () => {
   return (
     <span>
       <strong>A curious place for a curious mind.</strong>
       {` `}
-      Copyright &copy; {new Date().getFullYear()}.
-      Built with
-      <Anchor
-        to="https://www.gatsbyjs.org"
-        className="underline-only"
-      >
+      Copyright &copy; {new Date().getFullYear()}. Built with
+      <Anchor to="https://www.gatsbyjs.org" className="underline-only">
         Gastby
       </Anchor>
       and other
-      <Anchor
-        to="/credits"
-        className="underline-only"
-      >
+      <Anchor to="/credits" className="underline-only">
         cool stuff
-      </Anchor>.
+      </Anchor>
+      .
     </span>
   )
 }
 
 const SocialIcon = ({ to, title, src }) => {
   return (
-    <Anchor
-      to={to}
-      title={title}
-      className="plain"
-    >
-      <img
-        className="icon"
-        src={src}
-        alt={title}
-      />
+    <Anchor to={to} title={title} className="plain">
+      <img className="icon" src={src} alt={title} />
     </Anchor>
   )
 }
 
 const Social = () => {
   return (
-    <div
-      className="social"
-    >
+    <div className="social">
       <SocialIcon
         to="https://www.linkedin.com/in/cbouwer"
         title="LinkedIn"

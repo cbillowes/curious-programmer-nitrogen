@@ -1,11 +1,11 @@
 ---
 title: "Clojure Buzzwords I am Learning"
 ogImage: images/og/2018-08-15-clojure-logo.png
-date:   2018-08-15 20:15:00 +0200
+date: 2018-08-15 20:15:00 +0200
 tags:
-    - Technical
-    - Comfort Zone
-    - Clojure
+  - Technical
+  - Comfort Zone
+  - Clojure
 ---
 
 <div id="accordion"></div>
@@ -22,9 +22,9 @@ I've migrated to Ubuntu after twenty years of using Windows so it is safe to say
 
 ## Leiningen (Build automation)
 
- [![CircleCI](https://circleci.com/gh/technomancy/leiningen.svg?style=svg)](https://circleci.com/gh/technomancy/leiningen) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Leiningen](https://leiningen.org/), pronounced (LINE-ing-en ['laɪnɪŋən], is a tool created by Phil Hagelberg. He wanted to simplify the complexities involved in creating a project with Apache Maven.
+[![CircleCI](https://circleci.com/gh/technomancy/leiningen.svg?style=svg)](https://circleci.com/gh/technomancy/leiningen) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Leiningen](https://leiningen.org/), pronounced (LINE-ing-en ['laɪnɪŋən], is a tool created by Phil Hagelberg. He wanted to simplify the complexities involved in creating a project with Apache Maven.
 
- **lein** was born as a Clojure build automation and dependency management tool that can accept input from the terminal.  You can create projects, fetch dependencies, run tests, create a REPL and do other cool [things](https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md).
+**lein** was born as a Clojure build automation and dependency management tool that can accept input from the terminal. You can create projects, fetch dependencies, run tests, create a REPL and do other cool [things](https://github.com/technomancy/leiningen/blob/stable/doc/TUTORIAL.md).
 
 ```bash
 lein new app awesome-app
@@ -35,21 +35,21 @@ lein repl
 
 On the front end, **lein** is used to replace JavaScript tooling such as:
 
-| Build step | Tools |
-|-|-|
-| **Project scaffolding** | Grunt, Slush, Yeoman |
-| **Build tools** | Webpack, Grunt, Gulp, Browserify |
-| **Package managers** | npm, yarn, bower |
+| Build step              | Tools                            |
+| ----------------------- | -------------------------------- |
+| **Project scaffolding** | Grunt, Slush, Yeoman             |
+| **Build tools**         | Webpack, Grunt, Gulp, Browserify |
+| **Package managers**    | npm, yarn, bower                 |
 
-*This table is adapted from [Why I chose ClojureScript over JavaScript](https://m.oursky.com/why-i-chose-clojure-over-javascript-24f045daab7e) by akiroz.*
+_This table is adapted from [Why I chose ClojureScript over JavaScript](https://m.oursky.com/why-i-chose-clojure-over-javascript-24f045daab7e) by akiroz._
 
 ## ClojureScript (Clojure to JavaScript)
 
-Clojure targets platforms like the JVM and .NET CLR. [ClojureScript](https://clojurescript.org/)  is just a Clojure (without Java API calls) compiler targeting JavaScript. The JavaScript is compiled in such a way that it can be optimized using the Google Closure compiler.
+Clojure targets platforms like the JVM and .NET CLR. [ClojureScript](https://clojurescript.org/) is just a Clojure (without Java API calls) compiler targeting JavaScript. The JavaScript is compiled in such a way that it can be optimized using the Google Closure compiler.
 
 ## Google Closure (JavaScript optimizer)
 
-JavaScript libraries can become bloated with dead code, comments and require dependency management. [Google Closure](https://developers.google.com/closure/)  compiles JavaScript code with an optimization algorithm creating compact and high-performance code.
+JavaScript libraries can become bloated with dead code, comments and require dependency management. [Google Closure](https://developers.google.com/closure/) compiles JavaScript code with an optimization algorithm creating compact and high-performance code.
 
 The compiler inspects variable references, checks syntax, types and warnings along with other common JavaScript idiosyncrasies. It then strips away dead code, rewrites what's left, minifies and packages a file that can be quickly downloaded and executed.
 
@@ -59,27 +59,27 @@ The compiler inspects variable references, checks syntax, types and warnings alo
 
 Datomic is a set of **datoms** which are atomic facts. They say if the relation between an entity, an attribute, a value, and a transaction has been added or retracted. A datom is expressed as a five-tuple:
 
-* entity id (E)
-* attribute (A)
-* value (V)
-* transaction id (Tx)
-* addition / retraction boolean (Op)
+- entity id (E)
+- attribute (A)
+- value (V)
+- transaction id (Tx)
+- addition / retraction boolean (Op)
 
-| E (ntity) | A(ttribute) | V(alue) | Tx | Op |
-|---|---|---|---|---|
-| 42 | :user/first-name | "Douglas" | 1234 | true |
-| 42 | :user/last-name | "Adams" | 1234 | true |
-| 42 | :user/favorite-color | :emerald | 1234 | false |
-| 42 | :user/favorite-color | :teal | 1235| false |
-| 42 | :user/favorite-color | :crimson | 1236 | true |
+| E (ntity) | A(ttribute)          | V(alue)   | Tx   | Op    |
+| --------- | -------------------- | --------- | ---- | ----- |
+| 42        | :user/first-name     | "Douglas" | 1234 | true  |
+| 42        | :user/last-name      | "Adams"   | 1234 | true  |
+| 42        | :user/favorite-color | :emerald  | 1234 | false |
+| 42        | :user/favorite-color | :teal     | 1235 | false |
+| 42        | :user/favorite-color | :crimson  | 1236 | true  |
 
 That can translate to the following point-in-time view as only a three-tuple with Tx and Op omitted:
 
-| E (ntity) | A(ttribute) | V(alue)
-|---|---|---|
-| 42 | :user/first-name | "Douglas" |
-| 42 | :user/last-name | "Adams" |
-| 42 | :user/favorite-color | :crimson |
+| E (ntity) | A(ttribute)          | V(alue)   |
+| --------- | -------------------- | --------- |
+| 42        | :user/first-name     | "Douglas" |
+| 42        | :user/last-name      | "Adams"   |
+| 42        | :user/favorite-color | :crimson  |
 
 ```clojure
 {:db/id 42
@@ -115,7 +115,7 @@ It's a loop of what they refer to as dominoes. One domino triggers the next unti
 
 ## Figwheel (Hot reloader) [![](https://clojars.org/lein-figwheel/latest-version.svg)](https://clojars.org/lein-figwheel)
 
- [![CircleCI](https://circleci.com/gh/bhauman/lein-figwheel.svg?style=svg)](https://circleci.com/gh/bhauman/lein-figwheel) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Figwheel](https://github.com/bhauman/lein-figwheel), a **lein** plugin, is a ClojureScript auto builder/server which pushes changed files to the browser.
+[![CircleCI](https://circleci.com/gh/bhauman/lein-figwheel.svg?style=svg)](https://circleci.com/gh/bhauman/lein-figwheel) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Figwheel](https://github.com/bhauman/lein-figwheel), a **lein** plugin, is a ClojureScript auto builder/server which pushes changed files to the browser.
 
 Cutting some fruit, it says on load, it detects changes in the code, reloads the screen and keeps all the glorious state in the application at that time.
 
@@ -137,7 +137,9 @@ This imagined outdoor beauty can be digitized into Clojure vectors and maps writ
 ```
 
 ```css
-body{font-size:16px}
+body {
+  font-size: 16px;
+}
 ```
 
 ## Compojure (Server-side routing) [![](https://clojars.org/compojure/latest-version.svg)](https://clojars.org/compojure)
@@ -225,7 +227,7 @@ Here's an example implementation of an integration with Secretary:
 
 [![Build Status](https://travis-ci.org/r0man/inflections-clj.svg?branch=master)](https://travis-ci.org/r0man/inflections-clj) [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Inflections](https://github.com/r0man/inflections-clj) is a rails-like inflection library.
 
-**Inflection:** *A change in the form of a word (typically the ending) to express a grammatical function or attribute such as tense, mood, person, number, case, and gender.*
+**Inflection:** _A change in the form of a word (typically the ending) to express a grammatical function or attribute such as tense, mood, person, number, case, and gender._
 
 ```clojure
 (use 'inflections.core)
@@ -321,8 +323,8 @@ user> (clojure.contrib.humanize/duration 325100 {:number-format str})
 [![Build Status](https://travis-ci.org/scgilardi/slingshot.svg?branch=master)](https://travis-ci.org/scgilardi/slingshot)
 [![License](https://img.shields.io/badge/License-EPL%201.0-red.svg)](https://opensource.org/licenses/EPL-1.0) [Slingshot](https://github.com/scgilardi/slingshot) provides `try+` and `throw+` which is compatible with Java's native exception handling and a power-up to Clojure's native `try` and `throw` behavior.
 
-* `throw+` can throw any Java object, not just classes derived from `java.lang.Throwable`.
-* `catch` will catch Java objects thrown by `throw+`, map passed `ex-info` thrown by `throw`, `throw+` or any `Throwable` thrown by Clojure or Java's `throw`.
+- `throw+` can throw any Java object, not just classes derived from `java.lang.Throwable`.
+- `catch` will catch Java objects thrown by `throw+`, map passed `ex-info` thrown by `throw`, `throw+` or any `Throwable` thrown by Clojure or Java's `throw`.
 
 ```clojure
 (ns math.expression
@@ -398,7 +400,7 @@ I haven't used this library. By the looks of it, it compiles ClojureScript code 
 
 **Ring** [![](https://clojars.org/ring/latest-version.svg)](https://clojars.org/ring)
 
- [![Build Status](https://travis-ci.org/ring-clojure/ring.svg?branch=master)](https://travis-ci.org/ring-clojure/ring) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Ring](https://github.com/ring-clojure/ring) is a low-level interface and library for building web applications in the Clojure programming language.
+[![Build Status](https://travis-ci.org/ring-clojure/ring.svg?branch=master)](https://travis-ci.org/ring-clojure/ring) [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT) [Ring](https://github.com/ring-clojure/ring) is a low-level interface and library for building web applications in the Clojure programming language.
 
 This abstracted HTTP API allows web applications to be constructed of modular components. These components can be shared among applications, web servers and web frameworks.
 
@@ -415,39 +417,41 @@ This abstracted HTTP API allows web applications to be constructed of modular co
 ## Resources
 
 ### **Learn Clojure**
-* [Clojure for the Brave and True](https://www.braveclojure.com/foreword/) by [Daniel Higginbotham](https://twitter.com/nonrecursive) can be read online for free.
-* [clojuredocs.org](https://clojuredocs.org/) has documentation and examples contributed by the community.
-* [Clojure TV](https://www.youtube.com/channel/UCaLlzGqiPE2QRj6sSOawJRg) is a YouTube channel with Clojure talks and presentations. Other video gems are available in YouTube when searching for Clojure.
-* [The Re-frame Building Blocks Guide](https://purelyfunctional.tv/guide/re-frame-building-blocks/)
-* [Learn Reagent Free](https://www.jacekschae.com/learn-reagent-free?coupon=SHADOW)
+
+- [Clojure for the Brave and True](https://www.braveclojure.com/foreword/) by [Daniel Higginbotham](https://twitter.com/nonrecursive) can be read online for free.
+- [clojuredocs.org](https://clojuredocs.org/) has documentation and examples contributed by the community.
+- [Clojure TV](https://www.youtube.com/channel/UCaLlzGqiPE2QRj6sSOawJRg) is a YouTube channel with Clojure talks and presentations. Other video gems are available in YouTube when searching for Clojure.
+- [The Re-frame Building Blocks Guide](https://purelyfunctional.tv/guide/re-frame-building-blocks/)
+- [Learn Reagent Free](https://www.jacekschae.com/learn-reagent-free?coupon=SHADOW)
 
 ### **Interesting articles**
-* [A Noob's Walkthrough of a re-frame Application](http://www.multunus.com/blog/2016/02/noobs-walkthrough-re-frame-app/)
-* [Why I chose ClojureScript over JavaScript](https://m.oursky.com/why-i-chose-clojure-over-javascript-24f045daab7e)
-* [6 mistakes that Reacters do that re-framers avoid](https://purelyfunctional.tv/article/react-vs-re-frame/)
+
+- [A Noob's Walkthrough of a re-frame Application](http://www.multunus.com/blog/2016/02/noobs-walkthrough-re-frame-app/)
+- [Why I chose ClojureScript over JavaScript](https://m.oursky.com/why-i-chose-clojure-over-javascript-24f045daab7e)
+- [6 mistakes that Reacters do that re-framers avoid](https://purelyfunctional.tv/article/react-vs-re-frame/)
 
 ### **Referenced links**
 
-* [Leiningen](https://leiningen.org/)
-* [ClojureScript](https://clojurescript.org/)
-* [Google Closure](https://developers.google.com/closure/)
-* [Datomic](https://docs.datomic.com/cloud/index.html)
-* [Reagent](https://github.com/reagent-project/reagent)
-* [re-frame](https://github.com/Day8/re-frame)
-* [Figwheel](https://github.com/bhauman/lein-figwheel)
-* [Garden](https://github.com/noprompt/garden)
-* [Compojure](https://github.com/weavejester/compojure)
-* [Secretary](https://github.com/gf3/secretary)
-* [Pushy](https://github.com/kibu-australia/pushy)
-* [Bouncer](https://github.com/leonardoborges/bouncer)
-* [Inflections](https://github.com/r0man/inflections-clj)
-* [Humanize](https://github.com/trhura/clojure-humanize)
-* [URL](https://github.com/cemerick/url)
-* [Sente](https://github.com/ptaoussanis/sente)
-* [Slingshot](https://github.com/scgilardi/slingshot)
-* [Timbre](https://github.com/ptaoussanis/timbre)
-* [Shadow CLJS](https://github.com/thheller/shadow-cljs)
-* [DevCards](https://github.com/bhauman/devcards)
-* [Ring](https://github.com/ring-clojure/ring)
-* [re-frisk](https://github.com/flexsurfer/re-frisk)
-* [CIDER](http://docs.cider.mx/en/latest/)
+- [Leiningen](https://leiningen.org/)
+- [ClojureScript](https://clojurescript.org/)
+- [Google Closure](https://developers.google.com/closure/)
+- [Datomic](https://docs.datomic.com/cloud/index.html)
+- [Reagent](https://github.com/reagent-project/reagent)
+- [re-frame](https://github.com/Day8/re-frame)
+- [Figwheel](https://github.com/bhauman/lein-figwheel)
+- [Garden](https://github.com/noprompt/garden)
+- [Compojure](https://github.com/weavejester/compojure)
+- [Secretary](https://github.com/gf3/secretary)
+- [Pushy](https://github.com/kibu-australia/pushy)
+- [Bouncer](https://github.com/leonardoborges/bouncer)
+- [Inflections](https://github.com/r0man/inflections-clj)
+- [Humanize](https://github.com/trhura/clojure-humanize)
+- [URL](https://github.com/cemerick/url)
+- [Sente](https://github.com/ptaoussanis/sente)
+- [Slingshot](https://github.com/scgilardi/slingshot)
+- [Timbre](https://github.com/ptaoussanis/timbre)
+- [Shadow CLJS](https://github.com/thheller/shadow-cljs)
+- [DevCards](https://github.com/bhauman/devcards)
+- [Ring](https://github.com/ring-clojure/ring)
+- [re-frisk](https://github.com/flexsurfer/re-frisk)
+- [CIDER](http://docs.cider.mx/en/latest/)

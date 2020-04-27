@@ -1,6 +1,6 @@
-import React, { Component } from 'react'
-import PropTypes from 'prop-types'
-import '../styles/panel.scss'
+import React, { Component } from "react"
+import PropTypes from "prop-types"
+import "../styles/panel.scss"
 
 class Panel extends Component {
   constructor(props) {
@@ -12,7 +12,7 @@ class Panel extends Component {
   }
 
   onExpand() {
-    const current = this.state.clicked;
+    const current = this.state.clicked
     this.setState({
       clicked: !current,
     })
@@ -27,19 +27,14 @@ class Panel extends Component {
     if (!title || !children) return <></>
 
     return (
-      <div
-        key={title}
-        className="panel"
-      >
+      <div key={title} className="panel">
         <button
           className={this.titleClassName()}
-          onClick={this.onExpand.bind(this)}>
+          onClick={this.onExpand.bind(this)}
+        >
           {title}
         </button>
-        {this.state.clicked ?
-          <div className="body">{children}</div> :
-          <></>
-        }
+        {this.state.clicked ? <div className="body">{children}</div> : <></>}
       </div>
     )
   }

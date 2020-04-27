@@ -1,6 +1,6 @@
-import React from 'react'
-import PostNavigationTiny from '../postNavigationTiny'
-import { getSnapshot } from './_helpers'
+import React from "react"
+import PostNavigationTiny from "../postNavigationTiny"
+import { getSnapshot } from "./_helpers"
 
 describe(`Post navigation tiny`, () => {
   it(`should always render both posts`, () => {
@@ -12,12 +12,7 @@ describe(`Post navigation tiny`, () => {
       slug: `/next`,
       title: `Come to the dark side of the force.`,
     }
-    const component = (
-      <PostNavigationTiny
-        previous={previous}
-        next={next}
-      />
-    )
+    const component = <PostNavigationTiny previous={previous} next={next} />
     const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })

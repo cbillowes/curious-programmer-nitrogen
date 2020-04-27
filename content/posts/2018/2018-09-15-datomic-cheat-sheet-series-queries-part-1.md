@@ -1,17 +1,17 @@
 ---
 title: "Datomic Cheat Sheet Series - Queries (Part 1)"
 ogImage: images/og/2018-09-06-datomic.png
-date:   2018-09-15 06:00:00 +0200
+date: 2018-09-15 06:00:00 +0200
 tags:
-    - Technical
-    - Datomic
-    - Database
-    - Cheat sheet
+  - Technical
+  - Datomic
+  - Database
+  - Cheat sheet
 ---
 
 <div id="accordion"></div>
 
-In this post I work through querying the [Datomic MusicBrainz](https://github.com/Datomic/mbrainz-sample) sample database. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/query.html). *If you want to get started with Datomic, check out the [previous post](/blog/datomic-cheat-sheet-series-getting-started) in the series.*
+In this post I work through querying the [Datomic MusicBrainz](https://github.com/Datomic/mbrainz-sample) sample database. The example queries are grabbed from the [Datomic Docs](https://docs.datomic.com/on-prem/query.html). _If you want to get started with Datomic, check out the [previous post](/blog/datomic-cheat-sheet-series-getting-started) in the series._
 
 ![Relationship diagram](https://raw.githubusercontent.com/Datomic/mbrainz-sample/master/relationships.png)
 
@@ -108,6 +108,7 @@ Create a database connection as a function
 ```
 
 ## Get values from entities
+
 ```clojure
   (def release (d/entity db 17592186089442))
   (:release/name release)
@@ -136,6 +137,7 @@ Create a database connection as a function
 ```
 
 ## Multiple inputs [(more)](https://docs.datomic.com/on-prem/query.html#multiple-inputs)
+
 ```clojure
 (d/q '[:find [?release-name ...]
        :in $ ?artist-name
@@ -151,6 +153,7 @@ Create a database connection as a function
 ```
 
 ## Tuple binding [(more)](https://docs.datomic.com/on-prem/query.html#tuple-binding)
+
 ```clojure
 (d/q '[:find [?release ...]
        :in $ [?artist-name ?release-name]
@@ -163,6 +166,7 @@ Create a database connection as a function
 ```
 
 ## Collection binding [(more)](https://docs.datomic.com/on-prem/query.html#collection-binding)
+
 ```clojure
   (d/q '[:find [?release-name ...]
          :in $ [?artist-name ...]
@@ -178,6 +182,7 @@ Create a database connection as a function
 ```
 
 ## Relation binding [(more)](https://docs.datomic.com/on-prem/query.html#relation-binding)
+
 ```clojure
   (d/q '[:find [?release ...]
          :in $ [[?artist-name ?release-name]]
@@ -191,6 +196,7 @@ Create a database connection as a function
 ```
 
 ## Find specifications [(more)](https://docs.datomic.com/on-prem/query.html#find-specifications)
+
 ```clojure
   (d/q '[:find ?artist-name ?release-name
          :where

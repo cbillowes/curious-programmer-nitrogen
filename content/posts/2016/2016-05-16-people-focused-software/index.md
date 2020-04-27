@@ -1,11 +1,11 @@
 ---
 title: "People oriented software"
 cover: "https://picsum.photos/1600/800/?image=395"
-date:   2016-05-16 23:11:32 +0200
+date: 2016-05-16 23:11:32 +0200
 category: "tech"
 tags:
-    - Mindset
-    - Relationships
+  - Mindset
+  - Relationships
 ---
 
 > The art of making software for people with people.
@@ -115,12 +115,12 @@ talk about simplifying this, check out his brilliant
 [TED talk](https://www.ted.com/talks/yves_morieux_as_work_gets_more_complex_6_rules_to_simplify)
 titled "**As work gets more complex, 6 rules to simplify**."
 
-* * *
+---
 
 <a id="software-craftsmanship"></a>
 Some technical resources for software craftsmanship:
 
--   [Code Complete](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670):
-    A Practical Handbook of Software Construction, Second Edition 2nd Edition
--   The Robert C. Martin Clean Code Collection [Clean Code Collection](https://www.amazon.com/Robert-Martin-Clean-Code-Collection-ebook/dp/B00666M59G)
--   [Clean Coder](http://blog.cleancoder.com/) - A blog by Robert C. Martin (Uncle Bob)
+- [Code Complete](http://www.amazon.com/Code-Complete-Practical-Handbook-Construction/dp/0735619670):
+  A Practical Handbook of Software Construction, Second Edition 2nd Edition
+- The Robert C. Martin Clean Code Collection [Clean Code Collection](https://www.amazon.com/Robert-Martin-Clean-Code-Collection-ebook/dp/B00666M59G)
+- [Clean Coder](http://blog.cleancoder.com/) - A blog by Robert C. Martin (Uncle Bob)

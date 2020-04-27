@@ -5,7 +5,7 @@ cover: "https://picsum.photos/1600/800/?image=1028"
 date: 2016-05-28 16:11:10 +0200
 category: "tech"
 tags:
-    - Mindset
+  - Mindset
 ---
 
 > "If you don’t fail it’s because you did not risk enough, and if you didn’t
@@ -76,12 +76,12 @@ people?
 I don't know but we can start where we have control and try branch out to find
 the right people to give us the answers we need.
 
--   What information does the team need in order to maintain their product and
-    create new features?
--   What information does the team need to make sure all aspects of their product
-    is working (monitoring and health checks)?
--   What would a new person need to get started in the team?
--   What keeps impeding work from getting done?
+- What information does the team need in order to maintain their product and
+  create new features?
+- What information does the team need to make sure all aspects of their product
+  is working (monitoring and health checks)?
+- What would a new person need to get started in the team?
+- What keeps impeding work from getting done?
 
 ### Highlight team dysfunction
 
@@ -95,12 +95,12 @@ to be raised when it causes extra overhead which impedes my duties and
 causes unnecessary stress. The business needs to be aware of the underlying
 problems.
 
--   Do we have a shortage of professionals in the team?
--   Do we have professionals with the right skills in the team?
--   Are the professionals in the team actually doing their work?
--   Are the professionals in the team being asked to do work elsewhere?
--   Are the professionals a cultural fit for the team?
--   Is there an underlying problem causing a spike in staff turnover?
+- Do we have a shortage of professionals in the team?
+- Do we have professionals with the right skills in the team?
+- Are the professionals in the team actually doing their work?
+- Are the professionals in the team being asked to do work elsewhere?
+- Are the professionals a cultural fit for the team?
+- Is there an underlying problem causing a spike in staff turnover?
 
 > Notice how I did not once use the term resource. Spread the word.
 
@@ -143,7 +143,7 @@ blunder of it. Hopefully it's not as costly as what happened to these companies:
 > risk enough it’s because you didn’t put your whole self out there.
 > ~ Carlos Barrabes
 
-* * *
+---
 
 A big thanks to [Thane Thomson](https://thanethomson.com/) for sharing his
 insights with me to help me cope better with my frustrations and bring me closer

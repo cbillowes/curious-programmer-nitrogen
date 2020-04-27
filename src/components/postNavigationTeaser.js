@@ -1,44 +1,28 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import { H1 } from './heading'
-import Anchor from './anchor'
-import PostMetadata from './postMetadata'
-import Tags from './tags'
-import Blurb from './blurb'
-import '../styles/postNavigation.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import { H1 } from "./heading"
+import Anchor from "./anchor"
+import PostMetadata from "./postMetadata"
+import Tags from "./tags"
+import Blurb from "./blurb"
+import "../styles/postNavigation.scss"
 
 const defaultTruncationLimit = 250
 
 const Heading = ({ title }) => {
-  return (
-    <H1>
-      {title}
-    </H1>
-  )
+  return <H1>{title}</H1>
 }
 
 const Body = ({ limit, excerpt }) => {
   return (
-    <div
-      className="body"
-    >
-      <Blurb
-        limit={limit}
-      >
-        {excerpt || ``}
-      </Blurb>
+    <div className="body">
+      <Blurb limit={limit}>{excerpt || ``}</Blurb>
     </div>
   )
 }
 
 const Metadata = ({ date, author, ttr }) => {
-  return (
-    <PostMetadata
-      date={date}
-      author={author}
-      ttr={ttr}
-    />
-  )
+  return <PostMetadata date={date} author={author} ttr={ttr} />
 }
 
 const Navigation = ({ post }) => {
@@ -46,21 +30,9 @@ const Navigation = ({ post }) => {
   const limit = limitExcerpt || defaultTruncationLimit
   return (
     <>
-      <Anchor
-        to={slug}
-        title={title}
-        className="nav-link"
-      >
-        <Heading
-          slug={slug}
-          title={title}
-        />
-        <Body
-          slug={slug}
-          title={title}
-          limit={limit}
-          excerpt={excerpt}
-        />
+      <Anchor to={slug} title={title} className="nav-link">
+        <Heading slug={slug} title={title} />
+        <Body slug={slug} title={title} limit={limit} excerpt={excerpt} />
         <Metadata
           slug={slug}
           title={title}
@@ -69,9 +41,7 @@ const Navigation = ({ post }) => {
           ttr={ttr}
         />
       </Anchor>
-      <Tags
-        tags={tags}
-      />
+      <Tags tags={tags} />
     </>
   )
 }
@@ -81,22 +51,12 @@ const PostNavigationTeaser = ({ previous, next }) => {
 
   return (
     <>
-      <nav
-        className="post navigation teaser"
-      >
-        <aside
-          className="previous"
-        >
-          <Navigation
-            post={previous}
-          />
+      <nav className="post navigation teaser">
+        <aside className="previous">
+          <Navigation post={previous} />
         </aside>
-        <aside
-          className="next"
-        >
-          <Navigation
-            post={next}
-          />
+        <aside className="next">
+          <Navigation post={next} />
         </aside>
       </nav>
     </>

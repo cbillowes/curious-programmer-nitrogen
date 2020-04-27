@@ -1,6 +1,6 @@
 module.exports = {
   site: {
-    title: `Curious Programmer`
+    title: `Curious Programmer`,
   },
   theme: {
     colors: {
@@ -65,4 +65,4 @@ module.exports = {
       external: true,
     },
   ],
-};
+}

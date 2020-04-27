@@ -1,8 +1,8 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Data from '../../gatsby-data.js'
-import MenuItem from './menuItem'
-import '../styles/menu.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import Data from "../../gatsby-data.js"
+import MenuItem from "./menuItem"
+import "../styles/menu.scss"
 
 const Navigation = Data.navigation
 
@@ -35,9 +35,7 @@ const Items = ({ toggleOnClick }) => {
 const MenuItems = ({ toggleOnClick }) => {
   return (
     <div className="menu">
-      <Items
-        toggleOnClick={toggleOnClick}
-      />
+      <Items toggleOnClick={toggleOnClick} />
     </div>
   )
 }

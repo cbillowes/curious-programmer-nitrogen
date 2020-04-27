@@ -1,14 +1,10 @@
-import React from 'react'
-import Tags, { getTagsFromEdges } from '../tags'
-import { getSnapshot } from './_helpers'
+import React from "react"
+import Tags, { getTagsFromEdges } from "../tags"
+import { getSnapshot } from "./_helpers"
 
 describe(`Tags`, () => {
   it(`should render from list`, () => {
-    const component = (
-      <Tags
-        tags={[`hello`, `world`]}
-      />
-    )
+    const component = <Tags tags={[`hello`, `world`]} />
     const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
@@ -45,12 +41,11 @@ describe(`Tags`, () => {
       },
     ]
     const component = getTagsFromEdges(edges)
-    expect(component).toStrictEqual(
-      [
-        [`don't`, `panic`],
-        [`bring`, `your`, `towel`],
-        [`don't`, `panic`],
-        [`bring`, `your`, `towel`],
-      ])
+    expect(component).toStrictEqual([
+      [`don't`, `panic`],
+      [`bring`, `your`, `towel`],
+      [`don't`, `panic`],
+      [`bring`, `your`, `towel`],
+    ])
   })
 })

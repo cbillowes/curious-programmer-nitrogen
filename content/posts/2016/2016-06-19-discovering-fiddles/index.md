@@ -1,10 +1,10 @@
 ---
-title:  "Discovering fiddles"
+title: "Discovering fiddles"
 cover: "https://picsum.photos/1600/800/?image=527"
-date:   2016-06-19 19:13:00 +0200
+date: 2016-06-19 19:13:00 +0200
 tags:
-    - Technical
-    - Productivity
+  - Technical
+  - Productivity
 ---
 
 If you are new to fiddles, it's an online code playground that let's you
@@ -31,13 +31,13 @@ currently favorite fiddle editors.
 
 You can use fiddles for just about anything. Some examples include:
 
--   Provide a visual & interactive answer to a question
--   Embed a code sample that can be executed on your blog
--   Familiarize yourself with or learn a language before you adopt it
--   Quickly test behavior and quirks of a language
--   Build a test case for a bug
--   Showcase your skills
--   Get inspiration and design patterns for your projects from other fiddles
+- Provide a visual & interactive answer to a question
+- Embed a code sample that can be executed on your blog
+- Familiarize yourself with or learn a language before you adopt it
+- Quickly test behavior and quirks of a language
+- Build a test case for a bug
+- Showcase your skills
+- Get inspiration and design patterns for your projects from other fiddles
 
 ## CodePen
 
@@ -191,13 +191,13 @@ you need more real estate to play with.
 
 Your fiddles are saved but you will have to copy the URL in order to share it.
 
-* * *
+---
 
 ## References
 
--   [Fiddles.io](https://fiddles.io/)
--   [CodePen](http://codepen.io/)
--   [JSFiddle](https://jsfiddle.net/)
--   [SQLFiddle](http://sqlfiddle.com/)
--   [7 of the Best Code Playgrounds](https://www.sitepoint.com/7-code-playgrounds/)
-    by Craig Buckler at Sitepoint.
+- [Fiddles.io](https://fiddles.io/)
+- [CodePen](http://codepen.io/)
+- [JSFiddle](https://jsfiddle.net/)
+- [SQLFiddle](http://sqlfiddle.com/)
+- [7 of the Best Code Playgrounds](https://www.sitepoint.com/7-code-playgrounds/)
+  by Craig Buckler at Sitepoint.

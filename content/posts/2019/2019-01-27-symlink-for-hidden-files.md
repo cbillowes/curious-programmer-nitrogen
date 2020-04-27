@@ -1,10 +1,10 @@
 ---
 title: "Create a symlink for hidden files"
-date:   2019-01-27 11:00:00 +0200
+date: 2019-01-27 11:00:00 +0200
 tags:
-    - Technical
-    - Terminal
-    - Linux
+  - Technical
+  - Terminal
+  - Linux
 ---
 
 I want to create a symlink for all hidden files excluding the hidden

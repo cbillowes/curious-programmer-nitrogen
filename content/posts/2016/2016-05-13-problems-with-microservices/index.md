@@ -1,10 +1,10 @@
 ---
 title: "Problems with microservices"
 cover: "https://picsum.photos/1600/800/?image=1078"
-date:   2016-05-13 23:10:19 +0200
+date: 2016-05-13 23:10:19 +0200
 category: "tech"
 tags:
-    - Technical
+  - Technical
 ---
 
 > After an interesting debate, I decided to explore some of the problems that
@@ -26,24 +26,24 @@ What if you could break your existing service down into 50 services. Another
 person on your team only identifies 5 services. The dev lead sees 10. I don't
 know if this exact scenario often happens but:
 
--   How do you go about splitting them?
--   Will you be able to communicate the benefits of splitting them to business?
--   How does splitting your current services impact your consumers?
+- How do you go about splitting them?
+- Will you be able to communicate the benefits of splitting them to business?
+- How does splitting your current services impact your consumers?
 
 ## Time constraints
 
 It takes time to set up each service:
 
--   Create the code base
--   Configure version control
--   Configure dependencies
--   Set up scaffolding
--   Write the logic
--   Add useful logging
--   Configure environments
--   Setup continuous integration and deployment pipelines
--   Create an automated test suite
--   Documentation
+- Create the code base
+- Configure version control
+- Configure dependencies
+- Set up scaffolding
+- Write the logic
+- Add useful logging
+- Configure environments
+- Setup continuous integration and deployment pipelines
+- Create an automated test suite
+- Documentation
 
 If you need to quickly produce a prototype or minimum viable product, you will
 most likely skip this. Unfortunately the reality is that many prototypes
@@ -134,22 +134,22 @@ an impact on a microservices architecture.
 
 If this approach is taken, I believe that teams need:
 
--   Efficient and reliable continuous delivery pipelines ([Docker](https://www.docker.com/))
--   Visibility to [monitoring](https://www.paessler.com/prtg) of services
--   Overview [diagrams](https://trace.risingstack.com) and/or documentation of
-    the architecture
--   Useful integration tests
--   Stable and predictable environments
--   Visible, useful and chained logs
+- Efficient and reliable continuous delivery pipelines ([Docker](https://www.docker.com/))
+- Visibility to [monitoring](https://www.paessler.com/prtg) of services
+- Overview [diagrams](https://trace.risingstack.com) and/or documentation of
+  the architecture
+- Useful integration tests
+- Stable and predictable environments
+- Visible, useful and chained logs
 
 > Please share your experiences in the comments below.
 
-* * *
+---
 
 Want to find out more about microservices?
 
--   [How Enterprises Benefit From Microservices Architectures](https://blog.risingstack.com/how-enterprises-benefit-from-microservices-architectures/)
--   [Microservice Trade-Offs](http://martinfowler.com/articles/microservice-trade-offs.html)
--   [Pattern: Microservices Architecture](http://microservices.io/patterns/microservices.html)
--   [Microservices architecture: advantages and drawbacks](http://cloudacademy.com/blog/microservices-architecture-challenge-advantage-drawback/)
--   [The Benefits Of Microservices](http://sendachi.com/2016/microservices/the-benefits-of-microservices)
+- [How Enterprises Benefit From Microservices Architectures](https://blog.risingstack.com/how-enterprises-benefit-from-microservices-architectures/)
+- [Microservice Trade-Offs](http://martinfowler.com/articles/microservice-trade-offs.html)
+- [Pattern: Microservices Architecture](http://microservices.io/patterns/microservices.html)
+- [Microservices architecture: advantages and drawbacks](http://cloudacademy.com/blog/microservices-architecture-challenge-advantage-drawback/)
+- [The Benefits Of Microservices](http://sendachi.com/2016/microservices/the-benefits-of-microservices)

@@ -1,8 +1,8 @@
-import React from 'react'
-import MenuItem from '../menuItem'
-import { getSnapshot } from './_helpers'
+import React from "react"
+import MenuItem from "../menuItem"
+import { getSnapshot } from "./_helpers"
 
-const toggleOnClick = function (e) { }
+const toggleOnClick = function(e) {}
 
 describe(`Menu item`, () => {
   it(`should be active`, () => {

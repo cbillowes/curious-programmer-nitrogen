@@ -2,10 +2,10 @@
 title: "The “Perfect” Illusion"
 slug: "the-perfect-illusion"
 cover: "https://picsum.photos/1600/800/?image=1004"
-date:   2016-05-01 19:18:00 +0200
+date: 2016-05-01 19:18:00 +0200
 category: "tech"
 tags:
-    - Mindset
+  - Mindset
 ---
 
 > Are you chasing after unicorns - perfect things that may not exist? Perfection
@@ -67,13 +67,13 @@ that they are [not good enough](http://devpressed.com/t/im-supposedly-a-senior-s
 Some people just stick their necks out and [give stuff a try](http://irisclasson.com/2016/03/01/what-if-i-suck-confessions-of-a-wtf-contributor-by-iris-classon/).
 That's what I started doing.
 
--   I took a [blogging course](http://devcareerboost.com/blog-course/) from
-    John Sonmez at [simpleprogrammer.com](http://simpleprogrammer.com) and got amazing feedback directly from him.
--   I submitted an article to [A List Apart](http://www.alistapart.com) and it got
-    accepted.
--   I was asked if I want to give an [Ignite talk](https://en.wikipedia.org/wiki/Ignite_(event))
-    at an event just because I got involved in our local software development
-    community.
+- I took a [blogging course](http://devcareerboost.com/blog-course/) from
+  John Sonmez at [simpleprogrammer.com](http://simpleprogrammer.com) and got amazing feedback directly from him.
+- I submitted an article to [A List Apart](http://www.alistapart.com) and it got
+  accepted.
+- I was asked if I want to give an [Ignite talk](<https://en.wikipedia.org/wiki/Ignite_(event)>)
+  at an event just because I got involved in our local software development
+  community.
 
 These are big wins for me which my former self would never have achieved because
 my fear crippled me. Hell, I am still scared but I just do it anyway.

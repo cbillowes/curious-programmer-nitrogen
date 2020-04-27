@@ -1,11 +1,11 @@
 ---
 title: "Setting up my environment in Fedora - Creating a boot disk"
 ogImage: 2018-10-20-usb-flash-drive.png
-date:   2018-10-20 18:30:02 +0200
+date: 2018-10-20 18:30:02 +0200
 tags:
-    - Technical
-    - Linux
-    - Fedora
+  - Technical
+  - Linux
+  - Fedora
 ---
 
 I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
@@ -42,8 +42,8 @@ Disk identifier: 0x3a663a44
 dd if=/path/to/Fedora-Workstation-Live-x86_64-28-1.1.iso of=/dev/sdc
 ```
 
-* **if = input file** - read from file instead of stdin
-* **of = output file** - write to file instead of stdin
+- **if = input file** - read from file instead of stdin
+- **of = output file** - write to file instead of stdin
 
 Note that there are other methods to create live installation images in the
 [terminal](http://www.linux-databook.info/?page_id=4074) and the

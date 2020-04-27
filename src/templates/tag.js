@@ -1,12 +1,12 @@
 import _ from "lodash"
-import React from 'react'
-import { graphql } from 'gatsby'
-import SEO from '../components/seo'
-import TagPage from '../components/pages/tag'
-import '../styles/tag.scss'
+import React from "react"
+import { graphql } from "gatsby"
+import SEO from "../components/seo"
+import TagPage from "../components/pages/tag"
+import "../styles/tag.scss"
 
 export const query = graphql`
-  query TagTemplateQuery ($tag: String!) {
+  query TagTemplateQuery($tag: String!) {
     site {
       siteMetadata {
         title
@@ -14,9 +14,9 @@ export const query = graphql`
         image
       }
     }
-    allMarkdownRemark (
-      limit: 1000,
-      sort: { fields: [fields___date], order: DESC },
+    allMarkdownRemark(
+      limit: 1000
+      sort: { fields: [fields___date], order: DESC }
       filter: { frontmatter: { tags: { in: [$tag] } } }
     ) {
       edges {
@@ -45,15 +45,8 @@ export default ({ data, pageContext }) => {
   const edges = data.allMarkdownRemark.edges
   return (
     <>
-      <SEO
-        title={tag}
-        crawl={false}
-        siteMetadata={siteMetadata}
-      />
-      <TagPage
-        tag={tag}
-        edges={edges}
-      />
+      <SEO title={tag} crawl={false} siteMetadata={siteMetadata} />
+      <TagPage tag={tag} edges={edges} />
     </>
   )
 }

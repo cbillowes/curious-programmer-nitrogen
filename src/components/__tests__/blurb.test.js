@@ -1,14 +1,13 @@
-import React from 'react'
-import Blurb from '../blurb'
-import { getSnapshot } from './_helpers'
+import React from "react"
+import Blurb from "../blurb"
+import { getSnapshot } from "./_helpers"
 
 describe(`Blurb`, () => {
   describe(`should extract content`, () => {
     it(`from plain text`, () => {
       const component = (
         <Blurb>
-          The ships hung in the sky in much the same way
-          that bricks don't.
+          The ships hung in the sky in much the same way that bricks don't.
         </Blurb>
       )
       const tree = getSnapshot(component)
@@ -25,8 +24,7 @@ describe(`Blurb`, () => {
             <strong>I just gave up and went mad now?</strong>
           </p>
           <span>
-            The ships hung in the sky in much the same way
-            that bricks don't.
+            The ships hung in the sky in much the same way that bricks don't.
           </span>
         </Blurb>
       )
@@ -38,11 +36,8 @@ describe(`Blurb`, () => {
   describe(`should limit words`, () => {
     it(`extracted from plain text`, () => {
       const component = (
-        <Blurb
-          limit={6}
-        >
-          The ships hung in the sky in much the same way
-          that bricks don't.
+        <Blurb limit={6}>
+          The ships hung in the sky in much the same way that bricks don't.
         </Blurb>
       )
       const tree = getSnapshot(component)
@@ -51,9 +46,7 @@ describe(`Blurb`, () => {
 
     it(`extracted from html elements`, () => {
       const component = (
-        <Blurb
-          limit={6}
-        >
+        <Blurb limit={6}>
           <h1>Don't panic!</h1>
           <p>Time is an illusion.</p>
           <p>
@@ -61,8 +54,7 @@ describe(`Blurb`, () => {
             <strong>I just gave up and went mad now?</strong>
           </p>
           <span>
-            The ships hung in the sky in much the same way
-            that bricks don't.
+            The ships hung in the sky in much the same way that bricks don't.
           </span>
         </Blurb>
       )
@@ -75,7 +67,12 @@ describe(`Blurb`, () => {
     it(`extracted from plain text`, () => {
       const component = (
         <Blurb>
-          {Array(300).fill().map((_, i) => ++i).map(i => { return i.toString() })}
+          {Array(300)
+            .fill()
+            .map((_, i) => ++i)
+            .map(i => {
+              return i.toString()
+            })}
         </Blurb>
       )
       const tree = getSnapshot(component)
@@ -85,7 +82,12 @@ describe(`Blurb`, () => {
     it(`extracted from html elements`, () => {
       const component = (
         <Blurb>
-          {Array(300).fill().map((_, i) => ++i).map(i => { return <p key={i}>{i.toString()}</p> })}
+          {Array(300)
+            .fill()
+            .map((_, i) => ++i)
+            .map(i => {
+              return <p key={i}>{i.toString()}</p>
+            })}
         </Blurb>
       )
       const tree = getSnapshot(component)

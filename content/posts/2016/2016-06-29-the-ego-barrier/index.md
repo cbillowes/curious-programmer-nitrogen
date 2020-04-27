@@ -1,9 +1,9 @@
 ---
 title: "The ego barrier"
 cover: "https://picsum.photos/1600/800/?image=34"
-date:   2016-06-29 20:24:42 +0200
+date: 2016-06-29 20:24:42 +0200
 tags:
-    - Mindset
+  - Mindset
 ---
 
 > Be the change you want to see even if it doesn't change anything right away.

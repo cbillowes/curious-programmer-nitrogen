@@ -1,11 +1,11 @@
 ---
 title: Rewire your brain (Part 6) - Neuroplasticity
 slug: "rewire-your-brain-6"
-date:   2017-06-26 19:05:39 +0200
+date: 2017-06-26 19:05:39 +0200
 cover: "https://picsum.photos/1600/800/?image=821"
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > Lara Boyd challenges us by asking how do we learn? And why does some of
@@ -19,7 +19,7 @@ with change.
 These stages show how a change can impact us and how we can get to a point
 where we can thrive.
 
-* * *
+---
 
 Neuroplasticity<sup id="footnote-1">[1](#footnote-1-ref)</sup> is the
 ability of the brain to form and reorganize synaptic connections, especially
@@ -42,12 +42,12 @@ brain that you are born with <sup id="footnote-3">[3](#footnote-3-ref)</sup>.
 
 She mentions that it helps people recover from:
 
--   A stroke, injury and birth abnormalities
--   Improve symptoms of autism
--   Improve ADD and ADHD
--   Helps with learning disabilities and other brain defects
--   Pull you out of depression and addictions
--   Reverse obsessive-compulsive patterns
+- A stroke, injury and birth abnormalities
+- Improve symptoms of autism
+- Improve ADD and ADHD
+- Helps with learning disabilities and other brain defects
+- Pull you out of depression and addictions
+- Reverse obsessive-compulsive patterns
 
 > Among other things, neuroplasticity means that emotions such as happiness
 > and compassion can be cultivated in much the same way that a person can
@@ -60,9 +60,9 @@ experience-dependent neuroplasticity-based exercises for years to recover from
 her trauma. She also incorporated extensive practices to encourage neuroplastic
 change:
 
--   Cognitive Behavioral Therapy (CBT) <sup id="footnote-4">[4](#footnote-4-ref)</sup>
--   Meditation <sup id="footnote-5">[5](#footnote-5-ref)</sup>
--   Mindfulness <sup id="footnote-6">[6](#footnote-6-ref)</sup>
+- Cognitive Behavioral Therapy (CBT) <sup id="footnote-4">[4](#footnote-4-ref)</sup>
+- Meditation <sup id="footnote-5">[5](#footnote-5-ref)</sup>
+- Mindfulness <sup id="footnote-6">[6](#footnote-6-ref)</sup>
 
 ## Fundamentals
 
@@ -190,4 +190,4 @@ one's brain.
     The Best Brain Possible, Debbie Hampton, September 8, 2014. Focusing on Mindfulness.
 
 7 <a id="footnote-7-ref"></a>[After watching this, your brain will not be the same](https://www.youtube.com/watch?v=LNHBMFCzznE)
-  TEDxVancouver, Lara Boyd, Brain Researcher
+TEDxVancouver, Lara Boyd, Brain Researcher

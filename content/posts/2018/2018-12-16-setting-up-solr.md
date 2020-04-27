@@ -1,11 +1,11 @@
 ---
 title: "Setting up Solr on Nginx with Let's Encrypt"
-date:   2018-12-16 08:30:00 +0200
+date: 2018-12-16 08:30:00 +0200
 tags:
-    - Technical
-    - Solr
-    - Nginx
-    - Let's Encrypt
+  - Technical
+  - Solr
+  - Nginx
+  - Let's Encrypt
 ---
 
 I want to enable search on my blog. I started looking into different solutions. I started with
@@ -24,6 +24,7 @@ and others that required a little bit of digging.
 > dynamic clustering, database integration, NoSQL features and rich document handling.
 
 ### Missing dependency
+
 The [Solr installation guide](https://lucene.apache.org/solr/guide/7_0/taking-solr-to-production.html#taking-solr-to-production)
 is quite straightforward but I got an error because of a missing dependency.
 
@@ -31,6 +32,7 @@ It wanted the `lsof` package which "lists open files". It can get a list of all 
 that opened them. `sudo dnf install lsof`
 
 ### Install package
+
 I downloaded the package referenced in the installation guide using `curl`:
 
 ```bash
@@ -49,6 +51,7 @@ sudo service solr status
 ```
 
 ### Open firewall
+
 I temporarily opened port `8983` while I was working on the project. I had to open the port on my
 server's firewall and through my hosting provider's firewall done through their admin interface.
 
@@ -77,6 +80,7 @@ sudo firewall-cmd --zone=public --list-ports
 ```
 
 ### Test connection
+
 Open a browser and browse to http://localhost:8983/solr or `curl http://localhost:8983/solr`.
 Test it remotely by accessing it with your public IP address.
 
@@ -111,15 +115,17 @@ See the core now available in the web interface ready to index some data: http:/
 *** [WARN] *** Your open file limit is currently 1024.
  It should be set to 65000 to avoid operational disruption.
  If you no longer wish to see this warning, set SOLR_ULIMIT_CHECKS to false in your profile or solr.in.sh
- ```
+```
 
 I set it to the suggested amount. I am not sure if I did this correctly though.
+
 ```bash
 ulimit -a
 ulimit -n 65000
 ```
 
 ### Reflection
+
 Don't be scared of creating, deleting and recreating things, especially in the beginning, while learning.
 Break it, fix it, understand it, learn it.
 
@@ -130,6 +136,7 @@ Solr needed some data and I found a really useful python
 which will be hosted on my Fedora server, a server not hosting my blog.
 
 ### Missing dependencies
+
 While setting up I came across the following missing dependencies
 
 > `sudo dnf install python-devel` :The libraries and header files needed for Python development
@@ -255,8 +262,9 @@ crontab -e
 ```
 
 ## Setup your hosting environment
+
 I no longer wanted to access the Solr API publically using the port. To achieve this, I had to configure a reverse
-proxy. A great benefit to using this approach is the usage  of SSL. For me to get SSL to work, I had to start
+proxy. A great benefit to using this approach is the usage of SSL. For me to get SSL to work, I had to start
 by getting a domain name.
 
 ### Get a domain name
@@ -290,6 +298,7 @@ nameserver 8.8.8.8 #Google
 ```
 
 ### Create a webserver with Nginx
+
 > NGINX is a high-performance HTTP server and reverse proxy, as well as an
 > IMAP/POP3 proxy server. NGINX is known for its high performance, stability,
 > rich feature set, simple configuration, and low resource consumption.
@@ -315,7 +324,9 @@ crontab -e
 ```
 
 ### Redirects
+
 Configure server on port 80 to redirect all traffic to SSL:
+
 ```nginx
 server {
     listen       80 default_server;
@@ -334,6 +345,7 @@ server {
 
 Verify that port 443 is configured correctly:
 Configure server on port 443:
+
 ```nginx
 server {
     listen       443 ssl http2 default_server;
@@ -379,6 +391,7 @@ Test this in a browser or by running a `curl` command. If connections time out, 
 firewall rules, this time making sure 443 is open on host and hosting provider and that the firewall has been reloaded.
 
 ### Dropping access to ports
+
 I no longer need to expose Solr's port so I can drop it from the firewall.
 
 ```bash
@@ -388,6 +401,7 @@ sudo firewall-cmd --zone=public --list-ports
 ```
 
 ## Consume the API
+
 When ready to consume the API using a JavaScript application, it is highly likely that you encounter a
 Cross-Origin Resource Sharing error when trying to make calls to the remote server. The reverse proxy and the
 Solr application haven't been explicitly told to give you the resources you are requesting.
@@ -399,7 +413,7 @@ Solr application haven't been explicitly told to give you the resources you are 
 > cross-origin HTTP request when it requests a resource that has a different origin (domain,
 > protocol, and port) than its own origin.
 
-The error goes along the lines of  <span class="serious-highlight">Access to XMLHttpRequest at 'https://example.com/solr/collection_name/select'
+The error goes along the lines of <span class="serious-highlight">Access to XMLHttpRequest at 'https://example.com/solr/collection_name/select'
 from origin 'http://localhost:8081' has been blocked by CORS policy: No 'Access-Control-Allow-Origin'
 header is present on the requested resource.</span>
 
@@ -438,6 +452,7 @@ location /solr {
 ```
 
 ### Application layer
+
 It can also be applied on the
 [Solr application layer](https://opensourceconnections.com/blog/2015/03/26/going-cross-origin-with-solr/)
 as it ships with the Jetty servlet engine.
@@ -474,9 +489,10 @@ Edit `server/solr-webapp/webapp/WEB-INF/web.xml`
    <filter-name>cross-origin</filter-name>
    <url-pattern>/*</url-pattern>
  </filter-mapping>
- ```
+```
 
 ## My final thoughts
+
 This exercise took me a day and a half to figure out. It took me another day to make sense of it all to write about it.
 I made a lot of silly mistakes that could have been avoided had I just taken a few extra breaks to clear my head.
 
@@ -513,25 +529,28 @@ Next is actually configuring this solution into a React component on my Gatsby w
 ## References
 
 ### Solr
-* [Taking Solr to Production](https://lucene.apache.org/solr/guide/7_0/taking-solr-to-production.html#taking-solr-to-production)
-* [Create a Core](https://lucene.apache.org/solr/guide/7_0/installing-solr.html#create-a-core)
-* [File Handles and Processes (ulimit settings)](https://lucene.apache.org/solr/guide/7_3/taking-solr-to-production.html#file-handles-and-processes-ulimit-settings)
-* [Going Cross-Origin with Solr](https://opensourceconnections.com/blog/2015/03/26/going-cross-origin-with-solr/)
+
+- [Taking Solr to Production](https://lucene.apache.org/solr/guide/7_0/taking-solr-to-production.html#taking-solr-to-production)
+- [Create a Core](https://lucene.apache.org/solr/guide/7_0/installing-solr.html#create-a-core)
+- [File Handles and Processes (ulimit settings)](https://lucene.apache.org/solr/guide/7_3/taking-solr-to-production.html#file-handles-and-processes-ulimit-settings)
+- [Going Cross-Origin with Solr](https://opensourceconnections.com/blog/2015/03/26/going-cross-origin-with-solr/)
 
 ### Scraping
-* [Install Scrapy on Linux](https://blog.michaelyin.info/scrapy-tutorial-3-how-install-scrapy-linux/)
-* [Scrapy installation guide](https://doc.scrapy.org/en/latest/intro/install.html)
-* [Indexing websites in Solr with Python](https://lucidworks.com/2013/06/13/indexing-web-sites-in-solr-with-python/)
-* [Crontab in Linux with 29 useful examples to schedule jobs](https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/)
-* [StackOverflow: Match rest of string with regex](https://stackoverflow.com/questions/8959612/match-rest-of-string-with-regex)
-* [Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript](https://regex101.com/)
+
+- [Install Scrapy on Linux](https://blog.michaelyin.info/scrapy-tutorial-3-how-install-scrapy-linux/)
+- [Scrapy installation guide](https://doc.scrapy.org/en/latest/intro/install.html)
+- [Indexing websites in Solr with Python](https://lucidworks.com/2013/06/13/indexing-web-sites-in-solr-with-python/)
+- [Crontab in Linux with 29 useful examples to schedule jobs](https://tecadmin.net/crontab-in-linux-with-20-examples-of-cron-schedule/)
+- [StackOverflow: Match rest of string with regex](https://stackoverflow.com/questions/8959612/match-rest-of-string-with-regex)
+- [Online regex tester and debugger: PHP, PCRE, Python, Golang and JavaScript](https://regex101.com/)
 
 ## Hosting
-* [Find a new free domain with freenom](https://www.freenom.com)
-* [Ubuntu Linux Change Hostname (computer name)](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
-* [Nginx install](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
-* [Install Nginx Web Server on Fedora](https://developer.fedoraproject.org/start/sw/web-app/nginx.html)
-* [Getting started with Let's Encrypt](https://letsencrypt.org/getting-started/)
-* [Install Let's Encrypt using certbot with nginx on Fedora](https://certbot.eff.org/lets-encrypt/fedora-nginx)
-* [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
-* [Example Nginx configuration for adding cross-origin resource sharing (CORS) support to reverse proxied APIs](https://gist.github.com/Stanback/7145487)
+
+- [Find a new free domain with freenom](https://www.freenom.com)
+- [Ubuntu Linux Change Hostname (computer name)](https://www.cyberciti.biz/faq/ubuntu-change-hostname-command/)
+- [Nginx install](https://www.nginx.com/resources/wiki/start/topics/tutorials/install/)
+- [Install Nginx Web Server on Fedora](https://developer.fedoraproject.org/start/sw/web-app/nginx.html)
+- [Getting started with Let's Encrypt](https://letsencrypt.org/getting-started/)
+- [Install Let's Encrypt using certbot with nginx on Fedora](https://certbot.eff.org/lets-encrypt/fedora-nginx)
+- [Cross-Origin Resource Sharing (CORS)](https://developer.mozilla.org/en-US/docs/Web/HTTP/CORS)
+- [Example Nginx configuration for adding cross-origin resource sharing (CORS) support to reverse proxied APIs](https://gist.github.com/Stanback/7145487)

@@ -1,10 +1,10 @@
 ---
-title:  "The rainbow in our storm sprint"
+title: "The rainbow in our storm sprint"
 cover: "https://picsum.photos/1600/800/?image=903"
-date:   2016-07-12 22:24:49 +0200
+date: 2016-07-12 22:24:49 +0200
 tags:
-    - Mindset
-    - Productivity
+  - Mindset
+  - Productivity
 ---
 
 > Communication is essential to minimize stress and get the support a team
@@ -97,15 +97,15 @@ victorious.
 
 Here's a summary of the factors contributing to our victory:
 
--   We took ownership and accountability of the product and codebase
--   We worked cohesively together driven by passion towards to the success of the product
--   We admitted to mistakes that we made and learned from them
--   We regularly communicated our progress, risks and issues we faced
--   We worked and thought strategically keeping the team, business, product and
-    user's best interests at heart
--   We got support because we asked for help
--   We created visibility of the success that came from addressing our technical
-    debt
+- We took ownership and accountability of the product and codebase
+- We worked cohesively together driven by passion towards to the success of the product
+- We admitted to mistakes that we made and learned from them
+- We regularly communicated our progress, risks and issues we faced
+- We worked and thought strategically keeping the team, business, product and
+  user's best interests at heart
+- We got support because we asked for help
+- We created visibility of the success that came from addressing our technical
+  debt
 
 The bottom line is that when people are not in the know, teams can pull in
 all sorts of directions. **Communication is essential to minimize stress and

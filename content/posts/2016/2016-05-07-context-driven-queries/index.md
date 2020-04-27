@@ -1,10 +1,10 @@
 ---
 title: "Context-driven queries"
 cover: "https://picsum.photos/1600/800/?image=192"
-date:   2016-05-07 15:28:21 +0200
+date: 2016-05-07 15:28:21 +0200
 category: "tech"
 tags:
-    - Communication
+  - Communication
 ---
 
 > Do people look confused when you talk to them? Only you can truly know what
@@ -34,10 +34,10 @@ People are complicated and there are many obstacles when it comes to conversing.
 In code we aim to communicate intent. Let's try apply that to the structure of
 our queries:
 
--   Introduction - Who are you?
--   The nature of the query - What the query is about?
--   The actual query - Why are you asking for help?
--   Conclusion
+- Introduction - Who are you?
+- The nature of the query - What the query is about?
+- The actual query - Why are you asking for help?
+- Conclusion
 
 ### Introduction
 

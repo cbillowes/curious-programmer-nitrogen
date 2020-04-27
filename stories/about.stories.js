@@ -1,29 +1,25 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import AboutPage from '../src/components/pages/about'
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import AboutPage from "../src/components/pages/about"
 
 const profileImage = {
-  "data": {
-    "images": {
-      "edges": [
+  data: {
+    images: {
+      edges: [
         {
-          "node": {
-            "extension": "jpg",
-            "relativePath": "profile.jpg",
-            "childImageSharp": {
-              "fluid": {
-              }
-            }
-          }
-        }
-      ]
-    }
-  }
+          node: {
+            extension: "jpg",
+            relativePath: "profile.jpg",
+            childImageSharp: {
+              fluid: {},
+            },
+          },
+        },
+      ],
+    },
+  },
 }
 
-storiesOf('Layout/pages', module)
-  .add('about', () =>
-    <AboutPage
-      profileImage={profileImage}
-    />
-  )
+storiesOf("Layout/pages", module).add("about", () => (
+  <AboutPage profileImage={profileImage} />
+))

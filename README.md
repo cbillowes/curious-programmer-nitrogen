@@ -7,6 +7,7 @@
 <a href="https://creativecommons.org/licenses/by-sa/4.0/"><img src="https://mirrors.creativecommons.org/presskit/buttons/80x15/png/by-sa.png" width="" height="20px" alt="CC BY-SA 4.0" /></a>
 [![Netlify Status](https://api.netlify.com/api/v1/badges/84ff184c-60d8-4df7-85d0-d18874cf7a6f/deploy-status)](https://app.netlify.com/sites/gallant-cray-096f77/deploys)
 [![Twitter Follow](https://img.shields.io/twitter/follow/cbillowes.svg?style=social)](https://twitter.com/cbillowes)
+
 </div>
 
 ## { **Curious** Programmer }
@@ -19,39 +20,43 @@ You can fork, clone or download the source code to get started so that you can e
 
 If you have any questions, feel free to ping me on Twitter at [@cbillowes](https://twitter.com/cbillowes).
 
-1.    **Set up your environment.**
-      ```bash
-       npm install --global -gatsby-cli
-      ```
+1.  **Set up your environment.**
 
-2.    **Install the dependencies.**
-      ```bash
-      cd curious-programmer-nitrogen
-      npm install
-      ```
+    ```bash
+     npm install --global -gatsby-cli
+    ```
 
-3.    **Run the website.**
-      ```bash
-      npm run develop
-      # Opens website on port 8000
-      # http://localhost:8000
-      ```
+2.  **Install the dependencies.**
 
-4.    **Run the tests.**
-      ```bash
-      # This will automatically execute tests when code is changed.
-      npm run test:watch
-      ```
+    ```bash
+    cd curious-programmer-nitrogen
+    npm install
+    ```
 
-5.    **Run storybook.**
-      Run the component explorer called [Storybook](https://storybook.js.org/).
-      ```bash
-      npm run storybook
-      ```
+3.  **Run the website.**
 
-6.   **Query GraphQL data.**
-     Open [http://localhost:8000/_graphQL](http://localhost:8000/_graphQL) to query the website's GraphQL data.
+    ```bash
+    npm run develop
+    # Opens website on port 8000
+    # http://localhost:8000
+    ```
 
+4.  **Run the tests.**
+
+    ```bash
+    # This will automatically execute tests when code is changed.
+    npm run test:watch
+    ```
+
+5.  **Run storybook.**
+    Run the component explorer called [Storybook](https://storybook.js.org/).
+
+    ```bash
+    npm run storybook
+    ```
+
+6.  **Query GraphQL data.**
+    Open [http://localhost:8000/\_graphQL](http://localhost:8000/_graphQL) to query the website's GraphQL data.
 
 ### 😎 **Styling JavaScript.**
 
@@ -61,7 +66,6 @@ All inline code should contain the name of the language followed by the inline m
 Such as [bash±ping 127.0.0.1] or [clojure±(def hello "world")].
 
 Code blocks should contain the name of the language after the block marker eg. \`\`\`bash or \`\`\`clojure.
-
 
 ### 🖖Emojify content.
 
@@ -164,7 +168,6 @@ Looking for more guidance? Full documentation for Gatsby lives [on the website](
 - **For most developers, we recommend starting with our [in-depth tutorial for creating a site with Gatsby](https://www.gatsbyjs.org/tutorial/).** It starts with zero assumptions about your level of ability and walks through every step of the process.
 
 - **To dive straight into code samples, head [to our documentation](https://www.gatsbyjs.org/docs/).** In particular, check out the _Guides_, _API Reference_, and _Advanced Tutorials_ sections in the sidebar.
-
 
 TODO: Check if title attribute works with code snippets:
 Find example here https://www.gatsbyjs.org/tutorial/remark-plugin-tutorial/

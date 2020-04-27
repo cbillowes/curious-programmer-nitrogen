@@ -1,11 +1,11 @@
 ---
 title: "Cisco ASA cheat sheet"
-date:   2019-02-10 15:30:00 +0200
+date: 2019-02-10 15:30:00 +0200
 tags:
-    - Technical
-    - Terminal
-    - Cisco
-    - Cheat sheet
+  - Technical
+  - Terminal
+  - Cisco
+  - Cheat sheet
 ---
 
 Cisco Adaptive Security Appliancy is known as the Cisco ASA. It
@@ -22,6 +22,7 @@ In this post I share a few of the CLI commands to query, operate
 and configure the device.
 
 ## Access privelage EXEC mode
+
 `ciscoasa` is the default hostname for the default ASA state. You will
 see that you are in EXEC mode with the `ciscoasa>` prompt.
 
@@ -29,6 +30,7 @@ Type `enable` to access privilege EXEC mode. The default password is **blank**.
 The prompt changes to `ciscoasa#`
 
 ## Lockdown access to ASA
+
 `show` displays sensitive data and we don't want prying eyes to see that.
 
 ```
@@ -49,6 +51,7 @@ show running-config user
 ```
 
 ## Get more information about the system
+
 `show version`
 
 `show processes`
@@ -58,6 +61,7 @@ show running-config user
 `show flash`
 
 ## Set a hostname
+
 Change the hostname from the **global configuration mode**.
 
 `configure terminal` or `config terminal` or `config t`
@@ -67,6 +71,7 @@ Notice the prompt becomes `ciscoasa(config)#`
 Enter `hostname <HOSTNAME>` and your prompt will change to that name.
 
 ## Set the clock for logs and what-not
+
 Timestamps are important for
 logs. They help administrators understand the order of events.
 `clock set hh:mm:ss {month day | day month} year`
@@ -105,9 +110,9 @@ oxygen(config-if)# `ip address 192.168.2.1 255.255.255.0`
 oxygen(config-if)# `nameif Inside`
 oxygen(config-if)# `nameif Inside`
 
-
 ## References
-* [](https://www.cisco.com/c/en/us/td/docs/security/asa/asa72/configuration/guide/conf_gd/intparam.pdf)
-[Cisco ASA](https://en.wikipedia.org/wiki/Cisco_ASA) - Wikipedia
-* [Cisco Adaptive Security Appliance (ASA) Software](https://www.cisco.com/c/en/us/products/security/adaptive-security-appliance-asa-software/index.html) - cisco.com
-* [Cisco ASA series part one: Intro to the Cisco ASA](https://www.nccgroup.trust/au/about-us/newsroom-and-events/blogs/2017/september/cisco-asa-series-part-one-intro-to-the-cisco-asa/) - nccgroup
+
+- [](https://www.cisco.com/c/en/us/td/docs/security/asa/asa72/configuration/guide/conf_gd/intparam.pdf)
+  [Cisco ASA](https://en.wikipedia.org/wiki/Cisco_ASA) - Wikipedia
+- [Cisco Adaptive Security Appliance (ASA) Software](https://www.cisco.com/c/en/us/products/security/adaptive-security-appliance-asa-software/index.html) - cisco.com
+- [Cisco ASA series part one: Intro to the Cisco ASA](https://www.nccgroup.trust/au/about-us/newsroom-and-events/blogs/2017/september/cisco-asa-series-part-one-intro-to-the-cisco-asa/) - nccgroup

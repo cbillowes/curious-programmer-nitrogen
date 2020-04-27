@@ -1,12 +1,11 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import PostNavigationTeaser from '../src/components/postNavigationTeaser'
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import PostNavigationTeaser from "../src/components/postNavigationTeaser"
 
 const starwars = {
   title: `In a galaxy far away, quotes from Star Wars`,
   author: `George Lucas`,
-  excerpt:
-    `
+  excerpt: `
     “Do. Or do not. There is no try.” – Yoda. “Somebody has to save our skins.” – Leia Organa.
     “In my experience there is no such thing as luck.” – Obi-Wan Kenobi.
     “I’ve got a bad feeling about this.” – basically everyone.
@@ -18,8 +17,7 @@ const starwars = {
 const hitchhikersGuideToTheGalaxy = {
   title: `The ultimate hitchhiker's guide to the galaxy`,
   author: `Douglas Adams`,
-  excerpt:
-    `
+  excerpt: `
     I love deadlines. I like the whooshing sound they make as they fly by.
     In the beginning the Universe was created. This has made a lot of people very angry and been widely regarded as a bad move.
     This must be Thursday,' said Arthur to himself, sinking low over his beer. 'I never could get the hang of Thursdays.
@@ -33,8 +31,8 @@ const hitchhikersGuideToTheGalaxy = {
   `,
 }
 
-storiesOf('Components/post/navigation/teaser', module)
-  .add('unlimited', () =>
+storiesOf("Components/post/navigation/teaser", module)
+  .add("unlimited", () => (
     <PostNavigationTeaser
       previous={{
         title: starwars.title,
@@ -55,8 +53,8 @@ storiesOf('Components/post/navigation/teaser', module)
         tags: [`hitchhikers`, `beer`, `towel`],
       }}
     />
-  )
-  .add('truncated', () =>
+  ))
+  .add("truncated", () => (
     <PostNavigationTeaser
       previous={{
         title: starwars.title,
@@ -79,5 +77,4 @@ storiesOf('Components/post/navigation/teaser', module)
         limitExcerpt: 20,
       }}
     />
-  )
-
+  ))

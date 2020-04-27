@@ -1,7 +1,7 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import SEO from '../components/seo'
-import IndexPage from '../components/pages'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
+import IndexPage from "../components/pages"
 
 export default () => {
   const data = useStaticQuery(
@@ -15,8 +15,8 @@ export default () => {
           }
         }
         allMarkdownRemark(
-          filter: {fields: {slug: {nin: "/blog/template"}}}
-          sort: {order: DESC, fields: fields___date}
+          filter: { fields: { slug: { nin: "/blog/template" } } }
+          sort: { order: DESC, fields: fields___date }
           limit: 10
         ) {
           edges {
@@ -44,17 +44,11 @@ export default () => {
   const edges = data.allMarkdownRemark.edges
   return (
     <>
-      <SEO
-        title="Blog"
-        crawl={true}
-        siteMetadata={siteMetadata}
-      >
-        I share thoughts. I share ideas. I share knowledge.
-        This is my blog as a curious programmer.
+      <SEO title="Blog" crawl={true} siteMetadata={siteMetadata}>
+        I share thoughts. I share ideas. I share knowledge. This is my blog as a
+        curious programmer.
       </SEO>
-      <IndexPage
-        edges={edges}
-      />
+      <IndexPage edges={edges} />
     </>
   )
 }

@@ -1,10 +1,10 @@
 ---
 title: "Uninstall an app from the terminal"
-date:   2019-02-04 13:10:00 +0200
+date: 2019-02-04 13:10:00 +0200
 tags:
-    - Technical
-    - Linux
-    - Terminal
+  - Technical
+  - Linux
+  - Terminal
 ---
 
 I installed an application. It misbehaved.
@@ -42,4 +42,4 @@ guess I can't run it on Fedora.
 
 ## References
 
-* [How to Uninstall Software Using the Command Line in Linux](https://www.howtogeek.com/229699/how-to-uninstall-software-using-the-command-line-in-linux/)
+- [How to Uninstall Software Using the Command Line in Linux](https://www.howtogeek.com/229699/how-to-uninstall-software-using-the-command-line-in-linux/)

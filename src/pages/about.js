@@ -1,9 +1,9 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import SEO from '../components/seo'
-import AboutPage from '../components/pages/about'
-import '../styles/about.scss'
-import '../styles/page.scss'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
+import AboutPage from "../components/pages/about"
+import "../styles/about.scss"
+import "../styles/page.scss"
 
 export default () => {
   const data = useStaticQuery(
@@ -16,7 +16,7 @@ export default () => {
             image
           }
         }
-        images: allFile(filter: {relativePath: {eq: "profile.jpg"}}) {
+        images: allFile(filter: { relativePath: { eq: "profile.jpg" } }) {
           edges {
             node {
               extension
@@ -30,24 +30,17 @@ export default () => {
           }
         }
       }
-   `
+    `
   )
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO
-        title="About"
-        crawl={true}
-        siteMetadata={siteMetadata}
-      >
-        My name is Clarice Bouwer.
-        I am a Senior Software Engineer.
-        I am curious and am always learning new things.
-        My passion is Clojure and Gatsby.
+      <SEO title="About" crawl={true} siteMetadata={siteMetadata}>
+        My name is Clarice Bouwer. I am a Senior Software Engineer. I am curious
+        and am always learning new things. My passion is Clojure, Gatsby and
+        React.
       </SEO>
-      <AboutPage
-        profileImage={data}
-      />
+      <AboutPage profileImage={data} />
     </>
   )
 }

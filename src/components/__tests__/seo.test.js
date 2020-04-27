@@ -1,31 +1,35 @@
-import React from 'react'
-import SEO from '../seo'
-import { getContent } from '../blurb'
-import { getWrapper } from './_helpers'
+import React from "react"
+import SEO from "../seo"
+import { getContent } from "../blurb"
+import { getWrapper } from "./_helpers"
 
 const assertTitles = (component, title) => {
   const wrapper = getWrapper(component)
   expect(wrapper.find(`title`).text()).toBe(title)
   expect(wrapper.find(`meta[name="title"]`).props().content).toBe(title)
   expect(wrapper.find(`meta[property="og:title"]`).props().content).toBe(title)
-  expect(wrapper.find(`meta[property="twitter:title"]`).props().content).toBe(title)
+  expect(wrapper.find(`meta[property="twitter:title"]`).props().content).toBe(
+    title
+  )
 }
 
 const assertDescriptions = (component, description) => {
   const wrapper = getWrapper(component)
-  expect(wrapper.find(`meta[name="description"]`).props().content).toBe(description)
-  expect(wrapper.find(`meta[property="og:description"]`).props().content).toBe(description)
-  expect(wrapper.find(`meta[property="twitter:description"]`).props().content).toBe(description)
+  expect(wrapper.find(`meta[name="description"]`).props().content).toBe(
+    description
+  )
+  expect(wrapper.find(`meta[property="og:description"]`).props().content).toBe(
+    description
+  )
+  expect(
+    wrapper.find(`meta[property="twitter:description"]`).props().content
+  ).toBe(description)
 }
 
 describe(`SEO`, () => {
   describe(`title`, () => {
     it(`for page`, () => {
-      const component = (
-        <SEO
-          title="Don't panic."
-        />
-      )
+      const component = <SEO title="Don't panic." />
       const title = "Don't panic."
       assertTitles(component, title)
     })
@@ -34,7 +38,7 @@ describe(`SEO`, () => {
       const component = (
         <SEO
           siteMetadata={{
-            title: `Hitchhikers Guide to the Galaxy`
+            title: `Hitchhikers Guide to the Galaxy`,
           }}
         />
       )
@@ -47,7 +51,7 @@ describe(`SEO`, () => {
         <SEO
           title="Don't panic."
           siteMetadata={{
-            title: `Hitchhikers Guide to the Galaxy`
+            title: `Hitchhikers Guide to the Galaxy`,
           }}
         />
       )
@@ -59,11 +63,7 @@ describe(`SEO`, () => {
   describe(`description`, () => {
     it(`for page`, () => {
       const description = "It must be Thursday."
-      const component = (
-        <SEO>
-          {description}
-        </SEO>
-      )
+      const component = <SEO>{description}</SEO>
       assertDescriptions(component, description)
     })
 
@@ -76,11 +76,7 @@ describe(`SEO`, () => {
         Zaphod Beeblebrox (Sam Rockwell) and sexy refugee Trillian (Zooey Deschanel).
         Arthur makes his way across the stars while seeking the meaning of life, or something close to it.
       `
-      const component = (
-        <SEO>
-          {description}
-        </SEO>
-      )
+      const component = <SEO>{description}</SEO>
       assertDescriptions(component, getContent(30, description))
     })
 
@@ -99,21 +95,15 @@ describe(`SEO`, () => {
 
   describe(`crawling`, () => {
     it(`should disable`, () => {
-      const component = (
-        <SEO
-          crawl={false}
-        />
-      )
+      const component = <SEO crawl={false} />
       const wrapper = getWrapper(component)
-      expect(wrapper.find(`meta[name="robots"]`).props().content).toBe("noindex")
+      expect(wrapper.find(`meta[name="robots"]`).props().content).toBe(
+        "noindex"
+      )
     })
 
     it(`should enable`, () => {
-      const component = (
-        <SEO
-          crawl={true}
-        />
-      )
+      const component = <SEO crawl={true} />
       const wrapper = getWrapper(component)
       expect(wrapper.find(`meta[name="robots"]`).props().content).toBe("index")
     })
@@ -131,7 +121,9 @@ describe(`SEO`, () => {
       />
     )
     const wrapper = getWrapper(component)
-    expect(wrapper.find(`meta[property="twitter:author"]`).props().content).toBe(twitter)
+    expect(
+      wrapper.find(`meta[property="twitter:author"]`).props().content
+    ).toBe(twitter)
   })
 
   it(`should set the image`, () => {
@@ -144,8 +136,12 @@ describe(`SEO`, () => {
       />
     )
     const wrapper = getWrapper(component)
-    expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(image)
-    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(image)
+    expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(
+      image
+    )
+    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(
+      image
+    )
   })
 
   it(`should render static metadata`, () => {
@@ -153,15 +149,18 @@ describe(`SEO`, () => {
       <SEO
         title="Don't Panic."
         data={{
-          siteMetadata:
-          {
-            description: `A curious place for a curious mind.`
-          }
+          siteMetadata: {
+            description: `A curious place for a curious mind.`,
+          },
         }}
       />
     )
     const wrapper = getWrapper(component)
-    expect(wrapper.find(`meta[property="og:type"]`).props().content).toBe(`website`)
-    expect(wrapper.find(`meta[property="twitter:card"]`).props().content).toBe(`summary`)
+    expect(wrapper.find(`meta[property="og:type"]`).props().content).toBe(
+      `website`
+    )
+    expect(wrapper.find(`meta[property="twitter:card"]`).props().content).toBe(
+      `summary`
+    )
   })
 })

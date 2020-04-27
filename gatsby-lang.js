@@ -8,15 +8,14 @@ module.exports = {
         prefix: `posted on`,
         format: `dddd, D MMMM YYYY`,
       },
-      author: function (author) {
+      author: function(author) {
         return `by ${author}`
       },
-      ttr: function (ttr) {
-        if (ttr)
-          return `(Est. ${ttr} minute read)`
+      ttr: function(ttr) {
+        if (ttr) return `(Est. ${ttr} minute read)`
 
         return ``
       },
-    }
+    },
   },
 }

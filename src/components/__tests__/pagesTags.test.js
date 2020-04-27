@@ -1,13 +1,11 @@
-import React from 'react'
-import TagsPage from '../pages/tags'
-import { getSnapshot } from './_helpers'
+import React from "react"
+import TagsPage from "../pages/tags"
+import { getSnapshot } from "./_helpers"
 
 describe(`Tags page`, () => {
   it(`should render when there are no tags`, () => {
     const edges = []
-    const component = (
-      <TagsPage edges={edges} />
-    )
+    const component = <TagsPage edges={edges} />
     const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })
@@ -17,21 +15,19 @@ describe(`Tags page`, () => {
       {
         node: {
           frontmatter: {
-            tags: ["do", "not", "panic"]
+            tags: ["do", "not", "panic"],
           },
         },
       },
       {
         node: {
           frontmatter: {
-            tags: ["do", "not", "panic"]
+            tags: ["do", "not", "panic"],
           },
         },
       },
     ]
-    const component = (
-      <TagsPage edges={edges} />
-    )
+    const component = <TagsPage edges={edges} />
     const tree = getSnapshot(component)
     expect(tree).toMatchSnapshot()
   })

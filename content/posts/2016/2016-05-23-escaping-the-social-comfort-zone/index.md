@@ -4,9 +4,9 @@ cover: "https://picsum.photos/1600/800/?image=1070"
 date: 2016-05-23 20:24:15 +0200
 category: "tech"
 tags:
-    - Comfort Zone
-    - Personal Brand
-    - Mindset
+  - Comfort Zone
+  - Personal Brand
+  - Mindset
 ---
 
 > "I think that we grow when we are outside our comfort zone. If it's not

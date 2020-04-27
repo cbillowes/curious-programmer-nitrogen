@@ -1,18 +1,18 @@
 ---
 title: "How To Craft Your Changes Into Small Atomic Commits Using Git"
 ogImage: /images/og/2019-01-15-git.png
-date:   2019-01-15 22:30:00 +0200
+date: 2019-01-15 22:30:00 +0200
 tags:
-    - Technical
-    - Git
-    - Terminal
-    - Cheat Sheet
+  - Technical
+  - Git
+  - Terminal
+  - Cheat Sheet
 ---
 
 Small, atomic commits makes it easier for code reviews, browsing
 the history and reverting changes. Life happens and commits can
 touch more lines and files than I want but the changes committed
-should be distinct. *"Don't mix your apples with your toaster."*
+should be distinct. _"Don't mix your apples with your toaster."_
 
 > TL;DR: Use `git add -i` or `git add -p`. Stage the files you know
 > are related. Break other mangled changes in files into smaller
@@ -36,6 +36,7 @@ focused on a feature?" So I
 about it.
 
 ## Stop!
+
 Know what you are doing. If you make a mistake by omitting a file
 or leaving out a chunk of a file you will have a broken commit.
 
@@ -49,14 +50,16 @@ the chances are of you making a mistake.
 There are multiple ways to breakdown changes into smaller commits:
 
 **The not so cool way**
+
 1. Commit the files that are related. Make a copy of the file with
-multiple changes, revert the other changes in the file, add the new
-changes to the file and commit it. Put your changes back for the
-next commit. No more stone age processes. :smile:
+   multiple changes, revert the other changes in the file, add the new
+   changes to the file and commit it. Put your changes back for the
+   next commit. No more stone age processes. :smile:
 
 **The Git way**
+
 1. You can use the interactive mode approach to add the files you
-want and choose parts of the files you are interested in committing.
+   want and choose parts of the files you are interested in committing.
 2. You can use the patch approach directly.
 
 ## Getting started
@@ -89,14 +92,15 @@ show you how to stage files and parts of files to craft your
 commits. :sunglasses:
 
 ### The interactive mode way
+
 Get started with `git add -i` or `git add --interactive` See a
 status screen which is like `git status` on steroids.
 
- * To the left you have staged changes. If the file hasn't been
- staged yet it will display **unchanged**.
+- To the left you have staged changes. If the file hasn't been
+  staged yet it will display **unchanged**.
 
-* To your right you have unstaged changes. If the file is fully
-staged then it will display **nothing**.
+- To your right you have unstaged changes. If the file is fully
+  staged then it will display **nothing**.
 
 ```bash
 ➜  ahoy git:master ✗ 9cc08bf ➜ git add -i
@@ -119,14 +123,15 @@ Type in any of the numbers or letters below:
 
 2. `2` or `u` lets you stage files. When you select it, it will
    show files that have not been staged. This is equivalent to `git add <file>`
-   * If there are none you will stay in the `What Now>` prompt. If there
+
+   - If there are none you will stay in the `What Now>` prompt. If there
      are files to be staged then you will enter the `Update>>` prompt.
-   * Enter the numbers of the files or the highlighted letters and press
-    `ENTER`. The files are shown again. This time you will notice asterisks
-    next to the files you have selected. They are the one's that will be staged.
-   * Rinse and repeat this process until you are happy with the files you want to stage.
-   * Press `ENTER` to stage the files.
-   * If you want to quit this mode, just press `ENTER`
+   - Enter the numbers of the files or the highlighted letters and press
+     `ENTER`. The files are shown again. This time you will notice asterisks
+     next to the files you have selected. They are the one's that will be staged.
+   - Rinse and repeat this process until you are happy with the files you want to stage.
+   - Press `ENTER` to stage the files.
+   - If you want to quit this mode, just press `ENTER`
 
 3. `3` or `r` will do the opposite of update. It will unstage (or revert)
    your changed file. This is equivalent to `git rm --cached <file>` The process
@@ -144,6 +149,7 @@ Type in any of the numbers or letters below:
    files as you would in `git diff --cached <file>`
 
 ### Patch update mode
+
 You are presented with hunks. The `layout.scss` file below only has one hunk.
 Uh, not ideal because I want to break it up into atomic commits.
 
@@ -173,6 +179,7 @@ index fcc3ea4..8bdf8b6 100644
  }
 Stage this hunk [y,n,q,a,d,s,e,?]?
 ```
+
 Ahoy matey, there be options:
 
 ```bash
@@ -202,6 +209,7 @@ or not. Stage the ones that are relevant to your commit and leave the rest for
 now. You won't lose those changes.
 
 **Hunk #1**
+
 ```diff
 @@ -1,2 +1,5 @@
 +h1 {
@@ -210,7 +218,9 @@ now. You won't lose those changes.
  .parrot {
      background-color: blue;
 ```
+
 **Hunk #2**
+
 ```diff
 @@ -1,4 +4,5 @@
  .parrot {
@@ -219,7 +229,9 @@ now. You won't lose those changes.
  }
  .ship {
 ```
+
 **Hunk #3**
+
 ```diff
 @@ -3,5 +7,6 @@
  }
@@ -230,7 +242,9 @@ now. You won't lose those changes.
  }
  .pirate {
 ```
+
 **Hunk #4**
+
 ```diff
 @@ -6,4 +11,5 @@
  }
@@ -258,25 +272,26 @@ Sorry, cannot split this hunk
 ```
 
 > This @@ -1,9 +1,11 @@ line specifies the boundaries of the hunk to change.
-The -1,9 means the original portion of code started at line 1 in the code
-below and went for 9 more lines. The +1,11 means that we want to replace the
-original portion with the following code starting at line 1 and spanning the
-next 11 lines. ~
-[http://blog.jimbaca.com](http://blog.jimbaca.com/manually-edit-git-hunks-to-stage/)
+> The -1,9 means the original portion of code started at line 1 in the code
+> below and went for 9 more lines. The +1,11 means that we want to replace the
+> original portion with the following code starting at line 1 and spanning the
+> next 11 lines. ~
+> [http://blog.jimbaca.com](http://blog.jimbaca.com/manually-edit-git-hunks-to-stage/)
 
 To wrap it up, select the related files and create the related hunks. Stage
 them. Quit and commit. Do it again for the next change.
 
 ## The Git patch way
+
 You can also use git patch directly. `bash±git add -p` or
 `bash±git add --patch` will take you into patch mode.
 
-* reset files `bash±git reset --patch`
-* checkout out parts of files `bash±git checkout --patch`
-* stash parts of files `bash±git stash save --patch`
+- reset files `bash±git reset --patch`
+- checkout out parts of files `bash±git checkout --patch`
+- stash parts of files `bash±git stash save --patch`
 
 ## References
 
-* [7.2 Git Tools - Interactive Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging) -
+- [7.2 Git Tools - Interactive Staging](https://git-scm.com/book/en/v2/Git-Tools-Interactive-Staging) -
   git-scm.com
-* [How to undo 'git add' before commit?](https://stackoverflow.com/questions/348170/how-to-undo-git-add-before-commit)
+- [How to undo 'git add' before commit?](https://stackoverflow.com/questions/348170/how-to-undo-git-add-before-commit)

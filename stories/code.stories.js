@@ -1,21 +1,23 @@
-import React from 'react'
-import { storiesOf } from '@storybook/react'
-import Page from './_helpers'
+import React from "react"
+import { storiesOf } from "@storybook/react"
+import Page from "./_helpers"
 
-storiesOf('Typography/code', module)
-  .add('inline', () =>
+storiesOf("Typography/code", module)
+  .add("inline", () => (
     <Page>
-      <p>Inline <code>code</code> block.</p>
+      <p>
+        Inline <code>code</code> block.
+      </p>
     </Page>
-  )
-  .add('bash', () =>
+  ))
+  .add("bash", () => (
     <Page>
       <p>
         <code className="language-bash">npm run develop</code>
       </p>
     </Page>
-  )
-  .add('html', () =>
+  ))
+  .add("html", () => (
     <Page>
       <pre>
         <code className="language-html">
@@ -23,30 +25,26 @@ storiesOf('Typography/code', module)
         </code>
       </pre>
     </Page>
-  )
-  .add('javascript', () =>
+  ))
+  .add("javascript", () => (
     <Page>
       <pre>
         <code className="language-javascript">
-          const x = "something x related"
-          const y = 2
-          console.log(x + y)
-          // you can put this in a function
+          const x = "something x related" const y = 2 console.log(x + y) // you
+          can put this in a function
         </code>
       </pre>
     </Page>
-  )
-  .add('clojure', () =>
+  ))
+  .add("clojure", () => (
     <Page>
       <pre>
         <code className="language-clojure">
-          (let [greeting "hello"
-              name "Clarice"]
-              (println (str greeting " " name)))
-          ; You can put this in a function
+          (let [greeting "hello" name "Clarice"] (println (str greeting " "
+          name))) ; You can put this in a function
         </code>
       </pre>
     </Page>
-  )
+  ))
 
-  //TODO: fix token tag (it's styling it with tag when it shouldn't)
+//TODO: fix token tag (it's styling it with tag when it shouldn't)

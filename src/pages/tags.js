@@ -1,7 +1,7 @@
-import React from 'react'
-import { graphql, useStaticQuery } from 'gatsby'
-import SEO from '../components/seo'
-import TagsPage from '../components/pages/tags'
+import React from "react"
+import { graphql, useStaticQuery } from "gatsby"
+import SEO from "../components/seo"
+import TagsPage from "../components/pages/tags"
 
 export default () => {
   const data = useStaticQuery(
@@ -24,16 +24,12 @@ export default () => {
           }
         }
       }
-   `
+    `
   )
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO
-        title="Tags"
-        crawl={false}
-        siteMetadata={siteMetadata}
-      />
+      <SEO title="Tags" crawl={false} siteMetadata={siteMetadata} />
       <TagsPage edges={data.allMarkdownRemark.edges} />
     </>
   )

@@ -1,9 +1,9 @@
 ---
 title: "The Silver Searcher"
-date:   2019-08-29 05:10:00 +0200
+date: 2019-08-29 05:10:00 +0200
 tags:
-    - Technical
-    - Terminal
+  - Technical
+  - Terminal
 ---
 
 The `ack` utility was designed to replace 99% of the uses of grep.
@@ -30,65 +30,71 @@ or
 
     port install the_silver_searcher
 
-
 ### Linux
 
-* Ubuntu >= 13.10 (Saucy) or Debian >= 8 (Jessie)
+- Ubuntu >= 13.10 (Saucy) or Debian >= 8 (Jessie)
 
         apt-get install silversearcher-ag
-* Fedora 21 and lower
+
+- Fedora 21 and lower
 
         yum install the_silver_searcher
-* Fedora 22+
+
+- Fedora 22+
 
         dnf install the_silver_searcher
-* RHEL7+
+
+- RHEL7+
 
         yum install epel-release.noarch the_silver_searcher
-* Gentoo
+
+- Gentoo
 
         emerge -a sys-apps/the_silver_searcher
-* Arch
+
+- Arch
 
         pacman -S the_silver_searcher
 
-* Slackware
+- Slackware
 
         sbopkg -i the_silver_searcher
 
-* openSUSE:
+- openSUSE:
 
         zypper install the_silver_searcher
 
-* CentOS:
+- CentOS:
 
         yum install the_silver_searcher
 
-* SUSE Linux Enterprise: Follow [these simple instructions](https://software.opensuse.org/download.html?project=utilities&package=the_silver_searcher).
-
+- SUSE Linux Enterprise: Follow [these simple instructions](https://software.opensuse.org/download.html?project=utilities&package=the_silver_searcher).
 
 ### BSD
 
-* FreeBSD
+- FreeBSD
 
         pkg install the_silver_searcher
-* OpenBSD/NetBSD
+
+- OpenBSD/NetBSD
 
         pkg_add the_silver_searcher
 
 ### Windows
 
-* Win32/64
+- Win32/64
 
   Unofficial daily builds are [available](https://github.com/k-takata/the_silver_searcher-win32).
 
-* Chocolatey
+- Chocolatey
 
         choco install ag
-* MSYS2
+
+- MSYS2
 
         pacman -S mingw-w64-{i686,x86_64}-ag
-* Cygwin
+
+- Cygwin
 
   Run the relevant [`setup-*.exe`](https://cygwin.com/install.html),
-  and select "the\_silver\_searcher" in the "Utils" category.
+  and select "the_silver_searcher" in the "Utils" category.

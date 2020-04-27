@@ -1,9 +1,9 @@
 ---
 title: "Defusing Stressful Emotions"
-date:   2017-07-03 19:05:39 +0200
+date: 2017-07-03 19:05:39 +0200
 cover: "https://picsum.photos/1600/800/?image=1074"
 tags:
-    - Mindset
+  - Mindset
 ---
 
 > Mark Twain said, "I am an old man and I have known a great many troubles,
@@ -75,7 +75,7 @@ I am more productive. I am more free. And this makes me happy.
 
 ## References
 
--   [Headspace](https://www.headspace.com/), a meditation app
--   [Five steps to mindfulness](https://www.mindful.org/five-steps-to-mindfulness/) by Thich Nhat Hanh
--   [12 Techniques to stop worrying](http://www.pickthebrain.com/blog/stop-worrying/) by Cindy Holbrook
--   [Meditation isn’t about suppressing your thoughts and emotions](https://medium.com/meditation-without-mysticism/meditation-isn-t-about-suppressing-your-thoughts-and-emotions-4de935d61213) by J. D. Andre
+- [Headspace](https://www.headspace.com/), a meditation app
+- [Five steps to mindfulness](https://www.mindful.org/five-steps-to-mindfulness/) by Thich Nhat Hanh
+- [12 Techniques to stop worrying](http://www.pickthebrain.com/blog/stop-worrying/) by Cindy Holbrook
+- [Meditation isn’t about suppressing your thoughts and emotions](https://medium.com/meditation-without-mysticism/meditation-isn-t-about-suppressing-your-thoughts-and-emotions-4de935d61213) by J. D. Andre

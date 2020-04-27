@@ -4,7 +4,7 @@ module.exports = {
   verbose: true,
   testMatch: [
     `**/__tests__/**/*.(test|spec).[jt]s?(x)`,
-    `!**/__tests__/_helpers.js`
+    `!**/__tests__/_helpers.js`,
   ],
   cacheDirectory: `<rootDir>/coverage`,
   transform: {
@@ -19,31 +19,20 @@ module.exports = {
     `.cache`,
     `public`,
     `.test.js.snap`,
-    `.stories.js`
-  ],
-  coveragePathIgnorePatterns: [
-    `.test.js.snap`,
     `.stories.js`,
   ],
+  coveragePathIgnorePatterns: [`.test.js.snap`, `.stories.js`],
   collectCoverageFrom: [
     `src/components/**/*.{js,jsx}`,
-    `!src/components/__tests__/**/*`
+    `!src/components/__tests__/**/*`,
   ],
-  transformIgnorePatterns: [
-    `node_modules/(?!(gatsby)/)`,
-  ],
+  transformIgnorePatterns: [`node_modules/(?!(gatsby)/)`],
   globals: {
     __PATH_PREFIX__: ``,
   },
   testURL: `http://localhost`,
-  setupFiles: [
-    `<rootDir>/loadershim.js`
-  ],
-  setupFilesAfterEnv: [
-    `<rootDir>/setupTests.js`
-  ],
-  snapshotSerializers: [
-    `enzyme-to-json/serializer`
-  ],
+  setupFiles: [`<rootDir>/loadershim.js`],
+  setupFilesAfterEnv: [`<rootDir>/setupTests.js`],
+  snapshotSerializers: [`enzyme-to-json/serializer`],
   testEnvironment: "jest-environment-jsdom-global",
 }

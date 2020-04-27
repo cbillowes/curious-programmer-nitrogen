@@ -1,10 +1,10 @@
 ---
 title: "A mindful day of happiness"
 cover: "https://picsum.photos/1600/800/?image=646"
-date:   2016-07-22 21:54:15 +0200
+date: 2016-07-22 21:54:15 +0200
 tags:
-    - Mindset
-    - Time Management
+  - Mindset
+  - Time Management
 ---
 
 > Everything I did today was done with intent and slower than usual. I was
@@ -62,18 +62,18 @@ When I got to work and sat at my table, in a few minutes my table was
 effortlessly clean and I had attended to more than I have ever been able to do
 in the past. **Everything I did was done with intent and slower than usual.**
 
--   I learned that it takes time to make time. Rushing to get everything done only
-    creates a mental clutter in my mind that impedes clarity and insight.
+- I learned that it takes time to make time. Rushing to get everything done only
+  creates a mental clutter in my mind that impedes clarity and insight.
 
--   Doing things with intent in a focused manner naturally breaks me out of the
-    survival-mode I am so accustomed to and frees me from multitasking.
+- Doing things with intent in a focused manner naturally breaks me out of the
+  survival-mode I am so accustomed to and frees me from multitasking.
 
--   If I can't get to everything in a day, then so be it. Practicing being mindful
-    has aided me in approaching my day in a more sustainable way while living in
-    the here and now.
+- If I can't get to everything in a day, then so be it. Practicing being mindful
+  has aided me in approaching my day in a more sustainable way while living in
+  the here and now.
 
--   I felt like a got more out of my day (and time) because I was actually living
-    in the moment instead of in the past or future.
+- I felt like a got more out of my day (and time) because I was actually living
+  in the moment instead of in the past or future.
 
 This practice is very rewarding, sustainable, keeps me calm and makes me happy.
 

@@ -9,7 +9,7 @@ module.exports = {
     author: `Clarice Bouwer`,
     twitter: `@cbillowes`,
     image: `static/banner.jpeg`,
-    lang: 'en-US',
+    lang: "en-US",
   },
   plugins: [
     `gatsby-plugin-react-helmet`,
@@ -32,15 +32,15 @@ module.exports = {
       resolve: `gatsby-plugin-sitemap`,
       options: {
         sitemapSize: 100,
-      }
+      },
     },
     {
-      resolve: 'gatsby-plugin-robots-txt',
+      resolve: "gatsby-plugin-robots-txt",
       options: {
-        host: 'https://curiousprogrammer.dev',
-        sitemap: 'https://curiousprogrammer.dev/sitemap.xml',
-        policy: [{ userAgent: '*', allow: '/' }]
-      }
+        host: "https://curiousprogrammer.dev",
+        sitemap: "https://curiousprogrammer.dev/sitemap.xml",
+        policy: [{ userAgent: "*", allow: "/" }],
+      },
     },
     {
       resolve: `gatsby-source-filesystem`,
@@ -76,7 +76,7 @@ module.exports = {
               play: `${__dirname}/src/images/play.gif`,
               placeholder: `${__dirname}/src/images/placeholder.gif`,
               loading: `${__dirname}/src/images/loading.gif`,
-              relativePath: `/static/gifs`
+              relativePath: `/static/gifs`,
             },
           },
           `gatsby-remark-images`,
@@ -86,20 +86,21 @@ module.exports = {
             resolve: `gatsby-remark-embed-youtube`,
             options: {
               width: 800,
-              height: 400
-            }
-          }, {
+              height: 400,
+            },
+          },
+          {
             resolve: "gatsby-remark-embed-gist",
             options: {
               username: `cbillowes`,
-            }
+            },
           },
           {
             resolve: `gatsby-remark-prismjs`,
             options: {
               classPrefix: `language-`,
               inlineCodeMarker: `±`,
-            }
+            },
           },
         ],
       },
@@ -124,4 +125,4 @@ module.exports = {
     `gatsby-plugin-offline`,
     `gatsby-plugin-styled-components`,
   ],
-};
+}

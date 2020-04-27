@@ -1,9 +1,9 @@
 ---
 title: "Setup macOS development environment"
-date:   2019-08-31 03:00:00 +0200
+date: 2019-08-31 03:00:00 +0200
 tags:
-    - Technical
-    - Mac
+  - Technical
+  - Mac
 ---
 
 > **Note:** I am running macOS Mojave on a 2.8 GHz Intel Core i7 with 16 GB 2133 MHz LPDDR3 RAM.
@@ -13,9 +13,10 @@ This environment is for Clojure and NodeJS development using the Spacemacs confi
 Emacs and Vim bindings.
 
 ## Homebrew
+
 The missing package manager for macOS (or Linux).
 
-[Wiki](https://en.wikipedia.org/wiki/Homebrew_(package_management_software)) |
+[Wiki](<https://en.wikipedia.org/wiki/Homebrew_(package_management_software)>) |
 [brew](https://brew.sh/)
 
 ```bash
@@ -26,6 +27,7 @@ The script explains what it will do and then pauses before it does it. Read abou
 installation options. Install Homebrew on Linux and Windows Subsystem for Linux.
 
 ## Java OpenJDK
+
 OpenJDK is a free and open-source implementation of the Java SE Platform Edition.
 
 [Wiki](https://en.wikipedia.org/wiki/OpenJDK) |
@@ -39,11 +41,12 @@ brew install <version>
 
 **Versions**:
 
-* adoptopenjdk-openjdk8
-* adoptopenjdk-openjdk9
-* adoptopenjdk-openjdk10
+- adoptopenjdk-openjdk8
+- adoptopenjdk-openjdk9
+- adoptopenjdk-openjdk10
 
 ## Clojure
+
 Clojure is a modern, dynamic, and functional dialect of the Lisp programming language on the Java
 platform. Like other Lisps, Clojure treats code as data and has a Lisp macro system. The current
 development process is community-driven, overseen by Rich Hickey as its benevolent dictator for life.
@@ -56,10 +59,11 @@ brew install clojure
 ```
 
 ## Leiningen
+
 Leiningen is a build automation and dependency management tool for the simple configuration of
 software projects written in the Clojure programming language. Leiningen was created by Phil Hagelberg.
 
-[Wiki](https://en.wikipedia.org/wiki/Leiningen_(software)) |
+[Wiki](<https://en.wikipedia.org/wiki/Leiningen_(software)>) |
 [GitHub](https://github.com/technomancy/leiningen) |
 [Homebrew](https://formulae.brew.sh/formula/leiningen)
 
@@ -68,6 +72,7 @@ brew install leiningen
 ```
 
 ## Node
+
 Node.js is an open-source, cross-platform, JavaScript run-time environment that executes JavaScript
 code outside of a browser.
 
@@ -82,6 +87,7 @@ sudo npm install npm --global # Update the `npm` CLI client
 ## shell
 
 ### iTerm2
+
 iTerm2 is a GPL-licensed terminal emulator for macOS. It was derived from and has mostly supplanted
 the earlier "iTerm" application. iTerm2 supports operating system features such as window transparency,
 full-screen mode, Exposé Tabs, Growl notifications, and standard keyboard shortcuts.
@@ -89,8 +95,8 @@ full-screen mode, Exposé Tabs, Growl notifications, and standard keyboard short
 [Wiki](https://en.wikipedia.org/wiki/ITerm2) |
 [iTerm2](https://www.iterm2.com/)
 
-
 ### Zsh
+
 The Z shell (zsh) is a Unix shell that can be used as an interactive login shell
 and as a command interpreter for shell scripting. Zsh is an extended Bourne shell
 with many improvements, including some features of Bash, ksh, and tcsh.
@@ -119,6 +125,7 @@ sudo port install zsh zsh-completions
 ```
 
 ### oh-my-zsh
+
 Oh My Zsh is an open source, community-driven framework for managing your zsh
 configuration.
 
@@ -130,6 +137,7 @@ sh -c "$(curl -fsSL https://raw.github.com/robbyrussell/oh-my-zsh/master/tools/i
 ```
 
 ### Powerlevel9k
+
 Powerlevel9k is a theme for ZSH which uses Powerline Fonts. It can be used with
 vanilla ZSH or ZSH frameworks such as Oh-My-Zsh, Prezto, Antigen, and many others.
 Get more out of your terminal. Be a badass.
@@ -182,6 +190,7 @@ plugins=(git
 ## Tools
 
 ### Git
+
 A distributed version-control system for tracking changes in source code.
 
 [Atlassian](https://www.atlassian.com/git/tutorials/what-is-git) |
@@ -206,6 +215,7 @@ has an option to install command line tools as well. You can download that tool 
 the GitHub for [macOS website](https://desktop.github.com).
 
 ### vim syntax highlighting
+
 To enable the syntax coloring for vim, go to your home directory, and open or create the
 `.vimrc` file if it doesn’t already exist.
 
@@ -228,6 +238,7 @@ Toggle syntax highlighting in Vim, press `Esc` and then type the below and enter
 ```
 
 ### Gatsby
+
 Gatsby is a React-based, GraphQL powered, static site generator.
 It uses powerful preconfiguration to build a website that uses only static files for
 incredibly fast page loads, service workers, code splitting, server-side rendering,
@@ -241,6 +252,7 @@ npm install -g gatsby-cli
 ```
 
 ### Emacs
+
 Emacs is a family of text editors that are characterized by their extensibility. The manual
 for the most widely used variant, GNU Emacs, describes it as "the extensible,
 customizable, self-documenting, real-time display editor".
@@ -249,6 +261,7 @@ customizable, self-documenting, real-time display editor".
 [emacsformacosx](https://emacsformacosx.com/)
 
 ### Spacemacs
+
 It can take advantage of all of GNU Emacs' features, including both graphical and
 command-line user interfaces, and being executable under X Window System and within a
 Unix shell terminal.
@@ -289,18 +302,21 @@ brew install the_silver_searcher
 [GitHub](https://github.com/ggreer/the_silver_searcher)
 
 #### .spacemacs config
+
 Keep a copy of your config under version control in the event something goes wrong when you change it.
 
 [Gist (configuration)](https://gist.github.com/cbillowes/094ab477b6b28f31e0809bc9655f5c67) |
 [Practicalli](https://github.com/practicalli/spacemacs-config/blob/master/.spacemacs.d/init.el)
 
 #### themes
+
 Press `SPC T n` to cycle to the next theme in the list
 I now use `apropospriate-dark` configured under themes in the `.spacemacs` configuration file.
 
 [GitHub](https://github.com/waymondo/apropospriate-theme)
 
 #### Treemacs layer
+
 This layer sets up a file navigation and project explorer side-window via Treemacs.
 
 [Layer](http://develop.spacemacs.org/layers/+filetree/treemacs/README.html) |
@@ -316,14 +332,16 @@ This layer sets up a file navigation and project explorer side-window via Treema
 ```
 
 #### Adjusting window sizes
+
 You may have a configuration where the golden ratio or zoom has been configured. Your
 windows won't be balanced (equal sizes when windows are split). Windows are expanded when
 they are focused while other windows appear smaller.
 
-* Toggle zoom `SPC t g`
-* Toggle golden ratio mode `SPC SPC > golden-ratio-mode`
-* Balance windows area `SPC w =`
+- Toggle zoom `SPC t g`
+- Toggle golden ratio mode `SPC SPC > golden-ratio-mode`
+- Balance windows area `SPC w =`
 
 ## Am I missing something?
+
 Do you have something configured in your environment that is not in my setup?
 Feel free to share :blush:

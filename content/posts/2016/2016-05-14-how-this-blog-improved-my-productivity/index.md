@@ -1,10 +1,10 @@
 ---
 title: "How this blog improved my productivity"
 cover: "https://picsum.photos/1600/800/?image=9"
-date:   2016-05-14 01:30:45 +0200
+date: 2016-05-14 01:30:45 +0200
 category: "tech"
 tags:
-    - Productivity
+  - Productivity
 ---
 
 > Having a pet project has some powerful benefits. Do you have one? What

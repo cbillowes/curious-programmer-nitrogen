@@ -1,60 +1,35 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import ReadingPane from './readingPane'
-import Number from './number'
-import PostMetadata from './postMetadata'
-import Tags from './tags'
-import '../styles/post.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import ReadingPane from "./readingPane"
+import Number from "./number"
+import PostMetadata from "./postMetadata"
+import Tags from "./tags"
+import "../styles/post.scss"
 
 const Body = ({ children }) => {
-  return (
-    typeof children === `string` ?
-      <div
-        className="reading-panel"
-        dangerouslySetInnerHTML={{ __html: children }}
-      >
-      </div> :
-      <div
-        className="reading-panel"
-      >
-        {children}
-      </div>
+  return typeof children === `string` ? (
+    <div
+      className="reading-panel"
+      dangerouslySetInnerHTML={{ __html: children }}
+    ></div>
+  ) : (
+    <div className="reading-panel">{children}</div>
   )
 }
 
 const Metadata = ({ date, author, ttr }) => {
-  return (
-    <PostMetadata
-      date={date}
-      author={author}
-      ttr={ttr}
-    />
-  )
+  return <PostMetadata date={date} author={author} ttr={ttr} />
 }
 
 function Post({ title, tags, date, author, ttr, number, children }) {
   return (
     <>
-      <article
-        className="post article"
-      >
-        <Number
-          number={number}
-        />
-        <ReadingPane
-          heading={title}
-        >
-          <Metadata
-            date={date}
-            author={author}
-            ttr={ttr}
-          />
-          <Tags
-            tags={tags}
-          />
-          <Body>
-            {children}
-          </Body>
+      <article className="post article">
+        <Number number={number} />
+        <ReadingPane heading={title}>
+          <Metadata date={date} author={author} ttr={ttr} />
+          <Tags tags={tags} />
+          <Body>{children}</Body>
         </ReadingPane>
       </article>
     </>

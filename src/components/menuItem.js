@@ -1,7 +1,7 @@
-import React from 'react'
-import PropTypes from 'prop-types'
-import Anchor from './anchor'
-import '../styles/menu-item.scss'
+import React from "react"
+import PropTypes from "prop-types"
+import Anchor from "./anchor"
+import "../styles/menu-item.scss"
 
 function toggleDisplay(e, toggleOnClick) {
   e.preventDefault()
@@ -17,7 +17,9 @@ const MenuItem = ({ item, active, toggleOnClick }) => {
         tabIndex="0"
         className="menu-item active"
         href="/#"
-        onKeyUp={e => (e.keyCode === 32) ? toggleDisplay(e, toggleOnClick) : function () { }}
+        onKeyUp={e =>
+          e.keyCode === 32 ? toggleDisplay(e, toggleOnClick) : function() {}
+        }
         onClick={e => toggleDisplay(e, toggleOnClick)}
       >
         {name}
@@ -26,10 +28,7 @@ const MenuItem = ({ item, active, toggleOnClick }) => {
   }
 
   return (
-    <Anchor
-      to={to}
-      className="menu-item"
-    >
+    <Anchor to={to} className="menu-item">
       {name}
     </Anchor>
   )

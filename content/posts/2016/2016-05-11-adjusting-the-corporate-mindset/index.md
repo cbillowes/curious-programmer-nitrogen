@@ -1,10 +1,10 @@
 ---
 title: "Adjusting the corporate mindset"
 cover: "https://picsum.photos/1600/800/?image=983"
-date:   2016-05-11 23:16:23 +0200
+date: 2016-05-11 23:16:23 +0200
 category: "tech"
 tags:
-    - Productivity
+  - Productivity
 ---
 
 > Just because it's always been done that way, doesn't mean it can't be changed.
@@ -32,36 +32,36 @@ up. This takes a [lot of time](/blog/time-is-precious).
 We shouldn't just throw people into the deep end with everything. "Bend a tree
 while it is still growing."
 
--   Give them a solid welcome pack with important HR and company familiarity
-    documents. It should act like a map with a "you are here" in this business.
+- Give them a solid welcome pack with important HR and company familiarity
+  documents. It should act like a map with a "you are here" in this business.
 
--   Access cards, user accounts and all technical requirements need to be available
-    on the start date. Someone joining a company is eager and excited. Idle time
-    is going to be frustrating.
+- Access cards, user accounts and all technical requirements need to be available
+  on the start date. Someone joining a company is eager and excited. Idle time
+  is going to be frustrating.
 
--   Orientation needs to be ongoing for a few months. One day is too overwhelming
-    in large companies and not everyone is going to retain all that knowledge that
-    is crammed into their minds.
+- Orientation needs to be ongoing for a few months. One day is too overwhelming
+  in large companies and not everyone is going to retain all that knowledge that
+  is crammed into their minds.
 
--   Assign a mentor for the next year so they have a dedicated person to guide and
-    help them along.
+- Assign a mentor for the next year so they have a dedicated person to guide and
+  help them along.
 
--   Don't assign them to a team straight away. Sure you may desperately need
-    professionals in some teams but this is only going to slow down the delivery and cause
-    unnecessary frustrations within a team.
+- Don't assign them to a team straight away. Sure you may desperately need
+  professionals in some teams but this is only going to slow down the delivery and cause
+  unnecessary frustrations within a team.
 
--   Instead let them join a team of their choice and pair on bite-sized chunks of
-    work. Perhaps they could be rotated every sprint up to about four sprints.
-    This should be less invasive and give them more exposure to teams, products,
-    people and technology. By pairing, they don't have the pressures of setting up
-    their environments fully but as they have their machines they can start
-    exploring codebases and read up where they can.
+- Instead let them join a team of their choice and pair on bite-sized chunks of
+  work. Perhaps they could be rotated every sprint up to about four sprints.
+  This should be less invasive and give them more exposure to teams, products,
+  people and technology. By pairing, they don't have the pressures of setting up
+  their environments fully but as they have their machines they can start
+  exploring codebases and read up where they can.
 
--   After the rotation period is up, let the person choose from a list of priority
-    teams - teams who need developers. Let the team have an informal interview
-    with the candidate to identify a possible fit. Forced placements don't
-    encourage a sense of autonomy within the team and if the person doesn't fit
-    well in the team, everyone is left discouraged.
+- After the rotation period is up, let the person choose from a list of priority
+  teams - teams who need developers. Let the team have an informal interview
+  with the candidate to identify a possible fit. Forced placements don't
+  encourage a sense of autonomy within the team and if the person doesn't fit
+  well in the team, everyone is left discouraged.
 
 ## Focus on staff retention
 

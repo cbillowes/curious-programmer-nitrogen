@@ -1,12 +1,12 @@
 ---
 title: "Bonding with Testers"
 cover: "https://picsum.photos/1600/800/?image=7"
-date:   2016-05-04 23:56:55 +0200
+date: 2016-05-04 23:56:55 +0200
 category: "tech"
 tags:
-    - Relationships
-    - Communication
-    - Productivity
+  - Relationships
+  - Communication
+  - Productivity
 ---
 
 > Do you form relationships with testers? Teaming up with testers from the
