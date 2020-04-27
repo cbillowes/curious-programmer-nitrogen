@@ -15,7 +15,7 @@ export default () => {
           }
         }
         allMarkdownRemark(
-          filter: { fields: { slug: { nin: "/blog/template" } } }
+          filter: { fields: { slug: { nin: "/blog/example" } } }
           sort: { fields: [fields___date], order: DESC }
           limit: 6
         ) {
@@ -30,7 +30,6 @@ export default () => {
               frontmatter {
                 title
                 tags
-                author
               }
             }
           }

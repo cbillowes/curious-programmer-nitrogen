@@ -13,7 +13,10 @@ export default () => {
             image
           }
         }
-        allMarkdownRemark(limit: 1000) {
+        allMarkdownRemark(
+          filter: { fields: { slug: { nin: "/blog/example" } } }
+          sort: { order: DESC, fields: fields___date }
+        ) {
           totalCount
           edges {
             node {

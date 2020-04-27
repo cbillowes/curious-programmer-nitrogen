@@ -7,33 +7,32 @@ import "../styles/tag.scss"
 
 export const query = graphql`
   query TagTemplateQuery($tag: String!) {
+    allMarkdownRemark(
+      filter: {frontmatter: {tags: {in: [$tag]}}, fields: {slug: {nin: "/blog/example"}}},
+      sort: {order: DESC, fields: fields___date}
+    ) {
+      edges {
+        node {
+          frontmatter {
+            title
+            tags
+          }
+          fields {
+            date
+            number
+            slug
+          }
+          excerpt
+          html
+          timeToRead
+        }
+      }
+    }
     site {
       siteMetadata {
         title
         description
         image
-      }
-    }
-    allMarkdownRemark(
-      limit: 1000
-      sort: { fields: [fields___date], order: DESC }
-      filter: { frontmatter: { tags: { in: [$tag] } } }
-    ) {
-      edges {
-        node {
-          excerpt
-          fields {
-            number
-            slug
-            date
-          }
-          frontmatter {
-            title
-            tags
-          }
-          html
-          timeToRead
-        }
       }
     }
   }

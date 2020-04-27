@@ -1,6 +1,6 @@
 ---
 title: Example
-date: 2020-04-27 05:00:00 +0200
+date: 2016-01-01 05:00:00 +0200
 tags:
   - Personal Brands
 ---
