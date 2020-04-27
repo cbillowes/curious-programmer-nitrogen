@@ -1,6 +1,5 @@
 import React, { Component } from "react"
 import Logo from "./logo"
-import SearchBar from "./searchBar"
 import Navigation from "./navigation"
 import '../styles/header.scss'
 
@@ -9,23 +8,13 @@ class Header extends Component {
     super(props)
     this.state = {
       isMenuOpen: this.props.isMenuOpen ? this.props.isMenuOpen : false,
-      isSearchOpen: this.props.isSearchOpen ? this.props.isSearchOpen : false,
     }
-  }
-
-  toggleSearch = (e) => {
-    e.preventDefault()
-    this.setState({
-      isSearchOpen: !this.state.isSearchOpen,
-      isMenuOpen: false,
-    })
   }
 
   toggleNavigation = (e) => {
     e.preventDefault()
     this.setState({
       isMenuOpen: !this.state.isMenuOpen,
-      isSearchOpen: false,
     })
   }
 
@@ -34,16 +23,6 @@ class Header extends Component {
       <header className="header">
         <div className="wrapper">
           <Logo />
-          {
-            process.env.GATSBY_SEARCH_FEATURE === "true" ?
-              <SearchBar
-                toggleOnClick={this.toggleSearch.bind(this)}
-                isOpen={this.state.isSearchOpen}
-              />
-              :
-              <></>
-          }
-
           <Navigation
             toggleOnClick={this.toggleNavigation.bind(this)}
             isOpen={this.state.isMenuOpen}

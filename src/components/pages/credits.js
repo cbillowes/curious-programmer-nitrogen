@@ -23,14 +23,6 @@ const CreditsPage = () => (
           is an all-in-one workflow that combines global deployment, continuous integration and automatic HTTPS
           and is where I host my blog.
         </Credit>
-        <br />
-        <Credit
-          to="https://www.cloudafrica.net/"
-          title="CloudAfrica"
-        >
-          is a dedicated provider providing high performance, highly stable cloud environments
-          and is where I host my server which powers my search feature.
-        </Credit>
       </div>
 
       <div>
@@ -156,24 +148,6 @@ const CreditsPage = () => (
           title="webfx.com"
         >
           emoji cheat sheet.
-        </Credit>
-      </div>
-
-      <div>
-        <H2>Search</H2>
-        <Credit
-          to="https://lucene.apache.org/solr/"
-          title="Apache Solr"
-        >
-          is the service I run to power my search. It is a popular, blazing-fast, open source
-          enterprise search platform built on Apache Lucene.
-        </Credit>
-        <br />
-        <Credit
-          to="https://scrapy.org/"
-          title="Scrapy"
-        >
-          is an open source and collaborative framework for extracting the data from websites.
         </Credit>
       </div>
 
