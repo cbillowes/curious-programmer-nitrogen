@@ -7,9 +7,9 @@ import PostNavigationTeaser from '../postNavigationTeaser'
 import Footer from '../footer'
 import '../../styles/page.scss'
 
-function postNavigation(node) {
+function postNavigation(node, author) {
   const { timeToRead, excerpt } = node
-  const { title, author, tags } = node.frontmatter
+  const { title, tags } = node.frontmatter
   const { slug, date } = node.fields
   return {
     title,
@@ -23,8 +23,8 @@ function postNavigation(node) {
 }
 
 const PostPage = ({ slug, title, date, tags, excerpt, author, timeToRead, html, next, previous, number }) => {
-  const previousPost = postNavigation(previous)
-  const nextPost = postNavigation(next)
+  const previousPost = postNavigation(previous, author)
+  const nextPost = postNavigation(next, author)
 
   return (
     <>
