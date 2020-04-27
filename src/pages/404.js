@@ -38,6 +38,7 @@ export default () => {
       }
     `
   )
+  const siteMetadata = data.site.siteMetadata
   const edges = data.allMarkdownRemark.edges
   return (
     <>
