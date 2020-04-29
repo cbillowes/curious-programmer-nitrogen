@@ -114,29 +114,57 @@ const createBlogPosts = async (graphql, actions, reporter) => {
         return
       }
 
-      // Let's be sure not to create the demo page.
-      const edges = edgesWithoutDemoPost(result)
-
-      for (let index = 0; index < edges.length; index++) {
-        const { number, slug, date, previous, next } = getPost(edges, index)
-        createPage({
-          path: slug,
-          component: path.resolve(`./src/templates/post.js`),
-          context: {
-            slug,
-            date,
-            number,
-            previous: previous.node,
-            next: next.node,
-          },
-        })
-        reporter.verbose(`
-          previous: [${previous.number}] ${previous.node.fields.slug}
-          this    : [${number}] ${slug}
-          next    : [${next.number}] ${next.node.fields.slug}
-        `)
-      }
+      createBlogPages(createPage, result, reporter)
+      createDemoBlogPage(createPage, result, reporter)
     })
+}
+
+const createBlogPages = (createPage, result, reporter) => {
+  const edges = edgesWithoutDemoPost(result)
+  edges.forEach((_, index) => {
+    const { number, slug, date, previous, next } = getPost(edges, index)
+    createPage({
+      path: slug,
+      component: path.resolve(`./src/templates/post.js`),
+      context: {
+        slug,
+        date,
+        number,
+        previous: previous.node,
+        next: next.node,
+      },
+    })
+    reporter.verbose(`
+      previous: [${previous.number}] ${previous.node.fields.slug}
+      this    : [${number}] ${slug}
+      next    : [${next.number}] ${next.node.fields.slug}
+    `)
+  })
+}
+
+const createDemoBlogPage = (createPage, result, reporter) => {
+  const edges = result.data.allMarkdownRemark.edges
+  const slugs = edges.map(edge => edge.node.fields.slug)
+  const demo = slugs.indexOf(exclusionSlugForPost)
+  if (demo === -1) return
+
+  const { number, slug, date, previous, next } = getPost(edges, demo)
+  createPage({
+    path: slug,
+    component: path.resolve(`./src/templates/post.js`),
+    context: {
+      slug,
+      date,
+      number,
+      previous: previous.node,
+      next: next.node,
+    },
+  })
+  reporter.verbose(`
+    previous: [${previous.number}] ${previous.node.fields.slug}
+    this    : [${number}] ${slug}
+    next    : [${next.number}] ${next.node.fields.slug}
+  `)
 }
 
 const createTags = async (graphql, actions, reporter) => {
@@ -249,7 +277,7 @@ const applyNumbers = (createNodeField) => {
     createNodeField({
       node,
       name: `number`,
-      value: index + 1,
+      value: index,
     })
   })
 }
