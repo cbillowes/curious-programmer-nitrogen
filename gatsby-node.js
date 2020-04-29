@@ -17,6 +17,9 @@ const nodes = []
 // accessible only by its slug
 const exclusionSlugForPost = `/blog/example`
 
+// Where all the incremental search index files go to live
+const exportDirectory = path.join(`${__dirname}`, `export`)
+
 /**
  * GATSBY API.
  * Events firing in the lifecycle
@@ -215,21 +218,25 @@ const createSearchIndexes = async (graphql, reporter) => {
       }
 
       // Let's be sure not to index the demo page.
+      const slugs = getPreviousExportedSlugs()
       const edges = edgesWithoutDemoPost(result)
+        .filter(edge => slugs.indexOf(edge.node.fields.slug) === -1)
+
       const posts = edges.map(edge => {
         const node = edge.node
+        const slug = node.fields.slug
+        if (slugs.indexOf(slug) > -1) return
+
         return {
-          slug: node.fields.slug,
+          slug,
           title: node.frontmatter.title,
           tags: node.frontmatter.tags,
           html: tidyIndexableContent(node.html),
         }
       })
 
-      const filename = `${__dirname}/export/search-${toTimestamp(new Date())}.json`
-      fs.writeFile(filename, JSON.stringify(posts), `utf-8`, err => {
-        reporter.verbose(err)
-      })
+      storeIncrementalExport(posts)
+      storeIncrementalExportLog(posts.map(post => post.slug))
     })
 }
 
@@ -306,4 +313,31 @@ const tidyIndexableContent = (html) => {
     .replace(/<[^>]+>/gm, ``)
     .replace(/([\r\n]+ +)+/gm, ``)
     .replace(/\n/g, ` `)
+}
+
+const getPreviousExportedSlugs = () => {
+  const files = fs.readdirSync(exportDirectory).filter(file => file !== `slugs.txt`)
+  const slugs = files.map(file => {
+    const data = fs.readFileSync(path.join(exportDirectory, file), { encoding: `utf-8` })
+    const json = JSON.parse(data)
+    return json.map(j => {
+      return j.slug
+    })
+  })
+  return [].concat.apply([], slugs)
+}
+
+const storeIncrementalExport = (posts) => {
+  if (posts.length === 0) return
+  const filename = `${__dirname}/export/search-${toTimestamp(new Date())}.json`
+  fs.writeFileSync(filename, JSON.stringify(posts), `utf-8`)
+}
+
+const storeIncrementalExportLog = (slugs) => {
+  if (slugs.length === 0) return
+  const date = new Date()
+  const data = slugs.reduce((result, slug) => {
+    return `${result}\n${date}: ${slug}`
+  }, "")
+  fs.appendFileSync(path.join(exportDirectory, `slugs.txt`), data, { encoding: `utf-8` })
 }
