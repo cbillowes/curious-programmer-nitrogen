@@ -4,7 +4,7 @@ import SEO from "../components/seo"
 import PostPage from "../components/pages/post"
 
 export const query = graphql`
-  query PostTemplateQuery($path: String!) {
+  query PostTemplateQuery($slug: String!) {
     site {
       siteMetadata {
         title
@@ -12,7 +12,7 @@ export const query = graphql`
         image
       }
     }
-    markdownRemark(fields: { slug: { eq: $path } }) {
+    markdownRemark(fields: { slug: { eq: $slug } }) {
       html
       excerpt
       timeToRead
