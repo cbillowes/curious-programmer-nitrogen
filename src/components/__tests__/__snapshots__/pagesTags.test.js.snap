@@ -157,7 +157,7 @@ exports[`Tags page should render all tags 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            
@@ -573,7 +573,7 @@ exports[`Tags page should render when there are no tags 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            

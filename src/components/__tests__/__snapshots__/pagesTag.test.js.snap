@@ -157,7 +157,7 @@ exports[`Tag page should render with posts 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            
@@ -688,7 +688,7 @@ exports[`Tag page should render without posts 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            

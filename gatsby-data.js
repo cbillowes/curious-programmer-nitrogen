@@ -55,7 +55,7 @@ module.exports = {
       to: "/license",
     },
     {
-      name: "Github",
+      name: "GitHub",
       to: "https://github.com/cbillowes",
       external: true,
     },

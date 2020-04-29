@@ -157,7 +157,7 @@ exports[`Layout should not render the footer 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            
@@ -339,7 +339,7 @@ exports[`Layout should render custom class 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            
@@ -521,7 +521,7 @@ exports[`Layout should render page 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            
@@ -703,7 +703,7 @@ exports[`Layout should render reading pane 1`] = `
             rel="nofollow noopener noreferrer"
             target="_blank"
           >
-            Github
+            GitHub
           </a>
            
            

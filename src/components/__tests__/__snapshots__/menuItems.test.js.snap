@@ -81,7 +81,7 @@ exports[`Menu items should not set any page as active when the page does not exi
     rel="nofollow noopener noreferrer"
     target="_blank"
   >
-    Github
+    GitHub
   </a>
    
    
@@ -178,7 +178,7 @@ exports[`Menu items should set another page to active in the navigation items 1`
     rel="nofollow noopener noreferrer"
     target="_blank"
   >
-    Github
+    GitHub
   </a>
    
    
@@ -275,7 +275,7 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
     rel="nofollow noopener noreferrer"
     target="_blank"
   >
-    Github
+    GitHub
   </a>
    
    
@@ -372,7 +372,7 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
     rel="nofollow noopener noreferrer"
     target="_blank"
   >
-    Github
+    GitHub
   </a>
    
    
@@ -469,7 +469,7 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
     rel="nofollow noopener noreferrer"
     target="_blank"
   >
-    Github
+    GitHub
   </a>
    
    
