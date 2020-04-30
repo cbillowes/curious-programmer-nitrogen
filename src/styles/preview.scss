@@ -4,12 +4,12 @@
 .post.preview {
   position: relative;
   padding: 2.5rem 4rem;
-  border-radius: $border-radius + 30;
   background-color: darken($darkest, 2%);
   width: 39%;
   margin: 0 1% 3% 1%;
   box-shadow: 3px 3px 3px darken($darkest, 3%);
   box-shadow: 1px 1px 1px lighten($dark, 1%);
+  box-shadow: 0 10px 15px -3px darken($darkest, 5%), 0 4px 6px -2px darken($darkest, 10%);
 
   @media screen and (min-width: $breakpoint-large + 1) and (max-width: 1440px) {
     width: 35%;
