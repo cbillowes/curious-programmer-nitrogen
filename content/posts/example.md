@@ -19,6 +19,38 @@ tags:
 
 ---
 
+## Problem code
+
+This code won't highlight by prismjs.
+
+```nginx
+# This is our Solr instance
+# We will access it through SSL instead of using the port directly
+location /solr {
+    proxy_set_header Host $host;
+    proxy_set_header X-Real-IP $remote_addr;
+    proxy_pass "http://localhost:8983";
+}
+
+error_page 404 /404.html;
+    location = /40x.html {
+}
+
+error_page 500 502 503 504 /50x.html;
+    location = /50x.html {
+}
+```
+
+```python{numberLines: true}
+from scrapy.item import Item, Field
+
+class BlogItem(Item):
+    title = Field()
+    url = Field()
+    text = Field()
+```
+
+
 ## :art: Typography
 
 ### Blockquotes
