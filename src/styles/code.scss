@@ -52,12 +52,13 @@ code,
 code[class*="language-"],
 pre[class*="language-"],
 :not(pre)>code[class*="language-"] {
+  tab-size: 2;
   background-color: $dark;
   border: solid 1px $neutral;
   font-family: $mono;
   border-radius: $border-radius;
   font-size: 90%;
-  white-space: pre-wrap;
+  overflow: scroll;
 }
 
 code[class*="language-"] {
