@@ -6,7 +6,7 @@ import IndexPage from "../components/pages"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query LandingPageQuery {
         site {
           siteMetadata {
             title

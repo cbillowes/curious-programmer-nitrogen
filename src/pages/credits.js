@@ -6,7 +6,7 @@ import CreditsPage from "../components/pages/credits"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query CreditPageQuery {
         site {
           siteMetadata {
             title

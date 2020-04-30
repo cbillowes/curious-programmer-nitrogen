@@ -6,7 +6,7 @@ import TagsPage from "../components/pages/tags"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query TagsPageQuery {
         site {
           siteMetadata {
             title

@@ -6,7 +6,7 @@ import LicensePage from "../components/pages/license"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query LicensePageQuery {
         site {
           siteMetadata {
             title

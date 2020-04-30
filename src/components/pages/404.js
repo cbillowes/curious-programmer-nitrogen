@@ -27,7 +27,7 @@ const PageNotFound = ({ edges }) => {
           for everything.
         </p>
       </ReadingPane>
-      <Posts edges={edges} showNumbers={true} />
+      <Posts edges={edges} />
     </Layout>
   )
 }

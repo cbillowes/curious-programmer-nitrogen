@@ -6,7 +6,7 @@ import SEO from "../components/seo"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query PageNotFoundQuery {
         site {
           siteMetadata {
             title

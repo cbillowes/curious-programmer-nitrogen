@@ -6,7 +6,7 @@ import "../../styles/page.scss"
 
 const IndexPage = ({ edges }) => (
   <Layout className="blog-page" footer={true}>
-    <Posts edges={edges} showNumbers={true} />
+    <Posts edges={edges} />
     <ShowMore to="/archives" title="Show more articles" />
   </Layout>
 )

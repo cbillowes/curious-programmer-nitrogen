@@ -32,62 +32,46 @@ const AboutPage = ({ profileImage }) => (
       <aside className="contact">
         <Anchor to="mailto:clarice@bouwer.dev" className="email" />
         <Anchor to="https://twitter.com/cbillowes" className="twitter" />
-        <Anchor
-          to="https://stackoverflow.com/users/849986/clarice-bouwer"
-          className="stackoverflow"
-        />
+        <Anchor to="https://stackoverflow.com/users/849986/clarice-bouwer" className="stackoverflow" />
         <Anchor to="https://github.com/cbillowes" className="github" />
-        <Anchor
-          to="https://www.linkedin.com/in/cbouwer/"
-          className="linked-in"
-        />
+        <Anchor to="https://www.linkedin.com/in/cbouwer/" className="linked-in" />
       </aside>
       <aside className="values">
         <ul>
-          <li>Listen</li>
           <li>Open &amp; honest</li>
           <li>Passionate</li>
           <li>Curious</li>
           <li>Work hard, play hard</li>
-          <li>Team player</li>
-          <li>Share knowledge</li>
-          <li>Self-organize</li>
           <li>Creative</li>
-          <li>Go beyond</li>
         </ul>
       </aside>
       <div className="panels">
-        <Panel title="Do you want to hire me?">
+        <Panel title="Hiring">
           <p className="danger">
-            Kindly note that I am <strong>not</strong> on the market at the
-            moment.
+            Kindly note that I am <strong>NOT</strong> on the market.
           </p>
           <p>
-            Feel free to invite me for a casual chat over a{" "}
-            <span role="img" aria-label="Coffee emoji" title="Coffee">
-              ☕
-            </span>{" "}
-            or{" "}
-            <span role="img" aria-label="Beers emoji" title="Beer">
-              🍻
-            </span>
-            . Let's discover if the position is well suited for the both of us
-            and if our values align. Give me the opportunity to more accurately
-            showcase my skills through homework assignments.
-          </p>
-          <p>
-            An in-depth copy of my profile is available on{" "}
-            <Anchor to="https://clarice.bouwer.dev">clarice.bouwer.dev</Anchor>,
-            an open-source Clojure project which can be found on{" "}
-            <Anchor to="https://github.com/cbillowes/clarice.bouwer.dev">
-              GitHub
-            </Anchor>
-            .
+            I enjoy casual interviews over a{" "}
+            <span role="img" aria-label="Coffee emoji" title="Coffee">☕</span> or a {" "}
+            <span role="img" aria-label="Beers emoji" title="Beer">🍻</span>{" "}
+            in which we can discover if the position is well suited for the both of us and that
+            there will be a harmonic cultural fit.
           </p>
         </Panel>
-        <Panel title="What are my values?">
+        <Panel title="Skills">
+          <p>
+            Check out my profile at {" "}
+            <Anchor to="https://clarice.bouwer.dev">clarice.bouwer.dev</Anchor>,
+            an open-source Clojure project which can be found on{" "}
+            <Anchor to="https://github.com/cbillowes/clarice.bouwer.dev">GitHub</Anchor>
+            . Feel free to browse my GitHub
+            <Anchor to="https://github.com/cbillowes/">repository</Anchor> to get an
+            idea of my coding capabilities.
+          </p>
+        </Panel>
+        <Panel title="Values">
           <ul>
-            <li>Listen to the needs of the clients, business and colleagues</li>
+            <li>I listen to the needs of the clients, business and my colleagues.</li>
             <li>Stay open &amp; honest with those around me</li>
             <li>Be passionate about what I do</li>
             <li>Stay curious and continue to learn</li>
@@ -101,7 +85,7 @@ const AboutPage = ({ profileImage }) => (
             <li>Go beyond my comfort zone</li>
           </ul>
         </Panel>
-        <Panel title="What can you expect from me?">
+        <Panel title="Expectations">
           <p>
             I <span className="highlight primary">care</span> about the
             business, people and clients. I don't know everything so I am
@@ -121,7 +105,7 @@ const AboutPage = ({ profileImage }) => (
             learn from colleagues.
           </p>
         </Panel>
-        <Panel title="What have I worked with?">
+        <Panel title="History">
           <p>
             I am open to learning anything I am unfamiliar with and enjoy
             improving and mastering what I am currently acquainted with. I now
@@ -159,7 +143,7 @@ const AboutPage = ({ profileImage }) => (
             </li>
           </ul>
         </Panel>
-        <Panel title="How did I start web application development?">
+        <Panel title="Inspiration">
           <p>
             Between computer games, the birth of the web, the movie Hackers, the
             Jolly Rodger's cookbook and an Inkjet printer, I was hooked.
@@ -180,7 +164,7 @@ const AboutPage = ({ profileImage }) => (
             enjoyed that too.
           </p>
         </Panel>
-        <Panel title="How did I learn to do what I do?">
+        <Panel title="Aspiration">
           <p>
             I learned to take apart websites and put them back together again
             locally. I experimented with different mark up until I got the feel

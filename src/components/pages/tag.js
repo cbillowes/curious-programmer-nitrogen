@@ -7,7 +7,7 @@ import "../../styles/page.scss"
 const TagPage = ({ tag, edges }) => {
   return (
     <Layout className="tag-page" footer={true}>
-      <Posts edges={edges} showNumbers={true} />
+      <Posts edges={edges} />
     </Layout>
   )
 }

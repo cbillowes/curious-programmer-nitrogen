@@ -96,7 +96,7 @@ const createNodes = (node, createNodeField) => {
 const createBlogPosts = async (graphql, actions, reporter) => {
   const { createPage } = actions
   await graphql(`
-    query {
+    query CreateBlogPostsQuery {
       allMarkdownRemark(sort: { order: ASC, fields: fields___date }) {
         edges {
           node {
@@ -179,7 +179,7 @@ const createDemoBlogPage = (createPage, result, reporter) => {
 const createTags = async (graphql, actions, reporter) => {
   const { createPage } = actions
   await graphql(`
-    query {
+    query CreateTagsQuery {
       allMarkdownRemark {
         edges {
           node {
@@ -231,7 +231,7 @@ const createBlog = (actions, reporter) => {
 
 const createSearchIndexes = async (graphql, reporter) => {
   await graphql(`
-    query {
+    query CreateSearchIndexesQuery {
       allMarkdownRemark(sort: { order: ASC, fields: fields___date }) {
         edges {
           node {

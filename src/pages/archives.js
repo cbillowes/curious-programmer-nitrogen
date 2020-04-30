@@ -6,7 +6,7 @@ import ArchivesPage from "../components/pages/archives"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query ArchivesPageQuery {
         site {
           siteMetadata {
             title

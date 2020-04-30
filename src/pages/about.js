@@ -8,7 +8,7 @@ import "../styles/page.scss"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query AboutPageQuery {
         site {
           siteMetadata {
             title

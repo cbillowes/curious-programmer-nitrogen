@@ -6,7 +6,7 @@ import PrivacyPolicyPage from "../components/pages/privacy-policy"
 export default () => {
   const data = useStaticQuery(
     graphql`
-      query {
+      query PrivacyPolicyPageQuery {
         site {
           siteMetadata {
             title
