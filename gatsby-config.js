@@ -1,6 +1,3 @@
-// TODO: CRITICAL! Arbitrary File Write in gatsby-plugin-sharp
-// Watch https://github.com/kevva/decompress/pull/73 for patch
-
 module.exports = {
   siteMetadata: {
     title: `Curious Programmer`,
