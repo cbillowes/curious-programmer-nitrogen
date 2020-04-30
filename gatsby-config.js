@@ -42,13 +42,6 @@ module.exports = {
     {
       resolve: `gatsby-source-filesystem`,
       options: {
-        name: `files`,
-        path: `${__dirname}/src/static`,
-      },
-    },
-    {
-      resolve: `gatsby-source-filesystem`,
-      options: {
         name: `images`,
         path: `${__dirname}/src/images`,
       },
@@ -68,7 +61,7 @@ module.exports = {
             resolve: `gatsby-remark-interactive-gifs`,
             options: {
               root: `${__dirname}`,
-              src: `${__dirname}/src/gifs`,
+              src: `${__dirname}/src/images/gifs`,
               dest: `${__dirname}/public/static/gifs`,
               play: `${__dirname}/src/images/play.gif`,
               placeholder: `${__dirname}/src/images/placeholder.gif`,
