@@ -5,7 +5,6 @@
   "version": "1.0.0",
   "author": "Clarice Bouwer <clarice@bouwer.dev>",
   "dependencies": {
-    "acorn": "^7.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
@@ -46,6 +45,7 @@
     "react-helmet": "^5.2.1",
     "react-moment": "^0.9.7",
     "react-router-dom": "^5.1.2",
+    "sharp": "^0.25.2",
     "styled-components": "^5.1.0",
     "typescript": "^3.8.3"
   },
@@ -57,6 +57,7 @@
     "@storybook/addons": "^5.3.17",
     "@storybook/react": "^5.3.17",
     "@types/jest": "^25.1.4",
+    "acorn": "^6.4.1",
     "babel-jest": "^25.4.0",
     "babel-loader": "^8.0.6",
     "enzyme": "^3.11.0",
