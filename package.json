@@ -5,6 +5,7 @@
   "version": "1.0.0",
   "author": "Clarice Bouwer <clarice@bouwer.dev>",
   "dependencies": {
+    "acorn": "^7.1.1",
     "@fortawesome/fontawesome-svg-core": "^1.2.28",
     "@fortawesome/free-brands-svg-icons": "^5.13.0",
     "@fortawesome/free-regular-svg-icons": "^5.13.0",
@@ -31,7 +32,7 @@
     "gatsby-remark-emoji": "0.0.3",
     "gatsby-remark-images": "^3.2.6",
     "gatsby-remark-interactive-gifs": "^1.0.3",
-    "gatsby-remark-prismjs": "^3.4.5",
+    "gatsby-remark-prismjs": "^3.5.0",
     "gatsby-remark-responsive-iframe": "^2.3.4",
     "gatsby-source-filesystem": "^2.2.5",
     "gatsby-transformer-remark": "^2.7.5",
