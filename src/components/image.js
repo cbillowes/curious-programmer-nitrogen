@@ -17,11 +17,3 @@ Image.propTypes = {
 }
 
 export default Image
-
-//TODO: unrelated to this component I guess but markdown images are complaining about childImageSharp
-/*
-warn You can't use childImageSharp together with bom.gif — use publicURL instead. The childImageSharp portion of the
-query in this file will return null:
-warn You can't use childImageSharp together with endianness.gif — use publicURL instead. The childImageSharp portion of
- the query in this file will return null:
-*/

@@ -85,7 +85,7 @@ little-endian.
 Bytes can be processed from left to right (big-endian: most significant byte
 first) or from right to left (little-endian: least significant byte first).
 
-![Interpretation](./endianness.gif "Example of a 32-bit integer committed to memory differently for big-endian and little-endian")
+![Interpretation](/static/gifs/endianness.gif "Example of a 32-bit integer committed to memory differently for big-endian and little-endian")
 
 _Source of image: Clarice Bouwer_
 
@@ -129,7 +129,7 @@ This table shows encoding forms with their BOM byte sequence and byte order.
 Let's say we have a text stream of the following characters: `¶@«®`. The Unicode
 code points for each are `U+00B6`, `U+0040`, `U+00AB` and `U+00AE`.
 
-![Interpretation](./bom.gif "The byte order mark for UTF-16 (big-endian and little-endian) and UTF-8")
+![Interpretation](/static/gifs/bom.gif "The byte order mark for UTF-16 (big-endian and little-endian) and UTF-8")
 
 _Source of image: Clarice Bouwer_
 

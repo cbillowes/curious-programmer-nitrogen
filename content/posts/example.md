@@ -50,6 +50,11 @@ class BlogItem(Item):
     text = Field()
 ```
 
+## Add a still gif
+
+All gifs in the project **outside** of the `/images/gifs` directory are copied to `/static/gifs/` on build.
+
+![Interpretation](/static/gifs/endianness.gif "Example of a 32-bit integer committed to memory differently for big-endian and little-endian")
 
 ## :art: Typography
 

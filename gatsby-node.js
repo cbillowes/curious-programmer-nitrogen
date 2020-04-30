@@ -34,6 +34,15 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
   if (node.internal.type === `MarkdownRemark`) {
     createNodes(node, createNodeField)
   }
+
+  if (node.internal.type === `File` && node.internal.mediaType === `image/gif`) {
+    if (node.absolutePath.indexOf(`/src/images/`) === -1) {
+      const newPath = path.join(process.cwd(), `public/static/gifs`, node.base)
+      fs.copyFile(node.absolutePath, newPath, err => {
+        if (err) reporter.error(err)
+      })
+    }
+  }
 }
 
 // Create the necessary dynamic pages required to make the blog delicious.
