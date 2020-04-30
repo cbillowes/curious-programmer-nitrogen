@@ -48,5 +48,3 @@ Posts.propTypes = {
 }
 
 export default Posts
-
-//TODO: move Lang to gatsby-config?
