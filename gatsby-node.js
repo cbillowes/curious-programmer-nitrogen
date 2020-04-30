@@ -35,13 +35,9 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
     createNodes(node, createNodeField)
   }
 
-  if (node.internal.type === `File` && node.internal.mediaType === `image/gif`) {
-    if (node.absolutePath.indexOf(`/src/images/`) === -1) {
-      const newPath = path.join(process.cwd(), `public/static/gifs`, node.base)
-      fs.copyFile(node.absolutePath, newPath, err => {
-        if (err) reporter.error(err)
-      })
-    }
+  if (node.internal.type === `File`) {
+    copyGifImages(node, reporter)
+    copyShareImages(node, reporter)
   }
 }
 
@@ -377,4 +373,31 @@ const storeIncrementalExportLog = (slugs) => {
     return `${result}\n${date}: ${slug}`
   }, "")
   fs.appendFileSync(path.join(exportDirectory, `slugs.txt`), data, { encoding: `utf-8` })
+}
+
+const getDestinationPath = (relativeDir, filename) => {
+  return path.join(process.cwd(), relativeDir, filename)
+}
+
+const copy = (src, dest, reporter) => {
+  const destPath = path.dirname(dest)
+  fs.existsSync(destPath) || fs.mkdirSync(destPath)
+  fs.copyFile(src, dest, err => {
+    if (err)
+      reporter.error(`${src} -> ${dest}\n${err}`)
+  })
+}
+
+const copyGifImages = (node, reporter) => {
+  if (node.internal.mediaType === `image/gif` && node.absolutePath.indexOf(`/src/images`) >= 0) {
+    const newPath = getDestinationPath(`public/static/gifs`, node.base)
+    copy(node.absolutePath, newPath, reporter)
+  }
+}
+
+const copyShareImages = (node, reporter) => {
+  if (node.absolutePath.indexOf(`/src/images/share`) >= 0) {
+    const newPath = getDestinationPath(`public/static/share`, node.base)
+    copy(node.absolutePath, newPath, reporter)
+  }
 }
