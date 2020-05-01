@@ -147,6 +147,19 @@ const CreditsPage = () => (
           &nbsp;
         </Credit>
       </div>
+
+      <div>
+        <H2>Icons</H2>
+        <Credit
+          to="https://www.flaticon.com/free-icon/file_1092000"
+          title="Download icon"
+        >
+          Made by{" "}
+          <Anchor to="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</Anchor>{" "}
+          from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+      </div>
+
       <div>
         <H2>Interactive animated gifs</H2>
         <Credit
@@ -159,22 +172,16 @@ const CreditsPage = () => (
           </Anchor>{" "}
           from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
         </Credit>
+        <br />
         <Credit
           to="https://www.flaticon.com/free-icon/photo_2793644"
-          title="Freepik"
+          title="Photo icon"
         >
           Made by{" "}
           <Anchor to="https://www.flaticon.com/authors/freepik">Freepik</Anchor>{" "}
           from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
         </Credit>
-        <Credit
-          to="https://www.flaticon.com/free-icon/photo_2793644"
-          title="Freepick"
-        >
-          Made by{" "}
-          <Anchor to="https://www.flaticon.com/authors/freepik">Freepik</Anchor>{" "}
-          from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
-        </Credit>
+        <br />
         <Credit to="https://loading.io/" title="Loading image">
           Generated from loading.io - ajax Loader, animated icons, live
           backgrounds.
@@ -184,6 +191,10 @@ const CreditsPage = () => (
         <H2>Photography</H2>
         <Credit to="https://picsum.photos" title="picsum.photos">
           Lorem Ipsum... but for photos.
+        </Credit>
+        <br />
+        <Credit to="https://unsplash.com/" title="unsplash">
+          Photos for everyone.
         </Credit>
       </div>
 

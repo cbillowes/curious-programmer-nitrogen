@@ -490,6 +490,47 @@ exports[`Credits page should render 1`] = `
         </div>
         <div>
           <h2>
+            Icons
+          </h2>
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/file_1092000"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Download icon"
+            >
+              download icon
+            </a>
+             
+            Made by
+             
+             
+            <a
+              href="https://www.flaticon.com/authors/kiranshastry"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Kiranshastry
+            </a>
+             
+             
+            from 
+             
+            <a
+              href="https://www.flaticon.com"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              www.flaticon.com
+            </a>
+             
+            .
+          </span>
+        </div>
+        <div>
+          <h2>
             Interactive animated gifs
           </h2>
           <span>
@@ -528,6 +569,7 @@ exports[`Credits page should render 1`] = `
              
             .
           </span>
+          <br />
           <span>
              
             <a
@@ -535,9 +577,9 @@ exports[`Credits page should render 1`] = `
               href="https://www.flaticon.com/free-icon/photo_2793644"
               rel="nofollow noopener noreferrer"
               target="_blank"
-              title="Freepik"
+              title="Photo icon"
             >
-              freepik
+              photo icon
             </a>
              
             Made by
@@ -564,42 +606,7 @@ exports[`Credits page should render 1`] = `
              
             .
           </span>
-          <span>
-             
-            <a
-              className="tag"
-              href="https://www.flaticon.com/free-icon/photo_2793644"
-              rel="nofollow noopener noreferrer"
-              target="_blank"
-              title="Freepick"
-            >
-              freepick
-            </a>
-             
-            Made by
-             
-             
-            <a
-              href="https://www.flaticon.com/authors/freepik"
-              rel="nofollow noopener noreferrer"
-              target="_blank"
-            >
-              Freepik
-            </a>
-             
-             
-            from 
-             
-            <a
-              href="https://www.flaticon.com"
-              rel="nofollow noopener noreferrer"
-              target="_blank"
-            >
-              www.flaticon.com
-            </a>
-             
-            .
-          </span>
+          <br />
           <span>
              
             <a
@@ -632,6 +639,21 @@ exports[`Credits page should render 1`] = `
             </a>
              
             Lorem Ipsum... but for photos.
+          </span>
+          <br />
+          <span>
+             
+            <a
+              className="tag"
+              href="https://unsplash.com/"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="unsplash"
+            >
+              unsplash
+            </a>
+             
+            Photos for everyone.
           </span>
         </div>
         <div>
