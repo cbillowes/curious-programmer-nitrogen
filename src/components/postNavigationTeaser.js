@@ -71,7 +71,7 @@ const shape = PropTypes.shape({
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.number.isRequired,
-  tags: PropTypes.array.isRequired,
+  tags: PropTypes.array,
 })
 
 PostNavigationTeaser.propTypes = {

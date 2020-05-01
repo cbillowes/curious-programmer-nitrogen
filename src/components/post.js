@@ -13,8 +13,8 @@ const Body = ({ children }) => {
       dangerouslySetInnerHTML={{ __html: children }}
     ></div>
   ) : (
-    <div className="reading-panel">{children}</div>
-  )
+      <div className="reading-panel">{children}</div>
+    )
 }
 
 const Metadata = ({ date, author, ttr }) => {
@@ -42,7 +42,7 @@ Post.propTypes = {
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.number.isRequired,
-  tags: PropTypes.array.isRequired,
+  tags: PropTypes.array,
   number: PropTypes.number,
 }
 

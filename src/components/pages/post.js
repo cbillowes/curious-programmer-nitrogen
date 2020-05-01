@@ -68,11 +68,11 @@ PostPage.propType = {
   title: PropTypes.string.isRequired,
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
-  tags: PropTypes.array.isRequired,
   excerpt: PropTypes.string.isRequired,
   timeToRead: PropTypes.number.isRequired,
   html: PropTypes.string.isRequired,
   number: PropTypes.number.isRequired,
   next: PropTypes.object.isRequired,
   previous: PropTypes.object.isRequired,
+  tags: PropTypes.array,
 }

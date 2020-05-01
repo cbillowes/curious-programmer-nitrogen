@@ -70,12 +70,12 @@ function PostPreview({
 PostPreview.propTypes = {
   title: PropTypes.string.isRequired,
   slug: PropTypes.string.isRequired,
-  tags: PropTypes.array.isRequired,
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
   number: PropTypes.number.isRequired,
+  tags: PropTypes.array,
   limit: PropTypes.number,
   photo: PropTypes.string,
   credit: PropTypes.string,

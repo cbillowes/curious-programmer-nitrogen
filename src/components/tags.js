@@ -38,7 +38,7 @@ export const getTagsFromEdges = edges => {
 }
 
 Tags.propTypes = {
-  tags: PropTypes.array.isRequired,
+  tags: PropTypes.array,
 }
 
 export default Tags
