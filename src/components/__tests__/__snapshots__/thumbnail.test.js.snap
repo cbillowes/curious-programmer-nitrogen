@@ -1,0 +1,102 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Thumbnail should render with a specific image 1`] = `
+<div
+  className="thumbnail"
+  style={
+    Object {
+      "backgroundImage": "url(\\"/static/thumbnails/dolphin.jpg\\")",
+      "backgroundSize": "cover",
+      "paddingTop": "31.25%",
+    }
+  }
+>
+  <a
+    className="badge clickable"
+    href="https://www.douglas.adams"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Image by Douglas Adams"
+  >
+    <span
+      className="source-logo"
+    >
+      <img
+        alt="personal"
+        src="/static/svgs/download.svg"
+      />
+    </span>
+    <span
+      className="attribute"
+    >
+      Douglas Adams
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Thumbnail should render with no photo 1`] = `
+<div
+  className="thumbnail"
+  style={
+    Object {
+      "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+      "backgroundSize": "cover",
+      "paddingTop": "31.25%",
+    }
+  }
+>
+  <a
+    className="badge clickable"
+    href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+    rel="noopener noreferrer"
+    target="_blank"
+    title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+  >
+    <span
+      className="source-logo"
+    >
+      <img
+        alt="unsplash"
+        src="/static/svgs/unsplash.svg"
+      />
+    </span>
+    <span
+      className="attribute"
+    >
+      Paul Hanaoka
+    </span>
+  </a>
+</div>
+`;
+
+exports[`Thumbnail should render without attribution 1`] = `
+<div
+  className="thumbnail"
+  style={
+    Object {
+      "backgroundImage": "url(\\"/static/thumbnails/dolphin.jpg\\")",
+      "backgroundSize": "cover",
+      "paddingTop": "31.25%",
+    }
+  }
+>
+  <a
+    className="badge stagnant"
+    rel="noopener noreferrer"
+    target="_blank"
+    title=""
+  >
+    <span
+      className="source-logo"
+    >
+      <img
+        src="/static/svgs/download.svg"
+      />
+    </span>
+    <span
+      className="attribute"
+    />
+  </a>
+</div>
+`;

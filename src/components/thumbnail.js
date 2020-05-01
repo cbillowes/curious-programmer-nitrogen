@@ -42,6 +42,8 @@ const getCredit = ({ number, photo, creditSource, credit, creditLink }) => {
 }
 
 const getBadgeTitle = (source, attribute) => {
+  if (!attribute) return ``
+
   if (source === `unsplash`)
     return `Download free do whatever you want high-resolution photos from ${attribute}`
 
