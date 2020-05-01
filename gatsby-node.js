@@ -100,10 +100,21 @@ const createBlogPosts = async (graphql, actions, reporter) => {
       allMarkdownRemark(sort: { order: ASC, fields: fields___date }) {
         edges {
           node {
+            html
+            excerpt
+            timeToRead
             fields {
               slug
               date
               number
+            }
+            frontmatter {
+              title
+              photo
+              credit
+              creditLink
+              creditSource
+              tags
             }
           }
         }
