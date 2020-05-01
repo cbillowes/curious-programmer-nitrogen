@@ -1,11 +1,12 @@
-import React from "react"
+import React, { Component } from "react"
 import PropTypes from "prop-types"
 import PostPreview from "./postPreview"
 import Lang from "../../gatsby-lang"
 import "../styles/posts.scss"
-import { Component } from "react"
 
 const Listing = ({ edges, limit }) => {
+  if (!edges || edges.length === 0) return <div>{Lang.posts.none}</div>
+
   return edges.map(edge => {
     const { timeToRead, excerpt } = edge.node
     const { slug, date, number } = edge.node.fields
@@ -37,7 +38,10 @@ class Posts extends Component {
     super(props)
 
     this.state = {
-      layout: "grid",
+      originalEdges: props.edges,
+      layout: `grid`,
+      phrase: ``,
+      edges: props.edges,
     }
   }
 
@@ -47,26 +51,40 @@ class Posts extends Component {
     })
   }
 
-  render() {
-    const { edges, limit } = this.props
-    if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
+  search = (e) => {
+    const phrase = e.target.value.toLowerCase()
+    const edges = this.state.originalEdges
+      .filter(edge => edge.node.frontmatter.title.toLowerCase().indexOf(phrase) > -1)
+    this.setState({
+      edges: edges,
+      phrase: phrase,
+    })
+  }
 
+  render() {
+    const { limit } = this.props
     return (
       <div className="posts-container">
-        <a className={`button ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
-          <img src={`/static/svgs/grid.svg`} alt="Display in a grid." />
-        </a>
-        <a className={`button ${this.state.layout === "listing" ? "active" : ""}`} onClick={() => this.changeLayout("listing")}>
-          <img src={`/static/svgs/listing.svg`} alt="Display in a list." />
-        </a>
+        <div className="actions">
+          <button className={`button ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
+            <img src="/static/svgs/grid.svg" alt="Display in a grid." />
+          </button>
+          <button className={`button ${this.state.layout === "listing" ? "active" : ""}`} onClick={() => this.changeLayout("listing")}>
+            <img src="/static/svgs/listing.svg" alt="Display in a list." />
+          </button>
+          <button className="button search-btn">
+            <img src="/static/svgs/search.svg" />
+          </button>
+          <input className="search-bar" type="text" onChange={this.search} />
+        </div>
+        <div>{this.state.phrase}</div>
         <div className={`posts ${this.state.layout}`}>
-          <Listing edges={edges} truncate={limit} />
+          <Listing edges={this.state.edges} truncate={limit} />
         </div>
       </div>
     )
   }
 }
-
 
 Posts.defaultProps = {
   limit: 50,

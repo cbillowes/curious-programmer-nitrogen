@@ -180,24 +180,43 @@ exports[`Tag page should render with posts 1`] = `
     <div
       className="posts-container"
     >
-      <a
-        className="button active"
-        onClick={[Function]}
+      <div
+        className="actions"
       >
-        <img
-          alt="Display in a grid."
-          src="/static/svgs/grid.svg"
+        <button
+          className="button active"
+          onClick={[Function]}
+        >
+          <img
+            alt="Display in a grid."
+            src="/static/svgs/grid.svg"
+          />
+        </button>
+        <button
+          className="button "
+          onClick={[Function]}
+        >
+          <img
+            alt="Display in a list."
+            src="/static/svgs/listing.svg"
+          />
+        </button>
+        <button
+          className="button search-btn"
+        >
+          <img
+            src="/static/svgs/search.svg"
+          />
+        </button>
+        <input
+          className="search-bar"
+          onChange={[Function]}
+          type="text"
         />
-      </a>
-      <a
-        className="button "
-        onClick={[Function]}
-      >
-        <img
-          alt="Display in a list."
-          src="/static/svgs/listing.svg"
-        />
-      </a>
+      </div>
+      <div>
+        
+      </div>
       <div
         className="posts grid"
       >
@@ -822,7 +841,54 @@ exports[`Tag page should render without posts 1`] = `
   <section
     className="container  tag-page"
   >
-    <div />
+    <div
+      className="posts-container"
+    >
+      <div
+        className="actions"
+      >
+        <button
+          className="button active"
+          onClick={[Function]}
+        >
+          <img
+            alt="Display in a grid."
+            src="/static/svgs/grid.svg"
+          />
+        </button>
+        <button
+          className="button "
+          onClick={[Function]}
+        >
+          <img
+            alt="Display in a list."
+            src="/static/svgs/listing.svg"
+          />
+        </button>
+        <button
+          className="button search-btn"
+        >
+          <img
+            src="/static/svgs/search.svg"
+          />
+        </button>
+        <input
+          className="search-bar"
+          onChange={[Function]}
+          type="text"
+        />
+      </div>
+      <div>
+        
+      </div>
+      <div
+        className="posts grid"
+      >
+        <div>
+          There are no posts available.
+        </div>
+      </div>
+    </div>
   </section>
   <footer
     className="footer"

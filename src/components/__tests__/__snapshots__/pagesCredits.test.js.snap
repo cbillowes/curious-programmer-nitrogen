@@ -616,6 +616,43 @@ exports[`Credits page should render 1`] = `
              
             .
           </span>
+          <br />
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/magnifying-glass_1086933"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Magnifying glass icon"
+            >
+              magnifying glass icon
+            </a>
+             
+            Made by
+             
+             
+            <a
+              href="https://www.flaticon.com/authors/good-ware"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Good Ware
+            </a>
+             
+             
+            from 
+             
+            <a
+              href="https://www.flaticon.com"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              www.flaticon.com
+            </a>
+             
+            .
+          </span>
         </div>
         <div>
           <h2>

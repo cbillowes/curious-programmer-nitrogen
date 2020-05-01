@@ -1,22 +1,61 @@
 @import './variables.scss';
 
 .posts-container {
-  .button {
-    cursor: pointer;
-    background-color: darken($darkest, 5%);
-    padding: 10px 15px;
-    margin: 0 .2rem;
-    line-height: 0;
-    border-radius: 10px;
+  .actions {
+    display: flex;
+    margin-bottom: 1.5rem;
 
-    img {
-      filter: invert(50%);
-      width: 25px;
-      height: 25px;
+    .button {
+      cursor: pointer;
+      background-color: darken($darkest, 5%);
+      padding: 15px;
+      margin: 0 .2rem;
+      line-height: 0;
+      border-radius: 10px;
+      border: none;
+
+      &:focus {
+        background-color: $dark;
+        outline: none;
+      }
+
+      &.search-btn {
+        cursor: default;
+        margin-right: 0;
+        border-radius: 10px 0 0 10px;
+
+        &:focus {
+          outline: none;
+          background-color: darken($darkest, 5%);
+        }
+      }
+
+      img {
+        filter: invert(50%);
+        width: 25px;
+        height: 25px;
+      }
+
+      &.active img {
+        filter: invert(100%);
+      }
     }
 
-    &.active img {
-      filter: invert(100%);
+    .search-bar {
+      margin-left: 0;
+      background-color: darken($darkest, 5%);
+      font-size: 1.5rem;
+      color: $lightest;
+      padding: 12px;
+      border: none;
+      width: 50%;
+      border-radius: 0 10px 10px 0;
+      font-family: $sans;
+
+      &:focus {
+        outline: none;
+        background-color: $dark;
+      }
     }
   }
 }
@@ -54,7 +93,19 @@
     }
   }
 
-  .thumbnail,
+  .thumbnail {
+    border-radius: 50%;
+    width: 100px;
+    height: 100px;
+    padding: 0 !important;
+    float: left;
+    margin-right: 1.5rem;
+
+    .badge {
+      display: none;
+    }
+  }
+
   .blurb,
   .tags {
     display: none;

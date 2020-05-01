@@ -169,7 +169,6 @@ const CreditsPage = () => (
           <Anchor to="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</Anchor>{" "}
           from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
         </Credit>
-
         <br />
         <Credit
           to="https://www.flaticon.com/free-icon/grid_847582"
@@ -177,6 +176,15 @@ const CreditsPage = () => (
         >
           Made by{" "}
           <Anchor to="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</Anchor>{" "}
+          from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+        <br />
+        <Credit
+          to="https://www.flaticon.com/free-icon/magnifying-glass_1086933"
+          title="Magnifying glass icon"
+        >
+          Made by{" "}
+          <Anchor to="https://www.flaticon.com/authors/good-ware">Good Ware</Anchor>{" "}
           from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
         </Credit>
       </div>
