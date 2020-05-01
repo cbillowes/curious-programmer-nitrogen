@@ -9,8 +9,6 @@
 
 </div>
 
-## { **curious** programmer }
-
 I got started by cloning [Gatsby default starter](https://github.com/gatsbyjs/gatsby-starter-default). Create your own `gatsby new my-gatsby-blog` or create one from an [official and community-created starter](https://www.gatsbyjs.org/docs/gatsby-starters/).
 
 ### 🤔 **Curious?**
