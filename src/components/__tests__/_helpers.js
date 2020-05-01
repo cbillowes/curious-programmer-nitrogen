@@ -43,6 +43,7 @@ export function getListOfPostEdges() {
         fields: {
           slug: `/dont-panic`,
           date: `2019-02-01T00:00:00.000Z`,
+          number: 1,
         },
         frontmatter: {
           title: `Don't panic`,
@@ -58,6 +59,7 @@ export function getListOfPostEdges() {
         fields: {
           slug: `/still-dont-panic`,
           date: `2019-02-01T00:00:00.000Z`,
+          number: 2,
         },
         frontmatter: {
           title: `Still don't panic`,

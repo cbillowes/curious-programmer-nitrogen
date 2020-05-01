@@ -1,9 +1,19 @@
 ---
 title: Example
 date: 2016-01-01 05:00:00 +0200
+photo: mauritius.jpg
+credit: Clarice Bouwer
+creditLink: https://clarice.bouwer.dev
+creditSource: personal
 tags:
   - Personal Brands
 ---
+
+**YML notes:**
+* `photo`: filename of image under /posts
+* `credit`: name of photographer, website etc
+* `creditLink`: link to the image or author page
+* `creditSource`: personal | unsplash | internet
 
 # Heading level one
 

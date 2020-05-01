@@ -6,6 +6,7 @@ import PostMetadata from "./postMetadata"
 import Tags from "./tags"
 import Anchor from "./anchor"
 import Blurb from "./blurb"
+import Thumbnail from "./thumbnail"
 import "../styles/preview.scss"
 
 const Body = ({ children, limit }) => {
@@ -47,12 +48,16 @@ function PostPreview({
   ttr,
   number,
   limit,
+  photo,
+  credit,
+  creditLink,
   children,
 }) {
   return (
     <>
       <section className="post preview">
         <Number number={number} />
+        <Thumbnail number={number} photo={photo} credit={credit} creditLink={creditLink} />
         <Heading slug={slug}>{title}</Heading>
         <Body limit={limit}>{children}</Body>
         <Metadata date={date} author={author} ttr={ttr} />
@@ -70,8 +75,11 @@ PostPreview.propTypes = {
   author: PropTypes.string.isRequired,
   ttr: PropTypes.number.isRequired,
   children: PropTypes.node.isRequired,
-  number: PropTypes.number,
+  number: PropTypes.number.isRequired,
   limit: PropTypes.number,
+  photo: PropTypes.string,
+  credit: PropTypes.string,
+  creditLink: PropTypes.string,
 }
 
 export default PostPreview

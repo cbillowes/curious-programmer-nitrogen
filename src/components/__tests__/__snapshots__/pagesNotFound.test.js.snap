@@ -220,6 +220,52 @@ exports[`404 page should render 1`] = `
       <section
         className="post preview"
       >
+        <div
+          className="post number ribbon"
+        >
+          <div
+            className="backdrop"
+          >
+            <div
+              className="text"
+            >
+              #
+              1
+            </div>
+          </div>
+        </div>
+        <div
+          className="thumbnail"
+          style={
+            Object {
+              "backgroundImage": "url(\\"/static/thumbnails/default-02.jpg\\")",
+              "backgroundSize": "cover",
+              "paddingTop": "31.25%",
+            }
+          }
+        >
+          <a
+            className="badge clickable"
+            href="https://unsplash.com/@ninjason?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Download free do whatever you want high-resolution photos from Jason Leung"
+          >
+            <span
+              className="source-logo"
+            >
+              <img
+                alt="unsplash"
+                src="/static/svgs/unsplash.svg"
+              />
+            </span>
+            <span
+              className="attribute"
+            >
+              Jason Leung
+            </span>
+          </a>
+        </div>
         <h1>
            
           <a
@@ -294,6 +340,52 @@ exports[`404 page should render 1`] = `
       <section
         className="post preview"
       >
+        <div
+          className="post number ribbon"
+        >
+          <div
+            className="backdrop"
+          >
+            <div
+              className="text"
+            >
+              #
+              2
+            </div>
+          </div>
+        </div>
+        <div
+          className="thumbnail"
+          style={
+            Object {
+              "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+              "backgroundSize": "cover",
+              "paddingTop": "31.25%",
+            }
+          }
+        >
+          <a
+            className="badge clickable"
+            href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+            rel="noopener noreferrer"
+            target="_blank"
+            title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+          >
+            <span
+              className="source-logo"
+            >
+              <img
+                alt="unsplash"
+                src="/static/svgs/unsplash.svg"
+              />
+            </span>
+            <span
+              className="attribute"
+            >
+              Paul Hanaoka
+            </span>
+          </a>
+        </div>
         <h1>
            
           <a

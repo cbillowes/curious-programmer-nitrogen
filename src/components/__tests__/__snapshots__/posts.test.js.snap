@@ -21,6 +21,38 @@ exports[`Posts should render with default word limit 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="thumbnail"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+          "backgroundSize": "cover",
+          "paddingTop": "31.25%",
+        }
+      }
+    >
+      <a
+        className="badge clickable"
+        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+      >
+        <span
+          className="source-logo"
+        >
+          <img
+            alt="unsplash"
+            src="/static/svgs/unsplash.svg"
+          />
+        </span>
+        <span
+          className="attribute"
+        >
+          Paul Hanaoka
+        </span>
+      </a>
+    </div>
     <h1>
        
       <a
@@ -102,6 +134,38 @@ exports[`Posts should render with default word limit 1`] = `
           42
         </div>
       </div>
+    </div>
+    <div
+      className="thumbnail"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+          "backgroundSize": "cover",
+          "paddingTop": "31.25%",
+        }
+      }
+    >
+      <a
+        className="badge clickable"
+        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+      >
+        <span
+          className="source-logo"
+        >
+          <img
+            alt="unsplash"
+            src="/static/svgs/unsplash.svg"
+          />
+        </span>
+        <span
+          className="attribute"
+        >
+          Paul Hanaoka
+        </span>
+      </a>
     </div>
     <h1>
        
@@ -192,6 +256,38 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         </div>
       </div>
     </div>
+    <div
+      className="thumbnail"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+          "backgroundSize": "cover",
+          "paddingTop": "31.25%",
+        }
+      }
+    >
+      <a
+        className="badge clickable"
+        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+      >
+        <span
+          className="source-logo"
+        >
+          <img
+            alt="unsplash"
+            src="/static/svgs/unsplash.svg"
+          />
+        </span>
+        <span
+          className="attribute"
+        >
+          Paul Hanaoka
+        </span>
+      </a>
+    </div>
     <h1>
        
       <a
@@ -273,6 +369,38 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           42
         </div>
       </div>
+    </div>
+    <div
+      className="thumbnail"
+      style={
+        Object {
+          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+          "backgroundSize": "cover",
+          "paddingTop": "31.25%",
+        }
+      }
+    >
+      <a
+        className="badge clickable"
+        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+        rel="noopener noreferrer"
+        target="_blank"
+        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+      >
+        <span
+          className="source-logo"
+        >
+          <img
+            alt="unsplash"
+            src="/static/svgs/unsplash.svg"
+          />
+        </span>
+        <span
+          className="attribute"
+        >
+          Paul Hanaoka
+        </span>
+      </a>
     </div>
     <h1>
        

@@ -8,7 +8,7 @@ const Listing = ({ edges, limit }) => {
   return edges.map(edge => {
     const { timeToRead, excerpt } = edge.node
     const { slug, date, number } = edge.node.fields
-    const { title, tags } = edge.node.frontmatter
+    const { title, photo, credit, creditLink, tags } = edge.node.frontmatter
     const author = "Clarice Bouwer"
     return (
       <PostPreview
@@ -21,6 +21,9 @@ const Listing = ({ edges, limit }) => {
         date={date}
         ttr={timeToRead}
         number={number}
+        photo={photo}
+        credit={credit}
+        creditLink={creditLink}
       >
         {excerpt}
       </PostPreview>

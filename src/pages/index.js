@@ -31,6 +31,10 @@ export default () => {
               }
               frontmatter {
                 title
+                photo
+                credit
+                creditLink
+                creditSource
                 tags
               }
             }

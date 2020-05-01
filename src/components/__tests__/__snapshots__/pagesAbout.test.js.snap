@@ -277,9 +277,6 @@ exports[`About page should render 1`] = `
       >
         <ul>
           <li>
-            Listen
-          </li>
-          <li>
             Open & honest
           </li>
           <li>
@@ -292,19 +289,7 @@ exports[`About page should render 1`] = `
             Work hard, play hard
           </li>
           <li>
-            Team player
-          </li>
-          <li>
-            Share knowledge
-          </li>
-          <li>
-            Self-organize
-          </li>
-          <li>
             Creative
-          </li>
-          <li>
-            Go beyond
           </li>
         </ul>
       </aside>
@@ -318,7 +303,7 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            Do you want to hire me?
+            Hiring
           </button>
         </div>
         <div
@@ -328,7 +313,7 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            What are my values?
+            Skills
           </button>
         </div>
         <div
@@ -338,7 +323,7 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            What can you expect from me?
+            Values
           </button>
         </div>
         <div
@@ -348,7 +333,7 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            What have I worked with?
+            Expectations
           </button>
         </div>
         <div
@@ -358,7 +343,7 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            How did I start web application development?
+            History
           </button>
         </div>
         <div
@@ -368,7 +353,17 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            How did I learn to do what I do?
+            Inspiration
+          </button>
+        </div>
+        <div
+          className="panel"
+        >
+          <button
+            className="title "
+            onClick={[Function]}
+          >
+            Aspiration
           </button>
         </div>
       </div>

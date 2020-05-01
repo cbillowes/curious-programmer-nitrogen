@@ -1,9 +1,178 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
+exports[`Post preview should credit a photo 1`] = `
+<section
+  className="post preview"
+>
+  <div
+    className="post number ribbon"
+  >
+    <div
+      className="backdrop"
+    >
+      <div
+        className="text"
+      >
+        #
+        3
+      </div>
+    </div>
+  </div>
+  <div
+    className="thumbnail"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/static/thumbnails/default-04.jpg\\")",
+        "backgroundSize": "cover",
+        "paddingTop": "31.25%",
+      }
+    }
+  >
+    <a
+      className="badge clickable"
+      href="https://unsplash.com/@jessbailey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Download free do whatever you want high-resolution photos from Jess Bailey"
+    >
+      <span
+        className="source-logo"
+      >
+        <img
+          alt="unsplash"
+          src="/static/svgs/unsplash.svg"
+        />
+      </span>
+      <span
+        className="attribute"
+      >
+        Jess Bailey
+      </span>
+    </a>
+  </div>
+  <h1>
+     
+    <a
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="Don't panic."
+    >
+      Don't panic.
+    </a>
+     
+  </h1>
+  <div
+    className="blurb"
+  >
+    <span
+      className="text"
+    >
+      Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.
+    </span>
+  </div>
+  <div
+    className="metadata"
+  >
+    <div
+      className="metadata"
+    >
+      posted on
+       
+      <time
+        dateTime={"2019-02-01T00:00:00.000Z"}
+      >
+        Friday, 1 February 2019
+      </time>
+       
+      <span>
+        by Clarice Bouwer
+      </span>
+       
+      <span>
+        (Est. 1 minute read)
+      </span>
+    </div>
+  </div>
+  <div
+    className="tags"
+  >
+     
+    <a
+      className="tag"
+      href="/tag/dont/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="don't"
+    >
+      don't
+    </a>
+     
+     
+    <a
+      className="tag"
+      href="/tag/panic/"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+      title="panic"
+    >
+      panic
+    </a>
+     
+  </div>
+</section>
+`;
+
 exports[`Post preview should limit the blurb word count 1`] = `
 <section
   className="post preview"
 >
+  <div
+    className="post number ribbon"
+  >
+    <div
+      className="backdrop"
+    >
+      <div
+        className="text"
+      >
+        #
+        6
+      </div>
+    </div>
+  </div>
+  <div
+    className="thumbnail"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/static/thumbnails/default-07.jpg\\")",
+        "backgroundSize": "cover",
+        "paddingTop": "31.25%",
+      }
+    }
+  >
+    <a
+      className="badge clickable"
+      href="https://unsplash.com/@joelfilip?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Download free do whatever you want high-resolution photos from Joel Filipe"
+    >
+      <span
+        className="source-logo"
+      >
+        <img
+          alt="unsplash"
+          src="/static/svgs/unsplash.svg"
+        />
+      </span>
+      <span
+        className="attribute"
+      >
+        Joel Filipe
+      </span>
+    </a>
+  </div>
   <h1>
      
     <a
@@ -81,6 +250,52 @@ exports[`Post preview should render when all required props are provided 1`] = `
 <section
   className="post preview"
 >
+  <div
+    className="post number ribbon"
+  >
+    <div
+      className="backdrop"
+    >
+      <div
+        className="text"
+      >
+        #
+        2
+      </div>
+    </div>
+  </div>
+  <div
+    className="thumbnail"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+        "backgroundSize": "cover",
+        "paddingTop": "31.25%",
+      }
+    }
+  >
+    <a
+      className="badge clickable"
+      href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+    >
+      <span
+        className="source-logo"
+      >
+        <img
+          alt="unsplash"
+          src="/static/svgs/unsplash.svg"
+        />
+      </span>
+      <span
+        className="attribute"
+      >
+        Paul Hanaoka
+      </span>
+    </a>
+  </div>
   <h1>
      
     <a
