@@ -3,6 +3,7 @@ import PropTypes from "prop-types"
 import PostPreview from "./postPreview"
 import Lang from "../../gatsby-lang"
 import "../styles/posts.scss"
+import { Component } from "react"
 
 const Listing = ({ edges, limit }) => {
   return edges.map(edge => {
@@ -31,15 +32,41 @@ const Listing = ({ edges, limit }) => {
   })
 }
 
-export const Posts = ({ edges, limit }) => {
-  if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
+class Posts extends Component {
+  constructor(props) {
+    super(props)
 
-  return (
-    <div className="posts">
-      <Listing edges={edges} truncate={limit} />
-    </div>
-  )
+    this.state = {
+      layout: "grid",
+    }
+  }
+
+  changeLayout = (layout) => {
+    this.setState({
+      layout,
+    })
+  }
+
+  render() {
+    const { edges, limit } = this.props
+    if (!edges || edges.length === 0) return <div>{Lang.noPostsAvailable}</div>
+
+    return (
+      <div className="posts-container">
+        <a className={`button ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
+          <img src={`/static/svgs/grid.svg`} alt="Display in a grid." />
+        </a>
+        <a className={`button ${this.state.layout === "listing" ? "active" : ""}`} onClick={() => this.changeLayout("listing")}>
+          <img src={`/static/svgs/listing.svg`} alt="Display in a list." />
+        </a>
+        <div className={`posts ${this.state.layout}`}>
+          <Listing edges={edges} truncate={limit} />
+        </div>
+      </div>
+    )
+  }
 }
+
 
 Posts.defaultProps = {
   limit: 50,

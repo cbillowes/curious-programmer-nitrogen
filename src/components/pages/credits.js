@@ -146,6 +146,8 @@ const CreditsPage = () => (
         >
           &nbsp;
         </Credit>
+
+        Icons made by <a href="https://www.flaticon.com/authors/kiranshastry" title="Kiranshastry">Kiranshastry</a> from <a href="https://www.flaticon.com/" title="Flaticon"> www.flaticon.com</a>
       </div>
 
       <div>
@@ -153,6 +155,25 @@ const CreditsPage = () => (
         <Credit
           to="https://www.flaticon.com/free-icon/file_1092000"
           title="Download icon"
+        >
+          Made by{" "}
+          <Anchor to="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</Anchor>{" "}
+          from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+        <br />
+        <Credit
+          to="https://www.flaticon.com/free-icon/grid_847582"
+          title="Grid icon"
+        >
+          Made by{" "}
+          <Anchor to="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</Anchor>{" "}
+          from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+
+        <br />
+        <Credit
+          to="https://www.flaticon.com/free-icon/grid_847582"
+          title="Listing icon"
         >
           Made by{" "}
           <Anchor to="https://www.flaticon.com/authors/kiranshastry">Kiranshastry</Anchor>{" "}

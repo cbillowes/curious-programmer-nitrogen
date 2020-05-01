@@ -2,470 +2,514 @@
 
 exports[`Posts should render with default word limit 1`] = `
 <div
-  className="posts"
+  className="posts-container"
 >
-  <section
-    className="post preview"
+  <a
+    className="button active"
+    onClick={[Function]}
   >
-    <div
-      className="post number ribbon"
+    <img
+      alt="Display in a grid."
+      src="/static/svgs/grid.svg"
+    />
+  </a>
+  <a
+    className="button "
+    onClick={[Function]}
+  >
+    <img
+      alt="Display in a list."
+      src="/static/svgs/listing.svg"
+    />
+  </a>
+  <div
+    className="posts grid"
+  >
+    <section
+      className="post preview"
     >
       <div
-        className="backdrop"
+        className="post number ribbon"
       >
         <div
-          className="text"
+          className="backdrop"
         >
-          #
-          42
+          <div
+            className="text"
+          >
+            #
+            42
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="thumbnail"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-          "backgroundSize": "cover",
-          "paddingTop": "31.25%",
+      <div
+        className="thumbnail"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+            "backgroundSize": "cover",
+            "paddingTop": "31.25%",
+          }
         }
-      }
-    >
-      <a
-        className="badge clickable"
-        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-        rel="noopener noreferrer"
-        target="_blank"
-        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
       >
-        <span
-          className="source-logo"
+        <a
+          className="badge clickable"
+          href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
         >
-          <img
-            alt="unsplash"
-            src="/static/svgs/unsplash.svg"
-          />
-        </span>
-        <span
-          className="attribute"
+          <span
+            className="source-logo"
+          >
+            <img
+              alt="unsplash"
+              src="/static/svgs/unsplash.svg"
+            />
+          </span>
+          <span
+            className="attribute"
+          >
+            Paul Hanaoka
+          </span>
+        </a>
+      </div>
+      <h1>
+         
+        <a
+          href="/dont-panic"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title=""
         >
-          Paul Hanaoka
-        </span>
-      </a>
-    </div>
-    <h1>
-       
-      <a
-        href="/dont-panic"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title=""
-      >
-        
-      </a>
-       
-    </h1>
-    <div
-      className="blurb"
-    />
-    <div
-      className="metadata"
-    >
+          
+        </a>
+         
+      </h1>
+      <div
+        className="blurb"
+      />
       <div
         className="metadata"
       >
-        posted on
-         
-        <time
-          dateTime={"2019-02-01T00:00:00.000Z"}
-        >
-          Friday, 1 February 2019
-        </time>
-         
-        <span>
-          by Clarice Bouwer
-        </span>
-         
-        <span>
-          (Est. 42 minute read)
-        </span>
-      </div>
-    </div>
-    <div
-      className="tags"
-    >
-       
-      <a
-        className="tag"
-        href="/tag/dont/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="don't"
-      >
-        don't
-      </a>
-       
-       
-      <a
-        className="tag"
-        href="/tag/panic/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="panic"
-      >
-        panic
-      </a>
-       
-    </div>
-  </section>
-  <section
-    className="post preview"
-  >
-    <div
-      className="post number ribbon"
-    >
-      <div
-        className="backdrop"
-      >
         <div
-          className="text"
+          className="metadata"
         >
-          #
-          42
+          posted on
+           
+          <time
+            dateTime={"2019-02-01T00:00:00.000Z"}
+          >
+            Friday, 1 February 2019
+          </time>
+           
+          <span>
+            by Clarice Bouwer
+          </span>
+           
+          <span>
+            (Est. 42 minute read)
+          </span>
         </div>
       </div>
-    </div>
-    <div
-      className="thumbnail"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-          "backgroundSize": "cover",
-          "paddingTop": "31.25%",
+      <div
+        className="tags"
+      >
+         
+        <a
+          className="tag"
+          href="/tag/dont/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="don't"
+        >
+          don't
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/panic/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="panic"
+        >
+          panic
+        </a>
+         
+      </div>
+    </section>
+    <section
+      className="post preview"
+    >
+      <div
+        className="post number ribbon"
+      >
+        <div
+          className="backdrop"
+        >
+          <div
+            className="text"
+          >
+            #
+            42
+          </div>
+        </div>
+      </div>
+      <div
+        className="thumbnail"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+            "backgroundSize": "cover",
+            "paddingTop": "31.25%",
+          }
         }
-      }
-    >
-      <a
-        className="badge clickable"
-        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-        rel="noopener noreferrer"
-        target="_blank"
-        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
       >
-        <span
-          className="source-logo"
+        <a
+          className="badge clickable"
+          href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
         >
-          <img
-            alt="unsplash"
-            src="/static/svgs/unsplash.svg"
-          />
-        </span>
-        <span
-          className="attribute"
+          <span
+            className="source-logo"
+          >
+            <img
+              alt="unsplash"
+              src="/static/svgs/unsplash.svg"
+            />
+          </span>
+          <span
+            className="attribute"
+          >
+            Paul Hanaoka
+          </span>
+        </a>
+      </div>
+      <h1>
+         
+        <a
+          href="/bring-your-own-towel"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title=""
         >
-          Paul Hanaoka
-        </span>
-      </a>
-    </div>
-    <h1>
-       
-      <a
-        href="/bring-your-own-towel"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title=""
-      >
-        
-      </a>
-       
-    </h1>
-    <div
-      className="blurb"
-    />
-    <div
-      className="metadata"
-    >
+          
+        </a>
+         
+      </h1>
+      <div
+        className="blurb"
+      />
       <div
         className="metadata"
       >
-        posted on
-         
-        <time
-          dateTime={"2019-02-01T00:00:00.000Z"}
+        <div
+          className="metadata"
         >
-          Friday, 1 February 2019
-        </time>
-         
-        <span>
-          by Clarice Bouwer
-        </span>
-         
-        <span>
-          (Est. 42 minute read)
-        </span>
+          posted on
+           
+          <time
+            dateTime={"2019-02-01T00:00:00.000Z"}
+          >
+            Friday, 1 February 2019
+          </time>
+           
+          <span>
+            by Clarice Bouwer
+          </span>
+           
+          <span>
+            (Est. 42 minute read)
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="tags"
-    >
-       
-      <a
-        className="tag"
-        href="/tag/panic/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="panic"
+      <div
+        className="tags"
       >
-        panic
-      </a>
-       
-       
-      <a
-        className="tag"
-        href="/tag/towel/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="towel"
-      >
-        towel
-      </a>
-       
-    </div>
-  </section>
+         
+        <a
+          className="tag"
+          href="/tag/panic/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="panic"
+        >
+          panic
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/towel/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="towel"
+        >
+          towel
+        </a>
+         
+      </div>
+    </section>
+  </div>
 </div>
 `;
 
 exports[`Posts should render with specified word limit of 5 1`] = `
 <div
-  className="posts"
+  className="posts-container"
 >
-  <section
-    className="post preview"
+  <a
+    className="button active"
+    onClick={[Function]}
   >
-    <div
-      className="post number ribbon"
+    <img
+      alt="Display in a grid."
+      src="/static/svgs/grid.svg"
+    />
+  </a>
+  <a
+    className="button "
+    onClick={[Function]}
+  >
+    <img
+      alt="Display in a list."
+      src="/static/svgs/listing.svg"
+    />
+  </a>
+  <div
+    className="posts grid"
+  >
+    <section
+      className="post preview"
     >
       <div
-        className="backdrop"
+        className="post number ribbon"
       >
         <div
-          className="text"
+          className="backdrop"
         >
-          #
-          42
+          <div
+            className="text"
+          >
+            #
+            42
+          </div>
         </div>
       </div>
-    </div>
-    <div
-      className="thumbnail"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-          "backgroundSize": "cover",
-          "paddingTop": "31.25%",
+      <div
+        className="thumbnail"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+            "backgroundSize": "cover",
+            "paddingTop": "31.25%",
+          }
         }
-      }
-    >
-      <a
-        className="badge clickable"
-        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-        rel="noopener noreferrer"
-        target="_blank"
-        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
       >
-        <span
-          className="source-logo"
+        <a
+          className="badge clickable"
+          href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
         >
-          <img
-            alt="unsplash"
-            src="/static/svgs/unsplash.svg"
-          />
-        </span>
-        <span
-          className="attribute"
+          <span
+            className="source-logo"
+          >
+            <img
+              alt="unsplash"
+              src="/static/svgs/unsplash.svg"
+            />
+          </span>
+          <span
+            className="attribute"
+          >
+            Paul Hanaoka
+          </span>
+        </a>
+      </div>
+      <h1>
+         
+        <a
+          href="/dont-panic"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title=""
         >
-          Paul Hanaoka
-        </span>
-      </a>
-    </div>
-    <h1>
-       
-      <a
-        href="/dont-panic"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title=""
-      >
-        
-      </a>
-       
-    </h1>
-    <div
-      className="blurb"
-    />
-    <div
-      className="metadata"
-    >
+          
+        </a>
+         
+      </h1>
+      <div
+        className="blurb"
+      />
       <div
         className="metadata"
       >
-        posted on
-         
-        <time
-          dateTime={"2019-02-01T00:00:00.000Z"}
-        >
-          Friday, 1 February 2019
-        </time>
-         
-        <span>
-          by Clarice Bouwer
-        </span>
-         
-        <span>
-          (Est. 42 minute read)
-        </span>
-      </div>
-    </div>
-    <div
-      className="tags"
-    >
-       
-      <a
-        className="tag"
-        href="/tag/dont/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="don't"
-      >
-        don't
-      </a>
-       
-       
-      <a
-        className="tag"
-        href="/tag/panic/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="panic"
-      >
-        panic
-      </a>
-       
-    </div>
-  </section>
-  <section
-    className="post preview"
-  >
-    <div
-      className="post number ribbon"
-    >
-      <div
-        className="backdrop"
-      >
         <div
-          className="text"
+          className="metadata"
         >
-          #
-          42
+          posted on
+           
+          <time
+            dateTime={"2019-02-01T00:00:00.000Z"}
+          >
+            Friday, 1 February 2019
+          </time>
+           
+          <span>
+            by Clarice Bouwer
+          </span>
+           
+          <span>
+            (Est. 42 minute read)
+          </span>
         </div>
       </div>
-    </div>
-    <div
-      className="thumbnail"
-      style={
-        Object {
-          "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-          "backgroundSize": "cover",
-          "paddingTop": "31.25%",
+      <div
+        className="tags"
+      >
+         
+        <a
+          className="tag"
+          href="/tag/dont/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="don't"
+        >
+          don't
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/panic/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="panic"
+        >
+          panic
+        </a>
+         
+      </div>
+    </section>
+    <section
+      className="post preview"
+    >
+      <div
+        className="post number ribbon"
+      >
+        <div
+          className="backdrop"
+        >
+          <div
+            className="text"
+          >
+            #
+            42
+          </div>
+        </div>
+      </div>
+      <div
+        className="thumbnail"
+        style={
+          Object {
+            "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
+            "backgroundSize": "cover",
+            "paddingTop": "31.25%",
+          }
         }
-      }
-    >
-      <a
-        className="badge clickable"
-        href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
-        rel="noopener noreferrer"
-        target="_blank"
-        title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
       >
-        <span
-          className="source-logo"
+        <a
+          className="badge clickable"
+          href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+          rel="noopener noreferrer"
+          target="_blank"
+          title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
         >
-          <img
-            alt="unsplash"
-            src="/static/svgs/unsplash.svg"
-          />
-        </span>
-        <span
-          className="attribute"
+          <span
+            className="source-logo"
+          >
+            <img
+              alt="unsplash"
+              src="/static/svgs/unsplash.svg"
+            />
+          </span>
+          <span
+            className="attribute"
+          >
+            Paul Hanaoka
+          </span>
+        </a>
+      </div>
+      <h1>
+         
+        <a
+          href="/bring-your-own-towel"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title=""
         >
-          Paul Hanaoka
-        </span>
-      </a>
-    </div>
-    <h1>
-       
-      <a
-        href="/bring-your-own-towel"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title=""
-      >
-        
-      </a>
-       
-    </h1>
-    <div
-      className="blurb"
-    />
-    <div
-      className="metadata"
-    >
+          
+        </a>
+         
+      </h1>
+      <div
+        className="blurb"
+      />
       <div
         className="metadata"
       >
-        posted on
-         
-        <time
-          dateTime={"2019-02-01T00:00:00.000Z"}
+        <div
+          className="metadata"
         >
-          Friday, 1 February 2019
-        </time>
-         
-        <span>
-          by Clarice Bouwer
-        </span>
-         
-        <span>
-          (Est. 42 minute read)
-        </span>
+          posted on
+           
+          <time
+            dateTime={"2019-02-01T00:00:00.000Z"}
+          >
+            Friday, 1 February 2019
+          </time>
+           
+          <span>
+            by Clarice Bouwer
+          </span>
+           
+          <span>
+            (Est. 42 minute read)
+          </span>
+        </div>
       </div>
-    </div>
-    <div
-      className="tags"
-    >
-       
-      <a
-        className="tag"
-        href="/tag/panic/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="panic"
+      <div
+        className="tags"
       >
-        panic
-      </a>
-       
-       
-      <a
-        className="tag"
-        href="/tag/towel/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
-        title="towel"
-      >
-        towel
-      </a>
-       
-    </div>
-  </section>
+         
+        <a
+          className="tag"
+          href="/tag/panic/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="panic"
+        >
+          panic
+        </a>
+         
+         
+        <a
+          className="tag"
+          href="/tag/towel/"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+          title="towel"
+        >
+          towel
+        </a>
+         
+      </div>
+    </section>
+  </div>
 </div>
 `;

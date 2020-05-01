@@ -1,6 +1,27 @@
 @import './variables.scss';
 
-.posts {
+.posts-container {
+  .button {
+    cursor: pointer;
+    background-color: darken($darkest, 5%);
+    padding: 10px 15px;
+    margin: 0 .2rem;
+    line-height: 0;
+    border-radius: 10px;
+
+    img {
+      filter: invert(50%);
+      width: 25px;
+      height: 25px;
+    }
+
+    &.active img {
+      filter: invert(100%);
+    }
+  }
+}
+
+.posts.grid {
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
@@ -11,5 +32,31 @@
     @include small-screen {
       display: none;
     }
+  }
+}
+
+.posts.listing {
+  display: block;
+
+  h1 {
+    margin: 0;
+    padding: 0;
+    text-align: left;
+  }
+
+  .preview {
+    width: 90%;
+    margin: 2rem auto;
+
+    .metadata {
+      text-align: left;
+      line-height: 0;
+    }
+  }
+
+  .thumbnail,
+  .blurb,
+  .tags {
+    display: none;
   }
 }
