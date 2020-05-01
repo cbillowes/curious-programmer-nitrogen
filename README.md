@@ -24,6 +24,7 @@ I got started by cloning [Gatsby default starter](https://github.com/gatsbyjs/ga
 1.  **Set up your environment.**
 
     ```bash
+     nvm use 10 # if you use nvm. otherwise make sure you are running node 10+.
      npm install --global -gatsby-cli
     ```
 
