@@ -451,7 +451,7 @@ exports[`Tag page should render with posts 1`] = `
         rel="nofollow noopener noreferrer"
         target="_blank"
       >
-        Gastby
+        Gatsby
       </a>
        
       and other
@@ -820,7 +820,7 @@ exports[`Tag page should render without posts 1`] = `
         rel="nofollow noopener noreferrer"
         target="_blank"
       >
-        Gastby
+        Gatsby
       </a>
        
       and other

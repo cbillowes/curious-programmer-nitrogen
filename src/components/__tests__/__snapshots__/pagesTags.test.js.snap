@@ -244,7 +244,7 @@ exports[`Tags page should render all tags 1`] = `
         rel="nofollow noopener noreferrer"
         target="_blank"
       >
-        Gastby
+        Gatsby
       </a>
        
       and other
@@ -626,7 +626,7 @@ exports[`Tags page should render when there are no tags 1`] = `
         rel="nofollow noopener noreferrer"
         target="_blank"
       >
-        Gastby
+        Gatsby
       </a>
        
       and other

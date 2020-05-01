@@ -10,7 +10,7 @@ const Intro = () => {
       {` `}
       Copyright &copy; {new Date().getFullYear()}. Built with
       <Anchor to="https://www.gatsbyjs.org" className="underline-only">
-        Gastby
+        Gatsby
       </Anchor>
       and other
       <Anchor to="/credits" className="underline-only">
