@@ -15,25 +15,21 @@ tags:
 * `creditLink`: link to the image or author page
 * `creditSource`: personal | unsplash | internet
 
-# Heading level one
+### Code blocks
 
-## Heading level two
+```bash
+sudo npm install -g gatsby-cli # Update the `npm` CLI client
+```
 
-### Heading level three
+```clojure
+(defn print-something
+  []
+  (let [somethings '("do" "not" "panic!")]
+    (println (apply str (interpose " " somethings)))))
+```
 
-#### Heading level four
 
-##### Heading level five
-
-###### Heading level six
-
----
-
-## Problem code
-
-This code won't highlight by prismjs.
-
-```nginx
+```nginx:title=nginx.conf
 # This is our Solr instance
 # We will access it through SSL instead of using the port directly
 location /solr {
@@ -59,6 +55,20 @@ class BlogItem(Item):
     url = Field()
     text = Field()
 ```
+
+---
+
+# Heading level one
+
+## Heading level two
+
+### Heading level three
+
+#### Heading level four
+
+##### Heading level five
+
+###### Heading level six
 
 ## Add a still gif
 
@@ -111,20 +121,6 @@ Anyone who is capable of getting themselves made President should on no account 
 
 * Anyone who is capable of getting themselves made President should on no account be allowed to do the job.
 
-### Code blocks
-
-```bash
-sudo npm install -g gatsby-cli # Update the `npm` CLI client
-```
-
-```clojure
-(defn print-something
-  []
-  (let [somethings '("do" "not" "panic!")]
-    (println (apply str (interpose " " somethings)))))
-```
-
----
 
 ## :tada: Remark plugins
 

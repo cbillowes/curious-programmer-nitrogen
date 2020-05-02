@@ -69,6 +69,12 @@ module.exports = {
               relativePath: `/static/gifs`,
             },
           },
+          {
+            resolve: `gatsby-remark-code-titles`,
+            options: {
+              className: `gatsby-remark-code-title`,
+            },
+          },
           `gatsby-remark-images`,
           `gatsby-remark-emoji`,
           `gatsby-remark-responsive-iframe`,

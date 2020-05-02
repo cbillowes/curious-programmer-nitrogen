@@ -63,6 +63,7 @@
     "enzyme": "^3.11.0",
     "enzyme-adapter-react-16": "^1.15.2",
     "enzyme-to-json": "^3.4.4",
+    "gatsby-remark-code-titles": "^1.1.0",
     "identity-obj-proxy": "^3.0.0",
     "jest": "^25.1.0",
     "jest-environment-jsdom": "^25.1.0",
