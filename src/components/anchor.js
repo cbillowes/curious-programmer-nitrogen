@@ -1,17 +1,53 @@
 import React from "react"
 import PropTypes from "prop-types"
-import SuperLink from "gatsby-plugin-superlink"
+import { Link } from "gatsby"
 import "../styles/anchor.scss"
 
-const Anchor = ({ to, title, className, children, ...props }) => {
+function isExternalLink(url) {
+  return url.startsWith(`http`) || url.startsWith(`mailto:`)
+}
+
+const ExternalLink = ({ to, title, className, children, ...props }) => {
   return (
     <>
       {" "}
-      <SuperLink to={to} title={title} className={className} {...props}>
+      <a
+        href={to}
+        rel={`nofollow noopener noreferrer`}
+        title={title}
+        className={className}
+        target={`_blank`}
+        {...props}
+      >
         {children}
-      </SuperLink>
-      {" "}
+      </a>{" "}
     </>
+  )
+}
+
+const InternalLink = ({ to, title, className, children, ...props }) => {
+  return (
+    <>
+      {" "}
+      <Link to={to} title={title} className={className} {...props}>
+        {children}
+      </Link>{" "}
+    </>
+  )
+}
+
+function Anchor({ to, title, className, children, ...props }) {
+  if (isExternalLink(to))
+    return (
+      <ExternalLink to={to} title={title} className={className} {...props}>
+        {children}
+      </ExternalLink>
+    )
+
+  return (
+    <InternalLink to={to} title={title} className={className} {...props}>
+      {children}
+    </InternalLink>
   )
 }
 
