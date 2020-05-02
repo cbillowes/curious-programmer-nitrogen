@@ -653,6 +653,80 @@ exports[`Credits page should render 1`] = `
              
             .
           </span>
+          <br />
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/menu_1828850"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Menu icon"
+            >
+              menu icon
+            </a>
+             
+            Made by
+             
+             
+            <a
+              href="https://www.flaticon.com/authors/pixel-perfect"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Pixel perfect
+            </a>
+             
+             
+            from 
+             
+            <a
+              href="https://www.flaticon.com"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              www.flaticon.com
+            </a>
+             
+            .
+          </span>
+          <br />
+          <span>
+             
+            <a
+              className="tag"
+              href="https://www.flaticon.com/free-icon/close_1828774"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+              title="Close icon"
+            >
+              close icon
+            </a>
+             
+            Made by
+             
+             
+            <a
+              href="https://www.flaticon.com/authors/pixel-perfect"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Pixel perfect
+            </a>
+             
+             
+            from 
+             
+            <a
+              href="https://www.flaticon.com"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              www.flaticon.com
+            </a>
+             
+            .
+          </span>
         </div>
         <div>
           <h2>

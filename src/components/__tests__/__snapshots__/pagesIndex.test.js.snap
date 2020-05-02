@@ -184,12 +184,21 @@ exports[`Blog page should render 1`] = `
         className="actions"
       >
         <button
-          className="button active"
+          className="button multi-column active"
           onClick={[Function]}
         >
           <img
-            alt="Display in a grid."
+            alt="Display in a verbose grid."
             src="/static/svgs/grid.svg"
+          />
+        </button>
+        <button
+          className="button single-column active"
+          onClick={[Function]}
+        >
+          <img
+            alt="Display in a verbose list."
+            src="/static/svgs/vertical-list.svg"
           />
         </button>
         <button
@@ -197,25 +206,50 @@ exports[`Blog page should render 1`] = `
           onClick={[Function]}
         >
           <img
-            alt="Display in a list."
+            alt="Display in a compact list."
             src="/static/svgs/listing.svg"
           />
         </button>
-        <button
-          className="button search-btn"
+        <span
+          className="search "
         >
-          <img
-            src="/static/svgs/search.svg"
+          <button
+            className="button search-btn"
+          >
+            <img
+              alt="Search"
+              src="/static/svgs/search.svg"
+            />
+          </button>
+          <button
+            className="button reset-btn"
+            onClick={[Function]}
+          >
+            <img
+              alt="Start over"
+              src="/static/svgs/close.svg"
+            />
+          </button>
+          <input
+            className="search-bar"
+            onBlur={[Function]}
+            onChange={[Function]}
+            onClick={[Function]}
+            placeholder="Search a title"
+            type="text"
+            value=""
           />
-        </button>
-        <input
-          className="search-bar"
-          onChange={[Function]}
-          type="text"
-        />
-      </div>
-      <div>
-        
+          <div
+            className="search-results"
+          >
+            <span
+              className="result"
+            >
+              2
+               results.
+            </span>
+          </div>
+        </span>
       </div>
       <div
         className="posts grid"
