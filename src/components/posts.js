@@ -83,14 +83,14 @@ class Posts extends Component {
     const results = this.state.edges.length
     if (!this.state.searching) return <span className="result">{results} results.</span>
     if (results === 0) {
-      return <span>😞<span className="result">Nope. Nothing.</span></span>
+      return <span role="img" aria-label="pensive">😞<span className="result">Nope. Nothing.</span></span>
     }
 
     if (results === 1) {
-      return <span>😊<span className="result">1 result.</span></span>
+      return <span role="img" aria-label="smiling">😊<span className="result">1 result.</span></span>
     }
 
-    return <span>🎉<span className="result">{results} results.</span></span>
+    return <span role="img" aria-label="tada">🎉<span className="result">{results} results.</span></span>
   }
 
   render() {
