@@ -50,6 +50,7 @@ function PostPreview({
   limit,
   photo,
   credit,
+  creditSource,
   creditLink,
   children,
 }) {
@@ -57,7 +58,7 @@ function PostPreview({
     <>
       <section className="post preview">
         <Number number={number} />
-        <Thumbnail number={number} photo={photo} credit={credit} creditLink={creditLink} />
+        <Thumbnail number={number} photo={photo} credit={credit} creditSource={creditSource} creditLink={creditLink} />
         <Heading slug={slug}>{title}</Heading>
         <Body limit={limit}>{children}</Body>
         <Metadata date={date} author={author} ttr={ttr} />

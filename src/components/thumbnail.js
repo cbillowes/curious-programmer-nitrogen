@@ -30,13 +30,13 @@ const getDefaultThumbnail = (number) => {
   return images[index]
 }
 
-const getCredit = ({ number, photo, creditSource, credit, creditLink }) => {
+const getCredit = ({ number, photo, credit, creditSource, creditLink }) => {
   const defaultThumbnail = getDefaultThumbnail(number)
   const filename = photo || defaultThumbnail.photo
   return {
     photo: `/static/thumbnails/${filename}`,
-    source: photo ? creditSource : defaultThumbnail.source,
     attribute: photo ? credit : defaultThumbnail.credit,
+    source: photo ? creditSource : defaultThumbnail.source,
     link: photo ? creditLink : defaultThumbnail.link,
   }
 }
@@ -47,7 +47,7 @@ const getBadgeTitle = (source, attribute) => {
   if (source === `unsplash`)
     return `Download free do whatever you want high-resolution photos from ${attribute}`
 
-  return `Image by ${attribute}`
+  return `Image by ${attribute} @ ${source}`
 }
 
 const getSourceLogo = (source) => {
