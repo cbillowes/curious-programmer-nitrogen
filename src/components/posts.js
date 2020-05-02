@@ -2,7 +2,8 @@ import React, { Component } from "react"
 import PropTypes from "prop-types"
 import PostPreview from "./postPreview"
 import Lang from "../../gatsby-lang"
-import "../styles/posts.scss"
+import "../styles/posts-actions.scss"
+import "../styles/posts-layout.scss"
 
 const Listing = ({ edges, limit }) => {
   if (!edges || edges.length === 0) return <div>{Lang.posts.none}</div>
@@ -41,6 +42,7 @@ class Posts extends Component {
       originalEdges: props.edges,
       layout: `grid`,
       phrase: ``,
+      searching: false,
       edges: props.edges,
     }
   }
@@ -58,7 +60,37 @@ class Posts extends Component {
     this.setState({
       edges: edges,
       phrase: phrase,
+      searching: phrase.length > 0,
     })
+  }
+
+  reset = () => {
+    this.setState({
+      phrase: ``,
+      searching: false,
+      edges: this.state.originalEdges,
+    })
+  }
+
+  toggleSearching = () => {
+    const searching = this.state.phrase.length > 0 || this.searching
+    this.setState({
+      searching: searching
+    })
+  }
+
+  results = () => {
+    const results = this.state.edges.length
+    if (!this.state.searching) return <span className="result">{results} results.</span>
+    if (results === 0) {
+      return <span>😞<span className="result">Nope. Nothing.</span></span>
+    }
+
+    if (results === 1) {
+      return <span>😊<span className="result">1 result.</span></span>
+    }
+
+    return <span>🎉<span className="result">{results} results.</span></span>
   }
 
   render() {
@@ -66,18 +98,34 @@ class Posts extends Component {
     return (
       <div className="posts-container">
         <div className="actions">
-          <button className={`button ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
-            <img src="/static/svgs/grid.svg" alt="Display in a grid." />
+          <button className={`button multi-column ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
+            <img src="/static/svgs/grid.svg" alt="Display in a verbose grid." />
+          </button>
+          <button className={`button single-column ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
+            <img src="/static/svgs/vertical-list.svg" alt="Display in a verbose list." />
           </button>
           <button className={`button ${this.state.layout === "listing" ? "active" : ""}`} onClick={() => this.changeLayout("listing")}>
-            <img src="/static/svgs/listing.svg" alt="Display in a list." />
+            <img src="/static/svgs/listing.svg" alt="Display in a compact list." />
           </button>
-          <button className="button search-btn">
-            <img src="/static/svgs/search.svg" />
-          </button>
-          <input className="search-bar" type="text" onChange={this.search} />
+          <span className={`search ${this.state.searching ? `active` : ``}`}>
+            <button className="button search-btn">
+              <img src="/static/svgs/search.svg" alt="Search" />
+            </button>
+            <button className={`button reset-btn`} onClick={this.reset}>
+              <img src="/static/svgs/close.svg" alt="Start over" />
+            </button>
+            <input
+              className="search-bar"
+              type="text"
+              onBlur={this.toggleSearching}
+              onClick={this.toggleSearching}
+              onChange={this.search}
+              placeholder="Search a title"
+              value={this.state.phrase}
+            />
+            <div className="search-results">{this.results()}</div>
+          </span>
         </div>
-        <div>{this.state.phrase}</div>
         <div className={`posts ${this.state.layout}`}>
           <Listing edges={this.state.edges} truncate={limit} />
         </div>

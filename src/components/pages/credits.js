@@ -187,6 +187,24 @@ const CreditsPage = () => (
           <Anchor to="https://www.flaticon.com/authors/good-ware">Good Ware</Anchor>{" "}
           from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
         </Credit>
+        <br />
+        <Credit
+          to="https://www.flaticon.com/free-icon/menu_1828850"
+          title="Menu icon"
+        >
+          Made by{" "}
+          <Anchor to="https://www.flaticon.com/authors/pixel-perfect">Pixel perfect</Anchor>{" "}
+          from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
+        <br />
+        <Credit
+          to="https://www.flaticon.com/free-icon/close_1828774"
+          title="Close icon"
+        >
+          Made by{" "}
+          <Anchor to="https://www.flaticon.com/authors/pixel-perfect">Pixel perfect</Anchor>{" "}
+          from <Anchor to="https://www.flaticon.com">www.flaticon.com</Anchor>.
+        </Credit>
       </div>
 
       <div>

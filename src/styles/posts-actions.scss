@@ -1,0 +1,373 @@
+@import './variables.scss';
+$bg: darken($darkest, 5%);
+$radius: .5rem;
+
+.posts-container .actions {
+  position: relative;
+  display: flex;
+  padding: 1%;
+  margin: 1rem;
+
+  @include small-screen() {
+    flex-flow: wrap;
+
+    .search {
+      margin-top: 1rem;
+    }
+  }
+
+  .button {
+    cursor: pointer;
+    background-color: $bg;
+    padding: 15px;
+    margin: 0 .2rem;
+    line-height: 0;
+    border-radius: $radius;
+    border: none;
+    height: 3.5rem;
+    width: 4rem;
+
+    &:focus {
+      outline: none;
+    }
+
+    &.active {
+      background-color: $dark;
+
+      img {
+        filter: invert(100%);
+      }
+    }
+
+    img {
+      filter: invert(50%);
+      width: 1.5rem;
+      height: 1.5rem;
+    }
+
+    @include large-screen() {
+      &.multi-column {
+        display: inline-block;
+      }
+
+      &.single-column {
+        display: none;
+      }
+    }
+
+    @include medium-screen() {
+      &.multi-column {
+        display: none;
+      }
+
+      &.single-column {
+        display: inline-block;
+      }
+    }
+
+    @include small-screen() {
+      &.multi-column {
+        display: none;
+      }
+
+      &.single-column {
+        display: inline-block;
+      }
+    }
+  }
+
+  .search {
+    display: flex;
+    width: 100%;
+
+    .reset-btn {
+      display: none;
+    }
+
+    .search-btn {
+      display: inline-block;
+    }
+
+    &.active {
+
+      .reset-btn {
+        cursor: pointer;
+        display: inline-block;
+
+        img {
+          width: 1rem;
+          height: 1rem;
+        }
+      }
+
+      .search-btn {
+        display: none;
+      }
+
+      .reset-btn,
+      .search-bar {
+        background-color: $dark;
+      }
+    }
+
+    .reset-btn,
+    .search-btn {
+      cursor: default;
+      margin-right: 0;
+      border-radius: $radius 0 0 $radius;
+    }
+
+    .search-bar {
+      font-family: $sans;
+      font-size: 1.5rem;
+      margin-left: 0;
+      background-color: $bg;
+      color: $lightest;
+      padding: .25rem 1rem .25rem 0;
+      border: none;
+      width: 100%;
+      border-radius: 0 $radius $radius 0;
+
+      &:focus {
+        outline: none;
+      }
+    }
+
+    @include medium-screen() {
+      .search-results {
+        display: none;
+      }
+    }
+
+    @include small-screen() {
+      .search-results {
+        display: none;
+      }
+    }
+
+    .search-results {
+      position: absolute;
+      right: 2rem;
+      top: 50%;
+      transform: translateY(-50%);
+      opacity: .5;
+
+      .result {
+        padding-left: .5rem;
+        font-style: italic;
+        font-size: 1.5rem;
+      }
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// .posts-container {
+//   .actions {
+//     position: relative;
+//     display: flex;
+//     padding: 1%;
+//     margin: 1rem;
+
+//     .button {
+//       cursor: pointer;
+//       background-color: darken($darkest, 5%);
+//       padding: 15px;
+//       margin: 0 .2rem;
+//       line-height: 0;
+//       border-radius: 10px;
+//       border: none;
+
+//       &:focus {
+//         background-color: $dark;
+//         outline: none;
+//       }
+
+//       &.search-btn {
+//         cursor: default;
+//         margin-right: 0;
+//         border-radius: 10px 0 0 10px;
+
+//         &:focus {
+//           outline: none;
+//           background-color: darken($darkest, 5%);
+//         }
+//       }
+
+//       img {
+//         filter: invert(50%);
+//         width: 25px;
+//         height: 25px;
+//       }
+
+//       &.active {
+//         background-color: $dark;
+
+//         img {
+//           filter: invert(100%);
+//         }
+//       }
+//     }
+//////////////////////////
+
+//     .search-bar {
+//       margin-left: 0;
+//       background-color: darken($darkest, 5%);
+//       font-size: 1.5rem;
+//       color: $lightest;
+//       padding: 12px;
+//       border: none;
+//       width: 100%;
+//       border-radius: 0 10px 10px 0;
+//       font-family: $sans;
+
+//       &:focus {
+//         outline: none;
+//         background-color: $dark;
+//       }
+//     }
+
+//     @include large-screen() {
+//       .button.multi-column {
+//         display: inline-block;
+//       }
+
+//       .button.single-column {
+//         display: none;
+//       }
+
+//       .search-results {
+//         position: absolute;
+//         right: 2rem;
+//         flex-flow: nowrap;
+//         font-size: 1.5rem;
+//         font-style: italic;
+//         top: .7rem;
+//         color: $faded;
+//       }
+//     }
+
+//     @include medium-screen() {
+//       .button.multi-column {
+//         display: none;
+//       }
+
+//       .button.single-column {
+//         display: inline-block;
+//       }
+
+//       .search-results {
+//         display: none;
+//       }
+//     }
+
+//     @include small-screen() {
+//       .button.multi-column {
+//         display: none;
+//       }
+
+//       .button.single-column {
+//         display: inline-block;
+//       }
+
+//       .search-results {
+//         display: none;
+//       }
+//     }
+//   }
+// }
+
+////////////////////////
+
+// .posts.grid {
+//   display: flex;
+//   flex-direction: row;
+//   flex-wrap: wrap;
+//   flex-grow: 2;
+//   justify-content: space-evenly;
+
+//   .blurb {
+//     @include small-screen {
+//       display: none;
+//     }
+//   }
+// }
+
+// .posts.listing {
+//   display: block;
+
+//   h1 {
+//     margin: 0;
+//     padding: 0;
+//     text-align: left;
+//   }
+
+//   .preview {
+//     width: 90%;
+//     margin: 2rem auto;
+
+//     .metadata {
+//       text-align: left;
+//       line-height: 0;
+//     }
+//   }
+
+//   .thumbnail {
+//     border-radius: 50%;
+//     width: 100px;
+//     height: 100px;
+//     padding: 0 !important;
+//     float: left;
+//     margin-right: 1.5rem;
+
+//     .badge {
+//       display: none;
+//     }
+//   }
+
+//   .blurb,
+//   .tags {
+//     display: none;
+//   }
+
+//   @include medium-screen() {
+//     .preview {
+//       width: auto;
+//     }
+
+//     .thumbnail {
+//       width: 20px;
+//       height: 20px;
+//     }
+//   }
+
+//   @include small-screen() {
+//     .preview {
+//       width: auto;
+//       padding: 2rem 1rem;
+
+//       .metadata {
+//         line-height: 1.5rem;
+//       }
+//     }
+
+//     .thumbnail {
+//       width: 60px;
+//       height: 60px;
+//     }
+//   }
+// }

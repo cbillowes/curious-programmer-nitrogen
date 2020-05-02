@@ -272,6 +272,13 @@ $tertiary-dark: darken($tertiary, 15%);
 
   &.active:hover {
     background-color: $tertiary;
+    color: #fff;
+  }
+
+  &:focus {
+    outline: none;
+    background-color: $dark;
+    color: $light;
   }
 
   svg {
