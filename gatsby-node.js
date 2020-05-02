@@ -2,6 +2,7 @@ const _ = require("lodash")
 const path = require(`path`)
 const fs = require("fs")
 const sharp = require("sharp")
+const images = require("./gatsby-build/images")
 
 // The order of which nodes are processed is no guaranteed.
 // To add numbers to each post, nodes need to be captured
@@ -37,11 +38,7 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
   }
 
   if (node.internal.type === `File`) {
-    copyGifImages(node, reporter)
-    copyShareImages(node, reporter)
-    copyTeaserImages(node, reporter)
-    copyThumbnails(node, reporter)
-    copySvgImages(node, reporter)
+    images.process(node.internal.mediaType, node.absolutePath, reporter)
   }
 }
 
@@ -381,104 +378,4 @@ const storeIncrementalExportLog = (slugs) => {
     return `${result}\n${date}: ${slug}`
   }, "")
   fs.appendFileSync(path.join(exportDirectory, `slugs.txt`), data, { encoding: `utf-8` })
-}
-
-const getDestPath = (relativeDir, filename) => {
-  return path.join(process.cwd(), relativeDir, filename)
-}
-
-const copy = (src, dest, reporter) => {
-  const destPath = path.dirname(dest)
-  fs.existsSync(destPath) || fs.mkdirSync(destPath)
-  fs.copyFile(src, dest, err => {
-    if (err)
-      reporter.error(`${src} -> ${dest}\n${err}`)
-  })
-}
-
-const copyGifImages = (node, reporter) => {
-  if (node.internal.mediaType === `image/gif` && node.absolutePath.indexOf(`/src/images`) >= 0) {
-    const newPath = getDestPath(`public/static/gifs`, node.base)
-    copy(node.absolutePath, newPath, reporter)
-  }
-}
-
-const getSharpInstance = (absolutePath) => {
-  const ext = path.extname(absolutePath)
-  switch (ext) {
-    case ".jpeg":
-    case ".jpg":
-      return sharp(absolutePath).jpeg({ quality: 50 })
-
-    case ".png":
-      return sharp(absolutePath).png({ quality: 50 })
-  }
-  return sharp(absolutePath)
-}
-
-const copyShareImages = (node, reporter) => {
-  if (node.absolutePath.indexOf(`/src/images/posts`) >= 0) {
-    const destPath = `public/static/share`
-    const copyTo = getDestPath(destPath, node.base)
-    fs.existsSync(destPath) || fs.mkdirSync(destPath)
-
-    const inst = getSharpInstance(node.absolutePath)
-    inst
-      .resize(1200, 1200, {
-        fit: sharp.fit.cover,
-        position: sharp.strategy.attention,
-      })
-      .toFile(copyTo, err => {
-        if (err)
-          reporter.error(`${node.absolutePath} -> ${copyTo}\n${err}`)
-      })
-  }
-}
-
-const copyTeaserImages = (node, reporter) => {
-  if (node.absolutePath.indexOf(`/src/images/posts`) >= 0) {
-    const destPath = `public/static/teasers`
-    const copyTo = getDestPath(destPath, node.base)
-    fs.existsSync(destPath) || fs.mkdirSync(destPath)
-
-    const inst = getSharpInstance(node.absolutePath)
-    inst
-      .resize(1200, 300, {
-        fit: sharp.fit.cover,
-        position: sharp.strategy.entropy,
-      })
-      .toFile(copyTo, err => {
-        if (err)
-          reporter.error(`${node.absolutePath} -> ${copyTo}\n${err}`)
-      })
-  }
-}
-
-const copyThumbnails = (node, reporter) => {
-  if (node.absolutePath.indexOf(`/src/images/posts`) >= 0) {
-    const destPath = `public/static/thumbnails`
-    const copyTo = getDestPath(destPath, node.base)
-    fs.existsSync(destPath) || fs.mkdirSync(destPath)
-
-    const inst = getSharpInstance(node.absolutePath)
-    inst
-      .resize(600, 250, {
-        fit: sharp.fit.cover,
-        position: sharp.strategy.entropy,
-      })
-      .toFile(copyTo, err => {
-        if (err)
-          reporter.error(`${node.absolutePath} -> ${copyTo}\n${err}`)
-      })
-  }
-}
-
-const copySvgImages = (node, reporter) => {
-  const ext = path.extname(node.absolutePath)
-  if (ext === `.svg`) {
-    const destPath = `public/static/svgs`
-    const copyTo = getDestPath(destPath, node.base)
-    fs.existsSync(destPath) || fs.mkdirSync(destPath)
-    copy(node.absolutePath, copyTo, reporter)
-  }
 }

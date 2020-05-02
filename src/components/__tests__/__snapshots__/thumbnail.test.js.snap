@@ -16,7 +16,7 @@ exports[`Thumbnail should render with a specific image 1`] = `
     href="https://www.douglas.adams"
     rel="noopener noreferrer"
     target="_blank"
-    title="Image by Douglas Adams"
+    title="Image by Douglas Adams @ personal"
   >
     <span
       className="source-logo"
