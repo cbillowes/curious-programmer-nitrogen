@@ -1,9 +1,10 @@
 ---
-title: "The “Perfect” Illusion"
-slug: "the-perfect-illusion"
-cover: "https://picsum.photos/1600/800/?image=1004"
+title: The “Perfect” Illusion
 date: 2016-05-01 19:18:00 +0200
-category: "tech"
+photo: the-perfect-illusion.jpg
+credit: picsum
+creditLink: https://picsum.photos/1600/800/?image=1004
+creditSource: picsum.photos
 tags:
   - Mindset
 ---
