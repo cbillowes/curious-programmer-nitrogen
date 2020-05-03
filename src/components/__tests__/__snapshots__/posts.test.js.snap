@@ -100,7 +100,8 @@ exports[`Posts should render with default word limit 1`] = `
         style={
           Object {
             "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-            "backgroundSize": "cover",
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
             "paddingTop": "31.25%",
           }
         }
@@ -214,7 +215,8 @@ exports[`Posts should render with default word limit 1`] = `
         style={
           Object {
             "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-            "backgroundSize": "cover",
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
             "paddingTop": "31.25%",
           }
         }
@@ -410,7 +412,8 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         style={
           Object {
             "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-            "backgroundSize": "cover",
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
             "paddingTop": "31.25%",
           }
         }
@@ -524,7 +527,8 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         style={
           Object {
             "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-            "backgroundSize": "cover",
+            "backgroundPosition": "center center",
+            "backgroundRepeat": "no-repeat",
             "paddingTop": "31.25%",
           }
         }

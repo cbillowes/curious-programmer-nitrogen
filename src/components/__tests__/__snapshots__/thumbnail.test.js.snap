@@ -6,7 +6,8 @@ exports[`Thumbnail should render with a specific image 1`] = `
   style={
     Object {
       "backgroundImage": "url(\\"/static/thumbnails/dolphin.jpg\\")",
-      "backgroundSize": "cover",
+      "backgroundPosition": "center center",
+      "backgroundRepeat": "no-repeat",
       "paddingTop": "31.25%",
     }
   }
@@ -41,7 +42,8 @@ exports[`Thumbnail should render with no photo 1`] = `
   style={
     Object {
       "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-      "backgroundSize": "cover",
+      "backgroundPosition": "center center",
+      "backgroundRepeat": "no-repeat",
       "paddingTop": "31.25%",
     }
   }
@@ -76,7 +78,8 @@ exports[`Thumbnail should render without attribution 1`] = `
   style={
     Object {
       "backgroundImage": "url(\\"/static/thumbnails/dolphin.jpg\\")",
-      "backgroundSize": "cover",
+      "backgroundPosition": "center center",
+      "backgroundRepeat": "no-repeat",
       "paddingTop": "31.25%",
     }
   }

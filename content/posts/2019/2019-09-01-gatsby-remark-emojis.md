@@ -1,7 +1,7 @@
 ---
 title: gatsby-remark-emoji
 date: 2019-09-01 02:30:00 +0200
-photo: gatsby.png
+photo: gatsby.jpg
 credit: gatsbyjs
 creditLink: https://www.gatsbyjs.org/
 creditSource: gatsbyjs.org

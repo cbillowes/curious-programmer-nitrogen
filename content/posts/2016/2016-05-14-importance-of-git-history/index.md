@@ -1,8 +1,10 @@
 ---
-title: "The importance of Git history"
-cover: "https://picsum.photos/1600/800/?image=24"
+title: The importance of Git history
 date: 2016-05-14 21:04:29 +0200
-category: "tech"
+photo: git.jpg
+credit: aotoki
+creditLink: https://wall.alphacoders.com/big.php?i=985805
+creditSource: alphacoders
 tags:
   - Technical
 ---

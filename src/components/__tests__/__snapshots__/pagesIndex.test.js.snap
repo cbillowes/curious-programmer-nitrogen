@@ -276,7 +276,8 @@ exports[`Blog page should render 1`] = `
             style={
               Object {
                 "backgroundImage": "url(\\"/static/thumbnails/default-02.jpg\\")",
-                "backgroundSize": "cover",
+                "backgroundPosition": "center center",
+                "backgroundRepeat": "no-repeat",
                 "paddingTop": "31.25%",
               }
             }
@@ -396,7 +397,8 @@ exports[`Blog page should render 1`] = `
             style={
               Object {
                 "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-                "backgroundSize": "cover",
+                "backgroundPosition": "center center",
+                "backgroundRepeat": "no-repeat",
                 "paddingTop": "31.25%",
               }
             }

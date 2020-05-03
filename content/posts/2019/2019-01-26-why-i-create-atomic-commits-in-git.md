@@ -1,7 +1,10 @@
 ---
-title: "Why I Create Atomic Commits In Git"
-ogImage: /images/og/2019-01-15-git.png
+title: Why I Create Atomic Commits In Git
 date: 2019-01-26 11:00:00 +0200
+photo: git.jpg
+credit: aotoki
+creditLink: https://wall.alphacoders.com/big.php?i=985805
+creditSource: alphacoders
 tags:
   - Technical
   - Terminal

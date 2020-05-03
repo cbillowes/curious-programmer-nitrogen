@@ -1,9 +1,10 @@
 ---
-title: "Working With Git Remotes"
-ogImage: /images/og/2019-01-28-git.png
-cover: "../../images/backgrounds/git-cover.jpg"
-blur: "../../images/backgrounds/git-cover-blur.jpg"
+title: Working With Git Remotes
 date: 2019-01-29 04:30:00 +0200
+photo: git.jpg
+credit: aotoki
+creditLink: https://wall.alphacoders.com/big.php?i=985805
+creditSource: alphacoders
 tags:
   - Technical
   - Git

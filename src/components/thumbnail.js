@@ -81,7 +81,8 @@ const Thumbnail = (props) => {
       className="thumbnail"
       style={{
         backgroundImage: `url("${credit.photo}")`,
-        backgroundSize: `cover`,
+        backgroundPosition: `center center`,
+        backgroundRepeat: `no-repeat`,
         paddingTop: `${padding}%`,
       }}>
       <Badge

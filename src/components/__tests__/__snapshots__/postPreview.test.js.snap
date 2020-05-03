@@ -23,7 +23,8 @@ exports[`Post preview should credit a photo 1`] = `
     style={
       Object {
         "backgroundImage": "url(\\"/static/thumbnails/default-04.jpg\\")",
-        "backgroundSize": "cover",
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
         "paddingTop": "31.25%",
       }
     }
@@ -146,7 +147,8 @@ exports[`Post preview should limit the blurb word count 1`] = `
     style={
       Object {
         "backgroundImage": "url(\\"/static/thumbnails/default-07.jpg\\")",
-        "backgroundSize": "cover",
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
         "paddingTop": "31.25%",
       }
     }
@@ -269,7 +271,8 @@ exports[`Post preview should render when all required props are provided 1`] = `
     style={
       Object {
         "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-        "backgroundSize": "cover",
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
         "paddingTop": "31.25%",
       }
     }
