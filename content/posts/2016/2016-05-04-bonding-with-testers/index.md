@@ -1,8 +1,10 @@
 ---
-title: "Bonding with Testers"
-cover: "https://picsum.photos/1600/800/?image=7"
+title: Bonding with Testers
 date: 2016-05-04 23:56:55 +0200
-category: "tech"
+photo: two-people-planning-at-a-table.jpg
+credit: picsum
+creditLink: https://picsum.photos/1600/800/?image=7
+creditSource: picsum.photos
 tags:
   - Relationships
   - Communication
