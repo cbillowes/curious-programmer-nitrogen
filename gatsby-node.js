@@ -1,7 +1,6 @@
 const _ = require("lodash")
 const path = require(`path`)
 const fs = require("fs")
-const sharp = require("sharp")
 const images = require("./gatsby-build/images")
 
 // The order of which nodes are processed is no guaranteed.
