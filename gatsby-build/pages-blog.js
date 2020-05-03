@@ -1,15 +1,10 @@
 const path = require("path")
+const config = require("../gatsby-build")
 const createPages = true
-const demoPage = `/blog/example`
 const template = `./src/templates/post.js`
 const landingPage = `./src/pages/index.js`
 const landingPageSlug = `/blog`
 
-/**
- *
- * @param {*} graphql
- * @return {Promise}
- */
 const query = async (graphql) => {
   return await graphql(`
     query CreateBlogPostsQuery {
@@ -80,7 +75,7 @@ const createThePage = (createPage, edges, index, reporter) => {
 const createBlogPages = (createPage, result, reporter) => {
   const edges = result.data.allMarkdownRemark.edges
   edges
-    .filter(edge => edge.node.fields.slug !== demoPage)
+    .filter(edge => edge.node.fields.slug !== config.DEMO_PAGE)
     .forEach((_, index) => {
       createThePage(createPage, edges, index, reporter)
     })
@@ -90,7 +85,7 @@ const createDemoPage = (createPage, result, reporter) => {
   const edges = result.data.allMarkdownRemark.edges
   const index = edges
     .map(edge => edge.node.fields.slug)
-    .indexOf(demoPage)
+    .indexOf(config.DEMO_PAGE)
 
   if (index) {
     createThePage(createPage, edges, post, reporter)

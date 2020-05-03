@@ -3,16 +3,10 @@ const path = require("path")
 const fs = require("fs")
 const config = require("../gatsby-build")
 const createIndexes = true
-const demoPage = `/blog/example`
 
 // Where all the incremental search index files go to live
 const exportDirectory = path.join(__dirname, `/../export`)
 
-/**
- *
- * @param {*} graphql
- * @return {Promise}
- */
 const query = async (graphql) => {
   return await graphql(`
     query CreateSearchIndexesQuery {
@@ -87,7 +81,7 @@ module.exports.create = async (graphql, reporter) => {
 
       const history = getHistoryOfPreviouslyExportedSlugs()
       const edges = result.data.allMarkdownRemark.edges
-        .filter(edge => edge.node.fields.slug !== demoPage)
+        .filter(edge => edge.node.fields.slug !== config.DEMO_PAGE)
         .filter(edge => history.indexOf(edge.node.fields.slug) === -1)
 
       const posts = edges.map(edge => {

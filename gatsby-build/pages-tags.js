@@ -1,14 +1,9 @@
 const _ = require("lodash")
 const path = require("path")
+const config = require("../gatsby-build")
 const createPages = true
-const demoPage = `/blog/example`
 const template = `./src/templates/tag.js`
 
-/**
- *
- * @param {*} graphql
- * @return {Promise}
- */
 const query = async (graphql) => {
   return await graphql(`
     query CreateTagsQuery {
@@ -55,7 +50,7 @@ module.exports.create = async (actions, graphql, reporter) => {
 
       const { createPage } = actions
       const edges = result.data.allMarkdownRemark.edges
-        .filter(edge => edge.node.slug !== demoPage)
+        .filter(edge => edge.node.slug !== config.DEMO_PAGE)
 
       getTags(edges)
         .forEach(({ slug, tag }) => {
