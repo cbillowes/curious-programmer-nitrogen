@@ -88,4 +88,4 @@ If you consider joining a corporate and think you will be a number,
 remember that you have control. If you want to be a number, you will
 be. If you don't, get out of your comfort zone and start talking.
 Build your identity and relationships. You learn so much by talking to
-other people and corporates tend to have a lot of them.
+other people and corporate tend to have a lot of them.
