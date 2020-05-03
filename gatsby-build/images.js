@@ -2,6 +2,8 @@ const path = require(`path`)
 const fs = require("fs")
 const sharp = require("sharp")
 
+const processImages = true
+
 const srcRaw = `src/images/raw`
 const srcPosts = `src/images/posts`
 const excludeGifs = `src/images/gifs`
@@ -184,6 +186,11 @@ const gifs = (mediaType, absolutePath, reporter) => {
  * and copying of site-wide files that should be placed in respective directories.
  */
 module.exports.process = (mediaType, absolutePath, reporter) => {
+  if (!processImages) {
+    reporter.warn(`off: process images`)
+    return
+  }
+
   optimizeRawImages(absolutePath, reporter)
   shares(absolutePath, reporter)
   banners(absolutePath, reporter)
