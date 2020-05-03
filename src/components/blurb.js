@@ -1,22 +1,10 @@
 import React from "react"
 import PropTypes from "prop-types"
 
-const defaultLimit = 250
-
-function stripHtml(content) {
-  return content
-    .replace(/\s*(:[a-zA-Z0-9\\-]+:)+\s*/gm, ``)
-    .replace(
-      /<code([ a-z="\\-]*)>[a-zA-Z0-9 \-~±$./"!@#$%^&*(),:;_\n\r]+<\/code>+/gm,
-      `[code example]`
-    )
-    .replace(/{[\w\W]+}/gm, `[code example]`)
-    .replace(/(<\/?[a-zA-Z0-9 ="#/:?.\-_()]+>)/gm, ``)
-    .trim()
-}
+const defaultWordLimit = 50
 
 function squashToPlainText(content) {
-  if (typeof content === `string`) return stripHtml(content)
+  if (typeof content === `string`) return content
 
   if (Array.isArray(content)) {
     let plainText = ``
@@ -38,37 +26,34 @@ function squashToPlainText(content) {
   return content
 }
 
-function truncate(text, limit) {
+function truncate(text, wordLimit) {
   const words = text.trim().split(` `)
-  return (words.length > limit ? words.splice(0, limit) : words).join(` `)
+  return (words.length > wordLimit ? words.splice(0, wordLimit) : words).join(` `)
 }
 
-function ellipsis(text, limit) {
+function ellipsis(text, wordLimit) {
   const words = text.trim().split(` `)
-  return words.length > limit ? `...` : ``
+  return words.length > wordLimit ? `...` : ``
 }
 
-export function getContent(limit, body) {
+export function getContent(wordLimit, body) {
   const plainText = squashToPlainText(body)
-  const content = truncate(plainText, limit)
-  const truncated = ellipsis(plainText, limit)
+  const content = truncate(plainText, wordLimit)
+  const truncated = ellipsis(plainText, wordLimit)
   return `${content}${truncated}`
 }
 
-function Blurb({ limit, children }) {
+function Blurb({ wordLimit, children }) {
   if (!children) return <></>
-
-  const content = getContent(limit || defaultLimit, children)
+  const content = getContent(wordLimit || defaultWordLimit, children)
   return (
-    <>
-      <span className="text">{content}</span>
-    </>
+    <span dangerouslySetInnerHTML={{ __html: content }}></span>
   )
 }
 
 Blurb.propTypes = {
   children: PropTypes.node.isRequired,
-  limit: PropTypes.number,
+  wordLimit: PropTypes.number,
 }
 
 export default Blurb

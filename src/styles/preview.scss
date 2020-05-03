@@ -1,6 +1,22 @@
 @import "./variables.scss";
 @import "./number.scss";
 
+@mixin scrollbar() {
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: 0 0 1px lighten($dark, 50%);
+    background-color: lighten($dark, 20%);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: lighten($dark, 10%);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: lighten($dark, 10%);
+  }
+}
+
 .post.preview {
   position: relative;
   padding: 2.5rem 4rem;
@@ -51,6 +67,28 @@
     @include small-screen() {
       margin: 1rem 2.5rem .5rem 2.5rem;
       line-height: 2rem;
+    }
+  }
+
+  .blurb {
+    max-height: 500px;
+    overflow-y: auto;
+
+    @include scrollbar();
+
+    pre,
+    code {
+      overflow-x: auto;
+      overflow-y: auto;
+
+      &::-webkit-scrollbar {
+        -webkit-appearance: none;
+        width: 7px;
+        height: 7px;
+        background-color: $darkest;
+      }
+
+      @include scrollbar();
     }
   }
 

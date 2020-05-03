@@ -193,7 +193,15 @@ exports[`Posts should render with default word limit 1`] = `
       </h2>
       <div
         className="blurb"
-      />
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ",",
+            }
+          }
+        />
+      </div>
       <div
         className="metadata"
       >
@@ -359,7 +367,15 @@ exports[`Posts should render with default word limit 1`] = `
       </h2>
       <div
         className="blurb"
-      />
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ",",
+            }
+          }
+        />
+      </div>
       <div
         className="metadata"
       >
@@ -607,7 +623,15 @@ exports[`Posts should render with specified word limit of 5 1`] = `
       </h2>
       <div
         className="blurb"
-      />
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ",",
+            }
+          }
+        />
+      </div>
       <div
         className="metadata"
       >
@@ -773,7 +797,15 @@ exports[`Posts should render with specified word limit of 5 1`] = `
       </h2>
       <div
         className="blurb"
-      />
+      >
+        <span
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": ",",
+            }
+          }
+        />
+      </div>
       <div
         className="metadata"
       >

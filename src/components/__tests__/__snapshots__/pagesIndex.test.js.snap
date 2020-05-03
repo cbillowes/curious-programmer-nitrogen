@@ -371,10 +371,12 @@ exports[`Blog page should render 1`] = `
             className="blurb"
           >
             <span
-              className="text"
-            >
-              Just pack your towel and you will be fine.
-            </span>
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Just pack your towel and you will be fine.",
+                }
+              }
+            />
           </div>
           <div
             className="metadata"
@@ -543,10 +545,12 @@ exports[`Blog page should render 1`] = `
             className="blurb"
           >
             <span
-              className="text"
-            >
-              Keep packing your towels and you will be fine.
-            </span>
+              dangerouslySetInnerHTML={
+                Object {
+                  "__html": "Keep packing your towels and you will be fine.",
+                }
+              }
+            />
           </div>
           <div
             className="metadata"

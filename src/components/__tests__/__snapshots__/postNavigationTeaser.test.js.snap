@@ -22,10 +22,12 @@ exports[`Post navigation teaser should render all that is required 1`] = `
         className="body"
       >
         <span
-          className="text"
-        >
-          Excerpt
-        </span>
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Excerpt",
+            }
+          }
+        />
       </div>
       <div
         className="metadata"
@@ -93,10 +95,12 @@ exports[`Post navigation teaser should render all that is required 1`] = `
         className="body"
       >
         <span
-          className="text"
-        >
-          Excerpt
-        </span>
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Excerpt",
+            }
+          }
+        />
       </div>
       <div
         className="metadata"
@@ -171,10 +175,12 @@ exports[`Post navigation teaser should render everything else 1`] = `
         className="body"
       >
         <span
-          className="text"
-        >
-          Earthman Arthur Dent is rescued by his friend, Ford Prefect—an...
-        </span>
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an...",
+            }
+          }
+        />
       </div>
       <div
         className="metadata"
@@ -242,10 +248,12 @@ exports[`Post navigation teaser should render everything else 1`] = `
         className="body"
       >
         <span
-          className="text"
-        >
-          Luke Skywalker's peaceful and solitary existence gets upended when he...
-        </span>
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Luke Skywalker's peaceful and solitary existence gets upended when he...",
+            }
+          }
+        />
       </div>
       <div
         className="metadata"

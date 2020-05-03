@@ -22,7 +22,6 @@ export const query = graphql`
             number
             slug
           }
-          excerpt
           html
           timeToRead
         }

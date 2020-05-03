@@ -23,7 +23,7 @@ export default () => {
         ) {
           edges {
             node {
-              excerpt(pruneLength: 250)
+              html
               timeToRead
               html
               fields {

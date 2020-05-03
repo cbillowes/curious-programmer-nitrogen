@@ -194,10 +194,12 @@ Array [
               title="Advanced Git commands"
             >
               <span
-                className="text"
-              >
-                Advanced Git commands
-              </span>
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Advanced Git commands",
+                  }
+                }
+              />
             </a>
              
           </h1>
@@ -215,10 +217,12 @@ Array [
               title="Advanced Git commands"
             >
               <span
-                className="text"
-              >
-                Advanced Git commands
-              </span>
+                dangerouslySetInnerHTML={
+                  Object {
+                    "__html": "Advanced Git commands",
+                  }
+                }
+              />
             </a>
              
           </h1>
@@ -338,10 +342,12 @@ Array [
           className="body"
         >
           <span
-            className="text"
-          >
-            This is an excerpt.
-          </span>
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "This is an excerpt.",
+              }
+            }
+          />
         </div>
         <div
           className="metadata"
@@ -431,10 +437,12 @@ Array [
           className="body"
         >
           <span
-            className="text"
-          >
-            This is an excerpt.
-          </span>
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": "This is an excerpt.",
+              }
+            }
+          />
         </div>
         <div
           className="metadata"

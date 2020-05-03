@@ -7,16 +7,16 @@ import Tags from "./tags"
 import Blurb from "./blurb"
 import "../styles/postNavigation.scss"
 
-const defaultTruncationLimit = 250
+const defaultWordLimit = 15
 
 const Heading = ({ title }) => {
   return <H1>{title}</H1>
 }
 
-const Body = ({ limit, excerpt }) => {
+const Body = ({ wordLimit, excerpt }) => {
   return (
     <div className="body">
-      <Blurb limit={limit}>{excerpt || ``}</Blurb>
+      <Blurb wordLimit={wordLimit}>{excerpt || ``}</Blurb>
     </div>
   )
 }
@@ -26,13 +26,13 @@ const Metadata = ({ date, author, ttr }) => {
 }
 
 const Navigation = ({ post }) => {
-  const { slug, title, excerpt, limitExcerpt, date, author, ttr, tags } = post
-  const limit = limitExcerpt || defaultTruncationLimit
+  const { slug, title, excerpt, wordLimit, date, author, ttr, tags } = post
+  const limit = wordLimit || defaultWordLimit
   return (
     <>
       <Anchor to={slug} title={title} className="nav-link">
         <Heading slug={slug} title={title} />
-        <Body slug={slug} title={title} limit={limit} excerpt={excerpt} />
+        <Body slug={slug} title={title} wordLimit={limit} excerpt={excerpt} />
         <Metadata
           slug={slug}
           title={title}
@@ -67,7 +67,7 @@ const shape = PropTypes.shape({
   slug: PropTypes.string.isRequired,
   title: PropTypes.string.isRequired,
   excerpt: PropTypes.string.isRequired,
-  limitExcerpt: PropTypes.number,
+  wordLimit: PropTypes.number,
   date: PropTypes.string.isRequired,
   author: PropTypes.string.isRequired,
   ttr: PropTypes.number.isRequired,

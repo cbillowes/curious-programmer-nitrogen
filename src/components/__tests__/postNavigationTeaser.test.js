@@ -40,7 +40,7 @@ describe(`Post navigation teaser`, () => {
           date: `2018-04-01T00:00:00Z`,
           author: `Pixie`,
           ttr: 42,
-          limitExcerpt: 10,
+          wordLimit: 10,
           tags: [`Douglas`, `Adams`],
         }}
         next={{
@@ -50,7 +50,7 @@ describe(`Post navigation teaser`, () => {
           date: `2019-04-01T00:00:00Z`,
           author: `Elby`,
           ttr: 42,
-          limitExcerpt: 10,
+          wordLimit: 10,
           tags: [`star`, `wars`],
         }}
       />

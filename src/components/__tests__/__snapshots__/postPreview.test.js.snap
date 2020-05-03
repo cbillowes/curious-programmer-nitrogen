@@ -118,10 +118,12 @@ exports[`Post preview should credit a photo 1`] = `
     className="blurb"
   >
     <span
-      className="text"
-    >
-      Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.
-    </span>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.",
+        }
+      }
+    />
   </div>
   <div
     className="metadata"
@@ -293,10 +295,12 @@ exports[`Post preview should limit the blurb word count 1`] = `
     className="blurb"
   >
     <span
-      className="text"
-    >
-      Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.
-    </span>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.",
+        }
+      }
+    />
   </div>
   <div
     className="metadata"
@@ -468,10 +472,12 @@ exports[`Post preview should render when all required props are provided 1`] = `
     className="blurb"
   >
     <span
-      className="text"
-    >
-      Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.
-    </span>
+      dangerouslySetInnerHTML={
+        Object {
+          "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.",
+        }
+      }
+    />
   </div>
   <div
     className="metadata"

@@ -8,7 +8,7 @@ import "../../styles/page.scss"
 const ArchivesPage = ({ edges }) => (
   <Layout className="archives-page" footer={true}>
     <H1 className="heading">Archives of all the things</H1>
-    <Posts edges={edges} truncate={20} />
+    <Posts edges={edges} wordLimit={25} />
   </Layout>
 )
 

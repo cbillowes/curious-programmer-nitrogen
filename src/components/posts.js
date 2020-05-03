@@ -5,18 +5,18 @@ import Lang from "../../gatsby-lang"
 import "../styles/posts-actions.scss"
 import "../styles/posts-layout.scss"
 
-const Listing = ({ edges, limit }) => {
+const Listing = ({ edges, wordLimit }) => {
   if (!edges || edges.length === 0) return <div>{Lang.posts.none}</div>
 
   return edges.map(edge => {
-    const { timeToRead, excerpt } = edge.node
+    const { timeToRead, html } = edge.node
     const { slug, date, number } = edge.node.fields
     const { title, photo, credit, creditSource, creditLink, tags } = edge.node.frontmatter
     const author = "Clarice Bouwer"
     return (
       <PostPreview
         key={slug}
-        limit={limit}
+        wordLimit={wordLimit}
         title={title}
         slug={slug}
         tags={tags}
@@ -29,7 +29,7 @@ const Listing = ({ edges, limit }) => {
         creditSource={creditSource}
         creditLink={creditLink}
       >
-        {excerpt}
+        {html}
       </PostPreview>
     )
   })
@@ -95,7 +95,7 @@ class Posts extends Component {
   }
 
   render() {
-    const { limit } = this.props
+    const { wordLimit } = this.props
     return (
       <div className="posts-container">
         <div className="actions">
@@ -128,7 +128,7 @@ class Posts extends Component {
           </span>
         </div>
         <div className={`posts ${this.state.layout}`}>
-          <Listing edges={this.state.edges} truncate={limit} />
+          <Listing edges={this.state.edges} wordLimit={wordLimit} />
         </div>
       </div>
     )
@@ -136,12 +136,12 @@ class Posts extends Component {
 }
 
 Posts.defaultProps = {
-  limit: 50,
+  wordLimit: 50,
 }
 
 Posts.propTypes = {
   edges: PropTypes.array.isRequired,
-  limit: PropTypes.number,
+  wordLimit: PropTypes.number,
 }
 
 export default Posts

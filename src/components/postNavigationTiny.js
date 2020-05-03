@@ -5,7 +5,7 @@ import Anchor from "./anchor"
 import Text from "./blurb"
 import "../styles/postNavigation.scss"
 
-const limit = 5
+const defaultWordLimit = 5
 
 const Navigation = ({ post }) => {
   if (!post) return <></>
@@ -14,7 +14,7 @@ const Navigation = ({ post }) => {
   return (
     <H1>
       <Anchor to={slug} title={title} className="nav-link">
-        <Text limit={limit}>{title}</Text>
+        <Text wordLimit={defaultWordLimit}>{title}</Text>
       </Anchor>
     </H1>
   )

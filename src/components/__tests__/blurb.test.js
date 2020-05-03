@@ -36,7 +36,7 @@ describe(`Blurb`, () => {
   describe(`should limit words`, () => {
     it(`extracted from plain text`, () => {
       const component = (
-        <Blurb limit={6}>
+        <Blurb wordLimit={6}>
           The ships hung in the sky in much the same way that bricks don't.
         </Blurb>
       )
@@ -46,7 +46,7 @@ describe(`Blurb`, () => {
 
     it(`extracted from html elements`, () => {
       const component = (
-        <Blurb limit={6}>
+        <Blurb wordLimit={6}>
           <h1>Don't panic!</h1>
           <p>Time is an illusion.</p>
           <p>

@@ -38,7 +38,7 @@ export function getListOfPostEdges() {
   return [
     {
       node: {
-        excerpt: `Just pack your towel and you will be fine.`,
+        html: `Just pack your towel and you will be fine.`,
         timeToRead: 42,
         fields: {
           slug: `/dont-panic`,
@@ -54,7 +54,7 @@ export function getListOfPostEdges() {
     },
     {
       node: {
-        excerpt: `Keep packing your towels and you will be fine.`,
+        html: `Keep packing your towels and you will be fine.`,
         timeToRead: 42,
         fields: {
           slug: `/still-dont-panic`,

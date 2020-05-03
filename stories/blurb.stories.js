@@ -24,7 +24,7 @@ storiesOf("Components/blurb", module)
     </Blurb>
   ))
   .add("truncated", () => (
-    <Blurb limit={50}>
+    <Blurb wordLimit={50}>
       <p>A few words from the hitchhiker's guide to the galaxy.</p>
       <p>
         I love deadlines. I like the <strong>whooshing</strong> sound they make

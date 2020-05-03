@@ -9,10 +9,10 @@ import Blurb from "./blurb"
 import Thumbnail from "./thumbnail"
 import "../styles/preview.scss"
 
-const Body = ({ children, limit }) => {
+const Body = ({ children, wordLimit }) => {
   return (
     <div className="blurb">
-      <Blurb limit={limit}>{children}</Blurb>
+      <Blurb wordLimit={wordLimit}>{children}</Blurb>
     </div>
   )
 }
@@ -47,7 +47,7 @@ function PostPreview({
   author,
   ttr,
   number,
-  limit,
+  wordLimit,
   photo,
   credit,
   creditSource,
@@ -61,7 +61,7 @@ function PostPreview({
         <Thumbnail to={slug} display="landscape" number={number} photo={photo} credit={credit} creditSource={creditSource} creditLink={creditLink} />
         <Thumbnail to={slug} display="square" number={number} photo={photo} credit={credit} creditSource={creditSource} creditLink={creditLink} />
         <Heading slug={slug}>{title}</Heading>
-        <Body limit={limit}>{children}</Body>
+        <Body wordLimit={wordLimit}>{children}</Body>
         <Metadata date={date} author={author} ttr={ttr} />
         <Tags tags={tags} />
       </section>
@@ -78,7 +78,7 @@ PostPreview.propTypes = {
   children: PropTypes.node.isRequired,
   number: PropTypes.number.isRequired,
   tags: PropTypes.array,
-  limit: PropTypes.number,
+  wordLimit: PropTypes.number,
   photo: PropTypes.string,
   credit: PropTypes.string,
   creditLink: PropTypes.string,

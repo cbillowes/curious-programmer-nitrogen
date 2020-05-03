@@ -17,10 +17,12 @@ exports[`Post navigation tiny should always render both posts 1`] = `
         title="Don't panic."
       >
         <span
-          className="text"
-        >
-          Don't panic.
-        </span>
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Don't panic.",
+            }
+          }
+        />
       </a>
        
     </h1>
@@ -38,10 +40,12 @@ exports[`Post navigation tiny should always render both posts 1`] = `
         title="Come to the dark side of the force."
       >
         <span
-          className="text"
-        >
-          Come to the dark side...
-        </span>
+          dangerouslySetInnerHTML={
+            Object {
+              "__html": "Come to the dark side...",
+            }
+          }
+        />
       </a>
        
     </h1>

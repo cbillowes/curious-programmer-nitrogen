@@ -64,7 +64,7 @@ storiesOf("Components/post/navigation/teaser", module)
         date: `21 January 2018`,
         ttr: 42,
         tags: [`star wars`, `vader`, `yoda`],
-        limitExcerpt: 20,
+        wordLimit: 20,
       }}
       next={{
         title: hitchhikersGuideToTheGalaxy.title,
@@ -74,7 +74,7 @@ storiesOf("Components/post/navigation/teaser", module)
         date: `18 November 2017`,
         ttr: 42,
         tags: [`hitchhikers`, `beer`, `towel`],
-        limitExcerpt: 20,
+        wordLimit: 20,
       }}
     />
   ))

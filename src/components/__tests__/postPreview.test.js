@@ -37,7 +37,7 @@ describe(`Post preview`, () => {
         number={6}
         ttr={1}
         tags={[`don't`, `panic`]}
-        limit={42}
+        wordLimit={42}
       >
         <p>
           Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien
@@ -62,7 +62,7 @@ describe(`Post preview`, () => {
         number={3}
         ttr={1}
         tags={[`don't`, `panic`]}
-        limit={42}
+        wordLimit={42}
       >
         <p>
           Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien
