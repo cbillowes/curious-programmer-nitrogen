@@ -1,7 +1,7 @@
 ---
 title: The importance of Git history
 date: 2016-05-14 21:04:29 +0200
-photo: git.jpg
+photo: git.png
 credit: aotoki
 creditLink: https://wall.alphacoders.com/big.php?i=985805
 creditSource: alphacoders

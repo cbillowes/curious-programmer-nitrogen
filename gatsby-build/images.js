@@ -88,6 +88,7 @@ const shares = (absolutePath, reporter) => {
 
 /**
  * Banners are images that are displayed on each post to give it some flair.
+ * CHANGE THIS? Change thumbnail component responsive height.
  * @param {string} absolutePath
  * @param {function} reporter
  */
@@ -98,9 +99,9 @@ const banners = (absolutePath, reporter) => {
     const destPath = path.join(destBanners, filename)
     const sharpInstance = getSharpInstance(absolutePath, 100)
     sharpInstance
-      .resize(1200, 300, {
+      .resize(1200, 400, {
         fit: sharp.fit.cover,
-        position: sharp.strategy.entropy,
+        position: sharp.strategy.attention,
       })
       .toFile(destPath, (err) => {
         const message = `banner: ${absolutePath} -> ${destPath}`
@@ -112,7 +113,12 @@ const banners = (absolutePath, reporter) => {
       })
   }
 }
-
+/**
+ * Thumbnails are the square mini-me's of banners.
+ * CHANGE THIS? Change thumbnail component responsive height.
+ * @param {string} absolutePath
+ * @param {function} reporter
+ */
 const thumbnails = (absolutePath, reporter) => {
   if (absolutePath.indexOf(srcPosts) >= 0) {
     mkdir(destThumbnails)
@@ -120,7 +126,7 @@ const thumbnails = (absolutePath, reporter) => {
     const destPath = path.join(destThumbnails, filename)
     const sharpInstance = getSharpInstance(absolutePath, 100)
     sharpInstance
-      .resize(600, 250, {
+      .resize(600, 600, {
         fit: sharp.fit.cover,
         position: sharp.strategy.attention,
       })

@@ -20,8 +20,10 @@ const getDefaultThumbnails = () => {
   ]
 }
 
-const getResponsiveHeight = () => {
-  return height / width * 100
+const getResponsiveHeight = (display) => {
+  if (display === `landscape`)
+    return 400 / 1200 * 100
+  return 600 / 600 * 100
 }
 
 const getDefaultThumbnail = (number) => {
@@ -30,11 +32,12 @@ const getDefaultThumbnail = (number) => {
   return images[index]
 }
 
-const getCredit = ({ number, photo, credit, creditSource, creditLink }) => {
+const getCredit = ({ number, photo, credit, creditSource, creditLink, display }) => {
+  const directory = display === `landscape` ? `banners` : `thumbnails`
   const defaultThumbnail = getDefaultThumbnail(number)
   const filename = photo || defaultThumbnail.photo
   return {
-    photo: `/static/thumbnails/${filename}`,
+    photo: `/static/${directory}/${filename}`,
     attribute: photo ? credit : defaultThumbnail.credit,
     source: photo ? creditSource : defaultThumbnail.source,
     link: photo ? creditLink : defaultThumbnail.link,
@@ -75,14 +78,15 @@ const Badge = ({ source, attribute, link }) => {
 
 const Thumbnail = (props) => {
   const credit = getCredit(props)
-  const padding = getResponsiveHeight()
+  const padding = getResponsiveHeight(props.display)
   return (
     <div
-      className="thumbnail"
+      className={`thumbnail ${props.display}`}
       style={{
         backgroundImage: `url("${credit.photo}")`,
         backgroundPosition: `center center`,
         backgroundRepeat: `no-repeat`,
+        backgroundSize: `cover`,
         paddingTop: `${padding}%`,
       }}>
       <Badge
@@ -97,6 +101,7 @@ const Thumbnail = (props) => {
 
 Thumbnail.propTypes = {
   number: PropTypes.number.isRequired,
+  display: PropTypes.oneOf([`landscape`, `square`]),
   photo: PropTypes.string,
   credit: PropTypes.string,
   creditLink: PropTypes.string,

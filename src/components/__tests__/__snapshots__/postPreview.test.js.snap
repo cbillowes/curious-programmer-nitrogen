@@ -19,13 +19,48 @@ exports[`Post preview should credit a photo 1`] = `
     </div>
   </div>
   <div
-    className="thumbnail"
+    className="thumbnail landscape"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/static/banners/default-04.jpg\\")",
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "paddingTop": "33.33333333333333%",
+      }
+    }
+  >
+    <a
+      className="badge clickable"
+      href="https://unsplash.com/@jessbailey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Download free do whatever you want high-resolution photos from Jess Bailey"
+    >
+      <span
+        className="source-logo"
+      >
+        <img
+          alt="unsplash"
+          src="/static/svgs/unsplash.svg"
+        />
+      </span>
+      <span
+        className="attribute"
+      >
+        Jess Bailey
+      </span>
+    </a>
+  </div>
+  <div
+    className="thumbnail square"
     style={
       Object {
         "backgroundImage": "url(\\"/static/thumbnails/default-04.jpg\\")",
         "backgroundPosition": "center center",
         "backgroundRepeat": "no-repeat",
-        "paddingTop": "31.25%",
+        "backgroundSize": "cover",
+        "paddingTop": "100%",
       }
     }
   >
@@ -143,13 +178,48 @@ exports[`Post preview should limit the blurb word count 1`] = `
     </div>
   </div>
   <div
-    className="thumbnail"
+    className="thumbnail landscape"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/static/banners/default-07.jpg\\")",
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "paddingTop": "33.33333333333333%",
+      }
+    }
+  >
+    <a
+      className="badge clickable"
+      href="https://unsplash.com/@joelfilip?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Download free do whatever you want high-resolution photos from Joel Filipe"
+    >
+      <span
+        className="source-logo"
+      >
+        <img
+          alt="unsplash"
+          src="/static/svgs/unsplash.svg"
+        />
+      </span>
+      <span
+        className="attribute"
+      >
+        Joel Filipe
+      </span>
+    </a>
+  </div>
+  <div
+    className="thumbnail square"
     style={
       Object {
         "backgroundImage": "url(\\"/static/thumbnails/default-07.jpg\\")",
         "backgroundPosition": "center center",
         "backgroundRepeat": "no-repeat",
-        "paddingTop": "31.25%",
+        "backgroundSize": "cover",
+        "paddingTop": "100%",
       }
     }
   >
@@ -267,13 +337,48 @@ exports[`Post preview should render when all required props are provided 1`] = `
     </div>
   </div>
   <div
-    className="thumbnail"
+    className="thumbnail landscape"
+    style={
+      Object {
+        "backgroundImage": "url(\\"/static/banners/default-03.jpg\\")",
+        "backgroundPosition": "center center",
+        "backgroundRepeat": "no-repeat",
+        "backgroundSize": "cover",
+        "paddingTop": "33.33333333333333%",
+      }
+    }
+  >
+    <a
+      className="badge clickable"
+      href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      rel="noopener noreferrer"
+      target="_blank"
+      title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+    >
+      <span
+        className="source-logo"
+      >
+        <img
+          alt="unsplash"
+          src="/static/svgs/unsplash.svg"
+        />
+      </span>
+      <span
+        className="attribute"
+      >
+        Paul Hanaoka
+      </span>
+    </a>
+  </div>
+  <div
+    className="thumbnail square"
     style={
       Object {
         "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
         "backgroundPosition": "center center",
         "backgroundRepeat": "no-repeat",
-        "paddingTop": "31.25%",
+        "backgroundSize": "cover",
+        "paddingTop": "100%",
       }
     }
   >

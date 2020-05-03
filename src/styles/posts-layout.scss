@@ -13,6 +13,14 @@
       padding-bottom: 2.5rem;
       width: 46%;
 
+      .square.thumbnail {
+        display: none;
+      }
+
+      .landscape.thumbnail {
+        display: block;
+      }
+
       h1,
       .blurb,
       .metadata {
@@ -47,7 +55,11 @@
     .post.preview {
       width: auto;
 
-      .thumbnail {
+      .landscape.thumbnail {
+        display: none;
+      }
+
+      .square.thumbnail {
         width: 10rem;
         height: 10rem;
         border-radius: 50%;
