@@ -16,7 +16,7 @@ What that means is that it both extends the Gatsby GraphQL schema with what I ca
 and it translates the Markdown, which I have in the form of a `gif` protocol, into HTML. That means that
 this
 
-```
+```markdown
 `gif:nyancat.gif:caption=Nyanyanyanyanyanyanya`
 ```
 becomes :point_down:
@@ -49,16 +49,18 @@ gatsby new my-default-starter https://github.com/gatsbyjs/gatsby-starter-default
    Be sure to configure your package.json file with the relevant details if you intend on publishing to npm.
    Include relevant [keywords][12] so that your plugin is automatically detected by Gatsby's indexing.
 
-5. Create a `src` directory in the root of your project where you will place all the files you want to create for your plugin.
-   Read through the plugin [documentation][10] to get an idea of what you can create. Also, there are some
-   [files][13] that Gatsby looks for in a plugin.
+5. Install the packages you need for your plugin using npm or yarn and configure them accordingly.
+   [Commit your lock file][11]!
 
 6. Find a place to put your tests. I put mine in a `specs` directory in the root of the plugin.
 
-7. Install the packages you need for your plugin using npm or yarn and configure them accordingly.
-   [Commit your lock file][11]!
+7. Create a `src` directory in the root of your project where you will place all the files you want to create for your plugin.
+   Read through the plugin [documentation][10] to get an idea of what you can create. Also, there are some
+   [files][13] that Gatsby looks for in a plugin.
 
-8. Configure your plugin in `gatsby-config.json`
+8. Configure your plugin in your `gatsby-config.json` file in the root of your project.
+
+9. Write the code you want to put in your plugin. You are now able to test it locally.
 
 ## Publish your package
 
