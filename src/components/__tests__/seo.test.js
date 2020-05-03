@@ -28,12 +28,6 @@ const assertDescriptions = (component, description) => {
 
 describe(`SEO`, () => {
   describe(`title`, () => {
-    it(`for page`, () => {
-      const component = <SEO title="Don't panic." />
-      const title = "Don't panic."
-      assertTitles(component, title)
-    })
-
     it(`for site`, () => {
       const component = (
         <SEO
@@ -126,22 +120,36 @@ describe(`SEO`, () => {
     ).toBe(twitter)
   })
 
-  it(`should set the image`, () => {
-    const image = `/static/test.jpg`
+  it(`should set the image from siteMetadata`, () => {
+    const siteUrl = "https://curiousprogrammer.dev"
+    const image = `/static/default.jpg`
     const component = (
       <SEO
         siteMetadata={{
+          siteUrl,
           image,
         }}
       />
     )
     const wrapper = getWrapper(component)
     expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(
-      image
+      `${siteUrl}${image}`
     )
     expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(
-      image
+      `${siteUrl}${image}`
     )
+  })
+
+  it(`should set the image from post`, () => {
+    const image = `/static/post.jpg`
+    const component = (
+      <SEO
+        image={image}
+      />
+    )
+    const wrapper = getWrapper(component)
+    expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(``)
+    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(``)
   })
 
   it(`should render static metadata`, () => {

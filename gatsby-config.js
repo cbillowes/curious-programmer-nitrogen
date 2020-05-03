@@ -5,7 +5,7 @@ module.exports = {
     description: `A curious place for a curious mind.`,
     author: `Clarice Bouwer`,
     twitter: `@cbillowes`,
-    image: `/static/shares/default.jpg`,
+    image: `/static/shares/default.png`,
     lang: "en-US",
   },
   plugins: [
