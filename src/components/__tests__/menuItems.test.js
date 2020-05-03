@@ -3,7 +3,7 @@ import MenuItems from "../menuItems"
 import { getSnapshot } from "./_helpers"
 
 const domain = `https://curiousprogrammer.dev`
-const toggleOnClick = function(e) {}
+const toggleOnClick = function (e) { }
 
 describe(`Menu items`, () => {
   it(`should not set any page as active when the page does not exist`, () => {
@@ -44,7 +44,7 @@ describe(`Menu items`, () => {
 
   it(`should set another page to active in the navigation items`, () => {
     jsdom.reconfigure({
-      url: `${domain}/privacy-policy/`,
+      url: `${domain}/about/`,
     })
     const component = <MenuItems toggleOnClick={toggleOnClick} />
     const tree = getSnapshot(component)

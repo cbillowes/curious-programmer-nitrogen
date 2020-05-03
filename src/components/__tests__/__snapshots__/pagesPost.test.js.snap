@@ -134,21 +134,21 @@ Array [
              
             <a
               className="menu-item"
-              href="/privacy-policy"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            >
-              Privacy Policy
-            </a>
-             
-             
-            <a
-              className="menu-item"
               href="/license"
               onClick={[Function]}
               onMouseEnter={[Function]}
             >
               License
+            </a>
+             
+             
+            <a
+              className="menu-item"
+              href="https://www.iubenda.com/privacy-policy/7895922"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
+            >
+              Privacy Policy
             </a>
              
              
@@ -605,9 +605,9 @@ Array [
            
           <a
             className="underline-only"
-            href="/privacy-policy"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
+            href="https://www.iubenda.com/privacy-policy/7895922"
+            rel="nofollow noopener noreferrer"
+            target="_blank"
           >
             privacy policy
           </a>

@@ -57,21 +57,21 @@ exports[`Menu items should not set any page as active when the page does not exi
    
   <a
     className="menu-item"
-    href="/privacy-policy"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    Privacy Policy
-  </a>
-   
-   
-  <a
-    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
     License
+  </a>
+   
+   
+  <a
+    className="menu-item"
+    href="https://www.iubenda.com/privacy-policy/7895922"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Privacy Policy
   </a>
    
    
@@ -111,16 +111,16 @@ exports[`Menu items should set another page to active in the navigation items 1`
     Blog
   </a>
    
-   
   <a
-    className="menu-item"
-    href="/about"
+    className="menu-item active"
+    href="/#"
     onClick={[Function]}
-    onMouseEnter={[Function]}
+    onKeyUp={[Function]}
+    role="button"
+    tabIndex="0"
   >
     About
   </a>
-   
    
   <a
     className="menu-item"
@@ -151,16 +151,6 @@ exports[`Menu items should set another page to active in the navigation items 1`
     Credits & Resources
   </a>
    
-  <a
-    className="menu-item active"
-    href="/#"
-    onClick={[Function]}
-    onKeyUp={[Function]}
-    role="button"
-    tabIndex="0"
-  >
-    Privacy Policy
-  </a>
    
   <a
     className="menu-item"
@@ -169,6 +159,16 @@ exports[`Menu items should set another page to active in the navigation items 1`
     onMouseEnter={[Function]}
   >
     License
+  </a>
+   
+   
+  <a
+    className="menu-item"
+    href="https://www.iubenda.com/privacy-policy/7895922"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Privacy Policy
   </a>
    
    
@@ -251,21 +251,21 @@ exports[`Menu items should set the blog page to active for /blog 1`] = `
    
   <a
     className="menu-item"
-    href="/privacy-policy"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    Privacy Policy
-  </a>
-   
-   
-  <a
-    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
     License
+  </a>
+   
+   
+  <a
+    className="menu-item"
+    href="https://www.iubenda.com/privacy-policy/7895922"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Privacy Policy
   </a>
    
    
@@ -348,21 +348,21 @@ exports[`Menu items should set the blog page to active for /blog/ 1`] = `
    
   <a
     className="menu-item"
-    href="/privacy-policy"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    Privacy Policy
-  </a>
-   
-   
-  <a
-    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
     License
+  </a>
+   
+   
+  <a
+    className="menu-item"
+    href="https://www.iubenda.com/privacy-policy/7895922"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Privacy Policy
   </a>
    
    
@@ -445,21 +445,21 @@ exports[`Menu items should set the blog page to active for a given post 1`] = `
    
   <a
     className="menu-item"
-    href="/privacy-policy"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-  >
-    Privacy Policy
-  </a>
-   
-   
-  <a
-    className="menu-item"
     href="/license"
     onClick={[Function]}
     onMouseEnter={[Function]}
   >
     License
+  </a>
+   
+   
+  <a
+    className="menu-item"
+    href="https://www.iubenda.com/privacy-policy/7895922"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
+  >
+    Privacy Policy
   </a>
    
    

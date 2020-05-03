@@ -47,12 +47,13 @@ module.exports = {
       to: "/credits",
     },
     {
-      name: "Privacy Policy",
-      to: "/privacy-policy",
-    },
-    {
       name: "License",
       to: "/license",
+    },
+    {
+      name: "Privacy Policy",
+      to: "https://www.iubenda.com/privacy-policy/7895922",
+      external: true,
     },
     {
       name: "GitHub",

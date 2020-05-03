@@ -47,7 +47,7 @@ const CodeLicense = () => {
 
 const PrivacyPolicy = () => {
   return (
-    <Anchor to="/privacy-policy" className="underline-only">
+    <Anchor to="https://www.iubenda.com/privacy-policy/7895922" className="underline-only">
       privacy policy
     </Anchor>
   )
