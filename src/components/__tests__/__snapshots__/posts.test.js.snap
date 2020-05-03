@@ -107,6 +107,14 @@ exports[`Posts should render with default word limit 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/dont-panic"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -141,6 +149,14 @@ exports[`Posts should render with default word limit 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/dont-panic"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -257,6 +273,14 @@ exports[`Posts should render with default word limit 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/bring-your-own-towel"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -291,6 +315,14 @@ exports[`Posts should render with default word limit 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/bring-your-own-towel"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -489,6 +521,14 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/dont-panic"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -523,6 +563,14 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/dont-panic"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -639,6 +687,14 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/bring-your-own-towel"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -673,6 +729,14 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           }
         }
       >
+         
+        <a
+          className="link"
+          href="/bring-your-own-towel"
+          onClick={[Function]}
+          onMouseEnter={[Function]}
+        />
+         
         <a
           className="badge clickable"
           href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"

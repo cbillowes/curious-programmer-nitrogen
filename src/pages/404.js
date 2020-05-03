@@ -25,6 +25,7 @@ export default () => {
               timeToRead
               fields {
                 slug
+                date
                 number
               }
               frontmatter {

@@ -1,9 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+import Anchor from "./anchor"
 import "../styles/thumbnail.scss"
-
-const width = 800
-const height = 250
 
 const getDefaultThumbnails = () => {
   return [
@@ -76,6 +74,10 @@ const Badge = ({ source, attribute, link }) => {
   )
 }
 
+const Link = ({ to }) => {
+  return to ? <Anchor to={to} className="link" /> : <></>
+}
+
 const Thumbnail = (props) => {
   const credit = getCredit(props)
   const padding = getResponsiveHeight(props.display)
@@ -89,11 +91,11 @@ const Thumbnail = (props) => {
         backgroundSize: `cover`,
         paddingTop: `${padding}%`,
       }}>
+      <Link to={props.to} s />
       <Badge
         source={credit.source}
         attribute={credit.attribute}
         link={credit.link}
-
       />
     </div>
   )
@@ -102,6 +104,7 @@ const Thumbnail = (props) => {
 Thumbnail.propTypes = {
   number: PropTypes.number.isRequired,
   display: PropTypes.oneOf([`landscape`, `square`]),
+  to: PropTypes.string,
   photo: PropTypes.string,
   credit: PropTypes.string,
   creditLink: PropTypes.string,

@@ -1,6 +1,24 @@
 @import "./variables.scss";
 
 .thumbnail {
+  position: relative;
+
+  &.square {
+    border: solid 1px red;
+  }
+
+  a.link {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+
+    &:hover {
+      background-color: transparent;
+    }
+  }
+
   .badge {
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
     font-size: 12px;
@@ -12,6 +30,7 @@
     padding: 4px 6px;
     display: inline-block;
     border-radius: 0 3px 3px 0;
+    z-index: 1;
 
     &.stagnant {
       cursor: default;

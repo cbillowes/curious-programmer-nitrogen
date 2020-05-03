@@ -30,6 +30,14 @@ exports[`Post preview should credit a photo 1`] = `
       }
     }
   >
+     
+    <a
+      className="link"
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    />
+     
     <a
       className="badge clickable"
       href="https://unsplash.com/@jessbailey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -64,6 +72,14 @@ exports[`Post preview should credit a photo 1`] = `
       }
     }
   >
+     
+    <a
+      className="link"
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    />
+     
     <a
       className="badge clickable"
       href="https://unsplash.com/@jessbailey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -189,6 +205,14 @@ exports[`Post preview should limit the blurb word count 1`] = `
       }
     }
   >
+     
+    <a
+      className="link"
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    />
+     
     <a
       className="badge clickable"
       href="https://unsplash.com/@joelfilip?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -223,6 +247,14 @@ exports[`Post preview should limit the blurb word count 1`] = `
       }
     }
   >
+     
+    <a
+      className="link"
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    />
+     
     <a
       className="badge clickable"
       href="https://unsplash.com/@joelfilip?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -348,6 +380,14 @@ exports[`Post preview should render when all required props are provided 1`] = `
       }
     }
   >
+     
+    <a
+      className="link"
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    />
+     
     <a
       className="badge clickable"
       href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -382,6 +422,14 @@ exports[`Post preview should render when all required props are provided 1`] = `
       }
     }
   >
+     
+    <a
+      className="link"
+      href="/dont-panic"
+      onClick={[Function]}
+      onMouseEnter={[Function]}
+    />
+     
     <a
       className="badge clickable"
       href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"

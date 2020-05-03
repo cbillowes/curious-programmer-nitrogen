@@ -283,6 +283,14 @@ exports[`Tag page should render with posts 1`] = `
               }
             }
           >
+             
+            <a
+              className="link"
+              href="/dont-panic"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            />
+             
             <a
               className="badge clickable"
               href="https://unsplash.com/@ninjason?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -317,6 +325,14 @@ exports[`Tag page should render with posts 1`] = `
               }
             }
           >
+             
+            <a
+              className="link"
+              href="/dont-panic"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            />
+             
             <a
               className="badge clickable"
               href="https://unsplash.com/@ninjason?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -439,6 +455,14 @@ exports[`Tag page should render with posts 1`] = `
               }
             }
           >
+             
+            <a
+              className="link"
+              href="/still-dont-panic"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            />
+             
             <a
               className="badge clickable"
               href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
@@ -473,6 +497,14 @@ exports[`Tag page should render with posts 1`] = `
               }
             }
           >
+             
+            <a
+              className="link"
+              href="/still-dont-panic"
+              onClick={[Function]}
+              onMouseEnter={[Function]}
+            />
+             
             <a
               className="badge clickable"
               href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
