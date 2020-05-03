@@ -1,6 +1,10 @@
 ---
-title: "gatsby-remark-emoji"
+title: gatsby-remark-emoji
 date: 2019-09-01 02:30:00 +0200
+photo: gatsby.png
+credit: gatsbyjs
+creditLink: https://www.gatsbyjs.org/
+creditSource: gatsbyjs.org
 tags:
   - Technical
   - Gatsby
