@@ -23,17 +23,17 @@ const getPageDescription = (description, siteMetadata) => {
   const pageDescription = description
     ? description
     : siteMetadata && siteMetadata.description
-    ? siteMetadata.description
-    : ``
+      ? siteMetadata.description
+      : ``
   return getContent(30, pageDescription)
 }
 
-const SEO = ({ title, crawl, siteMetadata, children }) => {
+const SEO = ({ title, crawl, siteMetadata, image, children }) => {
   const pageTitle = getPageTitle(title, siteMetadata)
   const pageDescription = getPageDescription(children, siteMetadata)
   const pageAuthor =
     siteMetadata && siteMetadata.twitter ? siteMetadata.twitter : ``
-  const pageImage = siteMetadata && siteMetadata.image
+  const pageImage = image || siteMetadata && siteMetadata.image
   return (
     <Helmet>
       <title>{pageTitle}</title>
@@ -44,8 +44,8 @@ const SEO = ({ title, crawl, siteMetadata, children }) => {
       {crawl ? (
         <meta name="robots" content="index" />
       ) : (
-        <meta name="robots" content="noindex" />
-      )}
+          <meta name="robots" content="noindex" />
+        )}
 
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
