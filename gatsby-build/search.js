@@ -73,7 +73,7 @@ module.exports.create = async (graphql, reporter) => {
     return
   }
 
-  query(graphql)
+  await query(graphql)
     .then(result => {
       if (result.errors) {
         reporter.error(`create search indexes: ${result.errors}`)

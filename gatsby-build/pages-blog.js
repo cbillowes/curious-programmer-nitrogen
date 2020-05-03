@@ -109,7 +109,7 @@ module.exports.create = async (actions, graphql, reporter) => {
     reporter.warn(`off: create blog pages`)
     return
   }
-  query(graphql)
+  await query(graphql)
     .then(result => {
       if (result.errors) {
         reporter.error(`create blog pages: ${result.errors}`)
