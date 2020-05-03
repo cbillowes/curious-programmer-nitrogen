@@ -2,6 +2,7 @@ const _ = require("lodash")
 const path = require(`path`)
 const fs = require("fs")
 const images = require("./gatsby-build/images")
+const blog = require("./gatsby-build/pages-blog")
 
 // The order of which nodes are processed is no guaranteed.
 // To add numbers to each post, nodes need to be captured
@@ -44,10 +45,9 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
 // Create the necessary dynamic pages required to make the blog delicious.
 // https://www.gatsbyjs.org/docs/node-apis/#createPages
 exports.createPages = async ({ graphql, actions, reporter }) => {
-  await createBlogPosts(graphql, actions, reporter)
+  await blog.create(actions, graphql, reporter)
   await createTags(graphql, actions, reporter)
   await createSearchIndexes(graphql, reporter)
-  createBlog(actions, reporter)
 }
 
 // This is the part where numbers and any other graphql fields can be added.
@@ -89,93 +89,6 @@ const createNodes = (node, createNodeField) => {
   nodes.push(node)
 }
 
-const createBlogPosts = async (graphql, actions, reporter) => {
-  const { createPage } = actions
-  await graphql(`
-    query CreateBlogPostsQuery {
-      allMarkdownRemark(sort: { order: ASC, fields: fields___date }) {
-        edges {
-          node {
-            html
-            excerpt
-            timeToRead
-            fields {
-              slug
-              date
-              number
-            }
-            frontmatter {
-              title
-              photo
-              credit
-              creditLink
-              creditSource
-              tags
-            }
-          }
-        }
-      }
-    }
-  `)
-    .then(async result => {
-      if (result.errors) {
-        reporter.error(`something broke`)
-        return
-      }
-
-      createBlogPages(createPage, result, reporter)
-      createDemoBlogPage(createPage, result, reporter)
-    })
-}
-
-const createBlogPages = (createPage, result, reporter) => {
-  const edges = edgesWithoutDemoPost(result)
-  edges.forEach((_, index) => {
-    const { number, slug, date, previous, next } = getPost(edges, index)
-    createPage({
-      path: slug,
-      component: path.resolve(`./src/templates/post.js`),
-      context: {
-        slug,
-        date,
-        number,
-        previous: previous.node,
-        next: next.node,
-      },
-    })
-    reporter.verbose(`
-      previous: [${previous.number}] ${previous.node.fields.slug}
-      this    : [${number}] ${slug}
-      next    : [${next.number}] ${next.node.fields.slug}
-    `)
-  })
-}
-
-const createDemoBlogPage = (createPage, result, reporter) => {
-  const edges = result.data.allMarkdownRemark.edges
-  const slugs = edges.map(edge => edge.node.fields.slug)
-  const demo = slugs.indexOf(exclusionSlugForPost)
-  if (demo === -1) return
-
-  const { number, slug, date, previous, next } = getPost(edges, demo)
-  createPage({
-    path: slug,
-    component: path.resolve(`./src/templates/post.js`),
-    context: {
-      slug,
-      date,
-      number,
-      previous: previous.node,
-      next: next.node,
-    },
-  })
-  reporter.verbose(`
-    previous: [${previous.number}] ${previous.node.fields.slug}
-    this    : [${number}] ${slug}
-    next    : [${next.number}] ${next.node.fields.slug}
-  `)
-}
-
 const createTags = async (graphql, actions, reporter) => {
   const { createPage } = actions
   await graphql(`
@@ -214,19 +127,6 @@ const createTags = async (graphql, actions, reporter) => {
         reporter.verbose(slug)
       })
     })
-}
-
-const createBlog = (actions, reporter) => {
-  const { createPage } = actions
-  const slug = `/blog`
-  createPage({
-    path: slug,
-    component: path.resolve(`./src/pages/index.js`),
-    context: {
-      slug,
-    },
-  })
-  reporter.verbose(slug)
 }
 
 const createSearchIndexes = async (graphql, reporter) => {
