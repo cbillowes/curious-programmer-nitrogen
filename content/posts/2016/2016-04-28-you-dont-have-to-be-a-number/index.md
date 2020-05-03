@@ -1,9 +1,10 @@
 ---
-title: "You don't have to be a number"
-slug: "you-dont-have-to-be-a-number"
-cover: "https://picsum.photos/1600/800/?image=978"
+title: You don't have to be a number
 date: 2016-04-28 20:22:52 +0200
-category: "tech"
+photo: you-dont-have-to-be-a-number.jpg
+credit: picsum
+creditLink: https://picsum.photos/1600/800/?image=978
+creditSource: picsum.photos
 tags:
   - Personal Brand
   - Relationships
