@@ -3,6 +3,7 @@ const path = require(`path`)
 const fs = require("fs")
 const images = require("./gatsby-build/images")
 const blog = require("./gatsby-build/pages-blog")
+const tags = require("./gatsby-build/pages-tags")
 
 // The order of which nodes are processed is no guaranteed.
 // To add numbers to each post, nodes need to be captured
@@ -46,7 +47,7 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
 // https://www.gatsbyjs.org/docs/node-apis/#createPages
 exports.createPages = async ({ graphql, actions, reporter }) => {
   await blog.create(actions, graphql, reporter)
-  await createTags(graphql, actions, reporter)
+  await tags.create(actions, graphql, reporter)
   await createSearchIndexes(graphql, reporter)
 }
 
@@ -87,46 +88,6 @@ const createNodes = (node, createNodeField) => {
   })
 
   nodes.push(node)
-}
-
-const createTags = async (graphql, actions, reporter) => {
-  const { createPage } = actions
-  await graphql(`
-    query CreateTagsQuery {
-      allMarkdownRemark {
-        edges {
-          node {
-            fields {
-              slug
-            }
-            frontmatter {
-              tags
-              date
-            }
-          }
-        }
-      }
-    }
-  `)
-    .then(result => {
-      if (result.errors) {
-        reporter.error(`something broke`)
-        return
-      }
-      const edges = edgesWithoutDemoPost(result)
-      const tags = getTags(edges)
-      tags.forEach(({ slug, tag }) => {
-        createPage({
-          path: slug,
-          component: path.resolve(`./src/templates/tag.js`),
-          context: {
-            tag,
-            slug,
-          },
-        })
-        reporter.verbose(slug)
-      })
-    })
 }
 
 const createSearchIndexes = async (graphql, reporter) => {
@@ -198,19 +159,6 @@ const applyNumbers = (createNodeField) => {
 
 const toTimestamp = (date) => {
   return new Date(date).getTime()
-}
-
-const getTags = (edges) => {
-  const tags = edges.map(edge => edge.node.frontmatter.tags)
-  const flattened = [].concat.apply([], tags)
-  const unique = [... new Set(flattened)]
-  const filtered = unique.filter(Boolean)
-  return filtered.map(tag => {
-    return {
-      slug: path.join(`/tag`, _.kebabCase(tag)),
-      tag,
-    }
-  })
 }
 
 const edgesWithoutDemoPost = (graphqlResult) => {
