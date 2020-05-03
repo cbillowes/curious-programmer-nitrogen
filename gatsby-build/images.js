@@ -99,7 +99,7 @@ const banners = (absolutePath, reporter) => {
     const destPath = path.join(destBanners, filename)
     const sharpInstance = getSharpInstance(absolutePath, 100)
     sharpInstance
-      .resize(1200, 400, {
+      .resize(1200, 600, {
         fit: sharp.fit.cover,
         position: sharp.strategy.attention,
       })

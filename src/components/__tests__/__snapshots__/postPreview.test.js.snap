@@ -26,7 +26,7 @@ exports[`Post preview should credit a photo 1`] = `
         "backgroundPosition": "center center",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
-        "paddingTop": "33.33333333333333%",
+        "paddingTop": "50%",
       }
     }
   >
@@ -40,10 +40,10 @@ exports[`Post preview should credit a photo 1`] = `
      
     <a
       className="badge clickable"
-      href="https://unsplash.com/@jessbailey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      href="https://unsplash.com/@vishnurnair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       rel="noopener noreferrer"
       target="_blank"
-      title="Download free do whatever you want high-resolution photos from Jess Bailey"
+      title="Download free do whatever you want high-resolution photos from Vishnu R Nair"
     >
       <span
         className="source-logo"
@@ -56,7 +56,7 @@ exports[`Post preview should credit a photo 1`] = `
       <span
         className="attribute"
       >
-        Jess Bailey
+        Vishnu R Nair
       </span>
     </a>
   </div>
@@ -82,10 +82,10 @@ exports[`Post preview should credit a photo 1`] = `
      
     <a
       className="badge clickable"
-      href="https://unsplash.com/@jessbailey?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      href="https://unsplash.com/@vishnurnair?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       rel="noopener noreferrer"
       target="_blank"
-      title="Download free do whatever you want high-resolution photos from Jess Bailey"
+      title="Download free do whatever you want high-resolution photos from Vishnu R Nair"
     >
       <span
         className="source-logo"
@@ -98,7 +98,7 @@ exports[`Post preview should credit a photo 1`] = `
       <span
         className="attribute"
       >
-        Jess Bailey
+        Vishnu R Nair
       </span>
     </a>
   </div>
@@ -201,7 +201,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
         "backgroundPosition": "center center",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
-        "paddingTop": "33.33333333333333%",
+        "paddingTop": "50%",
       }
     }
   >
@@ -215,10 +215,10 @@ exports[`Post preview should limit the blurb word count 1`] = `
      
     <a
       className="badge clickable"
-      href="https://unsplash.com/@joelfilip?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      href="https://unsplash.com/@dlanor_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       rel="noopener noreferrer"
       target="_blank"
-      title="Download free do whatever you want high-resolution photos from Joel Filipe"
+      title="Download free do whatever you want high-resolution photos from Dlanor S"
     >
       <span
         className="source-logo"
@@ -231,7 +231,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
       <span
         className="attribute"
       >
-        Joel Filipe
+        Dlanor S
       </span>
     </a>
   </div>
@@ -257,10 +257,10 @@ exports[`Post preview should limit the blurb word count 1`] = `
      
     <a
       className="badge clickable"
-      href="https://unsplash.com/@joelfilip?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      href="https://unsplash.com/@dlanor_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       rel="noopener noreferrer"
       target="_blank"
-      title="Download free do whatever you want high-resolution photos from Joel Filipe"
+      title="Download free do whatever you want high-resolution photos from Dlanor S"
     >
       <span
         className="source-logo"
@@ -273,7 +273,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
       <span
         className="attribute"
       >
-        Joel Filipe
+        Dlanor S
       </span>
     </a>
   </div>
@@ -376,7 +376,7 @@ exports[`Post preview should render when all required props are provided 1`] = `
         "backgroundPosition": "center center",
         "backgroundRepeat": "no-repeat",
         "backgroundSize": "cover",
-        "paddingTop": "33.33333333333333%",
+        "paddingTop": "50%",
       }
     }
   >
@@ -390,10 +390,10 @@ exports[`Post preview should render when all required props are provided 1`] = `
      
     <a
       className="badge clickable"
-      href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       rel="noopener noreferrer"
       target="_blank"
-      title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+      title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
     >
       <span
         className="source-logo"
@@ -406,7 +406,7 @@ exports[`Post preview should render when all required props are provided 1`] = `
       <span
         className="attribute"
       >
-        Paul Hanaoka
+        Ilya Pavlov
       </span>
     </a>
   </div>
@@ -432,10 +432,10 @@ exports[`Post preview should render when all required props are provided 1`] = `
      
     <a
       className="badge clickable"
-      href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+      href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
       rel="noopener noreferrer"
       target="_blank"
-      title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+      title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
     >
       <span
         className="source-logo"
@@ -448,7 +448,7 @@ exports[`Post preview should render when all required props are provided 1`] = `
       <span
         className="attribute"
       >
-        Paul Hanaoka
+        Ilya Pavlov
       </span>
     </a>
   </div>

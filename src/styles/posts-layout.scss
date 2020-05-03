@@ -71,8 +71,10 @@
 
         .badge {
           position: absolute;
-          top: 0;
-          left: 0;
+          bottom: -10px;
+          border-radius: $border-radius;
+          width: 100%;
+          text-align: center;
         }
 
         @include small-screen() {

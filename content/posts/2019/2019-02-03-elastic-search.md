@@ -1,6 +1,10 @@
 ---
 title: "Migrage my search from Solr to Elasticsearch"
 date: 2019-02-05 06:00:00 +0200
+photo: elastic.jpg
+credit: PNGWAVE
+creditLink: https://www.pngwave.com/png-clip-art-bvnpx
+creditSource: PNGWAVE
 tags:
   - Technical
   - Terminal

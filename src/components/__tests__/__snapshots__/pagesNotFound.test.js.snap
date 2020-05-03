@@ -316,7 +316,7 @@ exports[`404 page should render 1`] = `
                 "backgroundPosition": "center center",
                 "backgroundRepeat": "no-repeat",
                 "backgroundSize": "cover",
-                "paddingTop": "33.33333333333333%",
+                "paddingTop": "50%",
               }
             }
           >
@@ -330,10 +330,10 @@ exports[`404 page should render 1`] = `
              
             <a
               className="badge clickable"
-              href="https://unsplash.com/@ninjason?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+              href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               rel="noopener noreferrer"
               target="_blank"
-              title="Download free do whatever you want high-resolution photos from Jason Leung"
+              title="Download free do whatever you want high-resolution photos from Kevin Ku"
             >
               <span
                 className="source-logo"
@@ -346,7 +346,7 @@ exports[`404 page should render 1`] = `
               <span
                 className="attribute"
               >
-                Jason Leung
+                Kevin Ku
               </span>
             </a>
           </div>
@@ -372,10 +372,10 @@ exports[`404 page should render 1`] = `
              
             <a
               className="badge clickable"
-              href="https://unsplash.com/@ninjason?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+              href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               rel="noopener noreferrer"
               target="_blank"
-              title="Download free do whatever you want high-resolution photos from Jason Leung"
+              title="Download free do whatever you want high-resolution photos from Kevin Ku"
             >
               <span
                 className="source-logo"
@@ -388,7 +388,7 @@ exports[`404 page should render 1`] = `
               <span
                 className="attribute"
               >
-                Jason Leung
+                Kevin Ku
               </span>
             </a>
           </div>
@@ -488,7 +488,7 @@ exports[`404 page should render 1`] = `
                 "backgroundPosition": "center center",
                 "backgroundRepeat": "no-repeat",
                 "backgroundSize": "cover",
-                "paddingTop": "33.33333333333333%",
+                "paddingTop": "50%",
               }
             }
           >
@@ -502,10 +502,10 @@ exports[`404 page should render 1`] = `
              
             <a
               className="badge clickable"
-              href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+              href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               rel="noopener noreferrer"
               target="_blank"
-              title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+              title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
             >
               <span
                 className="source-logo"
@@ -518,7 +518,7 @@ exports[`404 page should render 1`] = `
               <span
                 className="attribute"
               >
-                Paul Hanaoka
+                Ilya Pavlov
               </span>
             </a>
           </div>
@@ -544,10 +544,10 @@ exports[`404 page should render 1`] = `
              
             <a
               className="badge clickable"
-              href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+              href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
               rel="noopener noreferrer"
               target="_blank"
-              title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+              title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
             >
               <span
                 className="source-logo"
@@ -560,7 +560,7 @@ exports[`404 page should render 1`] = `
               <span
                 className="attribute"
               >
-                Paul Hanaoka
+                Ilya Pavlov
               </span>
             </a>
           </div>

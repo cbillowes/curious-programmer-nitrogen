@@ -52,10 +52,10 @@ exports[`Thumbnail should render with no photo 1`] = `
 >
   <a
     className="badge clickable"
-    href="https://unsplash.com/@plhnk?utm_medium=referral&amp;utm_campaign=photographer-credit&amp;utm_content=creditBadge"
+    href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
     rel="noopener noreferrer"
     target="_blank"
-    title="Download free do whatever you want high-resolution photos from Paul Hanaoka"
+    title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
   >
     <span
       className="source-logo"
@@ -68,7 +68,7 @@ exports[`Thumbnail should render with no photo 1`] = `
     <span
       className="attribute"
     >
-      Paul Hanaoka
+      Ilya Pavlov
     </span>
   </a>
 </div>
