@@ -1,6 +1,10 @@
 ---
-title: "Welcome to my blog"
+title: Welcome to my blog
 date: 2016-04-01 05:00:00 +0200
+photo: welcome-to-my-blog.jpg
+credit: PNGWAVE
+creditLink: https://www.pngwave.com/png-clip-art-oafhz
+creditSource: PNGWAVE
 tags:
   - Personal Brands
 ---
