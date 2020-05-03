@@ -40,108 +40,55 @@ const AboutPage = ({ profileImage }) => (
         <ul>
           <li>Open &amp; honest</li>
           <li>Passionate</li>
+          <li>Creative</li>
           <li>Curious</li>
           <li>Work hard, play hard</li>
-          <li>Creative</li>
         </ul>
       </aside>
       <div className="panels">
-        <Panel title="Hiring">
-          <p className="danger">
-            Kindly note that I am <strong>NOT</strong> on the market.
-          </p>
-          <p>
-            I enjoy casual interviews over a{" "}
-            <span role="img" aria-label="Coffee emoji" title="Coffee">☕</span> or a {" "}
-            <span role="img" aria-label="Beers emoji" title="Beer">🍻</span>{" "}
-            in which we can discover if the position is well suited for the both of us and that
-            there will be a harmonic cultural fit.
-          </p>
-        </Panel>
-        <Panel title="Skills">
+        <Panel title="Technical skills">
           <p>
             Check out my profile at {" "}
-            <Anchor to="https://clarice.bouwer.dev">clarice.bouwer.dev</Anchor>,
-            an open-source Clojure project which can be found on{" "}
+            <Anchor to="https://clarice.bouwer.dev">clarice.bouwer.dev</Anchor>
+            It is a ClojureScript project which can be found on{" "}
             <Anchor to="https://github.com/cbillowes/clarice.bouwer.dev">GitHub</Anchor>
-            . Feel free to browse my GitHub
-            <Anchor to="https://github.com/cbillowes/">repository</Anchor> to get an
-            idea of my coding capabilities.
+            . You can check out my other
+            <Anchor to="https://github.com/cbillowes/">repositories</Anchor> too if you so wish.
           </p>
         </Panel>
-        <Panel title="Values">
-          <ul>
-            <li>I listen to the needs of the clients, business and my colleagues.</li>
-            <li>Stay open &amp; honest with those around me</li>
-            <li>Be passionate about what I do</li>
-            <li>Stay curious and continue to learn</li>
-            <li>Work hard, play hard philosophy</li>
-            <li>Be a team player</li>
-            <li>Share my knowledge with others</li>
-            <li>Self-organize to make management's task easier</li>
-            <li>
-              Stay creative in solving problems and building pretty things
-            </li>
-            <li>Go beyond my comfort zone</li>
-          </ul>
-        </Panel>
-        <Panel title="Expectations">
+        <Panel title="Core values">
           <p>
-            I <span className="highlight primary">care</span> about the
-            business, people and clients. I don't know everything so I am
-            exceptionally good at{" "}
-            <span className="highlight primary">Googling</span>. I don't like
-            dangling problems so I{" "}
-            <span className="highlight primary">figure out solutions</span>. I
-            am super eager to <span className="highlight primary">learn</span>{" "}
-            technologies, methods, and techniques that are unfamiliar to me. I
-            believe commuting takes up a lot of valuable time to both the
-            business and myself so I prefer{" "}
-            <span className="highlight primary">remote work</span>. I can{" "}
-            <span className="highlight primary">handle realistic pressure</span>{" "}
-            and I don't work excessive long hours. I know that I am not a super
-            human so I{" "}
-            <span className="highlight primary">work well in teams</span> and
-            learn from colleagues.
+            I take pride in my work and am continuously learning how to write better software.
+            I strive to meet these core values.
           </p>
-        </Panel>
-        <Panel title="History">
-          <p>
-            I am open to learning anything I am unfamiliar with and enjoy
-            improving and mastering what I am currently acquainted with. I now
-            have {new Date().getFullYear() - 2006} years of experience of
-            software development and am thoroughly enjoying it.
-          </p>
-          <ul>
+          <ol>
             <li>
-              Since 2006, I have been developing web applications in .NET and
-              Microsoft SQL Server using Microsoft Visual Studio.
-            </li>
-            <li>In 2016, I was introduced to Agile and Git.</li>
-            <li>
-              In 2018, I was introduced to{" "}
-              <Anchor to="https://sulami.github.io/posts/why-i-like-clojure/">
-                Clojure
-              </Anchor>
-              , ClojureScript and{" "}
-              <Anchor to="https://www.datomic.com/">Datomic</Anchor>{" "}
-              <span
-                role="img"
-                aria-label="Sparkling heart emoji"
-                title="Absolutely love it"
-              >
-                💖
-              </span>
-              on Linux and started using Gatsby on my blog.
+              <strong className="tag">Good hygiene:</strong>
+              Write good, happy, healthy, clean code.
+              Let it speak for itself and make developers happy because they can understand it and easily maintain it.
+              Domain-Driven Design and SOLID principles are good coding principles to abide by.
             </li>
             <li>
-              In 2019, I started using Spacemacs with Evil bindings on a MacBook
-              Pro{" "}
-              <span role="img" aria-label="Mind blown emoji" title="Mind blown">
-                🤯
-              </span>
+              <strong className="tag">Fast feedback:</strong>
+              Get chop-chop feedback when things change. Did it break? Did it work?
+              Things like testing, pair programming, continuous integration and analytics of all kinds offer assorted ways of getting fast feedback.
             </li>
-          </ul>
+            <li>
+              <strong className="tag">Automation:</strong>
+              Why do and do and do and do and do and do, when it can just get done?
+              Automate repetitive, clunky, manual tasks to avoid inconsistencies, save time and to keep people sane.
+              Automated tests, continuous deployments, scripting stuff, utility applications are examples of such things.
+            </li>
+            <li>
+              <strong className="tag">Simplicity:</strong>
+              Design for the future and develop for the now. Build the system to be robust, extendable, solid and easy to maintain.
+              Develop only the necessary features and complexity that are required now. Can you say MVP?
+            </li>
+            <li>
+              <strong className="tag">Continuity:</strong>
+              Be a curious sponge. Learn by reading, watching videos, through others, doing!
+            </li>
+          </ol>
         </Panel>
         <Panel title="Inspiration">
           <p>
@@ -186,5 +133,3 @@ const AboutPage = ({ profileImage }) => (
 )
 
 export default AboutPage
-
-//TODO: update content to be more friendly and open, especially under "hire me"

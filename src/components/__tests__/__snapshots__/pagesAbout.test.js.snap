@@ -283,13 +283,13 @@ exports[`About page should render 1`] = `
             Passionate
           </li>
           <li>
+            Creative
+          </li>
+          <li>
             Curious
           </li>
           <li>
             Work hard, play hard
-          </li>
-          <li>
-            Creative
           </li>
         </ul>
       </aside>
@@ -303,7 +303,7 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            Hiring
+            Technical skills
           </button>
         </div>
         <div
@@ -313,37 +313,7 @@ exports[`About page should render 1`] = `
             className="title "
             onClick={[Function]}
           >
-            Skills
-          </button>
-        </div>
-        <div
-          className="panel"
-        >
-          <button
-            className="title "
-            onClick={[Function]}
-          >
-            Values
-          </button>
-        </div>
-        <div
-          className="panel"
-        >
-          <button
-            className="title "
-            onClick={[Function]}
-          >
-            Expectations
-          </button>
-        </div>
-        <div
-          className="panel"
-        >
-          <button
-            className="title "
-            onClick={[Function]}
-          >
-            History
+            Core values
           </button>
         </div>
         <div
