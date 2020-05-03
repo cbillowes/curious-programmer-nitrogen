@@ -74,8 +74,8 @@ const createThePage = (createPage, edges, index, reporter) => {
 
 const createBlogPages = (createPage, result, reporter) => {
   const edges = result.data.allMarkdownRemark.edges
-  edges
     .filter(edge => edge.node.fields.slug !== config.DEMO_PAGE)
+  edges
     .forEach((_, index) => {
       createThePage(createPage, edges, index, reporter)
     })
