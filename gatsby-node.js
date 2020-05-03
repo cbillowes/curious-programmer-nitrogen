@@ -110,8 +110,3 @@ const applyNumbers = (createNodeField) => {
 const toTimestamp = (date) => {
   return new Date(date).getTime()
 }
-
-const edgesWithoutDemoPost = (graphqlResult) => {
-  return graphqlResult.data.allMarkdownRemark.edges
-    .filter(edge => edge.node.fields.slug !== exclusionSlugForPost)
-}
