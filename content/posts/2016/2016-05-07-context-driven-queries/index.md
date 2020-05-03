@@ -1,8 +1,10 @@
 ---
-title: "Context-driven queries"
-cover: "https://picsum.photos/1600/800/?image=192"
+title: Context-driven queries
 date: 2016-05-07 15:28:21 +0200
-category: "tech"
+photo: people-at-a-cafeteria.jpg
+credit: picsum
+creditLink: https://picsum.photos/1600/800/?image=192
+creditSource: picsum.photos
 tags:
   - Communication
 ---
