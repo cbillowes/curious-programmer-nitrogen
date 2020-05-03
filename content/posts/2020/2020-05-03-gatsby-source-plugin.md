@@ -1,5 +1,5 @@
 ---
-title: How I got started with my first Gatsby source & remark plugin
+title: How I got started with my first Gatsby source and remark plugin
 date: 2020-05-03 03:00:00 +0400
 photo: gatsby.jpg
 credit: gatsbyjs
