@@ -6,10 +6,11 @@ const processImages = true
 
 const srcRaw = `src/images/raw`
 const srcPosts = `src/images/posts`
+const srcShares = `src/images/shares`
 const excludeGifs = `src/images/gifs`
 
 const destRaw = `src/images/posts`
-const destShare = `public/static/share`
+const destShare = `public/static/shares`
 const destBanners = `public/static/banners`
 const destThumbnails = `public/static/thumbnails`
 const destSvgs = `public/static/svgs`
@@ -65,7 +66,7 @@ const optimizeRawImages = (absolutePath, reporter) => {
  * @param {function} reporter
  */
 const shares = (absolutePath, reporter) => {
-  if (absolutePath.indexOf(srcPosts) >= 0) {
+  if (absolutePath.indexOf(srcPosts) >= 0 || absolutePath.indexOf(srcShares) >= 0) {
     mkdir(destShare)
     const filename = path.basename(absolutePath)
     const destPath = path.join(destShare, filename)
