@@ -1,6 +1,6 @@
 const _ = require("lodash")
 const path = require(`path`)
-const fs = require("fs")
+const config = require("./gatsby-build")
 const images = require("./gatsby-build/images")
 const blog = require("./gatsby-build/pages-blog")
 const tags = require("./gatsby-build/pages-tags")
@@ -10,16 +10,6 @@ const search = require("./gatsby-build/search")
 // To add numbers to each post, nodes need to be captured
 // and processed sequentially by date
 const nodes = []
-
-// There is a post that has been created to preview elements that can be
-// used in any given post. This example post must be not available in
-// * the numbering system
-// * navigational system
-// * post listings
-// * exporting of posts for search indexing
-// It must however be available for display as its own entity
-// accessible only by its slug
-const exclusionSlugForPost = `/blog/example`
 
 /**
  * GATSBY API.
@@ -89,7 +79,7 @@ const createNodes = (node, createNodeField) => {
 }
 
 const applyNumbers = (createNodeField) => {
-  const numberable = nodes.filter(node => node.fields !== exclusionSlugForPost)
+  const numberable = nodes.filter(node => node.fields !== config.DEMO_PAGE)
   const sorted = numberable.sort(
     (a, b) => toTimestamp(a.fields.date) - toTimestamp(b.fields.date)
   )
