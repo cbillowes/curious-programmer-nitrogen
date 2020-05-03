@@ -99,3 +99,4 @@ Wed Apr 29 2020 21:49:03 GMT+0400 (Mauritius Standard Time): /blog/look-i-have-a
 Wed Apr 29 2020 21:49:03 GMT+0400 (Mauritius Standard Time): /blog/setup-mac-os-development-environment
 Wed Apr 29 2020 21:49:03 GMT+0400 (Mauritius Standard Time): /blog/gatsby-remark-emoji
 Wed Apr 29 2020 21:49:03 GMT+0400 (Mauritius Standard Time): /blog/git-aliases
+Sun May 03 2020 04:40:13 GMT+0400 (Mauritius Standard Time): /blog/how-i-got-started-with-my-first-gatsby-source-remark-plugin

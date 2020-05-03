@@ -120,7 +120,7 @@ const thumbnails = (absolutePath, reporter) => {
     sharpInstance
       .resize(600, 250, {
         fit: sharp.fit.cover,
-        position: sharp.strategy.entropy,
+        position: sharp.strategy.attention,
       })
       .toFile(destPath, (err) => {
         const message = `thumbnail: ${absolutePath} -> ${destPath}`
