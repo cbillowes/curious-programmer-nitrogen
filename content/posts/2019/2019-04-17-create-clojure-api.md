@@ -1,6 +1,10 @@
 ---
-title: "Creating a Clojure solution using IntelliJ"
+title: Creating a Clojure solution using IntelliJ
 date: 2019-04-17 03:28:00 +0200
+photo: clojure.jpg
+credit: Tom & Rich Hickey
+creditLink: https://en.wikipedia.org/wiki/Clojure
+creditSource: wikipedia
 tags:
   - Technical
   - Clojure
