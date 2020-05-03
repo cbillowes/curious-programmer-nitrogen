@@ -10,7 +10,9 @@ export default () => {
         site {
           siteMetadata {
             title
+            description
             author
+            siteUrl
             image
           }
         }

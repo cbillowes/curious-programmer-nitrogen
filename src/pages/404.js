@@ -11,6 +11,8 @@ export default () => {
           siteMetadata {
             title
             description
+            author
+            siteUrl
             image
           }
         }
