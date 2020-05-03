@@ -1,15 +1,17 @@
 ---
-title: "Adjusting the corporate mindset"
-cover: "https://picsum.photos/1600/800/?image=983"
+title: Adjusting the corporate mindset
 date: 2016-05-11 23:16:23 +0200
-category: "tech"
+photo: highrise-buildings.jpg
+credit: picsum
+creditLink: https://picsum.photos/1600/800/?image=983
+creditSource: picsum.photos
 tags:
   - Productivity
 ---
 
 > Just because it's always been done that way, doesn't mean it can't be changed.
 
-Personally there is nothing I can do about the way corporates work. There are a
+Personally there is nothing I can do about the way corporate work. There are a
 lot of people involved and possibly a plethora of reasons for why they do things
 the way they do - that I can't see right now.
 
@@ -17,7 +19,7 @@ It doesn't mean that I have to always agree with every decision that is made.
 Just because it's always been done that way, doesn't mean it can't be changed.
 Right?
 
-I know people working at corporates are doing the best that they can and that
+I know people working at corporate are doing the best that they can and that
 things can get pretty messy when a lot of people are involved. Some things
 end up cumbersome and bloated or go completely overlooked. Here's what I
 would focus on to make a happier space for developers.
