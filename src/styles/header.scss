@@ -16,6 +16,10 @@
     justify-content: left;
     align-items: flex-start;
 
+    @include small-screen() {
+      padding: .5rem 2rem;
+    }
+
     .logo {
       flex-grow: 2;
     }

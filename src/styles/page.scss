@@ -1,40 +1,82 @@
+@import "./variables";
+
 .blog-page {
   padding-top: 9rem;
+
+  @include small-screen() {
+    padding-top: 5rem;
+  }
 }
 
 .about-page {
   padding-top: 8rem;
+
+  @include small-screen() {
+    padding-top: 5rem;
+  }
 }
 
 .archives-page {
   padding-top: 6rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
 
 .credits-page {
   padding-top: 6rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
 
 .license-page {
   padding-top: 6rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
 
 .privacy-policy-page {
   padding-top: 6rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
 
 .tags-page {
   padding-top: 6rem;
   padding-bottom: 2.5rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
 
 .post-page {
   padding-top: 6rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
 
 .tag-page {
   padding-top: 6rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
 
 .not-found-page {
   padding-top: 6rem;
+
+  @include small-screen() {
+    padding-top: 2rem;
+  }
 }
