@@ -1,8 +1,10 @@
 ---
-title: " Manage expectations"
-cover: "https://picsum.photos/1600/800/?image=1062"
+title: Manage expectations
 date: 2016-05-02 19:20:00 +0200
-category: "tech"
+photo: dog-in-blanket.jpg
+credit: picsum
+creditLink: https://picsum.photos/1600/800/?image=1062
+creditSource: picsum.photos
 tags:
   - Relationships
   - Communication
