@@ -392,7 +392,7 @@ exports[`404 page should render 1`] = `
               </span>
             </a>
           </div>
-          <h1>
+          <h2>
              
             <a
               href="/dont-panic"
@@ -403,7 +403,7 @@ exports[`404 page should render 1`] = `
               Don't panic
             </a>
              
-          </h1>
+          </h2>
           <div
             className="blurb"
           >
@@ -564,7 +564,7 @@ exports[`404 page should render 1`] = `
               </span>
             </a>
           </div>
-          <h1>
+          <h2>
              
             <a
               href="/still-dont-panic"
@@ -575,7 +575,7 @@ exports[`404 page should render 1`] = `
               Still don't panic
             </a>
              
-          </h1>
+          </h2>
           <div
             className="blurb"
           >

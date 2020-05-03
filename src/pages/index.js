@@ -49,7 +49,7 @@ export default () => {
   const edges = data.allMarkdownRemark.edges
   return (
     <>
-      <SEO title="Blog" crawl={true} siteMetadata={siteMetadata}>
+      <SEO title="Read about all the things I write about." crawl={true} siteMetadata={siteMetadata}>
         I share thoughts. I share ideas. I share knowledge. This is my blog as a
         curious programmer.
       </SEO>

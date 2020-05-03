@@ -11,9 +11,7 @@ import PropTypes from "prop-types"
 import { getContent } from "./blurb"
 
 const getPageTitle = (title, siteMetadata) => {
-  const siteTitle = siteMetadata.title || ``
-  if (title && siteTitle) return `${title} | ${siteTitle}`
-  return siteTitle
+  return title || siteMetadata.title
 }
 
 const getPageDescription = (description, siteMetadata) => {

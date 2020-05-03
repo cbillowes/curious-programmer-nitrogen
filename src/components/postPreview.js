@@ -1,6 +1,6 @@
 import React from "react"
 import PropTypes from "prop-types"
-import { H1 } from "./heading"
+import { H2 } from "./heading"
 import Number from "./number"
 import PostMetadata from "./postMetadata"
 import Tags from "./tags"
@@ -30,11 +30,11 @@ const Metadata = ({ date, author, ttr }) => {
 const Heading = ({ children, slug }) => {
   return (
     <>
-      <H1>
+      <H2>
         <Anchor to={slug} title={children}>
           {children}
         </Anchor>
-      </H1>
+      </H2>
     </>
   )
 }

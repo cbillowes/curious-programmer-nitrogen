@@ -102,7 +102,7 @@ exports[`Post preview should credit a photo 1`] = `
       </span>
     </a>
   </div>
-  <h1>
+  <h2>
      
     <a
       href="/dont-panic"
@@ -113,7 +113,7 @@ exports[`Post preview should credit a photo 1`] = `
       Don't panic.
     </a>
      
-  </h1>
+  </h2>
   <div
     className="blurb"
   >
@@ -277,7 +277,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
       </span>
     </a>
   </div>
-  <h1>
+  <h2>
      
     <a
       href="/dont-panic"
@@ -288,7 +288,7 @@ exports[`Post preview should limit the blurb word count 1`] = `
       Don't panic.
     </a>
      
-  </h1>
+  </h2>
   <div
     className="blurb"
   >
@@ -452,7 +452,7 @@ exports[`Post preview should render when all required props are provided 1`] = `
       </span>
     </a>
   </div>
-  <h1>
+  <h2>
      
     <a
       href="/dont-panic"
@@ -463,7 +463,7 @@ exports[`Post preview should render when all required props are provided 1`] = `
       Don't panic.
     </a>
      
-  </h1>
+  </h2>
   <div
     className="blurb"
   >

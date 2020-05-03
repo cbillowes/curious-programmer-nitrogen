@@ -179,7 +179,7 @@ exports[`Posts should render with default word limit 1`] = `
           </span>
         </a>
       </div>
-      <h1>
+      <h2>
          
         <a
           href="/dont-panic"
@@ -190,7 +190,7 @@ exports[`Posts should render with default word limit 1`] = `
           
         </a>
          
-      </h1>
+      </h2>
       <div
         className="blurb"
       />
@@ -345,7 +345,7 @@ exports[`Posts should render with default word limit 1`] = `
           </span>
         </a>
       </div>
-      <h1>
+      <h2>
          
         <a
           href="/bring-your-own-towel"
@@ -356,7 +356,7 @@ exports[`Posts should render with default word limit 1`] = `
           
         </a>
          
-      </h1>
+      </h2>
       <div
         className="blurb"
       />
@@ -593,7 +593,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           </span>
         </a>
       </div>
-      <h1>
+      <h2>
          
         <a
           href="/dont-panic"
@@ -604,7 +604,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           
         </a>
          
-      </h1>
+      </h2>
       <div
         className="blurb"
       />
@@ -759,7 +759,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           </span>
         </a>
       </div>
-      <h1>
+      <h2>
          
         <a
           href="/bring-your-own-towel"
@@ -770,7 +770,7 @@ exports[`Posts should render with specified word limit of 5 1`] = `
           
         </a>
          
-      </h1>
+      </h2>
       <div
         className="blurb"
       />

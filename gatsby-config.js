@@ -1,6 +1,6 @@
 module.exports = {
   siteMetadata: {
-    title: `Curious Programmer`,
+    title: `Curious Programmer: A curious place for a curious mind.`,
     siteUrl: `https://curiousprogrammer.dev`,
     description: `A curious place for a curious mind.`,
     author: `Clarice Bouwer`,

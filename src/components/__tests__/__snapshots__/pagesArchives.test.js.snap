@@ -360,7 +360,7 @@ exports[`Archives page should render 1`] = `
               </span>
             </a>
           </div>
-          <h1>
+          <h2>
              
             <a
               href="/dont-panic"
@@ -371,7 +371,7 @@ exports[`Archives page should render 1`] = `
               Don't panic
             </a>
              
-          </h1>
+          </h2>
           <div
             className="blurb"
           >
@@ -532,7 +532,7 @@ exports[`Archives page should render 1`] = `
               </span>
             </a>
           </div>
-          <h1>
+          <h2>
              
             <a
               href="/still-dont-panic"
@@ -543,7 +543,7 @@ exports[`Archives page should render 1`] = `
               Still don't panic
             </a>
              
-          </h1>
+          </h2>
           <div
             className="blurb"
           >

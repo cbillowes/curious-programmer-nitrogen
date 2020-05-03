@@ -49,7 +49,7 @@ describe(`SEO`, () => {
           }}
         />
       )
-      const title = "Don't panic. | Hitchhikers Guide to the Galaxy"
+      const title = "Don't panic."
       assertTitles(component, title)
     })
   })

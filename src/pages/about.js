@@ -37,7 +37,7 @@ export default () => {
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO title="About" crawl={true} siteMetadata={siteMetadata}>
+      <SEO title="I am a curious programmer. Find out more." crawl={true} siteMetadata={siteMetadata}>
         My name is Clarice Bouwer. I am a Senior Software Engineer. I am curious
         and am always learning new things. My passion is Clojure, Gatsby and
         React.
