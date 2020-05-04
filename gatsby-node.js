@@ -1,7 +1,7 @@
 const _ = require("lodash")
 const path = require(`path`)
 const config = require("./gatsby-build")
-const images = require("./gatsby-build/images")
+const image = require("./gatsby-build/image")
 const blog = require("./gatsby-build/pages-blog")
 const tags = require("./gatsby-build/pages-tags")
 const search = require("./gatsby-build/search")
@@ -27,7 +27,7 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
   }
 
   if (node.internal.type === `File`) {
-    images.process(node.internal.mediaType, node.absolutePath, reporter)
+    image.process(node.absolutePath, reporter)
   }
 }
 
@@ -60,7 +60,7 @@ const createNodes = (node, createNodeField) => {
   createNodeField({
     node,
     name: `number`,
-    value: 0
+    value: 0,
   })
 
   createNodeField({
@@ -78,7 +78,7 @@ const createNodes = (node, createNodeField) => {
   nodes.push(node)
 }
 
-const applyNumbers = (createNodeField) => {
+const applyNumbers = createNodeField => {
   const numberable = nodes.filter(node => node.fields !== config.DEMO_PAGE)
   const sorted = numberable.sort(
     (a, b) => toTimestamp(a.fields.date) - toTimestamp(b.fields.date)
@@ -97,6 +97,6 @@ const applyNumbers = (createNodeField) => {
  * The unicorns bringing everything magically together.
  */
 
-const toTimestamp = (date) => {
+const toTimestamp = date => {
   return new Date(date).getTime()
 }
