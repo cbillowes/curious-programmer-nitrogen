@@ -61,7 +61,7 @@ where you are coming from which gives a better understanding to the nature of
 your query. What you provide depends on who you talk to and where
 that person is from:
 
-![Flow chart](/static/svgs/context-where-you-are-from.svg "Flow chart for deciding how to communicate where you are from")
+![Flow chart](/svgs/context-where-you-are-from.svg "Flow chart for deciding how to communicate where you are from")
 
 _Source of image: Clarice Bouwer_
 

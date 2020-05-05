@@ -11,7 +11,14 @@ const Listing = ({ edges, wordLimit }) => {
   return edges.map(edge => {
     const { timeToRead, html } = edge.node
     const { slug, date, number } = edge.node.fields
-    const { title, photo, credit, creditSource, creditLink, tags } = edge.node.frontmatter
+    const {
+      title,
+      photo,
+      credit,
+      creditSource,
+      creditLink,
+      tags,
+    } = edge.node.frontmatter
     const author = "Clarice Bouwer"
     return (
       <PostPreview
@@ -48,16 +55,17 @@ class Posts extends Component {
     }
   }
 
-  changeLayout = (layout) => {
+  changeLayout = layout => {
     this.setState({
       layout,
     })
   }
 
-  search = (e) => {
+  search = e => {
     const phrase = e.target.value.toLowerCase()
-    const edges = this.state.originalEdges
-      .filter(edge => edge.node.frontmatter.title.toLowerCase().indexOf(phrase) > -1)
+    const edges = this.state.originalEdges.filter(
+      edge => edge.node.frontmatter.title.toLowerCase().indexOf(phrase) > -1
+    )
     this.setState({
       edges: edges,
       phrase: phrase,
@@ -76,22 +84,35 @@ class Posts extends Component {
   toggleSearching = () => {
     const searching = this.state.phrase.length > 0 || this.searching
     this.setState({
-      searching: searching
+      searching: searching,
     })
   }
 
   results = () => {
     const results = this.state.edges.length
-    if (!this.state.searching) return <span className="result">{results} results.</span>
+    if (!this.state.searching)
+      return <span className="result">{results} results.</span>
     if (results === 0) {
-      return <span role="img" aria-label="pensive">😞<span className="result">Nope. Nothing.</span></span>
+      return (
+        <span role="img" aria-label="pensive">
+          😞<span className="result">Nope. Nothing.</span>
+        </span>
+      )
     }
 
     if (results === 1) {
-      return <span role="img" aria-label="smiling">😊<span className="result">1 result.</span></span>
+      return (
+        <span role="img" aria-label="smiling">
+          😊<span className="result">1 result.</span>
+        </span>
+      )
     }
 
-    return <span role="img" aria-label="tada">🎉<span className="result">{results} results.</span></span>
+    return (
+      <span role="img" aria-label="tada">
+        🎉<span className="result">{results} results.</span>
+      </span>
+    )
   }
 
   render() {
@@ -99,21 +120,39 @@ class Posts extends Component {
     return (
       <div className="posts-container">
         <div className="actions">
-          <button className={`button multi-column ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
-            <img src="/static/svgs/grid.svg" alt="Display in a verbose grid." />
+          <button
+            className={`button multi-column ${
+              this.state.layout === "grid" ? "active" : ""
+            }`}
+            onClick={() => this.changeLayout("grid")}
+          >
+            <img src="/svgs/grid.svg" alt="Display in a verbose grid." />
           </button>
-          <button className={`button single-column ${this.state.layout === "grid" ? "active" : ""}`} onClick={() => this.changeLayout("grid")}>
-            <img src="/static/svgs/vertical-list.svg" alt="Display in a verbose list." />
+          <button
+            className={`button single-column ${
+              this.state.layout === "grid" ? "active" : ""
+            }`}
+            onClick={() => this.changeLayout("grid")}
+          >
+            <img
+              src="/svgs/vertical-list.svg"
+              alt="Display in a verbose list."
+            />
           </button>
-          <button className={`button ${this.state.layout === "listing" ? "active" : ""}`} onClick={() => this.changeLayout("listing")}>
-            <img src="/static/svgs/listing.svg" alt="Display in a compact list." />
+          <button
+            className={`button ${
+              this.state.layout === "listing" ? "active" : ""
+            }`}
+            onClick={() => this.changeLayout("listing")}
+          >
+            <img src="/svgs/listing.svg" alt="Display in a compact list." />
           </button>
           <span className={`search ${this.state.searching ? `active` : ``}`}>
             <button className="button search-btn">
-              <img src="/static/svgs/search.svg" alt="Search" />
+              <img src="/svgs/search.svg" alt="Search" />
             </button>
             <button className={`button reset-btn`} onClick={this.reset}>
-              <img src="/static/svgs/close.svg" alt="Start over" />
+              <img src="/svgs/close.svg" alt="Start over" />
             </button>
             <input
               className="search-bar"
