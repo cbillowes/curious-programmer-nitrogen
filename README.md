@@ -13,9 +13,9 @@ I got started by cloning [Gatsby default starter](https://github.com/gatsbyjs/ga
 
 ### 🤔 **Curious?**
 
-* [What's inside](/docs/structure.md)
-* [Features](/docs/features.md)
-* [Build](/docs/build.md)
+- [What's inside](/docs/structure.md)
+- [Features](/docs/features.md)
+- [Build](/docs/build.md)
 
 ### 🚀 **Getting started.**
 
@@ -33,7 +33,21 @@ I got started by cloning [Gatsby default starter](https://github.com/gatsbyjs/ga
     npm install
     ```
 
-3.  **Run the website.**
+3.  **Run optimizations**
+
+    [SVGO](https://github.com/svg/svgo) is a SVG Optimizer is a Nodejs-based tool for optimizing SVG vector graphics files.
+    Images in the `src/images/svgs` directory will be optimized.
+
+    ```bash
+    npm install -g svgo # may need sudo
+    npm run optimize
+    git add . # only the svg files
+    git commit
+    ```
+
+    **Note:** `npm run develop` will automatically optimize SVGs.
+
+4.  **Run the website.**
 
     ```bash
     npm run develop
@@ -41,23 +55,22 @@ I got started by cloning [Gatsby default starter](https://github.com/gatsbyjs/ga
     # http://localhost:8000
     ```
 
-4.  **Run the tests.**
+5.  **Run the tests.**
 
     ```bash
     # This will automatically execute tests when code is changed.
     npm run test:watch
     ```
 
-5.  **Run storybook.**
+6.  **Run storybook.**
     Run the component explorer called [Storybook](https://storybook.js.org/).
 
     ```bash
     npm run storybook
     ```
 
-6.  **Query GraphQL data.**
-    Open [http://localhost:8000/_graphQL](http://localhost:8000/_graphQL) to query the website's GraphQL data.
-
+7.  **Query GraphQL data.**
+    Open [http://localhost:8000/\_graphQL](http://localhost:8000/_graphQL) to query the website's GraphQL data.
 
 ### 💫 **Deploy.**
 

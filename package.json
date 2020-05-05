@@ -76,8 +76,8 @@
   "license": "MIT",
   "scripts": {
     "build": "gatsby build",
-    "develop": "gatsby develop --verbose",
-    "production": "gatsby build && gatsby serve",
+    "develop": "npm run optimize && gatsby develop --verbose",
+    "optimize": "svgo -r ./src",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
