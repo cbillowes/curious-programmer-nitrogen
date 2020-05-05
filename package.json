@@ -77,7 +77,7 @@
   "scripts": {
     "build": "gatsby build",
     "develop": "npm run optimize && gatsby develop --verbose",
-    "optimize": "svgo -r ./src",
+    "optimize": "svgo -r ./src ./content/posts",
     "format": "prettier --write \"**/*.{js,jsx,json,md}\"",
     "start": "npm run develop",
     "serve": "gatsby serve",
