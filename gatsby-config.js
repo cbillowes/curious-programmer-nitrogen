@@ -61,12 +61,21 @@ module.exports = {
             resolve: `gatsby-remark-interactive-gifs`,
             options: {
               root: `${__dirname}`,
-              src: `${__dirname}/src/images/gifs`,
-              dest: `${__dirname}/public/static/gifs`,
-              play: `${__dirname}/src/images/play.gif`,
-              placeholder: `${__dirname}/src/images/placeholder.gif`,
-              loading: `${__dirname}/src/images/loading.gif`,
-              relativePath: `/static/gifs`,
+              src: `${__dirname}/src/images/interactive-gifs`,
+              dest: `${__dirname}/public/gifs`,
+              play: `${__dirname}/src/images/gifs/play.gif`,
+              placeholder: `${__dirname}/src/images/gifs/placeholder.gif`,
+              loading: `${__dirname}/src/images/gifs/loading.gif`,
+              relativePath: `/gifs`,
+            },
+          },
+          {
+            resolve: `gatsby-remark-images`,
+            options: {
+              // It's important to specify the maxWidth (in pixels) of
+              // the content container as this plugin uses this as the
+              // base for generating different widths of each image.
+              maxWidth: 960,
             },
           },
           {

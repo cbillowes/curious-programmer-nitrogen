@@ -27,7 +27,9 @@ exports.onCreateNode = ({ node, actions, reporter }) => {
   }
 
   if (node.internal.type === `File`) {
-    image.process(node.absolutePath, reporter)
+    const src = node.absolutePath
+    image.process(src, reporter)
+    image.toStatic(src, node.internal.mediaType, reporter)
   }
 }
 

@@ -9,6 +9,9 @@ const socialMediaQuality = 60
 const heroQuality = 50
 const thumbnailQuality = 80
 
+const destGifs = path.join(__dirname, `../`, `/public/gifs`)
+const destSvgs = path.join(__dirname, `../`, `/public/svgs`)
+
 /**
  * Keeps a copy of an optimized original image.
  * @param {string} src
@@ -149,8 +152,25 @@ module.exports.process = (src, reporter) => {
   }
 }
 
+module.exports.toStatic = (src, mediaType, reporter) => {
+  if (mediaType === `image/gif` || mediaType === `image/svg+xml`) {
+    const destPath = mediaType === `image/gif` ? destGifs : destSvgs
+    const dest = path.join(destPath, path.basename(src))
+
+    mkdir(destPath)
+    fs.copyFile(src, dest, err => {
+      const message = `${mediaType}: ${src} -> ${dest}`
+      if (err) {
+        reporter.error(`${message}\n${err}`)
+      } else {
+        reporter.verbose(message)
+      }
+    })
+  }
+}
+
 const mkdir = path => {
-  fs.existsSync(path) || fs.mkdirSync(path)
+  fs.existsSync(path) || fs.mkdirSync(path, { recursive: true })
 }
 
 const getDest = (src, dest, suffix) => {
