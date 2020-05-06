@@ -1,21 +1,25 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageTwoPeoplePlanningAtATable = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "two-people-planning-at-a-table.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 960) {
+const TwoPeoplePlanningAtATable = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: allImageSharp(
+        filter: { fluid: { originalName: { eq: "two-people-planning-at-a-table.jpg" } } }
+      ) {
+        edges {
+          node {
+            fluid {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
-    `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
-export default ImageTwoPeoplePlanningAtATable
+    }
+  `)
+
+  return <Img fluid={data.placeholderImage.edges[0].node.fluid} />
+}
+
+export default TwoPeoplePlanningAtATable

@@ -1,21 +1,25 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageGit = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "git.png" }) {
-          childImageSharp {
-            fluid(maxWidth: 960) {
+const Git = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: allImageSharp(
+        filter: { fluid: { originalName: { eq: "git.png" } } }
+      ) {
+        edges {
+          node {
+            fluid {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
-    `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
-export default ImageGit
+    }
+  `)
+
+  return <Img fluid={data.placeholderImage.edges[0].node.fluid} />
+}
+
+export default Git

@@ -1,21 +1,25 @@
 import React from "react"
-import { StaticQuery, graphql } from "gatsby"
+import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const ImageKibana = () => (
-  <StaticQuery
-    query={graphql`
-      query {
-        file(relativePath: { eq: "kibana.jpg" }) {
-          childImageSharp {
-            fluid(maxWidth: 960) {
+const Kibana = () => {
+  const data = useStaticQuery(graphql`
+    query {
+      placeholderImage: allImageSharp(
+        filter: { fluid: { originalName: { eq: "kibana.jpg" } } }
+      ) {
+        edges {
+          node {
+            fluid {
               ...GatsbyImageSharpFluid
             }
           }
         }
       }
-    `}
-    render={data => <Img fluid={data.placeholderImage.childImageSharp.fluid} />}
-  />
-)
-export default ImageKibana
+    }
+  `)
+
+  return <Img fluid={data.placeholderImage.edges[0].node.fluid} />
+}
+
+export default Kibana
