@@ -58,8 +58,14 @@ function PostPreview({
     <>
       <section className="post preview">
         <Number number={number} />
-        <Thumbnail to={slug} display="landscape" number={number} photo={photo} credit={credit} creditSource={creditSource} creditLink={creditLink} />
-        <Thumbnail to={slug} display="square" number={number} photo={photo} credit={credit} creditSource={creditSource} creditLink={creditLink} />
+        <Thumbnail
+          to={slug}
+          number={number}
+          photo={photo}
+          credit={credit}
+          creditSource={creditSource}
+          creditLink={creditLink}
+        />
         <Heading slug={slug}>{title}</Heading>
         <Body wordLimit={wordLimit}>{children}</Body>
         <Metadata date={date} author={author} ttr={ttr} />
