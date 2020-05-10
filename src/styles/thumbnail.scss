@@ -3,18 +3,18 @@
 .thumbnail {
   position: relative;
 
-  a.link {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
+  .slug {
+    padding: 0;
+    line-height: 0;
+    font-size: 0;
 
-    &:hover {
-      background-color: transparent;
+    .gatsby-image-wrapper {
+      height: 350px;
     }
   }
+}
 
+.thumbnail {
   .badge {
     font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
     font-size: 12px;
@@ -30,24 +30,14 @@
     position: absolute;
     bottom: 15px;
 
-    &.stagnant {
-      cursor: default;
+    cursor: pointer;
 
-      &:hover {
-        text-shadow: none;
-      }
-    }
+    &:hover {
+      background-color: $primary;
+      color: $darkest;
 
-    &.clickable {
-      cursor: pointer;
-
-      &:hover {
-        background-color: $primary;
-        color: $darkest;
-
-        .source-logo img {
-          filter: none;
-        }
+      .source-logo img {
+        filter: none;
       }
     }
 
@@ -66,9 +56,17 @@
       display: "inline-block";
       padding: "2px 3px";
     }
-  }
 
-  &.square .badge {
-    position: relative;
+    &.square .badge {
+      position: relative;
+    }
+
+    &.stagnant {
+      cursor: default;
+
+      &:hover {
+        text-shadow: none;
+      }
+    }
   }
 }

@@ -39,36 +39,33 @@ const Heading = ({ children, slug }) => {
   )
 }
 
-function PostPreview({
-  title,
-  slug,
-  tags,
-  date,
-  author,
-  ttr,
-  number,
-  wordLimit,
-  photo,
-  credit,
-  creditSource,
-  creditLink,
-  children,
-}) {
+function PostPreview({ wordLimit, edge, children }) {
+  const author = `Clarice Bouwer`
+  const { timeToRead } = edge
+  const { slug, date, number } = edge.fields
+  const {
+    title,
+    tags,
+    photo,
+    credit,
+    creditSource,
+    creditLink,
+  } = edge.frontmatter
   return (
     <>
       <section className="post preview">
         <Number number={number} />
         <Thumbnail
-          to={slug}
           number={number}
+          to={slug}
           photo={photo}
           credit={credit}
-          creditSource={creditSource}
-          creditLink={creditLink}
+          source={creditSource}
+          link={creditLink}
         />
         <Heading slug={slug}>{title}</Heading>
         <Body wordLimit={wordLimit}>{children}</Body>
-        <Metadata date={date} author={author} ttr={ttr} />
+        <Metadata date={date} author={author} timeToRead={timeToRead} />
         <Tags tags={tags} />
       </section>
     </>
@@ -76,18 +73,8 @@ function PostPreview({
 }
 
 PostPreview.propTypes = {
-  title: PropTypes.string.isRequired,
-  slug: PropTypes.string.isRequired,
-  date: PropTypes.string.isRequired,
-  author: PropTypes.string.isRequired,
-  ttr: PropTypes.number.isRequired,
-  children: PropTypes.node.isRequired,
-  number: PropTypes.number.isRequired,
-  tags: PropTypes.array,
-  wordLimit: PropTypes.number,
-  photo: PropTypes.string,
-  credit: PropTypes.string,
-  creditLink: PropTypes.string,
+  edge: PropTypes.object.isRequired,
+  html: PropTypes.node.isRequired,
 }
 
 export default PostPreview

@@ -9,33 +9,10 @@ const Listing = ({ edges, wordLimit }) => {
   if (!edges || edges.length === 0) return <div>{Lang.posts.none}</div>
 
   return edges.map(edge => {
-    const { timeToRead, html } = edge.node
-    const { slug, date, number } = edge.node.fields
-    const {
-      title,
-      photo,
-      credit,
-      creditSource,
-      creditLink,
-      tags,
-    } = edge.node.frontmatter
-    const author = "Clarice Bouwer"
+    const { html } = edge.node
+    const { slug } = edge.node.fields
     return (
-      <PostPreview
-        key={slug}
-        wordLimit={wordLimit}
-        title={title}
-        slug={slug}
-        tags={tags}
-        author={author}
-        date={date}
-        ttr={timeToRead}
-        number={number}
-        photo={photo}
-        credit={credit}
-        creditSource={creditSource}
-        creditLink={creditLink}
-      >
+      <PostPreview key={slug} wordLimit={wordLimit} edge={edge.node}>
         {html}
       </PostPreview>
     )

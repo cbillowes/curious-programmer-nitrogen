@@ -5,7 +5,7 @@ const sharp = require("sharp")
 
 const rawSrc = `src/images/raw`
 const rawDest = `src/images/root`
-const rawQuality = 80
+const rawQuality = 95
 const socialMediaQuality = 60
 const socialMediaDest = `src/images/social-media`
 

@@ -1,3 +1,4 @@
+import path from "path"
 import React from "react"
 import PropTypes from "prop-types"
 import Anchor from "./anchor"
@@ -66,77 +67,89 @@ const thumbnails = [
   },
 ]
 
-// const getCredit = ({
-//   number,
-//   photo,
-//   credit,
-//   creditSource,
-//   creditLink,
-//   display,
-// }) => {
-//   const directory = display === `landscape` ? `banners` : `thumbnails`
-//   const defaultThumbnail = getDefaultThumbnail(number)
-//   const filename = photo || defaultThumbnail.photo
-//   return {
-//     photo: `/static/${directory}/${filename}`,
-//     attribute: photo ? credit : defaultThumbnail.credit,
-//     source: photo ? creditSource : defaultThumbnail.source,
-//     link: photo ? creditLink : defaultThumbnail.link,
-//   }
-// }
+const getBadgeTitle = (source, attribute) => {
+  if (!attribute) return ``
 
-// const getBadgeTitle = (source, attribute) => {
-//   if (!attribute) return ``
+  if (source && source.toLowerCase() === `unsplash`)
+    return `Download free do whatever you want high-resolution photos from ${attribute}`
 
-//   if (source === `unsplash`)
-//     return `Download free do whatever you want high-resolution photos from ${attribute}`
+  return `Image by ${attribute} @ ${source}`
+}
 
-//   return `Image by ${attribute} @ ${source}`
-// }
+const getBadgeLogo = source => {
+  if (source === `unsplash`) return `/svgs/unsplash.svg`
+  return `/svgs/download.svg`
+}
 
-// const getSourceLogo = source => {
-//   if (source === `unsplash`) return `/static/svgs/unsplash.svg`
-//   return `/static/svgs/download.svg`
-// }
+const Badge = ({ credit, source, link }) => {
+  const title = getBadgeTitle(source, credit)
+  const logo = getBadgeLogo(source)
 
-// const Badge = ({ source, attribute, link }) => {
-//   const title = getBadgeTitle(source, attribute)
-//   return (
-//     <a
-//       className={`badge ${link ? "clickable" : "stagnant"}`}
-//       title={title}
-//       href={link}
-//       target="_blank"
-//       rel="noopener noreferrer"
-//     >
-//       <span className="source-logo">
-//         <img src={getSourceLogo(source)} alt={source} />
-//       </span>
-//       <span className="attribute">{attribute}</span>
-//     </a>
-//   )
-// }
+  return (
+    <Anchor className={`badge ${link ? `linked` : `stagnant`}`} title={title}>
+      <span className="source-logo">
+        <img src={logo} alt={source} />
+      </span>
+      <span className="attribute">{credit}</span>
+    </Anchor>
+  )
+}
 
-// const Link = ({ to }) => {
-//   return to ? <Anchor to={to} className="link" /> : <></>
-// }
-
-const Image = photo => {
-  return require(`./images/${photo}`).default()
+const Link = ({ to, children }) => {
+  return (
+    <Anchor to={to} className="slug">
+      {children}
+    </Anchor>
+  )
 }
 
 const Thumbnail = props => {
-  // return <Image photo={props.photo} />
-  return <div>{props.photo}</div>
+  const { to } = props
+  const credits = getCreditOrDefaultProps(props)
+  return (
+    <div className="thumbnail">
+      <Link to={to}>{credits.component}</Link>
+      <Badge {...credits} />
+    </div>
+  )
+}
+
+const renderCreditThumbnail = filename => {
+  const componentName = filename.replace(path.extname(filename), ``)
+  return require(`./images/${componentName}`).default()
+}
+
+const getDefaultCreditPropByNumber = number => {
+  return thumbnails[number % (thumbnails.length - 1)]
+}
+
+const getCreditOrDefaultProps = props => {
+  try {
+    if (props.photo) {
+      return Object.assign({}, props, {
+        component: renderCreditThumbnail(props.photo),
+      })
+    } else {
+      const prop = getDefaultCreditPropByNumber(props.number)
+      return Object.assign({}, prop, {
+        component: renderCreditThumbnail(prop.photo),
+      })
+    }
+  } catch (e) {
+    const prop = thumbnails[0]
+    return Object.assign({}, prop, {
+      component: renderCreditThumbnail(prop.photo),
+    })
+  }
 }
 
 Thumbnail.propTypes = {
-  number: PropTypes.number.isRequired,
+  number: PropTypes.number,
   to: PropTypes.string,
   photo: PropTypes.string,
   credit: PropTypes.string,
-  creditLink: PropTypes.string,
-  creditSource: PropTypes.string,
+  source: PropTypes.string,
+  link: PropTypes.string,
 }
 
 export default Thumbnail

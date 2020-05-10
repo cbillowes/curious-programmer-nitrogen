@@ -4,7 +4,7 @@ import { Link } from "gatsby"
 import "../styles/anchor.scss"
 
 function isExternalLink(url) {
-  return url.startsWith(`http`) || url.startsWith(`mailto:`)
+  return url && (url.startsWith(`http`) || url.startsWith(`mailto:`))
 }
 
 const ExternalLink = ({ to, title, className, children, ...props }) => {
