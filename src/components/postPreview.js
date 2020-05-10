@@ -17,11 +17,11 @@ const Body = ({ children, wordLimit }) => {
   )
 }
 
-const Metadata = ({ date, author, ttr }) => {
+const Metadata = ({ date, author, timeToRead }) => {
   return (
     <>
       <div className="metadata">
-        <PostMetadata date={date} author={author} ttr={ttr} />
+        <PostMetadata date={date} author={author} timeToRead={timeToRead} />
       </div>
     </>
   )

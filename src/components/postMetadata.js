@@ -19,7 +19,7 @@ function renderDate(date) {
   )
 }
 
-function PostMetadata({ date, author, ttr }) {
+function PostMetadata({ date, author, timeToRead }) {
   moment.updateLocale(Lang.locale)
   return (
     <>
@@ -30,7 +30,7 @@ function PostMetadata({ date, author, ttr }) {
         {` `}
         <span>{metadata.author(author)}</span>
         {` `}
-        <span>{metadata.ttr(ttr)}</span>
+        <span>{metadata.ttr(timeToRead)}</span>
       </div>
     </>
   )
@@ -38,7 +38,7 @@ function PostMetadata({ date, author, ttr }) {
 
 PostMetadata.propTypes = {
   date: PropTypes.string.isRequired,
-  ttr: PropTypes.number.isRequired,
+  timeToRead: PropTypes.number.isRequired,
   author: PropTypes.string,
 }
 
