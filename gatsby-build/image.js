@@ -5,13 +5,15 @@ const sharp = require("sharp")
 
 const rawSrc = `src/images/raw`
 const rawDest = `src/images/root`
-const rawQuality = 95
-const socialMediaQuality = 60
-const socialMediaDest = `src/images/social-media`
+const rawQuality = 100
 
 const imgTemplateSrc = path.join(__dirname, `img.jsx.template`)
+const socialMediaQuality = 80
+const socialMediaSrc = path.join(__dirname, `../src/images/root`)
+const socialMediaDest = path.join(__dirname, `../public/social-media`)
 const gifsDest = path.join(__dirname, `../`, `/public/gifs`)
 const svgsDest = path.join(__dirname, `../`, `/public/svgs`)
+const staticDest = path.join(__dirname, `../public`)
 const componentsDest = path.join(__dirname, `../`, `/src/components/images/`)
 
 let processed = []
@@ -121,11 +123,6 @@ const unlink = async src => {
   })
 }
 
-const errorMessage = (action, src, dest) => {
-  const rel = path.relative(dest, src)
-  return `${action}: ${rel}${src} -> ${rel}${dest}`
-}
-
 module.exports.process = (src, reporter) => {
   if (src.indexOf(rawSrc) >= 0) {
     if (processed.indexOf(src) >= 0)
@@ -145,8 +142,12 @@ module.exports.process = (src, reporter) => {
 }
 
 module.exports.toStatic = (src, mediaType, reporter) => {
-  if (mediaType === `image/gif` || mediaType === `image/svg+xml`) {
-    const destPath = mediaType === `image/gif` ? gifsDest : svgsDest
+  if (
+    mediaType === `image/gif` ||
+    mediaType === `image/svg+xml` ||
+    src.indexOf(socialMediaSrc) > -1
+  ) {
+    const destPath = getStaticDirectory(mediaType, src)
     const dest = path.join(destPath, path.basename(src))
 
     mkdir(destPath)
@@ -159,6 +160,13 @@ module.exports.toStatic = (src, mediaType, reporter) => {
       }
     })
   }
+}
+
+const getStaticDirectory = (mediaType, src) => {
+  if (mediaType === `image/gif`) return gifsDest
+  if (mediaType === `img/svg+xml`) return svgsDest
+  if (src.indexOf(socialMediaSrc) > -1) return socialMediaDest
+  return staticDest
 }
 
 const mkdir = path => {
