@@ -10,13 +10,12 @@ const rawQuality = 100
 const imgTemplateSrc = path.join(__dirname, `img.jsx.template`)
 const socialMediaQuality = 80
 const socialMediaSrc = path.join(__dirname, `../src/images/root`)
-const socialMediaDest = path.join(__dirname, `../public/social-media`)
+const socialMediaRootDest = path.join(__dirname, `../src/images/social-media`)
 const gifsDest = path.join(__dirname, `../`, `/public/gifs`)
 const svgsDest = path.join(__dirname, `../`, `/public/svgs`)
+const socialMediaDest = path.join(__dirname, `../`, `/public/social-media`)
 const staticDest = path.join(__dirname, `../public`)
 const componentsDest = path.join(__dirname, `../`, `/src/components/images/`)
-
-let processed = []
 
 /**
  * Keeps a copy of an optimized original image that has been resized to ensure uniformity.
@@ -50,10 +49,10 @@ const toRoot = src => {
  * @param {string} src
  */
 const toSocialMedia = src => {
-  const dest = getDest(src, socialMediaDest)
+  const dest = getDest(src, socialMediaRootDest)
   const quality = socialMediaQuality
   const dimensions = { width: 800, height: 800 }
-  mkdir(socialMediaDest)
+  mkdir(socialMediaRootDest)
   sharp(src)
     .jpeg({ quality })
     .png({ quality })
@@ -125,9 +124,6 @@ const unlink = async src => {
 
 module.exports.process = (src, reporter) => {
   if (src.indexOf(rawSrc) >= 0) {
-    if (processed.indexOf(src) >= 0)
-      throw Error("son of a gun this shit was already processed! " + src)
-
     const fns = [toRoot, toSocialMedia, toComponent]
     let promise = Promise.resolve()
 
@@ -145,7 +141,7 @@ module.exports.toStatic = (src, mediaType, reporter) => {
   if (
     mediaType === `image/gif` ||
     mediaType === `image/svg+xml` ||
-    src.indexOf(socialMediaSrc) > -1
+    src.indexOf(socialMediaRootDest) > -1
   ) {
     const destPath = getStaticDirectory(mediaType, src)
     const dest = path.join(destPath, path.basename(src))
@@ -165,7 +161,7 @@ module.exports.toStatic = (src, mediaType, reporter) => {
 const getStaticDirectory = (mediaType, src) => {
   if (mediaType === `image/gif`) return gifsDest
   if (mediaType === `img/svg+xml`) return svgsDest
-  if (src.indexOf(socialMediaSrc) > -1) return socialMediaDest
+  if (src.indexOf(socialMediaRootDest) > -1) return socialMediaDest
   return staticDest
 }
 
