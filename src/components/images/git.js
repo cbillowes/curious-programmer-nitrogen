@@ -6,7 +6,7 @@ const Git = () => {
   const data = useStaticQuery(graphql`
     query {
       placeholderImage: allImageSharp(
-        filter: { fluid: { originalName: { eq: "git.png" } } }
+        filter: { fluid: { originalName: { eq: "git.jpg" } } }
       ) {
         edges {
           node {

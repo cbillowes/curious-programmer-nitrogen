@@ -1,10 +1,10 @@
 ---
 title: Git aliases
 date: 2019-09-02 03:00:00 +0200
-photo: git.png
-credit: aotoki
-creditLink: https://wall.alphacoders.com/big.php?i=985805
-creditSource: alphacoders
+photo: git.jpg
+credit: git-scm
+creditLink: https://git-scm.com/downloads/logos
+creditSource: git-scm.com
 tags:
   - Technical
   - Git

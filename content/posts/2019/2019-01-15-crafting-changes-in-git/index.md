@@ -1,10 +1,10 @@
 ---
 title: How To Craft Your Changes Into Small Atomic Commits Using Git
 date: 2019-01-15 22:30:00 +0200
-photo: git.png
-credit: aotoki
-creditLink: https://wall.alphacoders.com/big.php?i=985805
-creditSource: alphacoders
+photo: git.jpg
+credit: git-scm
+creditLink: https://git-scm.com/downloads/logos
+creditSource: git-scm.com
 tags:
   - Technical
   - Git
