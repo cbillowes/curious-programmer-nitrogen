@@ -5,6 +5,7 @@
  * See: https://www.gatsbyjs.org/docs/use-static-query/
  */
 
+import _ from "lodash"
 import React from "react"
 import Helmet from "react-helmet"
 import PropTypes from "prop-types"
@@ -19,10 +20,6 @@ const getPageDescription = (description, siteMetadata) => {
   return getContent(30, pageDescription)
 }
 
-const getAuthor = siteMetadata => {
-  return siteMetadata.author || ``
-}
-
 const getImage = (image, siteMetadata) => {
   const url = siteMetadata.siteUrl
   const share = image || siteMetadata.image
@@ -35,6 +32,7 @@ const SEO = ({ title, type, crawl, siteMetadata, image, children }) => {
   const pageTitle = getPageTitle(title, metadata)
   const pageDescription = getPageDescription(children, metadata)
   const pageImage = getImage(image, metadata)
+  const pageUrl = `${metadata.title}${_.kebabCase(title)}`
   return (
     <Helmet>
       <title>{pageTitle}</title>
@@ -61,6 +59,7 @@ const SEO = ({ title, type, crawl, siteMetadata, image, children }) => {
       <meta property="twitter:title" content={pageTitle} />
       <meta property="twitter:description" content={pageDescription} />
       <meta property="twitter:image" content={pageImage} />
+      <link rel="canonical" href={pageUrl} />
     </Helmet>
   )
 }
