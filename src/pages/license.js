@@ -14,6 +14,7 @@ export default () => {
             author
             siteUrl
             image
+            brand
           }
         }
       }
@@ -22,7 +23,12 @@ export default () => {
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO title="License" crawl={false} siteMetadata={siteMetadata} />
+      <SEO
+        title="License"
+        type="website"
+        crawl={false}
+        siteMetadata={siteMetadata}
+      />
       <LicensePage />
     </>
   )

@@ -14,6 +14,7 @@ export default () => {
             author
             siteUrl
             image
+            brand
           }
         }
         allMarkdownRemark(
@@ -47,7 +48,12 @@ export default () => {
   const edges = data.allMarkdownRemark.edges
   return (
     <>
-      <SEO title="Archives" crawl={false} siteMetadata={siteMetadata} />
+      <SEO
+        title="Archives"
+        type="website"
+        crawl={false}
+        siteMetadata={siteMetadata}
+      />
       <ArchivesPage edges={edges} />
     </>
   )

@@ -1,10 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `Curious Programmer: A curious place for a curious mind.`,
+    brand: `Curious Programmer`,
+    title: `A curious place for a curious mind.`,
+    description: `I share thoughts. I share ideas. I share knowledge. This is my blog as a curious programmer.`,
     siteUrl: `https://curiousprogrammer.dev`,
-    description: `A curious place for a curious mind.`,
     author: `Clarice Bouwer`,
-    twitter: `@cbillowes`,
+    handle: `@cbillowes`,
     image: `/social-media/curiousprogrammer.dev.png`,
     lang: "en-US",
   },

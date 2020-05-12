@@ -105,19 +105,19 @@ describe(`SEO`, () => {
 
   it(`should set the author`, () => {
     const author = `Douglas Adams`
-    const twitter = `@dadams`
+    const handle = `@dadams`
     const component = (
       <SEO
         siteMetadata={{
           author,
-          twitter,
+          handle,
         }}
       />
     )
     const wrapper = getWrapper(component)
-    expect(
-      wrapper.find(`meta[property="twitter:author"]`).props().content
-    ).toBe(twitter)
+    expect(wrapper.find(`meta[property="twitter:site"]`).props().content).toBe(
+      handle
+    )
   })
 
   it(`should set the image from siteMetadata`, () => {
@@ -142,14 +142,12 @@ describe(`SEO`, () => {
 
   it(`should set the image from post`, () => {
     const image = `/static/post.jpg`
-    const component = (
-      <SEO
-        image={image}
-      />
-    )
+    const component = <SEO image={image} />
     const wrapper = getWrapper(component)
     expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(``)
-    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(``)
+    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(
+      ``
+    )
   })
 
   it(`should render static metadata`, () => {
@@ -165,7 +163,7 @@ describe(`SEO`, () => {
     )
     const wrapper = getWrapper(component)
     expect(wrapper.find(`meta[property="og:type"]`).props().content).toBe(
-      `website`
+      `summary`
     )
     expect(wrapper.find(`meta[property="twitter:card"]`).props().content).toBe(
       `summary`

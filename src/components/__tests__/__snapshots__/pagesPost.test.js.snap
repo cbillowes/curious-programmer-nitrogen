@@ -16,12 +16,8 @@ Array [
         >
            
           <a
-            aria-current="page"
             className="full"
             href="/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            style={Object {}}
             title="Curious Programmer"
           >
             <strong>
@@ -39,12 +35,8 @@ Array [
            
            
           <a
-            aria-current="page"
             className="partial"
             href="/"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
-            style={Object {}}
             title="Curious Programmer"
           >
             <strong>
@@ -85,8 +77,6 @@ Array [
             <a
               className="menu-item"
               href="/blog"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               Blog
             </a>
@@ -95,8 +85,6 @@ Array [
             <a
               className="menu-item"
               href="/about"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               About
             </a>
@@ -105,8 +93,6 @@ Array [
             <a
               className="menu-item"
               href="/archives"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               Archives
             </a>
@@ -115,8 +101,6 @@ Array [
             <a
               className="menu-item"
               href="/tags"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               Tags
             </a>
@@ -125,8 +109,6 @@ Array [
             <a
               className="menu-item"
               href="/credits"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               Credits & Resources
             </a>
@@ -135,8 +117,6 @@ Array [
             <a
               className="menu-item"
               href="/license"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
             >
               License
             </a>
@@ -189,8 +169,6 @@ Array [
             <a
               className="nav-link"
               href="/blog/advanced-git-commands"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="Advanced Git commands"
             >
               <span
@@ -212,8 +190,6 @@ Array [
             <a
               className="nav-link"
               href="/blog/advanced-git-commands"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="Advanced Git commands"
             >
               <span
@@ -268,7 +244,7 @@ Array [
               </span>
                
               <span>
-                (Est. 42 minute read)
+                
               </span>
             </div>
             <div
@@ -278,8 +254,6 @@ Array [
               <a
                 className="tag"
                 href="/tag/display/"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
                 title="display"
               >
                 display
@@ -289,8 +263,6 @@ Array [
               <a
                 className="tag"
                 href="/tag/example/"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
                 title="example"
               >
                 example
@@ -300,8 +272,6 @@ Array [
               <a
                 className="tag"
                 href="/tag/post/"
-                onClick={[Function]}
-                onMouseEnter={[Function]}
                 title="post"
               >
                 post
@@ -331,8 +301,6 @@ Array [
       <a
         className="nav-link"
         href="/blog/advanced-git-commands"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Advanced Git commands"
       >
         <h1>
@@ -365,7 +333,7 @@ Array [
           </span>
            
           <span>
-            (Est. 1 minute read)
+            
           </span>
         </div>
       </a>
@@ -377,8 +345,6 @@ Array [
         <a
           className="tag"
           href="/tag/advanced/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Advanced"
         >
           advanced
@@ -388,8 +354,6 @@ Array [
         <a
           className="tag"
           href="/tag/commands/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Commands"
         >
           commands
@@ -399,8 +363,6 @@ Array [
         <a
           className="tag"
           href="/tag/git/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Git"
         >
           git
@@ -410,8 +372,6 @@ Array [
         <a
           className="tag"
           href="/tag/technical/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Technical"
         >
           technical
@@ -426,8 +386,6 @@ Array [
       <a
         className="nav-link"
         href="/blog/advanced-git-commands"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Advanced Git commands"
       >
         <h1>
@@ -460,7 +418,7 @@ Array [
           </span>
            
           <span>
-            (Est. 1 minute read)
+            
           </span>
         </div>
       </a>
@@ -472,8 +430,6 @@ Array [
         <a
           className="tag"
           href="/tag/advanced/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Advanced"
         >
           advanced
@@ -483,8 +439,6 @@ Array [
         <a
           className="tag"
           href="/tag/commands/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Commands"
         >
           commands
@@ -494,8 +448,6 @@ Array [
         <a
           className="tag"
           href="/tag/git/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Git"
         >
           git
@@ -505,8 +457,6 @@ Array [
         <a
           className="tag"
           href="/tag/technical/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="Technical"
         >
           technical
@@ -541,8 +491,6 @@ Array [
       <a
         className="underline-only"
         href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         cool stuff
       </a>
@@ -579,8 +527,6 @@ Array [
           <a
             className="underline-only"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Clarice Bouwer
           </a>
@@ -602,8 +548,6 @@ Array [
           <a
             className="underline-only"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             license
           </a>

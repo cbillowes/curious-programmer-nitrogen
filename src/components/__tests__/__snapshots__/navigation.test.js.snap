@@ -34,8 +34,6 @@ Array [
       <a
         className="menu-item"
         href="/blog"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Blog
       </a>
@@ -44,8 +42,6 @@ Array [
       <a
         className="menu-item"
         href="/about"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         About
       </a>
@@ -54,8 +50,6 @@ Array [
       <a
         className="menu-item"
         href="/archives"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Archives
       </a>
@@ -64,8 +58,6 @@ Array [
       <a
         className="menu-item"
         href="/tags"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Tags
       </a>
@@ -74,8 +66,6 @@ Array [
       <a
         className="menu-item"
         href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Credits & Resources
       </a>
@@ -84,8 +74,6 @@ Array [
       <a
         className="menu-item"
         href="/license"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         License
       </a>
@@ -159,8 +147,6 @@ Array [
       <a
         className="menu-item"
         href="/blog"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Blog
       </a>
@@ -169,8 +155,6 @@ Array [
       <a
         className="menu-item"
         href="/about"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         About
       </a>
@@ -179,8 +163,6 @@ Array [
       <a
         className="menu-item"
         href="/archives"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Archives
       </a>
@@ -189,8 +171,6 @@ Array [
       <a
         className="menu-item"
         href="/tags"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Tags
       </a>
@@ -199,8 +179,6 @@ Array [
       <a
         className="menu-item"
         href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         Credits & Resources
       </a>
@@ -209,8 +187,6 @@ Array [
       <a
         className="menu-item"
         href="/license"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         License
       </a>

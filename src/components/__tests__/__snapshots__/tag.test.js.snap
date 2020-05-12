@@ -39,8 +39,6 @@ Array [
   <a
     className="tag"
     href="/tag/technical"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
     title="Technical"
   >
     technical

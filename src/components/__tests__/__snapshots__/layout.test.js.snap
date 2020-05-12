@@ -15,12 +15,8 @@ exports[`Layout should not render the footer 1`] = `
       >
          
         <a
-          aria-current="page"
           className="full"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -38,12 +34,8 @@ exports[`Layout should not render the footer 1`] = `
          
          
         <a
-          aria-current="page"
           className="partial"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -84,8 +76,6 @@ exports[`Layout should not render the footer 1`] = `
           <a
             className="menu-item"
             href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Blog
           </a>
@@ -94,8 +84,6 @@ exports[`Layout should not render the footer 1`] = `
           <a
             className="menu-item"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -104,8 +92,6 @@ exports[`Layout should not render the footer 1`] = `
           <a
             className="menu-item"
             href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Archives
           </a>
@@ -114,8 +100,6 @@ exports[`Layout should not render the footer 1`] = `
           <a
             className="menu-item"
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -124,8 +108,6 @@ exports[`Layout should not render the footer 1`] = `
           <a
             className="menu-item"
             href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Credits & Resources
           </a>
@@ -134,8 +116,6 @@ exports[`Layout should not render the footer 1`] = `
           <a
             className="menu-item"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             License
           </a>
@@ -197,12 +177,8 @@ exports[`Layout should render custom class 1`] = `
       >
          
         <a
-          aria-current="page"
           className="full"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -220,12 +196,8 @@ exports[`Layout should render custom class 1`] = `
          
          
         <a
-          aria-current="page"
           className="partial"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -266,8 +238,6 @@ exports[`Layout should render custom class 1`] = `
           <a
             className="menu-item"
             href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Blog
           </a>
@@ -276,8 +246,6 @@ exports[`Layout should render custom class 1`] = `
           <a
             className="menu-item"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -286,8 +254,6 @@ exports[`Layout should render custom class 1`] = `
           <a
             className="menu-item"
             href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Archives
           </a>
@@ -296,8 +262,6 @@ exports[`Layout should render custom class 1`] = `
           <a
             className="menu-item"
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -306,8 +270,6 @@ exports[`Layout should render custom class 1`] = `
           <a
             className="menu-item"
             href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Credits & Resources
           </a>
@@ -316,8 +278,6 @@ exports[`Layout should render custom class 1`] = `
           <a
             className="menu-item"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             License
           </a>
@@ -379,12 +339,8 @@ exports[`Layout should render page 1`] = `
       >
          
         <a
-          aria-current="page"
           className="full"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -402,12 +358,8 @@ exports[`Layout should render page 1`] = `
          
          
         <a
-          aria-current="page"
           className="partial"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -448,8 +400,6 @@ exports[`Layout should render page 1`] = `
           <a
             className="menu-item"
             href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Blog
           </a>
@@ -458,8 +408,6 @@ exports[`Layout should render page 1`] = `
           <a
             className="menu-item"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -468,8 +416,6 @@ exports[`Layout should render page 1`] = `
           <a
             className="menu-item"
             href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Archives
           </a>
@@ -478,8 +424,6 @@ exports[`Layout should render page 1`] = `
           <a
             className="menu-item"
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -488,8 +432,6 @@ exports[`Layout should render page 1`] = `
           <a
             className="menu-item"
             href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Credits & Resources
           </a>
@@ -498,8 +440,6 @@ exports[`Layout should render page 1`] = `
           <a
             className="menu-item"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             License
           </a>
@@ -561,12 +501,8 @@ exports[`Layout should render reading pane 1`] = `
       >
          
         <a
-          aria-current="page"
           className="full"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -584,12 +520,8 @@ exports[`Layout should render reading pane 1`] = `
          
          
         <a
-          aria-current="page"
           className="partial"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -630,8 +562,6 @@ exports[`Layout should render reading pane 1`] = `
           <a
             className="menu-item"
             href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Blog
           </a>
@@ -640,8 +570,6 @@ exports[`Layout should render reading pane 1`] = `
           <a
             className="menu-item"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -650,8 +578,6 @@ exports[`Layout should render reading pane 1`] = `
           <a
             className="menu-item"
             href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Archives
           </a>
@@ -660,8 +586,6 @@ exports[`Layout should render reading pane 1`] = `
           <a
             className="menu-item"
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -670,8 +594,6 @@ exports[`Layout should render reading pane 1`] = `
           <a
             className="menu-item"
             href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Credits & Resources
           </a>
@@ -680,8 +602,6 @@ exports[`Layout should render reading pane 1`] = `
           <a
             className="menu-item"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             License
           </a>

@@ -27,8 +27,6 @@ exports[`Footer should render 1`] = `
     <a
       className="underline-only"
       href="/credits"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
     >
       cool stuff
     </a>
@@ -65,8 +63,6 @@ exports[`Footer should render 1`] = `
         <a
           className="underline-only"
           href="/about"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           Clarice Bouwer
         </a>
@@ -88,8 +84,6 @@ exports[`Footer should render 1`] = `
         <a
           className="underline-only"
           href="/license"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
         >
           license
         </a>

@@ -5,8 +5,6 @@ Array [
   " ",
   <a
     href="/about"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     About
   </a>,
@@ -62,8 +60,6 @@ Array [
   <a
     className="some-or-other-class"
     href="/about"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     About
   </a>,

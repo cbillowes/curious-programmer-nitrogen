@@ -8,8 +8,6 @@ exports[`Tags should render from list 1`] = `
   <a
     className="tag"
     href="/tag/hello/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
     title="hello"
   >
     hello
@@ -19,8 +17,6 @@ exports[`Tags should render from list 1`] = `
   <a
     className="tag"
     href="/tag/world/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
     title="world"
   >
     world

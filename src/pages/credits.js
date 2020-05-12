@@ -14,6 +14,7 @@ export default () => {
             author
             siteUrl
             image
+            brand
           }
         }
       }
@@ -22,7 +23,12 @@ export default () => {
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO title="Check out all the cool stuff I use." crawl={true} siteMetadata={siteMetadata}>
+      <SEO
+        title="Check out all the cool stuff I use."
+        type="website"
+        crawl={true}
+        siteMetadata={siteMetadata}
+      >
         A lot of things go into making this blog. They make me happy. I have
         created a list of these libraries, frameworks, services, plugins, tools
         and stuff.

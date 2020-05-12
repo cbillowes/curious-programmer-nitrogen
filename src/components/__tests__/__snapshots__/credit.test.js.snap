@@ -23,8 +23,6 @@ exports[`Credit should render an internal credit 1`] = `
   <a
     className="tag"
     href="/blog"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
     title="Curious Programmer"
   >
     curious programmer

@@ -15,12 +15,8 @@ exports[`Tags page should render all tags 1`] = `
       >
          
         <a
-          aria-current="page"
           className="full"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -38,12 +34,8 @@ exports[`Tags page should render all tags 1`] = `
          
          
         <a
-          aria-current="page"
           className="partial"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -84,8 +76,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="menu-item"
             href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Blog
           </a>
@@ -94,8 +84,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="menu-item"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -104,8 +92,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="menu-item"
             href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Archives
           </a>
@@ -114,8 +100,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="menu-item"
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -124,8 +108,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="menu-item"
             href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Credits & Resources
           </a>
@@ -134,8 +116,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="menu-item"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             License
           </a>
@@ -192,8 +172,6 @@ exports[`Tags page should render all tags 1`] = `
             <a
               className="tag"
               href="/tag/do/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="do"
             >
               do
@@ -203,8 +181,6 @@ exports[`Tags page should render all tags 1`] = `
             <a
               className="tag"
               href="/tag/not/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="not"
             >
               not
@@ -214,8 +190,6 @@ exports[`Tags page should render all tags 1`] = `
             <a
               className="tag"
               href="/tag/panic/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="panic"
             >
               panic
@@ -252,8 +226,6 @@ exports[`Tags page should render all tags 1`] = `
       <a
         className="underline-only"
         href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         cool stuff
       </a>
@@ -290,8 +262,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="underline-only"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Clarice Bouwer
           </a>
@@ -313,8 +283,6 @@ exports[`Tags page should render all tags 1`] = `
           <a
             className="underline-only"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             license
           </a>
@@ -431,12 +399,8 @@ exports[`Tags page should render when there are no tags 1`] = `
       >
          
         <a
-          aria-current="page"
           className="full"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -454,12 +418,8 @@ exports[`Tags page should render when there are no tags 1`] = `
          
          
         <a
-          aria-current="page"
           className="partial"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -500,8 +460,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="menu-item"
             href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Blog
           </a>
@@ -510,8 +468,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="menu-item"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -520,8 +476,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="menu-item"
             href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Archives
           </a>
@@ -530,8 +484,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="menu-item"
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -540,8 +492,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="menu-item"
             href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Credits & Resources
           </a>
@@ -550,8 +500,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="menu-item"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             License
           </a>
@@ -634,8 +582,6 @@ exports[`Tags page should render when there are no tags 1`] = `
       <a
         className="underline-only"
         href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         cool stuff
       </a>
@@ -672,8 +618,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="underline-only"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Clarice Bouwer
           </a>
@@ -695,8 +639,6 @@ exports[`Tags page should render when there are no tags 1`] = `
           <a
             className="underline-only"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             license
           </a>

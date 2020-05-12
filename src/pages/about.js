@@ -16,6 +16,7 @@ export default () => {
             author
             siteUrl
             image
+            brand
           }
         }
         images: allFile(filter: { relativePath: { eq: "profile.jpg" } }) {
@@ -37,7 +38,12 @@ export default () => {
   const siteMetadata = data.site.siteMetadata
   return (
     <>
-      <SEO title="I am a curious programmer. Find out more." crawl={true} siteMetadata={siteMetadata}>
+      <SEO
+        title="I am a curious programmer. Find out more."
+        type="website"
+        crawl={true}
+        siteMetadata={siteMetadata}
+      >
         My name is Clarice Bouwer. I am a Senior Software Engineer. I am curious
         and am always learning new things. My passion is Clojure, Gatsby and
         React.

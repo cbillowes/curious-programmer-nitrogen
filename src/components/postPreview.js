@@ -74,7 +74,8 @@ function PostPreview({ wordLimit, edge, children }) {
 
 PostPreview.propTypes = {
   edge: PropTypes.object.isRequired,
-  html: PropTypes.node.isRequired,
+  children: PropTypes.node.isRequired,
+  wordLimit: PropTypes.number,
 }
 
 export default PostPreview

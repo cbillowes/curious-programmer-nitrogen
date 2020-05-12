@@ -12,8 +12,6 @@ exports[`Post navigation tiny should always render both posts 1`] = `
       <a
         className="nav-link"
         href="/previous"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Don't panic."
       >
         <span
@@ -35,8 +33,6 @@ exports[`Post navigation tiny should always render both posts 1`] = `
       <a
         className="nav-link"
         href="/next"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Come to the dark side of the force."
       >
         <span

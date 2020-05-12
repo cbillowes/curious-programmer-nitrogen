@@ -103,7 +103,7 @@ class Posts extends Component {
             }`}
             onClick={() => this.changeLayout("grid")}
           >
-            <img src="/svgs/grid.svg" alt="Display in a verbose grid." />
+            <img src="/grid.svg" alt="Display in a verbose grid." />
           </button>
           <button
             className={`button single-column ${
@@ -111,10 +111,7 @@ class Posts extends Component {
             }`}
             onClick={() => this.changeLayout("grid")}
           >
-            <img
-              src="/svgs/vertical-list.svg"
-              alt="Display in a verbose list."
-            />
+            <img src="/vertical-list.svg" alt="Display in a verbose list." />
           </button>
           <button
             className={`button ${
@@ -122,14 +119,14 @@ class Posts extends Component {
             }`}
             onClick={() => this.changeLayout("listing")}
           >
-            <img src="/svgs/listing.svg" alt="Display in a compact list." />
+            <img src="/listing.svg" alt="Display in a compact list." />
           </button>
           <span className={`search ${this.state.searching ? `active` : ``}`}>
             <button className="button search-btn">
-              <img src="/svgs/search.svg" alt="Search" />
+              <img src="/search.svg" alt="Search" />
             </button>
             <button className={`button reset-btn`} onClick={this.reset}>
-              <img src="/svgs/close.svg" alt="Start over" />
+              <img src="/close.svg" alt="Start over" />
             </button>
             <input
               className="search-bar"

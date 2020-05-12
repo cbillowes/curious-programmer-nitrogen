@@ -19,8 +19,6 @@ Array [
   <a
     className="menu-item"
     href="/blog"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     Blog
   </a>,

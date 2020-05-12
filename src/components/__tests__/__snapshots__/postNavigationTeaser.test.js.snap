@@ -11,8 +11,6 @@ exports[`Post navigation teaser should render all that is required 1`] = `
     <a
       className="nav-link"
       href="/previous"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
       title="Previous"
     >
       <h1>
@@ -45,7 +43,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
         </span>
          
         <span>
-          (Est. 42 minute read)
+          
         </span>
       </div>
     </a>
@@ -57,8 +55,6 @@ exports[`Post navigation teaser should render all that is required 1`] = `
       <a
         className="tag"
         href="/tag/adams/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Adams"
       >
         adams
@@ -68,8 +64,6 @@ exports[`Post navigation teaser should render all that is required 1`] = `
       <a
         className="tag"
         href="/tag/douglas/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Douglas"
       >
         douglas
@@ -84,8 +78,6 @@ exports[`Post navigation teaser should render all that is required 1`] = `
     <a
       className="nav-link"
       href="/next"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
       title="Next"
     >
       <h1>
@@ -118,7 +110,7 @@ exports[`Post navigation teaser should render all that is required 1`] = `
         </span>
          
         <span>
-          (Est. 42 minute read)
+          
         </span>
       </div>
     </a>
@@ -130,8 +122,6 @@ exports[`Post navigation teaser should render all that is required 1`] = `
       <a
         className="tag"
         href="/tag/adams/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Adams"
       >
         adams
@@ -141,8 +131,6 @@ exports[`Post navigation teaser should render all that is required 1`] = `
       <a
         className="tag"
         href="/tag/douglas/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Douglas"
       >
         douglas
@@ -164,8 +152,6 @@ exports[`Post navigation teaser should render everything else 1`] = `
     <a
       className="nav-link"
       href="/previous"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
       title="Don't panic."
     >
       <h1>
@@ -198,7 +184,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
         </span>
          
         <span>
-          (Est. 42 minute read)
+          
         </span>
       </div>
     </a>
@@ -210,8 +196,6 @@ exports[`Post navigation teaser should render everything else 1`] = `
       <a
         className="tag"
         href="/tag/adams/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Adams"
       >
         adams
@@ -221,8 +205,6 @@ exports[`Post navigation teaser should render everything else 1`] = `
       <a
         className="tag"
         href="/tag/douglas/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Douglas"
       >
         douglas
@@ -237,8 +219,6 @@ exports[`Post navigation teaser should render everything else 1`] = `
     <a
       className="nav-link"
       href="/next"
-      onClick={[Function]}
-      onMouseEnter={[Function]}
       title="Come to the dark side."
     >
       <h1>
@@ -271,7 +251,7 @@ exports[`Post navigation teaser should render everything else 1`] = `
         </span>
          
         <span>
-          (Est. 42 minute read)
+          
         </span>
       </div>
     </a>
@@ -283,8 +263,6 @@ exports[`Post navigation teaser should render everything else 1`] = `
       <a
         className="tag"
         href="/tag/star/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="star"
       >
         star
@@ -294,8 +272,6 @@ exports[`Post navigation teaser should render everything else 1`] = `
       <a
         className="tag"
         href="/tag/wars/"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="wars"
       >
         wars

@@ -10,6 +10,7 @@ export const query = graphql`
         title
         author
         image
+        brand
       }
     }
     markdownRemark(fields: { slug: { eq: $slug } }) {
@@ -36,11 +37,17 @@ export default ({ data, pageContext }) => {
   const { html, excerpt, timeToRead } = data.markdownRemark
   const { date } = data.markdownRemark.fields
   const { title, tags, photo } = data.markdownRemark.frontmatter
-  const image = `/static/shares/${photo}`
+  const image = `/social-media/${photo}`
 
   return (
     <>
-      <SEO title={title} crawl={true} siteMetadata={siteMetadata} image={image}>
+      <SEO
+        title={title}
+        type={`article`}
+        crawl={true}
+        siteMetadata={siteMetadata}
+        image={image}
+      >
         {excerpt}
       </SEO>
       <PostPage

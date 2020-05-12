@@ -8,8 +8,11 @@ import "../styles/tag.scss"
 export const query = graphql`
   query TagTemplateQuery($tag: String!) {
     allMarkdownRemark(
-      filter: {frontmatter: {tags: {in: [$tag]}}, fields: {slug: {nin: "/blog/example"}}},
-      sort: {order: DESC, fields: fields___date}
+      filter: {
+        frontmatter: { tags: { in: [$tag] } }
+        fields: { slug: { nin: "/blog/example" } }
+      }
+      sort: { order: DESC, fields: fields___date }
     ) {
       edges {
         node {
@@ -32,6 +35,7 @@ export const query = graphql`
         title
         description
         image
+        brand
       }
     }
   }
@@ -43,7 +47,12 @@ export default ({ data, pageContext }) => {
   const edges = data.allMarkdownRemark.edges
   return (
     <>
-      <SEO title={tag} crawl={false} siteMetadata={siteMetadata} />
+      <SEO
+        title={tag}
+        type={`website`}
+        crawl={false}
+        siteMetadata={siteMetadata}
+      />
       <TagPage tag={tag} edges={edges} />
     </>
   )

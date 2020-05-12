@@ -17,7 +17,7 @@ exports[`Post metadata should render 1`] = `
   </span>
    
   <span>
-    (Est. 42 minute read)
+    
   </span>
 </div>
 `;
@@ -39,7 +39,7 @@ exports[`Post metadata should render without an author 1`] = `
   </span>
    
   <span>
-    (Est. 42 minute read)
+    
   </span>
 </div>
 `;

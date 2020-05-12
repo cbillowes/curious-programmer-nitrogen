@@ -19,23 +19,21 @@ const getPageDescription = (description, siteMetadata) => {
   return getContent(30, pageDescription)
 }
 
-const getAuthor = (siteMetadata) => {
-  return siteMetadata.twitter || ``
+const getAuthor = siteMetadata => {
+  return siteMetadata.author || ``
 }
 
 const getImage = (image, siteMetadata) => {
   const url = siteMetadata.siteUrl
   const share = image || siteMetadata.image
-  if (url)
-    return `${url}${share}`
+  if (url) return `${url}${share}`
   return ``
 }
 
-const SEO = ({ title, crawl, siteMetadata, image, children }) => {
+const SEO = ({ title, type, crawl, siteMetadata, image, children }) => {
   const metadata = siteMetadata || {}
   const pageTitle = getPageTitle(title, metadata)
   const pageDescription = getPageDescription(children, metadata)
-  const pageAuthor = getAuthor(metadata)
   const pageImage = getImage(image, metadata)
   return (
     <Helmet>
@@ -43,19 +41,26 @@ const SEO = ({ title, crawl, siteMetadata, image, children }) => {
 
       <meta name="title" content={pageTitle} />
       <meta name="description" content={pageDescription} />
+      <meta name="type" content={type} />
 
-      {crawl ? (<meta name="robots" content="index" />) : (<meta name="robots" content="noindex" />)}
+      {crawl ? (
+        <meta name="robots" content="index" />
+      ) : (
+        <meta name="robots" content="noindex" />
+      )}
 
+      <meta property="og:site_name" content={metadata.brand} />
+      <meta property="og:url" content={metadata.siteUrl} />
       <meta property="og:title" content={pageTitle} />
       <meta property="og:description" content={pageDescription} />
       <meta property="og:image" content={pageImage} />
-      <meta property="og:type" content="website" />
+      <meta property="og:type" content="summary" />
 
+      <meta property="twitter:card" content="summary" />
+      <meta property="twitter:site" content={metadata.handle} />
       <meta property="twitter:title" content={pageTitle} />
-      <meta property="twitter:author" content={pageAuthor} />
       <meta property="twitter:description" content={pageDescription} />
       <meta property="twitter:image" content={pageImage} />
-      <meta property="twitter:card" content="summary" />
     </Helmet>
   )
 }

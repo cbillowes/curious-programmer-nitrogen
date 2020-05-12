@@ -6,12 +6,8 @@ exports[`Logo should render 1`] = `
 >
    
   <a
-    aria-current="page"
     className="full"
     href="/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    style={Object {}}
     title="Curious Programmer"
   >
     <strong>
@@ -29,12 +25,8 @@ exports[`Logo should render 1`] = `
    
    
   <a
-    aria-current="page"
     className="partial"
     href="/"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
-    style={Object {}}
     title="Curious Programmer"
   >
     <strong>

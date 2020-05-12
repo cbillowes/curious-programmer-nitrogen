@@ -7,8 +7,6 @@ exports[`Show more items should render 1`] = `
    
   <a
     href="/archives"
-    onClick={[Function]}
-    onMouseEnter={[Function]}
   >
     <svg
       aria-hidden="true"

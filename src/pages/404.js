@@ -14,6 +14,7 @@ export default () => {
             author
             siteUrl
             image
+            brand
           }
         }
         allMarkdownRemark(
@@ -50,6 +51,7 @@ export default () => {
     <>
       <SEO
         title="Something is missing"
+        type="website"
         crawl={false}
         siteMetadata={siteMetadata}
       />

@@ -15,12 +15,8 @@ exports[`Blog page should render 1`] = `
       >
          
         <a
-          aria-current="page"
           className="full"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -38,12 +34,8 @@ exports[`Blog page should render 1`] = `
          
          
         <a
-          aria-current="page"
           className="partial"
           href="/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
-          style={Object {}}
           title="Curious Programmer"
         >
           <strong>
@@ -84,8 +76,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="menu-item"
             href="/blog"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Blog
           </a>
@@ -94,8 +84,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="menu-item"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             About
           </a>
@@ -104,8 +92,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="menu-item"
             href="/archives"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Archives
           </a>
@@ -114,8 +100,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="menu-item"
             href="/tags"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Tags
           </a>
@@ -124,8 +108,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="menu-item"
             href="/credits"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Credits & Resources
           </a>
@@ -134,8 +116,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="menu-item"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             License
           </a>
@@ -189,7 +169,7 @@ exports[`Blog page should render 1`] = `
         >
           <img
             alt="Display in a verbose grid."
-            src="/static/svgs/grid.svg"
+            src="/grid.svg"
           />
         </button>
         <button
@@ -198,7 +178,7 @@ exports[`Blog page should render 1`] = `
         >
           <img
             alt="Display in a verbose list."
-            src="/static/svgs/vertical-list.svg"
+            src="/vertical-list.svg"
           />
         </button>
         <button
@@ -207,7 +187,7 @@ exports[`Blog page should render 1`] = `
         >
           <img
             alt="Display in a compact list."
-            src="/static/svgs/listing.svg"
+            src="/listing.svg"
           />
         </button>
         <span
@@ -218,7 +198,7 @@ exports[`Blog page should render 1`] = `
           >
             <img
               alt="Search"
-              src="/static/svgs/search.svg"
+              src="/search.svg"
             />
           </button>
           <button
@@ -227,7 +207,7 @@ exports[`Blog page should render 1`] = `
           >
             <img
               alt="Start over"
-              src="/static/svgs/close.svg"
+              src="/close.svg"
             />
           </button>
           <input
@@ -272,30 +252,65 @@ exports[`Blog page should render 1`] = `
             </div>
           </div>
           <div
-            className="thumbnail landscape"
-            style={
-              Object {
-                "backgroundImage": "url(\\"/static/banners/default-02.jpg\\")",
-                "backgroundPosition": "center center",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "cover",
-                "paddingTop": "50%",
-              }
-            }
+            className="thumbnail"
           >
              
             <a
-              className="link"
+              className="slug"
               href="/dont-panic"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            />
+            >
+              <div
+                className=" gatsby-image-wrapper"
+                style={
+                  Object {
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  style={
+                    Object {
+                      "paddingBottom": "NaN%",
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source />
+                  <img
+                    alt=""
+                    loading="lazy"
+                    onLoad={[Function]}
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": "cover",
+                        "objectPosition": "center",
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transition": "opacity 500ms",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </picture>
+                <noscript
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "<picture><source srcset=\\"undefined\\" /><img loading=\\"lazy\\" src=\\"\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    }
+                  }
+                />
+              </div>
+            </a>
+             
              
             <a
-              className="badge clickable"
-              href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              rel="noopener noreferrer"
-              target="_blank"
+              className="badge linked"
               title="Download free do whatever you want high-resolution photos from Kevin Ku"
             >
               <span
@@ -303,7 +318,7 @@ exports[`Blog page should render 1`] = `
               >
                 <img
                   alt="unsplash"
-                  src="/static/svgs/unsplash.svg"
+                  src="/unsplash.svg"
                 />
               </span>
               <span
@@ -312,55 +327,12 @@ exports[`Blog page should render 1`] = `
                 Kevin Ku
               </span>
             </a>
-          </div>
-          <div
-            className="thumbnail square"
-            style={
-              Object {
-                "backgroundImage": "url(\\"/static/thumbnails/default-02.jpg\\")",
-                "backgroundPosition": "center center",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "cover",
-                "paddingTop": "100%",
-              }
-            }
-          >
              
-            <a
-              className="link"
-              href="/dont-panic"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            />
-             
-            <a
-              className="badge clickable"
-              href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Download free do whatever you want high-resolution photos from Kevin Ku"
-            >
-              <span
-                className="source-logo"
-              >
-                <img
-                  alt="unsplash"
-                  src="/static/svgs/unsplash.svg"
-                />
-              </span>
-              <span
-                className="attribute"
-              >
-                Kevin Ku
-              </span>
-            </a>
           </div>
           <h2>
              
             <a
               href="/dont-panic"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="Don't panic"
             >
               Don't panic
@@ -408,8 +380,6 @@ exports[`Blog page should render 1`] = `
             <a
               className="tag"
               href="/tag/dont/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="don't"
             >
               don't
@@ -419,8 +389,6 @@ exports[`Blog page should render 1`] = `
             <a
               className="tag"
               href="/tag/panic/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="panic"
             >
               panic
@@ -446,30 +414,65 @@ exports[`Blog page should render 1`] = `
             </div>
           </div>
           <div
-            className="thumbnail landscape"
-            style={
-              Object {
-                "backgroundImage": "url(\\"/static/banners/default-03.jpg\\")",
-                "backgroundPosition": "center center",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "cover",
-                "paddingTop": "50%",
-              }
-            }
+            className="thumbnail"
           >
              
             <a
-              className="link"
+              className="slug"
               href="/still-dont-panic"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            />
+            >
+              <div
+                className=" gatsby-image-wrapper"
+                style={
+                  Object {
+                    "overflow": "hidden",
+                    "position": "relative",
+                  }
+                }
+              >
+                <div
+                  aria-hidden={true}
+                  style={
+                    Object {
+                      "paddingBottom": "NaN%",
+                      "width": "100%",
+                    }
+                  }
+                />
+                <picture>
+                  <source />
+                  <img
+                    alt=""
+                    loading="lazy"
+                    onLoad={[Function]}
+                    style={
+                      Object {
+                        "height": "100%",
+                        "left": 0,
+                        "objectFit": "cover",
+                        "objectPosition": "center",
+                        "opacity": 0,
+                        "position": "absolute",
+                        "top": 0,
+                        "transition": "opacity 500ms",
+                        "width": "100%",
+                      }
+                    }
+                  />
+                </picture>
+                <noscript
+                  dangerouslySetInnerHTML={
+                    Object {
+                      "__html": "<picture><source srcset=\\"undefined\\" /><img loading=\\"lazy\\" src=\\"\\" alt=\\"\\" style=\\"position:absolute;top:0;left:0;opacity:1;width:100%;height:100%;object-fit:cover;object-position:center\\"/></picture>",
+                    }
+                  }
+                />
+              </div>
+            </a>
+             
              
             <a
-              className="badge clickable"
-              href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              rel="noopener noreferrer"
-              target="_blank"
+              className="badge linked"
               title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
             >
               <span
@@ -477,7 +480,7 @@ exports[`Blog page should render 1`] = `
               >
                 <img
                   alt="unsplash"
-                  src="/static/svgs/unsplash.svg"
+                  src="/unsplash.svg"
                 />
               </span>
               <span
@@ -486,55 +489,12 @@ exports[`Blog page should render 1`] = `
                 Ilya Pavlov
               </span>
             </a>
-          </div>
-          <div
-            className="thumbnail square"
-            style={
-              Object {
-                "backgroundImage": "url(\\"/static/thumbnails/default-03.jpg\\")",
-                "backgroundPosition": "center center",
-                "backgroundRepeat": "no-repeat",
-                "backgroundSize": "cover",
-                "paddingTop": "100%",
-              }
-            }
-          >
              
-            <a
-              className="link"
-              href="/still-dont-panic"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
-            />
-             
-            <a
-              className="badge clickable"
-              href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
-              rel="noopener noreferrer"
-              target="_blank"
-              title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
-            >
-              <span
-                className="source-logo"
-              >
-                <img
-                  alt="unsplash"
-                  src="/static/svgs/unsplash.svg"
-                />
-              </span>
-              <span
-                className="attribute"
-              >
-                Ilya Pavlov
-              </span>
-            </a>
           </div>
           <h2>
              
             <a
               href="/still-dont-panic"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="Still don't panic"
             >
               Still don't panic
@@ -582,8 +542,6 @@ exports[`Blog page should render 1`] = `
             <a
               className="tag"
               href="/tag/dont/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="don't"
             >
               don't
@@ -593,8 +551,6 @@ exports[`Blog page should render 1`] = `
             <a
               className="tag"
               href="/tag/panic/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="panic"
             >
               panic
@@ -604,8 +560,6 @@ exports[`Blog page should render 1`] = `
             <a
               className="tag"
               href="/tag/still/"
-              onClick={[Function]}
-              onMouseEnter={[Function]}
               title="still"
             >
               still
@@ -621,8 +575,6 @@ exports[`Blog page should render 1`] = `
        
       <a
         href="/archives"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
         title="Show more articles"
       >
         <svg
@@ -672,8 +624,6 @@ exports[`Blog page should render 1`] = `
       <a
         className="underline-only"
         href="/credits"
-        onClick={[Function]}
-        onMouseEnter={[Function]}
       >
         cool stuff
       </a>
@@ -710,8 +660,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="underline-only"
             href="/about"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             Clarice Bouwer
           </a>
@@ -733,8 +681,6 @@ exports[`Blog page should render 1`] = `
           <a
             className="underline-only"
             href="/license"
-            onClick={[Function]}
-            onMouseEnter={[Function]}
           >
             license
           </a>

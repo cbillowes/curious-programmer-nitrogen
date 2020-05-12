@@ -77,8 +77,8 @@ const getBadgeTitle = (source, attribute) => {
 }
 
 const getBadgeLogo = source => {
-  if (source === `unsplash`) return `/svgs/unsplash.svg`
-  return `/svgs/download.svg`
+  if (source === `unsplash`) return `/unsplash.svg`
+  return `/download.svg`
 }
 
 const Badge = ({ credit, source, link }) => {

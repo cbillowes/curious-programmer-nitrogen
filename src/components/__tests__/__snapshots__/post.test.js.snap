@@ -41,7 +41,7 @@ exports[`Post should render with a number 1`] = `
         </span>
          
         <span>
-          (Est. 42 minute read)
+          
         </span>
       </div>
       <div
@@ -51,8 +51,6 @@ exports[`Post should render with a number 1`] = `
         <a
           className="tag"
           href="/tag/dont/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="don't"
         >
           don't
@@ -62,8 +60,6 @@ exports[`Post should render with a number 1`] = `
         <a
           className="tag"
           href="/tag/panic/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="panic"
         >
           panic
@@ -109,7 +105,7 @@ exports[`Post should render with html 1`] = `
         </span>
          
         <span>
-          (Est. 42 minute read)
+          
         </span>
       </div>
       <div
@@ -119,8 +115,6 @@ exports[`Post should render with html 1`] = `
         <a
           className="tag"
           href="/tag/dont/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="don't"
         >
           don't
@@ -130,8 +124,6 @@ exports[`Post should render with html 1`] = `
         <a
           className="tag"
           href="/tag/panic/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="panic"
         >
           panic
@@ -177,7 +169,7 @@ exports[`Post should render with plain text 1`] = `
         </span>
          
         <span>
-          (Est. 42 minute read)
+          
         </span>
       </div>
       <div
@@ -187,8 +179,6 @@ exports[`Post should render with plain text 1`] = `
         <a
           className="tag"
           href="/tag/dont/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="don't"
         >
           don't
@@ -198,8 +188,6 @@ exports[`Post should render with plain text 1`] = `
         <a
           className="tag"
           href="/tag/panic/"
-          onClick={[Function]}
-          onMouseEnter={[Function]}
           title="panic"
         >
           panic
