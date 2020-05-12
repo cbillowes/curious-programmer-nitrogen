@@ -32,7 +32,6 @@ const SEO = ({ title, type, crawl, siteMetadata, image, children }) => {
   const pageTitle = getPageTitle(title, metadata)
   const pageDescription = getPageDescription(children, metadata)
   const pageImage = getImage(image, metadata)
-  const pageUrl = `${metadata.title}${_.kebabCase(title)}`
   return (
     <Helmet>
       <title>{pageTitle}</title>
@@ -59,7 +58,6 @@ const SEO = ({ title, type, crawl, siteMetadata, image, children }) => {
       <meta property="twitter:title" content={pageTitle} />
       <meta property="twitter:description" content={pageDescription} />
       <meta property="twitter:image" content={pageImage} />
-      <link rel="canonical" href={pageUrl} />
     </Helmet>
   )
 }

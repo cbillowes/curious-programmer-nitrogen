@@ -20,6 +20,12 @@ module.exports = {
       },
     },
     {
+      resolve: `gatsby-plugin-canonical-urls`,
+      options: {
+        siteUrl: `https://curiousprogrammer.dev`,
+      },
+    },
+    {
       resolve: `gatsby-plugin-sass`,
       options: {
         precision: 8,
