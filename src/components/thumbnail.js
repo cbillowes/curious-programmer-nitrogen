@@ -136,6 +136,7 @@ const getCreditOrDefaultProps = props => {
       })
     }
   } catch (e) {
+    console.log(e)
     const prop = thumbnails[0]
     return Object.assign({}, prop, {
       component: renderCreditThumbnail(prop.photo),

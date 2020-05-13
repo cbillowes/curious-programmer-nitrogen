@@ -1,7 +1,7 @@
 ---
 title: Look, I have a MacBook Pro now
 date: 2019-08-30 03:00:00 +0200
-photo: macbook.jpg
+photo: mac.jpg
 credit: Dmitry Chernyshov
 creditLink: https://unsplash.com/photos/mP7aPSUm7aE
 creditSource: unsplash
