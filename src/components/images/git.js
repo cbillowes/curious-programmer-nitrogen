@@ -11,9 +11,9 @@ import Img from "gatsby-image"
 const Git = () => {
   const data = useStaticQuery(graphql`
     query {
-      cover: file(relativePath: { eq: "root/git.jpg" }) {
+      cover: file(relativePath: { in: ["git.png", "root/git.png"] }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }

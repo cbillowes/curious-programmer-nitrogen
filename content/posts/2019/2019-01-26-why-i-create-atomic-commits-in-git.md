@@ -1,10 +1,10 @@
 ---
 title: Why I Create Atomic Commits In Git
 date: 2019-01-26 11:00:00 +0200
-photo: git.jpg
-credit: git-scm
-creditLink: https://git-scm.com/downloads/logos
-creditSource: git-scm.com
+photo: git.png
+credit: Vasil Enchev
+creditLink: https://dribbble.com/shots/4037272-Git-monster-illustration/attachments/925202
+creditSource: dribbble.com
 tags:
   - Technical
   - Terminal
