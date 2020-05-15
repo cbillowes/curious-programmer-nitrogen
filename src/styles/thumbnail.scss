@@ -1,74 +1,64 @@
 @import "./variables.scss";
 
-.thumbnail {
-  position: relative;
+.badge {
+  font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
+    "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial,
+    sans-serif;
+  font-size: 0.75rem;
+  font-weight: bold;
+  line-height: 1.75rem;
+  background-color: $darkest;
+  color: $lightest;
+  text-decoration: none;
+  padding: 0.25rem 0.5rem;
+  display: inline-block;
+  border-radius: 0 3px 3px 0;
+  z-index: 1;
 
-  .slug {
-    padding: 0;
-    line-height: 0;
-    font-size: 0;
-
-    .gatsby-image-wrapper {
-      height: 350px;
-    }
+  .source-logo img {
+    filter: invert(80%);
+    height: 1rem;
+    width: auto;
   }
 }
 
-.thumbnail {
-  .badge {
-    font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
-      "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial,
-      sans-serif;
-    font-size: 12px;
-    font-weight: bold;
-    line-height: 1.2;
-    background-color: $darkest;
-    color: $lightest;
-    text-decoration: none;
-    padding: 4px 6px;
-    display: inline-block;
-    border-radius: 0 3px 3px 0;
-    z-index: 1;
-    position: absolute;
-    bottom: 15px;
+.thumbnail .badge {
+  position: absolute;
 
-    cursor: pointer;
-
-    &:hover {
-      background-color: $primary;
-      color: $darkest;
-
-      .source-logo img {
-        filter: none;
-      }
-    }
+  &:hover {
+    background-color: $primary;
+    color: $darkest;
 
     .source-logo img {
-      filter: invert(80%);
-      height: 12px;
-      width: auto;
-      position: relative;
-      vertical-align: middle;
-      top: -2px;
-      margin-right: 5px;
-      margin-left: 2px;
+      filter: none;
     }
+  }
 
-    .source-logo .attribute {
-      display: "inline-block";
-      padding: "2px 3px";
-    }
+  .source-logo img {
+    filter: invert(80%);
+    height: 12px;
+    width: auto;
+    position: relative;
+    vertical-align: middle;
+    top: -2px;
+    margin-right: 5px;
+    margin-left: 2px;
+  }
 
-    &.square .badge {
-      position: relative;
-    }
+  .source-logo .attribute {
+    display: "inline-block";
+    padding: "2px 3px";
+  }
 
-    &.stagnant {
-      cursor: default;
+  &.square .badge {
+    position: relative;
+  }
 
-      &:hover {
-        text-shadow: none;
-      }
+  &.stagnant {
+    cursor: default;
+
+    &:hover {
+      text-shadow: none;
     }
   }
 }

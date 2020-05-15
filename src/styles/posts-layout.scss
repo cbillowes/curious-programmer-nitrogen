@@ -1,122 +1,128 @@
 @import "../styles/variables.scss";
 
-.posts {
-  &.grid {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    flex-grow: 2;
-    justify-content: space-evenly;
+.posts.grid {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  flex-grow: 2;
+  justify-content: space-evenly;
 
-    .post.preview {
-      padding: 0;
-      padding-bottom: 2.5rem;
-      width: 46%;
+  .post.preview {
+    padding: 0 0 2.5rem 0;
+    width: 46%;
+  }
 
-      .square.thumbnail {
-        display: none;
-      }
+  h2,
+  .blurb,
+  .metadata {
+    padding: 0 2.5rem;
+  }
 
-      .landscape.thumbnail {
-        display: block;
-      }
+  @include medium-screen() {
+    width: 100%;
+  }
 
-      h1,
-      .blurb,
-      .metadata {
-        padding: 0 2.5rem;
-      }
+  @include small-screen() {
+    width: 100%;
+    padding: 0;
+    padding-top: 1rem;
 
-      @include medium-screen() {
-        width: 100%;
-      }
+    h2,
+    .blurb,
+    .metadata {
+      padding: 0 1.25rem;
+    }
 
-      @include small-screen() {
-        width: 100%;
-        padding: 0;
-        padding-bottom: 1rem;
-
-        h1,
-        .blurb,
-        .metadata {
-          padding: 0 1.25rem;
-        }
-
-        .metadata {
-          margin: 0;
-        }
-      }
+    .metadata {
+      margin: 0;
     }
   }
 
-  &.listing {
-    flex-grow: 1;
+  .thumbnail {
+    position: relative;
 
-    .post.preview {
-      width: auto;
+    .slug {
+      padding: 0;
+      line-height: 0;
+      font-size: 0;
 
-      .landscape.thumbnail {
-        display: none;
+      .gatsby-image-wrapper {
+        height: 350px;
       }
+    }
 
-      .square.thumbnail {
-        width: 10rem;
-        height: 10rem;
-        border-radius: 50%;
-        padding: 0 !important; //override because padding is stored on the element as it is used to calculate the height using the images' aspect ratio.
-        position: absolute;
-        top: 50%;
-        left: 45px;
-        transform: translateY(-50%);
+    .badge {
+      bottom: 15px;
+      border-radius: 0 5px 5px 0;
+    }
+  }
+}
 
-        .badge {
-          position: absolute;
-          bottom: -10px;
-          border-radius: $border-radius;
-          width: 100%;
-          text-align: center;
+.posts.listing {
+  flex-grow: 1;
+
+  .post.preview {
+    width: auto;
+
+    .blurb {
+      display: none;
+    }
+
+    h2 {
+      margin: 0 12rem;
+    }
+
+    .metadata {
+      margin: 0 auto;
+      max-width: 80%;
+    }
+
+    .thumbnail {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+
+      .slug {
+        &:hover {
+          background: none;
         }
 
-        @include small-screen() {
-          display: none;
-          height: auto;
+        .gatsby-image-wrapper {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 50%;
         }
       }
 
-      .blurb {
-        display: none;
+      .badge {
+        bottom: 70px;
       }
+    }
 
-      h1 {
-        max-width: 75%;
-        margin: 0 auto;
-      }
+    @include medium-screen() {
 
+      h2,
       .metadata {
-        margin: 0 auto;
-        max-width: 80%;
+        margin: 0;
+        max-width: 100%;
       }
 
-      @include medium-screen() {
+      .thumbnail {
+        display: none;
+      }
+    }
 
-        h1,
-        .metadata {
-          margin: 0;
-          max-width: 100%;
-        }
+    @include small-screen() {
 
-        .thumbnail {
-          display: none;
-        }
+      h2,
+      .metadata {
+        margin: 0;
+        max-width: 100%;
       }
 
-      @include small-screen() {
-
-        h1,
-        .metadata {
-          margin: 0;
-          max-width: 100%;
-        }
+      .tags,
+      .thumbnail {
+        display: none;
       }
     }
   }
