@@ -86,7 +86,11 @@ const Badge = ({ credit, source, link }) => {
   const logo = getBadgeLogo(source)
 
   return (
-    <Anchor className={`badge ${link ? `linked` : `stagnant`}`} title={title}>
+    <Anchor
+      className={`badge ${link ? `linked` : `stagnant`}`}
+      title={title}
+      to={link}
+    >
       <span className="source-logo">
         <img src={logo} alt={source} />
       </span>
