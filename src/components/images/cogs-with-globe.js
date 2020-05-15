@@ -11,9 +11,9 @@ import Img from "gatsby-image"
 const CogsWithGlobe = () => {
   const data = useStaticQuery(graphql`
     query {
-      cover: file(relativePath: { eq: "root/cogs-with-globe.jpg" }) {
+      cover: file(relativePath: { in: ["cogs-with-globe.jpg", "root/cogs-with-globe.jpg"] }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }

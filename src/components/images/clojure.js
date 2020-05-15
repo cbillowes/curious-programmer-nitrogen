@@ -11,9 +11,9 @@ import Img from "gatsby-image"
 const Clojure = () => {
   const data = useStaticQuery(graphql`
     query {
-      cover: file(relativePath: { eq: "root/clojure.jpg" }) {
+      cover: file(relativePath: { in: ["clojure.jpg", "root/clojure.jpg"] }) {
         childImageSharp {
-          fluid(maxWidth: 1000) {
+          fluid(maxWidth: 1920) {
             ...GatsbyImageSharpFluid
           }
         }
