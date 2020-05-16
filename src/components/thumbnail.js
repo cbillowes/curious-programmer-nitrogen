@@ -73,7 +73,9 @@ const getBadgeTitle = (source, attribute) => {
   if (source && source.toLowerCase() === `unsplash`)
     return `Download free do whatever you want high-resolution photos from ${attribute}`
 
-  return `Image by ${attribute} @ ${source}`
+  if (source) return `Image by ${attribute} @ ${source}`
+
+  return `Image by ${attribute}`
 }
 
 const getBadgeLogo = source => {
@@ -81,21 +83,33 @@ const getBadgeLogo = source => {
   return `/download.svg`
 }
 
+const Credit = ({ logo, source, credit }) => (
+  <>
+    <span className="source-logo">
+      <img src={logo} alt={source} />
+    </span>
+    <span className="attribute">{credit}</span>
+  </>
+)
+
 const Badge = ({ credit, source, link }) => {
   const title = getBadgeTitle(source, credit)
   const logo = getBadgeLogo(source)
 
+  if (link)
+    return (
+      <Anchor
+        className={`badge ${link ? `linked` : `stagnant`}`}
+        title={title}
+        to={link}
+      >
+        <Credit logo={logo} source={source} credit={credit} />
+      </Anchor>
+    )
   return (
-    <Anchor
-      className={`badge ${link ? `linked` : `stagnant`}`}
-      title={title}
-      to={link}
-    >
-      <span className="source-logo">
-        <img src={logo} alt={source} />
-      </span>
-      <span className="attribute">{credit}</span>
-    </Anchor>
+    <div className="badge stagnant">
+      <Credit logo={logo} source={source} credit={credit} />
+    </div>
   )
 }
 
