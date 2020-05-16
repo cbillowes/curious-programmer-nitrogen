@@ -58,7 +58,7 @@ exports.setFieldsOnGraphQLNodeType = ({ type, actions, reporter }) => {
  */
 const createNodes = (node, createNodeField) => {
   const { title, date } = node.frontmatter
-  const slug = path.join(`/blog`, _.kebabCase(title))
+  const slug = path.join(`/blog`, _.kebabCase(title), `/`)
 
   createNodeField({
     node,

@@ -5,7 +5,7 @@ const template = `./src/templates/post.js`
 const landingPage = `./src/pages/index.js`
 const landingPageSlug = `/blog`
 
-const query = async (graphql) => {
+const query = async graphql => {
   return await graphql(`
     query CreateBlogPostsQuery {
       allMarkdownRemark(sort: { order: ASC, fields: fields___date }) {
@@ -73,12 +73,12 @@ const createThePage = (createPage, edges, index, reporter) => {
 }
 
 const createBlogPages = (createPage, result, reporter) => {
-  const edges = result.data.allMarkdownRemark.edges
-    .filter(edge => edge.node.fields.slug !== config.DEMO_PAGE)
-  edges
-    .forEach((_, index) => {
-      createThePage(createPage, edges, index, reporter)
-    })
+  const edges = result.data.allMarkdownRemark.edges.filter(
+    edge => edge.node.fields.slug !== config.DEMO_PAGE
+  )
+  edges.forEach((_, index) => {
+    createThePage(createPage, edges, index, reporter)
+  })
 }
 
 const createDemoPage = (createPage, result, reporter) => {
@@ -88,7 +88,7 @@ const createDemoPage = (createPage, result, reporter) => {
     .indexOf(config.DEMO_PAGE)
 
   if (index) {
-    createThePage(createPage, edges, post, reporter)
+    createThePage(createPage, edges, index, reporter)
   }
 }
 
@@ -109,15 +109,14 @@ module.exports.create = async (actions, graphql, reporter) => {
     reporter.warn(`off: create blog pages`)
     return
   }
-  await query(graphql)
-    .then(result => {
-      if (result.errors) {
-        reporter.error(`create blog pages: ${result.errors}`)
-      }
+  await query(graphql).then(result => {
+    if (result.errors) {
+      reporter.error(`create blog pages: ${result.errors}`)
+    }
 
-      const { createPage } = actions
-      createBlogPages(createPage, result, reporter)
-      createDemoPage(createPage, result, reporter)
-      createLandingPage(createPage, reporter)
-    })
+    const { createPage } = actions
+    createBlogPages(createPage, result, reporter)
+    createDemoPage(createPage, result, reporter)
+    createLandingPage(createPage, reporter)
+  })
 }

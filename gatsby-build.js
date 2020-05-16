@@ -8,4 +8,4 @@
  * It must however be available for display as its own entity
  * accessible only by its slug
  */
-module.exports.DEMO_PAGE = `/blog/example`
+module.exports.DEMO_PAGE = `/blog/example/`
