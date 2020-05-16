@@ -30,6 +30,9 @@ exports[`should credit a photo 1`] = `
      
     <a
       className="badge linked"
+      href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      rel="nofollow noopener noreferrer"
+      target="_blank"
       title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
     >
       <span
@@ -147,6 +150,9 @@ exports[`should limit the blurb word count 1`] = `
      
     <a
       className="badge linked"
+      href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      rel="nofollow noopener noreferrer"
+      target="_blank"
       title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
     >
       <span
@@ -264,6 +270,9 @@ exports[`should render the full blurb 1`] = `
      
     <a
       className="badge linked"
+      href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+      rel="nofollow noopener noreferrer"
+      target="_blank"
       title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
     >
       <span

@@ -263,6 +263,9 @@ exports[`Blog page should render 1`] = `
              
             <a
               className="badge linked"
+              href="https://unsplash.com/@ikukevk?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
               title="Download free do whatever you want high-resolution photos from Kevin Ku"
             >
               <span
@@ -377,6 +380,9 @@ exports[`Blog page should render 1`] = `
              
             <a
               className="badge linked"
+              href="https://unsplash.com/@ilyapavlov?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+              rel="nofollow noopener noreferrer"
+              target="_blank"
               title="Download free do whatever you want high-resolution photos from Ilya Pavlov"
             >
               <span

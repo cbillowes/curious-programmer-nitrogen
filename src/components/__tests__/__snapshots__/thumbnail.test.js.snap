@@ -12,6 +12,9 @@ exports[`Thumbnail should render with a specific image 1`] = `
    
   <a
     className="badge linked"
+    href="https://unsplash.com/@arget?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
     title="Download free do whatever you want high-resolution photos from Arget"
   >
     <span
@@ -44,6 +47,9 @@ exports[`Thumbnail should render with no photo 1`] = `
    
   <a
     className="badge linked"
+    href="https://unsplash.com/@dlanor_s?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
     title="Download free do whatever you want high-resolution photos from Dlanor S"
   >
     <span
@@ -76,6 +82,9 @@ exports[`Thumbnail should render without attribution 1`] = `
    
   <a
     className="badge linked"
+    href="https://unsplash.com/@arget?utm_source=unsplash&utm_medium=referral&utm_content=creditCopyText"
+    rel="nofollow noopener noreferrer"
+    target="_blank"
     title="Download free do whatever you want high-resolution photos from Arget"
   >
     <span
