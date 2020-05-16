@@ -8,7 +8,7 @@ import React from "react"
 import { graphql, useStaticQuery } from "gatsby"
 import Img from "gatsby-image"
 
-const TwoPeoplePlanningAtATable = () => {
+const TwoPeoplePlanningAtATable = ({ alt }) => {
   const data = useStaticQuery(graphql`
     query {
       cover: file(relativePath: { in: ["two-people-planning-at-a-table.jpg", "root/two-people-planning-at-a-table.jpg"] }) {
@@ -22,7 +22,7 @@ const TwoPeoplePlanningAtATable = () => {
   `)
 
   if (data && data.cover && data.cover.childImageSharp) {
-    return <Img fluid={data.cover.childImageSharp.fluid} />
+    return <Img fluid={data.cover.childImageSharp.fluid} title={alt} alt={alt} />
   } else {
     return <></>
   }

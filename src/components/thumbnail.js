@@ -132,9 +132,11 @@ const Thumbnail = props => {
   )
 }
 
-const renderCreditThumbnail = filename => {
+const renderCreditThumbnail = (filename, source, attribute) => {
   const componentName = filename.replace(path.extname(filename), ``)
-  return require(`./images/${componentName}`).default()
+  return require(`./images/${componentName}`).default({
+    alt: getBadgeTitle(source, attribute),
+  })
 }
 
 const getDefaultCreditPropByNumber = number => {
@@ -145,19 +147,22 @@ const getCreditOrDefaultProps = props => {
   try {
     if (props.photo) {
       return Object.assign({}, props, {
-        component: renderCreditThumbnail(props.photo),
+        component: renderCreditThumbnail(
+          props.photo,
+          props.source,
+          props.credit
+        ),
       })
     } else {
       const prop = getDefaultCreditPropByNumber(props.number)
       return Object.assign({}, prop, {
-        component: renderCreditThumbnail(prop.photo),
+        component: renderCreditThumbnail(prop.photo, prop.source, prop.credit),
       })
     }
   } catch (e) {
-    console.log(e)
     const prop = thumbnails[0]
     return Object.assign({}, prop, {
-      component: renderCreditThumbnail(prop.photo),
+      component: renderCreditThumbnail(prop.photo, prop.source, prop.credit),
     })
   }
 }
