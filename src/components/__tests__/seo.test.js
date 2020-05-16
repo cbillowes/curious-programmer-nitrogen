@@ -8,9 +8,7 @@ const assertTitles = (component, title) => {
   expect(wrapper.find(`title`).text()).toBe(title)
   expect(wrapper.find(`meta[name="title"]`).props().content).toBe(title)
   expect(wrapper.find(`meta[property="og:title"]`).props().content).toBe(title)
-  expect(wrapper.find(`meta[property="twitter:title"]`).props().content).toBe(
-    title
-  )
+  expect(wrapper.find(`meta[name="twitter:title"]`).props().content).toBe(title)
 }
 
 const assertDescriptions = (component, description) => {
@@ -21,9 +19,9 @@ const assertDescriptions = (component, description) => {
   expect(wrapper.find(`meta[property="og:description"]`).props().content).toBe(
     description
   )
-  expect(
-    wrapper.find(`meta[property="twitter:description"]`).props().content
-  ).toBe(description)
+  expect(wrapper.find(`meta[name="twitter:description"]`).props().content).toBe(
+    description
+  )
 }
 
 describe(`SEO`, () => {
@@ -115,7 +113,7 @@ describe(`SEO`, () => {
       />
     )
     const wrapper = getWrapper(component)
-    expect(wrapper.find(`meta[property="twitter:site"]`).props().content).toBe(
+    expect(wrapper.find(`meta[name="twitter:site"]`).props().content).toBe(
       handle
     )
   })
@@ -135,18 +133,25 @@ describe(`SEO`, () => {
     expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(
       `${siteUrl}${image}`
     )
-    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(
+    expect(wrapper.find(`meta[name="twitter:image"]`).props().content).toBe(
       `${siteUrl}${image}`
     )
   })
 
   it(`should set the image from post`, () => {
     const image = `/static/post.jpg`
-    const component = <SEO image={image} />
+    const component = (
+      <SEO
+        image={image}
+        siteMetadata={{ siteUrl: `https://curiousprogrammer.dev` }}
+      />
+    )
     const wrapper = getWrapper(component)
-    expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(``)
-    expect(wrapper.find(`meta[property="twitter:image"]`).props().content).toBe(
-      ``
+    expect(wrapper.find(`meta[property="og:image"]`).props().content).toBe(
+      `https://curiousprogrammer.dev/static/post.jpg`
+    )
+    expect(wrapper.find(`meta[name="twitter:image"]`).props().content).toBe(
+      `https://curiousprogrammer.dev/static/post.jpg`
     )
   })
 
@@ -165,7 +170,7 @@ describe(`SEO`, () => {
     expect(wrapper.find(`meta[property="og:type"]`).props().content).toBe(
       `summary`
     )
-    expect(wrapper.find(`meta[property="twitter:card"]`).props().content).toBe(
+    expect(wrapper.find(`meta[name="twitter:card"]`).props().content).toBe(
       `summary`
     )
   })

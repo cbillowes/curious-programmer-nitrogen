@@ -51,11 +51,11 @@ const SEO = ({ title, type, crawl, siteMetadata, image, children }) => {
       <meta property="og:image" content={pageImage} />
       <meta property="og:type" content="summary" />
 
-      <meta property="twitter:card" content="summary" />
-      <meta property="twitter:site" content={metadata.handle} />
-      <meta property="twitter:title" content={pageTitle} />
-      <meta property="twitter:description" content={pageDescription} />
-      <meta property="twitter:image" content={pageImage} />
+      <meta name="twitter:card" content="summary" />
+      <meta name="twitter:site" content={metadata.handle} />
+      <meta name="twitter:title" content={pageTitle} />
+      <meta name="twitter:description" content={pageDescription} />
+      <meta name="twitter:image" content={pageImage} />
     </Helmet>
   )
 }
