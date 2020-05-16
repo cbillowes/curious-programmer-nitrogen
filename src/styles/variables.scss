@@ -1,32 +1,12 @@
-@import url("//fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Open+Sans:400,800|Courier+Prime:400");
+$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
 
-$sans: 'Open Sans',
-'Helvetica Neue',
-Helvetica,
-Arial,
-sans-serif;
+$serif: "Crimson Text", "Times New Roman", serif;
 
-$serif: 'Crimson Text',
-'Times New Roman',
-serif;
+$mono: "Courier Prime", SFMono-Regular, Consolas, "Liberation Mono", Menlo,
+  Courier, monospace;
 
-$mono: 'Courier Prime',
-SFMono-Regular,
-Consolas,
-'Liberation Mono',
-Menlo,
-Courier,
-monospace;
-
-$symbol: -apple-system,
-BlinkMacSystemFont,
-Segoe UI,
-Helvetica,
-Arial,
-sans-serif,
-Apple Color Emoji,
-Segoe UI Emoji,
-Segoe UI Symbol;
+$symbol: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
+  sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
 
 $reading-pane-max-width: 960px;
 
@@ -48,7 +28,7 @@ $heading-size-small: 110%;
 $border-radius: 5px;
 
 $darkest: #181c1f;
-$dark : #1f2227;
+$dark: #1f2227;
 $neutral: #303030;
 $faded: #999;
 $light: #b3b3b3;
@@ -89,7 +69,7 @@ $tertiary-dark: darken($tertiary, 15%);
 }
 
 @mixin animate-link() {
-  $time: .5s;
+  $time: 0.5s;
   -webkit-transition: all $time;
   transition: all $time;
   transition-property: $time;
@@ -103,18 +83,14 @@ $tertiary-dark: darken($tertiary, 15%);
   text-shadow: 2px 2px 1px $darkest;
 }
 
-@mixin rounded-text($color,
-  $shadow,
-  $background) {
+@mixin rounded-text($color, $shadow, $background) {
   border-radius: $border-radius;
   background-color: $background;
   color: $color;
   text-shadow: 1px 1px 1px $shadow;
 }
 
-@mixin sexy-text($color,
-  $shadow,
-  $with-border) {
+@mixin sexy-text($color, $shadow, $with-border) {
   color: $color;
   background: transparent;
   text-shadow: 1px 1px 1px $shadow;
@@ -133,12 +109,14 @@ $tertiary-dark: darken($tertiary, 15%);
   }
 }
 
-@mixin tag($background,
+@mixin tag(
+  $background,
   $foreground,
   $shadow,
   $hover-background,
   $hover-foreground,
-  $hover-shadow) {
+  $hover-shadow
+) {
   line-height: 180%;
   font-family: $sans;
   font-size: 70%;
@@ -148,8 +126,8 @@ $tertiary-dark: darken($tertiary, 15%);
   border-radius: $border-radius;
   border-bottom: none;
   display: inline-block;
-  padding: .25rem .75rem;
-  margin: .1rem .05rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.1rem 0.05rem;
 
   &:hover {
     text-shadow: 1px 1px 1px $hover-shadow;
@@ -197,40 +175,48 @@ $tertiary-dark: darken($tertiary, 15%);
 }
 
 @mixin primary-tag() {
-  @include tag($background: $primary,
+  @include tag(
+    $background: $primary,
     $foreground: $darkest,
     $shadow: $primary-light,
     $hover-background: $secondary,
     $hover-foreground: $darkest,
-    $hover-shadow: $secondary-light);
+    $hover-shadow: $secondary-light
+  );
 }
 
 @mixin secondary-tag() {
-  @include tag($background: $secondary,
+  @include tag(
+    $background: $secondary,
     $foreground: $darkest,
     $shadow: $secondary-light,
     $hover-background: $tertiary,
     $hover-foreground: $lightest,
-    $hover-shadow: $tertiary-light);
+    $hover-shadow: $tertiary-light
+  );
 }
 
 @mixin tertiary-tag() {
-  @include tag($background: $tertiary,
+  @include tag(
+    $background: $tertiary,
     $foreground: $lightest,
     $shadow: $tertiary-light,
     $hover-background: $secondary,
     $hover-foreground: $darkest,
-    $hover-shadow: $secondary-light);
+    $hover-shadow: $secondary-light
+  );
 }
 
 @mixin disabled-tag() {
   cursor: default;
-  @include tag($background: $neutral,
+  @include tag(
+    $background: $neutral,
     $foreground: $light,
     $shadow: $neutral-light,
     $hover-background: $neutral,
     $hover-foreground: $light,
-    $hover-shadow: $neutral-light);
+    $hover-shadow: $neutral-light
+  );
 }
 
 @mixin bare-tag() {
@@ -244,8 +230,8 @@ $tertiary-dark: darken($tertiary, 15%);
   border-radius: $border-radius;
   border: solid 2px $neutral;
   display: inline-block;
-  padding: .25rem .75rem;
-  margin: .1rem .05rem;
+  padding: 0.25rem 0.75rem;
+  margin: 0.1rem 0.05rem;
 }
 
 @mixin button() {
