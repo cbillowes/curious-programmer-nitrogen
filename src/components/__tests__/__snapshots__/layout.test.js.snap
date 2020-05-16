@@ -91,14 +91,6 @@ exports[`Layout should not render the footer 1`] = `
            
           <a
             className="menu-item"
-            href="/archives"
-          >
-            Archives
-          </a>
-           
-           
-          <a
-            className="menu-item"
             href="/tags"
           >
             Tags
@@ -248,14 +240,6 @@ exports[`Layout should render custom class 1`] = `
             href="/about"
           >
             About
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/archives"
-          >
-            Archives
           </a>
            
            
@@ -415,14 +399,6 @@ exports[`Layout should render page 1`] = `
            
           <a
             className="menu-item"
-            href="/archives"
-          >
-            Archives
-          </a>
-           
-           
-          <a
-            className="menu-item"
             href="/tags"
           >
             Tags
@@ -572,14 +548,6 @@ exports[`Layout should render reading pane 1`] = `
             href="/about"
           >
             About
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/archives"
-          >
-            Archives
           </a>
            
            

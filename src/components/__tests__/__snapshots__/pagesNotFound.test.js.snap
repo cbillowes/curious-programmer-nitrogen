@@ -91,14 +91,6 @@ exports[`404 page should render 1`] = `
            
           <a
             className="menu-item"
-            href="/archives"
-          >
-            Archives
-          </a>
-           
-           
-          <a
-            className="menu-item"
             href="/tags"
           >
             Tags
@@ -176,17 +168,10 @@ exports[`404 page should render 1`] = `
             Let me know
           </a>
            
-          if you are looking for something in particular. In the meantime, check out some of my latest posts below or browse the
-           
-          <a
-            href="/archives"
-            title="Archives"
-          >
-            archives
-          </a>
-           
-           
-          for everything.
+          if you are looking for something in particular or if something is consistently borked.
+        </p>
+        <p>
+          If you are keen, check out my posts below.
         </p>
       </div>
     </div>

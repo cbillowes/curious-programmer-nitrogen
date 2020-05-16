@@ -91,14 +91,6 @@ exports[`Tags page should render all tags 1`] = `
            
           <a
             className="menu-item"
-            href="/archives"
-          >
-            Archives
-          </a>
-           
-           
-          <a
-            className="menu-item"
             href="/tags"
           >
             Tags
@@ -470,14 +462,6 @@ exports[`Tags page should render when there are no tags 1`] = `
             href="/about"
           >
             About
-          </a>
-           
-           
-          <a
-            className="menu-item"
-            href="/archives"
-          >
-            Archives
           </a>
            
            

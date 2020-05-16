@@ -91,14 +91,6 @@ exports[`Blog page should render 1`] = `
            
           <a
             className="menu-item"
-            href="/archives"
-          >
-            Archives
-          </a>
-           
-           
-          <a
-            className="menu-item"
             href="/tags"
           >
             Tags
@@ -478,34 +470,6 @@ exports[`Blog page should render 1`] = `
           </div>
         </section>
       </div>
-    </div>
-    <div
-      className="show-more"
-    >
-       
-      <a
-        href="/archives"
-        title="Show more articles"
-      >
-        <svg
-          aria-hidden="true"
-          className="svg-inline--fa fa-ellipsis-h fa-w-16 "
-          data-icon="ellipsis-h"
-          data-prefix="fas"
-          focusable="false"
-          role="img"
-          style={Object {}}
-          viewBox="0 0 512 512"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <path
-            d="M328 256c0 39.8-32.2 72-72 72s-72-32.2-72-72 32.2-72 72-72 72 32.2 72 72zm104-72c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72zm-352 0c-39.8 0-72 32.2-72 72s32.2 72 72 72 72-32.2 72-72-32.2-72-72-72z"
-            fill="currentColor"
-            style={Object {}}
-          />
-        </svg>
-      </a>
-       
     </div>
   </section>
   <footer

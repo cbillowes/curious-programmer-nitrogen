@@ -49,14 +49,6 @@ Array [
        
       <a
         className="menu-item"
-        href="/archives"
-      >
-        Archives
-      </a>
-       
-       
-      <a
-        className="menu-item"
         href="/tags"
       >
         Tags
@@ -157,14 +149,6 @@ Array [
         href="/about"
       >
         About
-      </a>
-       
-       
-      <a
-        className="menu-item"
-        href="/archives"
-      >
-        Archives
       </a>
        
        

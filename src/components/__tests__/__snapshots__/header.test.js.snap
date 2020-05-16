@@ -88,14 +88,6 @@ exports[`Header should render 1`] = `
          
         <a
           className="menu-item"
-          href="/archives"
-        >
-          Archives
-        </a>
-         
-         
-        <a
-          className="menu-item"
           href="/tags"
         >
           Tags

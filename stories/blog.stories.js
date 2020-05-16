@@ -1,7 +1,6 @@
 import React from "react"
 import { storiesOf } from "@storybook/react"
 import IndexPage from "../src/components/pages/index"
-import ArchivesPage from "../src/components/pages/archives"
 import PageNotFound from "../src/components/pages/404"
 import TagsPage from "../src/components/pages/tags"
 
@@ -63,6 +62,5 @@ const edges = [
 
 storiesOf("Layout/pages", module)
   .add("blog", () => <IndexPage edges={edges} />)
-  .add("archive", () => <ArchivesPage edges={edges} />)
   .add("404", () => <PageNotFound edges={edges} />)
   .add("tags", () => <TagsPage edges={edges} />)

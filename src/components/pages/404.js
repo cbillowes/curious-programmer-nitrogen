@@ -19,13 +19,10 @@ const PageNotFound = ({ edges }) => {
           <Anchor to="/about" title="Contact me">
             Let me know
           </Anchor>
-          if you are looking for something in particular. In the meantime, check
-          out some of my latest posts below or browse the
-          <Anchor to="/archives" title="Archives">
-            archives
-          </Anchor>{" "}
-          for everything.
+          if you are looking for something in particular or if something is
+          consistently borked.
         </p>
+        <p>If you are keen, check out my posts below.</p>
       </ReadingPane>
       <Posts edges={edges} />
     </Layout>

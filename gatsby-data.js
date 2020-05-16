@@ -35,10 +35,6 @@ module.exports = {
       to: "/about",
     },
     {
-      name: "Archives",
-      to: "/archives",
-    },
-    {
       name: "Tags",
       to: "/tags",
     },
