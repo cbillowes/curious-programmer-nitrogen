@@ -51,7 +51,7 @@ const toRoot = src => {
 const toSocialMedia = src => {
   const dest = getDest(src, socialMediaRootDest)
   const quality = socialMediaQuality
-  const dimensions = { width: 800, height: 800 }
+  const dimensions = { width: 1200, height: 600 }
   mkdir(socialMediaRootDest)
   sharp(src)
     .jpeg({ quality })
