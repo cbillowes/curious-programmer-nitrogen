@@ -2,6 +2,7 @@ const _ = require("lodash")
 const path = require(`path`)
 const config = require("./gatsby-build")
 const image = require("./gatsby-build/image")
+const thumbnail = require("./gatsby-build/thumbnail")
 const blog = require("./gatsby-build/pages-blog")
 const tags = require("./gatsby-build/pages-tags")
 const search = require("./gatsby-build/search")
@@ -77,6 +78,30 @@ const createNodes = (node, createNodeField) => {
     value: date,
   })
 
+  createNodeField({
+    node,
+    name: `photo`,
+    value: `mauritius.jpg`,
+  })
+
+  createNodeField({
+    node,
+    name: `source`,
+    value: ``,
+  })
+
+  createNodeField({
+    node,
+    name: `credit`,
+    value: `Clarice Bouwer`,
+  })
+
+  createNodeField({
+    node,
+    name: `link`,
+    value: ``,
+  })
+
   nodes.push(node)
 }
 
@@ -91,6 +116,8 @@ const applyNumbers = createNodeField => {
       name: `number`,
       value: index,
     })
+
+    thumbnail.create(createNodeField, node, ++index)
   })
 }
 
