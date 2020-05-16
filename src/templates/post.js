@@ -7,6 +7,7 @@ export const query = graphql`
   query PostTemplateQuery($slug: String!) {
     site {
       siteMetadata {
+        siteUrl
         title
         author
         image

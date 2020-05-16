@@ -32,6 +32,7 @@ export const query = graphql`
     }
     site {
       siteMetadata {
+        siteUrl
         title
         description
         image
