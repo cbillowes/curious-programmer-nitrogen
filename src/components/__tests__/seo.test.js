@@ -168,10 +168,10 @@ describe(`SEO`, () => {
     )
     const wrapper = getWrapper(component)
     expect(wrapper.find(`meta[property="og:type"]`).props().content).toBe(
-      `summary`
+      `article`
     )
     expect(wrapper.find(`meta[name="twitter:card"]`).props().content).toBe(
-      `summary`
+      `summary_large_image`
     )
   })
 })
