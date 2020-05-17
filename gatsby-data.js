@@ -28,23 +28,23 @@ module.exports = {
   navigation: [
     {
       name: "Blog",
-      to: "/blog",
+      to: "/blog/",
     },
     {
       name: "About",
-      to: "/about",
+      to: "/about/",
     },
     {
       name: "Tags",
-      to: "/tags",
+      to: "/tags/",
     },
     {
       name: "Credits & Resources",
-      to: "/credits",
+      to: "/credits/",
     },
     {
       name: "License",
-      to: "/license",
+      to: "/license/",
     },
     {
       name: "Privacy Policy",
