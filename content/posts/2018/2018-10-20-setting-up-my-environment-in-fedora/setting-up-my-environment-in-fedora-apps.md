@@ -8,7 +8,7 @@ tags:
   - Linux
 ---
 
-I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
+I had to [re-install](/blog/setting-up-my-environment-in-fedora/) so I documented my process.
 In this post, I focus on the installation of my most used apps.
 
 ---
@@ -16,8 +16,7 @@ In this post, I focus on the installation of my most used apps.
 ## Get `dnf` ready
 
 `dnf` is [Dandified YUM](<https://en.wikipedia.org/wiki/DNF_(software)>), a `.rpm`-based distribution package manager.
-To speed up the upgrade download times, try using
-[fastest mirror](https://ask.fedoraproject.org/en/question/7960/how-to-choose-a-specific-mirror-source/?answer=16346#post-id-16346).
+To speed up the upgrade download times, try using fastest mirror.
 
 ```bash
 # Install the fastestmirror plugin to speed up the upgrade

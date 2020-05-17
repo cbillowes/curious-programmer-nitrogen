@@ -8,7 +8,7 @@ tags:
   - Fedora
 ---
 
-I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
+I had to [re-install](/blog/setting-up-my-environment-in-fedora/) so I documented my process.
 In this post, I focus on getting my data backed up so that I can restore it after the
 installation.
 
@@ -44,7 +44,7 @@ rsync -avzh <username>@<host>:/path/to/copy/to/<archive>.tar.gz /path/to/copy/fr
 - -h, --human-readable
 
 _I had a few permissions hiccups trying to tar my home directory so I took extra
-[steps](/blog/setting-up-my-environment-in-fedora) to tackle these problems._
+[steps](/blog/setting-up-my-environment-in-fedora/) to tackle these problems._
 
 ## Remote Git Repository
 

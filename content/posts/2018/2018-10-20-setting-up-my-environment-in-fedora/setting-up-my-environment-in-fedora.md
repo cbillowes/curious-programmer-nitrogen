@@ -37,7 +37,7 @@ which resulted in a glorious destruction of HDD accessibility and my machine wou
 
 Fresh format and install, again. The steps I took were fresh in my mind so I made a note to document it.
 
-- [Making backups](/blog/setting-up-my-environment-in-fedora-creating-backups)
-- [Creating a boot disk](/blog/setting-up-my-environment-in-fedora-creating-a-boot-disk)
-- [Customizing my shell](/blog/setting-up-my-environment-in-fedora-customizing-my-shell)
-- [Installing apps](/blog/setting-up-my-environment-in-fedora-installing-apps)
+- [Making backups](/blog/setting-up-my-environment-in-fedora-creating-backups/)
+- [Creating a boot disk](/blog/setting-up-my-environment-in-fedora-creating-a-boot-disk/)
+- [Customizing my shell](/blog/setting-up-my-environment-in-fedora-customizing-my-shell/)
+- [Installing apps](/blog/setting-up-my-environment-in-fedora-installing-apps/)

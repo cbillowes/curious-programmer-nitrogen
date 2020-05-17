@@ -35,7 +35,7 @@ practice you end up with 100 commits of "extracted foo into a
 method" or "refactored bar to make it more readable". Does it
 really make your git history easier to grok than a single commit
 focused on a feature?" So I
-[wrote](/blog/why-i-create-atomic-commits-in-git)
+[wrote](/blog/why-i-create-atomic-commits-in-git/)
 about it.
 
 ## Stop!

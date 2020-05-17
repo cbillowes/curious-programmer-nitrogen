@@ -14,7 +14,7 @@ tags:
 > affected me.
 
 Media often creates a perception of everything being
-["perfect"](http://elitedaily.com/life/perfect-just-illusion/1063793/). Billboards,
+["perfect"](https://www.elitedaily.com/life/perfect-just-illusion/1063793). Billboards,
 magazines, company websites, social media and television are all flooded
 with images of perfection. The scary part is it applies to everything:
 the perfect body; the perception of natural beauty; the ideal places to live;
@@ -62,15 +62,15 @@ just in the online world. Perhaps everyone is just better than me?
 
 I started observing the people I admire. When I started listening carefully
 I picked up that these people - no matter how famous or experienced - all have fears like I do.
-Many feel like [imposters](http://www.hanselman.com/blog/ImAPhonyAreYou.aspx) or
-that they are [not good enough](http://devpressed.com/t/im-supposedly-a-senior-software-engineer-but-i-dont-feel-like-it/483/7).
+Many feel like [imposters](https://www.hanselman.com/blog/ImAPhonyAreYou.aspx) or
+that they are [not good enough](https://devpressed.com/t/im-supposedly-a-senior-software-engineer-but-i-dont-feel-like-it/483/7).
 
-Some people just stick their necks out and [give stuff a try](http://irisclasson.com/2016/03/01/what-if-i-suck-confessions-of-a-wtf-contributor-by-iris-classon/).
+Some people just stick their necks out and [give stuff a try](https://irisclasson.com/2016/03/01/what-if-i-suck-confessions-of-a-wtf-contributor-by-iris-classon/).
 That's what I started doing.
 
-- I took a [blogging course](http://devcareerboost.com/blog-course/) from
+- I took a [blogging course](https://devcareerboost.com/blog-course/) from
   John Sonmez at [simpleprogrammer.com](http://simpleprogrammer.com) and got amazing feedback directly from him.
-- I submitted an article to [A List Apart](http://www.alistapart.com) and it got
+- I submitted an article to [A List Apart](https://www.alistapart.com) and it got
   accepted.
 - I was asked if I want to give an [Ignite talk](<https://en.wikipedia.org/wiki/Ignite_(event)>)
   at an event just because I got involved in our local software development

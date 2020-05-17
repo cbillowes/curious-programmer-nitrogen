@@ -13,7 +13,7 @@ tags:
 ---
 
 I
-[wrote](/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git)
+[wrote](/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git/)
 about crafting changes into small atomic commits using Git.
 It looked like there was some confusion. I want to share
 what I understand about atomic and monolithic commits and why I create atomic
@@ -29,7 +29,7 @@ commits in Git.
 
 I think we are on the same page. I feel as though my intent was not
 clear in my
-[previous](/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git)
+[previous](/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git/)
 post.
 
 ## An atomic commit
@@ -86,7 +86,7 @@ Atomic commits are easier to:
 ## What do I do?
 
 - **I try working on one thing** - this is not always possible, hence my
-  [previous](/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git)
+  [previous](/blog/how-to-craft-your-changes-into-small-atomic-commits-using-git/)
   post. This is where I use the interactive mode to my advantage. Most GUIs come with
   intuitive interfaces.
 

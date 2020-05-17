@@ -6,7 +6,7 @@ tags:
   - Technical
 ---
 
-In 2005 [Google sampled](https://developers.google.com/webmasters/state-of-the-web/2005/)
+In 2005 Google sampled _(link since removed)_
 over a billion documents. This highlighted popular class names,
 elements, attributes and other related metadata.
 

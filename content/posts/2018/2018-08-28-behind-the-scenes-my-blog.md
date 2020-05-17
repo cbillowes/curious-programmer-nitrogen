@@ -8,7 +8,7 @@ tags:
 
 I developed **corporate** programmer using a Ruby-based static-site generator called [Jekyll](https://jekyllrb.com/). It transforms Markdown, [Liquid](https://github.com/Shopify/liquid/wiki), HTML and CSS to a static website so that no is database required.
 
-While I was planning to [leave the corporate world](https://curiousprogrammer.io/blog/sayonara), I started rebranding. I wanted a change. A new look. A new tech. A new name.
+While I was planning to [leave the corporate world](/blog/sayonara/), I started rebranding. I wanted a change. A new look. A new tech. A new name.
 
 ## My blog
 

@@ -8,7 +8,7 @@ tags:
   - Fedora
 ---
 
-I had to [re-install](/blog/setting-up-my-environment-in-fedora) so I documented my process.
+I had to [re-install](/blog/setting-up-my-environment-in-fedora/) so I documented my process.
 In this post, I focus on getting a Fedora 28 live media installation ready on a USB boot disk
 so that I can begin the installation process.
 

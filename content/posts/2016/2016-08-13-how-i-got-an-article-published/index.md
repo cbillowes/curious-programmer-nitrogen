@@ -12,7 +12,7 @@ tags:
 > me the chance to share my career experiences with the community.
 
 My article —
-"[Finding Opportunities in the Mistakes We Make](http://alistapart.com/article/finding-opportunities-in-the-mistakes-we-make)"
+"[Finding Opportunities in the Mistakes We Make](https://alistapart.com/article/finding-opportunities-in-the-mistakes-we-make/)"
 got published on A List Apart on 2 August 2016. I'd like to share the steps I
 took to accomplish this, a little background story, some additional tips for
 writing for developers and the social media activity I got from the article.
