@@ -75,7 +75,7 @@ exports[`Tag page should render with posts 1`] = `
            
           <a
             className="menu-item"
-            href="/blog"
+            href="/blog/"
           >
             Blog
           </a>
@@ -83,7 +83,7 @@ exports[`Tag page should render with posts 1`] = `
            
           <a
             className="menu-item"
-            href="/about"
+            href="/about/"
           >
             About
           </a>
@@ -91,7 +91,7 @@ exports[`Tag page should render with posts 1`] = `
            
           <a
             className="menu-item"
-            href="/tags"
+            href="/tags/"
           >
             Tags
           </a>
@@ -99,7 +99,7 @@ exports[`Tag page should render with posts 1`] = `
            
           <a
             className="menu-item"
-            href="/credits"
+            href="/credits/"
           >
             Credits & Resources
           </a>
@@ -107,7 +107,7 @@ exports[`Tag page should render with posts 1`] = `
            
           <a
             className="menu-item"
-            href="/license"
+            href="/license/"
           >
             License
           </a>
@@ -734,7 +734,7 @@ exports[`Tag page should render without posts 1`] = `
            
           <a
             className="menu-item"
-            href="/blog"
+            href="/blog/"
           >
             Blog
           </a>
@@ -742,7 +742,7 @@ exports[`Tag page should render without posts 1`] = `
            
           <a
             className="menu-item"
-            href="/about"
+            href="/about/"
           >
             About
           </a>
@@ -750,7 +750,7 @@ exports[`Tag page should render without posts 1`] = `
            
           <a
             className="menu-item"
-            href="/tags"
+            href="/tags/"
           >
             Tags
           </a>
@@ -758,7 +758,7 @@ exports[`Tag page should render without posts 1`] = `
            
           <a
             className="menu-item"
-            href="/credits"
+            href="/credits/"
           >
             Credits & Resources
           </a>
@@ -766,7 +766,7 @@ exports[`Tag page should render without posts 1`] = `
            
           <a
             className="menu-item"
-            href="/license"
+            href="/license/"
           >
             License
           </a>

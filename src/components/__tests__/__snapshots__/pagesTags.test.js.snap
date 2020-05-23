@@ -75,7 +75,7 @@ exports[`Tags page should render all tags 1`] = `
            
           <a
             className="menu-item"
-            href="/blog"
+            href="/blog/"
           >
             Blog
           </a>
@@ -83,7 +83,7 @@ exports[`Tags page should render all tags 1`] = `
            
           <a
             className="menu-item"
-            href="/about"
+            href="/about/"
           >
             About
           </a>
@@ -91,7 +91,7 @@ exports[`Tags page should render all tags 1`] = `
            
           <a
             className="menu-item"
-            href="/tags"
+            href="/tags/"
           >
             Tags
           </a>
@@ -99,7 +99,7 @@ exports[`Tags page should render all tags 1`] = `
            
           <a
             className="menu-item"
-            href="/credits"
+            href="/credits/"
           >
             Credits & Resources
           </a>
@@ -107,7 +107,7 @@ exports[`Tags page should render all tags 1`] = `
            
           <a
             className="menu-item"
-            href="/license"
+            href="/license/"
           >
             License
           </a>
@@ -451,7 +451,7 @@ exports[`Tags page should render when there are no tags 1`] = `
            
           <a
             className="menu-item"
-            href="/blog"
+            href="/blog/"
           >
             Blog
           </a>
@@ -459,7 +459,7 @@ exports[`Tags page should render when there are no tags 1`] = `
            
           <a
             className="menu-item"
-            href="/about"
+            href="/about/"
           >
             About
           </a>
@@ -467,7 +467,7 @@ exports[`Tags page should render when there are no tags 1`] = `
            
           <a
             className="menu-item"
-            href="/tags"
+            href="/tags/"
           >
             Tags
           </a>
@@ -475,7 +475,7 @@ exports[`Tags page should render when there are no tags 1`] = `
            
           <a
             className="menu-item"
-            href="/credits"
+            href="/credits/"
           >
             Credits & Resources
           </a>
@@ -483,7 +483,7 @@ exports[`Tags page should render when there are no tags 1`] = `
            
           <a
             className="menu-item"
-            href="/license"
+            href="/license/"
           >
             License
           </a>

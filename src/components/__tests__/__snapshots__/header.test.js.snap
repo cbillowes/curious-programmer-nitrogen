@@ -72,7 +72,7 @@ exports[`Header should render 1`] = `
          
         <a
           className="menu-item"
-          href="/blog"
+          href="/blog/"
         >
           Blog
         </a>
@@ -80,7 +80,7 @@ exports[`Header should render 1`] = `
          
         <a
           className="menu-item"
-          href="/about"
+          href="/about/"
         >
           About
         </a>
@@ -88,7 +88,7 @@ exports[`Header should render 1`] = `
          
         <a
           className="menu-item"
-          href="/tags"
+          href="/tags/"
         >
           Tags
         </a>
@@ -96,7 +96,7 @@ exports[`Header should render 1`] = `
          
         <a
           className="menu-item"
-          href="/credits"
+          href="/credits/"
         >
           Credits & Resources
         </a>
@@ -104,7 +104,7 @@ exports[`Header should render 1`] = `
          
         <a
           className="menu-item"
-          href="/license"
+          href="/license/"
         >
           License
         </a>

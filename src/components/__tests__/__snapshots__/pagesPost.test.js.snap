@@ -76,7 +76,7 @@ Array [
              
             <a
               className="menu-item"
-              href="/blog"
+              href="/blog/"
             >
               Blog
             </a>
@@ -84,7 +84,7 @@ Array [
              
             <a
               className="menu-item"
-              href="/about"
+              href="/about/"
             >
               About
             </a>
@@ -92,7 +92,7 @@ Array [
              
             <a
               className="menu-item"
-              href="/tags"
+              href="/tags/"
             >
               Tags
             </a>
@@ -100,7 +100,7 @@ Array [
              
             <a
               className="menu-item"
-              href="/credits"
+              href="/credits/"
             >
               Credits & Resources
             </a>
@@ -108,7 +108,7 @@ Array [
              
             <a
               className="menu-item"
-              href="/license"
+              href="/license/"
             >
               License
             </a>
