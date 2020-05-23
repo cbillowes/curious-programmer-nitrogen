@@ -20,25 +20,6 @@ module.exports = {
       },
     },
     {
-      resolve: `gatsby-plugin-prefetch-google-fonts`,
-      options: {
-        fonts: [
-          {
-            family: `Crimson Text`,
-            variants: [`400`, `400i`, `700`],
-          },
-          {
-            family: `Open Sans`,
-            variants: [`400`, `800`],
-          },
-          {
-            family: `Courier Prime`,
-            variants: [`400`],
-          },
-        ],
-      },
-    },
-    {
       resolve: `gatsby-plugin-canonical-urls`,
       options: {
         siteUrl: `https://curiousprogrammer.dev`,
