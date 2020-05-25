@@ -7,7 +7,7 @@ exports[`Header should render 1`] = `
   <div
     className="wrapper"
   >
-    <div
+    <h1
       className="logo"
     >
        
@@ -40,7 +40,7 @@ exports[`Header should render 1`] = `
         </strong>
       </a>
        
-    </div>
+    </h1>
     <button
       className="menu-button"
       onClick={[Function]}

@@ -11,7 +11,7 @@ Array [
       <div
         className="wrapper"
       >
-        <div
+        <h1
           className="logo"
         >
            
@@ -44,7 +44,7 @@ Array [
             </strong>
           </a>
            
-        </div>
+        </h1>
         <button
           className="menu-button"
           onClick={[Function]}

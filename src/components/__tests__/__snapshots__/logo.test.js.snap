@@ -1,7 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`Logo should render 1`] = `
-<div
+<h1
   className="logo"
 >
    
@@ -34,5 +34,5 @@ exports[`Logo should render 1`] = `
     </strong>
   </a>
    
-</div>
+</h1>
 `;

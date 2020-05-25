@@ -5,6 +5,77 @@ exports[`Posts should render with default word limit 1`] = `
   className="posts-container"
 >
   <div
+    className="actions"
+  >
+    <button
+      className="button multi-column active"
+      onClick={[Function]}
+    >
+      <img
+        alt="Display in a verbose grid."
+        src="/grid.svg"
+      />
+    </button>
+    <button
+      className="button single-column active"
+      onClick={[Function]}
+    >
+      <img
+        alt="Display in a verbose list."
+        src="/vertical-list.svg"
+      />
+    </button>
+    <button
+      className="button "
+      onClick={[Function]}
+    >
+      <img
+        alt="Display in a compact list."
+        src="/listing.svg"
+      />
+    </button>
+    <span
+      className="search "
+    >
+      <button
+        className="button search-btn"
+      >
+        <img
+          alt="Search"
+          src="/search.svg"
+        />
+      </button>
+      <button
+        className="button reset-btn"
+        onClick={[Function]}
+      >
+        <img
+          alt="Start over"
+          src="/close.svg"
+        />
+      </button>
+      <input
+        className="search-bar"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        placeholder="Search a title"
+        type="text"
+        value=""
+      />
+      <div
+        className="search-results"
+      >
+        <span
+          className="result"
+        >
+          2
+           results.
+        </span>
+      </div>
+    </span>
+  </div>
+  <div
     className="posts grid"
   >
     <section
@@ -257,6 +328,77 @@ exports[`Posts should render with specified word limit of 5 1`] = `
 <div
   className="posts-container"
 >
+  <div
+    className="actions"
+  >
+    <button
+      className="button multi-column active"
+      onClick={[Function]}
+    >
+      <img
+        alt="Display in a verbose grid."
+        src="/grid.svg"
+      />
+    </button>
+    <button
+      className="button single-column active"
+      onClick={[Function]}
+    >
+      <img
+        alt="Display in a verbose list."
+        src="/vertical-list.svg"
+      />
+    </button>
+    <button
+      className="button "
+      onClick={[Function]}
+    >
+      <img
+        alt="Display in a compact list."
+        src="/listing.svg"
+      />
+    </button>
+    <span
+      className="search "
+    >
+      <button
+        className="button search-btn"
+      >
+        <img
+          alt="Search"
+          src="/search.svg"
+        />
+      </button>
+      <button
+        className="button reset-btn"
+        onClick={[Function]}
+      >
+        <img
+          alt="Start over"
+          src="/close.svg"
+        />
+      </button>
+      <input
+        className="search-bar"
+        onBlur={[Function]}
+        onChange={[Function]}
+        onClick={[Function]}
+        placeholder="Search a title"
+        type="text"
+        value=""
+      />
+      <div
+        className="search-results"
+      >
+        <span
+          className="result"
+        >
+          2
+           results.
+        </span>
+      </div>
+    </span>
+  </div>
   <div
     className="posts grid"
   >

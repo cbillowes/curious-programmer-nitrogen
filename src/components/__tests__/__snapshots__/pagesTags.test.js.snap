@@ -10,7 +10,7 @@ exports[`Tags page should render all tags 1`] = `
     <div
       className="wrapper"
     >
-      <div
+      <h1
         className="logo"
       >
          
@@ -43,7 +43,7 @@ exports[`Tags page should render all tags 1`] = `
           </strong>
         </a>
          
-      </div>
+      </h1>
       <button
         className="menu-button"
         onClick={[Function]}
@@ -386,7 +386,7 @@ exports[`Tags page should render when there are no tags 1`] = `
     <div
       className="wrapper"
     >
-      <div
+      <h1
         className="logo"
       >
          
@@ -419,7 +419,7 @@ exports[`Tags page should render when there are no tags 1`] = `
           </strong>
         </a>
          
-      </div>
+      </h1>
       <button
         className="menu-button"
         onClick={[Function]}

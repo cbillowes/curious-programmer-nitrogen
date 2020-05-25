@@ -4,7 +4,7 @@ import "../styles/logo.scss"
 
 function Logo() {
   return (
-    <div className="logo">
+    <h1 className="logo">
       <Anchor to="/" title="Curious Programmer" className="full">
         <strong>&#123;</strong> :curious <strong>"programmer"</strong>{" "}
         <strong>&#125;</strong>
@@ -13,7 +13,7 @@ function Logo() {
       <Anchor to="/" title="Curious Programmer" className="partial">
         <strong>&#123; &#125;</strong>
       </Anchor>
-    </div>
+    </h1>
   )
 }
 
