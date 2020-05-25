@@ -1,14 +1,32 @@
 @import url("//fonts.googleapis.com/css?family=Crimson+Text:400,400i,700|Open+Sans:400,800|Courier+Prime:400&display=swap");
 
-$sans: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$sans: "Open Sans",
+"Helvetica Neue",
+Helvetica,
+Arial,
+sans-serif;
 
-$serif: "Crimson Text", "Times New Roman", serif;
+$serif: "Crimson Text",
+"Times New Roman",
+serif;
 
-$mono: "Courier Prime", SFMono-Regular, Consolas, "Liberation Mono", Menlo,
-  Courier, monospace;
+$mono: "Courier Prime",
+SFMono-Regular,
+Consolas,
+"Liberation Mono",
+Menlo,
+Courier,
+monospace;
 
-$symbol: -apple-system, BlinkMacSystemFont, Segoe UI, Helvetica, Arial,
-  sans-serif, Apple Color Emoji, Segoe UI Emoji, Segoe UI Symbol;
+$symbol: -apple-system,
+BlinkMacSystemFont,
+Segoe UI,
+Helvetica,
+Arial,
+sans-serif,
+Apple Color Emoji,
+Segoe UI Emoji,
+Segoe UI Symbol;
 
 $reading-pane-max-width: 960px;
 
@@ -111,14 +129,12 @@ $tertiary-dark: darken($tertiary, 15%);
   }
 }
 
-@mixin tag(
-  $background,
+@mixin tag($background,
   $foreground,
   $shadow,
   $hover-background,
   $hover-foreground,
-  $hover-shadow
-) {
+  $hover-shadow) {
   line-height: 180%;
   font-family: $sans;
   font-size: 70%;
@@ -177,48 +193,40 @@ $tertiary-dark: darken($tertiary, 15%);
 }
 
 @mixin primary-tag() {
-  @include tag(
-    $background: $primary,
+  @include tag($background: $primary,
     $foreground: $darkest,
     $shadow: $primary-light,
     $hover-background: $secondary,
     $hover-foreground: $darkest,
-    $hover-shadow: $secondary-light
-  );
+    $hover-shadow: $secondary-light);
 }
 
 @mixin secondary-tag() {
-  @include tag(
-    $background: $secondary,
+  @include tag($background: $secondary,
     $foreground: $darkest,
     $shadow: $secondary-light,
     $hover-background: $tertiary,
     $hover-foreground: $lightest,
-    $hover-shadow: $tertiary-light
-  );
+    $hover-shadow: $tertiary-light);
 }
 
 @mixin tertiary-tag() {
-  @include tag(
-    $background: $tertiary,
+  @include tag($background: $tertiary,
     $foreground: $lightest,
     $shadow: $tertiary-light,
     $hover-background: $secondary,
     $hover-foreground: $darkest,
-    $hover-shadow: $secondary-light
-  );
+    $hover-shadow: $secondary-light);
 }
 
 @mixin disabled-tag() {
   cursor: default;
-  @include tag(
-    $background: $neutral,
+  @include tag($background: $neutral,
     $foreground: $light,
     $shadow: $neutral-light,
     $hover-background: $neutral,
     $hover-foreground: $light,
-    $hover-shadow: $neutral-light
-  );
+    $hover-shadow: $neutral-light);
 }
 
 @mixin bare-tag() {
@@ -273,5 +281,21 @@ $tertiary-dark: darken($tertiary, 15%);
     margin: 15px 25px;
     font-size: 30px;
     display: inline-block;
+  }
+}
+
+@mixin scrollbar() {
+  &::-webkit-scrollbar-thumb {
+    border-radius: 4px;
+    box-shadow: 0 0 1px lighten($dark, 50%);
+    background-color: lighten($dark, 20%);
+  }
+
+  &::-webkit-scrollbar-corner {
+    background-color: lighten($dark, 10%);
+  }
+
+  &::-webkit-scrollbar-track {
+    background-color: lighten($dark, 10%);
   }
 }

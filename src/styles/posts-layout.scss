@@ -7,123 +7,153 @@
   flex-grow: 2;
   justify-content: space-evenly;
 
-  .post.preview {
-    padding: 0 0 2.5rem 0;
-    width: 46%;
-  }
-
-  h2,
-  .blurb,
-  .metadata {
-    padding: 0 2.5rem;
+  @include large-screen() {
+    .post {
+      padding: 0 0 2.5rem 0;
+      width: 46%;
+    }
   }
 
   @include medium-screen() {
-    width: 100%;
+    .post {
+      width: 100%;
+    }
   }
 
   @include small-screen() {
-    width: 100%;
-    padding: 0;
-    padding-top: 1rem;
-
-    h2,
-    .blurb,
-    .metadata {
-      padding: 0 1.25rem;
-    }
-
-    .metadata {
-      margin: 0;
-    }
-  }
-
-  .thumbnail {
-    position: relative;
-
-    .slug {
-      padding: 0;
-      line-height: 0;
-      font-size: 0;
-
-      .gatsby-image-wrapper {
-        height: 350px;
-      }
-    }
-
-    .badge {
-      bottom: 15px;
-      border-radius: 0 5px 5px 0;
+    .post {
+      width: 100%;
+      border: solid 1px red;
     }
   }
 }
 
-.posts.listing {
-  flex-grow: 1;
+.posts.list {}
 
-  .post.preview {
-    width: auto;
 
-    .blurb {
-      display: none;
-    }
+//     @include small-screen() {
+//       & {
+//         width: 100%;
+//         padding: 0;
+//         padding-top: 1rem;
+//       }
 
-    h2 {
-      margin: 0 12rem;
-    }
+//       h2,
+//       .blurb,
+//       .metadata {
+//         padding: 0 1.25rem;
+//       }
 
-    .metadata {
-      margin: 0 auto;
-      max-width: 80%;
-    }
+//       .metadata {
+//         margin: 0;
+//       }
 
-    .thumbnail {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
+//       .thumbnail {
+//         .slug {
+//           padding: 0;
+//           line-height: 0;
+//           font-size: 0;
 
-      .slug {
-        &:hover {
-          background: none;
-        }
+//           .gatsby-image-wrapper {
+//             height: 350px;
+//           }
+//         }
 
-        .gatsby-image-wrapper {
-          width: 10rem;
-          height: 10rem;
-          border-radius: 50%;
-        }
-      }
+//         .badge {
+//           bottom: 15px;
+//           border-radius: 0 5px 5px 0;
+//           position: absolute;
+//           top: 20px;
+//         }
+//       }
+//     }
 
-      .badge {
-        bottom: 70px;
-      }
-    }
+//     @include medium-screen() {
+//       & {
+//         width: 100%;
+//       }
+//     }
 
-    @include medium-screen() {
+//     @include large-screen() {
+//       .thumbnail .badge {
+//         bottom: 25px;
+//       }
+//     }
+//   }
 
-      h2,
-      .metadata {
-        margin: 0;
-        max-width: 100%;
-      }
+//   h2,
+//   .blurb,
+//   .metadata {
+//     padding: 0 2.5rem;
+//   }
 
-      .thumbnail {
-        display: none;
-      }
-    }
+//   .posts.listing {
+//     flex-grow: 1;
 
-    @include small-screen() {
+//     .post.preview {
+//       width: auto;
 
-      h2,
-      .metadata {
-        margin: 0;
-        max-width: 100%;
-      }
+//       .blurb {
+//         display: none;
+//       }
 
-      .tags,
-      .thumbnail {
-        display: none;
-      }
-    }
-  }
-}
+//       h2 {
+//         margin: 0 12rem;
+//       }
+
+//       .metadata {
+//         margin: 0 auto;
+//         max-width: 80%;
+//       }
+
+//       .thumbnail {
+//         position: absolute;
+//         top: 50%;
+//         transform: translateY(-50%);
+
+//         .slug {
+//           &:hover {
+//             background: none;
+//           }
+
+//           .gatsby-image-wrapper {
+//             width: 10rem;
+//             height: 10rem;
+//             border-radius: 50%;
+//           }
+//         }
+
+//         .badge {
+//           bottom: 70px;
+//         }
+//       }
+
+//       @include medium-screen() {
+
+//         h2,
+//         .metadata {
+//           margin: 0;
+//           max-width: 100%;
+//         }
+
+//         .thumbnail {
+//           display: none;
+//         }
+//       }
+
+//       @include small-screen() {
+
+//         h2,
+//         .metadata {
+//           margin: 0;
+//           max-width: 100%;
+//         }
+
+//         .tags,
+//         .thumbnail {
+//           display: none;
+//         }
+//       }
+//     }
+//   }
+// }

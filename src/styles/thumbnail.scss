@@ -1,64 +1,45 @@
 @import "./variables.scss";
 
-.badge {
-  font-family: -apple-system, BlinkMacSystemFont, "San Francisco",
-    "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial,
-    sans-serif;
-  font-size: 0.75rem;
-  font-weight: bold;
-  line-height: 1.75rem;
-  background-color: $darkest;
-  color: $lightest;
-  text-decoration: none;
-  padding: 0rem 0.5rem;
-  display: inline-block;
-  border-radius: 0 3px 3px 0;
-  z-index: 1;
+.thumbnail {
+  position: relative;
+  padding: 0;
 
-  .source-logo img {
-    filter: invert(80%);
-    height: 1rem;
-    width: auto;
+  .slug,
+  .slug:hover,
+  .slug:visited:hover {
+    background-color: transparent !important;
+    padding: 0 !important;
   }
-}
 
-.thumbnail .badge {
-  position: absolute;
-
-  &:hover {
-    background-color: $primary;
-    color: $darkest;
+  .badge {
+    position: absolute;
+    bottom: 15px;
+    z-index: 1;
+    display: inline-block;
+    padding: 0 0.5rem;
+    border-radius: 0 3px 3px 0;
+    font-family: -apple-system, BlinkMacSystemFont, "San Francisco", "Helvetica Neue", Helvetica, Ubuntu, Roboto, Noto, "Segoe UI", Arial, sans-serif;
+    font-size: .75rem;
+    font-weight: bold;
+    line-height: 1.75rem;
+    text-decoration: none;
+    background-color: $dark;
+    color: $lightest;
 
     .source-logo img {
-      filter: none;
+      position: relative;
+      vertical-align: middle;
+      margin-right: 5px;
+      margin-left: 2px;
+      filter: invert(80%);
+      height: 1rem;
+      width: auto;
     }
-  }
-
-  .source-logo img {
-    filter: invert(80%);
-    height: 12px;
-    width: auto;
-    position: relative;
-    vertical-align: middle;
-    top: -2px;
-    margin-right: 5px;
-    margin-left: 2px;
-  }
-
-  .source-logo .attribute {
-    display: "inline-block";
-    padding: "2px 3px";
-  }
-
-  &.square .badge {
-    position: relative;
-  }
-
-  &.stagnant {
-    cursor: default;
 
     &:hover {
-      text-shadow: none;
+      .source-logo img {
+        filter: none;
+      }
     }
   }
 }

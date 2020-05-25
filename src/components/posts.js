@@ -114,10 +114,8 @@ class Posts extends Component {
             <img src="/vertical-list.svg" alt="Display in a verbose list." />
           </button>
           <button
-            className={`button ${
-              this.state.layout === "listing" ? "active" : ""
-            }`}
-            onClick={() => this.changeLayout("listing")}
+            className={`button ${this.state.layout === "list" ? "active" : ""}`}
+            onClick={() => this.changeLayout("list")}
           >
             <img src="/listing.svg" alt="Display in a compact list." />
           </button>

@@ -63,10 +63,12 @@ function PostPreview({ wordLimit, edge, children }) {
           source={creditSource}
           link={creditLink}
         />
-        <Heading slug={slug}>{title}</Heading>
-        <Body wordLimit={wordLimit}>{children}</Body>
-        <Metadata date={date} author={author} timeToRead={timeToRead} />
-        <Tags tags={tags} />
+        <div className="body">
+          <Heading slug={slug}>{title}</Heading>
+          <Body wordLimit={wordLimit}>{children}</Body>
+          <Metadata date={date} author={author} timeToRead={timeToRead} />
+          <Tags tags={tags} />
+        </div>
       </section>
     </>
   )

@@ -1,6 +1,9 @@
 @import "./variables.scss";
 
-.ribbon {
+.number {
+  position: absolute;
+  right: 0;
+
   .backdrop {
     height: 188px;
     width: 150px;
@@ -51,7 +54,7 @@
 }
 
 .post:nth-child(n+1) {
-  .ribbon {
+  .number {
     .text {
       background-color: #cf09ae;
       color: #80036b;
@@ -67,7 +70,7 @@
 }
 
 .post:nth-child(2n+1) {
-  .ribbon {
+  .number {
     .text {
       background-color: #097acf;
       color: #0e4874;
@@ -83,7 +86,7 @@
 }
 
 .post:nth-child(3n+1) {
-  .ribbon {
+  .number {
     .text {
       background-color: #abad10;
       color: #667a0b;
@@ -99,7 +102,7 @@
 }
 
 .post:nth-child(4n+1) {
-  .ribbon {
+  .number {
     .text {
       border-color: #777;
       background-color: #ffae00;

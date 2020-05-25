@@ -1,106 +1,61 @@
 @import "./variables.scss";
 @import "./number.scss";
 
-@mixin scrollbar() {
-  &::-webkit-scrollbar-thumb {
-    border-radius: 4px;
-    box-shadow: 0 0 1px lighten($dark, 50%);
-    background-color: lighten($dark, 20%);
-  }
-
-  &::-webkit-scrollbar-corner {
-    background-color: lighten($dark, 10%);
-  }
-
-  &::-webkit-scrollbar-track {
-    background-color: lighten($dark, 10%);
-  }
-}
-
 .post.preview {
   position: relative;
-  padding: 2.5rem 4rem;
   background-color: lighten($darkest, 2.5%);
   width: 39%;
   margin: 0 1% 3% 1%;
   box-shadow: 0 10px 15px -3px darken($darkest, 2.5%), 0 4px 6px -2px darken($darkest, 3%);
 
-  @media screen and (min-width: $breakpoint-large + 1) and (max-width: 1440px) {
-    width: 35%;
+  .body {
+    padding: 1rem 3rem 4rem 3rem;
+  }
+
+  h1 a,
+  h2 a,
+  h3 a,
+  h4 a,
+  h5 a,
+  h6 a {
+    @include dimmed-text(false);
+
+    &:hover {
+      @include primary-text(false);
+    }
+  }
+
+  h2 {
+    font-size: 1.85rem;
+  }
+
+  h3,
+  h4,
+  h5,
+  h6 {
+    font-size: 1.5rem;
+  }
+
+  .blurb {
+    blockquote {
+      border: none;
+      padding: 0;
+      box-shadow: none;
+      font-style: italic;
+      color: $faded;
+    }
+  }
+
+  @include small-screen() {
+    width: 100%;
+    margin-bottom: 2rem;
   }
 
   @include medium-screen() {
     width: 100%;
   }
 
-  @include small-screen() {
-    width: 100%;
-    margin-bottom: 10%;
-  }
-
-  h2 {
-    font-size: 120%;
-    text-align: center;
-    padding: 0 1rem;
-
-    a,
-    a:visited {
-      color: $lightest;
-      border-bottom-color: $faded;
-      border-radius: 0;
-      text-shadow: 1px 1px 1px $dark;
-
-      &:hover,
-      &:visited:hover {
-        color: $primary;
-        border-bottom-color: $primary-dark;
-        background-color: transparent;
-      }
-    }
-  }
-
-  .metadata {
-    color: $faded;
-    font-size: 90%;
-    text-align: center;
-
-    @include small-screen() {
-      margin: 1rem 2.5rem .5rem 2.5rem;
-      line-height: 2rem;
-    }
-  }
-
-  .blurb {
-    max-height: 500px;
-    overflow-y: auto;
-
-    blockquote {
-      border: 0;
-      margin: 0;
-      padding: 0;
-      box-shadow: none;
-    }
-
-    @include scrollbar();
-
-    pre,
-    code {
-      overflow-x: auto;
-      overflow-y: auto;
-
-      &::-webkit-scrollbar {
-        -webkit-appearance: none;
-        width: 7px;
-        height: 7px;
-        background-color: $darkest;
-      }
-
-      @include scrollbar();
-    }
-  }
-
-  .tags {
-    margin-top: 1%;
-    text-align: center;
+  @include large-screen() {
+    width: 35%;
   }
 }

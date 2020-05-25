@@ -6,7 +6,7 @@ const Number = ({ number }) => {
   if (!number) return <></>
 
   return (
-    <div className="post number ribbon">
+    <div className="number">
       <div className="backdrop">
         <div className="text">#{number}</div>
       </div>
