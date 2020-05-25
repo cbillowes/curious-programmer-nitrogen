@@ -200,7 +200,7 @@ Array [
         className="post article"
       >
         <div
-          className="post number ribbon"
+          className="number"
         >
           <div
             className="backdrop"

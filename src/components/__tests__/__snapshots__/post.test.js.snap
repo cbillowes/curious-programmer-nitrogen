@@ -5,7 +5,7 @@ exports[`Post should render with a number 1`] = `
   className="post article"
 >
   <div
-    className="post number ribbon"
+    className="number"
   >
     <div
       className="backdrop"

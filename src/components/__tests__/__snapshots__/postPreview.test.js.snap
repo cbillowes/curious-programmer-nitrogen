@@ -5,7 +5,7 @@ exports[`should credit a photo 1`] = `
   className="post preview"
 >
   <div
-    className="post number ribbon"
+    className="number"
   >
     <div
       className="backdrop"
@@ -51,71 +51,75 @@ exports[`should credit a photo 1`] = `
     </a>
      
   </div>
-  <h2>
-     
-    <a
-      href="/dont-panic"
-      title="Don't panic."
+  <div
+    className="body"
+  >
+    <h2>
+       
+      <a
+        href="/dont-panic"
+        title="Don't panic."
+      >
+        Don't panic.
+      </a>
+       
+    </h2>
+    <div
+      className="blurb"
     >
-      Don't panic.
-    </a>
-     
-  </h2>
-  <div
-    className="blurb"
-  >
-    <span
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "Earthman...",
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Earthman...",
+          }
         }
-      }
-    />
-  </div>
-  <div
-    className="metadata"
-  >
+      />
+    </div>
     <div
       className="metadata"
     >
-      posted on
-       
-      <time
-        dateTime={"2019-02-01T00:00:00.000Z"}
+      <div
+        className="metadata"
       >
-        Friday, 1 February 2019
-      </time>
-       
-      <span>
-        by Clarice Bouwer
-      </span>
-       
-      <span>
-        (Est. 42 minute read)
-      </span>
+        posted on
+         
+        <time
+          dateTime={"2019-02-01T00:00:00.000Z"}
+        >
+          Friday, 1 February 2019
+        </time>
+         
+        <span>
+          by Clarice Bouwer
+        </span>
+         
+        <span>
+          (Est. 42 minute read)
+        </span>
+      </div>
     </div>
-  </div>
-  <div
-    className="tags"
-  >
-     
-    <a
-      className="tag"
-      href="/tag/dont/"
-      title="don't"
+    <div
+      className="tags"
     >
-      don't
-    </a>
-     
-     
-    <a
-      className="tag"
-      href="/tag/panic/"
-      title="panic"
-    >
-      panic
-    </a>
-     
+       
+      <a
+        className="tag"
+        href="/tag/dont/"
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/panic/"
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
   </div>
 </section>
 `;
@@ -125,7 +129,7 @@ exports[`should limit the blurb word count 1`] = `
   className="post preview"
 >
   <div
-    className="post number ribbon"
+    className="number"
   >
     <div
       className="backdrop"
@@ -171,71 +175,75 @@ exports[`should limit the blurb word count 1`] = `
     </a>
      
   </div>
-  <h2>
-     
-    <a
-      href="/dont-panic"
-      title="Don't panic."
+  <div
+    className="body"
+  >
+    <h2>
+       
+      <a
+        href="/dont-panic"
+        title="Don't panic."
+      >
+        Don't panic.
+      </a>
+       
+    </h2>
+    <div
+      className="blurb"
     >
-      Don't panic.
-    </a>
-     
-  </h2>
-  <div
-    className="blurb"
-  >
-    <span
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.",
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.",
+          }
         }
-      }
-    />
-  </div>
-  <div
-    className="metadata"
-  >
+      />
+    </div>
     <div
       className="metadata"
     >
-      posted on
-       
-      <time
-        dateTime={"2019-02-01T00:00:00.000Z"}
+      <div
+        className="metadata"
       >
-        Friday, 1 February 2019
-      </time>
-       
-      <span>
-        by Clarice Bouwer
-      </span>
-       
-      <span>
-        (Est. 42 minute read)
-      </span>
+        posted on
+         
+        <time
+          dateTime={"2019-02-01T00:00:00.000Z"}
+        >
+          Friday, 1 February 2019
+        </time>
+         
+        <span>
+          by Clarice Bouwer
+        </span>
+         
+        <span>
+          (Est. 42 minute read)
+        </span>
+      </div>
     </div>
-  </div>
-  <div
-    className="tags"
-  >
-     
-    <a
-      className="tag"
-      href="/tag/dont/"
-      title="don't"
+    <div
+      className="tags"
     >
-      don't
-    </a>
-     
-     
-    <a
-      className="tag"
-      href="/tag/panic/"
-      title="panic"
-    >
-      panic
-    </a>
-     
+       
+      <a
+        className="tag"
+        href="/tag/dont/"
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/panic/"
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
   </div>
 </section>
 `;
@@ -245,7 +253,7 @@ exports[`should render the full blurb 1`] = `
   className="post preview"
 >
   <div
-    className="post number ribbon"
+    className="number"
   >
     <div
       className="backdrop"
@@ -291,71 +299,75 @@ exports[`should render the full blurb 1`] = `
     </a>
      
   </div>
-  <h2>
-     
-    <a
-      href="/dont-panic"
-      title="Don't panic."
+  <div
+    className="body"
+  >
+    <h2>
+       
+      <a
+        href="/dont-panic"
+        title="Don't panic."
+      >
+        Don't panic.
+      </a>
+       
+    </h2>
+    <div
+      className="blurb"
     >
-      Don't panic.
-    </a>
-     
-  </h2>
-  <div
-    className="blurb"
-  >
-    <span
-      dangerouslySetInnerHTML={
-        Object {
-          "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.",
+      <span
+        dangerouslySetInnerHTML={
+          Object {
+            "__html": "Earthman Arthur Dent is rescued by his friend, Ford Prefect—an alien researcher for the titular Hitchhiker's Guide to the Galaxy, an enormous work providing information about every planet in the universe—from the Earth just before it is destroyed by the alien Vogons.",
+          }
         }
-      }
-    />
-  </div>
-  <div
-    className="metadata"
-  >
+      />
+    </div>
     <div
       className="metadata"
     >
-      posted on
-       
-      <time
-        dateTime={"2019-02-01T00:00:00.000Z"}
+      <div
+        className="metadata"
       >
-        Friday, 1 February 2019
-      </time>
-       
-      <span>
-        by Clarice Bouwer
-      </span>
-       
-      <span>
-        (Est. 42 minute read)
-      </span>
+        posted on
+         
+        <time
+          dateTime={"2019-02-01T00:00:00.000Z"}
+        >
+          Friday, 1 February 2019
+        </time>
+         
+        <span>
+          by Clarice Bouwer
+        </span>
+         
+        <span>
+          (Est. 42 minute read)
+        </span>
+      </div>
     </div>
-  </div>
-  <div
-    className="tags"
-  >
-     
-    <a
-      className="tag"
-      href="/tag/dont/"
-      title="don't"
+    <div
+      className="tags"
     >
-      don't
-    </a>
-     
-     
-    <a
-      className="tag"
-      href="/tag/panic/"
-      title="panic"
-    >
-      panic
-    </a>
-     
+       
+      <a
+        className="tag"
+        href="/tag/dont/"
+        title="don't"
+      >
+        don't
+      </a>
+       
+       
+      <a
+        className="tag"
+        href="/tag/panic/"
+        title="panic"
+      >
+        panic
+      </a>
+       
+    </div>
   </div>
 </section>
 `;

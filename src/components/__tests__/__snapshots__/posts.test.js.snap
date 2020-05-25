@@ -5,84 +5,13 @@ exports[`Posts should render with default word limit 1`] = `
   className="posts-container"
 >
   <div
-    className="actions"
-  >
-    <button
-      className="button multi-column active"
-      onClick={[Function]}
-    >
-      <img
-        alt="Display in a verbose grid."
-        src="/grid.svg"
-      />
-    </button>
-    <button
-      className="button single-column active"
-      onClick={[Function]}
-    >
-      <img
-        alt="Display in a verbose list."
-        src="/vertical-list.svg"
-      />
-    </button>
-    <button
-      className="button "
-      onClick={[Function]}
-    >
-      <img
-        alt="Display in a compact list."
-        src="/listing.svg"
-      />
-    </button>
-    <span
-      className="search "
-    >
-      <button
-        className="button search-btn"
-      >
-        <img
-          alt="Search"
-          src="/search.svg"
-        />
-      </button>
-      <button
-        className="button reset-btn"
-        onClick={[Function]}
-      >
-        <img
-          alt="Start over"
-          src="/close.svg"
-        />
-      </button>
-      <input
-        className="search-bar"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onClick={[Function]}
-        placeholder="Search a title"
-        type="text"
-        value=""
-      />
-      <div
-        className="search-results"
-      >
-        <span
-          className="result"
-        >
-          2
-           results.
-        </span>
-      </div>
-    </span>
-  </div>
-  <div
     className="posts grid"
   >
     <section
       className="post preview"
     >
       <div
-        className="post number ribbon"
+        className="number"
       >
         <div
           className="backdrop"
@@ -128,78 +57,82 @@ exports[`Posts should render with default word limit 1`] = `
         </a>
          
       </div>
-      <h2>
-         
-        <a
-          href="/dont-panic"
-          title=""
+      <div
+        className="body"
+      >
+        <h2>
+           
+          <a
+            href="/dont-panic"
+            title=""
+          >
+            
+          </a>
+           
+        </h2>
+        <div
+          className="blurb"
         >
-          
-        </a>
-         
-      </h2>
-      <div
-        className="blurb"
-      >
-        <span
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": ",",
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ",",
+              }
             }
-          }
-        />
-      </div>
-      <div
-        className="metadata"
-      >
+          />
+        </div>
         <div
           className="metadata"
         >
-          posted on
-           
-          <time
-            dateTime={"2019-02-01T00:00:00.000Z"}
+          <div
+            className="metadata"
           >
-            Friday, 1 February 2019
-          </time>
-           
-          <span>
-            by Clarice Bouwer
-          </span>
-           
-          <span>
-            (Est. 42 minute read)
-          </span>
+            posted on
+             
+            <time
+              dateTime={"2019-02-01T00:00:00.000Z"}
+            >
+              Friday, 1 February 2019
+            </time>
+             
+            <span>
+              by Clarice Bouwer
+            </span>
+             
+            <span>
+              (Est. 42 minute read)
+            </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="tags"
-      >
-         
-        <a
-          className="tag"
-          href="/tag/dont/"
-          title="don't"
+        <div
+          className="tags"
         >
-          don't
-        </a>
-         
-         
-        <a
-          className="tag"
-          href="/tag/panic/"
-          title="panic"
-        >
-          panic
-        </a>
-         
+           
+          <a
+            className="tag"
+            href="/tag/dont/"
+            title="don't"
+          >
+            don't
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/panic/"
+            title="panic"
+          >
+            panic
+          </a>
+           
+        </div>
       </div>
     </section>
     <section
       className="post preview"
     >
       <div
-        className="post number ribbon"
+        className="number"
       >
         <div
           className="backdrop"
@@ -245,71 +178,75 @@ exports[`Posts should render with default word limit 1`] = `
         </a>
          
       </div>
-      <h2>
-         
-        <a
-          href="/bring-your-own-towel"
-          title=""
+      <div
+        className="body"
+      >
+        <h2>
+           
+          <a
+            href="/bring-your-own-towel"
+            title=""
+          >
+            
+          </a>
+           
+        </h2>
+        <div
+          className="blurb"
         >
-          
-        </a>
-         
-      </h2>
-      <div
-        className="blurb"
-      >
-        <span
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": ",",
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ",",
+              }
             }
-          }
-        />
-      </div>
-      <div
-        className="metadata"
-      >
+          />
+        </div>
         <div
           className="metadata"
         >
-          posted on
-           
-          <time
-            dateTime={"2019-02-01T00:00:00.000Z"}
+          <div
+            className="metadata"
           >
-            Friday, 1 February 2019
-          </time>
-           
-          <span>
-            by Clarice Bouwer
-          </span>
-           
-          <span>
-            (Est. 42 minute read)
-          </span>
+            posted on
+             
+            <time
+              dateTime={"2019-02-01T00:00:00.000Z"}
+            >
+              Friday, 1 February 2019
+            </time>
+             
+            <span>
+              by Clarice Bouwer
+            </span>
+             
+            <span>
+              (Est. 42 minute read)
+            </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="tags"
-      >
-         
-        <a
-          className="tag"
-          href="/tag/panic/"
-          title="panic"
+        <div
+          className="tags"
         >
-          panic
-        </a>
-         
-         
-        <a
-          className="tag"
-          href="/tag/towel/"
-          title="towel"
-        >
-          towel
-        </a>
-         
+           
+          <a
+            className="tag"
+            href="/tag/panic/"
+            title="panic"
+          >
+            panic
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/towel/"
+            title="towel"
+          >
+            towel
+          </a>
+           
+        </div>
       </div>
     </section>
   </div>
@@ -321,84 +258,13 @@ exports[`Posts should render with specified word limit of 5 1`] = `
   className="posts-container"
 >
   <div
-    className="actions"
-  >
-    <button
-      className="button multi-column active"
-      onClick={[Function]}
-    >
-      <img
-        alt="Display in a verbose grid."
-        src="/grid.svg"
-      />
-    </button>
-    <button
-      className="button single-column active"
-      onClick={[Function]}
-    >
-      <img
-        alt="Display in a verbose list."
-        src="/vertical-list.svg"
-      />
-    </button>
-    <button
-      className="button "
-      onClick={[Function]}
-    >
-      <img
-        alt="Display in a compact list."
-        src="/listing.svg"
-      />
-    </button>
-    <span
-      className="search "
-    >
-      <button
-        className="button search-btn"
-      >
-        <img
-          alt="Search"
-          src="/search.svg"
-        />
-      </button>
-      <button
-        className="button reset-btn"
-        onClick={[Function]}
-      >
-        <img
-          alt="Start over"
-          src="/close.svg"
-        />
-      </button>
-      <input
-        className="search-bar"
-        onBlur={[Function]}
-        onChange={[Function]}
-        onClick={[Function]}
-        placeholder="Search a title"
-        type="text"
-        value=""
-      />
-      <div
-        className="search-results"
-      >
-        <span
-          className="result"
-        >
-          2
-           results.
-        </span>
-      </div>
-    </span>
-  </div>
-  <div
     className="posts grid"
   >
     <section
       className="post preview"
     >
       <div
-        className="post number ribbon"
+        className="number"
       >
         <div
           className="backdrop"
@@ -444,78 +310,82 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         </a>
          
       </div>
-      <h2>
-         
-        <a
-          href="/dont-panic"
-          title=""
+      <div
+        className="body"
+      >
+        <h2>
+           
+          <a
+            href="/dont-panic"
+            title=""
+          >
+            
+          </a>
+           
+        </h2>
+        <div
+          className="blurb"
         >
-          
-        </a>
-         
-      </h2>
-      <div
-        className="blurb"
-      >
-        <span
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": ",",
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ",",
+              }
             }
-          }
-        />
-      </div>
-      <div
-        className="metadata"
-      >
+          />
+        </div>
         <div
           className="metadata"
         >
-          posted on
-           
-          <time
-            dateTime={"2019-02-01T00:00:00.000Z"}
+          <div
+            className="metadata"
           >
-            Friday, 1 February 2019
-          </time>
-           
-          <span>
-            by Clarice Bouwer
-          </span>
-           
-          <span>
-            (Est. 42 minute read)
-          </span>
+            posted on
+             
+            <time
+              dateTime={"2019-02-01T00:00:00.000Z"}
+            >
+              Friday, 1 February 2019
+            </time>
+             
+            <span>
+              by Clarice Bouwer
+            </span>
+             
+            <span>
+              (Est. 42 minute read)
+            </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="tags"
-      >
-         
-        <a
-          className="tag"
-          href="/tag/dont/"
-          title="don't"
+        <div
+          className="tags"
         >
-          don't
-        </a>
-         
-         
-        <a
-          className="tag"
-          href="/tag/panic/"
-          title="panic"
-        >
-          panic
-        </a>
-         
+           
+          <a
+            className="tag"
+            href="/tag/dont/"
+            title="don't"
+          >
+            don't
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/panic/"
+            title="panic"
+          >
+            panic
+          </a>
+           
+        </div>
       </div>
     </section>
     <section
       className="post preview"
     >
       <div
-        className="post number ribbon"
+        className="number"
       >
         <div
           className="backdrop"
@@ -561,71 +431,75 @@ exports[`Posts should render with specified word limit of 5 1`] = `
         </a>
          
       </div>
-      <h2>
-         
-        <a
-          href="/bring-your-own-towel"
-          title=""
+      <div
+        className="body"
+      >
+        <h2>
+           
+          <a
+            href="/bring-your-own-towel"
+            title=""
+          >
+            
+          </a>
+           
+        </h2>
+        <div
+          className="blurb"
         >
-          
-        </a>
-         
-      </h2>
-      <div
-        className="blurb"
-      >
-        <span
-          dangerouslySetInnerHTML={
-            Object {
-              "__html": ",",
+          <span
+            dangerouslySetInnerHTML={
+              Object {
+                "__html": ",",
+              }
             }
-          }
-        />
-      </div>
-      <div
-        className="metadata"
-      >
+          />
+        </div>
         <div
           className="metadata"
         >
-          posted on
-           
-          <time
-            dateTime={"2019-02-01T00:00:00.000Z"}
+          <div
+            className="metadata"
           >
-            Friday, 1 February 2019
-          </time>
-           
-          <span>
-            by Clarice Bouwer
-          </span>
-           
-          <span>
-            (Est. 42 minute read)
-          </span>
+            posted on
+             
+            <time
+              dateTime={"2019-02-01T00:00:00.000Z"}
+            >
+              Friday, 1 February 2019
+            </time>
+             
+            <span>
+              by Clarice Bouwer
+            </span>
+             
+            <span>
+              (Est. 42 minute read)
+            </span>
+          </div>
         </div>
-      </div>
-      <div
-        className="tags"
-      >
-         
-        <a
-          className="tag"
-          href="/tag/panic/"
-          title="panic"
+        <div
+          className="tags"
         >
-          panic
-        </a>
-         
-         
-        <a
-          className="tag"
-          href="/tag/towel/"
-          title="towel"
-        >
-          towel
-        </a>
-         
+           
+          <a
+            className="tag"
+            href="/tag/panic/"
+            title="panic"
+          >
+            panic
+          </a>
+           
+           
+          <a
+            className="tag"
+            href="/tag/towel/"
+            title="towel"
+          >
+            towel
+          </a>
+           
+        </div>
       </div>
     </section>
   </div>
