@@ -23,137 +23,59 @@
   @include small-screen() {
     .post {
       width: 100%;
+      margin-bottom: 2rem;
       border: solid 1px red;
     }
   }
 }
 
-.posts.list {}
+.posts.list {
+  .post.preview {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    flex-grow: 2;
+    justify-content: space-evenly;
 
+    .thumbnail {
+      width: 30%;
+      flex: 1 1 20%;
+    }
 
-//     @include small-screen() {
-//       & {
-//         width: 100%;
-//         padding: 0;
-//         padding-top: 1rem;
-//       }
+    .body {
+      flex: 1 1 70%;
+      padding-top: 0;
+      padding-bottom: 0;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      flex-grow: 2;
+      justify-content: space-evenly;
 
-//       h2,
-//       .blurb,
-//       .metadata {
-//         padding: 0 1.25rem;
-//       }
+      h2 {
+        margin-bottom: 0;
+        flex: 1 1 100%;
+      }
 
-//       .metadata {
-//         margin: 0;
-//       }
+      .blurb {
+        display: none;
+      }
 
-//       .thumbnail {
-//         .slug {
-//           padding: 0;
-//           line-height: 0;
-//           font-size: 0;
+      .metadata {
+        text-align: left;
+        margin: 0;
+        padding: 0;
+        flex: 1 1 70%;
+      }
 
-//           .gatsby-image-wrapper {
-//             height: 350px;
-//           }
-//         }
+      .tags {
+        flex: 1 1 30%;
+        line-height: 2.75rem;
 
-//         .badge {
-//           bottom: 15px;
-//           border-radius: 0 5px 5px 0;
-//           position: absolute;
-//           top: 20px;
-//         }
-//       }
-//     }
-
-//     @include medium-screen() {
-//       & {
-//         width: 100%;
-//       }
-//     }
-
-//     @include large-screen() {
-//       .thumbnail .badge {
-//         bottom: 25px;
-//       }
-//     }
-//   }
-
-//   h2,
-//   .blurb,
-//   .metadata {
-//     padding: 0 2.5rem;
-//   }
-
-//   .posts.listing {
-//     flex-grow: 1;
-
-//     .post.preview {
-//       width: auto;
-
-//       .blurb {
-//         display: none;
-//       }
-
-//       h2 {
-//         margin: 0 12rem;
-//       }
-
-//       .metadata {
-//         margin: 0 auto;
-//         max-width: 80%;
-//       }
-
-//       .thumbnail {
-//         position: absolute;
-//         top: 50%;
-//         transform: translateY(-50%);
-
-//         .slug {
-//           &:hover {
-//             background: none;
-//           }
-
-//           .gatsby-image-wrapper {
-//             width: 10rem;
-//             height: 10rem;
-//             border-radius: 50%;
-//           }
-//         }
-
-//         .badge {
-//           bottom: 70px;
-//         }
-//       }
-
-//       @include medium-screen() {
-
-//         h2,
-//         .metadata {
-//           margin: 0;
-//           max-width: 100%;
-//         }
-
-//         .thumbnail {
-//           display: none;
-//         }
-//       }
-
-//       @include small-screen() {
-
-//         h2,
-//         .metadata {
-//           margin: 0;
-//           max-width: 100%;
-//         }
-
-//         .tags,
-//         .thumbnail {
-//           display: none;
-//         }
-//       }
-//     }
-//   }
-// }
+        .tag {
+          padding: 0 .75rem;
+        }
+      }
+    }
+  }
+}
