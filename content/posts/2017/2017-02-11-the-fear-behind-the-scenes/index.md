@@ -1,7 +1,8 @@
 ---
-title: "The fear behind the scenes"
+title: The fear behind the scenes
 cover: "https://picsum.photos/1600/800/?image=171"
 date: 2017-02-11 23:25:57 +0200
+tags:
   - Mindset
   - Comfort Zone
 ---
