@@ -100,7 +100,7 @@ $tertiary-dark: darken($tertiary, 15%);
 
 @mixin light-shadowed-text($color) {
   color: $color;
-  text-shadow: 2px 2px 1px $darkest;
+  text-shadow: 1px 1px 1px $darkest;
 }
 
 @mixin rounded-text($color, $shadow, $background) {
