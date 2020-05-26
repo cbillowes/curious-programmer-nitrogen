@@ -19,7 +19,7 @@ export default () => {
         }
         allMarkdownRemark(
           filter: { fields: { slug: { nin: "/blog/example/" } } }
-          sort: { order: DESC, fields: fields___date }
+          sort: { order: DESC, fields: fields___number }
         ) {
           edges {
             node {

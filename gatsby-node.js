@@ -106,7 +106,7 @@ const createNodes = (node, createNodeField) => {
 }
 
 const applyNumbers = createNodeField => {
-  const numberable = nodes.filter(node => node.fields !== config.DEMO_PAGE)
+  const numberable = nodes.filter(node => node.fields.slug !== config.DEMO_PAGE)
   const sorted = numberable.sort(
     (a, b) => toTimestamp(a.fields.date) - toTimestamp(b.fields.date)
   )
@@ -114,10 +114,10 @@ const applyNumbers = createNodeField => {
     createNodeField({
       node,
       name: `number`,
-      value: index,
+      value: index + 1,
     })
 
-    thumbnail.create(createNodeField, node, ++index)
+    thumbnail.create(createNodeField, node, index + 1)
   })
 }
 
