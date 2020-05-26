@@ -96,7 +96,7 @@ class Posts extends Component {
     const { wordLimit } = this.props
     return (
       <div className="posts-container">
-        {/* <div className="actions">
+        <div className="actions">
           <button
             className={`button multi-column ${
               this.state.layout === "grid" ? "active" : ""
@@ -137,7 +137,7 @@ class Posts extends Component {
             />
             <div className="search-results">{this.results()}</div>
           </span>
-        </div> */}
+        </div>
         <div className={`posts ${this.state.layout}`}>
           <Listing edges={this.state.edges} wordLimit={wordLimit} />
         </div>
