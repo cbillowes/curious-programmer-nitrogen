@@ -43,15 +43,11 @@
 
 
       @include small-screen() {
-        .badge {
-          display: relative;
-        }
+        display: none;
       }
 
       @include medium-screen() {
-        .badge {
-          display: relative;
-        }
+        display: none;
       }
     }
 
