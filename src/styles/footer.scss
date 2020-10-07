@@ -54,17 +54,17 @@
       }
 
       .icon {
-        width: 5rem;
-        height: 5rem;
+        width: 4rem;
+        height: 4rem;
         margin: .5rem;
-        border: solid .5rem $dark;
+        border: solid .3rem $dark;
         border-radius: 50%;
 
         &:hover {
-          border-top: solid .5rem $primary;
-          border-right: solid .5rem $secondary;
-          border-bottom: solid .5rem $secondary;
-          border-left: solid .5rem $primary;
+          border-top: solid .3rem $primary;
+          border-right: solid .3rem $secondary;
+          border-bottom: solid .3rem $secondary;
+          border-left: solid .3rem $primary;
         }
 
         @include small-screen {
