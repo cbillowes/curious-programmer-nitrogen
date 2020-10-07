@@ -32,13 +32,13 @@ class Posts extends Component {
     }
   }
 
-  changeLayout = layout => {
+  changeLayout() {
     this.setState({
       layout,
     })
   }
 
-  search = e => {
+  search(e) {
     const phrase = e.target.value.toLowerCase()
     const edges = this.state.originalEdges.filter(
       edge => edge.node.frontmatter.title.toLowerCase().indexOf(phrase) > -1
@@ -50,7 +50,7 @@ class Posts extends Component {
     })
   }
 
-  reset = () => {
+  reset() {
     this.setState({
       phrase: ``,
       searching: false,
@@ -58,14 +58,14 @@ class Posts extends Component {
     })
   }
 
-  toggleSearching = () => {
+  toggleSearching() {
     const searching = this.state.phrase.length > 0 || this.searching
     this.setState({
       searching: searching,
     })
   }
 
-  results = () => {
+  results() {
     const results = this.state.edges.length
     if (!this.state.searching)
       return <span className="result">{results} results.</span>

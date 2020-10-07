@@ -1,6 +1,7 @@
 plugins/
 raw/
 originals/
+storybook-static/
 
 # Logs
 logs

@@ -3,6 +3,13 @@ import Logo from "./logo"
 import Navigation from "./navigation"
 import "../styles/header.scss"
 
+const toggleNavigation = e => {
+  e.preventDefault()
+  this.setState({
+    isMenuOpen: !this.state.isMenuOpen,
+  })
+}
+
 class Header extends Component {
   constructor(props) {
     super(props)
@@ -11,20 +18,13 @@ class Header extends Component {
     }
   }
 
-  toggleNavigation = e => {
-    e.preventDefault()
-    this.setState({
-      isMenuOpen: !this.state.isMenuOpen,
-    })
-  }
-
   render() {
     return (
       <header className="header">
         <div className="wrapper">
           <Logo />
           <Navigation
-            toggleOnClick={this.toggleNavigation.bind(this)}
+            toggleOnClick={toggleNavigation.bind(this)}
             isOpen={this.state.isMenuOpen}
           />
         </div>
