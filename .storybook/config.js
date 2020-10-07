@@ -9,6 +9,8 @@ global.___loader = {
 }
 // Gatsby internal mocking to prevent unnecessary errors in storybook testing environment
 global.__PATH_PREFIX__ = ""
+global.__BASE_PATH__ = "";
+
 // This is to utilise and override the window.___navigate method Gatsby defines and uses to report what path a Link would be taking us to if it wasn't inside a storybook
 window.___navigate = pathname => {
   action("NavigateTo:")(pathname)
